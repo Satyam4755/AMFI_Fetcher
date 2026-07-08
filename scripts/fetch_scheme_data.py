@@ -6,14 +6,10 @@ import pandas as pd
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from services.scheme_api_client import fetch_investment_strategies, fetch_scheme_detail
-from services.scheme_insert_service import save_scheme_to_sqlite
-from services.scheme_sqlite_service import create_tables
+from services.scheme_csv_service import save_schemes_to_csv
 
 def main():
-    print("Starting Scheme Pipeline...")
-    
-    # Ensure database schema exists
-    create_tables()
+    print("Starting Scheme Fetch Pipeline...")
     
     # Read unique sifIds from the NAV CSV
     csv_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif_nav.csv")
@@ -29,16 +25,13 @@ def main():
     print(f"Found {total_sifs} unique SIFs in NAV data...")
     
     total_schemes_discovered = 0
-    successful = 0
-    failed = 0
+    all_schemes_data = []
     
     for i, sif_val in enumerate(unique_sifs, 1):
-        # Convert float to int string if needed
         sif_id = str(int(sif_val)) if isinstance(sif_val, float) else str(sif_val)
         
         print(f"\nProcessing SIF {i}/{total_sifs} (sif_id: {sif_id})...")
         
-        # 1. Fetch investment strategies for this SIF
         strategies_response = fetch_investment_strategies(sif_id)
         schemes = strategies_response if isinstance(strategies_response, list) else []
         
@@ -49,7 +42,6 @@ def main():
         print(f"Discovered {len(schemes)} schemes for SIF {sif_id}.")
         total_schemes_discovered += len(schemes)
         
-        # 2. For each scheme, fetch the details and save to SQLite
         for scheme_info in schemes:
             scheme_id = scheme_info.get("scheme_id")
             if not scheme_id:
@@ -62,22 +54,19 @@ def main():
             
             if data_list and len(data_list) > 0:
                 scheme_data = data_list[0]
-                success = save_scheme_to_sqlite(scheme_data)
-                
-                if success:
-                    successful += 1
-                else:
-                    failed += 1
+                all_schemes_data.append(scheme_data)
             else:
                 print(f"     No valid data returned for scheme_id {scheme_id}.")
-                failed += 1
             
-    print("\nPipeline Completed")
+    # Save everything into data/sif_scheme.csv
+    print(f"\nCollected a total of {len(all_schemes_data)} scheme detail records.")
+    save_schemes_to_csv(all_schemes_data)
+            
+    print("\nFetch Pipeline Completed")
     print("-" * 20)
     print(f"Total SIFs Processed       : {total_sifs}")
     print(f"Total Schemes Discovered   : {total_schemes_discovered}")
-    print(f"Successful Inserts         : {successful}")
-    print(f"Failed Inserts             : {failed}")
+    print(f"Total Details Fetched      : {len(all_schemes_data)}")
 
 if __name__ == "__main__":
     main()
