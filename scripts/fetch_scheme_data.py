@@ -1,6 +1,7 @@
 import sys
 import os
 import pandas as pd
+import logging
 
 # Allow direct execution
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -8,8 +9,20 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from services.scheme_api_client import fetch_investment_strategies, fetch_scheme_detail
 from services.scheme_csv_service import save_schemes_to_csv
 
+from services.scheme_document_service import get_scheme_documents
+from services.xls_download_service import download_xls
+from services.xls_parser_service import parse_summary_xls
+from services.composite_mapper_service import build_composite_mapping
+from services.composite_sqlite_service import create_composite_tables, insert_composite_mapping
+
 def main():
+    # Setup basic logging so the service loggers will output to console
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
+    
     print("Starting Scheme Fetch Pipeline...")
+    
+    # Ensure composite tables exist
+    create_composite_tables()
     
     # Read unique sifIds from the NAV CSV
     csv_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif_nav.csv")
@@ -55,6 +68,25 @@ def main():
             if data_list and len(data_list) > 0:
                 scheme_data = data_list[0]
                 all_schemes_data.append(scheme_data)
+                
+                # --- COMPOSITE MAPPING PIPELINE ---
+                try:
+                    docs = get_scheme_documents(scheme_id)
+                    if docs and docs.get("summary_xls_url"):
+                        xls_url = docs.get("summary_xls_url")
+                        xls_path = download_xls(xls_url)
+                        if xls_path:
+                            rows = parse_summary_xls(xls_path)
+                            if rows:
+                                mapping = build_composite_mapping(rows)
+                                if mapping and mapping.get("sebi_code"):
+                                    insert_composite_mapping(mapping)
+                    else:
+                        print(f"     No document URLs available for scheme_id {scheme_id}.")
+                except Exception as e:
+                    print(f"     Error processing composite mapping for scheme_id {scheme_id}: {e}")
+                # ----------------------------------
+                
             else:
                 print(f"     No valid data returned for scheme_id {scheme_id}.")
             
