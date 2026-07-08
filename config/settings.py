@@ -1,0 +1,4 @@
+AMFI_SIF_URL = "https://www.amfiindia.com/api/sif-latest-nav?type="
+CSV_FILE_PATH = "data/sif_nav.csv"
+DB_FILE_PATH = "database/sif.db"
+TABLE_NAME = "sif_nav"
