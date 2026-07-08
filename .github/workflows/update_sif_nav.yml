@@ -1,0 +1,58 @@
+name: Auto Update SIF NAV Data
+
+on:
+  # 1. Trigger automatically every day at 8:00 PM IST (which is 14:30 UTC)
+  schedule:
+    - cron: '30 14 * * *'
+  
+  # 2. Allow manual execution using workflow_dispatch
+  workflow_dispatch:
+
+jobs:
+  update-nav-data:
+    # 3. Use ubuntu-latest
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 4. Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      # 5. Setup Python 3.12
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip' # Optional: Speeds up execution by caching pip dependencies
+          
+      # 6. Install dependencies from requirements.txt
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      # 7. Execute the main pipeline script
+      - name: Run SIF NAV Pipeline
+        run: |
+          python scripts/fetch_sif_nav.py
+          
+      # 8, 9, 10, 13. Commit changes securely without failing if no changes exist
+      - name: Commit and Push Changes
+        run: |
+          # 8. Configure git user as the standard GitHub Actions bot
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          
+          # Add the specific CSV file
+          git add data/sif_nav.csv
+          
+          # Check if there are any staged changes
+          if git diff --cached --quiet; then
+            # 10 & 13. Safely handle the case where there are no new updates
+            echo "No new NAV updates."
+          else
+            # 9. Commit and push the changes
+            git commit -m "Auto update SIF NAV CSV"
+            git push
+            echo "Successfully updated and pushed new data."
+          fi
