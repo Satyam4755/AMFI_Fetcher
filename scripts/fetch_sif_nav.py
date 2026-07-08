@@ -2,6 +2,7 @@ import requests
 import json
 import pandas as pd
 import os
+import sqlite3
 
 def fetch_sif_nav():
     url = "https://www.amfiindia.com/api/sif-latest-nav?type="
@@ -63,7 +64,39 @@ def save_to_csv(schemes):
     except Exception as e:
         print(f"Error while saving to CSV: {e}")
 
+def save_to_sqlite(csv_file):
+    """
+    Reads the specified CSV file and loads its contents into a SQLite database.
+    """
+    try:
+        # Create database directory if it doesn't exist
+        os.makedirs("database", exist_ok=True)
+        db_path = "database/sif.db"
+        
+        print(f"Connecting to SQLite database at {db_path}...")
+        conn = sqlite3.connect(db_path)
+        
+        print(f"Reading CSV from {csv_file}...")
+        df = pd.read_csv(csv_file)
+        
+        table_name = "sif_nav"
+        print(f"Inserting {len(df)} records into table '{table_name}'...")
+        # Write records stored in a DataFrame to a SQL database
+        # if_exists='replace' drops the table before inserting new values
+        df.to_sql(table_name, conn, if_exists="replace", index=False)
+        
+        print("Successfully saved data to SQLite database.")
+        
+    except Exception as e:
+        print(f"Error while saving to SQLite: {e}")
+    finally:
+        # Ensure the connection is always closed
+        if 'conn' in locals():
+            conn.close()
+            print("Database connection closed.")
+
 if __name__ == "__main__":
     schemes_list = fetch_sif_nav()
     if schemes_list:
         save_to_csv(schemes_list)
+        save_to_sqlite("data/sif_nav.csv")
