@@ -1,13 +1,18 @@
-name: Auto Update SIF NAV Data
+name: Auto Update SIF Scheme Data
 
 on:
-  schedule:
-    - cron: '30 14 * * *'
+  workflow_run:
+    workflows: ["Auto Update SIF NAV Data"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
-  update-nav-data:
+  update-scheme-data:
     runs-on: ubuntu-latest
+    
+    # Run only if NAV workflow succeeded or if triggered manually
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     
     steps:
       - name: Checkout repository
@@ -24,21 +29,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: Run SIF NAV Pipeline
+      - name: Run SIF Scheme Pipeline
         run: |
-          python scripts/fetch_sif_nav.py
+          python scripts/fetch_scheme_data.py
           
       - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           
-          git add data/sif_nav.csv
+          git add data/sif_scheme.csv
           
           if git diff --cached --quiet; then
-            echo "No new NAV updates."
+            echo "No new Scheme updates."
           else
-            git commit -m "Auto update NAV data"
+            git commit -m "Auto update Scheme data"
             git push
-            echo "Successfully updated and pushed new NAV data."
+            echo "Successfully updated and pushed new Scheme data."
           fi
