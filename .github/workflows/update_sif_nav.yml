@@ -31,10 +31,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      # 7. Execute the main pipeline script
-      - name: Run SIF NAV Pipeline
+      # 7. Execute the main pipeline scripts
+      - name: Run Data Pipelines
         run: |
           python scripts/fetch_sif_nav.py
+          python scripts/fetch_scheme_data.py
           
       # 8, 9, 10, 13. Commit changes securely without failing if no changes exist
       - name: Commit and Push Changes
@@ -43,16 +44,17 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           
-          # Add the specific CSV file
+          # Add the specific CSV files
           git add data/sif_nav.csv
+          git add data/sif_scheme.csv
           
           # Check if there are any staged changes
           if git diff --cached --quiet; then
             # 10 & 13. Safely handle the case where there are no new updates
-            echo "No new NAV updates."
+            echo "No new updates."
           else
             # 9. Commit and push the changes
-            git commit -m "Auto update SIF NAV CSV"
+            git commit -m "Auto update NAV and Scheme data"
             git push
             echo "Successfully updated and pushed new data."
           fi
