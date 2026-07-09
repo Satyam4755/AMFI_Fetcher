@@ -99,6 +99,38 @@ python scripts/fetch_scheme_data.py
 python scripts/import_scheme_csv.py
 ```
 
+## Keeping the SQLite Database Updated
+
+### Automatic CSV Updates (GitHub Actions)
+
+Every day, GitHub automatically performs:
+
+**NAV Data:**
+`AMFI NAV API` ➔ `fetch_sif_nav.py` ➔ `data/sif_nav.csv`
+
+**Scheme Data:**
+`AMFI Scheme APIs` ➔ `fetch_scheme_data.py` ➔ `data/sif_scheme.csv`
+
+These CSV files act as our single source of truth. They are automatically refreshed by GitHub Actions, meaning absolutely **no manual work is required** to fetch new data.
+
+---
+
+### Updating the Local SQLite Database
+
+Whenever the latest CSV files are pulled from GitHub, you can instantly update the local SQLite database to reflect the newest data using the orchestrator scripts.
+
+**For NAV Data:**
+```bash
+python scripts/update_nav_database.py
+```
+
+**For Scheme Data:**
+```bash
+python scripts/update_scheme_database.py
+```
+
+These scripts will safely read the respective CSV payloads, unpack the contents, and UPSERT everything securely into your SQLite schema.
+
 ## Pipeline Flow
 
 1. **NAV Parsing**: Periodically runs to scrape the baseline `sif_id` index.
