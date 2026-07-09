@@ -34,10 +34,29 @@ def download_xls(summary_xls_url: str) -> str | None:
         # Stream the download
         with requests.get(summary_xls_url, stream=True, timeout=15) as response:
             response.raise_for_status()
-            with open(file_path, "wb") as f:
-                for chunk in response.iter_content(chunk_size=8192):
-                    if chunk:
-                        f.write(chunk)
+            
+            content_type = response.headers.get('Content-Type', '').lower()
+            if 'text/html' in content_type:
+                logger.error(f"Server returned an HTML page instead of an Excel file. URL: {summary_xls_url}")
+                return None
+                
+            iterator = response.iter_content(chunk_size=8192)
+            try:
+                first_chunk = next(iterator)
+            except StopIteration:
+                first_chunk = b""
+                
+            if first_chunk:
+                header = first_chunk[:15].lower()
+                if header.startswith(b"<!doctype") or header.startswith(b"<html"):
+                    logger.error(f"Server returned an HTML page body instead of an Excel file. URL: {summary_xls_url}")
+                    return None
+                    
+                with open(file_path, "wb") as f:
+                    f.write(first_chunk)
+                    for chunk in iterator:
+                        if chunk:
+                            f.write(chunk)
                         
         logger.info(f"Successfully downloaded XLS to: {file_path}")
         return file_path

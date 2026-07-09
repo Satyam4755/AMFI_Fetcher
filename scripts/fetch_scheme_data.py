@@ -13,16 +13,12 @@ from services.scheme_document_service import get_scheme_documents
 from services.xls_download_service import download_xls
 from services.xls_parser_service import parse_summary_xls
 from services.composite_mapper_service import build_composite_mapping
-from services.composite_sqlite_service import create_composite_tables, insert_composite_mapping
 
 def main():
     # Setup basic logging so the service loggers will output to console
     logging.basicConfig(level=logging.INFO, format="%(levelname)s:%(name)s:%(message)s")
     
     print("Starting Scheme Fetch Pipeline...")
-    
-    # Ensure composite tables exist
-    create_composite_tables()
     
     # Read unique sifIds from the NAV CSV
     csv_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif_nav.csv")
@@ -67,26 +63,48 @@ def main():
             
             if data_list and len(data_list) > 0:
                 scheme_data = data_list[0]
-                all_schemes_data.append(scheme_data)
                 
-                # --- COMPOSITE MAPPING PIPELINE ---
+                # Pre-fill empty enrichment fields to maintain consistent CSV schema
+                scheme_data["sebi_code"] = None
+                scheme_data["amfi_codes"] = None
+                scheme_data["isin_codes"] = None
+                
+                # --- DOCUMENT ENRICHMENT PIPELINE ---
                 try:
                     docs = get_scheme_documents(scheme_id)
                     if docs and docs.get("summary_xls_url"):
                         xls_url = docs.get("summary_xls_url")
                         xls_path = download_xls(xls_url)
+                        
                         if xls_path:
                             rows = parse_summary_xls(xls_path)
                             if rows:
                                 mapping = build_composite_mapping(rows)
-                                if mapping and mapping.get("sebi_code"):
-                                    insert_composite_mapping(mapping)
+                                if mapping:
+                                    if mapping.get("sebi_code"):
+                                        scheme_data["sebi_code"] = mapping.get("sebi_code")
+                                        
+                                    amfi_mapping = mapping.get("amfi_mapping", [])
+                                    if amfi_mapping:
+                                        amfi_codes = [m["amfi_code"] for m in amfi_mapping]
+                                        scheme_data["amfi_codes"] = ";".join(amfi_codes)
+                                        
+                                    isin_mapping = mapping.get("isin_mapping", [])
+                                    if isin_mapping:
+                                        isins = [m["isin"] for m in isin_mapping]
+                                        scheme_data["isin_codes"] = ";".join(isins)
+                            
+                            # Clean up temporary file
+                            if os.path.exists(xls_path):
+                                os.remove(xls_path)
+                                print(f"     Deleted temporary XLS: {xls_path}")
                     else:
                         print(f"     No document URLs available for scheme_id {scheme_id}.")
                 except Exception as e:
-                    print(f"     Error processing composite mapping for scheme_id {scheme_id}: {e}")
-                # ----------------------------------
+                    print(f"     Error enriching data for scheme_id {scheme_id}: {e}")
+                # ------------------------------------
                 
+                all_schemes_data.append(scheme_data)
             else:
                 print(f"     No valid data returned for scheme_id {scheme_id}.")
             

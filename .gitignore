@@ -8,3 +8,5 @@ database/*.db
 logs/*.log
 
 .DS_Store
+temp/xls/*
+!temp/.gitkeep
