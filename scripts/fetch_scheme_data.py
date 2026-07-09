@@ -7,7 +7,7 @@ import logging
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from services.scheme_api_client import fetch_investment_strategies, fetch_scheme_detail
-from services.scheme_csv_service import save_schemes_to_csv
+from services.csv_service import save_to_csv
 
 from services.scheme_document_service import get_scheme_documents
 from services.xls_download_service import download_xls
@@ -86,13 +86,15 @@ def main():
                                         
                                     amfi_mapping = mapping.get("amfi_mapping", [])
                                     if amfi_mapping:
-                                        amfi_codes = [m["amfi_code"] for m in amfi_mapping]
-                                        scheme_data["amfi_codes"] = ";".join(amfi_codes)
+                                        scheme_data["amfi_codes"] = ";".join(
+                                            m["amfi_code"] for m in amfi_mapping
+                                        )
                                         
                                     isin_mapping = mapping.get("isin_mapping", [])
                                     if isin_mapping:
-                                        isins = [m["isin"] for m in isin_mapping]
-                                        scheme_data["isin_codes"] = ";".join(isins)
+                                        scheme_data["isin_codes"] = ";".join(
+                                            m["isin"] for m in isin_mapping
+                                        )
                             
                             # Clean up temporary file
                             if os.path.exists(xls_path):
@@ -110,7 +112,7 @@ def main():
             
     # Save everything into data/sif_scheme.csv
     print(f"\nCollected a total of {len(all_schemes_data)} scheme detail records.")
-    save_schemes_to_csv(all_schemes_data)
+    save_to_csv(all_schemes_data, "data/sif_scheme.csv")
             
     print("\nFetch Pipeline Completed")
     print("-" * 20)

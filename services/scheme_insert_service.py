@@ -1,6 +1,7 @@
 import sqlite3
 import os
 import sys
+import pandas as pd
 
 # Allow direct execution by adding project root to Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -10,14 +11,13 @@ from config.settings import SCHEME_DB_FILE_PATH
 def save_scheme_to_sqlite(scheme_data):
     """
     Inserts or updates a single scheme JSON object into the normalized 
-    relational database (sif_master and scheme_master) using SQLite UPSERT.
+    relational database (sif_master, scheme_master, and composite mappings).
     """
     if not scheme_data:
         print("No scheme data provided.")
         return False
         
     try:
-        print(f"Connecting to SQLite database at {SCHEME_DB_FILE_PATH}...")
         conn = sqlite3.connect(SCHEME_DB_FILE_PATH)
         
         # Enable foreign key constraint enforcement in SQLite
@@ -30,7 +30,7 @@ def save_scheme_to_sqlite(scheme_data):
         amc_website = scheme_data.get("AMC_Website")
         
         # UPSERT sif_master
-        if sif_id is not None:
+        if sif_id is not None and not pd.isna(sif_id):
             cursor.execute("""
                 INSERT INTO sif_master (sif_id, sif_name, amc_website)
                 VALUES (?, ?, ?)
@@ -44,7 +44,7 @@ def save_scheme_to_sqlite(scheme_data):
         scheme_id = scheme_data.get("scheme_id")
         
         # UPSERT scheme_master
-        if scheme_id is not None and sif_id is not None:
+        if scheme_id is not None and not pd.isna(scheme_id) and sif_id is not None and not pd.isna(sif_id):
             scheme_name = scheme_data.get("Scheme_Name")
             scheme_type = scheme_data.get("SchemeType_Desc")
             scheme_category = scheme_data.get("SchemeCat_Desc")
@@ -74,8 +74,35 @@ def save_scheme_to_sqlite(scheme_data):
                 scheme_objective, launch_date, scheme_load, minimum_amount
             ))
             
+        # Extract mappings
+        sebi_code = scheme_data.get("sebi_code")
+        
+        # Handle nan gracefully
+        if pd.isna(sebi_code) or not str(sebi_code).strip() or str(sebi_code) == "None":
+            sebi_code = None
+        else:
+            sebi_code = str(sebi_code).strip()
+            
+        if sebi_code:
+            amfi_codes_str = scheme_data.get("amfi_codes")
+            if not pd.isna(amfi_codes_str) and str(amfi_codes_str).strip() and str(amfi_codes_str) != "None":
+                amfi_codes = [c.strip() for c in str(amfi_codes_str).split(";") if c.strip()]
+                for code in amfi_codes:
+                    cursor.execute("""
+                        INSERT OR IGNORE INTO amfi_composite_mapping (sebi_code, amfi_code)
+                        VALUES (?, ?)
+                    """, (sebi_code, code))
+                    
+            isin_codes_str = scheme_data.get("isin_codes")
+            if not pd.isna(isin_codes_str) and str(isin_codes_str).strip() and str(isin_codes_str) != "None":
+                isin_codes = [c.strip() for c in str(isin_codes_str).split(";") if c.strip()]
+                for isin in isin_codes:
+                    cursor.execute("""
+                        INSERT OR IGNORE INTO isin_composite_mapping (sebi_code, isin)
+                        VALUES (?, ?)
+                    """, (sebi_code, isin))
+            
         conn.commit()
-        print(f"Successfully saved/updated scheme '{scheme_id}' in the database.")
         return True
         
     except sqlite3.Error as e:
@@ -87,4 +114,3 @@ def save_scheme_to_sqlite(scheme_data):
     finally:
         if 'conn' in locals():
             conn.close()
-            print("Database connection closed.")

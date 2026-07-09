@@ -9,7 +9,7 @@ from config.settings import SCHEME_DB_FILE_PATH
 
 def create_tables():
     """
-    Creates the relational database schema for Scheme data.
+    Creates the relational database schema for Scheme data and composite mappings.
     """
     # Ensure the database directory exists
     os.makedirs(os.path.dirname(SCHEME_DB_FILE_PATH), exist_ok=True)
@@ -44,6 +44,24 @@ def create_tables():
                 scheme_load TEXT,
                 minimum_amount TEXT,
                 FOREIGN KEY (sif_id) REFERENCES sif_master(sif_id)
+            )
+        """)
+        
+        print("Creating table 'amfi_composite_mapping'...")
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS amfi_composite_mapping (
+                sebi_code TEXT NOT NULL,
+                amfi_code TEXT NOT NULL UNIQUE,
+                PRIMARY KEY (sebi_code, amfi_code)
+            )
+        """)
+        
+        print("Creating table 'isin_composite_mapping'...")
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS isin_composite_mapping (
+                sebi_code TEXT NOT NULL,
+                isin TEXT NOT NULL UNIQUE,
+                PRIMARY KEY (sebi_code, isin)
             )
         """)
         
