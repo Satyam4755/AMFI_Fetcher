@@ -36,8 +36,8 @@ def download_xls(summary_xls_url: str) -> str | None:
             response.raise_for_status()
             
             content_type = response.headers.get('Content-Type', '').lower()
-            if 'text/html' in content_type:
-                logger.error(f"Server returned an HTML page instead of an Excel file. URL: {summary_xls_url}")
+            if 'text/html' in content_type or 'text/plain' in content_type:
+                logger.warning(f"Invalid XLS received from AMFI. Skipping download. (Content-Type: {content_type}) URL: {summary_xls_url}")
                 return None
                 
             iterator = response.iter_content(chunk_size=8192)
@@ -46,17 +46,20 @@ def download_xls(summary_xls_url: str) -> str | None:
             except StopIteration:
                 first_chunk = b""
                 
-            if first_chunk:
-                header = first_chunk[:15].lower()
-                if header.startswith(b"<!doctype") or header.startswith(b"<html"):
-                    logger.error(f"Server returned an HTML page body instead of an Excel file. URL: {summary_xls_url}")
-                    return None
-                    
-                with open(file_path, "wb") as f:
-                    f.write(first_chunk)
-                    for chunk in iterator:
-                        if chunk:
-                            f.write(chunk)
+            if not first_chunk:
+                logger.warning(f"Invalid XLS received from AMFI. Skipping download. (Empty content) URL: {summary_xls_url}")
+                return None
+                
+            header = first_chunk[:50].lstrip().lower()
+            if header.startswith(b"<!doctype") or header.startswith(b"<html"):
+                logger.warning(f"Invalid XLS received from AMFI. Skipping download. (HTML body detected) URL: {summary_xls_url}")
+                return None
+                
+            with open(file_path, "wb") as f:
+                f.write(first_chunk)
+                for chunk in iterator:
+                    if chunk:
+                        f.write(chunk)
                         
         logger.info(f"Successfully downloaded XLS to: {file_path}")
         return file_path
@@ -64,7 +67,11 @@ def download_xls(summary_xls_url: str) -> str | None:
     except requests.exceptions.Timeout:
         logger.error(f"Timeout while downloading XLS from: {summary_xls_url}")
     except requests.exceptions.HTTPError as e:
-        logger.error(f"HTTP error {e.response.status_code} downloading XLS from: {summary_xls_url}")
+        if e.response is not None and e.response.status_code == 404:
+            logger.warning(f"Summary XLS not found (404). Skipping. URL: {summary_xls_url}")
+        else:
+            status_code = e.response.status_code if e.response is not None else "Unknown"
+            logger.error(f"HTTP error {status_code} downloading XLS from: {summary_xls_url}")
     except requests.exceptions.RequestException as e:
         logger.error(f"Network error downloading XLS from: {summary_xls_url} - {e}")
     except IOError as e:
