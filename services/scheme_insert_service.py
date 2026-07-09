@@ -53,12 +53,19 @@ def save_scheme_to_sqlite(scheme_data):
             scheme_load = scheme_data.get("scheme_load")
             minimum_amount = scheme_data.get("Scheme_min_amt")
             
+            # Extract sebi_code for scheme_master
+            sebi_code = scheme_data.get("sebi_code")
+            if pd.isna(sebi_code) or not str(sebi_code).strip() or str(sebi_code) == "None":
+                sebi_code = None
+            else:
+                sebi_code = str(sebi_code).strip()
+            
             cursor.execute("""
                 INSERT INTO scheme_master (
                     scheme_id, sif_id, scheme_name, scheme_type, scheme_category,
-                    scheme_objective, launch_date, scheme_load, minimum_amount
+                    scheme_objective, launch_date, scheme_load, minimum_amount, sebi_code
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(scheme_id)
                 DO UPDATE SET
                     sif_id = excluded.sif_id,
@@ -68,20 +75,21 @@ def save_scheme_to_sqlite(scheme_data):
                     scheme_objective = excluded.scheme_objective,
                     launch_date = excluded.launch_date,
                     scheme_load = excluded.scheme_load,
-                    minimum_amount = excluded.minimum_amount
+                    minimum_amount = excluded.minimum_amount,
+                    sebi_code = excluded.sebi_code
             """, (
                 scheme_id, sif_id, scheme_name, scheme_type, scheme_category,
-                scheme_objective, launch_date, scheme_load, minimum_amount
+                scheme_objective, launch_date, scheme_load, minimum_amount, sebi_code
             ))
             
-        # Extract mappings
-        sebi_code = scheme_data.get("sebi_code")
-        
-        # Handle nan gracefully
-        if pd.isna(sebi_code) or not str(sebi_code).strip() or str(sebi_code) == "None":
-            sebi_code = None
-        else:
-            sebi_code = str(sebi_code).strip()
+        # Extract mappings (sebi_code was extracted above if scheme_id is present)
+        # If scheme_id was absent but we still have sebi_code, we extract it here as fallback
+        if 'sebi_code' not in locals():
+            sebi_code_raw = scheme_data.get("sebi_code")
+            if pd.isna(sebi_code_raw) or not str(sebi_code_raw).strip() or str(sebi_code_raw) == "None":
+                sebi_code = None
+            else:
+                sebi_code = str(sebi_code_raw).strip()
             
         if sebi_code:
             amfi_codes_str = scheme_data.get("amfi_codes")
