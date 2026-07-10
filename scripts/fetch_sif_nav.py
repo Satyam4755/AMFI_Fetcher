@@ -10,6 +10,7 @@ from config.settings import AMFI_SIF_URL
 from services.api_client import fetch_text
 from services.parser import extract_schemes
 from services.csv_service import save_to_csv
+from services.historical_nav_service import update_historical_nav
 
 def main():
     print("Starting SIF NAV pipeline...")
@@ -24,11 +25,18 @@ def main():
         if schemes:
             # Step 3: Save to CSV
             today_str = datetime.date.today().strftime("%Y-%m-%d")
-            csv_path = f"data/sif/nav/{today_str}.csv"
+            base_dir = "data/sif/nav"
+            csv_path = f"{base_dir}/{today_str}.csv"
             csv_saved = save_to_csv(schemes, csv_path)
             
-            # Step 4: Complete
+            # Step 4: Complete and update history
             if csv_saved:
+                update_historical_nav(schemes, base_dir=base_dir)
+                
+                # Cleanup (if downloaded as file by some external script)
+                if os.path.exists("SIF_NAVAll.txt"):
+                    os.remove("SIF_NAVAll.txt")
+                    
                 print("Pipeline completed successfully.")
             else:
                 print("Pipeline failed at CSV generation.")
