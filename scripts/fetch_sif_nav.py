@@ -4,29 +4,27 @@ import os
 # Add project root to python path to import modules properly
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from config.settings import AMFI_SIF_URL, CSV_FILE_PATH, DB_FILE_PATH, TABLE_NAME
-from services.api_client import fetch_json
+from config.settings import AMFI_SIF_URL, CSV_FILE_PATH
+from services.api_client import fetch_text
 from services.parser import extract_schemes
 from services.csv_service import save_to_csv
-from services.sqlite_service import save_to_sqlite
 
 def main():
     print("Starting SIF NAV pipeline...")
     
-    # Step 1: Fetch JSON
-    json_data = fetch_json(AMFI_SIF_URL)
+    # Step 1: Fetch Text
+    text_data = fetch_text(AMFI_SIF_URL)
     
-    if json_data:
+    if text_data:
         # Step 2: Parse to flat list
-        schemes = extract_schemes(json_data)
+        schemes = extract_schemes(text_data)
         
         if schemes:
             # Step 3: Save to CSV
             csv_saved = save_to_csv(schemes, CSV_FILE_PATH)
             
-            # Step 4: Save to SQLite
+            # Step 4: Complete
             if csv_saved:
-                save_to_sqlite(CSV_FILE_PATH, DB_FILE_PATH, TABLE_NAME)
                 print("Pipeline completed successfully.")
             else:
                 print("Pipeline failed at CSV generation.")

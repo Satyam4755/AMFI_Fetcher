@@ -1,5 +1,5 @@
 def extract_schemes(data):
-    """Converts the nested AMFI JSON data into a flat list of schemes."""
+    """Parses AMFI NAV text data into a flat list of schemes."""
     if not data:
         return None
         
@@ -7,12 +7,22 @@ def extract_schemes(data):
     all_schemes = []
     
     try:
-        for data_item in data.get("data", []):
-            for category in data_item.get("categories", []):
-                for group in category.get("groups", []):
-                    for scheme in group.get("schemes", []):
-                        all_schemes.append(scheme)
-                        
+        lines = data.splitlines()
+        for line in lines:
+            line = line.strip()
+            # Skip empty lines, headers, or section titles
+            if not line or line.startswith("Scheme Code") or ";" not in line:
+                continue
+                
+            parts = line.split(";")
+            if len(parts) >= 6:
+                scheme = {
+                    "sif_code": parts[0].strip(),
+                    "nav_date": parts[5].strip(),
+                    "nav": parts[4].strip()
+                }
+                all_schemes.append(scheme)
+                
         print(f"Successfully extracted {len(all_schemes)} schemes.")
         return all_schemes
     except Exception as e:
