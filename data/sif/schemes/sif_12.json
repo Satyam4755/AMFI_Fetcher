@@ -1,0 +1,50 @@
+{
+    "sebi_code": "ASIF/O/E/ELSF/25/12/0002/BNDN",
+    "fund_name": "Arudha Equity Long-Short Fund",
+    "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
+    "category": "Equity Long-Short Fund",
+    "potential_risk_class": null,
+    "face_value": "Rs.10/- per unit for Regular and Direct Plan",
+    "listing_details": null,
+    "plans": {
+        "regular": {
+            "growth": {},
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Arudha Equity Long Short Fund Regular Plan-Growth Arudha Equity Long Short Fund Regular Plan-Daily IDCW Arudha Equity Long Short Fund Regular Plan-Weekly IDCW Arudha Equity Long Short Fund Regular Plan-fortnightly IDCW Arudha Equity Long Short Fund Regular Plan-Monthly IDCW Arudha Equity Long Short Fund Regular Plan-Quarterly IDCW Arudha Equity Long Short Fund Regular Plan-Half yearly IDCW Arudha Equity Long Short Fund Regular Plan-Annual IDCW Arudha Equity Long Short Fund Regular Plan-Periodic IDCW Arudha Equity Long Short Fund Direct Plan-Growth Arudha Equity Long Short Fund Direct Plan-Daily IDCW Arudha Equity Long Short Fund Direct Plan-Weekly IDCW Arudha Equity Long Short Fund Direct Plan-fortnightly IDCW Arudha Equity Long Short Fund Direct Plan-Monthly IDCW Arudha Equity Long Short Fund Direct Plan-Quarterly IDCW Arudha Equity Long Short Fund Direct Plan-Half yearly IDCW Arudha Equity Long Short Fund Direct Plan-Annual IDCW Arudha Equity Long Short Fund Direct Plan-Periodic IDCW Arudha Equity Long Short Fund Regular Plan-Daily IDCW (Re-inv) Arudha Equity Long Short Fund Regular Plan-Weekly IDCW (Re-inv) Arudha Equity Long Short Fund Regular Plan-fortnightly IDCW (Re-inv) Arudha Equity Long Short Fund Regular Plan-Monthly IDCW (Re-inv) Arudha Equity Long Short Fund Regular Plan-Quarterly IDCW (Re-inv) Arudha Equity Long Short Fund Regular Plan-Half yearly IDCW (Re-inv) Arudha Equity Long Short Fund Regular Plan-Annual IDCW (Re-inv) Arudha Equity Long Short Fund Regular Plan-Periodic IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-Daily IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-Weekly IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-fortnightly IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-Monthly IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-Quarterly IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-Half yearly IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-Annual IDCW (Re-inv) Arudha Equity Long Short Fund Direct Plan-Periodic IDCW (Re",
+                "amfi_code": "78",
+                "isin_code": "Arudha Equity Long Short Fund Reg-Growth- INF194K30358 Arudha Equity Long Short Fund Reg-Daily IDCW- INF194K30366 Arudha Equity Long Short Fund Reg-Weekly IDCW- INF194K30374 Arudha Equity Long Short Fund Reg-fortnightly IDCW- INF194K30382 Arudha Equity Long Short Fund Reg-Monthly IDCW- INF194K30390 Arudha Equity Long Short Fund Reg-Quarterly IDCW- INF194K30408 Arudha Equity Long Short Fund Reg-Half yearly IDCW- INF194K30416 Arudha Equity Long Short Fund Reg-Annual IDCW- INF194K30424 Arudha Equity Long Short Fund Reg-Periodic IDCW- INF194K30432 Arudha Equity Long Short Fund Dir-Growth- INF194K30523 Arudha Equity Long Short Fund Dir-Daily IDCW- INF194K30531 Arudha Equity Long Short Fund Dir-Weekly IDCW- INF194K30549 Arudha Equity Long Short Fund Dir-fortnightly IDCW- INF194K30556 Arudha Equity Long Short Fund Dir-Monthly IDCW- INF194K30564 Arudha Equity Long Short Fund Dir-Quarterly IDCW- INF194K30572 Arudha Equity Long Short Fund Dir-Half yearly IDCW- INF194K30580 Arudha Equity Long Short Fund Dir-Annual IDCW- INF194K30598 Arudha Equity Long Short Fund Dir-Periodic IDCW- INF194K30606 Arudha Equity Long Short Fund Reg-Daily IDCW (Re-inv)- INF194K30440 Arudha Equity Long Short Fund Reg-Weekly IDCW (Re-inv)- INF194K30457 Arudha Equity Long Short Fund Reg-fortnightly IDCW (Re-inv)- INF194K30465 Arudha Equity Long Short Fund Reg-Monthly IDCW (Re-inv)- INF194K30473 Arudha Equity Long Short Fund Reg-Quarterly IDCW (Re-inv)- INF194K30481 Arudha Equity Long Short Fund Reg-Half yearly IDCW (Re-inv)- INF194K30499 Arudha Equity Long Short Fund Reg-Annual IDCW (Re-inv)- INF194K30507 Arudha Equity Long Short Fund Reg-Periodic IDCW (Re-inv)- INF194K30515 Arudha Equity Long Short Fund Dir-Daily IDCW (Re-inv)- INF194K30614 Arudha Equity Long Short Fund Dir-Weekly IDCW (Re-inv)- INF194K30622 Arudha Equity Long Short Fund Dir-fortnightly IDCW (Re-inv)- INF194K30630 Arudha Equity Long Short Fund Dir-Monthly IDCW (Re-inv)- INF194K30648 Arudha Equity Long Short Fund Dir-Quarterly IDCW (Re-inv)- INF194K30655 Arudha Equity Long Short Fund Dir-Half yearly IDCW (Re-inv)- INF194K30663 Arudha Equity Long Short Fund Dir-Annual IDCW (Re-inv)- INF194K30671 Arudha Equity Long Short Fund Dir-Periodic IDCW (Re-inv)- INF194K30689"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Equity Portion: FM 1 - Mr. Nilesh Saha\nDebt Portion: FM 1 - Mr. Brijesh Shah",
+            "type": "Equity Portion: FM 1 - Comanage\nDebt Portion: FM 1 - Comanage",
+            "from": "Equity Portion: FM 1 - 30-Mar-2026\nDebt Portion: FM 1 - 30-Mar-2026"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "Rs.10,00,000",
+        "application_multiple": "Re. 1/- thereafter",
+        "minimum_additional_amount": "Rs.10,000",
+        "additional_multiple": "Any Amount",
+        "minimum_redemption_amount": "Rs.10,000",
+        "minimum_redemption_units": "Any Amount"
+    },
+    "exit_load": "Entry Load: Nil; Exit Load: If redeemed/switched out on or within 30 days from the date of allotment: 0.50% of the applicable NAV; If redeemed/switched out after 30 days from date of allotment - Nil.",
+    "registrar": "Computer Age Management Services Pvt. Ltd.(CAMS)",
+    "custodian": "Axis Bank",
+    "auditor": "S.R.Batliboi & Co. LLP"
+}

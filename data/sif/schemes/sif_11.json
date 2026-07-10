@@ -1,0 +1,51 @@
+{
+    "sebi_code": "DYNA/O/E/ELSF/25/12/0001/360O",
+    "fund_name": "DynaSIF Equity Long - Short Fund",
+    "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
+    "category": "Equity Long-Short Fund",
+    "potential_risk_class": "N.A",
+    "face_value": "Rs. 10 Per unit",
+    "listing_details": "Not Listed",
+    "plans": {
+        "regular": {
+            "growth": {},
+            "idcw": {
+                "payout": {
+                    "name": "INF579M30042",
+                    "amfi_code": "60"
+                },
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Regular Plan-Growth Regular Plan - IDCW Payout Regular Plan - IDCW Reinvestment Direct Plan-Growth Direct Plan - IDCW Payout Direct Plan - IDCW Reinvestment"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Harsh Aggarwal , Mr. Pranav Mise",
+            "type": "Mr. Harsh Aggarwal - Primary, Mr.Pranav Mise - Comanage",
+            "from": "Mr. Harsh Aggarwal - 25 Feb 2026, Mr.Pranav Mise - 24th April, 2026"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "1000000",
+        "application_multiple": "1",
+        "minimum_additional_amount": "20000",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "Not Applicable",
+        "minimum_redemption_units": "Not Applicable"
+    },
+    "exit_load": "0.5% if redeemed within 3 months from date of allotment of units .\n No exit load is payable for redemption after 3 months from the date of allotment of \nunits",
+    "registrar": "Computer Age Management Services Limited (CAMS)",
+    "custodian": "Deutsche Bank AG",
+    "auditor": "PricewaterhouseCoo pers Pvt Ltd"
+}

@@ -14,10 +14,20 @@ def parse_summary_xls(xls_path: str) -> list[dict]:
         return []
         
     try:
-        # Read the Excel file.
-        # We assume pandas will pick the correct engine (xlrd for .xls, openpyxl for .xlsx)
+        xls = pd.ExcelFile(xls_path)
+        sheet_names = xls.sheet_names
+        selected_sheet = sheet_names[0] if sheet_names else 'Unknown'
+        
+        print("\n--- DEBUG LOGGING ---")
+        print(f"Workbook: {os.path.basename(xls_path)}")
+        print(f"Sheets: {sheet_names}")
+        print(f"Selected sheet: {selected_sheet}")
+        
         df = pd.read_excel(xls_path)
         
+        if not df.empty:
+            print(f"\nDetected headers:\n{df.columns.tolist()}")
+            
         if df.empty:
             logger.info(f"File {xls_path} contains no rows.")
             return []
@@ -43,6 +53,14 @@ def parse_summary_xls(xls_path: str) -> list[dict]:
                 else:
                     cleaned_row[k] = v
             cleaned_list.append(cleaned_row)
+            
+        print(f"\nRows parsed: {len(cleaned_list)}")
+        if cleaned_list:
+            import json
+            def safe_conv(o): return str(o)
+            print("\nFirst 5 parsed rows:")
+            print(json.dumps(cleaned_list[:5], indent=2, default=safe_conv))
+            print("---------------------\n")
             
         logger.info(f"Successfully parsed {len(cleaned_list)} rows from {xls_path}.")
         return cleaned_list

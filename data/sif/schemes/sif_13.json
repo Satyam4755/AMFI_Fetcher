@@ -1,0 +1,50 @@
+{
+    "sebi_code": null,
+    "fund_name": null,
+    "fund_type": null,
+    "category": null,
+    "potential_risk_class": null,
+    "face_value": "10",
+    "listing_details": "National Stock Exchange of India Limited (NSE)",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "Growth Option",
+                "amfi_code": "Apex Hybrid Long-Short Fund - Direct - SIF-83                                                                                                                                                                                                                                                                                                                                                                                                                                          Apex Hybrid Long-Short Fund - Direct - Reinvestment of IDCW- SIF-83                                                                                                                                                                                                                                                                                                                                                                                 Apex Hybrid Long-Short Fund - Regular - Growth- SIF-80                                                                                                                                                                                                                                                                                                                                                                                                                        Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- SIF-81                                                                                                                                                                                                                                                                                                                                                                                                           Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- SIF-81                                                                                                                                                                                                                                                                                                                                                                                        Apex Hybrid Long-Short Fund-Direct Growth- SIF-79",
+                "isin_code": "Apex Hybrid Long-Short Fund - Direct - Payout of IDCW- INF209K30024                                                                                                                                                                                                                                                                                                                                                                                                             Apex Hybrid Long-Short Fund - Direct - Reinvestment of IDCW- INF209K30032                                                                                                                                                                                                                                                                                                                                                                  Apex Hybrid Long-Short Fund - Regular - Growth- INF209K30040                                                                                                                                                                                                                                                                                                                                                                                                   Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- INF209K30057                                                                                                                                                                                                                                                                                                                                                                                      Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- INF209K30065                                                                                                                                                                                                                                                                                                                                                                     Apex Hybrid Long-Short Fund-Direct Growth- INF209K30016"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {},
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Rohit Karan",
+            "type": "Comanage",
+            "from": "2026-04-02 00:00:00"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "For normal investors - Rs. 10 lakh and in multiples of Re. 1 thereafter subject to the minimum investment threshold guidelines as per the SIF framework. \nFor accredited investors - Rs. 1,00,000",
+        "application_multiple": "Re.1",
+        "minimum_additional_amount": "Rs. 10,000",
+        "additional_multiple": "Re.1",
+        "minimum_redemption_amount": "Rs. 10,000 and in multiples of Re. 1 thereafter.\nThe redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”",
+        "minimum_redemption_units": "No minimum redemption criterion for Unit based redemption"
+    },
+    "exit_load": "For redemption/switch-out of units on or before 90 days from the date of allotment: 0.50% of applicable NAV.\nFor redemption/switch-out of units after 90 days from the date of allotment: Nil.",
+    "registrar": "Computer Age Management Services Limited",
+    "custodian": "Citibank NA",
+    "auditor": "M/s Deloitte Haskins & Sells LLP"
+}

@@ -1,0 +1,79 @@
+{
+    "sebi_code": "ISIF/I/H/AALS/25/11/0003/ICIC",
+    "fund_name": "iSIF Active Asset Allocator Long-Short Fund",
+    "fund_type": "Interval Investment Strategy",
+    "category": "Active Asset Allocator Long-Short Fund",
+    "potential_risk_class": null,
+    "face_value": "10",
+    "listing_details": "Listed on BSE and NSE",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
+                "isin_code": "INF109K30059",
+                "rta_code": "1003"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
+                "isin_code": "INF109K30067",
+                "rta_code": "6003"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Ihab Dalwai",
+            "type": "Primary",
+            "from": "2026-06-05 00:00:00"
+        },
+        {
+            "name": "Ms. Sharmila D’silva",
+            "type": "Primary",
+            "from": "2026-06-05 00:00:00"
+        },
+        {
+            "name": "Ms. Masoomi Jhurmrvala",
+            "type": "Primary",
+            "from": "2026-06-05 00:00:00"
+        },
+        {
+            "name": "Mr. Manish Banthia",
+            "type": "Primary",
+            "from": "2026-06-05 00:00:00"
+        },
+        {
+            "name": "Mr. Akhil Kakkar",
+            "type": "Primary",
+            "from": "2026-06-05 00:00:00"
+        },
+        {
+            "name": "Mr. Gaurav Chikane",
+            "type": "Primary",
+            "from": "2026-06-05 00:00:00"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "•\tMinimum Application/Switch In Amount for first time investor in SIF \n-\tRs. 10,00,000/- and in multiples of Re.1/- thereafter \n-\tFor accredited investor Rs. 10,000/- and in multiples of Re. 1/- thereafter",
+        "application_multiple": null,
+        "minimum_additional_amount": "Rs. 10,000/- (plus in multiples of Re. 1)",
+        "additional_multiple": null,
+        "minimum_redemption_amount": "Any amount subject to provisions of minimum investment threshold as specified below.\n\nMinimum Investment Threshold:\nAggregate investment by an investor across all investment strategies offered by iSIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/-.\nIn case of any request(s) for partial redemption/switch out by the investor/(s), the AMC reserves the right to reject the redemptions entirely if the amount post payout of redemptions falls below Minimum Investment Threshold",
+        "minimum_redemption_units": null
+    },
+    "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 12 months from allotment.\n•NIL - If the amount sought to be redeemed or switched out more than 12 months",
+    "registrar": "Computer Age Management Services Limited",
+    "custodian": "Citibank N.A,HDFC Bank Limited, HSBC Limited and SBI-SG Global Securities Services Private Limited",
+    "auditor": "M/s BSR & Co. LLP"
+}

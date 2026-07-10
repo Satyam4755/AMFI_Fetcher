@@ -1,0 +1,74 @@
+{
+    "sebi_code": "FSIF/O/E/ELSF/25/10/0001/FTMF",
+    "fund_name": "Sapphire Equity Long- Short SIF",
+    "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
+    "category": "Equity Long-Short Fund",
+    "potential_risk_class": "Not applicable",
+    "face_value": "1000",
+    "listing_details": "Not listed",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "Regular - Growth, Income Distribution cum capital withdrawal (IDCW) Plan (Payout and Reinvestment options),",
+                "amfi_code": "SIF-96",
+                "isin_code": "INF090I30014",
+                "rta_code": "INR000002813"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Regular - IDCW Payout",
+                    "amfi_code": "SIF-97",
+                    "isin_code": "INF090I30030",
+                    "rta_code": "INR000002813"
+                },
+                "reinvestment": {
+                    "name": "Regular - IDCW Reinvestment",
+                    "isin_code": "INF090I30022",
+                    "rta_code": "INR000002813"
+                },
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Direct - Growth,  Income Distribution cum capital withdrawal (IDCW) Plan (Payout and Reinvestment options)",
+                "amfi_code": "SIF-95",
+                "isin_code": "INF090I30048",
+                "rta_code": "INR000002813"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Direct - IDCW Payout",
+                    "amfi_code": "SIF-94",
+                    "isin_code": "INF090I30063",
+                    "rta_code": "INR000002813"
+                },
+                "reinvestment": {
+                    "name": "Direct - IDCW Reinvestment",
+                    "isin_code": "INF090I30055",
+                    "rta_code": "INR000002813"
+                },
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Arihant Jain",
+            "type": "Primary",
+            "from": "Arihant Jain: April 29, 2026"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "1000000",
+        "application_multiple": "10000",
+        "minimum_additional_amount": "10000",
+        "additional_multiple": "1000",
+        "minimum_redemption_amount": "10000",
+        "minimum_redemption_units": "Not applicable"
+    },
+    "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",
+    "registrar": "CAMS",
+    "custodian": "Hongkong and Shanghai Banking Corporation Limited (HSBC)",
+    "auditor": "B S R & Co. LLP"
+}

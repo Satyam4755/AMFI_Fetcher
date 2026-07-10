@@ -1,0 +1,51 @@
+{
+    "sebi_code": "TSIF/I/H/HLSF/25/09/0001/TATA",
+    "fund_name": "Titanium Hybrid Long-Short Fund",
+    "fund_type": "Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
+    "category": "Hybrid Long-Short Fund",
+    "potential_risk_class": "Not Applicable",
+    "face_value": "10",
+    "listing_details": "BSE",
+    "plans": {
+        "regular": {
+            "growth": {},
+            "idcw": {
+                "payout": {
+                    "name": "INF277K30021",
+                    "amfi_code": "27"
+                },
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Titanium Hybrid Long-Short Fund - Regular Plan - IDCW,Titanium Hybrid Long-Short Fund - Direct Plan - IDCW,Titanium Hybrid Long-Short Fund - Regular Plan - Growth,Titanium Hybrid Long-Short Fund -Direct Plan"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "FM-1 Suraj Nanda, FM-2 Amit Somani; FM-3 Hasmukh Devji Vishariya",
+            "type": "FM-1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)",
+            "from": "FM-1 17/11/2025, FM-2 17/11/2025, FM-3 17/11/2025,"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh.",
+        "application_multiple": "1",
+        "minimum_additional_amount": "1000",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "500",
+        "minimum_redemption_units": "Not Applicable"
+    },
+    "exit_load": "1. Redemption/Switch-out on or before expiry of 1 year from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 year from the date of allotment-Nil",
+    "registrar": "Computer Age Management Services Limited",
+    "custodian": "ICICI Bank LTD",
+    "auditor": "S.R. Batliboi & CO. LLP"
+}

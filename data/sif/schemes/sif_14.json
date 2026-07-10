@@ -1,0 +1,51 @@
+{
+    "sebi_code": "DYNA/I/H/AALS/25/12/0002/360O",
+    "fund_name": "DynaSIF Active Asset Allocator Long-Short Fund",
+    "fund_type": "Interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
+    "category": "Active Asset Allocator Long-Short Fund",
+    "potential_risk_class": "N.A",
+    "face_value": "Rs. 10 Per unit",
+    "listing_details": "Not Listed",
+    "plans": {
+        "regular": {
+            "growth": {},
+            "idcw": {
+                "payout": {
+                    "name": "INF579M30075",
+                    "amfi_code": "89"
+                },
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Regular Plan-Growth Regular Plan - IDCW Payout Regular Plan - IDCW Reinvestment Direct Plan-Growth Direct Plan - IDCW Payout Direct Plan - IDCW Reinvestment"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Harsh Agarwal, Mr. Milan Mody, Mr. Rahul Khetawat, Mr.Pranav Mise",
+            "type": "Mr. Harsh Agarwal - Primary, Mr. Milan Mody - comanage , Mr. Rahul Khetwat - Comanage, Mr.Pranav Mise - Comanage",
+            "from": "Mr. Harsh Agarwal - 25 Mar 2026, Mr. Milan Mody - 25 Mar 2026, Mr. Rahul Khetawat -  25 Mar 2026, Mr.Pranav Mise - 24th April, 2026"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "1000000",
+        "application_multiple": "1",
+        "minimum_additional_amount": "20000",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "Not Applicable",
+        "minimum_redemption_units": "Not Applicable"
+    },
+    "exit_load": "0.5% if redeemed within 3 months from date of allotment of units .\n No exit load is payable for redemption after 3 months from the date of allotment of \nunits",
+    "registrar": "Computer Age Management Services Limited (CAMS)",
+    "custodian": "Deutsche Bank AG",
+    "auditor": "PricewaterhouseCoo pers Pvt Ltd"
+}

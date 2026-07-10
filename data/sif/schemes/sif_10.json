@@ -1,0 +1,46 @@
+{
+    "sebi_code": "ASIF/I/H/HLSF/25/12/0001/BNDN",
+    "fund_name": "Arudha Hybrid Long-Short Fund",
+    "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
+    "category": "Hybrid Long-Short Fund",
+    "potential_risk_class": null,
+    "face_value": "Rs.10/- per unit for Regular and Direct Plan",
+    "listing_details": "Yes; NSE and BSE",
+    "plans": {
+        "regular": {
+            "growth": {},
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {},
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Debt Portion: FM 1 - Mr. Brijesh Shah, FM 2  - Mr. Debraj Lahiri                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Equity Portion: FM 1 - Mr. Kapil Kankonkar, FM 2 - Mr. Nilesh Saha",
+            "type": "Debt Portion: FM 1 - Comanage, FM 2 - Comanage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Equity Portion: FM 1 - Comanage, FM 2 - Comanage",
+            "from": "Debt Portion: FM 1 - 28-Jan-2026, FM 2 - 28-Jan-2026                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Equity Portion: FM 1 - 28-Jan-2026, FM 2 - 28-Jan-2026"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "Rs.10,00,000",
+        "application_multiple": "Re. 1/- thereafter",
+        "minimum_additional_amount": "Rs.10,000",
+        "additional_multiple": "Any Amount",
+        "minimum_redemption_amount": "Rs.10,000",
+        "minimum_redemption_units": "Any Amount"
+    },
+    "exit_load": "Entry Load: Nil; Exit Load: Nil",
+    "registrar": "Computer Age Management Services Pvt. Ltd.(CAMS)",
+    "custodian": "Axis Bank",
+    "auditor": "S.R.Batliboi & Co. LLP"
+}

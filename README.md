@@ -28,9 +28,10 @@ AMFI_Fetcher/
 │   └── settings.py
 ├── data/
 │   ├── sif/
-│   │   └── nav/
-│   │       └── YYYY-MM-DD.csv
-│   └── sif_scheme.csv
+│   │   ├── nav/
+│   │   │   └── YYYY-MM-DD.csv
+│   │   └── schemes/
+│   │       └── sif_X.json
 ├── scripts/
 │   ├── fetch_scheme_data.py
 │   └── fetch_sif_nav.py
@@ -94,7 +95,7 @@ Every day, GitHub automatically performs:
 `AMFI NAV Text Endpoint` ➔ `fetch_sif_nav.py` ➔ `data/sif/nav/YYYY-MM-DD.csv` (Strict 3-column format: `sif_code,nav_date,nav`)
 
 **Scheme Data:**
-`AMFI Scheme APIs` ➔ `fetch_scheme_data.py` ➔ `data/sif_scheme.csv`
+`AMFI Scheme APIs` ➔ `fetch_scheme_data.py` ➔ `data/sif/schemes/sif_X.json` (One nested JSON per scheme)
 
 These CSV files act as our single source of truth. They are automatically refreshed by GitHub Actions, meaning absolutely **no manual work is required** to fetch new data.
 

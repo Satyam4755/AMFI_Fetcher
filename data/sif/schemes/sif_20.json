@@ -1,0 +1,56 @@
+{
+    "sebi_code": "ARTH/O/E/ELSF/26/03/0001/UNIN",
+    "fund_name": "Arthaya Equity Long Short Fund",
+    "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
+    "category": "Equity Long-Short Fund",
+    "potential_risk_class": "Not applicable",
+    "face_value": "10",
+    "listing_details": "As the Investment Strategy is an open ended strategy, and the units of the Investment Strategy will be offered for subscription and redemption at NAV based prices on all Business Days on an on-going basis providing the required liquidity to investors, units of the Investment Strategy are not proposed to be listed on any stock exchange.  \nHowever, the Trustee reserves the right to list the units of the Investment Strategy on any stock exchange(s) at its sole discretion at a later date.",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "Arthaya Equity Long Short Fund Regular Plan - Growth Option-ELSRG,  Arthaya Equity Long Short Fund Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-ELSRR,  Arthaya Equity Long Short Fund Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option",
+                "amfi_code": "SIF-115",
+                "isin_code": "INF582M30020",
+                "rta_code": "ELSRP"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Arthaya Equity Long Short Fund Direct Plan - Growth Option-ELSDG,   Arthaya Equity Long Short Fund Direct Plan - Reinvestment of IDCW Option-ELSDR,  Arthaya Equity Long Short Fund Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option",
+                "amfi_code": "SIF-113",
+                "isin_code": "INF582M30053",
+                "rta_code": "ELSDP"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "FM 1 - Mr.Rajesh Aynor, FM 2 - Mr.Hiten Bhadra(for Arbitrage portion)",
+            "type": "FM 1 - Co-manage, FM 2 - Co-manage",
+            "from": "FM 1 - 25-05-2026, FM 2 - 25-05-2026"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "100000",
+        "application_multiple": "1",
+        "minimum_additional_amount": "10000",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "1000",
+        "minimum_redemption_units": "Units Equivalent to Rs. 1000"
+    },
+    "exit_load": "1% if redeemed or switched out on or before completion of 1 year from the date of allotment of units. Nil if redeemed or switched out after completion of 1 year from the date of allotment of units.",
+    "registrar": "Computer Age Management Services Limited (CAMS)",
+    "custodian": "ICICI BANK LIMITED",
+    "auditor": "M/s S.R Batliboi & Co. LLP"
+}

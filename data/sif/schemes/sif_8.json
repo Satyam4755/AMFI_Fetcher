@@ -1,0 +1,62 @@
+{
+    "sebi_code": "ISIF/O/E/EELS/25/11/0002/ICIC",
+    "fund_name": "iSIF Equity Ex-Top 100 Long-Short Fund",
+    "fund_type": "Open Ended Investment Strategy",
+    "category": "Equity Ex-Top 100 Long-Short Fund",
+    "potential_risk_class": null,
+    "face_value": "10",
+    "listing_details": null,
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Growth",
+                "rta_code": "1001"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Direct Plan - Growth",
+                "rta_code": "6001"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Sankaran Naren",
+            "type": "Primary",
+            "from": "2026-02-04 00:00:00"
+        },
+        {
+            "name": "Mr. Manan Tijoriwala",
+            "type": "Primary",
+            "from": "2026-02-04 00:00:00"
+        },
+        {
+            "name": "Ms. Divya Jain",
+            "type": "Primary",
+            "from": "2026-02-04 00:00:00"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "•\tMinimum amount for other than accredited investor 10,00,000/- and in multiples of Re.1/- thereafter \n•\tMinimum amount for accredited investor: Rs. 10,000/- and in multiples of Re. 1/- thereafter",
+        "application_multiple": null,
+        "minimum_additional_amount": "Rs. 10,000/- (plus in multiples of Re. 1)",
+        "additional_multiple": null,
+        "minimum_redemption_amount": "Any amount subject to provisions of minimum investment threshold as specified below.\n\nMinimum Investment Threshold:\nAggregate investment by an investor across all investment strategies offered by iSIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/-n case of any request(s) for partial redemption/switch out by the investor/(s), the AMC reserves the right to reject the redemptions entirely if the amount post payout of redemptions falls below Minimum Investment Threshold.",
+        "minimum_redemption_units": null
+    },
+    "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 12 months from allotment.\n•NIL - If the amount sought to be redeemed or switched out more than 12 months",
+    "registrar": "Computer Age Management Services Limited",
+    "custodian": "Citibank N.A,HDFC Bank Limited, HSBC Limited and SBI-SG Global Securities Services Private Limited",
+    "auditor": "M/s BSR & Co. LLP"
+}

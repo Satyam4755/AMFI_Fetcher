@@ -1,0 +1,67 @@
+{
+    "sebi_code": "WSIF/O/E/EELS/26/01/0002/TWCF",
+    "fund_name": "WSIF Equity Ex-Top 100 Long-Short Fund",
+    "fund_type": "An open ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks",
+    "category": "Equity Ex-Top 100 Long-Short Fund",
+    "potential_risk_class": "Not applicable",
+    "face_value": "Rs. 10.",
+    "listing_details": "Not applicable",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-GROWTH",
+                "amfi_code": "SIF-107 , SIF-104, SIF-105, SIF-106",
+                "isin_code": "INF2F0030015"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities:",
+                    "amfi_code": "SIF-107 , SIF-104, SIF-105, SIF-106",
+                    "isin_code": "INF2F0030023"
+                },
+                "reinvestment": {
+                    "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-IDCW-REINVESTMENT",
+                    "isin_code": "INF2F0030031"
+                },
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH",
+                "isin_code": "INF2F0030049"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Plans:Regular and Direct. Each Plan offers the following sub",
+                    "amfi_code": "SIF-107 , SIF-104, SIF-105, SIF-106",
+                    "isin_code": "INF2F0030056"
+                },
+                "reinvestment": {
+                    "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-IDCW-REINVESTMENT",
+                    "isin_code": "INF2F0030064"
+                },
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Chinmay Sathe",
+            "type": "Primary (Equity portion)",
+            "from": "Managing Since Inception"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "10,00,000/-",
+        "application_multiple": "Rs 100/-",
+        "minimum_additional_amount": "Rs 10000/-",
+        "additional_multiple": "100",
+        "minimum_redemption_amount": "Rs 1000/-",
+        "minimum_redemption_units": "100"
+    },
+    "exit_load": "NIL",
+    "registrar": "KFin Technologies Ltd (Kfin)",
+    "custodian": "HDFC Bank Limited",
+    "auditor": "S.R. Batliboi & Co. LLP – Chartered Accountants"
+}
