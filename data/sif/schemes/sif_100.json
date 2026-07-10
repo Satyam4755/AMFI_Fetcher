@@ -10,33 +10,33 @@
         "regular": {
             "growth": {
                 "name": "Titanium Equity Long-Short Fund Regular Plan Growth",
-                "isin_code": "INF277K30070",
-                "rta_code": "TEG"
+                "isin_code": "INF277K30070"
             },
             "idcw": {
                 "payout": {
                     "name": "Titanium Equity Long-Short Fund Regular Plan IDCW Payout",
                     "amfi_code": "100",
-                    "isin_code": "INF277K30096",
-                    "rta_code": "TEDP"
+                    "isin_code": "INF277K30096"
                 },
-                "reinvestment": {},
+                "reinvestment": {
+                    "name": "Titanium Equity Long-Short Fund Regular IDCW Reinvestment"
+                },
                 "transfer": {}
             }
         },
         "direct": {
             "growth": {
                 "name": "Titanium Equity Long-Short Fund Direct Plan Growth",
-                "isin_code": "INF277K30104",
-                "rta_code": "TEGZ"
+                "isin_code": "INF277K30104"
             },
             "idcw": {
                 "payout": {
                     "name": "Titanium Equity Long-Short Fund Direct Plan IDCW Payout",
-                    "isin_code": "INF277K30120",
-                    "rta_code": "TEDZP"
+                    "isin_code": "INF277K30120"
                 },
-                "reinvestment": {},
+                "reinvestment": {
+                    "name": "Titanium Equity Long-Short Fund Direct IDCW Reinvestment"
+                },
                 "transfer": {}
             }
         }

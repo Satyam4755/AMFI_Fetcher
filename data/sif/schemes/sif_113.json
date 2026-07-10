@@ -9,10 +9,9 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "Arthaya Equity Long Short Fund Regular Plan - Growth Option-ELSRG,  Arthaya Equity Long Short Fund Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-ELSRR,  Arthaya Equity Long Short Fund Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option",
+                "name": "Regular Plan - Growth Option-INF582M30012, Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-INF582M30038, Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option",
                 "amfi_code": "SIF-115",
-                "isin_code": "INF582M30020",
-                "rta_code": "ELSRP"
+                "isin_code": "INF582M30020"
             },
             "idcw": {
                 "payout": {},
@@ -22,10 +21,9 @@
         },
         "direct": {
             "growth": {
-                "name": "Arthaya Equity Long Short Fund Direct Plan - Growth Option-ELSDG,   Arthaya Equity Long Short Fund Direct Plan - Reinvestment of IDCW Option-ELSDR,  Arthaya Equity Long Short Fund Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option",
+                "name": "Direct Plan - Growth Option-INF582M30046,  Direct Plan - Reinvestment of IDCW Option-INF582M30061, Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option",
                 "amfi_code": "SIF-113",
-                "isin_code": "INF582M30053",
-                "rta_code": "ELSDP"
+                "isin_code": "INF582M30053"
             },
             "idcw": {
                 "payout": {},

@@ -119,22 +119,35 @@ def build_scheme_json(api_data, rows):
             line = line.strip().replace('–', '-')
             if not line: continue
             
-            # Remove leading numbering like "1."
-            line = re.sub(r'^\d+[\.\)]\s*', '', line).strip()
+            # Remove leading numbering and bullets like "1.", "\uf0b7"
+            line = re.sub(r'^[\d\.\)\uf0b7\-\s]+', '', line).strip()
             
             code = None
             name = line
             parts = line.split('-')
+            
+            # Try to extract code from the end or beginning
             if len(parts) > 1:
                 last_part = parts[-1].strip()
-                if re.match(r'^(SIF|INF|S)\S*', last_part, re.IGNORECASE) or ' ' not in last_part:
-                    if len(parts) >= 3 and re.match(r'^(SIF|S)\b', parts[-2].strip() + "-" + last_part, re.IGNORECASE):
+                first_part = parts[0].strip()
+                
+                # Check end - a valid code should NOT contain spaces, AND it should look like a code (alphanumeric with hyphens)
+                if ' ' not in last_part and len(last_part) >= 3 and not last_part.isalpha():
+                    # It's highly likely a code (e.g. SIF-107, INF123, 100)
+                    if len(parts) >= 3 and ' ' not in parts[-2].strip() and re.match(r'^(SIF|S)$', parts[-2].strip(), re.IGNORECASE):
                         code = parts[-2].strip() + "-" + last_part
                         name = "-".join(parts[:-2]).strip()
                     else:
                         code = last_part
                         name = "-".join(parts[:-1]).strip()
-                        
+                # Check beginning (e.g. INF754K30029 - Direct Plan or SIF-9 - Altiva)
+                elif len(parts) >= 2 and ' ' not in parts[1].strip() and re.match(r'^(SIF|S)$', first_part, re.IGNORECASE):
+                    code = first_part + "-" + parts[1].strip()
+                    name = "-".join(parts[2:]).strip()
+                elif ' ' not in first_part and len(first_part) >= 3 and not first_part.isalpha():
+                    code = first_part
+                    name = "-".join(parts[1:]).strip()
+                    
             name_lower = name.lower()
             plan_type = "direct" if "direct" in name_lower else "regular"
             if "growth" in name_lower:
@@ -148,35 +161,42 @@ def build_scheme_json(api_data, rows):
                 ref = plans[plan_type]["idcw"][subtype]
                 category = "idcw"
                 
-            if "name" not in ref or len(name) > len(ref["name"]):
-                ref["name"] = name
+            # STRICT NAMING: Only adopt a name if we actually found a code on this line (guarantees it's a real plan string), 
+            # OR if we don't have a name yet and it's from 'option names' (fallback).
+            if code or (code_key is None and "name" not in ref):
+                # Only overwrite if the new name seems better/more complete, or we didn't have one from a coded line yet
+                if "name" not in ref or (code and len(name) > len(ref.get("name", ""))):
+                    # Clean up trailing non-alphanumeric chars
+                    clean_name = re.sub(r'[^a-zA-Z0-9\)]+$', '', name).strip()
+                    if clean_name:
+                        ref["name"] = clean_name
                 
             if code_key and code:
                 ref[code_key] = code
 
-            # Temporarily print the mapped plan as requested for debugging
-            if not getattr(build_scheme_json, "has_printed_plans", False):
-                print(f"\nPlan:")
-                print(f"Name: {name}")
-                if code_key == "amfi_code": print(f"AMFI: {code}")
-                if code_key == "isin_code": print(f"ISIN: {code}")
-                if code_key == "rta_code": print(f"RTA: {code}")
-                if subtype:
-                    print(f"Mapped to:\n{plan_type} -> {category} -> {subtype}")
-                else:
-                    print(f"Mapped to:\n{plan_type} -> {category}")
-
     # Parse all potential plan sources
     sebi_code_val = get_val(["sebi codes"])
-    if not getattr(build_scheme_json, "has_printed_plans", False):
-        print(f"\nProcessing scheme:\n{sebi_code_val}")
         
     parse_plan_lines(get_val(["option names"]), None)
     parse_plan_lines(get_val(["amfi codes"]), "amfi_code")
     parse_plan_lines(get_val(["isins"]), "isin_code")
     parse_plan_lines(get_val(["rta code"]), "rta_code")
     
-    build_scheme_json.has_printed_plans = True
+    # Extract primary AMFI code from parsed plans
+    primary_amfi_code = None
+    for p_type in ["direct", "regular"]:
+        if primary_amfi_code: break
+        if "amfi_code" in plans[p_type]["growth"]:
+            primary_amfi_code = plans[p_type]["growth"]["amfi_code"]
+            break
+        for subtype in ["payout", "reinvestment", "transfer"]:
+            if "amfi_code" in plans[p_type]["idcw"][subtype]:
+                primary_amfi_code = plans[p_type]["idcw"][subtype]["amfi_code"]
+                break
+                
+    if primary_amfi_code:
+        # If it's something like "SIF-107 , SIF-104", take only the first one
+        primary_amfi_code = primary_amfi_code.replace(',', ' ').replace(';', ' ').split()[0]
 
     # Construct the final nested payload
     result = {
@@ -213,4 +233,4 @@ def build_scheme_json(api_data, rows):
         print(json.dumps(result, indent=2))
         build_scheme_json.has_printed = True
     
-    return result
+    return result, primary_amfi_code

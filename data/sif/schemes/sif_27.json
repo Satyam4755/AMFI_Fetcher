@@ -11,8 +11,7 @@
             "growth": {},
             "idcw": {
                 "payout": {
-                    "name": "INF277K30021",
-                    "amfi_code": "27"
+                    "amfi_code": "SIF-27"
                 },
                 "reinvestment": {},
                 "transfer": {}
@@ -20,7 +19,7 @@
         },
         "direct": {
             "growth": {
-                "name": "Titanium Hybrid Long-Short Fund - Regular Plan - IDCW,Titanium Hybrid Long-Short Fund - Direct Plan - IDCW,Titanium Hybrid Long-Short Fund - Regular Plan - Growth,Titanium Hybrid Long-Short Fund -Direct Plan"
+                "name": "Titanium Hybrid Long-Short Fund - Regular Plan - IDCW,Titanium Hybrid Long-Short Fund - Direct Plan - IDCW,Titanium Hybrid Long-Short Fund - Regular Plan - Growth,Titanium Hybrid Long-Short Fund -Direct Plan - Growth"
             },
             "idcw": {
                 "payout": {},

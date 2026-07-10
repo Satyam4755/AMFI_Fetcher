@@ -1,5 +1,18 @@
 import requests
 
+def fetch_all_sifs():
+    """
+    Fetches the complete list of all SIFs from AMFI.
+    """
+    url = "https://www.amfiindia.com/api/populate-sif"
+    try:
+        response = requests.get(url, timeout=10)
+        if response.status_code == 200:
+            return response.json()
+    except Exception as e:
+        print(f"API Request failed for populate-sif: {e}")
+    return []
+
 def fetch_investment_strategies(sif_id):
     """
     Calls the AMFI populate-investment-strategy API for a specific SIF.

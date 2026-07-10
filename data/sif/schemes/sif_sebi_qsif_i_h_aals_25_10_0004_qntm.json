@@ -1,29 +1,27 @@
 {
-    "sebi_code": "QSIF/O/E/EELS/25/08/0003/QNTM",
-    "fund_name": "qsif Equity Ex-Top 100 Long-Short Fund",
-    "fund_type": "An open-ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks. (Ex-Top 100)",
-    "category": "Equity Ex-Top 100 Long-Short Fund",
+    "sebi_code": "QSIF/I/H/AALS/25/10/0004/QNTM",
+    "fund_name": "qsif Active Asset Allocator Long-Short Fund",
+    "fund_type": "Interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
+    "category": "Active Asset Allocator Long-Short Fund",
     "potential_risk_class": "N.A.",
     "face_value": "10",
-    "listing_details": "N.A.",
+    "listing_details": "Listed on NSE",
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option - Regular Plan",
-                "amfi_code": "SIF-25",
-                "isin_code": "INF966L30183",
+                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Regular Plan",
+                "isin_code": "INF966L30217",
                 "rta_code": "905"
             },
             "idcw": {
                 "payout": {
-                    "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option - Regular Plan",
-                    "amfi_code": "SIF-26",
-                    "isin_code": "INF966L30191",
+                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option - Regular Plan",
+                    "isin_code": "INF966L30225",
                     "rta_code": "905"
                 },
                 "reinvestment": {
                     "name": "IDCW Reinvestment - Regular Plan",
-                    "isin_code": "INF966L30209",
+                    "isin_code": "INF966L30233",
                     "rta_code": "905"
                 },
                 "transfer": {}
@@ -31,21 +29,19 @@
         },
         "direct": {
             "growth": {
-                "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option - Direct Plan",
-                "amfi_code": "SIF-23",
-                "isin_code": "INF966L30159",
+                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Direct Plan",
+                "isin_code": "INF966L30241",
                 "rta_code": "905"
             },
             "idcw": {
                 "payout": {
-                    "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option - Direct Plan",
-                    "amfi_code": "SIF-24",
-                    "isin_code": "INF966L30167",
+                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option - Direct Plan",
+                    "isin_code": "INF966L30258",
                     "rta_code": "905"
                 },
                 "reinvestment": {
                     "name": "IDCW Reinvestment - Direct Plan",
-                    "isin_code": "INF966L30175",
+                    "isin_code": "INF966L30266",
                     "rta_code": "905"
                 },
                 "transfer": {}
@@ -56,27 +52,27 @@
         {
             "name": "Sandeep Tandon",
             "type": "Primary",
-            "from": "2025-11-12 00:00:00"
-        },
-        {
-            "name": "Ankit Pande",
-            "type": "Co manage",
-            "from": "2025-11-12 00:00:00"
-        },
-        {
-            "name": "Sameer Kate",
-            "type": "Co manage",
-            "from": "2025-11-12 00:00:00"
-        },
-        {
-            "name": "Sanjeev Sharma",
-            "type": "Co manage",
-            "from": "2025-11-12 00:00:00"
+            "from": "2026-04-21 00:00:00"
         },
         {
             "name": "Jignesh Shah",
             "type": "Co manage",
-            "from": "2026-02-20 00:00:00"
+            "from": "2026-04-21 00:00:00"
+        },
+        {
+            "name": "Ankit Pande",
+            "type": "Co manage",
+            "from": "2026-04-21 00:00:00"
+        },
+        {
+            "name": "Sameer Kate",
+            "type": "Co manage",
+            "from": "2026-04-21 00:00:00"
+        },
+        {
+            "name": "Sanjeev Sharma",
+            "type": "Co manage",
+            "from": "2026-04-21 00:00:00"
         }
     ],
     "investment_limits": {
