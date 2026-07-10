@@ -4,7 +4,9 @@ import os
 # Add project root to python path to import modules properly
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from config.settings import AMFI_SIF_URL, CSV_FILE_PATH
+import datetime
+
+from config.settings import AMFI_SIF_URL
 from services.api_client import fetch_text
 from services.parser import extract_schemes
 from services.csv_service import save_to_csv
@@ -21,7 +23,9 @@ def main():
         
         if schemes:
             # Step 3: Save to CSV
-            csv_saved = save_to_csv(schemes, CSV_FILE_PATH)
+            today_str = datetime.date.today().strftime("%Y-%m-%d")
+            csv_path = f"data/sif/nav/{today_str}.csv"
+            csv_saved = save_to_csv(schemes, csv_path)
             
             # Step 4: Complete
             if csv_saved:

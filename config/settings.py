@@ -1,7 +1,6 @@
 # for NAV data
 
 AMFI_SIF_URL = "https://portal.amfiindia.com/spages/SIF_NAVAll.txt"
-CSV_FILE_PATH = "data/sif_nav.csv"
 
 
 # for scheme data

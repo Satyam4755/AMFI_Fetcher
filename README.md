@@ -27,7 +27,9 @@ AMFI_Fetcher/
 │   ├── __init__.py
 │   └── settings.py
 ├── data/
-│   ├── sif_nav.csv
+│   ├── sif/
+│   │   └── nav/
+│   │       └── YYYY-MM-DD.csv
 │   └── sif_scheme.csv
 ├── scripts/
 │   ├── fetch_scheme_data.py
@@ -89,7 +91,7 @@ python scripts/fetch_scheme_data.py
 Every day, GitHub automatically performs:
 
 **NAV Data:**
-`AMFI NAV Text Endpoint` ➔ `fetch_sif_nav.py` ➔ `data/sif_nav.csv` (Strict 3-column format: `sif_code,nav_date,nav`)
+`AMFI NAV Text Endpoint` ➔ `fetch_sif_nav.py` ➔ `data/sif/nav/YYYY-MM-DD.csv` (Strict 3-column format: `sif_code,nav_date,nav`)
 
 **Scheme Data:**
 `AMFI Scheme APIs` ➔ `fetch_scheme_data.py` ➔ `data/sif_scheme.csv`
