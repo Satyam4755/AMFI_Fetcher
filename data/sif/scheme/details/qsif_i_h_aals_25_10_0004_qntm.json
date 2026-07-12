@@ -1,0 +1,90 @@
+{
+    "sebi_code": "QSIF/I/H/AALS/25/10/0004/QNTM",
+    "fund_name": "qsif Active Asset Allocator Long-Short Fund",
+    "fund_type": "Interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
+    "category": "Active Asset Allocator Long-Short Fund",
+    "potential_risk_class": "N.A.",
+    "face_value": "10",
+    "listing_details": "Listed on NSE",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Regular Plan",
+                "isin_code": "INF966L30217",
+                "rta_code": "905"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option - Regular Plan",
+                    "isin_code": "INF966L30225",
+                    "rta_code": "905"
+                },
+                "reinvestment": {
+                    "name": "IDCW Reinvestment - Regular Plan",
+                    "isin_code": "INF966L30233",
+                    "rta_code": "905"
+                },
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Direct Plan",
+                "isin_code": "INF966L30241",
+                "rta_code": "905"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option - Direct Plan",
+                    "isin_code": "INF966L30258",
+                    "rta_code": "905"
+                },
+                "reinvestment": {
+                    "name": "IDCW Reinvestment - Direct Plan",
+                    "isin_code": "INF966L30266",
+                    "rta_code": "905"
+                },
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Sandeep Tandon",
+            "type": "Primary",
+            "from": "2026-04-21 00:00:00"
+        },
+        {
+            "name": "Jignesh Shah",
+            "type": "Co manage",
+            "from": "2026-04-21 00:00:00"
+        },
+        {
+            "name": "Ankit Pande",
+            "type": "Co manage",
+            "from": "2026-04-21 00:00:00"
+        },
+        {
+            "name": "Sameer Kate",
+            "type": "Co manage",
+            "from": "2026-04-21 00:00:00"
+        },
+        {
+            "name": "Sanjeev Sharma",
+            "type": "Co manage",
+            "from": "2026-04-21 00:00:00"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "Rs. 1000000/-",
+        "application_multiple": "1",
+        "minimum_additional_amount": "Rs. 1000/-",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "Rs. 1000/-",
+        "minimum_redemption_units": "--"
+    },
+    "exit_load": "Exit Load:  1% if redeemed/switched out on or before completion of 15 days from the date of allotment of units\nNo Exit Load is payable if Units are redeemed / switched-out after 15 days  from the date of allotment",
+    "registrar": "KFin Technologies Limited",
+    "custodian": "HDFC Bank Limited",
+    "auditor": "M M Nissim & Co. LLP"
+}

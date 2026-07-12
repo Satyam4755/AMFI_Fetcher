@@ -4,7 +4,11 @@ import json
 import sys
 
 def main():
-    json_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif", "schemes")
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    json_dir = os.path.join(base_dir, "data", "sif", "scheme", "details")
+    daily_nav_dir = os.path.join(base_dir, "data", "sif", "scheme", "nav", "daily")
+    hist_nav_dir = os.path.join(base_dir, "data", "sif", "scheme", "nav", "historical")
+    
     files = glob.glob(os.path.join(json_dir, "*.json"))
     
     total_jsons = len(files)
@@ -19,6 +23,9 @@ def main():
     plans_missing_isin = 0
     plans_missing_rta = 0
     
+    failed_validations = []
+    
+    # 1. Validate JSON Files
     for file in files:
         with open(file, 'r') as f:
             try:
@@ -28,10 +35,25 @@ def main():
                 continue
                 
         sebi = data.get("sebi_code")
+        
+        # Verify JSON filename matches SEBI Code normalized
+        import re
         if sebi:
+            expected_name = str(sebi).lower()
+            expected_name = re.sub(r'[^a-z0-9]', '_', expected_name)
+            expected_name = re.sub(r'_+', '_', expected_name)
+            expected_name = expected_name.strip('_') + ".json"
+            
+            actual_name = os.path.basename(file)
+            if actual_name != expected_name:
+                failed_validations.append(f"JSON Filename mismatch: {actual_name} != {expected_name}")
+
             if sebi in sebi_codes:
                 duplicate_sebi_count += 1
             sebi_codes.add(sebi)
+        else:
+            if not os.path.basename(file).startswith("s_"):
+                failed_validations.append(f"Missing sebi_code inside {os.path.basename(file)}")
             
         plans = data.get("plans", {})
         
@@ -70,11 +92,30 @@ def main():
     print(f"Plans Missing ISIN: {plans_missing_isin}")
     print(f"Plans Missing RTA: {plans_missing_rta}")
     
+    # 2. Validate CSV Files
+    def validate_csvs(directory):
+        if not os.path.exists(directory):
+            failed_validations.append(f"Missing directory: {directory}")
+            return
+        for csv_file in glob.glob(os.path.join(directory, "*.csv")):
+            with open(csv_file, 'r', encoding='utf-8') as f:
+                header = f.readline().strip()
+                if header != "sif_code,nav_date,nav":
+                    failed_validations.append(f"Invalid columns in {csv_file}: {header}")
+                    
+    validate_csvs(daily_nav_dir)
+    validate_csvs(hist_nav_dir)
+    
     if duplicate_sebi_count > 0:
-        print("FAIL: Duplicate SEBI Codes detected.")
+        failed_validations.append("Duplicate SEBI Codes detected.")
+        
+    if failed_validations:
+        print("\nFAIL: Validation errors found:")
+        for err in failed_validations:
+            print(f" - {err}")
         sys.exit(1)
         
-    print("SUCCESS: JSON Validation Passed.")
+    print("SUCCESS: JSON & CSV Validation Passed.")
 
 if __name__ == "__main__":
     main()

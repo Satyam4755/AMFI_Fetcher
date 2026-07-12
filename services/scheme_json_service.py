@@ -4,10 +4,10 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def save_scheme_to_json(sif_id, scheme_dict, base_dir="data/sif/schemes"):
+def save_scheme_to_json(sif_id, scheme_dict, base_dir="data/sif/scheme/details"):
     """
     Saves the deeply nested scheme dictionary into a single JSON file.
-    The filename is formatted as sif_{sif_id}.json.
+    The filename is exactly as passed in `sif_id` (assumed to be the normalized SEBI code).
     """
     if not scheme_dict:
         logger.warning(f"No scheme data provided for SIF {sif_id}.")
@@ -16,16 +16,8 @@ def save_scheme_to_json(sif_id, scheme_dict, base_dir="data/sif/schemes"):
     try:
         os.makedirs(base_dir, exist_ok=True)
         
-        # Format the filename to match sif_120.json (from SIF-120 or just 120)
-        sif_id_str = str(sif_id).lower()
-        if sif_id_str.startswith("sif-"):
-            safe_name = sif_id_str.replace("-", "_")
-        elif sif_id_str.startswith("sif_"):
-            safe_name = sif_id_str
-        else:
-            safe_name = f"sif_{sif_id_str}"
-            
-        filename = f"{safe_name}.json"
+        # The provided sif_id is expected to be the fully formatted, normalized SEBI code.
+        filename = f"{sif_id}.json"
         filepath = os.path.join(base_dir, filename)
         
         # Write to JSON

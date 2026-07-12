@@ -1,0 +1,74 @@
+{
+    "sebi_code": "INFI/I/H/HLSF/26/04/0001/KOTM",
+    "fund_name": "Infinity Hybrid Long-Short Fund",
+    "fund_type": "An Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives.",
+    "category": "Hybrid Long-Short Fund",
+    "potential_risk_class": null,
+    "face_value": "10",
+    "listing_details": "Listed on BSE & NSE",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "Infinity Hybrid Long-Short Fund - Regular Plan - Growth",
+                "amfi_code": "SIF-146",
+                "isin_code": "INF174K30046",
+                "rta_code": "ILSF"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout",
+                    "isin_code": "INF174K30053",
+                    "rta_code": "ILSF"
+                },
+                "reinvestment": {
+                    "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout & Reinvestment",
+                    "amfi_code": "SIF-147",
+                    "isin_code": "INF174K30061",
+                    "rta_code": "ILSF"
+                },
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Infinity Hybrid Long-Short Fund - Direct Plan - Growth",
+                "amfi_code": "SIF-145",
+                "isin_code": "INF174K30012",
+                "rta_code": "ILSF"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout",
+                    "isin_code": "INF174K30020",
+                    "rta_code": "ILSF"
+                },
+                "reinvestment": {
+                    "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout & Reinvestment",
+                    "amfi_code": "SIF-148",
+                    "isin_code": "INF174K30038",
+                    "rta_code": "ILSF"
+                },
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "FM 1 : Mr.Hiten Shah, \nFM 2 : Mr. Kalpesh Jain, \nFM 3 : Mr. Abhishek Bisen",
+            "type": "Mr. Hiten Shah & Mr. Kalpesh Jain will be the fund managers for Equity and Overseas investment of theInvestment Strategy. \nMr. Abhishek Bisen will be the Fund Manager for debt and money market investment of the Investment Strategy.",
+            "from": "July 06, 2026"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "•\tMinimum amount for other than accredited investorINR10,00,000/- and in multiples of Re. 1/- thereafter (across all investment strategies offered by the Infinity SIF at the PAN level)\n•\tMinimum amount for accredited investor during NFO and Continuous basis: INR 1,00,000/- and in multiples of Re. 1/- thereafter.",
+        "application_multiple": "In Multiples of Re. 1/- thereafter.",
+        "minimum_additional_amount": "INR 10,000/- and in multiples of Re. 1 thereafter.",
+        "additional_multiple": "In multiples of Re. 1 thereafter.",
+        "minimum_redemption_amount": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.\n\nMinimum Investment Threshold:\n• Aggregate investment by an investor across all investment strategies offered by Infinity SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/-.",
+        "minimum_redemption_units": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower."
+    },
+    "exit_load": "Nil",
+    "registrar": "Computer Age Management Services  Limited (‘CAMS’)",
+    "custodian": "Deutsche Bank A G, Mumbai & Standard Chartered Bank",
+    "auditor": "S. R. Batliboi & Co. LLP"
+}

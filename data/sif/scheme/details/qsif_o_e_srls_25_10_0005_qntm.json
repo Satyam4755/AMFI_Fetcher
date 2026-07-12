@@ -1,0 +1,94 @@
+{
+    "sebi_code": "QSIF/O/E/SRLS/25/10/0005/QNTM",
+    "fund_name": "qsif Sector Rotation Long-Short Fund",
+    "fund_type": "An open-ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of maximum four sectors.",
+    "category": "Sector Rotation Long-Short Fund",
+    "potential_risk_class": "N.A.",
+    "face_value": "10",
+    "listing_details": "Listed on NSE",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "qsif Sector Rotation Long-Short Fund - Growth Option - Regular Plan",
+                "amfi_code": "SIF-117",
+                "isin_code": "INF966L30308",
+                "rta_code": "905"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "qsif Sector Rotation Long-Short Fund- IDCW Option - Regular Plan",
+                    "amfi_code": "SIF-119",
+                    "isin_code": "INF966L30324",
+                    "rta_code": "905"
+                },
+                "reinvestment": {
+                    "name": "IDCW Reinvestment - Regular Plan",
+                    "isin_code": "INF966L30316",
+                    "rta_code": "905"
+                },
+                "transfer": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "qsif Sector Rotation Long-Short Fund - Growth Option - Direct Plan",
+                "amfi_code": "SIF-116",
+                "isin_code": "INF966L30274",
+                "rta_code": "905"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option - Direct Plan",
+                    "amfi_code": "SIF-118",
+                    "isin_code": "INF966L30290",
+                    "rta_code": "905"
+                },
+                "reinvestment": {
+                    "name": "IDCW Reinvestment - Direct Plan",
+                    "isin_code": "INF966L30282",
+                    "rta_code": "905"
+                },
+                "transfer": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Sandeep Tandon",
+            "type": "Primary",
+            "from": "2026-05-15 00:00:00"
+        },
+        {
+            "name": "Jignesh Shah",
+            "type": "Co manage",
+            "from": "2026-05-15 00:00:00"
+        },
+        {
+            "name": "Ankit Pande",
+            "type": "Co manage",
+            "from": "2026-05-15 00:00:00"
+        },
+        {
+            "name": "Sameer Kate",
+            "type": "Co manage",
+            "from": "2026-05-15 00:00:00"
+        },
+        {
+            "name": "Sanjeev Sharma",
+            "type": "Co manage",
+            "from": "2026-05-15 00:00:00"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "Rs. 10,00,000/-",
+        "application_multiple": "1",
+        "minimum_additional_amount": "Rs. 1,000/-",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "Rs. 1,000/-",
+        "minimum_redemption_units": "--"
+    },
+    "exit_load": "Exit Load:  1% if redeemed/switched out on or before completion of 15 days from the date of allotment of units\nNo Exit Load is payable if Units are redeemed / switched-out after 15 days  from the date of allotment",
+    "registrar": "KFin Technologies Limited",
+    "custodian": "HDFC Bank Limited",
+    "auditor": "M M Nissim & Co. LLP"
+}

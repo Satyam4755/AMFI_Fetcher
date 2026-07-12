@@ -1,9 +1,9 @@
 import os
 
-def update_historical_nav(schemes, base_dir="data/sif/nav"):
+def update_historical_nav(schemes, base_dir="data/sif/scheme/nav/historical"):
     """
     Updates or creates historical NAV CSV files per SIF.
-    Format is data/sif/nav/sif_x.csv with columns nav_date,nav.
+    Format is data/sif/scheme/nav/historical/sif_x.csv with columns sif_code,nav_date,nav.
     """
     if not schemes:
         return
@@ -40,7 +40,7 @@ def update_historical_nav(schemes, base_dir="data/sif/nav"):
         # Append the new row
         with open(filepath, 'a', encoding='utf-8') as f:
             if not file_exists:
-                f.write("nav_date,nav\n")
-            f.write(f"{nav_date},{nav_val}\n")
+                f.write("sif_code,nav_date,nav\n")
+            f.write(f"{sif_code},{nav_date},{nav_val}\n")
             
     print("Historical NAV files updated successfully.")

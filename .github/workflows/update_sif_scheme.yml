@@ -38,7 +38,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
           
-          git add data/sif_scheme.csv
+          git add data/sif/scheme/details/
           
           if git diff --cached --quiet; then
             echo "No new Scheme updates."

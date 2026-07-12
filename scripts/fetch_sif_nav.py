@@ -25,13 +25,13 @@ def main():
         if schemes:
             # Step 3: Save to CSV
             today_str = datetime.date.today().strftime("%Y-%m-%d")
-            base_dir = "data/sif/nav"
+            base_dir = "data/sif/scheme/nav/daily"
             csv_path = f"{base_dir}/{today_str}.csv"
             csv_saved = save_to_csv(schemes, csv_path)
             
             # Step 4: Complete and update history
             if csv_saved:
-                update_historical_nav(schemes, base_dir=base_dir)
+                update_historical_nav(schemes)
                 
                 # Cleanup (if downloaded as file by some external script)
                 if os.path.exists("SIF_NAVAll.txt"):

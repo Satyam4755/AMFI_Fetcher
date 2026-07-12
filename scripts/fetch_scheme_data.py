@@ -79,22 +79,26 @@ def main():
                                     # Build nested JSON structure for this specific sheet
                                     nested_scheme_data, primary_amfi_code = build_scheme_json(scheme_data, rows)
                                     
-                                    # Format filename based on primary AMFI code (e.g., SIF-107 -> sif_107)
-                                    fallback_used = False
-                                    if primary_amfi_code:
-                                        safe_name = str(primary_amfi_code).lower().replace("-", "_")
-                                    else:
-                                        fallback_used = True
-                                        sebi = nested_scheme_data.get("sebi_code", scheme_id)
-                                        safe_name = "sebi_" + str(sebi).lower().replace("/", "_")
+                                    # Format filename based on SEBI code
+                                    # Fallback to scheme_id if sebi_code is somehow completely missing
+                                    sebi = nested_scheme_data.get("sebi_code")
+                                    if not sebi:
+                                        sebi = scheme_id
+                                        
+                                    import re
+                                    # Normalization algorithm:
+                                    # lowercase -> replace non-alphanumeric with _ -> collapse _ -> strip _
+                                    safe_name = str(sebi).lower()
+                                    safe_name = re.sub(r'[^a-z0-9]', '_', safe_name)
+                                    safe_name = re.sub(r'_+', '_', safe_name)
+                                    safe_name = safe_name.strip('_')
                                         
                                     if save_scheme_to_json(safe_name, nested_scheme_data):
                                         total_json_files += 1
                                         
                                         print("\nValidation:")
                                         print(f"JSON filename: {safe_name}.json")
-                                        print(f"Primary AMFI: {primary_amfi_code}")
-                                        print(f"Fallback used: {'Yes' if fallback_used else 'No'}\n")
+                                        print(f"SEBI used: {sebi}\n")
                             
                             # Clean up temporary file
                             if os.path.exists(xls_path):
