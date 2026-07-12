@@ -10,6 +10,8 @@
         "regular": {
             "growth": {
                 "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Growth",
+                "amfi_code": "SIF-34",
+                "isin_code": "iSIF EQUITY EX-TOP 100 LONG-SHORT FUND- GROWTH-INF109K30034                                                                                                                                                                                                                                                                iSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH- INF109K30042",
                 "rta_code": "1001"
             },
             "idcw": {
@@ -21,6 +23,8 @@
         "direct": {
             "growth": {
                 "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Direct Plan - Growth",
+                "amfi_code": "SIF-33",
+                "isin_code": "iSIF EQUITY EX-TOP 100 LONG-SHORT FUND- GROWTH-INF109K30034                                                                                                                                                                                                                                                                iSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH- INF109K30042",
                 "rta_code": "6001"
             },
             "idcw": {

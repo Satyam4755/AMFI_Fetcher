@@ -11,7 +11,8 @@
             "growth": {},
             "idcw": {
                 "payout": {
-                    "amfi_code": "SIF-27"
+                    "name": "SIF",
+                    "amfi_code": "27"
                 },
                 "reinvestment": {},
                 "transfer": {}

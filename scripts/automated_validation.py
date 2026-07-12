@@ -19,9 +19,9 @@ def main():
     duplicate_sebi_count = 0
     duplicate_amfi_count = 0
     
-    plans_missing_amfi = 0
-    plans_missing_isin = 0
-    plans_missing_rta = 0
+    plans_missing_amfi = []
+    plans_missing_isin = []
+    plans_missing_rta = []
     
     failed_validations = []
     
@@ -64,12 +64,12 @@ def main():
             growth = pt.get("growth", {})
             if growth.get("name"):
                 amfi = growth.get("amfi_code")
-                if not amfi: plans_missing_amfi += 1
+                if not amfi: plans_missing_amfi.append(f"{os.path.basename(file)}: {p_type} growth")
                 else:
                     if amfi in amfi_codes: duplicate_amfi_count += 1
                     amfi_codes.add(amfi)
-                if not growth.get("isin_code"): plans_missing_isin += 1
-                if not growth.get("rta_code"): plans_missing_rta += 1
+                if not growth.get("isin_code"): plans_missing_isin.append(f"{os.path.basename(file)}: {p_type} growth")
+                if not growth.get("rta_code"): plans_missing_rta.append(f"{os.path.basename(file)}: {p_type} growth")
                 
             # Check IDCW subtypes
             idcw = pt.get("idcw", {})
@@ -77,20 +77,30 @@ def main():
                 st = idcw.get(subtype, {})
                 if st.get("name"):
                     amfi = st.get("amfi_code")
-                    if not amfi: plans_missing_amfi += 1
+                    if not amfi: plans_missing_amfi.append(f"{os.path.basename(file)}: {p_type} idcw {subtype}")
                     else:
                         if amfi in amfi_codes: duplicate_amfi_count += 1
                         amfi_codes.add(amfi)
-                    if not st.get("isin_code"): plans_missing_isin += 1
-                    if not st.get("rta_code"): plans_missing_rta += 1
+                    if not st.get("isin_code"): plans_missing_isin.append(f"{os.path.basename(file)}: {p_type} idcw {subtype}")
+                    if not st.get("rta_code"): plans_missing_rta.append(f"{os.path.basename(file)}: {p_type} idcw {subtype}")
 
     print("\n--- Validation Report ---")
     print(f"JSON Files Generated: {total_jsons}")
     print(f"Duplicate SEBI Codes: {duplicate_sebi_count}")
     print(f"Duplicate AMFI Codes: {duplicate_amfi_count}")
-    print(f"Plans Missing AMFI Code: {plans_missing_amfi}")
-    print(f"Plans Missing ISIN: {plans_missing_isin}")
-    print(f"Plans Missing RTA: {plans_missing_rta}")
+    print(f"Plans Missing AMFI Code: {len(plans_missing_amfi)}")
+    if len(plans_missing_amfi) > 0:
+        for p in plans_missing_amfi[:10]: print(f"  - {p}")
+        if len(plans_missing_amfi) > 10: print(f"  ... and {len(plans_missing_amfi)-10} more")
+        
+    print(f"Plans Missing ISIN: {len(plans_missing_isin)}")
+    if len(plans_missing_isin) > 0:
+        for p in plans_missing_isin[:10]: print(f"  - {p}")
+        
+    print(f"Plans Missing RTA: {len(plans_missing_rta)}")
+    if len(plans_missing_rta) > 0:
+        for p in plans_missing_rta[:10]: print(f"  - {p}")
+        if len(plans_missing_rta) > 10: print(f"  ... and {len(plans_missing_rta)-10} more")
     
     # 2. Validate CSV Files
     def validate_csvs(directory):

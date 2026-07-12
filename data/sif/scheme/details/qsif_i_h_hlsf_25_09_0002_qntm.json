@@ -10,12 +10,14 @@
         "regular": {
             "growth": {
                 "name": "qsif Hybrid Long-Short Fund - Growth Option - Regular Plan",
+                "amfi_code": "SIF-7",
                 "isin_code": "INF966L30084",
                 "rta_code": "905"
             },
             "idcw": {
                 "payout": {
                     "name": "qsif Hybrid Long-Short Fund - IDCW Option - Regular Plan",
+                    "amfi_code": "SIF-8",
                     "isin_code": "INF966L30118",
                     "rta_code": "905"
                 },
@@ -30,12 +32,14 @@
         "direct": {
             "growth": {
                 "name": "qsif Hybrid Long-Short Fund - Growth Option - Direct Plan",
+                "amfi_code": "SIF-5",
                 "isin_code": "INF966L30076",
                 "rta_code": "905"
             },
             "idcw": {
                 "payout": {
                     "name": "qsif Hybrid Long-Short Fund - IDCW Option - Direct Plan",
+                    "amfi_code": "SIF-6",
                     "isin_code": "INF966L30092",
                     "rta_code": "905"
                 },

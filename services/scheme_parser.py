@@ -6,20 +6,22 @@ def build_scheme_json(api_data, rows):
     Converts raw API data and XLS rows into a deeply nested JSON-serializable dictionary.
     """
     xls_data = {}
-    if rows:
-        for row in rows:
-            keys = list(row.keys())
-            if len(keys) >= 3:
-                key_col = keys[1]
-                val_col = keys[2]
-                
-                key = row.get(key_col)
-                if not key or not isinstance(key, str):
-                    continue
-                
-                val = row.get(val_col)
-                if val is not None and str(val).strip().lower() != "nan":
-                    xls_data[key.strip()] = str(val).strip()
+    for row in rows:
+        key_val = None
+        val_val = None
+        for k in row.keys():
+            v = row.get(k)
+            if v is None or str(v).strip().lower() == "nan" or str(v).strip() == "":
+                continue
+            if key_val is None:
+                # Ignore numbering columns (like "1.0")
+                if isinstance(v, str) and not re.match(r'^\d+(\.\d+)?$', str(v).strip()):
+                    key_val = str(v).strip()
+            elif val_val is None:
+                val_val = str(v).strip()
+                break
+        if key_val and val_val:
+            xls_data[key_val] = val_val
 
     def get_val(possible_keys):
         for k in xls_data.keys():
@@ -132,7 +134,7 @@ def build_scheme_json(api_data, rows):
                 first_part = parts[0].strip()
                 
                 # Check end - a valid code should NOT contain spaces, AND it should look like a code (alphanumeric with hyphens)
-                if ' ' not in last_part and len(last_part) >= 3 and not last_part.isalpha():
+                if ' ' not in last_part and len(last_part) >= 1 and not last_part.isalpha():
                     # It's highly likely a code (e.g. SIF-107, INF123, 100)
                     if len(parts) >= 3 and ' ' not in parts[-2].strip() and re.match(r'^(SIF|S)$', parts[-2].strip(), re.IGNORECASE):
                         code = parts[-2].strip() + "-" + last_part
@@ -144,7 +146,7 @@ def build_scheme_json(api_data, rows):
                 elif len(parts) >= 2 and ' ' not in parts[1].strip() and re.match(r'^(SIF|S)$', first_part, re.IGNORECASE):
                     code = first_part + "-" + parts[1].strip()
                     name = "-".join(parts[2:]).strip()
-                elif ' ' not in first_part and len(first_part) >= 3 and not first_part.isalpha():
+                elif ' ' not in first_part and len(first_part) >= 1 and not first_part.isalpha():
                     code = first_part
                     name = "-".join(parts[1:]).strip()
                     
@@ -175,12 +177,12 @@ def build_scheme_json(api_data, rows):
                 ref[code_key] = code
 
     # Parse all potential plan sources
-    sebi_code_val = get_val(["sebi codes"])
+    sebi_code_val = get_val(["sebi code", "sebi codes"])
         
     parse_plan_lines(get_val(["option names"]), None)
-    parse_plan_lines(get_val(["amfi codes"]), "amfi_code")
-    parse_plan_lines(get_val(["isins"]), "isin_code")
-    parse_plan_lines(get_val(["rta code"]), "rta_code")
+    parse_plan_lines(get_val(["amfi code", "amfi codes"]), "amfi_code")
+    parse_plan_lines(get_val(["isin", "isins"]), "isin_code")
+    parse_plan_lines(get_val(["rta code", "rta codes"]), "rta_code")
     
     # Extract primary AMFI code from parsed plans
     primary_amfi_code = None

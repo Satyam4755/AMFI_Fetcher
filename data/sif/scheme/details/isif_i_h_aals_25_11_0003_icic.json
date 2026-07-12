@@ -10,6 +10,7 @@
         "regular": {
             "growth": {
                 "name": "iSIF Active Asset Allocator Long-Short Fund - Growth",
+                "amfi_code": "SIF-124",
                 "isin_code": "INF109K30059",
                 "rta_code": "1003"
             },
@@ -22,6 +23,7 @@
         "direct": {
             "growth": {
                 "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth",
+                "amfi_code": "SIF-125",
                 "isin_code": "INF109K30067",
                 "rta_code": "6003"
             },

@@ -30,6 +30,7 @@ def main():
     
     total_schemes_discovered = 0
     total_json_files = 0
+    skipped_schemes = {}
     
     for i, sif_info in enumerate(sif_list, 1):
         sif_id = str(sif_info.get("SIF_Id", ""))
@@ -72,7 +73,9 @@ def main():
                             # parse_summary_xls now returns { sheet_name: rows }
                             sheets_data = parse_summary_xls(xls_path)
                             
-                            if sheets_data:
+                            if not sheets_data:
+                                skipped_schemes[scheme_id] = "Parsed sheets returned empty"
+                            else:
                                 for sheet_name, rows in sheets_data.items():
                                     if not rows: continue
                                     
@@ -104,19 +107,35 @@ def main():
                             if os.path.exists(xls_path):
                                 os.remove(xls_path)
                                 print(f"     Deleted temporary XLS: {xls_path}")
+                        else:
+                            skipped_schemes[scheme_id] = "Summary XLS not found or invalid format"
                     else:
+                        skipped_schemes[scheme_id] = "No document URLs available"
                         print(f"     No document URLs available for scheme_id {scheme_id}.")
                 except Exception as e:
+                    skipped_schemes[scheme_id] = f"Error parsing data: {e}"
                     print(f"     Error enriching data for scheme_id {scheme_id}: {e}")
                 # ------------------------------------
             else:
+                skipped_schemes[scheme_id] = "No valid data from API"
                 print(f"     No valid data returned for scheme_id {scheme_id}.")
             
     print("\nFetch Pipeline Completed")
     print("-" * 20)
+    print("--- Validation Report ---")
     print(f"Total SIFs Processed       : {total_sifs}")
     print(f"Total Schemes Discovered   : {total_schemes_discovered}")
     print(f"Total Details Fetched      : {total_json_files}")
+    print(f"Total Skipped Schemes      : {len(skipped_schemes)}")
+    print("\nSkipped Schemes Reasons:")
+    for sch_id, reason in skipped_schemes.items():
+        print(f" - {sch_id}: {reason}")
+        
+    # Final Reconciliation
+    if total_schemes_discovered == (total_json_files + len(skipped_schemes)):
+        print("\nSUCCESS: Total counts reconcile correctly.")
+    else:
+        print("\nWARNING: Counts do not reconcile. Some schemes disappeared silently!")
 
 if __name__ == "__main__":
     main()
