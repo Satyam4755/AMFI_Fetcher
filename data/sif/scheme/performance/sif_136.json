@@ -1,0 +1,28 @@
+{
+    "sif_code": "SIF-136",
+    "latest_nav": 10.114,
+    "latest_nav_date": "2026-07-10",
+    "previous_nav": 10.087,
+    "daily_change_absolute": 0.027,
+    "daily_change_percentage": 0.27,
+    "highest_nav": 10.114,
+    "lowest_nav": 10.087,
+    "returns": {
+        "1_day": 0.27,
+        "1_week": null,
+        "1_month": null,
+        "3_month": null,
+        "6_month": null,
+        "1_year": null,
+        "since_launch": 0.27
+    },
+    "cagr": {
+        "1_year": null,
+        "since_launch": null
+    },
+    "risk_metrics": {
+        "volatility_annualized": null,
+        "max_drawdown_percentage": 0.0
+    },
+    "last_updated": "2026-07-13T06:36:47Z"
+}

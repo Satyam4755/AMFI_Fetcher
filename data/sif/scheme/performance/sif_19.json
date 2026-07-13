@@ -1,0 +1,28 @@
+{
+    "sif_code": "SIF-19",
+    "latest_nav": 952.8496,
+    "latest_nav_date": "2026-07-10",
+    "previous_nav": 942.7155,
+    "daily_change_absolute": 10.1341,
+    "daily_change_percentage": 1.07,
+    "highest_nav": 952.8496,
+    "lowest_nav": 942.7155,
+    "returns": {
+        "1_day": 1.07,
+        "1_week": null,
+        "1_month": null,
+        "3_month": null,
+        "6_month": null,
+        "1_year": null,
+        "since_launch": 1.07
+    },
+    "cagr": {
+        "1_year": null,
+        "since_launch": null
+    },
+    "risk_metrics": {
+        "volatility_annualized": null,
+        "max_drawdown_percentage": 0.0
+    },
+    "last_updated": "2026-07-13T06:36:47Z"
+}

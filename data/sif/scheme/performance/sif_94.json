@@ -1,0 +1,28 @@
+{
+    "sif_code": "SIF-94",
+    "latest_nav": 1012.7154,
+    "latest_nav_date": "2026-07-10",
+    "previous_nav": 1000.5518,
+    "daily_change_absolute": 12.1636,
+    "daily_change_percentage": 1.22,
+    "highest_nav": 1012.7154,
+    "lowest_nav": 1000.5518,
+    "returns": {
+        "1_day": 1.22,
+        "1_week": null,
+        "1_month": null,
+        "3_month": null,
+        "6_month": null,
+        "1_year": null,
+        "since_launch": 1.22
+    },
+    "cagr": {
+        "1_year": null,
+        "since_launch": null
+    },
+    "risk_metrics": {
+        "volatility_annualized": null,
+        "max_drawdown_percentage": 0.0
+    },
+    "last_updated": "2026-07-13T06:36:47Z"
+}

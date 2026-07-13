@@ -1,0 +1,28 @@
+{
+    "sif_code": "SIF-143",
+    "latest_nav": 10.3191,
+    "latest_nav_date": "2026-07-10",
+    "previous_nav": 10.1516,
+    "daily_change_absolute": 0.1675,
+    "daily_change_percentage": 1.65,
+    "highest_nav": 10.3191,
+    "lowest_nav": 10.1516,
+    "returns": {
+        "1_day": 1.65,
+        "1_week": null,
+        "1_month": null,
+        "3_month": null,
+        "6_month": null,
+        "1_year": null,
+        "since_launch": 1.65
+    },
+    "cagr": {
+        "1_year": null,
+        "since_launch": null
+    },
+    "risk_metrics": {
+        "volatility_annualized": null,
+        "max_drawdown_percentage": 0.0
+    },
+    "last_updated": "2026-07-13T06:36:46Z"
+}
