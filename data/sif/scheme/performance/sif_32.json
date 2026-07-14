@@ -1,12 +1,5 @@
 {
     "sif_code": "SIF-32",
-    "latest_nav": 10.2449,
-    "latest_nav_date": "2026-07-10",
-    "previous_nav": 10.1924,
-    "daily_change_absolute": 0.0525,
-    "daily_change_percentage": 0.52,
-    "highest_nav": 10.2449,
-    "lowest_nav": 10.1924,
     "returns": {
         "1_day": 0.52,
         "1_week": null,
@@ -14,15 +7,12 @@
         "3_month": null,
         "6_month": null,
         "1_year": null,
+        "2_year": null,
+        "3_year": null,
+        "5_year": null,
+        "7_year": null,
+        "10_year": null,
         "since_launch": 0.52
     },
-    "cagr": {
-        "1_year": null,
-        "since_launch": null
-    },
-    "risk_metrics": {
-        "volatility_annualized": null,
-        "max_drawdown_percentage": 0.0
-    },
-    "last_updated": "2026-07-13T06:36:47Z"
+    "last_updated": "2026-07-14T04:54:03Z"
 }
