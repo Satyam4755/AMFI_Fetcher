@@ -9,21 +9,38 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "WSIF EQUITY LONG-SHORT FUND-REGULAR-GROWTH",
-                "amfi_code": "SIF-108 , SIF-109 , SIF-111,SIF-110",
-                "isin_code": "INF2F0030072"
+                "name": "a)Growth Option",
+                "amfi_code": "SIF-109",
+                "additional_plans": [
+                    {
+                        "name": "WSIF EQUITY LONG-SHORT FUND-REGULAR-GROWTH",
+                        "isin_code": "INF2F0030072"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {
-                    "name": "b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities",
-                    "amfi_code": "SIF-108 , SIF-109 , SIF-111,SIF-110",
-                    "isin_code": "INF2F0030080"
+                    "name": "• Payout of Income Distribution cum Capital Withdrawal (IDCW) Option / facility and",
+                    "amfi_code": "SIF-110"
                 },
                 "reinvestment": {
                     "name": "WSIF EQUITY LONG-SHORT FUND-REGULAR-IDCW-REINVESTMENT",
                     "isin_code": "INF2F0030098"
                 },
-                "transfer": {}
+                "transfer": {},
+                "unknown": {
+                    "name": "b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities",
+                    "amfi_code": "SIF-111",
+                    "additional_plans": [
+                        {
+                            "name": "• Re-investment of Income Distribution cum Capital Withdrawal (IDCW) Option / facility"
+                        },
+                        {
+                            "name": "WSIF EQUITY LONG-SHORT FUND-REGULAR",
+                            "isin_code": "INF2F0030080"
+                        }
+                    ]
+                }
             }
         },
         "direct": {
@@ -33,15 +50,18 @@
             },
             "idcw": {
                 "payout": {
-                    "name": "Plans:Regular and Direct. Each Plan offers the following sub",
-                    "amfi_code": "SIF-108 , SIF-109 , SIF-111,SIF-110",
+                    "name": "WSIF EQUITY LONG-SHORT FUND-DIRECT-IDCW-PAYOUT",
                     "isin_code": "INF2F0030114"
                 },
                 "reinvestment": {
                     "name": "WSIF EQUITY LONG-SHORT FUND-DIRECT-IDCW-REINVESTMENT",
                     "isin_code": "INF2F0030122"
                 },
-                "transfer": {}
+                "transfer": {},
+                "unknown": {
+                    "name": "Plans:Regular and Direct. Each Plan offers the following sub-options",
+                    "amfi_code": "SIF-108"
+                }
             }
         }
     },

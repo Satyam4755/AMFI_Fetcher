@@ -9,46 +9,43 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Equity Long-Short Fund - Growth Option - Regular Plan",
-                "amfi_code": "SIF-3",
-                "isin_code": "INF966L30027",
-                "rta_code": "905"
+                "name": "qsif Equity Long-Short Fund - Growth Option",
+                "amfi_code": "SIF-2",
+                "isin_code": "INF966L30050"
             },
             "idcw": {
-                "payout": {
-                    "name": "qsif Equity Long-short Fund - IDCW Option - Regular Plan",
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "unknown": {
+                    "name": "qsif Equity Long-Short Fund - IDCW Option",
                     "amfi_code": "SIF-4",
-                    "isin_code": "INF966L30050",
-                    "rta_code": "905"
-                },
-                "reinvestment": {
-                    "name": "IDCW Reinvestment - Regular Plan",
-                    "isin_code": "INF966L30068",
-                    "rta_code": "905"
-                },
-                "transfer": {}
+                    "isin_code": "INF966L30035",
+                    "additional_plans": [
+                        {
+                            "name": "Regular Plan",
+                            "amfi_code": "SIF-3",
+                            "isin_code": "INF966L30027"
+                        },
+                        {
+                            "name": "INF966L30068",
+                            "isin_code": "INF966L30043"
+                        }
+                    ]
+                }
             }
         },
         "direct": {
-            "growth": {
-                "name": "qsif Equity Long-Short Fund - Growth Option - Direct Plan",
-                "amfi_code": "SIF-1",
-                "isin_code": "INF966L30019",
-                "rta_code": "905"
-            },
+            "growth": {},
             "idcw": {
-                "payout": {
-                    "name": "qsif Equity Long-Short Fund - IDCW Option - Direct Plan",
-                    "amfi_code": "SIF-2",
-                    "isin_code": "INF966L30035",
-                    "rta_code": "905"
-                },
-                "reinvestment": {
-                    "name": "IDCW Reinvestment - Direct Plan",
-                    "isin_code": "INF966L30043",
-                    "rta_code": "905"
-                },
-                "transfer": {}
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "unknown": {
+                    "name": "Direct Plan",
+                    "amfi_code": "SIF-1",
+                    "isin_code": "INF966L30019"
+                }
             }
         }
     },

@@ -11,26 +11,33 @@
             "growth": {
                 "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Growth",
                 "amfi_code": "SIF-34",
-                "isin_code": "iSIF EQUITY EX-TOP 100 LONG-SHORT FUND- GROWTH-INF109K30034                                                                                                                                                                                                                                                                iSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH- INF109K30042",
+                "isin_code": "INF109K30034",
                 "rta_code": "1001"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
-                "transfer": {}
+                "transfer": {},
+                "unknown": {}
             }
         },
         "direct": {
             "growth": {
-                "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Direct Plan - Growth",
+                "name": "Direct Plan - Growth",
                 "amfi_code": "SIF-33",
-                "isin_code": "iSIF EQUITY EX-TOP 100 LONG-SHORT FUND- GROWTH-INF109K30034                                                                                                                                                                                                                                                                iSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH- INF109K30042",
-                "rta_code": "6001"
+                "rta_code": "6001",
+                "additional_plans": [
+                    {
+                        "name": "iSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH",
+                        "isin_code": "INF109K30042"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
-                "transfer": {}
+                "transfer": {},
+                "unknown": {}
             }
         }
     },

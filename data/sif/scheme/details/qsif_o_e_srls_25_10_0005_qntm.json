@@ -9,46 +9,43 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Sector Rotation Long-Short Fund - Growth Option - Regular Plan",
-                "amfi_code": "SIF-117",
-                "isin_code": "INF966L30308",
-                "rta_code": "905"
+                "name": "qsif Sector Rotation Long-Short Fund - Growth Option",
+                "amfi_code": "SIF-118",
+                "isin_code": "INF966L30290"
             },
             "idcw": {
-                "payout": {
-                    "name": "qsif Sector Rotation Long-Short Fund- IDCW Option - Regular Plan",
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "unknown": {
+                    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option",
                     "amfi_code": "SIF-119",
                     "isin_code": "INF966L30324",
-                    "rta_code": "905"
-                },
-                "reinvestment": {
-                    "name": "IDCW Reinvestment - Regular Plan",
-                    "isin_code": "INF966L30316",
-                    "rta_code": "905"
-                },
-                "transfer": {}
+                    "additional_plans": [
+                        {
+                            "name": "Regular Plan",
+                            "amfi_code": "SIF-117",
+                            "isin_code": "INF966L30308"
+                        },
+                        {
+                            "name": "INF966L30282",
+                            "isin_code": "INF966L30316"
+                        }
+                    ]
+                }
             }
         },
         "direct": {
-            "growth": {
-                "name": "qsif Sector Rotation Long-Short Fund - Growth Option - Direct Plan",
-                "amfi_code": "SIF-116",
-                "isin_code": "INF966L30274",
-                "rta_code": "905"
-            },
+            "growth": {},
             "idcw": {
-                "payout": {
-                    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option - Direct Plan",
-                    "amfi_code": "SIF-118",
-                    "isin_code": "INF966L30290",
-                    "rta_code": "905"
-                },
-                "reinvestment": {
-                    "name": "IDCW Reinvestment - Direct Plan",
-                    "isin_code": "INF966L30282",
-                    "rta_code": "905"
-                },
-                "transfer": {}
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "unknown": {
+                    "name": "Direct Plan",
+                    "amfi_code": "SIF-116",
+                    "isin_code": "INF966L30274"
+                }
             }
         }
     },

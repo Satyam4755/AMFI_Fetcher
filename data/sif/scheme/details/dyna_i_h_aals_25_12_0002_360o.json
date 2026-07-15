@@ -8,24 +8,49 @@
     "listing_details": "Not Listed",
     "plans": {
         "regular": {
-            "growth": {},
+            "growth": {
+                "name": "Regular Plan-Growth",
+                "amfi_code": "SIF-86",
+                "isin_code": "INF579M30075",
+                "rta_code": "ALSRG"
+            },
             "idcw": {
                 "payout": {
-                    "name": "SIF",
-                    "amfi_code": "89"
+                    "name": "Regular Plan - IDCW Payout",
+                    "amfi_code": "SIF-87",
+                    "isin_code": "INF579M30083",
+                    "rta_code": "ALSRP"
                 },
-                "reinvestment": {},
-                "transfer": {}
+                "reinvestment": {
+                    "name": "Regular Plan - IDCW Reinvestment",
+                    "amfi_code": "SIF-88",
+                    "isin_code": "INF579M30091",
+                    "rta_code": "ALSRR"
+                },
+                "transfer": {},
+                "unknown": {}
             }
         },
         "direct": {
             "growth": {
-                "name": "Regular Plan-Growth Regular Plan - IDCW Payout Regular Plan - IDCW Reinvestment Direct Plan-Growth Direct Plan - IDCW Payout Direct Plan - IDCW Reinvestment"
+                "name": "Direct Plan-Growth",
+                "amfi_code": "SIF-89",
+                "isin_code": "INF579M30109",
+                "rta_code": "ALSDG"
             },
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {}
+                "payout": {
+                    "name": "Direct Plan - IDCW Payout",
+                    "isin_code": "INF579M30117",
+                    "rta_code": "ALSDP"
+                },
+                "reinvestment": {
+                    "name": "Direct Plan - IDCW Reinvestment",
+                    "isin_code": "INF579M30125",
+                    "rta_code": "ALSDR"
+                },
+                "transfer": {},
+                "unknown": {}
             }
         }
     },

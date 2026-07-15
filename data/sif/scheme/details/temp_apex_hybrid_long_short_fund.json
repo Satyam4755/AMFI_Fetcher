@@ -1,0 +1,77 @@
+{
+    "sebi_code": "TEMP_APEX_HYBRID_LONG_SHORT_FUND",
+    "fund_name": "Apex Hybrid Long-Short Fund",
+    "fund_type": "Interval Fund",
+    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
+    "potential_risk_class": null,
+    "face_value": "10",
+    "listing_details": "National Stock Exchange of India Limited (NSE)",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "Growth Option",
+                "additional_plans": [
+                    {
+                        "name": "Apex Hybrid Long-Short Fund - Regular - Growth",
+                        "amfi_code": "SIF-80",
+                        "isin_code": "INF209K30040"
+                    }
+                ]
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Apex Hybrid Long-Short Fund - Regular - Payout of IDCW",
+                    "amfi_code": "SIF-81",
+                    "isin_code": "INF209K30057"
+                },
+                "reinvestment": {
+                    "name": "Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW",
+                    "amfi_code": "SIF-81",
+                    "isin_code": "INF209K30065"
+                },
+                "transfer": {},
+                "unknown": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Apex Hybrid Long-Short Fund-Direct Growth",
+                "amfi_code": "SIF-79",
+                "isin_code": "INF209K30016"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {
+                    "name": "Apex Hybrid Long-Short Fund - Direct - Reinvestment of IDCW",
+                    "amfi_code": "SIF-83",
+                    "isin_code": "INF209K30032"
+                },
+                "transfer": {},
+                "unknown": {
+                    "name": "Apex Hybrid Long-Short Fund - Direct",
+                    "amfi_code": "SIF-83",
+                    "isin_code": "INF209K30024"
+                }
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Rohit Karan",
+            "type": "Comanage",
+            "from": "2026-04-02 00:00:00"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "For normal investors - Rs. 10 lakh and in multiples of Re. 1 thereafter subject to the minimum investment threshold guidelines as per the SIF framework. \nFor accredited investors - Rs. 1,00,000",
+        "application_multiple": "Re.1",
+        "minimum_additional_amount": "Rs. 10,000",
+        "additional_multiple": "Re.1",
+        "minimum_redemption_amount": "Rs. 10,000 and in multiples of Re. 1 thereafter.\nThe redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”",
+        "minimum_redemption_units": "No minimum redemption criterion for Unit based redemption"
+    },
+    "exit_load": "For redemption/switch-out of units on or before 90 days from the date of allotment: 0.50% of applicable NAV.\nFor redemption/switch-out of units after 90 days from the date of allotment: Nil.",
+    "registrar": "Computer Age Management Services Limited",
+    "custodian": "Citibank NA",
+    "auditor": "M/s Deloitte Haskins & Sells LLP"
+}

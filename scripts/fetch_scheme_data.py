@@ -69,12 +69,35 @@ def main():
                         xls_url = docs.get("summary_xls_url")
                         xls_path = download_xls(xls_url)
                         
+                        def save_fallback_json(reason):
+                            skipped_schemes[scheme_id] = f"Basic JSON Generated ({reason})"
+                            print(f"     {reason}. Generating basic JSON from API data for {scheme_id}...")
+                            
+                            nested_scheme_data, _ = build_scheme_json(scheme_data, [])
+                            
+                            sebi = nested_scheme_data.get("sebi_code")
+                            if not sebi:
+                                sebi = scheme_id
+                                
+                            import re
+                            safe_name = str(sebi).lower()
+                            safe_name = re.sub(r'[^a-z0-9]', '_', safe_name)
+                            safe_name = re.sub(r'_+', '_', safe_name)
+                            safe_name = safe_name.strip('_')
+                                
+                            if save_scheme_to_json(safe_name, nested_scheme_data):
+                                nonlocal total_json_files
+                                total_json_files += 1
+                                print("\nValidation (Basic):")
+                                print(f"JSON filename: {safe_name}.json")
+                                print(f"SEBI used: {sebi}\n")
+                        
                         if xls_path:
                             # parse_summary_xls now returns { sheet_name: rows }
                             sheets_data = parse_summary_xls(xls_path)
                             
                             if not sheets_data:
-                                skipped_schemes[scheme_id] = "Parsed sheets returned empty"
+                                save_fallback_json("Parsed sheets returned empty")
                             else:
                                 for sheet_name, rows in sheets_data.items():
                                     if not rows: continue
@@ -108,10 +131,9 @@ def main():
                                 os.remove(xls_path)
                                 print(f"     Deleted temporary XLS: {xls_path}")
                         else:
-                            skipped_schemes[scheme_id] = "Summary XLS not found or invalid format"
+                            save_fallback_json("Summary XLS not found or invalid format")
                     else:
-                        skipped_schemes[scheme_id] = "No document URLs available"
-                        print(f"     No document URLs available for scheme_id {scheme_id}.")
+                        save_fallback_json("No document URLs available")
                 except Exception as e:
                     skipped_schemes[scheme_id] = f"Error parsing data: {e}"
                     print(f"     Error enriching data for scheme_id {scheme_id}: {e}")
@@ -126,13 +148,16 @@ def main():
     print(f"Total SIFs Processed       : {total_sifs}")
     print(f"Total Schemes Discovered   : {total_schemes_discovered}")
     print(f"Total Details Fetched      : {total_json_files}")
-    print(f"Total Skipped Schemes      : {len(skipped_schemes)}")
-    print("\nSkipped Schemes Reasons:")
+    print(f"Total Skipped/Fallback     : {len(skipped_schemes)}")
+    print("\nSkipped Schemes / Fallback Reasons:")
     for sch_id, reason in skipped_schemes.items():
         print(f" - {sch_id}: {reason}")
         
     # Final Reconciliation
-    if total_schemes_discovered == (total_json_files + len(skipped_schemes)):
+    # When falling back, we increment total_json_files AND record it in skipped_schemes to show it wasn't fully parsed.
+    # Therefore, we only add the TRUE skipped schemes (the ones that threw errors) to the reconciliation.
+    true_skipped = len([r for r in skipped_schemes.values() if "Basic JSON Generated" not in r])
+    if total_schemes_discovered == (total_json_files + true_skipped):
         print("\nSUCCESS: Total counts reconcile correctly.")
     else:
         print("\nWARNING: Counts do not reconcile. Some schemes disappeared silently!")

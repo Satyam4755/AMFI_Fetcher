@@ -17,20 +17,27 @@
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
-                "transfer": {}
+                "transfer": {},
+                "unknown": {}
             }
         },
         "direct": {
             "growth": {
-                "name": "iSIF Hybrid Long-Short Fund - Direct Plan - Growth",
+                "name": "Direct Plan - Growth",
                 "amfi_code": "SIF-36",
-                "isin_code": "INF109K30026",
-                "rta_code": "6002"
+                "rta_code": "6002",
+                "additional_plans": [
+                    {
+                        "name": "iSIF HYBRID LONG-SHORT FUND-DIRECT-GROWTH",
+                        "isin_code": "INF109K30026"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
-                "transfer": {}
+                "transfer": {},
+                "unknown": {}
             }
         }
     },

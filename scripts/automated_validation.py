@@ -52,37 +52,60 @@ def main():
                 duplicate_sebi_count += 1
             sebi_codes.add(sebi)
         else:
-            if not os.path.basename(file).startswith("s_"):
-                failed_validations.append(f"Missing sebi_code inside {os.path.basename(file)}")
+            failed_validations.append(f"Missing sebi_code inside {os.path.basename(file)}")
+            
+        if not data.get("fund_name"):
+            failed_validations.append(f"Missing fund_name inside {os.path.basename(file)}")
+            
+        if not data.get("category"):
+            failed_validations.append(f"Missing category inside {os.path.basename(file)}")
             
         plans = data.get("plans", {})
         
+        has_any_plan = False
+        def validate_plan_obj(plan_obj, label):
+            nonlocal duplicate_amfi_count, plans_missing_amfi, plans_missing_isin, plans_missing_rta, failed_validations, amfi_codes, has_any_plan
+            if plan_obj.get("name"):
+                has_any_plan = True
+                amfi = plan_obj.get("amfi_code")
+                if not amfi: 
+                    plans_missing_amfi.append(f"{os.path.basename(file)}: {label}")
+                else:
+                    if ' ' in amfi or ',' in amfi:
+                        failed_validations.append(f"Merged AMFI code detected in {os.path.basename(file)}: {label} -> {amfi}")
+                    if not re.match(r'^SIF-\d+$', amfi):
+                        failed_validations.append(f"Invalid AMFI format in {os.path.basename(file)}: {label} -> {amfi}")
+                    if amfi in amfi_codes: duplicate_amfi_count += 1
+                    amfi_codes.add(amfi)
+                
+                isin = plan_obj.get("isin_code")
+                if not isin: 
+                    plans_missing_isin.append(f"{os.path.basename(file)}: {label}")
+                elif ' ' in isin or ',' in isin:
+                    failed_validations.append(f"Merged ISIN detected in {os.path.basename(file)}: {label} -> {isin}")
+                    
+                if not plan_obj.get("rta_code"): 
+                    plans_missing_rta.append(f"{os.path.basename(file)}: {label}")
+
         for p_type in ["regular", "direct"]:
             pt = plans.get(p_type, {})
             
             # Check growth
             growth = pt.get("growth", {})
-            if growth.get("name"):
-                amfi = growth.get("amfi_code")
-                if not amfi: plans_missing_amfi.append(f"{os.path.basename(file)}: {p_type} growth")
-                else:
-                    if amfi in amfi_codes: duplicate_amfi_count += 1
-                    amfi_codes.add(amfi)
-                if not growth.get("isin_code"): plans_missing_isin.append(f"{os.path.basename(file)}: {p_type} growth")
-                if not growth.get("rta_code"): plans_missing_rta.append(f"{os.path.basename(file)}: {p_type} growth")
+            validate_plan_obj(growth, f"{p_type} growth")
+            for ap in growth.get("additional_plans", []):
+                validate_plan_obj(ap, f"{p_type} growth additional")
                 
             # Check IDCW subtypes
             idcw = pt.get("idcw", {})
-            for subtype in ["payout", "reinvestment", "transfer"]:
+            for subtype in ["payout", "reinvestment", "transfer", "unknown"]:
                 st = idcw.get(subtype, {})
-                if st.get("name"):
-                    amfi = st.get("amfi_code")
-                    if not amfi: plans_missing_amfi.append(f"{os.path.basename(file)}: {p_type} idcw {subtype}")
-                    else:
-                        if amfi in amfi_codes: duplicate_amfi_count += 1
-                        amfi_codes.add(amfi)
-                    if not st.get("isin_code"): plans_missing_isin.append(f"{os.path.basename(file)}: {p_type} idcw {subtype}")
-                    if not st.get("rta_code"): plans_missing_rta.append(f"{os.path.basename(file)}: {p_type} idcw {subtype}")
+                validate_plan_obj(st, f"{p_type} idcw {subtype}")
+                for ap in st.get("additional_plans", []):
+                    validate_plan_obj(ap, f"{p_type} idcw {subtype} additional")
+                    
+        if not has_any_plan and (not sebi or not str(sebi).startswith("TEMP_")):
+            failed_validations.append(f"No valid plans found inside {os.path.basename(file)}")
 
     print("\n--- Validation Report ---")
     print(f"JSON Files Generated: {total_jsons}")

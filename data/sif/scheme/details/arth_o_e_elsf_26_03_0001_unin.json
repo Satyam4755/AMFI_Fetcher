@@ -9,26 +9,48 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "Regular Plan - Growth Option-INF582M30012, Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-INF582M30038, Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option",
-                "amfi_code": "SIF-115",
-                "isin_code": "INF582M30020"
+                "name": "Regular Plan - Growth Option",
+                "amfi_code": "SIF-114",
+                "isin_code": "INF582M30012",
+                "rta_code": "ELSRG,"
             },
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {}
+                "payout": {
+                    "name": "Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option",
+                    "amfi_code": "SIF-115",
+                    "isin_code": "INF582M30020"
+                },
+                "reinvestment": {
+                    "name": "Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option",
+                    "amfi_code": "SIF-115",
+                    "isin_code": "INF582M30038",
+                    "rta_code": "ELSRR,"
+                },
+                "transfer": {},
+                "unknown": {}
             }
         },
         "direct": {
             "growth": {
-                "name": "Direct Plan - Growth Option-INF582M30046,  Direct Plan - Reinvestment of IDCW Option-INF582M30061, Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option",
-                "amfi_code": "SIF-113",
-                "isin_code": "INF582M30053"
+                "name": "Direct Plan - Growth Option",
+                "amfi_code": "SIF-112",
+                "isin_code": "INF582M30046",
+                "rta_code": "ELSDG,"
             },
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {}
+                "payout": {
+                    "name": "Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option",
+                    "amfi_code": "SIF-113",
+                    "isin_code": "INF582M30053"
+                },
+                "reinvestment": {
+                    "name": "Direct Plan - Reinvestment of IDCW Option",
+                    "amfi_code": "SIF-113",
+                    "isin_code": "INF582M30061",
+                    "rta_code": "ELSDR,"
+                },
+                "transfer": {},
+                "unknown": {}
             }
         }
     },

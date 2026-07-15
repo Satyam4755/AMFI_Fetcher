@@ -10,17 +10,194 @@
         "regular": {
             "growth": {},
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {}
+                "payout": {
+                    "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-WEEKLY",
+                    "amfi_code": "SIF-37",
+                    "isin_code": "INF194K30028",
+                    "additional_plans": [
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-FORTNIGHTLY",
+                            "amfi_code": "SIF-39",
+                            "isin_code": "INF194K30036"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-MONTHLY",
+                            "amfi_code": "SIF-43",
+                            "isin_code": "INF194K30044"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-QUARTERLY",
+                            "amfi_code": "SIF-44",
+                            "isin_code": "INF194K30051"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-HALF YEARLY",
+                            "amfi_code": "SIF-46",
+                            "isin_code": "INF194K30069"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-ANNUAL",
+                            "amfi_code": "SIF-49",
+                            "isin_code": "INF194K30077"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-PERIODIC",
+                            "amfi_code": "SIF-50",
+                            "isin_code": "INF194K30085"
+                        }
+                    ]
+                },
+                "reinvestment": {
+                    "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-DAILY",
+                    "amfi_code": "SIF-52",
+                    "isin_code": "INF194K30093",
+                    "additional_plans": [
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-WEEKLY",
+                            "amfi_code": "SIF-37",
+                            "isin_code": "INF194K30101"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-FORTNIGHTLY",
+                            "amfi_code": "SIF-39",
+                            "isin_code": "INF194K30119"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-MONTHLY",
+                            "amfi_code": "SIF-43",
+                            "isin_code": "INF194K30127"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-QUARTERLY",
+                            "amfi_code": "SIF-44",
+                            "isin_code": "INF194K30135"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT- HALF YEARLY",
+                            "amfi_code": "SIF-46",
+                            "isin_code": "INF194K30143"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-ANNUAL",
+                            "amfi_code": "SIF-49",
+                            "isin_code": "INF194K30150"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-PERIODIC",
+                            "amfi_code": "SIF-50",
+                            "isin_code": "INF194K30168"
+                        }
+                    ]
+                },
+                "transfer": {},
+                "unknown": {
+                    "name": "SIF-53",
+                    "amfi_code": "SIF-53",
+                    "isin_code": "INF194K30341"
+                }
             }
         },
         "direct": {
-            "growth": {},
+            "growth": {
+                "name": "ARUDHA HYBRID LONG SHORT FUND-REGULAR-GROWTH ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-DAILY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-WEEKLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-FORTNIGHTLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-MONTHLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-QUARTERLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-HALF YEARLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-ANNUAL ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW PAYOUT-PERIODIC ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-DAILY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-WEEKLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-FORTNIGHTLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-MONTHLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-QUARTERLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT- HALF YEARLY ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-ANNUAL ARUDHA HYBRID LONG SHORT FUND-REGULAR-IDCW REINVESTEMENT-PERIODIC ARUDHA HYBRID LONG SHORT FUND-DIRECT-GROWTH ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-DAILY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-WEEKLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-FORTNIGHTLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-MONTHLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-QUARTERLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-HALF YEARLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-ANNUAL ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-PERIODIC ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-DAILY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-WEEKLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-FORTNIGHTLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-MONTHLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-QUARTERLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT- HALF YEARLY ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-ANNUAL ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-PERIODIC",
+                "amfi_code": "SIF-40",
+                "isin_code": "INF194K30010",
+                "rta_code": "A01",
+                "additional_plans": [
+                    {
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-GROWTH",
+                        "amfi_code": "SIF-52",
+                        "isin_code": "INF194K30176"
+                    }
+                ]
+            },
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {}
+                "payout": {
+                    "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-DAILY",
+                    "amfi_code": "SIF-54",
+                    "isin_code": "INF194K30184",
+                    "additional_plans": [
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-WEEKLY",
+                            "amfi_code": "SIF-38",
+                            "isin_code": "INF194K30192"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-FORTNIGHTLY",
+                            "amfi_code": "SIF-41",
+                            "isin_code": "INF194K30200"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-MONTHLY",
+                            "amfi_code": "SIF-42",
+                            "isin_code": "INF194K30218"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-QUARTERLY",
+                            "amfi_code": "SIF-45",
+                            "isin_code": "INF194K30226"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-HALF YEARLY",
+                            "amfi_code": "SIF-47",
+                            "isin_code": "INF194K30234"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-ANNUAL",
+                            "amfi_code": "SIF-48",
+                            "isin_code": "INF194K30242"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-PERIODIC",
+                            "amfi_code": "SIF-51",
+                            "isin_code": "INF194K30259"
+                        }
+                    ]
+                },
+                "reinvestment": {
+                    "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-DAILY",
+                    "amfi_code": "SIF-53",
+                    "isin_code": "INF194K30267",
+                    "additional_plans": [
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-WEEKLY",
+                            "amfi_code": "SIF-38",
+                            "isin_code": "INF194K30275"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-FORTNIGHTLY",
+                            "amfi_code": "SIF-41",
+                            "isin_code": "INF194K30283"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-MONTHLY",
+                            "amfi_code": "SIF-42",
+                            "isin_code": "INF194K30291"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-QUARTERLY",
+                            "amfi_code": "SIF-45",
+                            "isin_code": "INF194K30309"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT- HALF YEARLY",
+                            "amfi_code": "SIF-47",
+                            "isin_code": "INF194K30317"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-ANNUAL",
+                            "amfi_code": "SIF-48",
+                            "isin_code": "INF194K30325"
+                        },
+                        {
+                            "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-PERIODIC",
+                            "amfi_code": "SIF-51",
+                            "isin_code": "INF194K30333"
+                        }
+                    ]
+                },
+                "transfer": {},
+                "unknown": {}
             }
         }
     },

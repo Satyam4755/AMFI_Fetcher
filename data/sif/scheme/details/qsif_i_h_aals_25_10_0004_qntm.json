@@ -9,46 +9,43 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Regular Plan",
-                "amfi_code": "SIF-93",
-                "isin_code": "INF966L30217",
-                "rta_code": "905"
+                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option",
+                "amfi_code": "SIF-92",
+                "isin_code": "INF966L30258"
             },
             "idcw": {
-                "payout": {
-                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option - Regular Plan",
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "unknown": {
+                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option",
                     "amfi_code": "SIF-91",
                     "isin_code": "INF966L30225",
-                    "rta_code": "905"
-                },
-                "reinvestment": {
-                    "name": "IDCW Reinvestment - Regular Plan",
-                    "isin_code": "INF966L30233",
-                    "rta_code": "905"
-                },
-                "transfer": {}
+                    "additional_plans": [
+                        {
+                            "name": "Regular Plan",
+                            "amfi_code": "SIF-93",
+                            "isin_code": "INF966L30217"
+                        },
+                        {
+                            "name": "INF966L30266",
+                            "isin_code": "INF966L30233"
+                        }
+                    ]
+                }
             }
         },
         "direct": {
-            "growth": {
-                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option - Direct Plan",
-                "amfi_code": "SIF-90",
-                "isin_code": "INF966L30241",
-                "rta_code": "905"
-            },
+            "growth": {},
             "idcw": {
-                "payout": {
-                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option - Direct Plan",
-                    "amfi_code": "SIF-92",
-                    "isin_code": "INF966L30258",
-                    "rta_code": "905"
-                },
-                "reinvestment": {
-                    "name": "IDCW Reinvestment - Direct Plan",
-                    "isin_code": "INF966L30266",
-                    "rta_code": "905"
-                },
-                "transfer": {}
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "unknown": {
+                    "name": "Direct Plan",
+                    "amfi_code": "SIF-90",
+                    "isin_code": "INF966L30241"
+                }
             }
         }
     },

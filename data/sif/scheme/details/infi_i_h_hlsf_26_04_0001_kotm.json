@@ -9,46 +9,73 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "Infinity Hybrid Long-Short Fund - Regular Plan - Growth",
+                "name": "• Growth",
                 "amfi_code": "SIF-146",
                 "isin_code": "INF174K30046",
                 "rta_code": "ILSF"
             },
             "idcw": {
                 "payout": {
-                    "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout",
-                    "isin_code": "INF174K30053",
+                    "name": "• Payout of Income Distribution cum capital withdrawal (IDCW)",
                     "rta_code": "ILSF"
                 },
                 "reinvestment": {
-                    "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout & Reinvestment",
-                    "amfi_code": "SIF-147",
-                    "isin_code": "INF174K30061",
-                    "rta_code": "ILSF"
+                    "name": "• Reinvestment of Income Distribution cum capital withdrawal (IDCW)",
+                    "rta_code": "ILSF",
+                    "additional_plans": [
+                        {
+                            "name": "Regular Plan - IDCW - Payout & Reinvestment",
+                            "amfi_code": "SIF-147",
+                            "isin_code": "INF174K30053",
+                            "rta_code": "ILSF"
+                        },
+                        {
+                            "name": "Regular Plan - IDCW - Reinvestment",
+                            "isin_code": "INF174K30061",
+                            "rta_code": "ILSF"
+                        }
+                    ]
                 },
-                "transfer": {}
+                "transfer": {},
+                "unknown": {
+                    "name": "Plans - Regular",
+                    "rta_code": "ILSF",
+                    "additional_plans": [
+                        {
+                            "name": "Options under each Plan(s)",
+                            "rta_code": "ILSF"
+                        }
+                    ]
+                }
             }
         },
         "direct": {
-            "growth": {
-                "name": "Infinity Hybrid Long-Short Fund - Direct Plan - Growth",
-                "amfi_code": "SIF-145",
-                "isin_code": "INF174K30012",
-                "rta_code": "ILSF"
-            },
+            "growth": {},
             "idcw": {
                 "payout": {
-                    "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout",
+                    "name": "Direct Plan - IDCW - Payout",
                     "isin_code": "INF174K30020",
                     "rta_code": "ILSF"
                 },
                 "reinvestment": {
-                    "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout & Reinvestment",
+                    "name": "Direct Plan - IDCW - Payout & Reinvestment",
                     "amfi_code": "SIF-148",
-                    "isin_code": "INF174K30038",
-                    "rta_code": "ILSF"
+                    "rta_code": "ILSF",
+                    "additional_plans": [
+                        {
+                            "name": "Direct Plan - IDCW - Reinvestment",
+                            "isin_code": "INF174K30038",
+                            "rta_code": "ILSF"
+                        }
+                    ]
                 },
-                "transfer": {}
+                "transfer": {},
+                "unknown": {
+                    "name": "Direct Plan",
+                    "amfi_code": "SIF-145",
+                    "isin_code": "INF174K30012",
+                    "rta_code": "ILSF"
+                }
             }
         }
     },

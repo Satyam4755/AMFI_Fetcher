@@ -8,24 +8,58 @@
     "listing_details": "BSE",
     "plans": {
         "regular": {
-            "growth": {},
-            "idcw": {
-                "payout": {
-                    "name": "SIF",
-                    "amfi_code": "27"
-                },
-                "reinvestment": {},
-                "transfer": {}
-            }
-        },
-        "direct": {
             "growth": {
-                "name": "Titanium Hybrid Long-Short Fund - Regular Plan - IDCW,Titanium Hybrid Long-Short Fund - Direct Plan - IDCW,Titanium Hybrid Long-Short Fund - Regular Plan - Growth,Titanium Hybrid Long-Short Fund -Direct Plan - Growth"
+                "name": "Regular Plan - Growth",
+                "amfi_code": "SIF-29",
+                "isin_code": "INF277K30047",
+                "rta_code": "THGZ"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
-                "transfer": {}
+                "transfer": {},
+                "unknown": {
+                    "name": "Titanium Hybrid Long-Short Fund",
+                    "amfi_code": "SIF-32",
+                    "isin_code": "INF277K30021",
+                    "rta_code": "THD",
+                    "additional_plans": [
+                        {
+                            "name": "Regular Plan - IDCW",
+                            "amfi_code": "SIF-31",
+                            "isin_code": "INF277K30054",
+                            "rta_code": "THDZ"
+                        },
+                        {
+                            "name": "SIF-27",
+                            "amfi_code": "SIF-27",
+                            "isin_code": "INF277K30062"
+                        },
+                        {
+                            "name": "THDZP",
+                            "rta_code": "THDZP"
+                        }
+                    ]
+                }
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Direct Plan - Growth",
+                "amfi_code": "SIF-30",
+                "isin_code": "INF277K30039",
+                "rta_code": "THDP"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "unknown": {
+                    "name": "Direct Plan - IDCW",
+                    "amfi_code": "SIF-28",
+                    "isin_code": "INF277K30013",
+                    "rta_code": "THG"
+                }
             }
         }
     },
