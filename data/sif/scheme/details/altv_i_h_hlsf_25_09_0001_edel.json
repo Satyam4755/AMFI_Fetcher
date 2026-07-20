@@ -84,5 +84,6 @@
     "exit_load": "If the units are redeemed / switched out on or before 30 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 30 days from the date of allotment – Nil.",
     "registrar": "KFIN Technologies Ltd",
     "custodian": "Standard Chartered",
-    "auditor": "M/s. Walker Chandiok & co LLP"
+    "auditor": "M/s. Walker Chandiok & co LLP",
+    "sif_name": "Altiva SIF"
 }

@@ -60,5 +60,6 @@
     "exit_load": "0.5% if redeemed within 3 months from date of allotment of units .\n No exit load is payable for redemption after 3 months from the date of allotment of \nunits",
     "registrar": "Computer Age Management Services Limited (CAMS)",
     "custodian": "Deutsche Bank AG",
-    "auditor": "PricewaterhouseCoo pers Pvt Ltd"
+    "auditor": "PricewaterhouseCoo pers Pvt Ltd",
+    "sif_name": "DynaSIF SIF"
 }

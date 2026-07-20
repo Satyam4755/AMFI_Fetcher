@@ -70,5 +70,6 @@
     "exit_load": "1% if redeemed or switched out on or before completion of 1 year from the date of allotment of units. Nil if redeemed or switched out after completion of 1 year from the date of allotment of units.",
     "registrar": "Computer Age Management Services Limited (CAMS)",
     "custodian": "ICICI BANK LIMITED",
-    "auditor": "M/s S.R Batliboi & Co. LLP"
+    "auditor": "M/s S.R Batliboi & Co. LLP",
+    "sif_name": "Arthaya SIF"
 }

@@ -106,6 +106,8 @@ def main():
                                     nested_scheme_data, primary_amfi_code = build_scheme_json(scheme_data, rows)
 
                                     nested_scheme_data["sif_name"] = sif_name
+                                    print("DEBUG:", sif_name)
+                                    print(nested_scheme_data.keys())
                                     
                                     # Format filename based on SEBI code
                                     # Fallback to scheme_id if sebi_code is somehow completely missing

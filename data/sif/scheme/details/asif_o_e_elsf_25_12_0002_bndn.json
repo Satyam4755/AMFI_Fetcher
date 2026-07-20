@@ -198,5 +198,6 @@
     "exit_load": "Entry Load: Nil; Exit Load: If redeemed/switched out on or within 30 days from the date of allotment: 0.50% of the applicable NAV; If redeemed/switched out after 30 days from date of allotment - Nil.",
     "registrar": "Computer Age Management Services Pvt. Ltd.(CAMS)",
     "custodian": "Axis Bank",
-    "auditor": "S.R.Batliboi & Co. LLP"
+    "auditor": "S.R.Batliboi & Co. LLP",
+    "sif_name": "Arudha SIF"
 }

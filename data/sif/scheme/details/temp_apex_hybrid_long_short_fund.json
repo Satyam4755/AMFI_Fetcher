@@ -66,5 +66,6 @@
     "exit_load": "For redemption/switch-out of units on or before 90 days from the date of allotment: 0.50% of applicable NAV.\nFor redemption/switch-out of units after 90 days from the date of allotment: Nil.",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "Citibank NA",
-    "auditor": "M/s Deloitte Haskins & Sells LLP"
+    "auditor": "M/s Deloitte Haskins & Sells LLP",
+    "sif_name": "Apex SIF"
 }
