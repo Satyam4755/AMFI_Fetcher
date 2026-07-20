@@ -9,43 +9,42 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option",
-                "amfi_code": "SIF-24",
-                "isin_code": "INF966L30191"
+                "name": "qsif Equity Ex-Top 100 Long-Short Fund - Growth Option ",
+                "isin_code": "INF966L30209",
+                "rta_code": "905"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {
-                    "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option",
-                    "amfi_code": "SIF-26",
-                    "isin_code": "INF966L30167",
+                    "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option ",
+                    "amfi_code": "SIF-25",
+                    "isin_code": "INF966L30175",
+                    "rta_code": "905",
                     "additional_plans": [
                         {
-                            "name": "Regular Plan",
-                            "amfi_code": "SIF-25",
-                            "isin_code": "INF966L30183"
-                        },
-                        {
-                            "name": "INF966L30209",
-                            "isin_code": "INF966L30175"
+                            "name": "qsif Equity Ex-Top 100 Long-Short Fund - IDCW Option ",
+                            "rta_code": "905"
                         }
                     ]
                 }
             }
         },
         "direct": {
-            "growth": {},
+            "growth": {
+                "name": "Direct Plan",
+                "amfi_code": "SIF-23",
+                "isin_code": "INF966L30159",
+                "rta_code": "905"
+            },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
-                "unknown": {
-                    "name": "Direct Plan",
-                    "amfi_code": "SIF-23",
-                    "isin_code": "INF966L30159"
-                }
+                "time_period": {},
+                "unknown": {}
             }
         }
     },

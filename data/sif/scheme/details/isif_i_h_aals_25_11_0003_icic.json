@@ -18,6 +18,7 @@
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         },
@@ -25,18 +26,14 @@
             "growth": {
                 "name": "Direct Plan - Growth",
                 "amfi_code": "SIF-125",
-                "rta_code": "6003",
-                "additional_plans": [
-                    {
-                        "name": "iSIF Active Asset Allocator Long-Short Fund-DIRECT-GROWTH",
-                        "isin_code": "INF109K30067"
-                    }
-                ]
+                "isin_code": "INF109K30067",
+                "rta_code": "6003"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         }

@@ -13,6 +13,7 @@
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         },
@@ -22,6 +23,7 @@
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         }

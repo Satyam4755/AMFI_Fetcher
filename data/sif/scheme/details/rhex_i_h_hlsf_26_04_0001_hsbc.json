@@ -9,71 +9,75 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "RedHex Hybrid Long-Short Fund - Regular Growth",
-                "amfi_code": "SIF-128",
-                "isin_code": "INF336L30015"
+                "name": "RedHex Hybrid Long-Short Fund "
             },
             "idcw": {
                 "payout": {
-                    "name": "RedHex Hybrid Long-Short Fund - Regular IDCW Payout",
+                    "name": "Regular IDCW Payout",
                     "amfi_code": "SIF-132",
                     "isin_code": "INF336L30031",
                     "additional_plans": [
                         {
-                            "name": "RedHex Hybrid Long-Short Fund - Regular Annual IDCW Payout",
+                            "name": "Regular Annual IDCW Payout",
                             "amfi_code": "SIF-133",
-                            "isin_code": "INF336L30106"
+                            "isin_code": "INF336L30106",
+                            "time_period": "annual"
                         }
                     ]
                 },
                 "reinvestment": {
-                    "name": "RedHex Hybrid Long-Short Fund - Regular IDCW Reinvestment",
+                    "name": "Regular IDCW Reinvestment",
                     "amfi_code": "SIF-132",
                     "isin_code": "INF336L30023",
                     "additional_plans": [
                         {
-                            "name": "RedHex Hybrid Long-Short Fund - Regular Annual IDCW Reinvestment",
+                            "name": "Regular Annual IDCW Reinvestment",
                             "amfi_code": "SIF-133",
-                            "isin_code": "INF336L30098"
+                            "isin_code": "INF336L30098",
+                            "time_period": "annual"
                         }
                     ]
                 },
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         },
         "direct": {
             "growth": {
-                "name": "RedHex Hybrid Long-Short Fund - Direct Growth",
+                "name": "Direct Growth",
                 "amfi_code": "SIF-129",
                 "isin_code": "INF336L30049"
             },
             "idcw": {
                 "payout": {
-                    "name": "RedHex Hybrid Long-Short Fund - Direct IDCW Payout",
+                    "name": "Direct IDCW Payout",
                     "amfi_code": "SIF-130",
                     "isin_code": "INF336L30064",
                     "additional_plans": [
                         {
-                            "name": "RedHex Hybrid Long-Short Fund - Direct Annual IDCW Payout",
+                            "name": "Direct Annual IDCW Payout",
                             "amfi_code": "SIF-131",
-                            "isin_code": "INF336L30080"
+                            "isin_code": "INF336L30080",
+                            "time_period": "annual"
                         }
                     ]
                 },
                 "reinvestment": {
-                    "name": "RedHex Hybrid Long-Short Fund - Direct IDCW Reinvestment",
+                    "name": "Direct IDCW Reinvestment",
                     "amfi_code": "SIF-130",
                     "isin_code": "INF336L30056",
                     "additional_plans": [
                         {
-                            "name": "RedHex Hybrid Long-Short Fund - Direct Annual IDCW Reinvestment",
+                            "name": "Direct Annual IDCW Reinvestment",
                             "amfi_code": "SIF-131",
-                            "isin_code": "INF336L30072"
+                            "isin_code": "INF336L30072",
+                            "time_period": "annual"
                         }
                     ]
                 },
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         }

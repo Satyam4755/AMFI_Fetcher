@@ -9,43 +9,41 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option",
-                "amfi_code": "SIF-92",
-                "isin_code": "INF966L30258"
+                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option ",
+                "isin_code": "INF966L30266",
+                "rta_code": "905"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {
-                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option",
-                    "amfi_code": "SIF-91",
-                    "isin_code": "INF966L30225",
+                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option ",
+                    "amfi_code": "SIF-93",
+                    "rta_code": "905",
                     "additional_plans": [
                         {
-                            "name": "Regular Plan",
-                            "amfi_code": "SIF-93",
-                            "isin_code": "INF966L30217"
-                        },
-                        {
-                            "name": "INF966L30266",
-                            "isin_code": "INF966L30233"
+                            "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option ",
+                            "rta_code": "905"
                         }
                     ]
                 }
             }
         },
         "direct": {
-            "growth": {},
+            "growth": {
+                "name": "Direct Plan",
+                "amfi_code": "SIF-90",
+                "isin_code": "INF966L30241",
+                "rta_code": "905"
+            },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
-                "unknown": {
-                    "name": "Direct Plan",
-                    "amfi_code": "SIF-90",
-                    "isin_code": "INF966L30241"
-                }
+                "time_period": {},
+                "unknown": {}
             }
         }
     },

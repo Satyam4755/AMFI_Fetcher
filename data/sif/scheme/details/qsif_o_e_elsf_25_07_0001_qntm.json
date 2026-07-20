@@ -9,43 +9,42 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Equity Long-Short Fund - Growth Option",
-                "amfi_code": "SIF-2",
-                "isin_code": "INF966L30050"
+                "name": "qsif Equity Long-Short Fund - Growth Option ",
+                "isin_code": "INF966L30068",
+                "rta_code": "905"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {
-                    "name": "qsif Equity Long-Short Fund - IDCW Option",
-                    "amfi_code": "SIF-4",
-                    "isin_code": "INF966L30035",
+                    "name": "qsif Equity Long-Short Fund - IDCW Option ",
+                    "amfi_code": "SIF-3",
+                    "isin_code": "INF966L30043",
+                    "rta_code": "905",
                     "additional_plans": [
                         {
-                            "name": "Regular Plan",
-                            "amfi_code": "SIF-3",
-                            "isin_code": "INF966L30027"
-                        },
-                        {
-                            "name": "INF966L30068",
-                            "isin_code": "INF966L30043"
+                            "name": "qsif Equity Long-short Fund - IDCW Option ",
+                            "rta_code": "905"
                         }
                     ]
                 }
             }
         },
         "direct": {
-            "growth": {},
+            "growth": {
+                "name": "Direct Plan",
+                "amfi_code": "SIF-1",
+                "isin_code": "INF966L30019",
+                "rta_code": "905"
+            },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
-                "unknown": {
-                    "name": "Direct Plan",
-                    "amfi_code": "SIF-1",
-                    "isin_code": "INF966L30019"
-                }
+                "time_period": {},
+                "unknown": {}
             }
         }
     },

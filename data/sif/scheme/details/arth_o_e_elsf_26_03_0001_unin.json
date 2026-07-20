@@ -11,8 +11,7 @@
             "growth": {
                 "name": "Regular Plan - Growth Option",
                 "amfi_code": "SIF-114",
-                "isin_code": "INF582M30012",
-                "rta_code": "ELSRG,"
+                "isin_code": "INF582M30012"
             },
             "idcw": {
                 "payout": {
@@ -23,10 +22,10 @@
                 "reinvestment": {
                     "name": "Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option",
                     "amfi_code": "SIF-115",
-                    "isin_code": "INF582M30038",
-                    "rta_code": "ELSRR,"
+                    "isin_code": "INF582M30038"
                 },
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         },
@@ -34,8 +33,7 @@
             "growth": {
                 "name": "Direct Plan - Growth Option",
                 "amfi_code": "SIF-112",
-                "isin_code": "INF582M30046",
-                "rta_code": "ELSDG,"
+                "isin_code": "INF582M30046"
             },
             "idcw": {
                 "payout": {
@@ -46,10 +44,10 @@
                 "reinvestment": {
                     "name": "Direct Plan - Reinvestment of IDCW Option",
                     "amfi_code": "SIF-113",
-                    "isin_code": "INF582M30061",
-                    "rta_code": "ELSDR,"
+                    "isin_code": "INF582M30061"
                 },
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         }

@@ -9,61 +9,44 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "a)Growth Option",
-                "amfi_code": "SIF-104",
-                "additional_plans": [
-                    {
-                        "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-GROWTH",
-                        "isin_code": "INF2F0030015"
-                    }
-                ]
+                "name": "Plans:",
+                "amfi_code": "SIF-107",
+                "isin_code": "INF2F0030015"
             },
             "idcw": {
-                "payout": {
-                    "name": "• Payout of Income Distribution cum Capital Withdrawal (IDCW) Option / facility and",
-                    "amfi_code": "SIF-106",
-                    "additional_plans": [
-                        {
-                            "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-IDCW-PAYOUT",
-                            "isin_code": "INF2F0030023"
-                        }
-                    ]
-                },
+                "payout": {},
                 "reinvestment": {
-                    "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-IDCW-REINVESTMENT",
+                    "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND REGULAR-IDCW-REINVESTMENT",
                     "isin_code": "INF2F0030031"
                 },
                 "transfer": {},
-                "unknown": {
-                    "name": "b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities",
-                    "amfi_code": "SIF-105",
-                    "additional_plans": [
-                        {
-                            "name": "• Re-investment of Income Distribution cum Capital Withdrawal (IDCW) Option / facility"
-                        }
-                    ]
-                }
+                "time_period": {},
+                "unknown": {}
             }
         },
         "direct": {
             "growth": {
-                "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH",
+                "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND DIRECT-GROWTH",
                 "isin_code": "INF2F0030049"
             },
             "idcw": {
                 "payout": {
-                    "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-IDCW-PAYOUT",
-                    "isin_code": "INF2F0030056"
+                    "name": "Regular and Direct. Each Plan offers the following sub-options: a)Growth Option b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities: Payout of Income Distribution cum Capital Withdrawal (IDCW) Option / facility and Re-investment of Income Distribution cum Capital Withdrawal (IDCW) Option / facility",
+                    "isin_code": "INF2F0030023",
+                    "additional_plans": [
+                        {
+                            "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND DIRECT-IDCW-PAYOUT",
+                            "isin_code": "INF2F0030056"
+                        }
+                    ]
                 },
                 "reinvestment": {
-                    "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-IDCW-REINVESTMENT",
+                    "name": "WSIF EQUITY EX-TOP 100 LONG-SHORT FUND DIRECT-IDCW-REINVESTMENT",
                     "isin_code": "INF2F0030064"
                 },
                 "transfer": {},
-                "unknown": {
-                    "name": "Plans:Regular and Direct. Each Plan offers the following sub-options",
-                    "amfi_code": "SIF-107"
-                }
+                "time_period": {},
+                "unknown": {}
             }
         }
     },

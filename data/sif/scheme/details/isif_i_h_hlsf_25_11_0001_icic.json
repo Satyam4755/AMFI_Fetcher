@@ -18,6 +18,7 @@
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         },
@@ -25,18 +26,14 @@
             "growth": {
                 "name": "Direct Plan - Growth",
                 "amfi_code": "SIF-36",
-                "rta_code": "6002",
-                "additional_plans": [
-                    {
-                        "name": "iSIF HYBRID LONG-SHORT FUND-DIRECT-GROWTH",
-                        "isin_code": "INF109K30026"
-                    }
-                ]
+                "isin_code": "INF109K30026",
+                "rta_code": "6002"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         }

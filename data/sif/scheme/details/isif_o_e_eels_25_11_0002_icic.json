@@ -18,6 +18,7 @@
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         },
@@ -25,18 +26,14 @@
             "growth": {
                 "name": "Direct Plan - Growth",
                 "amfi_code": "SIF-33",
-                "rta_code": "6001",
-                "additional_plans": [
-                    {
-                        "name": "iSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH",
-                        "isin_code": "INF109K30042"
-                    }
-                ]
+                "isin_code": "INF109K30042",
+                "rta_code": "6001"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {}
             }
         }

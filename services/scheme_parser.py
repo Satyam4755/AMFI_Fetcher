@@ -69,273 +69,358 @@ def build_scheme_json(api_data, rows):
                     "from": from_date
                 })
 
-    extracted_plans = {}
+
+
+    # Extract all text blobs
+    sebi_code_val = get_val(["sebi code", "sebi codes"])
+    fund_name_val = get_val(["fund name"]) or api_data.get("Scheme_Name")
+    options_text = get_val(["option names"])
+    amfi_text = get_val(["amfi code", "amfi codes"])
+    isin_text = get_val(["isin", "isins"])
+    rta_text = get_val(["rta code", "rta codes"])
     
-    def normalize_name(name):
-        return re.sub(r'[^a-z0-9]', '', name.lower())
+    # -------------------------------------------------------------------------
+    # STAGE 2 & 3: Normalization Engine and Tokenization
+    # -------------------------------------------------------------------------
+    def get_canonical_traits(text):
+        text_lower = text.lower()
+        
+        plan = "regular"
+        if "direct" in text_lower or "dir" in text_lower.split():
+            plan = "direct"
+            
+        option = "growth"
+        if any(k in text_lower for k in ["idcw", "dividend", "div", "payout", "reinvestment", "re-investment", "transfer"]):
+            option = "idcw"
+            
+        subtype = "unknown"
+        time_period = None
+        
+        if option == "idcw":
+            if "reinvest" in text_lower:
+                subtype = "reinvestment"
+            elif "transfer" in text_lower:
+                subtype = "transfer"
+            elif "payout" in text_lower:
+                subtype = "payout"
+                
+            periods = {
+                "daily": ["daily"],
+                "weekly": ["weekly"],
+                "fortnightly": ["fortnightly", "fortnight"],
+                "monthly": ["monthly"],
+                "quarterly": ["quarterly"],
+                "half_yearly": ["half yearly", "half-yearly"],
+                "annual": ["annual", "yearly"],
+                "periodic": ["periodic"]
+            }
+            for p_key, p_keywords in periods.items():
+                if any(k in text_lower for k in p_keywords):
+                    time_period = p_key
+                    break
+                    
+            if subtype == "unknown" and time_period:
+                subtype = "time_period"
+                
+        return {"plan": plan, "option": option, "subtype": subtype if option == "idcw" else None, "time_period": time_period}
+
+    def segment_records(text, fund_name):
+        if not text: return []
+        text = str(text)
+        
+        if ',' in text and '\n' not in text:
+            text = text.replace(',', '\n')
+        elif ',' in text:
+            text = re.sub(r',\s*(?=[a-zA-Z])', '\n', text)
+            
+        fn_escaped = ""
+        if fund_name:
+            fn_escaped = re.escape(fund_name)
+            text = re.sub(f'(?i)(?<!\\n)({fn_escaped})', r'\n\1', text)
+            
+        text = re.sub(r'(?<!\n)(Regular Plan|Direct Plan|Regular|Direct)(?=\s|\-)', r'\n\1', text, flags=re.IGNORECASE)
+        text = re.sub(r'(?<!\n)(INF[A-Z0-9]{9})', r'\n\1', text, flags=re.IGNORECASE)
+        text = re.sub(r'(?<!\n)((?:SIF|S)[-\s]*\d+)(?=\s|$)', r'\n\1', text, flags=re.IGNORECASE)
+        text = re.sub(r'[\u2022\u25E6\u2023\u25B8\u25B9\u2043\u2219\uf0b7\t]+', '\n', text)
+        text = re.sub(r'\s{3,}', '\n', text)
+        
+        lines = []
+        for line in text.split('\n'):
+            clean_line = line.strip().strip('-–,.')
+            clean_line = re.sub(r'^[\d\w]\)[\s\-]+', '', clean_line)
+            clean_line = re.sub(r'^\d+\.[\s\-]+', '', clean_line)
+            if clean_line:
+                lines.append(clean_line)
+                
+        records = []
+        current_record = []
+        for line in lines:
+            is_boundary = False
+            if fund_name and re.search(f'(?i)^{fn_escaped}', line):
+                is_boundary = True
+            elif re.search(r'^(regular plan|direct plan|regular|direct)\b', line, re.IGNORECASE):
+                is_boundary = True
+                
+            if is_boundary and current_record:
+                cr_str = " ".join(current_record)
+                if fund_name and cr_str.lower() == fund_name.lower():
+                    pass
+                else:
+                    records.append(" ".join(current_record))
+                    current_record = []
+                    
+            current_record.append(line)
+            
+        if current_record:
+            records.append(" ".join(current_record))
+            
+        return records
+
+    def extract_code_from_line(line, is_amfi=False, is_isin=False):
+        name = line
+        code = None
+        if is_isin:
+            m = re.search(r'(INF[A-Z0-9]{9})', line, re.IGNORECASE)
+            if m:
+                code = m.group(1)
+                name = line.replace(code, '').strip(' -–')
+        elif is_amfi:
+            m = re.search(r'((?:SIF|S)[-\s]*\d+)', line, re.IGNORECASE)
+            if m:
+                code = m.group(1)
+                name = line.replace(code, '').strip(' -–')
+        else:
+            # RTA codes: if short, maybe it's just the code
+            parts = line.split('-')
+            if len(parts) > 1:
+                last = parts[-1].strip()
+                if len(last) >= 1 and ' ' not in last and not last.isalpha():
+                    code = last
+                    name = "-".join(parts[:-1]).strip()
+            elif len(line) <= 20 and not re.search(r'regular|direct|plan|growth|idcw', line.lower()):
+                code = line
+                name = ""
+                
+        return name, code
 
     def normalize_amfi_code(code):
         if not code: return code
         code = str(code).strip()
         code = re.sub(r'^(?:SIF|S)[-\s]*', '', code, flags=re.IGNORECASE)
         return f"SIF-{code}"
-        
-    def extract_embedded_code(line, is_amfi=False, is_isin=False):
-        # Extracts code if it's appended at the end or beginning
-        code = None
-        name = line
-        parts = line.split('-')
-        
-        if is_isin:
-            # Look for ISIN pattern anywhere in the line
-            m = re.search(r'(INF[A-Z0-9]{9})', line)
-            if m:
-                code = m.group(1)
-                name = line.replace(code, '').strip(' -')
-                return name, code
 
-        if is_amfi:
-            # Check for embedded SIF codes
-            m = re.search(r'((?:SIF|S)[-\s]*\d+)', line, re.IGNORECASE)
-            if m:
-                code = m.group(1)
-                name = line.replace(code, '').strip(' -')
-                return name, normalize_amfi_code(code)
+    # -------------------------------------------------------------------------
+    # STAGE 4: Independent Extraction
+    # -------------------------------------------------------------------------
+    options_raw = segment_records(options_text, fund_name_val)
+    amfi_raw = segment_records(amfi_text, fund_name_val)
+    isin_raw = segment_records(isin_text, fund_name_val)
+    rta_raw = segment_records(rta_text, fund_name_val)
+
+    # Master list of plan objects
+    master_plans = []
+    
+    # 1. Base options
+    for opt in options_raw:
+        traits = get_canonical_traits(opt)
+        master_plans.append({
+            "raw_name": opt,
+            "traits": traits,
+            "amfi_code": None,
+            "isin_code": None,
+            "rta_code": None
+        })
+
+    def merge_codes(raw_lines, code_type):
+        is_amfi = code_type == "amfi_code"
+        is_isin = code_type == "isin_code"
+        
+        parsed_items = []
+        for line in raw_lines:
+            name, code = extract_code_from_line(line, is_amfi=is_amfi, is_isin=is_isin)
+            if code and is_amfi: code = normalize_amfi_code(code)
+            if not name and not code: continue
+            traits = get_canonical_traits(name if name else "")
+            parsed_items.append({"name": name, "code": code, "traits": traits})
             
-        if len(parts) > 1:
-            last_part = parts[-1].strip()
-            first_part = parts[0].strip()
-            if ' ' not in last_part and len(last_part) >= 1 and not last_part.isalpha():
-                if len(parts) >= 3 and ' ' not in parts[-2].strip() and re.match(r'^(SIF|S)$', parts[-2].strip(), re.IGNORECASE):
-                    code = parts[-2].strip() + "-" + last_part
-                    name = "-".join(parts[:-2]).strip()
-                else:
-                    code = last_part
-                    name = "-".join(parts[:-1]).strip()
-            elif len(parts) >= 2 and ' ' not in parts[1].strip() and re.match(r'^(SIF|S)$', first_part, re.IGNORECASE):
-                code = first_part + "-" + parts[1].strip()
-                name = "-".join(parts[2:]).strip()
-            elif ' ' not in first_part and len(first_part) >= 1 and not first_part.isalpha():
-                code = first_part
-                name = "-".join(parts[1:]).strip()
-                
-        if code and is_amfi:
-            code = normalize_amfi_code(code)
-        return name, code
-
-    def split_into_lines(text):
-        if not text: return []
-        text = str(text)
-        if ',' in text and '\n' not in text:
-            text = text.replace(',', '\n')
-        # Insert newline before Regular/Direct Plan if missing
-        text = re.sub(r'(?<!\n)(Regular Plan|Direct Plan)', r'\n\1', text, flags=re.IGNORECASE)
-        # Insert newline before ISINs if separated by spaces
-        text = re.sub(r'(?<!\n)(INF[A-Z0-9]{9})', r'\n\1', text)
-        # Insert newline before SIF codes if separated by spaces
-        text = re.sub(r'(?<!\n)((?:SIF|S)[-\s]*\d+)(?=\s|$)', r'\n\1', text, flags=re.IGNORECASE)
-        # Insert newline for multiple spaces
-        text = re.sub(r'\s{2,}', '\n', text)
-        
-        lines = []
-        for line in text.split('\n'):
-            line = line.strip().replace('–', '-')
-            line = re.sub(r'^[\d\.\)\uf0b7\-\s,]+', '', line).strip()
-            if line: lines.append(line)
-        return lines
-
-    # Extract all text blobs
-    sebi_code_val = get_val(["sebi code", "sebi codes"])
-    options_text = get_val(["option names"])
-    amfi_text = get_val(["amfi code", "amfi codes"])
-    isin_text = get_val(["isin", "isins"])
-    rta_text = get_val(["rta code", "rta codes"])
-    
-    options_lines = split_into_lines(options_text)
-    amfi_lines = split_into_lines(amfi_text)
-    isin_lines = split_into_lines(isin_text)
-    rta_lines = split_into_lines(rta_text)
-    
-    # Pre-populate extracted_plans with options
-    ordered_plan_names = []
-    for line in options_lines:
-        clean_name = re.sub(r'[^a-zA-Z0-9\)]+$', '', line).strip()
-        if not clean_name: continue
-        norm = normalize_name(clean_name)
-        if norm not in extracted_plans:
-            extracted_plans[norm] = {"name": clean_name}
-        ordered_plan_names.append(norm)
-        
-    # Helper for generic parsing
-    def apply_codes(lines, code_key):
-        if not lines: return
-        is_amfi = code_key == "amfi_code"
-        is_isin = code_key == "isin_code"
-        
-        # Check if it's a single general code
-        if len(lines) == 1 and 'plan' not in lines[0].lower() and 'option' not in lines[0].lower() and ' ' not in lines[0]:
-            code_val = lines[0]
-            if is_amfi: code_val = normalize_amfi_code(code_val)
-            for plan_obj in extracted_plans.values():
-                if code_key not in plan_obj: plan_obj[code_key] = code_val
+        # If it's a single general code (like RTA code for the whole scheme)
+        if len(parsed_items) == 1 and not parsed_items[0]["name"] and parsed_items[0]["code"]:
+            for mp in master_plans:
+                if not mp[code_type]: mp[code_type] = parsed_items[0]["code"]
             return
             
-        # Strategy 1: Perfect parallel mapping
-        if ordered_plan_names and len(lines) == len(ordered_plan_names):
-            for i, line in enumerate(lines):
-                norm = ordered_plan_names[i]
-                _, extracted_code = extract_embedded_code(line, is_amfi=is_amfi, is_isin=is_isin)
-                
-                final_code = None
-                if is_amfi:
-                    if extracted_code:
-                        final_code = normalize_amfi_code(extracted_code)
-                    elif re.match(r'^(?:SIF|S)?[-\s]*\d+$', line.strip(), re.IGNORECASE):
-                        final_code = normalize_amfi_code(line)
-                elif is_isin:
-                    if extracted_code:
-                        final_code = extracted_code
-                    else:
-                        m = re.search(r'(INF[A-Z0-9]{9})', line.strip(), re.IGNORECASE)
-                        if m:
-                            final_code = m.group(1)
-                else:
-                    if extracted_code:
-                        final_code = extracted_code
-                    elif len(line.strip()) <= 20 and not re.search(r'regular|direct|plan|growth|idcw', line.lower()):
-                        final_code = line.strip()
-                        
-                if final_code:
-                    extracted_plans[norm][code_key] = final_code
+        # If no options exist, populate them dynamically with carry-forward logic
+        if not master_plans:
+            last_name = None
+            last_traits = None
+            for pitem in parsed_items:
+                if pitem["name"] and not pitem["code"]:
+                    last_name = pitem["name"]
+                    last_traits = pitem["traits"]
+                elif pitem["code"]:
+                    r_name = pitem["name"] if pitem["name"] else (last_name if last_name else pitem["code"])
+                    r_traits = pitem["traits"] if pitem["name"] else (last_traits if last_traits else get_canonical_traits(pitem["code"]))
+                    master_plans.append({
+                        "raw_name": r_name,
+                        "traits": r_traits,
+                        "amfi_code": pitem["code"] if is_amfi else None,
+                        "isin_code": pitem["code"] if is_isin else None,
+                        "rta_code": pitem["code"] if not is_amfi and not is_isin else None
+                    })
+                    last_name = None
+                    last_traits = None
+            return
+
+        # Stage 5: Smart Merging
+        # Strategy A: Positional 1-to-1 matching
+        if len(parsed_items) == len(master_plans):
+            for i, pitem in enumerate(parsed_items):
+                if pitem["code"]:
+                    master_plans[i][code_type] = pitem["code"]
             return
             
-        # Strategy 2: Extract embedded codes and match by name or fallback positional
-        last_unmatched = None
+        # Strategy B: Advanced Trait & Partial Name Matching
         positional_idx = 0
+        last_unmatched_mp = None
         
-        for i, line in enumerate(lines):
-            name, code = extract_embedded_code(line, is_amfi=is_amfi, is_isin=is_isin)
-            clean_name = re.sub(r'[^a-zA-Z0-9\)]+$', '', name).strip()
-            norm = normalize_name(clean_name) if clean_name else ""
-            
-            final_code = None
-            if is_amfi:
-                if code:
-                    final_code = normalize_amfi_code(code)
-                elif re.match(r'^(?:SIF|S)?[-\s]*\d+$', line.strip(), re.IGNORECASE):
-                    final_code = normalize_amfi_code(line)
-            elif is_isin:
-                if code:
-                    final_code = code
-                else:
-                    m = re.search(r'(INF[A-Z0-9]{9})', line.strip(), re.IGNORECASE)
-                    if m:
-                        final_code = m.group(1)
-            else:
-                # RTA code
-                if code:
-                    final_code = code
-                elif len(line.strip()) <= 20 and not re.search(r'regular|direct|plan|growth|idcw', line.lower()):
-                    final_code = line.strip()
-                    
-            if not final_code:
-                if norm: last_unmatched = (norm, clean_name)
+        for pitem in parsed_items:
+            if not pitem["code"]:
+                # If there's a name but no code, remember this name for the next code (embedded code broken across lines)
+                if pitem["name"]:
+                    p_lower = pitem["name"].lower()
+                    candidates = [m for m in master_plans if not m[code_type] and (p_lower in m["raw_name"].lower() or m["raw_name"].lower() in p_lower)]
+                    if candidates:
+                        last_unmatched_mp = candidates[0]
                 continue
                 
             matched = False
             
-            def find_plan(target_name):
-                if not target_name: return None
-                if target_name in extracted_plans: return target_name
-                # Partial match
-                for p in extracted_plans:
-                    if target_name in p or p in target_name:
-                        return p
-                return None
-                
-            matched_last = find_plan(last_unmatched[0] if last_unmatched else None)
-            matched_norm = find_plan(norm)
-            
-            if matched_last and not extracted_plans[matched_last].get(code_key):
-                extracted_plans[matched_last][code_key] = final_code
-                matched = True
-            elif matched_norm and not extracted_plans[matched_norm].get(code_key):
-                extracted_plans[matched_norm][code_key] = final_code
-                matched = True
-            elif norm and code:
-                # Embedded successfully, but name didn't match existing options! Create it.
-                if norm not in extracted_plans:
-                    extracted_plans[norm] = {"name": clean_name}
-                if not extracted_plans[norm].get(code_key):
-                    extracted_plans[norm][code_key] = final_code
+            # 1. Exact canonical trait match (if name was provided and has clear traits)
+            if pitem["name"]:
+                candidates = [m for m in master_plans if m["traits"] == pitem["traits"] and not m[code_type]]
+                if len(candidates) == 1:
+                    candidates[0][code_type] = pitem["code"]
                     matched = True
-            elif last_unmatched:
-                unmatched_norm, unmatched_clean = last_unmatched
-                if unmatched_norm not in extracted_plans:
-                    extracted_plans[unmatched_norm] = {"name": unmatched_clean}
-                if not extracted_plans[unmatched_norm].get(code_key):
-                    extracted_plans[unmatched_norm][code_key] = final_code
+                elif len(candidates) > 1:
+                    # Resolve tie with partial name match
+                    p_lower = pitem["name"].lower()
+                    sub_candidates = [m for m in candidates if p_lower in m["raw_name"].lower() or m["raw_name"].lower() in p_lower]
+                    if sub_candidates:
+                        sub_candidates[0][code_type] = pitem["code"]
+                        matched = True
+                    else:
+                        candidates[0][code_type] = pitem["code"]
+                        matched = True
+                        
+            # 2. Partial String Match
+            if not matched and pitem["name"]:
+                p_lower = pitem["name"].lower()
+                candidates = [m for m in master_plans if not m[code_type] and (p_lower in m["raw_name"].lower() or m["raw_name"].lower() in p_lower)]
+                if candidates:
+                    candidates[0][code_type] = pitem["code"]
+                    matched = True
+                    
+            # 3. Last Unmatched carryover
+            if not matched and last_unmatched_mp and not last_unmatched_mp[code_type]:
+                last_unmatched_mp[code_type] = pitem["code"]
+                matched = True
+                
+            # 4. Positional fallback
+            if not matched:
+                while positional_idx < len(master_plans) and master_plans[positional_idx][code_type]:
+                    positional_idx += 1
+                    
+                if positional_idx < len(master_plans):
+                    master_plans[positional_idx][code_type] = pitem["code"]
+                    positional_idx += 1
                     matched = True
                     
             if not matched:
-                # Positional fallback
-                while positional_idx < len(ordered_plan_names) and extracted_plans[ordered_plan_names[positional_idx]].get(code_key):
-                    positional_idx += 1
-                    
-                if positional_idx < len(ordered_plan_names):
-                    extracted_plans[ordered_plan_names[positional_idx]][code_key] = final_code
-                    positional_idx += 1
-                else:
-                    # Create orphaned
-                    if norm not in extracted_plans:
-                        extracted_plans[norm] = {"name": clean_name or final_code}
-                    extracted_plans[norm][code_key] = final_code
-                    
-            last_unmatched = None
+                # 5. Create orphaned
+                master_plans.append({
+                    "raw_name": pitem["name"] if pitem["name"] else pitem["code"],
+                    "traits": pitem["traits"],
+                    "amfi_code": pitem["code"] if is_amfi else None,
+                    "isin_code": pitem["code"] if is_isin else None,
+                    "rta_code": pitem["code"] if not is_amfi and not is_isin else None
+                })
+            
+            last_unmatched_mp = None
 
-    apply_codes(amfi_lines, "amfi_code")
-    apply_codes(isin_lines, "isin_code")
-    apply_codes(rta_lines, "rta_code")
+    merge_codes(amfi_raw, "amfi_code")
+    merge_codes(isin_raw, "isin_code")
+    merge_codes(rta_raw, "rta_code")
 
+    # -------------------------------------------------------------------------
+    # STAGE 6: Classification
+    # -------------------------------------------------------------------------
     plans = {
         "regular": {
             "growth": {},
-            "idcw": { "payout": {}, "reinvestment": {}, "transfer": {}, "unknown": {} }
+            "idcw": { "payout": {}, "reinvestment": {}, "transfer": {}, "time_period": {}, "unknown": {} }
         },
         "direct": {
             "growth": {},
-            "idcw": { "payout": {}, "reinvestment": {}, "transfer": {}, "unknown": {} }
+            "idcw": { "payout": {}, "reinvestment": {}, "transfer": {}, "time_period": {}, "unknown": {} }
         }
     }
     
     primary_amfi_code = None
-    for plan_obj in extracted_plans.values():
-        name_lower = plan_obj.get("name", "").lower()
-        plan_type = "direct" if "direct" in name_lower else "regular"
+    validation_conflicts = []
+    
+    for mp in master_plans:
+        ptype = mp["traits"]["plan"]
+        otype = mp["traits"]["option"]
+        stype = mp["traits"]["subtype"]
+        tperiod = mp["traits"].get("time_period")
         
-        if "growth" in name_lower:
-            ref = plans[plan_type]["growth"]
+        plan_output = {
+            "name": mp["raw_name"]
+        }
+        if mp["amfi_code"]: plan_output["amfi_code"] = mp["amfi_code"]
+        if mp["isin_code"]: plan_output["isin_code"] = mp["isin_code"]
+        if mp["rta_code"]: plan_output["rta_code"] = mp["rta_code"]
+        if tperiod: plan_output["time_period"] = tperiod
+        
+        if otype == "growth":
+            ref = plans[ptype]["growth"]
+            if not ref.get("name"):
+                ref.update(plan_output)
+                if not primary_amfi_code and mp["amfi_code"]:
+                    primary_amfi_code = mp["amfi_code"]
+            else:
+                # Growth is full, try the alternative plan
+                alt_ptype = "direct" if ptype == "regular" else "regular"
+                alt_ref = plans[alt_ptype]["growth"]
+                if not alt_ref.get("name"):
+                    import logging
+                    logging.warning(f"Ambiguous Growth record re-routed to {alt_ptype}: {mp['raw_name']}")
+                    alt_ref.update(plan_output)
+                    if not primary_amfi_code and mp["amfi_code"]:
+                        primary_amfi_code = mp["amfi_code"]
+                else:
+                    import logging
+                    logging.warning(f"Dropped Growth record due to conflict: {mp['raw_name']}")
+                    validation_conflicts.append({
+                        "reason": "Duplicate Growth record",
+                        "record": plan_output
+                    })
         else:
-            if "reinvest" in name_lower: subtype = "reinvestment"
-            elif "transfer" in name_lower: subtype = "transfer"
-            elif "payout" in name_lower: subtype = "payout"
-            else: subtype = "unknown"
-            ref = plans[plan_type]["idcw"][subtype]
-            
-        if not ref.get("name"):
-            ref.update(plan_obj)
-            if not primary_amfi_code and plan_obj.get("amfi_code"):
-                primary_amfi_code = plan_obj.get("amfi_code")
-        else:
-            if "additional_plans" not in ref: ref["additional_plans"] = []
-            ref["additional_plans"].append(plan_obj)
-            if not primary_amfi_code and plan_obj.get("amfi_code"):
-                primary_amfi_code = plan_obj.get("amfi_code")
-                
+            ref = plans[ptype]["idcw"][stype]
+            if not ref.get("name"):
+                ref.update(plan_output)
+                if not primary_amfi_code and mp["amfi_code"]:
+                    primary_amfi_code = mp["amfi_code"]
+            else:
+                if "additional_plans" not in ref: ref["additional_plans"] = []
+                ref["additional_plans"].append(plan_output)
+                if not primary_amfi_code and mp["amfi_code"]:
+                    primary_amfi_code = mp["amfi_code"]
+
     if primary_amfi_code:
         primary_amfi_code = primary_amfi_code.replace(',', ' ').replace(';', ' ').split()[0]
 
-    fund_name_val = get_val(["fund name"]) or api_data.get("Scheme_Name")
+    fund_name_val_old = get_val(["fund name"]) or api_data.get("Scheme_Name")
     if not sebi_code_val:
         import logging
         fund_name_safe = str(fund_name_val).upper() if fund_name_val else "UNKNOWN_FUND"
@@ -344,7 +429,6 @@ def build_scheme_json(api_data, rows):
         sebi_code_val = f"TEMP_{safe_name}" if safe_name else "TEMP_UNKNOWN"
         logging.warning(f"Generated TEMP SEBI code: {sebi_code_val} for scheme {fund_name_val}")
 
-    # Use api_data as fallback for essential fields
     result = {
         "sebi_code": sebi_code_val,
         "fund_name": fund_name_val,
@@ -371,5 +455,60 @@ def build_scheme_json(api_data, rows):
         "custodian": get_val(["custodian"]),
         "auditor": get_val(["auditor"])
     }
+    
+    # -------------------------------------------------------------------------
+    # STAGE 8: Cross Validation Reporting
+    # -------------------------------------------------------------------------
+    import logging
+    total_extracted_amfi = len([a for a in amfi_raw if a])
+    total_extracted_isin = len([i for i in isin_raw if i])
+    total_extracted_rta = len([r for r in rta_raw if r])
+    
+    mapped_amfi = 0
+    mapped_isin = 0
+    mapped_rta = 0
+    unknown_mappings = 0
+    
+    def count_mappings(plan_node, is_unknown=False):
+        nonlocal mapped_amfi, mapped_isin, mapped_rta, unknown_mappings
+        if not isinstance(plan_node, dict): return
+        if plan_node.get("amfi_code"): mapped_amfi += 1
+        if plan_node.get("isin_code"): mapped_isin += 1
+        if plan_node.get("rta_code"): mapped_rta += 1
+        if is_unknown and (plan_node.get("amfi_code") or plan_node.get("isin_code") or plan_node.get("rta_code")):
+            unknown_mappings += 1
+        for ap in plan_node.get("additional_plans", []):
+            if ap.get("amfi_code"): mapped_amfi += 1
+            if ap.get("isin_code"): mapped_isin += 1
+            if ap.get("rta_code"): mapped_rta += 1
+            if is_unknown: unknown_mappings += 1
+            
+    for ptype, pdata in plans.items():
+        count_mappings(pdata["growth"])
+        for stype, sdata in pdata["idcw"].items():
+            count_mappings(sdata, is_unknown=(stype == "unknown"))
+            
+    total_records = len(master_plans)
+    dropped_records = len(validation_conflicts)
+    classified = total_records - dropped_records
+    
+    # Confidence Score: heavily penalizes dropped records and unmapped codes
+    unmapped_amfi = max(0, total_extracted_amfi - mapped_amfi)
+    score = 100
+    if total_records > 0:
+        score -= (dropped_records / total_records) * 50
+    if total_extracted_amfi > 0:
+        score -= (unmapped_amfi / total_extracted_amfi) * 50
+        
+    logging.info(f"--- Parser Cross-Validation for {sebi_code_val} ---")
+    logging.info(f"Logical Records: Detected={total_records}, Classified={classified}, Dropped={dropped_records}")
+    logging.info(f"AMFI Codes: Extracted={total_extracted_amfi}, Mapped={mapped_amfi}")
+    logging.info(f"ISIN Codes: Extracted={total_extracted_isin}, Mapped={mapped_isin}")
+    logging.info(f"RTA Codes: Extracted={total_extracted_rta}, Mapped={mapped_rta}")
+    logging.info(f"Unknown Mappings: {unknown_mappings}")
+    logging.info(f"Confidence Score: {max(0, int(score))}%")
+    for conflict in validation_conflicts:
+        logging.warning(f"Conflict: {conflict['reason']} -> {conflict['record']}")
+    logging.info("-------------------------------------------------")
     
     return result, primary_amfi_code

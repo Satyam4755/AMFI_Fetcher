@@ -9,43 +9,41 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "qsif Sector Rotation Long-Short Fund - Growth Option",
-                "amfi_code": "SIF-118",
-                "isin_code": "INF966L30290"
+                "name": "qsif Sector Rotation Long-Short Fund - Growth Option ",
+                "isin_code": "INF966L30282",
+                "rta_code": "905"
             },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
+                "time_period": {},
                 "unknown": {
-                    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option",
-                    "amfi_code": "SIF-119",
-                    "isin_code": "INF966L30324",
+                    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option ",
+                    "amfi_code": "SIF-117",
+                    "rta_code": "905",
                     "additional_plans": [
                         {
-                            "name": "Regular Plan",
-                            "amfi_code": "SIF-117",
-                            "isin_code": "INF966L30308"
-                        },
-                        {
-                            "name": "INF966L30282",
-                            "isin_code": "INF966L30316"
+                            "name": "qsif Sector Rotation Long-Short Fund- IDCW Option ",
+                            "rta_code": "905"
                         }
                     ]
                 }
             }
         },
         "direct": {
-            "growth": {},
+            "growth": {
+                "name": "Direct Plan",
+                "amfi_code": "SIF-116",
+                "isin_code": "INF966L30274",
+                "rta_code": "905"
+            },
             "idcw": {
                 "payout": {},
                 "reinvestment": {},
                 "transfer": {},
-                "unknown": {
-                    "name": "Direct Plan",
-                    "amfi_code": "SIF-116",
-                    "isin_code": "INF966L30274"
-                }
+                "time_period": {},
+                "unknown": {}
             }
         }
     },

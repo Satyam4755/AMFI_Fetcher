@@ -9,58 +9,60 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "Growth",
-                "amfi_code": "SIF-11",
-                "isin_code": "INF754K30045",
-                "rta_code": "HLD2"
+                "name": "Regular Plan &",
+                "amfi_code": "SIF-9",
+                "isin_code": "INF754K30011",
+                "rta_code": "HLD1 "
             },
             "idcw": {
                 "payout": {
-                    "name": "Payout of Income Distribution cum Capital Withdrawal (IDCW)",
+                    "name": "Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout",
                     "amfi_code": "SIF-12",
-                    "isin_code": "INF754K30060"
-                },
-                "reinvestment": {
-                    "name": "Reinvestment of Income Distribution cum Capital Withdrawal (IDCW)",
-                    "isin_code": "INF754K30078"
-                },
-                "transfer": {
-                    "name": "Transfer of Income Distribution cum Capital Withdrawal (IDCW)",
-                    "isin_code": "INF754K30086"
-                },
-                "unknown": {
-                    "name": "Regular Plan",
-                    "amfi_code": "SIF-10",
-                    "isin_code": "INF754K30037",
-                    "rta_code": "HLD2",
+                    "isin_code": "INF754K30060",
                     "additional_plans": [
                         {
-                            "name": "Income Distribution cum Capital Withdrawal (IDCW)- Monthly and Quarterly",
-                            "amfi_code": "SIF-12",
-                            "isin_code": "INF754K30052"
-                        },
-                        {
-                            "name": "Altiva Hybrid Long-Short Fund",
-                            "amfi_code": "SIF-9",
-                            "isin_code": "INF754K30011",
-                            "rta_code": "HLD1"
+                            "name": "Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout",
+                            "isin_code": "INF754K30078"
                         }
                     ]
-                }
+                },
+                "reinvestment": {
+                    "name": "Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment",
+                    "isin_code": "INF754K30086"
+                },
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
             }
         },
         "direct": {
-            "growth": {},
+            "growth": {
+                "name": "Altiva Hybrid Long-Short Fund Regular Plan Growth",
+                "amfi_code": "SIF-12",
+                "isin_code": "INF754K30052"
+            },
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "unknown": {
-                    "name": "Direct Plan",
+                "payout": {
+                    "name": "Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout",
+                    "amfi_code": "SIF-10",
+                    "isin_code": "INF754K30037"
+                },
+                "reinvestment": {
+                    "name": "Direct Plan Growth Income Distribution cum Capital Withdrawal (IDCW)- Monthly and Quarterly  Payout of Income Distribution cum Capital Withdrawal (IDCW)  Reinvestment of Income Distribution cum Capital Withdrawal (IDCW)  Transfer of Income Distribution cum Capital Withdrawal (IDCW)",
                     "amfi_code": "SIF-10",
                     "isin_code": "INF754K30029",
-                    "rta_code": "HLD2"
-                }
+                    "time_period": "monthly",
+                    "additional_plans": [
+                        {
+                            "name": "Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment",
+                            "amfi_code": "SIF-11",
+                            "isin_code": "INF754K30045"
+                        }
+                    ]
+                },
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
             }
         }
     },
