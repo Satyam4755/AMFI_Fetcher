@@ -69,5 +69,6 @@
     "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 12 months from allotment.\n•NIL - If the amount sought to be redeemed or switched out more than 12 months",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "Citibank N.A,HDFC Bank Limited, HSBC Limited and SBI-SG Global Securities Services Private Limited",
-    "auditor": "M/s BSR & Co. LLP"
+    "auditor": "M/s BSR & Co. LLP",
+    "sif_name": "iSIF SIF"
 }

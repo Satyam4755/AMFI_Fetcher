@@ -81,5 +81,6 @@
     "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",
     "registrar": "CAMS",
     "custodian": "Hongkong and Shanghai Banking Corporation Limited (HSBC)",
-    "auditor": "B S R & Co. LLP"
+    "auditor": "B S R & Co. LLP",
+    "sif_name": "Franklin Templeton Mutual Fund"
 }

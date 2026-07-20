@@ -87,5 +87,6 @@
     "exit_load": "Exit Load:  1% if redeemed/switched out on or before completion of 15 days from the date of allotment of units\nNo Exit Load is payable if Units are redeemed / switched-out after 15 days  from the date of allotment",
     "registrar": "KFin Technologies Limited",
     "custodian": "HDFC Bank Limited",
-    "auditor": "M M Nissim & Co. LLP"
+    "auditor": "M M Nissim & Co. LLP",
+    "sif_name": "qsif SIF"
 }

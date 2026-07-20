@@ -104,6 +104,8 @@ def main():
                                     
                                     # Build nested JSON structure for this specific sheet
                                     nested_scheme_data, primary_amfi_code = build_scheme_json(scheme_data, rows)
+
+                                    nested_scheme_data["sif_name"] = sif_name
                                     
                                     # Format filename based on SEBI code
                                     # Fallback to scheme_id if sebi_code is somehow completely missing
