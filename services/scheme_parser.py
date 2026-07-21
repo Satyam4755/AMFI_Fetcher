@@ -202,7 +202,7 @@ def build_scheme_json(api_data, rows):
             
         text = re.sub(r'(?<!\n)(Regular Plan|Direct Plan|Regular|Direct)(?=\s|\-)', r'\n\1', text, flags=re.IGNORECASE)
         text = re.sub(r'(?<!\n)(INF[A-Z0-9]{9})', r'\n\1', text, flags=re.IGNORECASE)
-        text = re.sub(r'(?<!\n)((?:SIF|S)[-\s]*\d+)(?=\s|$)', r'\n\1', text, flags=re.IGNORECASE)
+        text = re.sub(r'(?<!\n)((?:SIF|S)[-\s]*\d+)(?=\b|[^a-zA-Z0-9])', r'\n\1', text, flags=re.IGNORECASE)
         text = re.sub(r'[\u2022\u25E6\u2023\u25B8\u25B9\u2043\u2219\uf0b7\t]+', '\n', text)
         text = re.sub(r'\s{3,}', '\n', text)
         
@@ -221,6 +221,8 @@ def build_scheme_json(api_data, rows):
             if fund_name and re.search(f'(?i)^{fn_escaped}', line):
                 is_boundary = True
             elif re.search(r'^(regular plan|direct plan|regular|direct)\b', line, re.IGNORECASE):
+                is_boundary = True
+            elif re.search(r'^(INF[A-Z0-9]{9}|(?:SIF|S)[-\s]*\d+)', line, re.IGNORECASE):
                 is_boundary = True
                 
             if is_boundary and current_record:

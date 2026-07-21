@@ -96,7 +96,7 @@ print(json.dumps(parse_fund_managers(
 
 def normalize_date(d_str):
     if not d_str: return None
-    import dateutil.parser
+    
     try:
         # Avoid things like 'NA', 'N.A.', '-', empty
         d_clean = d_str.strip()
