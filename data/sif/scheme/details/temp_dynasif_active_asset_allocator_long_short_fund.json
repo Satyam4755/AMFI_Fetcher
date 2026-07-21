@@ -1,8 +1,8 @@
 {
-    "sebi_code": "TEMP_DYNASIF_EQUITY_EX_TOP_100_LONG_SHORT_FUND",
-    "fund_name": "DynaSIF Equity Ex-Top 100 Long - Short Fund",
-    "fund_type": "Open Ended",
-    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
+    "sebi_code": "TEMP_DYNASIF_ACTIVE_ASSET_ALLOCATOR_LONG_SHORT_FUND",
+    "fund_name": "DynaSIF Active Asset Allocator Long-Short Fund",
+    "fund_type": "Interval Fund",
+    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
     "riskometer_at_launch": null,
     "riskometer_as_on_date": null,
     "potential_risk_class": null,

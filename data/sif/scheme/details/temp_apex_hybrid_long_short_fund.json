@@ -38,19 +38,33 @@
             "growth": {
                 "name": "Growth Option",
                 "amfi_code": "SIF-83",
-                "isin_code": "INF209K30016"
+                "isin_code": "INF209K30024",
+                "additional_plans": [
+                    {
+                        "name": "SIF-80",
+                        "amfi_code": "SIF-80",
+                        "isin_code": "INF209K30040"
+                    },
+                    {
+                        "name": "SIF-81",
+                        "amfi_code": "SIF-81",
+                        "isin_code": "INF209K30057"
+                    },
+                    {
+                        "name": "SIF-81",
+                        "amfi_code": "SIF-81",
+                        "isin_code": "INF209K30065"
+                    },
+                    {
+                        "name": "SIF-79",
+                        "amfi_code": "SIF-79",
+                        "isin_code": "INF209K30016"
+                    }
+                ]
             },
             "idcw": {
-                "payout": {
-                    "name": "Regular - Payout of IDCW",
-                    "amfi_code": "SIF-81",
-                    "isin_code": "INF209K30057"
-                },
-                "reinvestment": {
-                    "name": "Regular - Reinvestment of IDCW",
-                    "amfi_code": "SIF-81",
-                    "isin_code": "INF209K30065"
-                },
+                "payout": {},
+                "reinvestment": {},
                 "transfer": {},
                 "time_period": {},
                 "unknown": {}
@@ -58,17 +72,13 @@
         },
         "direct": {
             "growth": {
-                "name": "Regular - Growth",
-                "amfi_code": "SIF-80",
-                "isin_code": "INF209K30040"
+                "name": "SIF-83",
+                "amfi_code": "SIF-83",
+                "isin_code": "INF209K30032"
             },
             "idcw": {
                 "payout": {},
-                "reinvestment": {
-                    "name": "Direct - Reinvestment of IDCW",
-                    "amfi_code": "SIF-83",
-                    "isin_code": "INF209K30032"
-                },
+                "reinvestment": {},
                 "transfer": {},
                 "time_period": {},
                 "unknown": {}

@@ -44,24 +44,36 @@
                 "name": "Regular Plan &",
                 "amfi_code": "SIF-9",
                 "isin_code": "INF754K30011",
-                "rta_code": "HLD1 "
+                "rta_code": "HLD1 ",
+                "additional_plans": [
+                    {
+                        "name": "SIF-11",
+                        "amfi_code": "SIF-11",
+                        "isin_code": "INF754K30045"
+                    },
+                    {
+                        "name": "SIF-12",
+                        "amfi_code": "SIF-12",
+                        "isin_code": "INF754K30052"
+                    },
+                    {
+                        "name": "SIF-12",
+                        "amfi_code": "SIF-12",
+                        "isin_code": "INF754K30060"
+                    },
+                    {
+                        "name": "INF754K30078",
+                        "isin_code": "INF754K30078"
+                    },
+                    {
+                        "name": "INF754K30086",
+                        "isin_code": "INF754K30086"
+                    }
+                ]
             },
             "idcw": {
-                "payout": {
-                    "name": "Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout",
-                    "amfi_code": "SIF-12",
-                    "isin_code": "INF754K30060",
-                    "additional_plans": [
-                        {
-                            "name": "Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout",
-                            "isin_code": "INF754K30078"
-                        }
-                    ]
-                },
-                "reinvestment": {
-                    "name": "Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment",
-                    "isin_code": "INF754K30086"
-                },
+                "payout": {},
+                "reinvestment": {},
                 "transfer": {},
                 "time_period": {},
                 "unknown": {}
@@ -69,28 +81,17 @@
         },
         "direct": {
             "growth": {
-                "name": "Altiva Hybrid Long-Short Fund Regular Plan Growth",
-                "amfi_code": "SIF-12",
-                "isin_code": "INF754K30052"
+                "name": "SIF-10",
+                "amfi_code": "SIF-10",
+                "isin_code": "INF754K30037"
             },
             "idcw": {
-                "payout": {
-                    "name": "Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout",
-                    "amfi_code": "SIF-10",
-                    "isin_code": "INF754K30037"
-                },
+                "payout": {},
                 "reinvestment": {
                     "name": "Direct Plan Growth Income Distribution cum Capital Withdrawal (IDCW)- Monthly and Quarterly  Payout of Income Distribution cum Capital Withdrawal (IDCW)  Reinvestment of Income Distribution cum Capital Withdrawal (IDCW)  Transfer of Income Distribution cum Capital Withdrawal (IDCW)",
                     "amfi_code": "SIF-10",
                     "isin_code": "INF754K30029",
-                    "time_period": "monthly",
-                    "additional_plans": [
-                        {
-                            "name": "Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment",
-                            "amfi_code": "SIF-11",
-                            "isin_code": "INF754K30045"
-                        }
-                    ]
+                    "time_period": "monthly"
                 },
                 "transfer": {},
                 "time_period": {},

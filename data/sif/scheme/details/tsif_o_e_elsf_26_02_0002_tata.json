@@ -48,10 +48,12 @@
             "idcw": {
                 "payout": {
                     "name": "Titanium Equity Long-Short Fund Regular IDCW Payout",
+                    "amfi_code": "SIF-98",
                     "isin_code": "INF277K30070"
                 },
                 "reinvestment": {
                     "name": "Titanium Equity Long-Short Fund Regular IDCW Reinvestment",
+                    "amfi_code": "SIF-101",
                     "isin_code": "INF277K30112"
                 },
                 "transfer": {},
@@ -62,15 +64,18 @@
         "direct": {
             "growth": {
                 "name": "Titanium Equity Long-Short Fund Direct Growth",
+                "amfi_code": "SIF-99",
                 "isin_code": "INF277K30104"
             },
             "idcw": {
                 "payout": {
                     "name": "Titanium Equity Long-Short Fund Direct IDCW Payout",
+                    "amfi_code": "SIF-100",
                     "isin_code": "INF277K30120"
                 },
                 "reinvestment": {
                     "name": "Titanium Equity Long-Short Fund Direct IDCW Reinvestment",
+                    "amfi_code": "SIF-103",
                     "isin_code": "INF277K30096"
                 },
                 "transfer": {},

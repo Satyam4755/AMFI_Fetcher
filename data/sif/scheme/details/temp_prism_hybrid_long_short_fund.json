@@ -51,5 +51,6 @@
     "exit_load": null,
     "registrar": null,
     "custodian": null,
-    "auditor": null
+    "auditor": null,
+    "sif_name": "Jio BlackRock Mutual Fund"
 }

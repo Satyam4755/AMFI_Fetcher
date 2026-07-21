@@ -39,27 +39,29 @@
                 "name": "Plans ",
                 "amfi_code": "SIF-145",
                 "isin_code": "INF174K30012",
-                "rta_code": "ILSF"
+                "rta_code": "ILSF",
+                "additional_plans": [
+                    {
+                        "name": "SIF-147",
+                        "amfi_code": "SIF-147",
+                        "isin_code": "INF174K30046",
+                        "rta_code": "ILSF"
+                    },
+                    {
+                        "name": "INF174K30053",
+                        "isin_code": "INF174K30053",
+                        "rta_code": "ILSF"
+                    },
+                    {
+                        "name": "INF174K30061",
+                        "isin_code": "INF174K30061",
+                        "rta_code": "ILSF"
+                    }
+                ]
             },
             "idcw": {
-                "payout": {
-                    "name": "Regular Plan - IDCW - Payout",
-                    "isin_code": "INF174K30053",
-                    "rta_code": "ILSF"
-                },
-                "reinvestment": {
-                    "name": "Regular Plan - IDCW - Payout & Reinvestment",
-                    "amfi_code": "SIF-147",
-                    "isin_code": "INF174K30046",
-                    "rta_code": "ILSF",
-                    "additional_plans": [
-                        {
-                            "name": "Regular Plan - IDCW - Reinvestment",
-                            "isin_code": "INF174K30061",
-                            "rta_code": "ILSF"
-                        }
-                    ]
-                },
+                "payout": {},
+                "reinvestment": {},
                 "transfer": {},
                 "time_period": {},
                 "unknown": {}
@@ -68,7 +70,7 @@
         "direct": {
             "growth": {
                 "name": "Regular &",
-                "amfi_code": "SIF-146",
+                "amfi_code": "SIF-148",
                 "isin_code": "INF174K30020",
                 "rta_code": "ILSF"
             },
@@ -76,7 +78,7 @@
                 "payout": {},
                 "reinvestment": {
                     "name": "Direct Plan Options under each Plan(s) Growth Payout of Income Distribution cum capital withdrawal (IDCW) Reinvestment of Income Distribution cum capital withdrawal (IDCW)",
-                    "amfi_code": "SIF-148",
+                    "amfi_code": "SIF-146",
                     "isin_code": "INF174K30038",
                     "rta_code": "ILSF"
                 },

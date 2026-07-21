@@ -37,8 +37,26 @@
         "regular": {
             "growth": {
                 "name": "qsif Hybrid Long-Short Fund - Growth Option ",
-                "isin_code": "INF966L30126",
-                "rta_code": "905"
+                "amfi_code": "SIF-6",
+                "isin_code": "INF966L30084",
+                "rta_code": "905",
+                "additional_plans": [
+                    {
+                        "name": "qsif Hybrid Long-Short Fund - Growth Option ",
+                        "rta_code": "905"
+                    },
+                    {
+                        "name": "Regular Plan",
+                        "amfi_code": "SIF-8",
+                        "isin_code": "INF966L30118",
+                        "rta_code": "905"
+                    },
+                    {
+                        "name": "Regular Plan",
+                        "isin_code": "INF966L30126",
+                        "rta_code": "905"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
@@ -47,12 +65,13 @@
                 "time_period": {},
                 "unknown": {
                     "name": "qsif Hybrid Long-Short Fund - IDCW Option ",
-                    "amfi_code": "SIF-7",
+                    "amfi_code": "SIF-5",
                     "isin_code": "INF966L30100",
                     "rta_code": "905",
                     "additional_plans": [
                         {
                             "name": "qsif Hybrid Long-Short Fund - IDCW Option ",
+                            "amfi_code": "SIF-7",
                             "rta_code": "905"
                         }
                     ]
@@ -62,9 +81,15 @@
         "direct": {
             "growth": {
                 "name": "Direct Plan",
-                "amfi_code": "SIF-5",
                 "isin_code": "INF966L30076",
-                "rta_code": "905"
+                "rta_code": "905",
+                "additional_plans": [
+                    {
+                        "name": "Direct Plan",
+                        "isin_code": "INF966L30092",
+                        "rta_code": "905"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},

@@ -36,7 +36,7 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "iSIF Equity Long-Short Fund - Growth",
+                "name": "iSIF Equity Long-Short Fund - Growth ",
                 "amfi_code": "SIF-126",
                 "isin_code": "INF109K30075",
                 "rta_code": "1004"
@@ -51,7 +51,7 @@
         },
         "direct": {
             "growth": {
-                "name": "Direct Plan - Growth",
+                "name": "Direct Plan - Growth ",
                 "amfi_code": "SIF-127",
                 "isin_code": "INF109K30083",
                 "rta_code": "6004"

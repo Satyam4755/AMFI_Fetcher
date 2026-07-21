@@ -51,7 +51,41 @@
     "plans": {
         "regular": {
             "growth": {
-                "name": "RedHex Hybrid Long-Short Fund "
+                "name": "RedHex Hybrid Long-Short Fund ",
+                "additional_plans": [
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "Regular Growth",
+                        "amfi_code": "SIF-128",
+                        "isin_code": "INF336L30015"
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    },
+                    {
+                        "name": "RedHex Hybrid Long-Short Fund "
+                    }
+                ]
             },
             "idcw": {
                 "payout": {

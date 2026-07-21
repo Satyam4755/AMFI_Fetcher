@@ -464,11 +464,11 @@ def build_scheme_json(api_data, rows):
                         primary_amfi_code = mp["amfi_code"]
                 else:
                     import logging
-                    logging.warning(f"Dropped Growth record due to conflict: {mp['raw_name']}")
-                    validation_conflicts.append({
-                        "reason": "Duplicate Growth record",
-                        "record": plan_output
-                    })
+                    logging.warning(f"Duplicate Growth record added to additional_plans: {mp['raw_name']}")
+                    if "additional_plans" not in ref: ref["additional_plans"] = []
+                    ref["additional_plans"].append(plan_output)
+                    if not primary_amfi_code and mp["amfi_code"]:
+                        primary_amfi_code = mp["amfi_code"]
         else:
             ref = plans[ptype]["idcw"][stype]
             if not ref.get("name"):

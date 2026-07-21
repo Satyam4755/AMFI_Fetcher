@@ -33,14 +33,26 @@
             "growth": {
                 "name": "Plans:",
                 "amfi_code": "SIF-108",
-                "isin_code": "INF2F0030072"
+                "isin_code": "INF2F0030072",
+                "additional_plans": [
+                    {
+                        "name": "SIF-110",
+                        "amfi_code": "SIF-110",
+                        "isin_code": "INF2F0030098"
+                    },
+                    {
+                        "name": "WSIF EQUITY LONG-SHORT FUND",
+                        "isin_code": "INF2F0030114"
+                    },
+                    {
+                        "name": "INF2F0030122",
+                        "isin_code": "INF2F0030122"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
-                "reinvestment": {
-                    "name": "REGULAR-IDCW-REINVESTMENT  WSIF EQUITY LONG-SHORT FUND",
-                    "isin_code": "INF2F0030098"
-                },
+                "reinvestment": {},
                 "transfer": {},
                 "time_period": {},
                 "unknown": {}
@@ -48,24 +60,17 @@
         },
         "direct": {
             "growth": {
-                "name": "DIRECT-GROWTH  WSIF EQUITY LONG-SHORT FUND",
-                "isin_code": "INF2F0030106"
+                "name": "SIF-111",
+                "amfi_code": "SIF-111",
+                "isin_code": "INF2F0030080"
             },
             "idcw": {
                 "payout": {
                     "name": "Regular and Direct. Each Plan offers the following sub-options: a)Growth Option b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities: Payout of Income Distribution cum Capital Withdrawal (IDCW) Option / facility and Re-investment of Income Distribution cum Capital Withdrawal (IDCW) Option / facility",
-                    "isin_code": "INF2F0030080",
-                    "additional_plans": [
-                        {
-                            "name": "DIRECT-IDCW-PAYOUT  WSIF EQUITY LONG-SHORT FUND",
-                            "isin_code": "INF2F0030114"
-                        }
-                    ]
+                    "amfi_code": "SIF-109",
+                    "isin_code": "INF2F0030106"
                 },
-                "reinvestment": {
-                    "name": "DIRECT-IDCW-REINVESTMENT",
-                    "isin_code": "INF2F0030122"
-                },
+                "reinvestment": {},
                 "transfer": {},
                 "time_period": {},
                 "unknown": {}

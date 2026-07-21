@@ -74,6 +74,7 @@ def main():
                             print(f"     {reason}. Generating basic JSON from API data for {scheme_id}...")
                             
                             nested_scheme_data, _ = build_scheme_json(scheme_data, [])
+                            nested_scheme_data["sif_name"] = sif_name
                             
                             sebi = nested_scheme_data.get("sebi_code")
                             if not sebi:

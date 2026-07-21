@@ -37,8 +37,26 @@
         "regular": {
             "growth": {
                 "name": "qsif Sector Rotation Long-Short Fund - Growth Option ",
-                "isin_code": "INF966L30282",
-                "rta_code": "905"
+                "amfi_code": "SIF-118",
+                "isin_code": "INF966L30274",
+                "rta_code": "905",
+                "additional_plans": [
+                    {
+                        "name": "qsif Sector Rotation Long-Short Fund - Growth Option ",
+                        "rta_code": "905"
+                    },
+                    {
+                        "name": "Regular Plan",
+                        "amfi_code": "SIF-119",
+                        "isin_code": "INF966L30308",
+                        "rta_code": "905"
+                    },
+                    {
+                        "name": "Regular Plan",
+                        "isin_code": "INF966L30324",
+                        "rta_code": "905"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
@@ -47,11 +65,13 @@
                 "time_period": {},
                 "unknown": {
                     "name": "qsif Sector Rotation Long-Short Fund - IDCW Option ",
-                    "amfi_code": "SIF-117",
+                    "amfi_code": "SIF-116",
+                    "isin_code": "INF966L30316",
                     "rta_code": "905",
                     "additional_plans": [
                         {
                             "name": "qsif Sector Rotation Long-Short Fund- IDCW Option ",
+                            "amfi_code": "SIF-117",
                             "rta_code": "905"
                         }
                     ]
@@ -61,9 +81,15 @@
         "direct": {
             "growth": {
                 "name": "Direct Plan",
-                "amfi_code": "SIF-116",
-                "isin_code": "INF966L30274",
-                "rta_code": "905"
+                "isin_code": "INF966L30290",
+                "rta_code": "905",
+                "additional_plans": [
+                    {
+                        "name": "Direct Plan",
+                        "isin_code": "INF966L30282",
+                        "rta_code": "905"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
