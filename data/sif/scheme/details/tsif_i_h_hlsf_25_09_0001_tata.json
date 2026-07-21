@@ -38,7 +38,22 @@
             "growth": {
                 "name": "Titanium Hybrid Long-Short Fund ",
                 "amfi_code": "SIF-32",
-                "isin_code": "INF277K30021"
+                "isin_code": "INF277K30021",
+                "additional_plans": [
+                    {
+                        "name": "Titanium Hybrid Long-Short Fund ",
+                        "amfi_code": "SIF-30",
+                        "isin_code": "INF277K30039"
+                    },
+                    {
+                        "name": "Regular Plan - Growth",
+                        "amfi_code": "SIF-27",
+                        "isin_code": "INF277K30062"
+                    },
+                    {
+                        "name": "Titanium Hybrid Long-Short Fund "
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
@@ -46,13 +61,22 @@
                 "transfer": {},
                 "time_period": {},
                 "unknown": {
-                    "name": "Regular Plan - IDCW"
+                    "name": "Regular Plan - IDCW",
+                    "amfi_code": "SIF-31",
+                    "isin_code": "INF277K30054"
                 }
             }
         },
         "direct": {
             "growth": {
-                "name": "Titanium Hybrid Long-Short Fund "
+                "name": "Titanium Hybrid Long-Short Fund ",
+                "amfi_code": "SIF-28",
+                "isin_code": "INF277K30013",
+                "additional_plans": [
+                    {
+                        "name": "Direct Plan - Growth"
+                    }
+                ]
             },
             "idcw": {
                 "payout": {},
@@ -60,7 +84,9 @@
                 "transfer": {},
                 "time_period": {},
                 "unknown": {
-                    "name": "Direct Plan - IDCW"
+                    "name": "Direct Plan - IDCW",
+                    "amfi_code": "SIF-29",
+                    "isin_code": "INF277K30047"
                 }
             }
         }

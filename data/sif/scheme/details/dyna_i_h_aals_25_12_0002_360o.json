@@ -52,10 +52,14 @@
             },
             "idcw": {
                 "payout": {
-                    "name": "Regular Plan - IDCW Payout"
+                    "name": "Regular Plan - IDCW Payout",
+                    "amfi_code": "SIF-87",
+                    "isin_code": "INF579M30083"
                 },
                 "reinvestment": {
-                    "name": "Regular Plan - IDCW Reinvestment"
+                    "name": "Regular Plan - IDCW Reinvestment",
+                    "amfi_code": "SIF-88",
+                    "isin_code": "INF579M30091"
                 },
                 "transfer": {},
                 "time_period": {},
@@ -64,14 +68,18 @@
         },
         "direct": {
             "growth": {
-                "name": "Direct Plan-Growth"
+                "name": "Direct Plan-Growth",
+                "amfi_code": "SIF-89",
+                "isin_code": "INF579M30109"
             },
             "idcw": {
                 "payout": {
-                    "name": "Direct Plan - IDCW Payout"
+                    "name": "Direct Plan - IDCW Payout",
+                    "isin_code": "INF579M30117"
                 },
                 "reinvestment": {
-                    "name": "Direct Plan - IDCW Reinvestment"
+                    "name": "Direct Plan - IDCW Reinvestment",
+                    "isin_code": "INF579M30125"
                 },
                 "transfer": {},
                 "time_period": {},
