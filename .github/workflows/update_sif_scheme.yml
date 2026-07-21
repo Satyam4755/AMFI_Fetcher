@@ -2,15 +2,15 @@ name: Auto Update SIF Scheme Data
 
 on:
   schedule:
-    - cron: '30 14 * * 0'   
+    - cron: '30 20 * * 6'   
   workflow_dispatch:
 
 jobs:
   update-scheme-data:
     runs-on: ubuntu-latest
     
-    # Run only if NAV workflow succeeded or if triggered manually
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    # Run if triggered manually or via schedule
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' }}
     
     steps:
       - name: Checkout repository
