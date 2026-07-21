@@ -3,8 +3,35 @@
     "fund_name": "qsif Hybrid Long-Short Fund",
     "fund_type": "Interval investment strategy investing in equity and debt securities, including  limited short exposure in equity and debt through derivatives.",
     "category": "Hybrid Long-Short Fund",
+    "riskometer_at_launch": "Risk band Level 5",
+    "riskometer_as_on_date": "Risk band Level 3",
     "potential_risk_class": "N.A.",
+    "scheme_objective": "This investment strategy aims to achieve a blend of capital appreciation and income generation by maintaining a balanced exposure to equity and debt instruments, with a minimum of 25% in each, while utilizing up to 25% in short derivative positions to enhance returns and manage risk.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
+    "nfo_open_date": "2025-09-25 00:00:00",
+    "nfo_close_date": "2025-10-09 00:00:00",
+    "allotment_date": "2025-10-15 00:00:00",
+    "reopen_date": "2025-10-20 00:00:00",
+    "maturity_date": "--",
+    "benchmark_tier_1": null,
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 25,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 25,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Listed on NSE",
     "plans": {
         "regular": {
@@ -48,33 +75,7 @@
             }
         }
     },
-    "fund_managers": [
-        {
-            "name": "Sandeep Tandon",
-            "type": "Primary",
-            "from": "2025-10-15 00:00:00"
-        },
-        {
-            "name": "Ankit Pande",
-            "type": "Co manage",
-            "from": "2025-10-15 00:00:00"
-        },
-        {
-            "name": "Sameer Kate",
-            "type": "Co manage",
-            "from": "2025-10-15 00:00:00"
-        },
-        {
-            "name": "Sanjeev Sharma",
-            "type": "Co manage",
-            "from": "2025-10-15 00:00:00"
-        },
-        {
-            "name": "Jignesh Shah",
-            "type": "Co manage",
-            "from": "2026-02-20 00:00:00"
-        }
-    ],
+    "fund_managers": [],
     "investment_limits": {
         "minimum_application_amount": "Rs. 10,00,000/-",
         "application_multiple": "1",

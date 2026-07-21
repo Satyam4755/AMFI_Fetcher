@@ -3,8 +3,19 @@
     "fund_name": "iSIF Active Asset Allocator Long-Short Fund",
     "fund_type": "Interval Investment Strategy",
     "category": "Active Asset Allocator Long-Short Fund",
+    "riskometer_at_launch": "Risk Level 5",
+    "riskometer_as_on_date": null,
     "potential_risk_class": null,
+    "scheme_objective": null,
     "face_value": "10",
+    "nfo_open_date": "2026-05-19 00:00:00",
+    "nfo_close_date": "2026-06-02 00:00:00",
+    "allotment_date": "2026-06-05 00:00:00",
+    "reopen_date": "2026-06-10 00:00:00",
+    "maturity_date": null,
+    "benchmark_tier_1": "50% Nifty 500 TRI + 40% Nifty Composite Debt Index + 7% Domestic Price of Gold + 3% Domestic Price of Silver.",
+    "benchmark_tier_2": null,
+    "asset_allocation": null,
     "listing_details": "Listed on BSE and NSE",
     "plans": {
         "regular": {
@@ -38,38 +49,7 @@
             }
         }
     },
-    "fund_managers": [
-        {
-            "name": "Mr. Ihab Dalwai",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        },
-        {
-            "name": "Ms. Sharmila D’silva",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        },
-        {
-            "name": "Ms. Masoomi Jhurmrvala",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        },
-        {
-            "name": "Mr. Manish Banthia",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        },
-        {
-            "name": "Mr. Akhil Kakkar",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        },
-        {
-            "name": "Mr. Gaurav Chikane",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        }
-    ],
+    "fund_managers": [],
     "investment_limits": {
         "minimum_application_amount": "•\tMinimum Application/Switch In Amount for first time investor in SIF \n-\tRs. 10,00,000/- and in multiples of Re.1/- thereafter \n-\tFor accredited investor Rs. 10,000/- and in multiples of Re. 1/- thereafter",
         "application_multiple": null,

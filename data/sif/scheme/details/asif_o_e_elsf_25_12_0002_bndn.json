@@ -3,8 +3,35 @@
     "fund_name": "Arudha Equity Long-Short Fund",
     "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "category": "Equity Long-Short Fund",
+    "riskometer_at_launch": "Level 5",
+    "riskometer_as_on_date": "Level 5",
     "potential_risk_class": null,
+    "scheme_objective": "The Investment strategy seeks to generate long-term capital appreciation by investing in a diversified portfolio of equity and equity-related instruments, including limited short exposure through derivatives. There is no assurance that the investment objective of the Investment strategy will be realized.",
     "face_value": "Rs.10/- per unit for Regular and Direct Plan",
+    "nfo_open_date": "2026-03-05 00:00:00",
+    "nfo_close_date": "2026-03-18 00:00:00",
+    "allotment_date": "2026-03-24 00:00:00",
+    "reopen_date": "2026-03-30 00:00:00",
+    "maturity_date": null,
+    "benchmark_tier_1": "NIFTY 500 TRI",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity and Equity Related Instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Investments in Debt and Money Market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investments in units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": null,
     "plans": {
         "regular": {
@@ -182,9 +209,18 @@
     },
     "fund_managers": [
         {
-            "name": "Equity Portion: FM 1 - Mr. Nilesh Saha\nDebt Portion: FM 1 - Mr. Brijesh Shah",
-            "type": "Equity Portion: FM 1 - Comanage\nDebt Portion: FM 1 - Comanage",
-            "from": "Equity Portion: FM 1 - 30-Mar-2026\nDebt Portion: FM 1 - 30-Mar-2026"
+            "name": "Mr. Nilesh Saha",
+            "type": "Comanage",
+            "from": "2026-03-30",
+            "to": null,
+            "role_or_portion": "Equity Portion: FM 1"
+        },
+        {
+            "name": "Mr. Brijesh Shah",
+            "type": "Comanage",
+            "from": "2026-03-30",
+            "to": null,
+            "role_or_portion": "Debt Portion: FM 1"
         }
     ],
     "investment_limits": {

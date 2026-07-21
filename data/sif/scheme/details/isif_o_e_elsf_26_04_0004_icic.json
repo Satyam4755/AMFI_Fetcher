@@ -3,8 +3,35 @@
     "fund_name": "iSIF Equity Long-Short Fund",
     "fund_type": "Open Ended Investment Strategy",
     "category": "Equity Long-Short Fund",
+    "riskometer_at_launch": "Risk Level 5",
+    "riskometer_as_on_date": null,
     "potential_risk_class": null,
+    "scheme_objective": null,
     "face_value": "10",
+    "nfo_open_date": "2026-05-19 00:00:00",
+    "nfo_close_date": "2026-06-02 00:00:00",
+    "allotment_date": "2026-06-05 00:00:00",
+    "reopen_date": "2026-06-10 00:00:00",
+    "maturity_date": null,
+    "benchmark_tier_1": "Nifty 500 TRI",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Money Market instruments and Units of Debt Oriented Mutual Funds",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of Infrastructure Investments Trusts",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": null,
     "plans": {
         "regular": {
@@ -38,23 +65,7 @@
             }
         }
     },
-    "fund_managers": [
-        {
-            "name": "Mr. Mittul Kalawadia",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        },
-        {
-            "name": "Ms. Nitya Mishra",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        },
-        {
-            "name": "Ms. Sri Sharma",
-            "type": "Primary",
-            "from": "2026-06-05 00:00:00"
-        }
-    ],
+    "fund_managers": [],
     "investment_limits": {
         "minimum_application_amount": "•\tMinimum Application/Switch In Amount for first time investor in SIF \n-\tRs. 10,00,000/- and in multiples of Re.1/- thereafter \n-\tFor accredited investor Rs. 10,000/- and in multiples of Re. 1/- thereafter \n\n•\tMinimum Application/Switch In Amount for existing investor who have complied with the Minimum Investment Threshold\n-\t Rs. 10,000 (plus in multiple of Re. 1/-).",
         "application_multiple": null,

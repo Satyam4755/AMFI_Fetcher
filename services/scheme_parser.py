@@ -30,44 +30,106 @@ def build_scheme_json(api_data, rows):
                     return xls_data[k]
         return None
 
-    fund_managers = []
-    fm_names = {}
-    fm_types = {}
-    fm_dates = {}
-    for k, v in xls_data.items():
-        kl = k.lower()
-        if "fund manager" in kl:
-            match = re.search(r'fund manager (\d+)', kl)
-            idx = match.group(1) if match else "1"
-            if "name" in kl: fm_names[idx] = v
-            elif "type" in kl: fm_types[idx] = v
-            elif "from date" in kl: fm_dates[idx] = v
+    def parse_asset_allocation(text):
+        if not text: return None
+        allocations = []
+        pattern = r'([A-Za-z\s]+?)\s*(?:-)?\s*(\d+(?:\.\d+)?)%?\s*(?:to|-)\s*(\d+(?:\.\d+)?)%?'
+        matches = list(re.finditer(pattern, str(text), re.IGNORECASE))
+        if not matches:
+            text_clean = re.sub(r'[\u2022\u25E6\u2023\u25B8\u25B9\u2043\u2219\uf0b7\t]+', '\n', str(text))
+            for line in text_clean.split('\n'):
+                line = line.strip()
+                if line:
+                    allocations.append({
+                        "allocation_type": line,
+                        "minimum_percentage": None,
+                        "maximum_percentage": None
+                    })
+            return allocations
             
-    if fm_names:
-        for idx, name in fm_names.items():
-            if name:
-                fund_managers.append({
-                    "name": name,
-                    "type": fm_types.get(idx, ""),
-                    "from": fm_dates.get(idx, "")
+        for m in matches:
+            name = m.group(1).strip()
+            name = re.sub(r'^[\s,;]+', '', name)
+            allocations.append({
+                "allocation_type": name,
+                "minimum_percentage": float(m.group(2)) if '.' in m.group(2) else int(m.group(2)),
+                "maximum_percentage": float(m.group(3)) if '.' in m.group(3) else int(m.group(3))
+            })
+        return allocations
+
+    def parse_fund_managers(fm_names_raw, fm_types_raw, fm_dates_raw, fm_todates_raw=""):
+        fm_names = [l.strip() for l in str(fm_names_raw).split('\n') if l.strip()] if fm_names_raw else []
+        fm_types = [l.strip() for l in str(fm_types_raw).split('\n') if l.strip()] if fm_types_raw else []
+        fm_froms = [l.strip() for l in str(fm_dates_raw).split('\n') if l.strip()] if fm_dates_raw else []
+        fm_tos   = [l.strip() for l in str(fm_todates_raw).split('\n') if l.strip()] if fm_todates_raw else []
+        
+        def extract_prefix(text):
+            m = re.match(r'^(.*?)\s*-\s*(.*)$', text)
+            if m:
+                prefix = m.group(1).strip()
+                if len(prefix) < 50:
+                    return prefix, m.group(2).strip()
+            return None, text
+            
+        records_dict = {}
+        for l in fm_names:
+            pref, val = extract_prefix(l)
+            key = pref if pref else "default"
+            if key not in records_dict: records_dict[key] = {"name": "", "type": "", "from": "", "to": None, "role_or_portion": pref}
+            records_dict[key]["name"] = val
+            
+        for l in fm_types:
+            pref, val = extract_prefix(l)
+            key = pref if pref else "default"
+            if key in records_dict: records_dict[key]["type"] = val
+            
+        for l in fm_froms:
+            pref, val = extract_prefix(l)
+            key = pref if pref else "default"
+            if key in records_dict: records_dict[key]["from"] = normalize_date(val)
+            
+        for l in fm_tos:
+            pref, val = extract_prefix(l)
+            key = pref if pref else "default"
+            if key in records_dict: records_dict[key]["to"] = normalize_date(val)
+            
+        if (not any(records_dict[k]["name"] for k in records_dict if k != "default")) and len(fm_names) > 1 and len(fm_names) == len(fm_types) == len(fm_froms):
+            records = []
+            for i in range(len(fm_names)):
+                records.append({
+                    "name": fm_names[i],
+                    "type": fm_types[i] if i < len(fm_types) else "",
+                    "from": normalize_date(fm_froms[i]) if i < len(fm_froms) else "",
+                    "to": normalize_date(fm_tos[i]) if i < len(fm_tos) else None,
+                    "role_or_portion": None
                 })
-    else:
-        fm_names_raw = get_val(["fund manager name"]) or ""
-        fm_types_raw = get_val(["fund manager type"]) or ""
-        fm_dates_raw = get_val(["fund manager from date"]) or ""
-        if fm_dates_raw and fm_names_raw:
-            manager_entries = re.split(r';|\band\b', fm_dates_raw)
-            for entry in manager_entries:
-                entry = entry.strip()
-                if not entry: continue
-                parts = entry.split("-", 1)
-                name = parts[0].strip()
-                from_date = parts[1].strip() if len(parts) > 1 else ""
-                fund_managers.append({
-                    "name": name,
-                    "type": fm_types_raw,
-                    "from": from_date
-                })
+            return records
+        return list(records_dict.values())
+
+    def normalize_date(d_str):
+        if not d_str: return None
+        d_clean = str(d_str).strip()
+        if re.search(r'(?i)^(NA|N\.A\.|N/A|-|TBD)$', d_clean) or not d_clean: return None
+        from datetime import datetime
+        formats = [
+            "%d-%b-%Y", "%d-%b-%y", "%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%d",
+            "%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y",
+            "%d-%m-%y", "%d/%m/%y"
+        ]
+        for fmt in formats:
+            try:
+                parsed = datetime.strptime(d_clean, fmt)
+                return parsed.strftime("%Y-%m-%d")
+            except ValueError:
+                continue
+        return d_clean
+
+    fund_managers = parse_fund_managers(
+        get_val(["fund manager name"]),
+        get_val(["fund manager type"]),
+        get_val(["fund manager from date"]),
+        get_val(["fund manager to date"])
+    )
 
 
 
@@ -434,8 +496,24 @@ def build_scheme_json(api_data, rows):
         "fund_name": fund_name_val,
         "fund_type": get_val(["fund type"]) or api_data.get("SchemeType_Desc"),
         "category": get_val(["category as per sebi", "category as per"]) or api_data.get("SchemeCat_Desc"),
+        
+        "riskometer_at_launch": get_val(["riskometer (at the time of launch)", "riskometer at launch"]),
+        "riskometer_as_on_date": get_val(["riskometer (as on date)", "riskometer as on date"]),
         "potential_risk_class": get_val(["potential risk class"]),
+        "scheme_objective": get_val(["description, objective of the scheme", "objective of the scheme"]),
+        
         "face_value": get_val(["face value"]),
+        
+        "nfo_open_date": normalize_date(get_val(["nfo open date"])),
+        "nfo_close_date": normalize_date(get_val(["nfo close date"])),
+        "allotment_date": normalize_date(get_val(["allotment date"])),
+        "reopen_date": normalize_date(get_val(["reopen date", "re-open date"])),
+        "maturity_date": normalize_date(get_val(["maturity date"])),
+        
+        "benchmark_tier_1": get_val(["benchmark (tier 1)", "tier 1 benchmark", "tier 1"]),
+        "benchmark_tier_2": get_val(["benchmark (tier 2)", "tier 2 benchmark", "tier 2"]),
+        
+        "asset_allocation": parse_asset_allocation(get_val(["stated asset allocation", "asset allocation"])),
         "listing_details": get_val(["listing details"]),
         
         "plans": plans,
@@ -455,6 +533,7 @@ def build_scheme_json(api_data, rows):
         "custodian": get_val(["custodian"]),
         "auditor": get_val(["auditor"])
     }
+
     
     # -------------------------------------------------------------------------
     # STAGE 8: Cross Validation Reporting

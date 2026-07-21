@@ -3,8 +3,40 @@
     "fund_name": "Titanium Equity Long-Short Fund",
     "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "category": "Equity Long-Short Fund",
+    "riskometer_at_launch": null,
+    "riskometer_as_on_date": null,
     "potential_risk_class": "Not Applicable",
+    "scheme_objective": "To generate medium to long term capital appreciation by investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments. However, there is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
+    "nfo_open_date": "2026-04-27 00:00:00",
+    "nfo_close_date": "2026-05-11 00:00:00",
+    "allotment_date": "2026-05-14 00:00:00",
+    "reopen_date": "2026-05-20 00:00:00",
+    "maturity_date": "Not Applicable",
+    "benchmark_tier_1": "Nifty 500 Total Return Index (TRI)",
+    "benchmark_tier_2": "Not Applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity and Equity related instruments and Equity Derivatives",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and equity related instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": null,
     "plans": {
         "regular": {
@@ -49,9 +81,11 @@
     },
     "fund_managers": [
         {
-            "name": "FM-1 Suraj Nanda, FM-2 Amit Somani; FM-3 Hasmukh Devji Vishariya",
-            "type": "FM-1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)",
-            "from": "FM-1 27/04/2026, FM-2 27/04/2026, FM-3 27/04/2026,"
+            "name": "1 Suraj Nanda, FM-2 Amit Somani; FM-3 Hasmukh Devji Vishariya",
+            "type": "1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)",
+            "from": "1 27/04/2026, FM-2 27/04/2026, FM-3 27/04/2026,",
+            "to": null,
+            "role_or_portion": "FM"
         }
     ],
     "investment_limits": {

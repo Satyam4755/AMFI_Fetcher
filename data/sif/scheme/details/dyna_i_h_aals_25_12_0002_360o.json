@@ -3,8 +3,45 @@
     "fund_name": "DynaSIF Active Asset Allocator Long-Short Fund",
     "fund_type": "Interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
     "category": "Active Asset Allocator Long-Short Fund",
+    "riskometer_at_launch": "Risk Band Level - 2",
+    "riskometer_as_on_date": "Risk Band Level - 3",
     "potential_risk_class": "N.A",
+    "scheme_objective": "To generate capital appreciation and income generation with dynamic allocation to different asset classes like equities, InVITs, commodities and  fixed income layered with derivatives long-short trading strategies.  There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10 Per unit",
+    "nfo_open_date": "2026-03-06 00:00:00",
+    "nfo_close_date": "2026-03-20 00:00:00",
+    "allotment_date": "2026-03-25 00:00:00",
+    "reopen_date": "2026-03-30 00:00:00",
+    "maturity_date": "Not Applicable",
+    "benchmark_tier_1": "25% BSE SENSEX TRI + 60% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index",
+    "benchmark_tier_2": "-",
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 20,
+            "maximum_percentage": 50
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 20,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Units issued by InVITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        }
+    ],
     "listing_details": "Not Listed",
     "plans": {
         "regular": {
@@ -45,8 +82,10 @@
     "fund_managers": [
         {
             "name": "Mr. Harsh Agarwal, Mr. Milan Mody, Mr. Rahul Khetawat, Mr.Pranav Mise",
-            "type": "Mr. Harsh Agarwal - Primary, Mr. Milan Mody - comanage , Mr. Rahul Khetwat - Comanage, Mr.Pranav Mise - Comanage",
-            "from": "Mr. Harsh Agarwal - 25 Mar 2026, Mr. Milan Mody - 25 Mar 2026, Mr. Rahul Khetawat -  25 Mar 2026, Mr.Pranav Mise - 24th April, 2026"
+            "type": "",
+            "from": "",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

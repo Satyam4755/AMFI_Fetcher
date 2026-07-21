@@ -3,8 +3,40 @@
     "fund_name": "Altiva Hybrid Long-Short Fund",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short \nexposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
+    "riskometer_at_launch": "Risk Band Level 2",
+    "riskometer_as_on_date": "Risk Band Level 1",
     "potential_risk_class": "Not applicable",
+    "scheme_objective": "The primary objective of the investment strategy is to generate capital appreciation through equity and equity related instruments and income through arbitrage, derivatives strategies, special situations and fixed income investments.  There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10/-",
+    "nfo_open_date": "2025-10-01 00:00:00",
+    "nfo_close_date": "2025-10-15 00:00:00",
+    "allotment_date": "2025-10-20 00:00:00",
+    "reopen_date": "2025-10-31 00:00:00",
+    "maturity_date": "Not applicable",
+    "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 25,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 25,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "NSE",
     "plans": {
         "regular": {
@@ -70,7 +102,9 @@
         {
             "name": "Mr. Bhavesh Jain; Mr. Bharat Lahoti; Mr. Dhawal Dalal; Mr. Kedar Karnik and Mr. Amit Vora",
             "type": "Comanage",
-            "from": "Mr. Bhavesh Jain- 20-10-2025; Mr. Bharat Lahoti- 20-10-2025; Mr. Dhawal Dalal- 20-10-2025; Mr. Kedar Karnik -15-01-2026 and Mr. Amit Vora  - 20-10-2025"
+            "from": "",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

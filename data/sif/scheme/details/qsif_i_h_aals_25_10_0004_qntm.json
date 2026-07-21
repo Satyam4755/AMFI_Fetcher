@@ -3,8 +3,40 @@
     "fund_name": "qsif Active Asset Allocator Long-Short Fund",
     "fund_type": "Interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
     "category": "Active Asset Allocator Long-Short Fund",
+    "riskometer_at_launch": "Risk band Level 5",
+    "riskometer_as_on_date": "Risk band Level 3",
     "potential_risk_class": "N.A.",
+    "scheme_objective": null,
     "face_value": "10",
+    "nfo_open_date": "2026-04-02 00:00:00",
+    "nfo_close_date": "2026-04-16 00:00:00",
+    "allotment_date": "2026-04-21 00:00:00",
+    "reopen_date": "2026-04-24 00:00:00",
+    "maturity_date": "--",
+    "benchmark_tier_1": null,
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 30
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Listed on NSE",
     "plans": {
         "regular": {
@@ -47,33 +79,7 @@
             }
         }
     },
-    "fund_managers": [
-        {
-            "name": "Sandeep Tandon",
-            "type": "Primary",
-            "from": "2026-04-21 00:00:00"
-        },
-        {
-            "name": "Jignesh Shah",
-            "type": "Co manage",
-            "from": "2026-04-21 00:00:00"
-        },
-        {
-            "name": "Ankit Pande",
-            "type": "Co manage",
-            "from": "2026-04-21 00:00:00"
-        },
-        {
-            "name": "Sameer Kate",
-            "type": "Co manage",
-            "from": "2026-04-21 00:00:00"
-        },
-        {
-            "name": "Sanjeev Sharma",
-            "type": "Co manage",
-            "from": "2026-04-21 00:00:00"
-        }
-    ],
+    "fund_managers": [],
     "investment_limits": {
         "minimum_application_amount": "Rs. 1000000/-",
         "application_multiple": "1",

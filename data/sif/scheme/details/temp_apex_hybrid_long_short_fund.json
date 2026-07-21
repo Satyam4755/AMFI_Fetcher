@@ -3,8 +3,35 @@
     "fund_name": "Apex Hybrid Long-Short Fund",
     "fund_type": "Interval Fund",
     "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
+    "riskometer_at_launch": null,
+    "riskometer_as_on_date": null,
     "potential_risk_class": null,
+    "scheme_objective": null,
     "face_value": "10",
+    "nfo_open_date": "2026-03-06 00:00:00",
+    "nfo_close_date": "2026-03-18 00:00:00",
+    "allotment_date": "2026-03-25 00:00:00",
+    "reopen_date": "2026-03-30 00:00:00",
+    "maturity_date": null,
+    "benchmark_tier_1": null,
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity related instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "National Stock Exchange of India Limited (NSE)",
     "plans": {
         "regular": {
@@ -48,13 +75,7 @@
             }
         }
     },
-    "fund_managers": [
-        {
-            "name": "Mr. Rohit Karan",
-            "type": "Comanage",
-            "from": "2026-04-02 00:00:00"
-        }
-    ],
+    "fund_managers": [],
     "investment_limits": {
         "minimum_application_amount": "For normal investors - Rs. 10 lakh and in multiples of Re. 1 thereafter subject to the minimum investment threshold guidelines as per the SIF framework. \nFor accredited investors - Rs. 1,00,000",
         "application_multiple": "Re.1",

@@ -3,8 +3,40 @@
     "fund_name": "WSIF Equity Ex-Top 100 Long-Short Fund",
     "fund_type": "An open ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks",
     "category": "Equity Ex-Top 100 Long-Short Fund",
+    "riskometer_at_launch": "Risk band Level 5",
+    "riskometer_as_on_date": "Risk band Level 5",
     "potential_risk_class": "Not applicable",
+    "scheme_objective": "To generate long-term capital appreciation by investing primarily in equity and equity-related instruments of stocks outside the top 100 by market capitalization, while utilizing limited short exposure through derivative. There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10.",
+    "nfo_open_date": "2026-04-15",
+    "nfo_close_date": "2026-04-29",
+    "allotment_date": "May 6 , 2026",
+    "reopen_date": "2026-05-11",
+    "maturity_date": "Not applicable",
+    "benchmark_tier_1": "NIFTY 500 Total Return Index (TRI)",
+    "benchmark_tier_2": "Not applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "companies by market capitalization",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Not applicable",
     "plans": {
         "regular": {
@@ -54,7 +86,9 @@
         {
             "name": "Chinmay Sathe",
             "type": "Primary (Equity portion)",
-            "from": "Managing Since Inception"
+            "from": "Managing Since Inception",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

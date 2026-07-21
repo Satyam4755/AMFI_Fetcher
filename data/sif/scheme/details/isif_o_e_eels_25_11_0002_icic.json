@@ -3,8 +3,40 @@
     "fund_name": "iSIF Equity Ex-Top 100 Long-Short Fund",
     "fund_type": "Open Ended Investment Strategy",
     "category": "Equity Ex-Top 100 Long-Short Fund",
+    "riskometer_at_launch": null,
+    "riskometer_as_on_date": null,
     "potential_risk_class": null,
+    "scheme_objective": null,
     "face_value": "10",
+    "nfo_open_date": "2026-01-16 00:00:00",
+    "nfo_close_date": "2026-01-30 00:00:00",
+    "allotment_date": "2026-02-04 00:00:00",
+    "reopen_date": "2026-02-10 00:00:00",
+    "maturity_date": null,
+    "benchmark_tier_1": "Nifty 500 TRI",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Money Market instruments and Units of Debt Oriented Mutual Funds",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued Infrastructure Investments Trusts",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": null,
     "plans": {
         "regular": {
@@ -38,23 +70,7 @@
             }
         }
     },
-    "fund_managers": [
-        {
-            "name": "Mr. Sankaran Naren",
-            "type": "Primary",
-            "from": "2026-02-04 00:00:00"
-        },
-        {
-            "name": "Mr. Manan Tijoriwala",
-            "type": "Primary",
-            "from": "2026-02-04 00:00:00"
-        },
-        {
-            "name": "Ms. Divya Jain",
-            "type": "Primary",
-            "from": "2026-02-04 00:00:00"
-        }
-    ],
+    "fund_managers": [],
     "investment_limits": {
         "minimum_application_amount": "•\tMinimum amount for other than accredited investor 10,00,000/- and in multiples of Re.1/- thereafter \n•\tMinimum amount for accredited investor: Rs. 10,000/- and in multiples of Re. 1/- thereafter",
         "application_multiple": null,

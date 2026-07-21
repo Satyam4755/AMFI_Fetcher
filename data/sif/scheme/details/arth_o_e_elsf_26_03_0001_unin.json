@@ -3,8 +3,35 @@
     "fund_name": "Arthaya Equity Long Short Fund",
     "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "category": "Equity Long-Short Fund",
+    "riskometer_at_launch": "Risk band Level 5",
+    "riskometer_as_on_date": "Risk band Level 5",
     "potential_risk_class": "Not applicable",
+    "scheme_objective": "The investment objective of the Investment Strategy is to generate long term capital appreciation over the investment cycle by deploying capital in equity and equity related instruments including limited short exposure through derivatives across the market capitalisation. There is no assurance that the investment objective of the Investment Strategy will be achieved.",
     "face_value": "10",
+    "nfo_open_date": "2026-05-04 00:00:00",
+    "nfo_close_date": "2026-05-18 00:00:00",
+    "allotment_date": "2026-05-25 00:00:00",
+    "reopen_date": "2026-05-29 00:00:00",
+    "maturity_date": "Not applicable",
+    "benchmark_tier_1": "NIFTY 200 Total Return Index (TRI)",
+    "benchmark_tier_2": "Not applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments including units of debt \noriented mutual fund schemes",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "As the Investment Strategy is an open ended strategy, and the units of the Investment Strategy will be offered for subscription and redemption at NAV based prices on all Business Days on an on-going basis providing the required liquidity to investors, units of the Investment Strategy are not proposed to be listed on any stock exchange.  \nHowever, the Trustee reserves the right to list the units of the Investment Strategy on any stock exchange(s) at its sole discretion at a later date.",
     "plans": {
         "regular": {
@@ -54,9 +81,11 @@
     },
     "fund_managers": [
         {
-            "name": "FM 1 - Mr.Rajesh Aynor, FM 2 - Mr.Hiten Bhadra(for Arbitrage portion)",
-            "type": "FM 1 - Co-manage, FM 2 - Co-manage",
-            "from": "FM 1 - 25-05-2026, FM 2 - 25-05-2026"
+            "name": "Mr.Rajesh Aynor, FM 2 - Mr.Hiten Bhadra(for Arbitrage portion)",
+            "type": "Co-manage, FM 2 - Co-manage",
+            "from": "25-05-2026, FM 2 - 25-05-2026",
+            "to": null,
+            "role_or_portion": "FM 1"
         }
     ],
     "investment_limits": {

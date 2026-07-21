@@ -3,8 +3,35 @@
     "fund_name": "qsif Equity Ex-Top 100 Long-Short Fund",
     "fund_type": "An open-ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks. (Ex-Top 100)",
     "category": "Equity Ex-Top 100 Long-Short Fund",
+    "riskometer_at_launch": "Risk band Level 5",
+    "riskometer_as_on_date": "Risk band Level 4",
     "potential_risk_class": "N.A.",
+    "scheme_objective": null,
     "face_value": "10",
+    "nfo_open_date": "2025-10-24 00:00:00",
+    "nfo_close_date": "2025-11-07 00:00:00",
+    "allotment_date": "2025-11-12 00:00:00",
+    "reopen_date": "2025-11-13 00:00:00",
+    "maturity_date": "--",
+    "benchmark_tier_1": null,
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "N.A.",
     "plans": {
         "regular": {
@@ -48,33 +75,7 @@
             }
         }
     },
-    "fund_managers": [
-        {
-            "name": "Sandeep Tandon",
-            "type": "Primary",
-            "from": "2025-11-12 00:00:00"
-        },
-        {
-            "name": "Ankit Pande",
-            "type": "Co manage",
-            "from": "2025-11-12 00:00:00"
-        },
-        {
-            "name": "Sameer Kate",
-            "type": "Co manage",
-            "from": "2025-11-12 00:00:00"
-        },
-        {
-            "name": "Sanjeev Sharma",
-            "type": "Co manage",
-            "from": "2025-11-12 00:00:00"
-        },
-        {
-            "name": "Jignesh Shah",
-            "type": "Co manage",
-            "from": "2026-02-20 00:00:00"
-        }
-    ],
+    "fund_managers": [],
     "investment_limits": {
         "minimum_application_amount": "Rs. 1000000/-",
         "application_multiple": "1",

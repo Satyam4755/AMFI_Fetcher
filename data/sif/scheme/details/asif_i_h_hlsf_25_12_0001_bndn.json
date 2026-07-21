@@ -3,8 +3,30 @@
     "fund_name": "Arudha Hybrid Long-Short Fund",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
+    "riskometer_at_launch": "Level  2",
+    "riskometer_as_on_date": "Level 1",
     "potential_risk_class": null,
+    "scheme_objective": "The investment objective of the strategy is to generate optimal returns by investing predominantly in equity and debt securities, including limited short exposure in equity and debt through derivatives. Disclaimer: However, there can be no assurance that the investment objective of the investment strategy will be realized.",
     "face_value": "Rs.10/- per unit for Regular and Direct Plan",
+    "nfo_open_date": "2026-01-09 00:00:00",
+    "nfo_close_date": "2026-01-22 00:00:00",
+    "allotment_date": "2026-01-28 00:00:00",
+    "reopen_date": "2026-02-04 00:00:00",
+    "maturity_date": null,
+    "benchmark_tier_1": "CRISIL Hybrid 85+15 Conservative Index",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity Related Instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Units Issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Yes; NSE and BSE",
     "plans": {
         "regular": {
@@ -233,9 +255,11 @@
     },
     "fund_managers": [
         {
-            "name": "Debt Portion: FM 1 - Mr. Brijesh Shah, FM 2  - Mr. Debraj Lahiri                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Equity Portion: FM 1 - Mr. Kapil Kankonkar, FM 2 - Mr. Nilesh Saha",
-            "type": "Debt Portion: FM 1 - Comanage, FM 2 - Comanage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Equity Portion: FM 1 - Comanage, FM 2 - Comanage",
-            "from": "Debt Portion: FM 1 - 28-Jan-2026, FM 2 - 28-Jan-2026                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Equity Portion: FM 1 - 28-Jan-2026, FM 2 - 28-Jan-2026"
+            "name": "Mr. Brijesh Shah, FM 2  - Mr. Debraj Lahiri                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Equity Portion: FM 1 - Mr. Kapil Kankonkar, FM 2 - Mr. Nilesh Saha",
+            "type": "Comanage, FM 2 - Comanage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Equity Portion: FM 1 - Comanage, FM 2 - Comanage",
+            "from": "28-Jan-2026, FM 2 - 28-Jan-2026                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Equity Portion: FM 1 - 28-Jan-2026, FM 2 - 28-Jan-2026",
+            "to": null,
+            "role_or_portion": "Debt Portion: FM 1"
         }
     ],
     "investment_limits": {

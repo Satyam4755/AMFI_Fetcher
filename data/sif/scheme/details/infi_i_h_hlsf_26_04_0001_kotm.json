@@ -3,8 +3,35 @@
     "fund_name": "Infinity Hybrid Long-Short Fund",
     "fund_type": "An Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives.",
     "category": "Hybrid Long-Short Fund",
+    "riskometer_at_launch": "Risk Band Level 2",
+    "riskometer_as_on_date": "Risk Band Level 2",
     "potential_risk_class": null,
+    "scheme_objective": "The investment objective of the strategy is to achieve a blend of capital appreciation and income generation by investing in equity and equity related instruments as well as debt and money market instruments, including limited short exposure in equity and debt through derivatives.\n\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
+    "nfo_open_date": "2026-06-15",
+    "nfo_close_date": "2026-06-29",
+    "allotment_date": "2026-07-06",
+    "reopen_date": "2026-07-09",
+    "maturity_date": null,
+    "benchmark_tier_1": "NIFTY 50 Hybrid Composite debt 50:50 Index",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 35,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 25,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Investments in InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Listed on BSE & NSE",
     "plans": {
         "regular": {
@@ -61,9 +88,11 @@
     },
     "fund_managers": [
         {
-            "name": "FM 1 : Mr.Hiten Shah, \nFM 2 : Mr. Kalpesh Jain, \nFM 3 : Mr. Abhishek Bisen",
-            "type": "Mr. Hiten Shah & Mr. Kalpesh Jain will be the fund managers for Equity and Overseas investment of theInvestment Strategy. \nMr. Abhishek Bisen will be the Fund Manager for debt and money market investment of the Investment Strategy.",
-            "from": "July 06, 2026"
+            "name": "FM 3 : Mr. Abhishek Bisen",
+            "type": "Mr. Abhishek Bisen will be the Fund Manager for debt and money market investment of the Investment Strategy.",
+            "from": "2026-07-06",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

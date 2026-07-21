@@ -3,8 +3,35 @@
     "fund_name": "Titanium Hybrid Long-Short Fund",
     "fund_type": "Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
+    "riskometer_at_launch": null,
+    "riskometer_as_on_date": null,
     "potential_risk_class": "Not Applicable",
+    "scheme_objective": "To generate medium to long term capital appreciation by investing in equity and equity related instruments as well as debt and money market instruments, including limited short exposure in equity and debt through derivatives. However, there is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
+    "nfo_open_date": "2025-11-24 00:00:00",
+    "nfo_close_date": "2025-12-08 00:00:00",
+    "allotment_date": "2025-12-11 00:00:00",
+    "reopen_date": "2025-12-17 00:00:00",
+    "maturity_date": "Not Applicable",
+    "benchmark_tier_1": "CRISIL Hybrid 50+50 - Moderate Index",
+    "benchmark_tier_2": "Not Applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity and Equity related instruments and Equity Derivatives",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Cash",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        }
+    ],
     "listing_details": "BSE",
     "plans": {
         "regular": {
@@ -40,9 +67,11 @@
     },
     "fund_managers": [
         {
-            "name": "FM-1 Suraj Nanda, FM-2 Amit Somani; FM-3 Hasmukh Devji Vishariya",
-            "type": "FM-1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)",
-            "from": "FM-1 17/11/2025, FM-2 17/11/2025, FM-3 17/11/2025,"
+            "name": "1 Suraj Nanda, FM-2 Amit Somani; FM-3 Hasmukh Devji Vishariya",
+            "type": "1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)",
+            "from": "1 17/11/2025, FM-2 17/11/2025, FM-3 17/11/2025,",
+            "to": null,
+            "role_or_portion": "FM"
         }
     ],
     "investment_limits": {

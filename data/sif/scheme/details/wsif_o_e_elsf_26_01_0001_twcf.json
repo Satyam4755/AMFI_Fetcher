@@ -3,8 +3,30 @@
     "fund_name": "WSIF Equity Long Short Fund",
     "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
     "category": "Equity Long short",
+    "riskometer_at_launch": "Risk Band level 5",
+    "riskometer_as_on_date": "Risk Band level 5",
     "potential_risk_class": "Not applicable",
+    "scheme_objective": "To generate long-term capital appreciation by investing in a diversified portfolio of equity and equity-related instruments while utilizing limited short exposure through derivatives. There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10.",
+    "nfo_open_date": "2026-04-15",
+    "nfo_close_date": "2026-04-29",
+    "allotment_date": "May 6 ,2026",
+    "reopen_date": "2026-05-11",
+    "maturity_date": "Not applicable",
+    "benchmark_tier_1": "NIFTY 500 Total Return Index (TRI)",
+    "benchmark_tier_2": "Not applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investment in INVITS",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Not applicable",
     "plans": {
         "regular": {
@@ -53,8 +75,10 @@
     "fund_managers": [
         {
             "name": "Mr. Chinmay Sathe",
-            "type": "FM 1 - Primary (Equity portion)",
-            "from": "Managing Since Inception"
+            "type": "",
+            "from": "Managing Since Inception",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

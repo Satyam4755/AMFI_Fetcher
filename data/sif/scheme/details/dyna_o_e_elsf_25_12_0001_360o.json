@@ -3,8 +3,40 @@
     "fund_name": "DynaSIF Equity Long - Short Fund",
     "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
     "category": "Equity Long-Short Fund",
+    "riskometer_at_launch": "Risk Band Level 5",
+    "riskometer_as_on_date": "Risk Band Level 5",
     "potential_risk_class": "N.A",
+    "scheme_objective": "To generate long term capital appreciation using structural, cyclical, and tactical investing opportunities in equities with optionality of hedging and shorting. \nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10 Per unit",
+    "nfo_open_date": "2026-02-06 00:00:00",
+    "nfo_close_date": "2026-02-20 00:00:00",
+    "allotment_date": "2026-02-25 00:00:00",
+    "reopen_date": "2026-02-27 00:00:00",
+    "maturity_date": "Not Applicable",
+    "benchmark_tier_1": "BSE 500 TRI",
+    "benchmark_tier_2": "-",
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InVITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Not Listed",
     "plans": {
         "regular": {
@@ -45,8 +77,10 @@
     "fund_managers": [
         {
             "name": "Mr. Harsh Aggarwal , Mr. Pranav Mise",
-            "type": "Mr. Harsh Aggarwal - Primary, Mr.Pranav Mise - Comanage",
-            "from": "Mr. Harsh Aggarwal - 25 Feb 2026, Mr.Pranav Mise - 24th April, 2026"
+            "type": "",
+            "from": "",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

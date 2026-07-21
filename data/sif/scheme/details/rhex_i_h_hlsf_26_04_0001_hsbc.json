@@ -3,8 +3,50 @@
     "fund_name": "RedHex Hybrid Long-Short Fund",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
+    "riskometer_at_launch": "Level  2",
+    "riskometer_as_on_date": "Level  2",
     "potential_risk_class": null,
+    "scheme_objective": "The investment objective of the Investment Strategy is to generate regular returns and capital appreciation by investing in fixed income securities and equity and equity related securities including limited short exposure in equity and debt through derivatives. There is no assurance that the investment objective of the Investment Strategy will be achieved.",
     "face_value": "10",
+    "nfo_open_date": "2026-06-02 00:00:00",
+    "nfo_close_date": "2026-06-16 00:00:00",
+    "allotment_date": "2026-06-19 00:00:00",
+    "reopen_date": "2026-06-25 00:00:00",
+    "maturity_date": null,
+    "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 25,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 25,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Yes; NSE",
     "plans": {
         "regular": {
@@ -84,9 +126,11 @@
     },
     "fund_managers": [
         {
-            "name": "FM1 - Shriram Ramanathan, FM2 - Praveen Ayathan, FM3 - Venugopal Manghat, FM4 - Mayank Chaturvedi",
-            "type": "FM1 - Fixed Income, REITs & InvITs, FM2 - Arbitrage, FM3 - Equity, FM4 - Foreign Securities",
-            "from": "FM1 - June 19, 2026, FM2 - June 19, 2026, FM3 - June 19, 2026, FM4 - June 19, 2026"
+            "name": "Shriram Ramanathan, FM2 - Praveen Ayathan, FM3 - Venugopal Manghat, FM4 - Mayank Chaturvedi",
+            "type": "Fixed Income, REITs & InvITs, FM2 - Arbitrage, FM3 - Equity, FM4 - Foreign Securities",
+            "from": "June 19, 2026, FM2 - June 19, 2026, FM3 - June 19, 2026, FM4 - June 19, 2026",
+            "to": null,
+            "role_or_portion": "FM1"
         }
     ],
     "investment_limits": {

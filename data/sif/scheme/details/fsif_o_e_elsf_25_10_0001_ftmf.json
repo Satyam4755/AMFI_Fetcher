@@ -3,8 +3,35 @@
     "fund_name": "Sapphire Equity Long- Short SIF",
     "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
     "category": "Equity Long-Short Fund",
+    "riskometer_at_launch": "Risk Level 5",
+    "riskometer_as_on_date": "Risk Level 5",
     "potential_risk_class": "Not applicable",
+    "scheme_objective": "The investment strategy seeks to generate alpha over the long term by investing across a spectrum of large, mid and small cap companies using long/short equity strategies. \nThere is no assurance that the investment objective of the investment strategy will be achieved.",
     "face_value": "1000",
+    "nfo_open_date": "2026-04-10",
+    "nfo_close_date": "2026-04-24",
+    "allotment_date": "2026-04-29",
+    "reopen_date": "2026-05-04",
+    "maturity_date": "Not applicable",
+    "benchmark_tier_1": "Nifty 500 TRI",
+    "benchmark_tier_2": "Not applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Not listed",
     "plans": {
         "regular": {
@@ -63,7 +90,9 @@
         {
             "name": "Arihant Jain",
             "type": "Primary",
-            "from": "Arihant Jain: April 29, 2026"
+            "from": "Arihant Jain: April 29, 2026",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {
