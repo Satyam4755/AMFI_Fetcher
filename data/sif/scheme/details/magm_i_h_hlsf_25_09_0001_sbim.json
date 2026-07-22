@@ -1,0 +1,90 @@
+{
+    "sebi_code": "MAGM/I/H/HLSF/25/09/0001/SBIM",
+    "fund_name": "Magnum Hybrid Long Short Fund",
+    "fund_type": "An Interval investment strategy investing predominantly in equity and debt securities, including limited short exposures in equity and debt through derivatives.",
+    "category": "HYBRID",
+    "riskometer_at_launch": "Risk Band Level 2",
+    "riskometer_as_on_date": "Risk Level - 1",
+    "potential_risk_class": "NO",
+    "scheme_objective": null,
+    "face_value": "10.0000",
+    "nfo_open_date": "2025-10-01",
+    "nfo_close_date": "2025-10-15",
+    "allotment_date": "2025-10-20",
+    "reopen_date": "2025-10-29",
+    "maturity_date": null,
+    "benchmark_tier_1": "Nifty 50 Hybrid composite debt 50:50 Index",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity related instruments",
+            "minimum_percentage": 65,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "including Units of Debt oriented mutual fund schemes",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        }
+    ],
+    "listing_details": "NO",
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "Regular Plan - Growth:",
+                "isin_code": "INF200K30015"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Regular Plan - IDCW Payout:",
+                    "isin_code": "INF200K30023"
+                },
+                "reinvestment": {
+                    "name": "Regular Plan - IDCW Reinvest:",
+                    "isin_code": "INF200K30031"
+                },
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Direct Plan - Growth:",
+                "isin_code": "INF200K30049"
+            },
+            "idcw": {
+                "payout": {
+                    "name": "Direct Plan - IDCW Payout:",
+                    "isin_code": "INF200K30056"
+                },
+                "reinvestment": {
+                    "name": "Direct Plan - IDCW Reinvest:",
+                    "isin_code": "INF200K30064"
+                },
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
+            }
+        }
+    },
+    "fund_managers": [],
+    "investment_limits": {
+        "minimum_application_amount": null,
+        "application_multiple": null,
+        "minimum_additional_amount": null,
+        "additional_multiple": null,
+        "minimum_redemption_amount": null,
+        "minimum_redemption_units": null
+    },
+    "exit_load": "Exit Load- For Ongoing Basis: Any redemption or switch-out in excess of the limit shall be subject to the following exit load: 0.50 % if the investment is redeemed on or before 15 days from the date of allotment of units. 0.25 % if the investment is redeemed after 15 days but on or before 1 month from the date of allotment of units. No Exit Load will be charged if investment is redeemed after 1 month from the date of allotment of units.The AMC reserves the right to modify / change the load structure on a prospective basis.",
+    "registrar": "CAMS",
+    "custodian": "SBI-SG Global Securities Services Pvt. Ltd",
+    "auditor": "Chokshi & Chokshi LLP",
+    "sif_name": "Magnum SIF"
+}

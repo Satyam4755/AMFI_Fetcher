@@ -37,8 +37,8 @@ def download_xls(summary_xls_url: str) -> str | None:
             
             content_type = response.headers.get('Content-Type', '').lower()
             if 'text/html' in content_type or 'text/plain' in content_type:
-                logger.warning(f"Invalid XLS received from AMFI. Skipping download. (Content-Type: {content_type}) URL: {summary_xls_url}")
-                return None
+                logger.info(f"HTML/Text file received, downloading anyway to attempt parsing as HTML table. URL: {summary_xls_url}")
+                # We do not return None here anymore
                 
             iterator = response.iter_content(chunk_size=8192)
             try:
@@ -52,8 +52,8 @@ def download_xls(summary_xls_url: str) -> str | None:
                 
             header = first_chunk[:50].lstrip().lower()
             if header.startswith(b"<!doctype") or header.startswith(b"<html"):
-                logger.warning(f"Invalid XLS received from AMFI. Skipping download. (HTML body detected) URL: {summary_xls_url}")
-                return None
+                logger.info(f"HTML body detected in XLS, downloading anyway. URL: {summary_xls_url}")
+                # We do not return None here anymore
                 
             with open(file_path, "wb") as f:
                 f.write(first_chunk)

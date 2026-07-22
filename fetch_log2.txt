@@ -1,0 +1,632 @@
+Starting Scheme Fetch Pipeline...
+Found 51 total SIFs...
+
+Processing SIF 1/51 (sif_id: 85, Abakkus Mutual Fund)...
+No investment strategies found for SIF 85.
+
+Processing SIF 2/51 (sif_id: 47, Altiva SIF)...
+Discovered 2 API schemes for SIF 47.
+  -> Fetching detail for scheme_id: S-22...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-22.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: altv_o_e_eels_26_03_0002_edel.json
+SEBI used: ALTV/O/E/EELS/26/03/0002/EDEL
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-22.xls
+  -> Fetching detail for scheme_id: S-3...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-3.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: altv_i_h_hlsf_25_09_0001_edel.json
+SEBI used: ALTV/I/H/HLSF/25/09/0001/EDEL
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-3.xls
+
+Processing SIF 3/51 (sif_id: 80, Angel One Mutual Fund)...
+No investment strategies found for SIF 80.
+
+Processing SIF 4/51 (sif_id: 3, Apex SIF)...
+Discovered 1 API schemes for SIF 3.
+  -> Fetching detail for scheme_id: S-13...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-13.xls
+Sheets: ['Apex Hybrid Long Short Fund']
+
+Selected sheet: Apex Hybrid Long Short Fund
+Detected headers: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2']
+Rows parsed: 84
+---------------------
+
+
+Validation:
+JSON filename: temp_apex_hybrid_long_short_fund.json
+SEBI used: TEMP_APEX_HYBRID_LONG_SHORT_FUND
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-13.xls
+
+Processing SIF 5/51 (sif_id: 61, Arthaya SIF)...
+Discovered 1 API schemes for SIF 61.
+  -> Fetching detail for scheme_id: S-20...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-20.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'INVESTMENT STRATEGY SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: arth_o_e_elsf_26_03_0001_unin.json
+SEBI used: ARTH/O/E/ELSF/26/03/0001/UNIN
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-20.xls
+
+Processing SIF 6/51 (sif_id: 48, Arudha SIF)...
+Discovered 2 API schemes for SIF 48.
+  -> Fetching detail for scheme_id: S-12...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-12.xls
+Sheets: ['Arudha Equity Long-Short Fund']
+
+Selected sheet: Arudha Equity Long-Short Fund
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: asif_o_e_elsf_25_12_0002_bndn.json
+SEBI used: ASIF/O/E/ELSF/25/12/0002/BNDN
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-12.xls
+  -> Fetching detail for scheme_id: S-10...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-10.xls
+Sheets: ['Arudha Hybrid Long-Short Fund']
+
+Selected sheet: Arudha Hybrid Long-Short Fund
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: asif_i_h_hlsf_25_12_0001_bndn.json
+SEBI used: ASIF/I/H/HLSF/25/12/0001/BNDN
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-10.xls
+
+Processing SIF 7/51 (sif_id: 53, Axis Mutual Fund)...
+No investment strategies found for SIF 53.
+
+Processing SIF 8/51 (sif_id: 75, Bajaj Finserv Mutual Fund)...
+No investment strategies found for SIF 75.
+
+Processing SIF 9/51 (sif_id: 46, Bank of India Mutual Fund)...
+No investment strategies found for SIF 46.
+
+Processing SIF 10/51 (sif_id: 4, Baroda BNP Paribas Mutual Fund)...
+No investment strategies found for SIF 4.
+
+Processing SIF 11/51 (sif_id: 32, Canara Robeco Mutual Fund)...
+No investment strategies found for SIF 32.
+
+Processing SIF 12/51 (sif_id: 81, Capitalmind Mutual Fund)...
+No investment strategies found for SIF 81.
+
+Processing SIF 13/51 (sif_id: 84, Choice Mutual Fund)...
+No investment strategies found for SIF 84.
+
+Processing SIF 14/51 (sif_id: 70, Diviniti SIF)...
+Discovered 1 API schemes for SIF 70.
+  -> Fetching detail for scheme_id: S-5...
+     Summary XLS not found or invalid format. Generating basic JSON from API data for S-5...
+
+Validation (Basic):
+JSON filename: temp_diviniti_equity_long_short_fund.json
+SEBI used: TEMP_DIVINITI_EQUITY_LONG_SHORT_FUND
+
+
+Processing SIF 15/51 (sif_id: 6, DSP Mutual Fund)...
+No investment strategies found for SIF 6.
+
+Processing SIF 16/51 (sif_id: 62, DynaSIF SIF)...
+Discovered 3 API schemes for SIF 62.
+  -> Fetching detail for scheme_id: S-14...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-14.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: dyna_i_h_aals_25_12_0002_360o.json
+SEBI used: DYNA/I/H/AALS/25/12/0002/360O
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-14.xls
+  -> Fetching detail for scheme_id: S-28...
+     Summary XLS not found or invalid format. Generating basic JSON from API data for S-28...
+
+Validation (Basic):
+JSON filename: temp_dynasif_equity_ex_top_100_long_short_fund.json
+SEBI used: TEMP_DYNASIF_EQUITY_EX_TOP_100_LONG_SHORT_FUND
+
+  -> Fetching detail for scheme_id: S-11...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-11.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: dyna_o_e_elsf_25_12_0001_360o.json
+SEBI used: DYNA/O/E/ELSF/25/12/0001/360O
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-11.xls
+
+Processing SIF 17/51 (sif_id: 27, Franklin Templeton Mutual Fund)...
+Discovered 1 API schemes for SIF 27.
+  -> Fetching detail for scheme_id: S-16...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-16.xls
+Sheets: ['11393']
+
+Selected sheet: 11393
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: fsif_o_e_elsf_25_10_0001_ftmf.json
+SEBI used: FSIF/O/E/ELSF/25/10/0001/FTMF
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-16.xls
+
+Processing SIF 18/51 (sif_id: 63, Groww Mutual Fund)...
+No investment strategies found for SIF 63.
+
+Processing SIF 19/51 (sif_id: 9, HDFC Mutual Fund)...
+No investment strategies found for SIF 9.
+
+Processing SIF 20/51 (sif_id: 76, Helios Mutual Fund)...
+No investment strategies found for SIF 76.
+
+Processing SIF 21/51 (sif_id: 37, HSBC Mutual Fund)...
+Discovered 1 API schemes for SIF 37.
+  -> Fetching detail for scheme_id: S-25...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-25.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: rhex_i_h_hlsf_26_04_0001_hsbc.json
+SEBI used: RHEX/I/H/HLSF/26/04/0001/HSBC
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-25.xls
+
+Processing SIF 22/51 (sif_id: 65, IL&FS Mutual Fund (IDF))...
+No investment strategies found for SIF 65.
+
+Processing SIF 23/51 (sif_id: 42, Invesco Mutual Fund)...
+Discovered 1 API schemes for SIF 42.
+  -> Fetching detail for scheme_id: S-30...
+     Summary XLS not found or invalid format. Generating basic JSON from API data for S-30...
+
+Validation (Basic):
+JSON filename: temp_summit_equity_long_short_fund.json
+SEBI used: TEMP_SUMMIT_EQUITY_LONG_SHORT_FUND
+
+
+Processing SIF 24/51 (sif_id: 20, iSIF SIF)...
+Discovered 4 API schemes for SIF 20.
+  -> Fetching detail for scheme_id: S-23...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-23.xls
+Sheets: ['iSIF Active Asset Allocator']
+
+Selected sheet: iSIF Active Asset Allocator
+Detected headers: ['Fields', 'Investment Strategy Summary Document', 'Unnamed: 2']
+Rows parsed: 84
+---------------------
+
+
+Validation:
+JSON filename: isif_i_h_aals_25_11_0003_icic.json
+SEBI used: ISIF/I/H/AALS/25/11/0003/ICIC
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-23.xls
+  -> Fetching detail for scheme_id: S-8...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-8.xls
+Sheets: ['iSIF Equity Ex-top 100 ']
+
+Selected sheet: iSIF Equity Ex-top 100 
+Detected headers: ['Fields', 'INVESTMENT STRATEGY SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 75
+---------------------
+
+
+Validation:
+JSON filename: isif_o_e_eels_25_11_0002_icic.json
+SEBI used: ISIF/O/E/EELS/25/11/0002/ICIC
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-8.xls
+  -> Fetching detail for scheme_id: S-24...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-24.xls
+Sheets: ['iSIF Equity Long-Short ']
+
+Selected sheet: iSIF Equity Long-Short 
+Detected headers: ['Fields', 'INVESTMENT STRATEGY SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 75
+---------------------
+
+
+Validation:
+JSON filename: isif_o_e_elsf_26_04_0004_icic.json
+SEBI used: ISIF/O/E/ELSF/26/04/0004/ICIC
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-24.xls
+  -> Fetching detail for scheme_id: S-9...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-9.xls
+Sheets: ['iSIF Hybrid Long- SHort Fund']
+
+Selected sheet: iSIF Hybrid Long- SHort Fund
+Detected headers: ['Fields', 'Investment Strategy Summary Document', 'Unnamed: 2']
+Rows parsed: 78
+---------------------
+
+
+Validation:
+JSON filename: isif_i_h_hlsf_25_11_0001_icic.json
+SEBI used: ISIF/I/H/HLSF/25/11/0001/ICIC
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-9.xls
+
+Processing SIF 25/51 (sif_id: 82, Jio BlackRock Mutual Fund)...
+Discovered 1 API schemes for SIF 82.
+  -> Fetching detail for scheme_id: S-27...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-27.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: prsm_i_h_hlsf_26_04_0001_jbmf.json
+SEBI used: PRSM/I/H/HLSF/26/04/0001/JBMF
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-27.xls
+
+Processing SIF 26/51 (sif_id: 16, JM Financial Mutual Fund)...
+No investment strategies found for SIF 16.
+
+Processing SIF 27/51 (sif_id: 17, Kotak Mahindra Mutual Fund)...
+Discovered 1 API schemes for SIF 17.
+  -> Fetching detail for scheme_id: S-29...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-29.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['AttributeId', 'AttributeName', 'AttributeValue']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: infi_i_h_hlsf_26_04_0001_kotm.json
+SEBI used: INFI/I/H/HLSF/26/04/0001/KOTM
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-29.xls
+
+Processing SIF 28/51 (sif_id: 18, LIC Mutual Fund)...
+No investment strategies found for SIF 18.
+
+Processing SIF 29/51 (sif_id: 22, Magnum SIF)...
+Discovered 1 API schemes for SIF 22.
+  -> Fetching detail for scheme_id: S-4...
+     Summary XLS not found or invalid format. Generating basic JSON from API data for S-4...
+
+Validation (Basic):
+JSON filename: temp_magnum_hybrid_long_short_fund.json
+SEBI used: TEMP_MAGNUM_HYBRID_LONG_SHORT_FUND
+
+
+Processing SIF 30/51 (sif_id: 69, Mahindra Manulife Mutual Fund)...
+No investment strategies found for SIF 69.
+
+Processing SIF 31/51 (sif_id: 45, Mirae Asset Mutual Fund)...
+Discovered 1 API schemes for SIF 45.
+  -> Fetching detail for scheme_id: S-26...
+     Summary XLS not found or invalid format. Generating basic JSON from API data for S-26...
+
+Validation (Basic):
+JSON filename: temp_platinum_hybrid_long_short_fund.json
+SEBI used: TEMP_PLATINUM_HYBRID_LONG_SHORT_FUND
+
+
+Processing SIF 32/51 (sif_id: 55, Motilal Oswal Mutual Fund)...
+No investment strategies found for SIF 55.
+
+Processing SIF 33/51 (sif_id: 54, Navi Mutual Fund)...
+No investment strategies found for SIF 54.
+
+Processing SIF 34/51 (sif_id: 21, Nippon India Mutual Fund)...
+No investment strategies found for SIF 21.
+
+Processing SIF 35/51 (sif_id: 73, NJ Mutual Fund)...
+No investment strategies found for SIF 73.
+
+Processing SIF 36/51 (sif_id: 78, Old Bridge Mutual Fund)...
+No investment strategies found for SIF 78.
+
+Processing SIF 37/51 (sif_id: 58, PGIM India Mutual Fund)...
+No investment strategies found for SIF 58.
+
+Processing SIF 38/51 (sif_id: 64, PPFAS Mutual Fund)...
+No investment strategies found for SIF 64.
+
+Processing SIF 39/51 (sif_id: 13, qsif SIF)...
+Discovered 5 API schemes for SIF 13.
+  -> Fetching detail for scheme_id: S-15...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-15.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SUMMARY DOCUMENT OF STRATEGIES', 'Unnamed: 2']
+Rows parsed: 67
+---------------------
+
+
+Validation:
+JSON filename: qsif_i_h_aals_25_10_0004_qntm.json
+SEBI used: QSIF/I/H/AALS/25/10/0004/QNTM
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-15.xls
+  -> Fetching detail for scheme_id: S-6...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-6.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SUMMARY DOCUMENT OF STRATEGIES', 'Unnamed: 2']
+Rows parsed: 67
+---------------------
+
+
+Validation:
+JSON filename: qsif_o_e_eels_25_08_0003_qntm.json
+SEBI used: QSIF/O/E/EELS/25/08/0003/QNTM
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-6.xls
+  -> Fetching detail for scheme_id: S-1...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-1.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SUMMARY DOCUMENT OF STRATEGIES', 'Unnamed: 2']
+Rows parsed: 67
+---------------------
+
+
+Validation:
+JSON filename: qsif_o_e_elsf_25_07_0001_qntm.json
+SEBI used: QSIF/O/E/ELSF/25/07/0001/QNTM
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-1.xls
+  -> Fetching detail for scheme_id: S-2...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-2.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'INVESTMENT STRATEGIES SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 67
+---------------------
+
+
+Validation:
+JSON filename: qsif_i_h_hlsf_25_09_0002_qntm.json
+SEBI used: QSIF/I/H/HLSF/25/09/0002/QNTM
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-2.xls
+  -> Fetching detail for scheme_id: S-21...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-21.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SUMMARY DOCUMENT OF STRATEGIES', 'Unnamed: 2']
+Rows parsed: 67
+---------------------
+
+
+Validation:
+JSON filename: qsif_o_e_srls_25_10_0005_qntm.json
+SEBI used: QSIF/O/E/SRLS/25/10/0005/QNTM
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-21.xls
+
+Processing SIF 40/51 (sif_id: 41, Quantum Mutual Fund)...
+No investment strategies found for SIF 41.
+
+Processing SIF 41/51 (sif_id: 74, Samco Mutual Fund)...
+No investment strategies found for SIF 74.
+
+Processing SIF 42/51 (sif_id: 67, Shriram Mutual Fund)...
+No investment strategies found for SIF 67.
+
+Processing SIF 43/51 (sif_id: 33, Sundaram Mutual Fund)...
+No investment strategies found for SIF 33.
+
+Processing SIF 44/51 (sif_id: 26, Taurus Mutual Fund)...
+No investment strategies found for SIF 26.
+
+Processing SIF 45/51 (sif_id: 83, The Wealth Company Mutual Fund)...
+Discovered 2 API schemes for SIF 83.
+  -> Fetching detail for scheme_id: S-18...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-18.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: wsif_o_e_eels_26_01_0002_twcf.json
+SEBI used: WSIF/O/E/EELS/26/01/0002/TWCF
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-18.xls
+  -> Fetching detail for scheme_id: S-19...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-19.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: wsif_o_e_elsf_26_01_0001_twcf.json
+SEBI used: WSIF/O/E/ELSF/26/01/0001/TWCF
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-19.xls
+
+Processing SIF 46/51 (sif_id: 25, Titanium SIF)...
+Discovered 2 API schemes for SIF 25.
+  -> Fetching detail for scheme_id: S-17...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-17.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['Fields', 'INVESTMENT STRATEGY SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: tsif_o_e_elsf_26_02_0002_tata.json
+SEBI used: TSIF/O/E/ELSF/26/02/0002/TATA
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-17.xls
+  -> Fetching detail for scheme_id: S-7...
+
+--- DEBUG LOGGING ---
+Workbook: SSD_S-7.xls
+Sheets: ['Sheet1']
+
+Selected sheet: Sheet1
+Detected headers: ['s', 'SCHEME SUMMARY DOCUMENT', 'Unnamed: 2']
+Rows parsed: 53
+---------------------
+
+
+Validation:
+JSON filename: tsif_i_h_hlsf_25_09_0001_tata.json
+SEBI used: TSIF/I/H/HLSF/25/09/0001/TATA
+
+     Deleted temporary XLS: /Users/smritisoni/Desktop/My_SIF/AMFI_Fetcher_clone/temp/xls/SSD_S-7.xls
+
+Processing SIF 47/51 (sif_id: 72, Trust Mutual Fund)...
+No investment strategies found for SIF 72.
+
+Processing SIF 48/51 (sif_id: 79, Unifi Mutual Fund)...
+No investment strategies found for SIF 79.
+
+Processing SIF 49/51 (sif_id: 28, UTI Mutual Fund)...
+No investment strategies found for SIF 28.
+
+Processing SIF 50/51 (sif_id: 71, WhiteOak Capital Mutual Fund)...
+No investment strategies found for SIF 71.
+
+Processing SIF 51/51 (sif_id: 77, Zerodha Mutual Fund)...
+No investment strategies found for SIF 77.
+
+Fetch Pipeline Completed
+--------------------
+--- Validation Report ---
+Total SIFs Processed       : 51
+Total Schemes Discovered   : 30
+Total Details Fetched      : 30
+Total Skipped/Fallback     : 5
+
+Skipped Schemes / Fallback Reasons:
+ - S-5: Basic JSON Generated (Summary XLS not found or invalid format)
+ - S-28: Basic JSON Generated (Summary XLS not found or invalid format)
+ - S-30: Basic JSON Generated (Summary XLS not found or invalid format)
+ - S-4: Basic JSON Generated (Summary XLS not found or invalid format)
+ - S-26: Basic JSON Generated (Summary XLS not found or invalid format)
+
+SUCCESS: Total counts reconcile correctly.

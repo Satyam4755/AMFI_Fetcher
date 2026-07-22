@@ -1,0 +1,123 @@
+{
+    "sebi_code": "ALTV/O/E/EELS/26/03/0002/EDEL",
+    "fund_name": "Altiva Equity Ex-Top 100 Long-Short Fund",
+    "fund_type": "An open-ended equity investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments of Ex – top 100 stocks.",
+    "category": "Equity Ex-Top 100 Long-Short Fund",
+    "riskometer_at_launch": "Risk Band Level 5",
+    "riskometer_as_on_date": "Risk Band Level 5",
+    "potential_risk_class": "Not applicable",
+    "scheme_objective": "To generate capital appreciation in the long term by predominantly investing in equity and equity related securities of Ex – top 100 companies. The Investment Strategy may also invest in various derivative instruments, including short exposure through unhedged derivative positions in equity and equity related instruments of Ex – top 100 stocks upto 25%.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
+    "face_value": "Rs. 10/-",
+    "nfo_open_date": "2026-05-18 00:00:00",
+    "nfo_close_date": "2026-06-01 00:00:00",
+    "allotment_date": "2026-06-08 00:00:00",
+    "reopen_date": "2026-06-10 00:00:00",
+    "maturity_date": "Not applicable",
+    "benchmark_tier_1": "Nifty 500 TRI",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
+    "listing_details": null,
+    "plans": {
+        "regular": {
+            "growth": {
+                "name": "Regular Plan &",
+                "amfi_code": "SIF-120",
+                "isin_code": "INF754K30136",
+                "additional_plans": [
+                    {
+                        "name": "Altiva Equity ExTop 100 LongShort Fund",
+                        "amfi_code": "SIF-122",
+                        "isin_code": "INF754K30102"
+                    },
+                    {
+                        "name": "Altiva Equity ExTop 100 LongShort Fund",
+                        "amfi_code": "SIF-123",
+                        "isin_code": "INF754K30110"
+                    },
+                    {
+                        "name": "Altiva Equity ExTop 100 LongShort Fund",
+                        "amfi_code": "SIF-123",
+                        "isin_code": "INF754K30128"
+                    },
+                    {
+                        "name": "Altiva Equity ExTop 100 LongShort Fund",
+                        "isin_code": "INF754K30151"
+                    },
+                    {
+                        "name": "Altiva Equity ExTop 100 LongShort Fund",
+                        "isin_code": "INF754K30169"
+                    }
+                ]
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
+            }
+        },
+        "direct": {
+            "growth": {
+                "name": "Altiva Equity ExTop 100 LongShort Fund",
+                "amfi_code": "SIF-121",
+                "isin_code": "INF754K30094"
+            },
+            "idcw": {
+                "payout": {},
+                "reinvestment": {
+                    "name": "Direct Plan Growth Income Distribution cum Capital Withdrawal (IDCW)- Monthly and Quarterly  Payout of Income Distribution cum Capital Withdrawal (IDCW)  Reinvestment of Income Distribution cum Capital Withdrawal (IDCW)  Transfer of Income Distribution cum Capital Withdrawal (IDCW)",
+                    "amfi_code": "SIF-121",
+                    "isin_code": "INF754K30144",
+                    "time_period": "monthly"
+                },
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
+            }
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Nikhil Gada, Mr. Trideep Bhattacharya, Mr. Amit Vora (Overseas portion)",
+            "type": "Comanage",
+            "from": "",
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "Rs. 1000000/-",
+        "application_multiple": "Re. 1/-",
+        "minimum_additional_amount": "Rs. 1000/-",
+        "additional_multiple": "Re. 1/-",
+        "minimum_redemption_amount": "Re. 1/-",
+        "minimum_redemption_units": "0.001"
+    },
+    "exit_load": "If the units are redeemed / switched out on or before 90 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 90 days from the date of allotment – Nil. \n\nAMC reserves the right to revise the load structure from time to time. Such changes will become effective prospectively from the date such changes are incorporated.",
+    "registrar": "KFIN Technologies Ltd",
+    "custodian": "Standard Chartered",
+    "auditor": "M/s. Walker Chandiok & co LLP",
+    "sif_name": "Altiva SIF"
+}
