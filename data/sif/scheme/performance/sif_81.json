@@ -1,10 +1,10 @@
 {
     "sif_code": "SIF-81",
     "returns": {
-        "1_day": 2.91,
-        "1_week": 2.91,
-        "1_month": 2.91,
-        "3_month": 2.91,
+        "1_day": -0.31,
+        "1_week": 2.6,
+        "1_month": 2.6,
+        "3_month": 2.6,
         "6_month": null,
         "1_year": null,
         "2_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 2.91
+        "since_launch": 2.6
     },
-    "last_updated": "2026-07-21T19:17:13Z"
+    "last_updated": "2026-07-22T19:12:57Z"
 }
