@@ -1,0 +1,56 @@
+{
+    "sebi_code": null,
+    "fund_name": "Summit Equity Long-Short Fund",
+    "fund_type": "Open Ended",
+    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+    "riskometer_at_launch": null,
+    "riskometer_as_on_date": null,
+    "potential_risk_class": null,
+    "scheme_objective": null,
+    "face_value": null,
+    "nfo_open_date": null,
+    "nfo_close_date": null,
+    "allotment_date": null,
+    "reopen_date": null,
+    "maturity_date": null,
+    "benchmark_tier_1": null,
+    "benchmark_tier_2": null,
+    "asset_allocation": null,
+    "listing_details": null,
+    "plans": {
+        "regular": {
+            "growth": {},
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
+            }
+        },
+        "direct": {
+            "growth": {},
+            "idcw": {
+                "payout": {},
+                "reinvestment": {},
+                "transfer": {},
+                "time_period": {},
+                "unknown": {}
+            }
+        }
+    },
+    "fund_managers": [],
+    "investment_limits": {
+        "minimum_application_amount": null,
+        "application_multiple": null,
+        "minimum_additional_amount": null,
+        "additional_multiple": null,
+        "minimum_redemption_amount": null,
+        "minimum_redemption_units": null
+    },
+    "exit_load": null,
+    "registrar": null,
+    "custodian": null,
+    "auditor": null,
+    "sif_name": "Invesco Mutual Fund"
+}
