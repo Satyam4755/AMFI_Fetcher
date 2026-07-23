@@ -488,10 +488,8 @@ def build_scheme_json(api_data, rows):
     if not sebi_code_val:
         import logging
         fund_name_safe = str(fund_name_val).upper() if fund_name_val else "UNKNOWN_FUND"
-        safe_name = re.sub(r'[^A-Z0-9]', '_', fund_name_safe).strip('_')
-        safe_name = re.sub(r'_+', '_', safe_name)
-        sebi_code_val = f"TEMP_{safe_name}" if safe_name else "TEMP_UNKNOWN"
-        logging.warning(f"Generated TEMP SEBI code: {sebi_code_val} for scheme {fund_name_val}")
+        logging.warning(f"Could not extract SEBI code for scheme {fund_name_safe}. Leaving as None.")
+        sebi_code_val = None
 
     result = {
         "sebi_code": sebi_code_val,
