@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-104",
     "returns": {
-        "1_day": -0.01,
-        "1_week": -1.91,
+        "1_day": 1.13,
+        "1_week": -0.8,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": -0.34
+        "since_launch": 0.78
     },
-    "last_updated": "2026-07-24T19:20:58Z"
+    "last_updated": "2026-07-27T19:23:38Z"
 }

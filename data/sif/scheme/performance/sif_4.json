@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-4",
     "returns": {
-        "1_day": 0.19,
-        "1_week": -1.25,
+        "1_day": -0.09,
+        "1_week": -1.34,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 0.96
+        "since_launch": 0.87
     },
-    "last_updated": "2026-07-24T19:20:58Z"
+    "last_updated": "2026-07-27T19:23:38Z"
 }
