@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-92",
     "returns": {
-        "1_day": 0.35,
-        "1_week": 0.84,
+        "1_day": 0.09,
+        "1_week": 0.63,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 2.66
+        "since_launch": 2.74
     },
-    "last_updated": "2026-07-28T19:18:59Z"
+    "last_updated": "2026-07-29T19:11:31Z"
 }
