@@ -35,42 +35,48 @@
     "listing_details": "NO",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Regular Plan - Growth:",
-                "isin_code": "INF200K30015"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular Plan - Growth:INF200K30015",
+                    "amfi_code": null,
+                    "isin_code": "INF200K30015",
+                    "rta_code": null
+                }
+            ],
             "idcw": {
-                "payout": {
-                    "name": "Regular Plan - IDCW Payout:",
-                    "isin_code": "INF200K30023"
-                },
-                "reinvestment": {
-                    "name": "Regular Plan - IDCW Reinvest:",
-                    "isin_code": "INF200K30031"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan - Growth:",
-                "isin_code": "INF200K30049"
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Payout:INF200K30023",
+                        "amfi_code": null,
+                        "isin_code": "INF200K30023",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Reinvest:INF200K30031",
+                        "amfi_code": null,
+                        "isin_code": "INF200K30031",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {
-                    "name": "Direct Plan - IDCW Payout:",
-                    "isin_code": "INF200K30056"
-                },
-                "reinvestment": {
-                    "name": "Direct Plan - IDCW Reinvest:",
-                    "isin_code": "INF200K30064"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [],

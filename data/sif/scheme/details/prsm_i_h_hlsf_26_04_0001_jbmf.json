@@ -40,32 +40,26 @@
     "listing_details": "NSE",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Regular Plan &",
-                "amfi_code": "SIF-138",
-                "isin_code": "INF22M030019"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-138 : Prism Hybrid Long – Short Fund – Regular Plan – Growth | INF22M030019 - Prism Hybrid Long – Short Fund – Regular Plan – Growth | 701RG- Prism Hybrid Long – Short Fund – Regular Plan – Growth",
+                    "amfi_code": "SIF-138",
+                    "isin_code": "INF22M030019",
+                    "rta_code": "701RG"
+                }
+            ],
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan Growth",
-                "amfi_code": "SIF-139",
-                "isin_code": "INF22M030027"
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [

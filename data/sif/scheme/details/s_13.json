@@ -35,54 +35,48 @@
     "listing_details": "National Stock Exchange of India Limited (NSE)",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Growth Option",
-                "amfi_code": "SIF-83",
-                "isin_code": "INF209K30024",
-                "additional_plans": [
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Apex Hybrid Long-Short Fund - Regular - Growth- SIF-80 | Apex Hybrid Long-Short Fund - Regular - Growth- INF209K30040",
+                    "amfi_code": "SIF-80",
+                    "isin_code": "INF209K30040",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
                     {
-                        "name": "SIF-80",
-                        "amfi_code": "SIF-80",
-                        "isin_code": "INF209K30040"
-                    },
-                    {
-                        "name": "SIF-81",
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- SIF-81 | Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- INF209K30057",
                         "amfi_code": "SIF-81",
-                        "isin_code": "INF209K30057"
-                    },
-                    {
-                        "name": "SIF-81",
-                        "amfi_code": "SIF-81",
-                        "isin_code": "INF209K30065"
-                    },
-                    {
-                        "name": "SIF-79",
-                        "amfi_code": "SIF-79",
-                        "isin_code": "INF209K30016"
+                        "isin_code": "INF209K30057",
+                        "rta_code": null
                     }
-                ]
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- SIF-81 | Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- INF209K30065",
+                        "amfi_code": "SIF-81",
+                        "isin_code": "INF209K30065",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "SIF-83",
-                "amfi_code": "SIF-83",
-                "isin_code": "INF209K30032"
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [],

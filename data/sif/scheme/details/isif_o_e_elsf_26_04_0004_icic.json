@@ -35,34 +35,26 @@
     "listing_details": null,
     "plans": {
         "regular": {
-            "growth": {
-                "name": "iSIF Equity Long-Short Fund - Growth ",
-                "amfi_code": "SIF-126",
-                "isin_code": "INF109K30075",
-                "rta_code": "1004"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "iSIF Equity Long-Short Fund - Growth - SIF-126 | iSIF Equity Long-Short Fund- GROWTH-INF109K30075 | iSIF Equity Long-Short Fund – Growth - 1004",
+                    "amfi_code": "SIF-126",
+                    "isin_code": "INF109K30075",
+                    "rta_code": "1004"
+                }
+            ],
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan - Growth ",
-                "amfi_code": "SIF-127",
-                "isin_code": "INF109K30083",
-                "rta_code": "6004"
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [],

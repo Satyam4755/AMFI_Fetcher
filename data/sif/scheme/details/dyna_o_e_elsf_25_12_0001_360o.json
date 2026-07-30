@@ -40,46 +40,48 @@
     "listing_details": "Not Listed",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Regular Plan-Growth",
-                "amfi_code": "SIF-55",
-                "isin_code": "INF579M30042"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF - 55 | INF579M30042 | ELSDG",
+                    "amfi_code": "SIF-55",
+                    "isin_code": "INF579M30042",
+                    "rta_code": "ELSDG"
+                }
+            ],
             "idcw": {
-                "payout": {
-                    "name": "Regular Plan - IDCW Payout",
-                    "amfi_code": "SIF-57",
-                    "isin_code": "INF579M30059"
-                },
-                "reinvestment": {
-                    "name": "Regular Plan - IDCW Reinvestment",
-                    "amfi_code": "SIF-59",
-                    "isin_code": "INF579M30067"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan-Growth",
-                "amfi_code": "SIF-60",
-                "isin_code": "INF579M30018"
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF - 57 | INF579M30059 | ELSDP",
+                        "amfi_code": "SIF-57",
+                        "isin_code": "INF579M30059",
+                        "rta_code": "ELSDP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF - 57 | INF579M30067 | ELSDR",
+                        "amfi_code": "SIF-57",
+                        "isin_code": "INF579M30067",
+                        "rta_code": "ELSDR"
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {
-                    "name": "Direct Plan - IDCW Payout",
-                    "isin_code": "INF579M30026"
-                },
-                "reinvestment": {
-                    "name": "Direct Plan - IDCW Reinvestment",
-                    "isin_code": "INF579M30034"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [

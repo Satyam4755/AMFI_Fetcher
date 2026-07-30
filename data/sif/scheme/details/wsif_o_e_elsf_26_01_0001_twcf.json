@@ -30,51 +30,37 @@
     "listing_details": "Not applicable",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Plans:",
-                "amfi_code": "SIF-108",
-                "isin_code": "INF2F0030072",
-                "additional_plans": [
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-108 | WSIF EQUITY LONG-SHORT FUND-REGULAR-GROWTH-INF2F0030072 | WSIF EQUITY LONG-SHORT FUND-REGULAR-INF2F0030080",
+                    "amfi_code": "SIF-108",
+                    "isin_code": "INF2F0030072",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [
                     {
-                        "name": "SIF-110",
-                        "amfi_code": "SIF-110",
-                        "isin_code": "INF2F0030098"
-                    },
-                    {
-                        "name": "WSIF EQUITY LONG-SHORT FUND",
-                        "isin_code": "INF2F0030114"
-                    },
-                    {
-                        "name": "INF2F0030122",
-                        "isin_code": "INF2F0030122"
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-109 | WSIF EQUITY LONG-SHORT FUND-REGULAR-IDCW-REINVESTMENT-INF2F0030098",
+                        "amfi_code": "SIF-109",
+                        "isin_code": "INF2F0030098",
+                        "rta_code": null
                     }
-                ]
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "SIF-111",
-                "amfi_code": "SIF-111",
-                "isin_code": "INF2F0030080"
-            },
-            "idcw": {
-                "payout": {
-                    "name": "Regular and Direct. Each Plan offers the following sub-options: a)Growth Option b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities: Payout of Income Distribution cum Capital Withdrawal (IDCW) Option / facility and Re-investment of Income Distribution cum Capital Withdrawal (IDCW) Option / facility",
-                    "amfi_code": "SIF-109",
-                    "isin_code": "INF2F0030106"
-                },
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [

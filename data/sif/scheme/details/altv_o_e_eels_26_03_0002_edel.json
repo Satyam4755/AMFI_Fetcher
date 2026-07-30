@@ -40,62 +40,59 @@
     "listing_details": null,
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Regular Plan &",
-                "amfi_code": "SIF-120",
-                "isin_code": "INF754K30136",
-                "additional_plans": [
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-122 - Altiva Equity ExTop 100 LongShort Fund Regular Plan Growth Growth | INF754K30136 - Altiva Equity ExTop 100 LongShort Fund Regular Plan Growth Growth | ETRG - Altiva Equity ExTop 100 LongShort Fund Regular Plan Growth Growth",
+                    "amfi_code": "SIF-122",
+                    "isin_code": "INF754K30136",
+                    "rta_code": "ETRG"
+                }
+            ],
+            "idcw": {
+                "payout": [
                     {
-                        "name": "Altiva Equity ExTop 100 LongShort Fund",
-                        "amfi_code": "SIF-122",
-                        "isin_code": "INF754K30102"
-                    },
-                    {
-                        "name": "Altiva Equity ExTop 100 LongShort Fund",
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-123 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Payout | INF754K30144 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Payout | ETRD - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Payout",
                         "amfi_code": "SIF-123",
-                        "isin_code": "INF754K30110"
-                    },
-                    {
-                        "name": "Altiva Equity ExTop 100 LongShort Fund",
-                        "amfi_code": "SIF-123",
-                        "isin_code": "INF754K30128"
-                    },
-                    {
-                        "name": "Altiva Equity ExTop 100 LongShort Fund",
-                        "isin_code": "INF754K30151"
-                    },
-                    {
-                        "name": "Altiva Equity ExTop 100 LongShort Fund",
-                        "isin_code": "INF754K30169"
+                        "isin_code": "INF754K30144",
+                        "rta_code": "ETRD"
                     }
-                ]
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-123 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Reinvestment | INF754K30151 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Reinvestment | ETRD - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Reinvestment",
+                        "amfi_code": "SIF-123",
+                        "isin_code": "INF754K30151",
+                        "rta_code": "ETRD"
+                    }
+                ],
+                "transfer": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "transfer",
+                        "time_period": null,
+                        "name": "INF754K30169 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Transfer | ETRD - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Transfer",
+                        "amfi_code": null,
+                        "isin_code": "INF754K30169",
+                        "rta_code": "ETRD"
+                    }
+                ],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Altiva Equity ExTop 100 LongShort Fund",
-                "amfi_code": "SIF-121",
-                "isin_code": "INF754K30094"
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {
-                    "name": "Direct Plan Growth Income Distribution cum Capital Withdrawal (IDCW)- Monthly and Quarterly  Payout of Income Distribution cum Capital Withdrawal (IDCW)  Reinvestment of Income Distribution cum Capital Withdrawal (IDCW)  Transfer of Income Distribution cum Capital Withdrawal (IDCW)",
-                    "amfi_code": "SIF-121",
-                    "isin_code": "INF754K30144",
-                    "time_period": "monthly"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [

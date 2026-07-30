@@ -40,69 +40,48 @@
     "listing_details": "Listed on NSE",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option ",
-                "amfi_code": "SIF-92",
-                "isin_code": "INF966L30241",
-                "rta_code": "905",
-                "additional_plans": [
-                    {
-                        "name": "qsif Active Asset Allocator Long-Short Fund - Growth Option ",
-                        "rta_code": "905"
-                    },
-                    {
-                        "name": "Regular Plan",
-                        "amfi_code": "SIF-91",
-                        "isin_code": "INF966L30217",
-                        "rta_code": "905"
-                    },
-                    {
-                        "name": "Regular Plan",
-                        "isin_code": "INF966L30225",
-                        "rta_code": "905"
-                    }
-                ]
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {
-                    "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option ",
-                    "amfi_code": "SIF-90",
-                    "isin_code": "INF966L30233",
-                    "rta_code": "905",
-                    "additional_plans": [
-                        {
-                            "name": "qsif Active Asset Allocator Long-Short Fund - IDCW Option ",
-                            "amfi_code": "SIF-93",
-                            "rta_code": "905"
-                        }
-                    ]
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Growth Option - Regular Plan - SIF-93 | Growth Option - Regular Plan - INF966L30217 | 905",
+                    "amfi_code": "SIF-93",
+                    "isin_code": "INF966L30217",
+                    "rta_code": "905"
                 }
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan",
-                "isin_code": "INF966L30258",
-                "rta_code": "905",
-                "additional_plans": [
-                    {
-                        "name": "Direct Plan",
-                        "isin_code": "INF966L30266",
-                        "rta_code": "905"
-                    }
-                ]
-            },
+            ],
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "IDCW Option - Regular Plan - SIF-91 | IDCW Payout Option - Regular Plan - INF966L30225",
+                        "amfi_code": "SIF-91",
+                        "isin_code": "INF966L30225",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "IDCW Option - Regular Plan - SIF-91 | IDCW Reinvestment - Regular Plan - INF966L30233",
+                        "amfi_code": "SIF-91",
+                        "isin_code": "INF966L30233",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [],

@@ -130,7 +130,7 @@ def main():
                             
                             # Clean up temporary file
                             if os.path.exists(xls_path):
-                                os.remove(xls_path)
+                                # os.remove(xls_path)
                                 print(f"     Deleted temporary XLS: {xls_path}")
                         else:
                             save_fallback_json("Summary XLS not found or invalid format")
@@ -138,6 +138,8 @@ def main():
                         save_fallback_json("No document URLs available")
                 except Exception as e:
                     skipped_schemes[scheme_id] = f"Error parsing data: {e}"
+                    import traceback
+                    traceback.print_exc()
                     print(f"     Error enriching data for scheme_id {scheme_id}: {e}")
                 # ------------------------------------
             else:

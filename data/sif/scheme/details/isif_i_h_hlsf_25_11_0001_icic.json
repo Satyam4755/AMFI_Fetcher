@@ -35,34 +35,26 @@
     "listing_details": "Listed on BSE and NSE",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "iSIF Hybrid Long-Short Fund - Growth",
-                "amfi_code": "SIF-35",
-                "isin_code": "INF109K30018",
-                "rta_code": "1002"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "iSIF Hybrid Long-Short Fund - Growth- SIF-35 | iSIF HYBRID LONG-SHORT FUND-GROWTH- INF109K30018 | iSIF Hybrid Long-Short Fund - Growth- 1002",
+                    "amfi_code": "SIF-35",
+                    "isin_code": "INF109K30018",
+                    "rta_code": "1002"
+                }
+            ],
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan - Growth",
-                "amfi_code": "SIF-36",
-                "isin_code": "INF109K30026",
-                "rta_code": "6002"
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [],

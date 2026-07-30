@@ -35,57 +35,48 @@
     "listing_details": "Listed on BSE & NSE",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Plans ",
-                "amfi_code": "SIF-145",
-                "isin_code": "INF174K30012",
-                "rta_code": "ILSF",
-                "additional_plans": [
-                    {
-                        "name": "SIF-147",
-                        "amfi_code": "SIF-147",
-                        "isin_code": "INF174K30046",
-                        "rta_code": "ILSF"
-                    },
-                    {
-                        "name": "INF174K30053",
-                        "isin_code": "INF174K30053",
-                        "rta_code": "ILSF"
-                    },
-                    {
-                        "name": "INF174K30061",
-                        "isin_code": "INF174K30061",
-                        "rta_code": "ILSF"
-                    }
-                ]
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Regular &",
-                "amfi_code": "SIF-148",
-                "isin_code": "INF174K30020",
-                "rta_code": "ILSF"
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {
-                    "name": "Direct Plan Options under each Plan(s) Growth Payout of Income Distribution cum capital withdrawal (IDCW) Reinvestment of Income Distribution cum capital withdrawal (IDCW)",
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Infinity Hybrid Long-Short Fund - Regular Plan - Growth - SIF-146 | Infinity Hybrid Long-Short Fund - Regular Plan - Growth - INF174K30046 | ILSF",
                     "amfi_code": "SIF-146",
-                    "isin_code": "INF174K30038",
+                    "isin_code": "INF174K30046",
                     "rta_code": "ILSF"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout - INF174K30053",
+                        "amfi_code": null,
+                        "isin_code": "INF174K30053",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout & Reinvestment - SIF-147 | Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Reinvestment - INF174K30061",
+                        "amfi_code": "SIF-147",
+                        "isin_code": "INF174K30061",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [

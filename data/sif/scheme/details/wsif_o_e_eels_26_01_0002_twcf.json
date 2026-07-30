@@ -40,51 +40,48 @@
     "listing_details": "Not applicable",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Plans:",
-                "amfi_code": "SIF-107",
-                "isin_code": "INF2F0030015",
-                "additional_plans": [
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-107 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-GROWTH-INF2F0030015",
+                    "amfi_code": "SIF-107",
+                    "isin_code": "INF2F0030015",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
                     {
-                        "name": "SIF-106",
-                        "amfi_code": "SIF-106",
-                        "isin_code": "INF2F0030049"
-                    },
-                    {
-                        "name": "INF2F0030056",
-                        "isin_code": "INF2F0030056"
-                    },
-                    {
-                        "name": "INF2F0030064",
-                        "isin_code": "INF2F0030064"
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-104 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-IDCW-PAYOUT-INF2F0030023",
+                        "amfi_code": "SIF-104",
+                        "isin_code": "INF2F0030023",
+                        "rta_code": null
                     }
-                ]
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-104 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-IDCW-REINVESTMENT-INF2F0030031",
+                        "amfi_code": "SIF-104",
+                        "isin_code": "INF2F0030031",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "SIF-105",
-                "amfi_code": "SIF-105",
-                "isin_code": "INF2F0030031"
-            },
-            "idcw": {
-                "payout": {
-                    "name": "Regular and Direct. Each Plan offers the following sub-options: a)Growth Option b)Income Distribution cum Capital Withdrawal (IDCW) Option. This Option offers following Sub-Options / facilities: Payout of Income Distribution cum Capital Withdrawal (IDCW) Option / facility and Re-investment of Income Distribution cum Capital Withdrawal (IDCW) Option / facility",
-                    "amfi_code": "SIF-104",
-                    "isin_code": "INF2F0030023"
-                },
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [

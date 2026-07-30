@@ -35,48 +35,48 @@
     "listing_details": "As the Investment Strategy is an open ended strategy, and the units of the Investment Strategy will be offered for subscription and redemption at NAV based prices on all Business Days on an on-going basis providing the required liquidity to investors, units of the Investment Strategy are not proposed to be listed on any stock exchange.  \nHowever, the Trustee reserves the right to list the units of the Investment Strategy on any stock exchange(s) at its sole discretion at a later date.",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Regular Plan - Growth Option",
-                "amfi_code": "SIF-114",
-                "isin_code": "INF582M30012"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular Plan - Growth Option-SIF-114 | Regular Plan - Growth Option-INF582M30012",
+                    "amfi_code": "SIF-114",
+                    "isin_code": "INF582M30012",
+                    "rta_code": null
+                }
+            ],
             "idcw": {
-                "payout": {
-                    "name": "Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option",
-                    "amfi_code": "SIF-115",
-                    "isin_code": "INF582M30020"
-                },
-                "reinvestment": {
-                    "name": "Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option",
-                    "amfi_code": "SIF-115",
-                    "isin_code": "INF582M30038"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan - Growth Option",
-                "amfi_code": "SIF-112",
-                "isin_code": "INF582M30046"
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular Plan- - Payout of Income Distribution cum Capital Withdrawal Option-SIF-115 | Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option-INF582M30020",
+                        "amfi_code": "SIF-115",
+                        "isin_code": "INF582M30020",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-SIF-115 | Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-INF582M30038",
+                        "amfi_code": "SIF-115",
+                        "isin_code": "INF582M30038",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {
-                    "name": "Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option",
-                    "amfi_code": "SIF-113",
-                    "isin_code": "INF582M30053"
-                },
-                "reinvestment": {
-                    "name": "Direct Plan - Reinvestment of IDCW Option",
-                    "amfi_code": "SIF-113",
-                    "isin_code": "INF582M30061"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [

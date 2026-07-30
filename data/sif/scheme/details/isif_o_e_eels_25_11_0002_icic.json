@@ -40,34 +40,26 @@
     "listing_details": null,
     "plans": {
         "regular": {
-            "growth": {
-                "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Growth ",
-                "amfi_code": "SIF-34",
-                "isin_code": "INF109K30034",
-                "rta_code": "1001"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "iSIF Equity Ex-Top 100 Long-Short Fund - Growth - SIF-34 | iSIF EQUITY EX-TOP 100 LONG-SHORT FUND- GROWTH-INF109K30034 | iSIF Equity Ex-Top 100 Long-Short Fund – Growth - 1001",
+                    "amfi_code": "SIF-34",
+                    "isin_code": "INF109K30034",
+                    "rta_code": "1001"
+                }
+            ],
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan - Growth ",
-                "amfi_code": "SIF-33",
-                "isin_code": "INF109K30042",
-                "rta_code": "6001"
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [],

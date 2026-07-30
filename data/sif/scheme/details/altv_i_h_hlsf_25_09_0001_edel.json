@@ -40,63 +40,59 @@
     "listing_details": "NSE",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Regular Plan &",
-                "amfi_code": "SIF-9",
-                "isin_code": "INF754K30011",
-                "rta_code": "HLD1 ",
-                "additional_plans": [
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-11 - Altiva Hybrid Long-Short Fund Regular Plan Growth | INF754K30052 - Altiva Hybrid Long-Short Fund Regular Plan Growth | HLRG - Altiva Hybrid Long-Short Fund Regular Plan Growth",
+                    "amfi_code": "SIF-11",
+                    "isin_code": "INF754K30052",
+                    "rta_code": "HLRG"
+                }
+            ],
+            "idcw": {
+                "payout": [
                     {
-                        "name": "SIF-11",
-                        "amfi_code": "SIF-11",
-                        "isin_code": "INF754K30045"
-                    },
-                    {
-                        "name": "SIF-12",
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-12 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout | INF754K30060 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout | HLRD - Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout",
                         "amfi_code": "SIF-12",
-                        "isin_code": "INF754K30052"
-                    },
-                    {
-                        "name": "SIF-12",
-                        "amfi_code": "SIF-12",
-                        "isin_code": "INF754K30060"
-                    },
-                    {
-                        "name": "INF754K30078",
-                        "isin_code": "INF754K30078"
-                    },
-                    {
-                        "name": "INF754K30086",
-                        "isin_code": "INF754K30086"
+                        "isin_code": "INF754K30060",
+                        "rta_code": "HLRD"
                     }
-                ]
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-12 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment | INF754K30078 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment | HLRD - Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment",
+                        "amfi_code": "SIF-12",
+                        "isin_code": "INF754K30078",
+                        "rta_code": "HLRD"
+                    }
+                ],
+                "transfer": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "transfer",
+                        "time_period": null,
+                        "name": "INF754K30086 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Transfer | HLRD - Altiva Hybrid Long-Short Fund Regular Plan IDCW Transfer",
+                        "amfi_code": null,
+                        "isin_code": "INF754K30086",
+                        "rta_code": "HLRD"
+                    }
+                ],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "SIF-10",
-                "amfi_code": "SIF-10",
-                "isin_code": "INF754K30037"
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {
-                    "name": "Direct Plan Growth Income Distribution cum Capital Withdrawal (IDCW)- Monthly and Quarterly  Payout of Income Distribution cum Capital Withdrawal (IDCW)  Reinvestment of Income Distribution cum Capital Withdrawal (IDCW)  Transfer of Income Distribution cum Capital Withdrawal (IDCW)",
-                    "amfi_code": "SIF-10",
-                    "isin_code": "INF754K30029",
-                    "time_period": "monthly"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [

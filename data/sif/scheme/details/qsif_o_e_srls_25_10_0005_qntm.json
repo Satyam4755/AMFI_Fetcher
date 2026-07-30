@@ -35,69 +35,48 @@
     "listing_details": "Listed on NSE",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "qsif Sector Rotation Long-Short Fund - Growth Option ",
-                "amfi_code": "SIF-118",
-                "isin_code": "INF966L30274",
-                "rta_code": "905",
-                "additional_plans": [
-                    {
-                        "name": "qsif Sector Rotation Long-Short Fund - Growth Option ",
-                        "rta_code": "905"
-                    },
-                    {
-                        "name": "Regular Plan",
-                        "amfi_code": "SIF-119",
-                        "isin_code": "INF966L30308",
-                        "rta_code": "905"
-                    },
-                    {
-                        "name": "Regular Plan",
-                        "isin_code": "INF966L30324",
-                        "rta_code": "905"
-                    }
-                ]
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {
-                    "name": "qsif Sector Rotation Long-Short Fund - IDCW Option ",
-                    "amfi_code": "SIF-116",
-                    "isin_code": "INF966L30316",
-                    "rta_code": "905",
-                    "additional_plans": [
-                        {
-                            "name": "qsif Sector Rotation Long-Short Fund- IDCW Option ",
-                            "amfi_code": "SIF-117",
-                            "rta_code": "905"
-                        }
-                    ]
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Growth Option - Regular Plan - SIF-117 | Growth Option - Regular Plan - INF966L30308 | 905",
+                    "amfi_code": "SIF-117",
+                    "isin_code": "INF966L30308",
+                    "rta_code": "905"
                 }
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan",
-                "isin_code": "INF966L30290",
-                "rta_code": "905",
-                "additional_plans": [
-                    {
-                        "name": "Direct Plan",
-                        "isin_code": "INF966L30282",
-                        "rta_code": "905"
-                    }
-                ]
-            },
+            ],
             "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "IDCW Option - Regular Plan - SIF-119 | IDCW Payout Option - Regular Plan - INF966L30324",
+                        "amfi_code": "SIF-119",
+                        "isin_code": "INF966L30324",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "IDCW Option - Regular Plan - SIF-119 | IDCW Reinvestment - Regular Plan - INF966L30316",
+                        "amfi_code": "SIF-119",
+                        "isin_code": "INF966L30316",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [],

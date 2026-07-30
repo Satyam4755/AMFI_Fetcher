@@ -35,56 +35,48 @@
     "listing_details": "Not listed",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "SIF-96",
-                "amfi_code": "SIF-96",
-                "isin_code": "INF090I30030",
-                "rta_code": "INR000002813",
-                "additional_plans": [
-                    {
-                        "name": "INF090I30055",
-                        "isin_code": "INF090I30055",
-                        "rta_code": "INR000002813"
-                    },
-                    {
-                        "name": "INF090I30063",
-                        "isin_code": "INF090I30063",
-                        "rta_code": "INR000002813"
-                    }
-                ]
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {
-                    "name": "Regular – Growth Income Distribution cum capital withdrawal (IDCW) Plan (Payout and Reinvestment options)",
-                    "amfi_code": "SIF-95",
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular - Growth - SIF-96 | Regular - Growth - INF090I30014 | INR000002813",
+                    "amfi_code": "SIF-96",
                     "isin_code": "INF090I30014",
                     "rta_code": "INR000002813"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "SIF-97",
-                "amfi_code": "SIF-97",
-                "isin_code": "INF090I30048",
-                "rta_code": "INR000002813"
-            },
+                }
+            ],
             "idcw": {
-                "payout": {},
-                "reinvestment": {
-                    "name": "Direct – Growth Income Distribution cum capital withdrawal (IDCW) Plan (Payout and Reinvestment options)",
-                    "amfi_code": "SIF-94",
-                    "isin_code": "INF090I30022",
-                    "rta_code": "INR000002813"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular - IDCW - SIF-97 | Regular - IDCW Payout - INF090I30030",
+                        "amfi_code": "SIF-97",
+                        "isin_code": "INF090I30030",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Regular - IDCW - SIF-97 | Regular - IDCW Reinvestment - INF090I30022",
+                        "amfi_code": "SIF-97",
+                        "isin_code": "INF090I30022",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [

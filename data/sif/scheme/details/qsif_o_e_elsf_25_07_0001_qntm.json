@@ -35,69 +35,48 @@
     "listing_details": "N.A.",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "qsif Equity Long-Short Fund - Growth Option ",
-                "amfi_code": "SIF-2",
-                "isin_code": "INF966L30027",
-                "rta_code": "905",
-                "additional_plans": [
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Growth Option - Regular Plan - SIF-3 | Growth Option - Regular Plan -INF966L30027 | 905",
+                    "amfi_code": "SIF-3",
+                    "isin_code": "INF966L30027",
+                    "rta_code": "905"
+                }
+            ],
+            "idcw": {
+                "payout": [
                     {
-                        "name": "qsif Equity Long-Short Fund - Growth Option ",
-                        "rta_code": "905"
-                    },
-                    {
-                        "name": "Regular Plan",
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "IDCW Option - Regular Plan - SIF-4 | IDCW Payout Option - Regular Plan - INF966L30050",
                         "amfi_code": "SIF-4",
                         "isin_code": "INF966L30050",
-                        "rta_code": "905"
-                    },
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
                     {
-                        "name": "Regular Plan",
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "IDCW Option - Regular Plan - SIF-4 | IDCW Reinvestment - Regular Plan - INF966L30068",
+                        "amfi_code": "SIF-4",
                         "isin_code": "INF966L30068",
-                        "rta_code": "905"
+                        "rta_code": null
                     }
-                ]
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {
-                    "name": "qsif Equity Long-Short Fund - IDCW Option ",
-                    "amfi_code": "SIF-1",
-                    "isin_code": "INF966L30043",
-                    "rta_code": "905",
-                    "additional_plans": [
-                        {
-                            "name": "qsif Equity Long-short Fund - IDCW Option ",
-                            "amfi_code": "SIF-3",
-                            "rta_code": "905"
-                        }
-                    ]
-                }
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan",
-                "isin_code": "INF966L30019",
-                "rta_code": "905",
-                "additional_plans": [
-                    {
-                        "name": "Direct Plan",
-                        "isin_code": "INF966L30035",
-                        "rta_code": "905"
-                    }
-                ]
-            },
-            "idcw": {
-                "payout": {},
-                "reinvestment": {},
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [],

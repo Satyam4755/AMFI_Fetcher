@@ -45,46 +45,48 @@
     "listing_details": "Not Listed",
     "plans": {
         "regular": {
-            "growth": {
-                "name": "Regular Plan-Growth",
-                "amfi_code": "SIF-86",
-                "isin_code": "INF579M30075"
-            },
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF - 86 | INF579M30075 | ALSRG",
+                    "amfi_code": "SIF-86",
+                    "isin_code": "INF579M30075",
+                    "rta_code": "ALSRG"
+                }
+            ],
             "idcw": {
-                "payout": {
-                    "name": "Regular Plan - IDCW Payout",
-                    "amfi_code": "SIF-87",
-                    "isin_code": "INF579M30083"
-                },
-                "reinvestment": {
-                    "name": "Regular Plan - IDCW Reinvestment",
-                    "amfi_code": "SIF-88",
-                    "isin_code": "INF579M30091"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
-        },
-        "direct": {
-            "growth": {
-                "name": "Direct Plan-Growth",
-                "amfi_code": "SIF-89",
-                "isin_code": "INF579M30109"
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF - 87 | INF579M30083 | ALSRP",
+                        "amfi_code": "SIF-87",
+                        "isin_code": "INF579M30083",
+                        "rta_code": "ALSRP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF - 87 | INF579M30091 | ALSRR",
+                        "amfi_code": "SIF-87",
+                        "isin_code": "INF579M30091",
+                        "rta_code": "ALSRR"
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
             },
-            "idcw": {
-                "payout": {
-                    "name": "Direct Plan - IDCW Payout",
-                    "isin_code": "INF579M30117"
-                },
-                "reinvestment": {
-                    "name": "Direct Plan - IDCW Reinvestment",
-                    "isin_code": "INF579M30125"
-                },
-                "transfer": {},
-                "time_period": {},
-                "unknown": {}
-            }
+            "unresolved": []
         }
     },
     "fund_managers": [
