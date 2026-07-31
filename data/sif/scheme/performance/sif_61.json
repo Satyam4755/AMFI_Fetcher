@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-61",
     "returns": {
-        "1_day": 0.01,
-        "1_week": 1.37,
+        "1_day": -0.1,
+        "1_week": 1.45,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 1.4
+        "since_launch": 1.3
     },
-    "last_updated": "2026-07-30T19:21:35Z"
+    "last_updated": "2026-07-31T19:20:13Z"
 }
