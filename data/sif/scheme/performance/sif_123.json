@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-123",
     "returns": {
-        "1_day": 0.01,
-        "1_week": 1.63,
+        "1_day": 1.75,
+        "1_week": 1.94,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 0.02
+        "since_launch": 1.77
     },
-    "last_updated": "2026-07-31T19:20:14Z"
+    "last_updated": "2026-08-03T19:26:35Z"
 }
