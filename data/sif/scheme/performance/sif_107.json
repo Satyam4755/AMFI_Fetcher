@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-107",
     "returns": {
-        "1_day": -0.13,
-        "1_week": 2.73,
+        "1_day": 0.45,
+        "1_week": 2.18,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 3.15
+        "since_launch": 3.62
     },
-    "last_updated": "2026-08-04T19:28:09Z"
+    "last_updated": "2026-08-05T19:25:46Z"
 }
