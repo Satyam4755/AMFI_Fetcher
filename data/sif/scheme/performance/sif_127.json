@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-127",
     "returns": {
-        "1_day": 0.57,
-        "1_week": 2.9,
+        "1_day": 0.28,
+        "1_week": 2.89,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 4.11
+        "since_launch": 4.4
     },
-    "last_updated": "2026-08-05T19:25:46Z"
+    "last_updated": "2026-08-06T23:55:59Z"
 }
