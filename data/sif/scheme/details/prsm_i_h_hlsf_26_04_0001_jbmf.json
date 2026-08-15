@@ -1,19 +1,19 @@
 {
     "sebi_code": "PRSM/I/H/HLSF/26/04/0001/JBMF",
-    "fund_name": "Prism Hybrid Long - Short Fund",
+    "fund_name": "Prism Hybrid Long-Short Fund",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Risk Band Level 2",
-    "riskometer_as_on_date": "Risk Band Level 2",
+    "riskometer_as_on_date": "Risk Band Level 1",
     "potential_risk_class": "Not applicable",
-    "scheme_objective": "The Investment Strategy aims to achieve long term capital appreciation along with income generation by investing across a diversified mix of equity and equity related instruments, debt and money market instruments, derivative based strategies. There is no assurance that the investment objective of the Investment strategy will be achieved.",
+    "scheme_objective": null,
     "face_value": "Rs. 10/-",
     "nfo_open_date": "2026-06-29 00:00:00",
     "nfo_close_date": "2026-07-13 00:00:00",
     "allotment_date": "2026-07-17 00:00:00",
     "reopen_date": "2026-07-23 00:00:00",
     "maturity_date": "Not applicable",
-    "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
+    "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index (TRI)",
     "benchmark_tier_2": null,
     "asset_allocation": [
         {
@@ -64,7 +64,7 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Arun Ramachandran, Ms. Tanvi Kacheria, Mr. Siddharth Deb, Mr. Virendra Kumar",
+            "name": "Mr. Arun Ramachandran, Ms. Tanvi Kacheria, Mr. Siddharth Deb, Mr. Virendra Kumar, Mr. Manish Kalani",
             "type": "Comanage",
             "from": "",
             "to": null,
@@ -83,5 +83,5 @@
     "registrar": "Computer Age Management Services Limited (CAMS)",
     "custodian": "The HongKong and Shanghai Banking Corporation Limited (HSBC)",
     "auditor": "Chokshi & Chokshi LLP",
-    "sif_name": "Jio BlackRock Mutual Fund"
+    "sif_name": "Prism SIF"
 }

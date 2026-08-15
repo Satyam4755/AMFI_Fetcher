@@ -97,8 +97,8 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Nikhil Gada, Mr. Trideep Bhattacharya, Mr. Amit Vora (Overseas portion)",
-            "type": "Comanage",
+            "name": "Mr. Nikhil Gada, Mr. Trideep Bhattacharya, Mr. Ashish Sood, Mr. Amit Vora (Overseas portion)",
+            "type": "Mr. Nikhil Gada (Comanage), Mr. Trideep Bhattacharya (Comanage), Mr. Ashish Sood (Assistant Fund Manager), Mr. Amit Vora (Overseas portion)",
             "from": "",
             "to": null,
             "role_or_portion": null

@@ -4,7 +4,7 @@
     "fund_type": "An Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives.",
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Risk Band Level 2",
-    "riskometer_as_on_date": "Risk Band Level 2",
+    "riskometer_as_on_date": "Risk Band Level 1",
     "potential_risk_class": null,
     "scheme_objective": "The investment objective of the strategy is to achieve a blend of capital appreciation and income generation by investing in equity and equity related instruments as well as debt and money market instruments, including limited short exposure in equity and debt through derivatives.\n\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
@@ -100,5 +100,5 @@
     "registrar": "Computer Age Management Services  Limited (‘CAMS’)",
     "custodian": "Deutsche Bank A G, Mumbai & Standard Chartered Bank",
     "auditor": "S. R. Batliboi & Co. LLP",
-    "sif_name": "Kotak Mahindra Mutual Fund"
+    "sif_name": "Infinity SIF"
 }
