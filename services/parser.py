@@ -8,18 +8,40 @@ def extract_schemes(data):
     
     try:
         lines = data.splitlines()
+        
+        # Default indices (pre-Aug 19)
+        code_idx = 0
+        nav_idx = 4
+        date_idx = 5
+        
         for line in lines:
             line = line.strip()
-            # Skip empty lines, headers, or section titles
-            if not line or line.startswith("Scheme Code") or ";" not in line:
+            
+            if not line:
                 continue
                 
-            parts = line.split(";")
-            if len(parts) >= 6:
+            # Process header line and update indices dynamically
+            if line.startswith("Scheme Code"):
+                headers = [h.strip() for h in line.split(";")]
+                try:
+                    code_idx = headers.index("Scheme Code")
+                    nav_idx = headers.index("Net Asset Value")
+                    date_idx = headers.index("Date")
+                except ValueError:
+                    print(f"Warning: Expected headers not found exactly. Using code:{code_idx} nav:{nav_idx} date:{date_idx}")
+                continue
+                
+            # Skip section titles or invalid lines
+            if ";" not in line:
+                continue
+                
+            parts = [p.strip() for p in line.split(";")]
+            
+            if len(parts) > max(code_idx, nav_idx, date_idx):
                 scheme = {
-                    "sif_code": parts[0].strip(),
-                    "nav_date": parts[5].strip(),
-                    "nav": parts[4].strip()
+                    "sif_code": parts[code_idx],
+                    "nav_date": parts[date_idx],
+                    "nav": parts[nav_idx]
                 }
                 all_schemes.append(scheme)
                 
