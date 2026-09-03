@@ -1,9 +1,9 @@
 {
     "sif_code": "SIF-90",
     "returns": {
-        "1_day": 0.98,
-        "1_week": 0.93,
-        "1_month": 2.38,
+        "1_day": 0.23,
+        "1_week": 1.15,
+        "1_month": 2.41,
         "3_month": null,
         "6_month": null,
         "1_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 8.99
+        "since_launch": 9.24
     },
-    "last_updated": "2026-09-02T20:29:17Z"
+    "last_updated": "2026-09-03T20:28:27Z"
 }
