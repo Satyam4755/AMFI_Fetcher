@@ -65,6 +65,12 @@ def main():
         has_any_plan = False
         def validate_plan_obj(plan_obj, label):
             nonlocal duplicate_amfi_count, plans_missing_amfi, plans_missing_isin, plans_missing_rta, failed_validations, amfi_codes, has_any_plan
+            if isinstance(plan_obj, list):
+                for item in plan_obj:
+                    validate_plan_obj(item, label)
+                return
+            if not isinstance(plan_obj, dict):
+                return
             if plan_obj.get("name"):
                 has_any_plan = True
                 amfi = plan_obj.get("amfi_code")
@@ -89,20 +95,25 @@ def main():
 
         for p_type in ["regular", "direct"]:
             pt = plans.get(p_type, {})
+            if not isinstance(pt, dict):
+                continue
             
             # Check growth
             growth = pt.get("growth", {})
             validate_plan_obj(growth, f"{p_type} growth")
-            for ap in growth.get("additional_plans", []):
-                validate_plan_obj(ap, f"{p_type} growth additional")
+            if isinstance(growth, dict):
+                for ap in growth.get("additional_plans", []):
+                    validate_plan_obj(ap, f"{p_type} growth additional")
                 
             # Check IDCW subtypes
             idcw = pt.get("idcw", {})
-            for subtype in ["payout", "reinvestment", "transfer", "unknown"]:
-                st = idcw.get(subtype, {})
-                validate_plan_obj(st, f"{p_type} idcw {subtype}")
-                for ap in st.get("additional_plans", []):
-                    validate_plan_obj(ap, f"{p_type} idcw {subtype} additional")
+            if isinstance(idcw, dict):
+                for subtype in ["payout", "reinvestment", "transfer", "unknown"]:
+                    st = idcw.get(subtype, {})
+                    validate_plan_obj(st, f"{p_type} idcw {subtype}")
+                    if isinstance(st, dict):
+                        for ap in st.get("additional_plans", []):
+                            validate_plan_obj(ap, f"{p_type} idcw {subtype} additional")
                     
         if not has_any_plan and (not sebi or not str(sebi).startswith("TEMP_")):
             failed_validations.append(f"No valid plans found inside {os.path.basename(file)}")
@@ -126,18 +137,18 @@ def main():
         if len(plans_missing_rta) > 10: print(f"  ... and {len(plans_missing_rta)-10} more")
     
     # 2. Validate CSV Files
-    def validate_csvs(directory):
+    def validate_csvs(directory, expected_headers):
         if not os.path.exists(directory):
             failed_validations.append(f"Missing directory: {directory}")
             return
         for csv_file in glob.glob(os.path.join(directory, "*.csv")):
             with open(csv_file, 'r', encoding='utf-8') as f:
                 header = f.readline().strip()
-                if header != "sif_code,nav_date,nav":
+                if header not in expected_headers:
                     failed_validations.append(f"Invalid columns in {csv_file}: {header}")
                     
-    validate_csvs(daily_nav_dir)
-    validate_csvs(hist_nav_dir)
+    validate_csvs(daily_nav_dir, ["sif_code,nav_date,nav,AUM", "sif_code,nav_date,nav"])
+    validate_csvs(hist_nav_dir, ["sif_code,nav_date,nav"])
     
     if duplicate_sebi_count > 0:
         failed_validations.append("Duplicate SEBI Codes detected.")

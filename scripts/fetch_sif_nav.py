@@ -12,6 +12,7 @@ from services.api_client import fetch_text
 from services.parser import extract_schemes
 from services.csv_service import save_to_csv
 from services.historical_nav_service import update_historical_nav
+from services.aum_service import fetch_latest_sif_aum, merge_aum_into_schemes
 
 def get_latest_stored_nav_date(daily_nav_dir):
     files = glob.glob(os.path.join(daily_nav_dir, "*.csv"))
@@ -50,6 +51,21 @@ def main():
                 print("No new NAV published. Daily snapshot skipped.")
                 return
                 
+            # Step 2b: Fetch and merge latest SIF AUM
+            try:
+                sif_aum_map, aum_meta = fetch_latest_sif_aum()
+                if sif_aum_map:
+                    schemes = merge_aum_into_schemes(schemes, sif_aum_map)
+                    print(f"Merged AUM data ({aum_meta.get('financial_year')} / {aum_meta.get('period')}) for {len(sif_aum_map)} SIFs.")
+                else:
+                    print("No AUM data available. Setting empty AUM column.")
+                    for s in schemes:
+                        s["AUM"] = ""
+            except Exception as e:
+                print(f"Warning: Could not fetch SIF AUM data ({e}). Proceeding without AUM.")
+                for s in schemes:
+                    s["AUM"] = ""
+
             # Step 3: Save to CSV using the new YYYYMMDD format
             today_str = datetime.date.today().strftime("%Y%m%d")
             csv_path = f"{base_dir}/{today_str}.csv"
