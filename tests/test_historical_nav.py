@@ -97,6 +97,38 @@ class TestHistoricalNAV(unittest.TestCase):
         self.assertEqual(merged1, merged2)
         self.assertEqual(len(merged2), 2)
 
+    def test_merge_recovers_missing_earlier_dates_without_overwriting(self):
+        # Scenario: SIF-3 existing CSV starts at 14-Oct-2025
+        existing_rows = [
+            {"sif_code": "SIF-3", "nav_date": "14-Oct-2025", "nav": "10.0125", "dt": datetime(2025, 10, 14)},
+            {"sif_code": "SIF-3", "nav_date": "15-Oct-2025", "nav": "10.0250", "dt": datetime(2025, 10, 15)},
+        ]
+
+        # AMFI returns missing earlier dates (08-Oct to 13-Oct) plus an overlapping date with different precision
+        amfi_rows = [
+            {"sif_code": "SIF-3", "nav_date": "08-Oct-2025", "nav": "10.0000", "dt": datetime(2025, 10, 8)},
+            {"sif_code": "SIF-3", "nav_date": "09-Oct-2025", "nav": "10.0010", "dt": datetime(2025, 10, 9)},
+            {"sif_code": "SIF-3", "nav_date": "10-Oct-2025", "nav": "10.0050", "dt": datetime(2025, 10, 10)},
+            {"sif_code": "SIF-3", "nav_date": "13-Oct-2025", "nav": "10.0090", "dt": datetime(2025, 10, 13)},
+            {"sif_code": "SIF-3", "nav_date": "14-Oct-2025", "nav": "10.0125", "dt": datetime(2025, 10, 14)},
+        ]
+
+        merged = merge_historical_records(existing_rows, amfi_rows)
+
+        # 6 total dates chronologically sorted from 08-Oct-2025 to 15-Oct-2025
+        self.assertEqual(len(merged), 6)
+        self.assertEqual(merged[0]["nav_date"], "08-Oct-2025")
+        self.assertEqual(merged[1]["nav_date"], "09-Oct-2025")
+        self.assertEqual(merged[2]["nav_date"], "10-Oct-2025")
+        self.assertEqual(merged[3]["nav_date"], "13-Oct-2025")
+        self.assertEqual(merged[4]["nav_date"], "14-Oct-2025")
+        self.assertEqual(merged[5]["nav_date"], "15-Oct-2025")
+
+        # Existing 14-Oct and 15-Oct values are preserved
+        self.assertEqual(merged[4]["nav"], "10.0125")
+        self.assertEqual(merged[5]["nav"], "10.0250")
+
+
     def test_discover_eligible_non_direct_sifs_excludes_direct(self):
         navall_content = (
             "Scheme Code;ISIN Div Payout/ ISIN Growth;ISIN Div Reinvestment;Scheme Name;Plan;Option;Net Asset Value;Date\n"

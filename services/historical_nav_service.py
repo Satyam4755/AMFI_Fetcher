@@ -241,6 +241,8 @@ def merge_historical_records(existing_rows: list[dict], new_rows: list[dict]) ->
     """
     Merges existing and newly fetched records:
     - Deduplicates by date.
+    - Preserves existing valid NAV records without unnecessary overwriting.
+    - Seamlessly inserts missing historical dates (earlier, internal, or later).
     - Filters invalid NAV values.
     - Sorts chronologically in ascending order.
     """
@@ -248,14 +250,14 @@ def merge_historical_records(existing_rows: list[dict], new_rows: list[dict]) ->
 
     for r in existing_rows:
         dt = r.get("dt")
-        if dt:
+        if dt and clean_nav_value(r.get("nav")) is not None:
             date_map[dt] = r
 
     for r in new_rows:
         dt = r.get("dt")
-        if dt:
-            # Overwrite or populate with fresh valid record from AMFI
-            date_map[dt] = r
+        if dt and clean_nav_value(r.get("nav")) is not None:
+            if dt not in date_map:
+                date_map[dt] = r
 
     # Sort chronologically
     sorted_dts = sorted(date_map.keys())
@@ -269,6 +271,7 @@ def merge_historical_records(existing_rows: list[dict], new_rows: list[dict]) ->
         })
 
     return merged
+
 
 
 def write_historical_nav_csv(sif_code: str, rows: list[dict], base_dir: str = "data/sif/scheme/nav/historical") -> str:

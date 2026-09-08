@@ -24,6 +24,9 @@ on:
         default: true
         type: boolean
 
+permissions:
+  contents: write
+
 jobs:
   backfill-historical-nav:
     runs-on: ubuntu-latest
@@ -31,6 +34,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python 3.12
         uses: actions/setup-python@v5
@@ -61,9 +66,36 @@ jobs:
           echo "Executing: $CMD"
           eval $CMD
 
-      - name: Run Historical Validation & Tests
+      - name: Run Validation & Tests
         run: |
           python -m unittest discover -s tests
+
+      - name: Commit and Push Recovered Data
+        id: commit_step
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          git add data/sif/scheme/nav/
+          git add data/sif/scheme/performance/
+
+          if git diff --cached --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No historical NAV or performance changes to commit."
+          else
+            TARGET="${{ inputs.sif_code }}"
+            if [ -n "$TARGET" ]; then
+              MSG="Recover historical SIF NAV & performance for $TARGET"
+            else
+              MSG="Recover historical SIF NAV & performance data"
+            fi
+            git commit -m "$MSG"
+            git push origin ${{ github.ref_name }}
+            COMMIT_SHA=$(git rev-parse HEAD)
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "commit_sha=$COMMIT_SHA" >> $GITHUB_OUTPUT
+            echo "Successfully committed and pushed $COMMIT_SHA"
+          fi
 
       - name: Report Backfill Results Summary
         run: |
@@ -73,6 +105,9 @@ jobs:
           echo "- **To Date:** ${{ inputs.to_date || 'Current Date' }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Recalculate Performance:** ${{ inputs.recalculate_performance }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Status of modified/generated historical data in workspace:" >> $GITHUB_STEP_SUMMARY
-          git status --short
-
+          if [ "${{ steps.commit_step.outputs.has_changes }}" = "true" ]; then
+            echo "- **Status:** ✅ Recovered data committed and pushed successfully" >> $GITHUB_STEP_SUMMARY
+            echo "- **Commit SHA:** \`${{ steps.commit_step.outputs.commit_sha }}\`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "- **Status:** ℹ️ No changes needed (repository already up to date)" >> $GITHUB_STEP_SUMMARY
+          fi
