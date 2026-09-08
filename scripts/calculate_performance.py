@@ -1,8 +1,12 @@
-import os
 import glob
 import json
 import logging
+import os
+import sys
 import pandas as pd
+
+# Add project root to path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from services.performance_service import calculate_performance_metrics
 

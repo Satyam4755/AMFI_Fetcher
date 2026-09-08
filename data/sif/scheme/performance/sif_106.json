@@ -4,7 +4,7 @@
         "1_day": -0.37,
         "1_week": -1.0,
         "1_month": -1.41,
-        "3_month": null,
+        "3_month": 8.1,
         "6_month": null,
         "1_year": null,
         "2_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 0.99
+        "since_launch": 6.62
     },
-    "last_updated": "2026-09-07T21:05:31Z"
+    "last_updated": "2026-09-08T09:06:11Z"
 }
