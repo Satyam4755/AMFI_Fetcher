@@ -2,8 +2,8 @@
     "sif_code": "SIF-32",
     "returns": {
         "1_day": -0.2,
-        "1_week": -0.45,
-        "1_month": -0.34,
+        "1_week": -0.35,
+        "1_month": -0.54,
         "3_month": null,
         "6_month": null,
         "1_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 0.68
+        "since_launch": 0.48
     },
-    "last_updated": "2026-09-08T09:50:32Z"
+    "last_updated": "2026-09-08T20:41:58Z"
 }
