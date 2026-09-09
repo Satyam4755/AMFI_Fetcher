@@ -1,10 +1,10 @@
 {
     "sif_code": "SIF-97",
     "returns": {
-        "1_day": -0.17,
-        "1_week": -0.9,
-        "1_month": -2.59,
-        "3_month": 2.91,
+        "1_day": -0.56,
+        "1_week": -1.03,
+        "1_month": -3.13,
+        "3_month": 1.44,
         "6_month": null,
         "1_year": null,
         "2_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": -0.17
+        "since_launch": -0.73
     },
-    "last_updated": "2026-09-08T20:41:58Z"
+    "last_updated": "2026-09-09T20:23:11Z"
 }

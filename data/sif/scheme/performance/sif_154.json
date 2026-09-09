@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-154",
     "returns": {
-        "1_day": -0.2,
-        "1_week": -0.3,
+        "1_day": -0.3,
+        "1_week": -0.6,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": -0.3
+        "since_launch": -0.6
     },
-    "last_updated": "2026-09-08T20:41:58Z"
+    "last_updated": "2026-09-09T20:23:11Z"
 }
