@@ -2,8 +2,8 @@
     "sif_code": "SIF-145",
     "returns": {
         "1_day": 0.03,
-        "1_week": 0.38,
-        "1_month": 1.52,
+        "1_week": 0.21,
+        "1_month": 1.5,
         "3_month": null,
         "6_month": null,
         "1_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 3.11
+        "since_launch": 3.14
     },
-    "last_updated": "2026-09-09T20:23:11Z"
+    "last_updated": "2026-09-10T20:24:16Z"
 }
