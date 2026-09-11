@@ -2,7 +2,7 @@
     "sif_code": "SIF-150",
     "returns": {
         "1_day": 0.0,
-        "1_week": -1.33,
+        "1_week": -1.42,
         "1_month": 1.07,
         "3_month": null,
         "6_month": null,
@@ -14,5 +14,5 @@
         "10_year": null,
         "since_launch": 4.41
     },
-    "last_updated": "2026-09-10T20:24:15Z"
+    "last_updated": "2026-09-11T20:24:57Z"
 }

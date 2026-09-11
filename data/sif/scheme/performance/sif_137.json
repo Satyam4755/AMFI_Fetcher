@@ -1,10 +1,10 @@
 {
     "sif_code": "SIF-137",
     "returns": {
-        "1_day": 0.17,
-        "1_week": -0.05,
-        "1_month": -0.51,
-        "3_month": null,
+        "1_day": -0.27,
+        "1_week": -0.33,
+        "1_month": -0.69,
+        "3_month": 1.33,
         "6_month": null,
         "1_year": null,
         "2_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 1.6
+        "since_launch": 1.33
     },
-    "last_updated": "2026-09-10T20:24:16Z"
+    "last_updated": "2026-09-11T20:24:58Z"
 }
