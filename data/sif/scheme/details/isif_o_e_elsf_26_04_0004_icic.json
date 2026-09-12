@@ -3,7 +3,7 @@
     "fund_name": "iSIF Equity Long-Short Fund",
     "fund_type": "Open Ended Investment Strategy",
     "category": "Equity Long-Short Fund",
-    "riskometer_at_launch": "Risk Level 5",
+    "riskometer_at_launch": null,
     "riskometer_as_on_date": null,
     "potential_risk_class": null,
     "scheme_objective": null,
@@ -66,7 +66,7 @@
         "minimum_redemption_amount": "Any amount subject to provisions of minimum investment threshold as specified below.\n\nMinimum Investment Threshold:\n- Aggregate investment by an investor across all investment strategies offered by iSIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/\n-In case of any request(s) for partial redemption/switch out by the investor/(s), the AMC reserves the right to reject the redemptions entirely if the amount post payout of redemptions falls below Minimum Investment Threshold.",
         "minimum_redemption_units": null
     },
-    "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 12 months from allotment.\n•NIL - If the amount sought to be redeemed or switched out more than 12 months",
+    "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 1 month from allotment.\n•NIL - If the amount sought to be redeemed or switched out more than 1 month",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "Citibank N.A,HDFC Bank Limited, HSBC Limited and SBI-SG Global Securities Services Private Limited",
     "auditor": "M/s BSR & Co. LLP",
