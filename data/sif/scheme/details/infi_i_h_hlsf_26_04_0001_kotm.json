@@ -1,6 +1,8 @@
 {
     "sebi_code": "INFI/I/H/HLSF/26/04/0001/KOTM",
+    "scheme_name": "Infinity Hybrid Long-Short Fund",
     "fund_name": "Infinity Hybrid Long-Short Fund",
+    "scheme_type": "An Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives.",
     "fund_type": "An Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives.",
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Risk Band Level 2",
@@ -77,6 +79,50 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Infinity Hybrid Long-Short Fund - Direct Plan - Growth - SIF-145 | Infinity Hybrid Long-Short Fund - Direct Plan - Growth - INF174K30012",
+                    "amfi_code": "SIF-145",
+                    "isin_code": "INF174K30012",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout - INF174K30020",
+                        "amfi_code": null,
+                        "isin_code": "INF174K30020",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout & Reinvestment - SIF-148 | Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Reinvestment - INF174K30038",
+                        "amfi_code": "SIF-148",
+                        "isin_code": "INF174K30038",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -94,11 +140,53 @@
         "minimum_additional_amount": "INR 10,000/- and in multiples of Re. 1 thereafter.",
         "additional_multiple": "In multiples of Re. 1 thereafter.",
         "minimum_redemption_amount": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.\n\nMinimum Investment Threshold:\n• Aggregate investment by an investor across all investment strategies offered by Infinity SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/-.",
-        "minimum_redemption_units": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower."
+        "minimum_redemption_units": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.",
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": "Not Applicable"
+    },
+    "switch_details": {
+        "minimum_switch_amount": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.",
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP - Daily, Weekly, Monthly, Quarterly, Half-yearly and Anually\nSWP -Weekly, Fortnightly, Monthly, quarterly\nSTP - Daily, weekly, Fortnightly, Monthly, quarterly",
+        "minimum_amount": "SIP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSWP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSTP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]",
+        "in_multiples_of": "In multiples of Re. 1 thereafter.",
+        "minimum_installments": "SIP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSWP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSTP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]",
+        "dates": "SIP - Any date from 1st to 31st\nSWP - Monday , Wednesday as per redemption dates\nSTP - Monday , Wednesday as per redemption dates",
+        "maximum_amount": "Not Applicable"
+    },
+    "expenses_and_loads": {
+        "exit_load": "Nil",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": "Segregation of portfolio has been enabled in the strategy."
+    },
+    "amc_details": {
+        "sif_name": "Infinity SIF",
+        "amc_website": "https://www.kotakmf.com",
+        "scheme_bonus": null
     },
     "exit_load": "Nil",
     "registrar": "Computer Age Management Services  Limited (‘CAMS’)",
     "custodian": "Deutsche Bank A G, Mumbai & Standard Chartered Bank",
     "auditor": "S. R. Batliboi & Co. LLP",
-    "sif_name": "Infinity SIF"
+    "sif_name": "Infinity SIF",
+    "scheme_id": "S-29",
+    "sif_id": "17",
+    "documents": {
+        "scheme_id": "S-29",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-29.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-29.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-29.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-29.xml"
+    }
 }

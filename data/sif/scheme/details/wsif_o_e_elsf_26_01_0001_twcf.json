@@ -1,6 +1,8 @@
 {
     "sebi_code": "WSIF/O/E/ELSF/26/01/0001/TWCF",
+    "scheme_name": "WSIF Equity Long Short Fund",
     "fund_name": "WSIF Equity Long Short Fund",
+    "scheme_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
     "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
     "category": "Equity Long short",
     "riskometer_at_launch": "Risk Band level 5",
@@ -61,6 +63,50 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-111 | WSIF EQUITY LONG-SHORT FUND-DIRECT-GROWTH-INF2F0030106",
+                    "amfi_code": "SIF-111",
+                    "isin_code": "INF2F0030106",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-110 | WSIF EQUITY LONG-SHORT FUND-DIRECT-IDCW-PAYOUT-INF2F0030114",
+                        "amfi_code": "SIF-110",
+                        "isin_code": "INF2F0030114",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-110 | WSIF EQUITY LONG-SHORT FUND-DIRECT-IDCW-REINVESTMENT-INF2F0030122",
+                        "amfi_code": "SIF-110",
+                        "isin_code": "INF2F0030122",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -78,11 +124,53 @@
         "minimum_additional_amount": "Rs.10000",
         "additional_multiple": "Rs 100",
         "minimum_redemption_amount": "1000",
-        "minimum_redemption_units": "100"
+        "minimum_redemption_units": "100",
+        "minimum_balance_amount": "1000000",
+        "minimum_balance_units": "100000",
+        "maximum_investment_amount": "Not Applicable"
+    },
+    "switch_details": {
+        "minimum_switch_amount": "Switch - in: Rs.1000000 and in multiples of Rs. 100 thereafter. \nSwitch-out :Rs.1000 and in multiples of Rs 1 thereafter.",
+        "minimum_switch_units": "Not applicable",
+        "switch_multiple_amount": "Rs.1",
+        "switch_multiple_units": "Not applicable",
+        "maximum_switch_amount": "Not applicable",
+        "maximum_switch_units": "Not applicable"
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP\nFor SIP -Daiy, Weekly,Fortnightly,Monthly,Quarterly\nFor SWP- monthly, Quarterly\nFor STP-Daily, Weekly,Fortnightly, Monthly, Quarterly",
+        "minimum_amount": "SIP                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \nDaily SIP:Rs 1000/-(and in multiples of Rs 100/-)                                                                                                                                                                                                                                                                                                                                              Weekly SIP: Rs. 1000/- (and in multiples of Rs. 100/-) \nFortnightly SIP: Rs. 1000/- (and in multiples of Rs. 100/-) \nMonthly SIP: Rs. 1000/- (and in multiples of Rs. 100/-) \nQuarterly SIP: Rs. 1000/- (and in multiples of Rs. 100/-)\nSTP\nDaily  SIP:1000/-  and in multiples of Rs 100/-                                                                                                                                                                                                                                                                                                                                                                                                                                          Weekly  SIP : 1000/- and in multiples of Rs 100/-                                                                                                                                                                                                                                                                                                                                                                                                                                     Fortnightly  SIP:1000/- and in multiples of Rs 100/-                                                                                                                                                                                                                                                                                                                                                                                                                       Monthly- Rs. 1000 and in multiples of Re. 100/- thereafter\nQuarterly- Rs. 1000 and in multiples of Re. 100/- thereafter\nSWP            \nMonthly- Rs. 1000 and in multiples of Re. 100/- thereafter\nQuarterly- Rs. 1000 and in multiples of Re. 100/- thereafter.",
+        "in_multiples_of": "SIP                                                                                                                                                                                                                                                                                                                                                                                                                                                            \nDaily SIP: in multiples of Rs 100/-                                                                                                                                                                                                                                                                                                                                                                                                                                               Weekly SIP: in multiples of Rs. 100/- \nFortnightly SIP:  in multiples of Rs. 100/- \nMonthly SIP:  in multiples of Rs. 100/- \nQuarterly SIP:  in multiples of Rs. 100/- \nSTP\nDaily -  in multiples of Re. 100/- thereafter\nWeekly-  in multiples of Re. 100/- thereafter\nFortnightly - in multiples of Re  100/- thereafter                                                                                                                                                                                                                                                                                                                                                                                                                        Monthly-  in multiples of Re. 100/- thereafter\nQuarterly-  in multiples of Re. 100/- thereafter\nSWP            \nMonthly-  in multiples of Re. 100/- thereafter\nQuarterly-   in multiples of Re. 100/- thereafter.",
+        "minimum_installments": "SIP                                                                                                                                                                                                                                                                                                                                                                                                                                                           \n Daily SIP: Minimum installments:6                                                                                                                                                                                                                                                                                                                                                                                                                                            Weekly SIP: Minimum installments: 6\nFortnightly SIP: Minimum installments: 6\nMonthly SIP: Minimum installments: 6\nQuarterly SIP: Minimum installments: 6\nSTP\nDaily -  Minimum installments: 6\nWeekly-  Minimum installments: 6\nFortnightly - Minimum installments:6                                                                                                                                                                                                                                                                                                                                                                                                                      Monthly-  Minimum installments: 6\nQuarterly-  Minimum installments: 6\nSWP            \nMonthly-  Minimum installments: 6\nQuarterly-   Minimum installments: 6",
+        "dates": "Any Business day",
+        "maximum_amount": "Not Applicable"
+    },
+    "expenses_and_loads": {
+        "exit_load": "NIL",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular 4.92, Direct 2.90"
+    },
+    "special_facilities": {
+        "swing_pricing": "Not applicable",
+        "side_pocketing": "Not Applicable"
+    },
+    "amc_details": {
+        "sif_name": "WSIF",
+        "amc_website": "https://www.wealthcompanyamc.in",
+        "scheme_bonus": null
     },
     "exit_load": "NIL",
     "registrar": "KFin Technologies Ltd (Kfin)",
     "custodian": "HDFC Bank Limited",
     "auditor": "S.R. Batliboi & Co. LLP – Chartered Accountants",
-    "sif_name": "WSIF"
+    "sif_name": "WSIF",
+    "scheme_id": "S-19",
+    "sif_id": "83",
+    "documents": {
+        "scheme_id": "S-19",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-19.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-19.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-19.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-19.xml"
+    }
 }

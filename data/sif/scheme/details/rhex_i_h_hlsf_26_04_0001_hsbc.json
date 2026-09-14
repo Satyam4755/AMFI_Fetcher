@@ -1,6 +1,8 @@
 {
     "sebi_code": "RHEX/I/H/HLSF/26/04/0001/HSBC",
+    "scheme_name": "RedHex Hybrid Long-Short Fund",
     "fund_name": "RedHex Hybrid Long-Short Fund",
+    "scheme_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Level  2",
@@ -8,10 +10,10 @@
     "potential_risk_class": null,
     "scheme_objective": "The investment objective of the Investment Strategy is to generate regular returns and capital appreciation by investing in fixed income securities and equity and equity related securities including limited short exposure in equity and debt through derivatives. There is no assurance that the investment objective of the Investment Strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2026-06-02 00:00:00",
-    "nfo_close_date": "2026-06-16 00:00:00",
-    "allotment_date": "2026-06-19 00:00:00",
-    "reopen_date": "2026-06-25 00:00:00",
+    "nfo_open_date": "2026-06-02",
+    "nfo_close_date": "2026-06-16",
+    "allotment_date": "2026-06-19",
+    "reopen_date": "2026-06-25",
     "maturity_date": null,
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
     "benchmark_tier_2": null,
@@ -112,6 +114,70 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "RedHex Hybrid Long-Short Fund - Direct Growth  - SIF-129 | RedHex Hybrid Long-Short Fund - Direct Growth -INF336L30049",
+                    "amfi_code": "SIF-129",
+                    "isin_code": "INF336L30049",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "RedHex Hybrid Long-Short Fund - Direct IDCW Payout - SIF-130 | RedHex Hybrid Long-Short Fund - Direct IDCW Payout-INF336L30064",
+                        "amfi_code": "SIF-130",
+                        "isin_code": "INF336L30064",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "annual",
+                        "name": "RedHex Hybrid Long-Short Fund - Direct Annual IDCW Payout - SIF-131 | RedHex Hybrid Long-Short Fund - Direct Annual IDCW Payout-INF336L30080",
+                        "amfi_code": "SIF-131",
+                        "isin_code": "INF336L30080",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "RedHex Hybrid Long-Short Fund - Direct IDCW Reinvestment - SIF-130 | RedHex Hybrid Long-Short Fund - Direct IDCW Reinvestment-INF336L30056",
+                        "amfi_code": "SIF-130",
+                        "isin_code": "INF336L30056",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": "annual",
+                        "name": "RedHex Hybrid Long-Short Fund - Direct Annual IDCW Reinvestment - SIF-131 | RedHex Hybrid Long-Short Fund - Direct Annual IDCW Reinvestment-INF336L30072",
+                        "amfi_code": "SIF-131",
+                        "isin_code": "INF336L30072",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -129,11 +195,53 @@
         "minimum_additional_amount": "1000",
         "additional_multiple": "1",
         "minimum_redemption_amount": "1000",
-        "minimum_redemption_units": "100"
+        "minimum_redemption_units": "100",
+        "minimum_balance_amount": "10,00,000; For Accredited Investors: 1,00,000",
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": "1000",
+        "minimum_switch_units": "100",
+        "switch_multiple_amount": "1",
+        "switch_multiple_units": "0.01",
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP - Daily (All Business Days from Monday to Friday), Weekly (Any Day from Monday to Friday), Monthly(Any Dates), Quarterly (Any Dates), SWP - Monthly, Quarterly",
+        "minimum_amount": "SIP - 1000 Daily 12; 1000 Weekly 12; 1000 Monthly 12; 3000 Quarterly 4, STP - 1000, SWP - 1000",
+        "in_multiples_of": "1",
+        "minimum_installments": "SIP - Daily 12; Weekly 12; Monthly 12; Quarterly 4, SWP - Monthly - 12, Quarterly - 12",
+        "dates": "SIP - Daily (Daily SIP will be processed from Monday to Friday. In case of a non-business day falling between Monday to Friday (both days inclusive) then the daily SIP installment for that day will not be processed on the next business day.); Weekly - Any day from Monday to Friday;  Other than daily and weekly - Any Date, SWP - First Monday* of the month or quarter, as applicable, subject to the notice period requirements and as per the payout schedule of the Investment strategy. *Next business day in case Monday is a non-business day.",
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "i. If the Units are redeemed / switched-out on or before 1 year from the date of allotment: 2.00%\nii. If the Units are redeemed / switched-out after 1 year from the date of allotment: Nil",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular 1.09, Direct 0.45"
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": "Yes"
+    },
+    "amc_details": {
+        "sif_name": "RedHex SIF",
+        "amc_website": "https://www.assetmanagement.hsbc.co.in",
+        "scheme_bonus": null
     },
     "exit_load": "i. If the Units are redeemed / switched-out on or before 1 year from the date of allotment: 2.00%\nii. If the Units are redeemed / switched-out after 1 year from the date of allotment: Nil",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "HDFC Bank Limited",
     "auditor": "M/s. Price Waterhouse, Chartered Accountants LLP",
-    "sif_name": "RedHex SIF"
+    "sif_name": "RedHex SIF",
+    "scheme_id": "S-25",
+    "sif_id": "37",
+    "documents": {
+        "scheme_id": "S-25",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-25.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-25.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-25.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-25.xml"
+    }
 }

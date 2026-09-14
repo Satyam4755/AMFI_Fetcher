@@ -1,6 +1,8 @@
 {
     "sebi_code": "ALTV/O/E/EELS/26/03/0002/EDEL",
+    "scheme_name": "Altiva Equity Ex-Top 100 Long-Short Fund",
     "fund_name": "Altiva Equity Ex-Top 100 Long-Short Fund",
+    "scheme_type": "An open-ended equity investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments of Ex – top 100 stocks.",
     "fund_type": "An open-ended equity investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments of Ex – top 100 stocks.",
     "category": "Equity Ex-Top 100 Long-Short Fund",
     "riskometer_at_launch": "Risk Band Level 5",
@@ -8,10 +10,10 @@
     "potential_risk_class": "Not applicable",
     "scheme_objective": "To generate capital appreciation in the long term by predominantly investing in equity and equity related securities of Ex – top 100 companies. The Investment Strategy may also invest in various derivative instruments, including short exposure through unhedged derivative positions in equity and equity related instruments of Ex – top 100 stocks upto 25%.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10/-",
-    "nfo_open_date": "2026-05-18 00:00:00",
-    "nfo_close_date": "2026-06-01 00:00:00",
-    "allotment_date": "2026-06-08 00:00:00",
-    "reopen_date": "2026-06-10 00:00:00",
+    "nfo_open_date": "2026-05-18",
+    "nfo_close_date": "2026-06-01",
+    "allotment_date": "2026-06-08",
+    "reopen_date": "2026-06-10",
     "maturity_date": "Not applicable",
     "benchmark_tier_1": "Nifty 500 TRI",
     "benchmark_tier_2": null,
@@ -93,6 +95,61 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-120 - Altiva Equity ExTop 100 LongShort Fund Direct Plan Growth Growth | INF754K30094 - Altiva Equity ExTop 100 LongShort Fund Direct Plan Growth Growth | ETD1 -Altiva Equity ExTop 100 LongShort Fund Direct Plan Growth Growth",
+                    "amfi_code": "SIF-120",
+                    "isin_code": "INF754K30094",
+                    "rta_code": "ETD1"
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-121 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Payout | INF754K30102 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Payout | ETD2 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Payout",
+                        "amfi_code": "SIF-121",
+                        "isin_code": "INF754K30102",
+                        "rta_code": "ETD2"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-121 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Reinvestment | INF754K30110 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Reinvestment | ETD2 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Reinvestment",
+                        "amfi_code": "SIF-121",
+                        "isin_code": "INF754K30110",
+                        "rta_code": "ETD2"
+                    }
+                ],
+                "transfer": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "transfer",
+                        "time_period": null,
+                        "name": "INF754K30128 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Transfer | ETD2 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Transfer",
+                        "amfi_code": null,
+                        "isin_code": "INF754K30128",
+                        "rta_code": "ETD2"
+                    }
+                ],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -110,11 +167,53 @@
         "minimum_additional_amount": "Rs. 1000/-",
         "additional_multiple": "Re. 1/-",
         "minimum_redemption_amount": "Re. 1/-",
-        "minimum_redemption_units": "0.001"
+        "minimum_redemption_units": "0.001",
+        "minimum_balance_amount": "Rs. 1000000/-",
+        "minimum_balance_units": null,
+        "maximum_investment_amount": "D - 9999999999; W - 9999999999; F - 9999999999; M - 9999999999; Q - 9999999999"
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "Daily (D); Weekly (W); Fortnightly (F) Monthly (M); Quarterly (Q)",
+        "minimum_amount": "D - 1000; W - 1000; F - 1000; M - 1000; Q - 1000",
+        "in_multiples_of": "D - 1; W - 1; F - 1; M - 1; Q - 1",
+        "minimum_installments": "D - 20; W - 6; F - 6; M - 6; Q - 6",
+        "dates": "D - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; W - 7,14,21,28; F - 10,25; M - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; Q - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
+        "maximum_amount": "D - 9999999999; W - 9999999999; F - 9999999999; M - 9999999999; Q - 9999999999"
+    },
+    "expenses_and_loads": {
+        "exit_load": "If the units are redeemed / switched out on or before 90 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 90 days from the date of allotment – Nil. \n\nAMC reserves the right to revise the load structure from time to time. Such changes will become effective prospectively from the date such changes are incorporated.",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "Altiva SIF",
+        "amc_website": "https://www.edelweissmf.com",
+        "scheme_bonus": null
     },
     "exit_load": "If the units are redeemed / switched out on or before 90 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 90 days from the date of allotment – Nil. \n\nAMC reserves the right to revise the load structure from time to time. Such changes will become effective prospectively from the date such changes are incorporated.",
     "registrar": "KFIN Technologies Ltd",
     "custodian": "Standard Chartered",
     "auditor": "M/s. Walker Chandiok & co LLP",
-    "sif_name": "Altiva SIF"
+    "sif_name": "Altiva SIF",
+    "scheme_id": "S-22",
+    "sif_id": "47",
+    "documents": {
+        "scheme_id": "S-22",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-22.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-22.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-22.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-22.xml"
+    }
 }

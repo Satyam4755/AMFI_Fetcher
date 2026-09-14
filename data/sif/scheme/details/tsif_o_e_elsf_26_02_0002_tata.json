@@ -1,17 +1,19 @@
 {
     "sebi_code": "TSIF/O/E/ELSF/26/02/0002/TATA",
+    "scheme_name": "Titanium Equity Long-Short Fund",
     "fund_name": "Titanium Equity Long-Short Fund",
+    "scheme_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "category": "Equity Long-Short Fund",
-    "riskometer_at_launch": null,
-    "riskometer_as_on_date": null,
+    "riskometer_at_launch": "Risk Level 5 (Band Range 1-5, 5 been highest risk)",
+    "riskometer_as_on_date": "Risk Level 5 (Band Range 1-5, 5 been highest risk)",
     "potential_risk_class": "Not Applicable",
     "scheme_objective": "To generate medium to long term capital appreciation by investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments. However, there is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2026-04-27 00:00:00",
-    "nfo_close_date": "2026-05-11 00:00:00",
-    "allotment_date": "2026-05-14 00:00:00",
-    "reopen_date": "2026-05-20 00:00:00",
+    "nfo_open_date": "2026-04-27",
+    "nfo_close_date": "2026-05-11",
+    "allotment_date": "2026-05-14",
+    "reopen_date": "2026-05-20",
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "Nifty 500 Total Return Index (TRI)",
     "benchmark_tier_2": "Not Applicable",
@@ -82,6 +84,50 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-99 | Titanium Equity Long-Short Fund Direct Plan Growth - INF277K30104",
+                    "amfi_code": "SIF-99",
+                    "isin_code": "INF277K30104",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-100 | Titanium Equity Long-Short Fund Direct Plan IDCW Payout - INF277K30120",
+                        "amfi_code": "SIF-100",
+                        "isin_code": "INF277K30120",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-103 | Titanium Equity Long-Short Fund Direct Plan IDCW - INF277K30112",
+                        "amfi_code": "SIF-103",
+                        "isin_code": "INF277K30112",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -99,11 +145,53 @@
         "minimum_additional_amount": "1000",
         "additional_multiple": "1",
         "minimum_redemption_amount": "500\nThe redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”",
-        "minimum_redemption_units": "Not Applicable"
+        "minimum_redemption_units": "Not Applicable",
+        "minimum_balance_amount": "No mimimum balance required",
+        "minimum_balance_units": "No mimimum unit balance required",
+        "maximum_investment_amount": "Not Applicable."
+    },
+    "switch_details": {
+        "minimum_switch_amount": "For all units there is no minimum switch amount.",
+        "minimum_switch_units": "For all units there is no minimum switch units.",
+        "switch_multiple_amount": "Not Applicable.",
+        "switch_multiple_units": "Not Applicable.",
+        "maximum_switch_amount": "Not Applicable.",
+        "maximum_switch_units": "Not Applicable."
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP-- Monthly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)",
+        "minimum_amount": "SIP-- 1000.00/1000.00/1000.00/1000.00  ;STP --1000.00",
+        "in_multiples_of": "SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00(Post NFO Period)",
+        "minimum_installments": "SIP--1000.00 (with minimum 6 installments) ;STP --1000.00 (with minimum 6 installments) ;(Post NFO Period)",
+        "dates": "SIP-- Any day/Any day/Any day/Any day(All Business Days)  ;STP --Daily (Post NFO Period)",
+        "maximum_amount": "SIP-- Not Applicable/Not Applicable/Not Applicable/Not Applicablee  ;STP --Not Applicable/Not Applicable/Not Applicable/Not Applicable (Post NFO Period)"
+    },
+    "expenses_and_loads": {
+        "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular upto 2.25%, Direct upto 2.25%"
+    },
+    "special_facilities": {
+        "swing_pricing": "Not Applicable",
+        "side_pocketing": "Applicable"
+    },
+    "amc_details": {
+        "sif_name": "Titanium SIF",
+        "amc_website": "https://www.tatamutualfund.com",
+        "scheme_bonus": null
     },
     "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "ICICI Bank LTD",
     "auditor": "S.R. Batliboi & CO. LLP",
-    "sif_name": "Titanium SIF"
+    "sif_name": "Titanium SIF",
+    "scheme_id": "S-17",
+    "sif_id": "25",
+    "documents": {
+        "scheme_id": "S-17",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-17.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-17.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-17.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-17.xml"
+    }
 }

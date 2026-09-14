@@ -1,14 +1,16 @@
 {
     "sebi_code": null,
+    "scheme_name": "Altiva Equity Long-Short Fund",
     "fund_name": "Altiva Equity Long-Short Fund",
+    "scheme_type": "Open Ended",
     "fund_type": "Open Ended",
     "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
     "riskometer_at_launch": null,
     "riskometer_as_on_date": null,
     "potential_risk_class": null,
-    "scheme_objective": null,
+    "scheme_objective": "To generate long-term capital appreciation by predominantly investing in \nlisted equity and equity-related instruments. The Investment Strategy may \nalso invest in various derivative instruments, including limited short exposure \nthrough unhedged derivative positions in equity up to 25%.  \nThere is no assurance that the investment objective of the Investment \nstrategy will be achieved.",
     "face_value": null,
-    "nfo_open_date": null,
+    "nfo_open_date": "2026-09-09",
     "nfo_close_date": null,
     "allotment_date": null,
     "reopen_date": null,
@@ -28,20 +30,73 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [],
     "investment_limits": {
-        "minimum_application_amount": null,
+        "minimum_application_amount": "Rs. 10 lacs",
         "application_multiple": null,
         "minimum_additional_amount": null,
         "additional_multiple": null,
         "minimum_redemption_amount": null,
-        "minimum_redemption_units": null
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": null,
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": null,
+        "dates": null,
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": null,
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "Altiva SIF",
+        "amc_website": "https://www.edelweissmf.com",
+        "scheme_bonus": null
     },
     "exit_load": null,
     "registrar": null,
     "custodian": null,
     "auditor": null,
-    "sif_name": "Altiva SIF"
+    "sif_name": "Altiva SIF",
+    "scheme_id": "S-34",
+    "sif_id": "47",
+    "documents": {
+        "scheme_id": "S-34",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-34.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-34.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-34.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-34.xml"
+    }
 }

@@ -1,17 +1,19 @@
 {
     "sebi_code": "TSIF/I/H/HLSF/25/09/0001/TATA",
+    "scheme_name": "Titanium Hybrid Long-Short Fund",
     "fund_name": "Titanium Hybrid Long-Short Fund",
+    "scheme_type": "Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "fund_type": "Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
-    "riskometer_at_launch": null,
-    "riskometer_as_on_date": null,
+    "riskometer_at_launch": "Risk Level 5 (Band Range 1-5, 5 been highest risk)",
+    "riskometer_as_on_date": "Risk Level 5 (Band Range 1-5, 5 been highest risk)",
     "potential_risk_class": "Not Applicable",
     "scheme_objective": "To generate medium to long term capital appreciation by investing in equity and equity related instruments as well as debt and money market instruments, including limited short exposure in equity and debt through derivatives. However, there is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2025-11-24 00:00:00",
-    "nfo_close_date": "2025-12-08 00:00:00",
-    "allotment_date": "2025-12-11 00:00:00",
-    "reopen_date": "2025-12-17 00:00:00",
+    "nfo_open_date": "2025-11-24",
+    "nfo_close_date": "2025-12-08",
+    "allotment_date": "2025-12-11",
+    "reopen_date": "2025-12-17",
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "CRISIL Hybrid 50+50 - Moderate Index",
     "benchmark_tier_2": "Not Applicable",
@@ -55,6 +57,17 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -72,11 +85,53 @@
         "minimum_additional_amount": "1000",
         "additional_multiple": "1",
         "minimum_redemption_amount": "500",
-        "minimum_redemption_units": "Not Applicable"
+        "minimum_redemption_units": "Not Applicable",
+        "minimum_balance_amount": "No mimimum balance required",
+        "minimum_balance_units": "No mimimum unit balance required",
+        "maximum_investment_amount": "Not Applicable."
+    },
+    "switch_details": {
+        "minimum_switch_amount": "For all units there is no minimum switch amount.",
+        "minimum_switch_units": "For all units there is no minimum switch units.",
+        "switch_multiple_amount": "Not Applicable.",
+        "switch_multiple_units": "Not Applicable.",
+        "maximum_switch_amount": "Not Applicable.",
+        "maximum_switch_units": "Not Applicable."
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)",
+        "minimum_amount": "SIP-- 1000.00/1000.00/1000.00/1000.00/1000.00/1000.00  ;STP --500.00/500.00/500.00/500.00",
+        "in_multiples_of": "SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00/1.00/1.00/1.00 (Post NFO Period)",
+        "minimum_installments": "SIP-- 12 Instalments/6 instalments/6 instalments/4 instalments/12 instalments/12 instalments  ;STP --500.00 to 999.00 - 12 instalments; \n1,000.00 to 1,999.00 -  6 instalments;\n2,000.00 and more - 3 instalments \n(Post NFO Period)",
+        "dates": "SIP-- Any day/Any day/Any day/Any day/Monday-Friday/All Business Days  ;STP --Once a month (Post NFO Period)",
+        "maximum_amount": "SIP-- 999.00/Not Applicable/Not Applicable/Not Applicable/Not Applicable/Not Applicable  ;STP --Not Applicable/Not Applicable/Not Applicable/Not Applicable (Post NFO Period)"
+    },
+    "expenses_and_loads": {
+        "exit_load": "1. Redemption/Switch-out on or before expiry of 1 year from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 year from the date of allotment-Nil",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular upto 2.25%, Direct upto 2.25%"
+    },
+    "special_facilities": {
+        "swing_pricing": "Not Applicable",
+        "side_pocketing": "Applicable"
+    },
+    "amc_details": {
+        "sif_name": "Titanium SIF",
+        "amc_website": "https://www.tatamutualfund.com",
+        "scheme_bonus": null
     },
     "exit_load": "1. Redemption/Switch-out on or before expiry of 1 year from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 year from the date of allotment-Nil",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "ICICI Bank LTD",
     "auditor": "S.R. Batliboi & CO. LLP",
-    "sif_name": "Titanium SIF"
+    "sif_name": "Titanium SIF",
+    "scheme_id": "S-7",
+    "sif_id": "25",
+    "documents": {
+        "scheme_id": "S-7",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-7.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-7.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-7.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-7.xml"
+    }
 }

@@ -5,6 +5,9 @@ def build_scheme_json(api_data, rows):
     """
     Converts raw API data and XLS rows into a deeply nested JSON-serializable dictionary.
     """
+    def clean_key(s):
+        return re.sub(r'[^a-z0-9]', '', str(s).lower())
+
     xls_data = {}
     for row in rows:
         key_val = None
@@ -20,15 +23,52 @@ def build_scheme_json(api_data, rows):
                 val_val = str(v).strip()
                 break
         if key_val and val_val:
-            xls_data[key_val] = val_val
+            if key_val in xls_data:
+                if any(term in key_val.lower() for term in ["objective", "description"]):
+                    if "stated asset allocation" not in [x.lower() for x in xls_data.keys()]:
+                        xls_data["Stated Asset Allocation"] = val_val
+                    else:
+                        xls_data[f"{key_val}_2"] = val_val
+                else:
+                    xls_data[f"{key_val}_2"] = val_val
+            else:
+                xls_data[key_val] = val_val
 
     def get_val(possible_keys):
-        for k in xls_data.keys():
-            cleaned_k = re.sub(r'\s+', ' ', k.lower().strip())
-            for pk in possible_keys:
-                if pk.lower() in cleaned_k:
-                    return xls_data[k]
+        for pk in possible_keys:
+            pk_clean = re.sub(r'\s+', ' ', pk.lower().strip())
+            pk_norm = clean_key(pk)
+            for k, val in xls_data.items():
+                if val is None or str(val).strip().lower() in ("nan", "none", "null", "--", "-", ""):
+                    continue
+                cleaned_k = re.sub(r'\s+', ' ', k.lower().strip())
+                norm_k = clean_key(k)
+                if pk_clean in cleaned_k or pk_norm in norm_k:
+                    return val
         return None
+
+    def normalize_date(d_str):
+        if not d_str: return None
+        if hasattr(d_str, 'strftime'):
+            return d_str.strftime("%Y-%m-%d")
+        d_clean = str(d_str).strip()
+        if re.search(r'(?i)^(NA|N\.A\.|N/A|-|TBD)$', d_clean) or not d_clean: return None
+        m = re.match(r'^(\d{4}-\d{2}-\d{2})', d_clean)
+        if m:
+            return m.group(1)
+        from datetime import datetime
+        formats = [
+            "%d-%b-%Y", "%d-%b-%y", "%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%d",
+            "%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y",
+            "%d-%m-%y", "%d/%m/%y"
+        ]
+        for fmt in formats:
+            try:
+                parsed = datetime.strptime(d_clean, fmt)
+                return parsed.strftime("%Y-%m-%d")
+            except ValueError:
+                continue
+        return d_clean
 
     def parse_asset_allocation(text):
         if not text: return None
@@ -57,7 +97,33 @@ def build_scheme_json(api_data, rows):
             })
         return allocations
 
-    def parse_fund_managers(fm_names_raw, fm_types_raw, fm_dates_raw, fm_todates_raw=""):
+    def parse_fund_managers():
+        records = []
+        indices = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                   "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"]
+        for idx in indices:
+            name = get_val([f"fund manager {idx} - name", f"fund manager {idx} name", f"fund manager {idx}- name"])
+            if not name:
+                continue
+            fm_type = get_val([f"fund manager {idx} - type", f"fund manager {idx} type", f"fund manager {idx}- type", f"fund manager {idx} - type (primary/comanage/description)", f"fund manager {idx}- type (primary/comanage/description)"])
+            from_date = get_val([f"fund manager {idx} - from date", f"fund manager {idx} from date", f"fund manager {idx}- from date"])
+            to_date = get_val([f"fund manager {idx} - to date", f"fund manager {idx} to date", f"fund manager {idx}- to date"])
+            records.append({
+                "name": str(name).strip(),
+                "type": str(fm_type).strip() if fm_type else "",
+                "from": normalize_date(from_date),
+                "to": normalize_date(to_date),
+                "role_or_portion": None
+            })
+
+        if records:
+            return records
+
+        fm_names_raw = get_val(["fund manager name", "fund manager"])
+        fm_types_raw = get_val(["fund manager type (primary/comanage/description)", "fund manager type"])
+        fm_dates_raw = get_val(["fund manager from date"])
+        fm_todates_raw = get_val(["fund manager to date"])
+
         fm_names = [l.strip() for l in str(fm_names_raw).split('\n') if l.strip()] if fm_names_raw else []
         fm_types = [l.strip() for l in str(fm_types_raw).split('\n') if l.strip()] if fm_types_raw else []
         fm_froms = [l.strip() for l in str(fm_dates_raw).split('\n') if l.strip()] if fm_dates_raw else []
@@ -94,52 +160,29 @@ def build_scheme_json(api_data, rows):
             if key in records_dict: records_dict[key]["to"] = normalize_date(val)
             
         if (not any(records_dict[k]["name"] for k in records_dict if k != "default")) and len(fm_names) > 1 and len(fm_names) == len(fm_types) == len(fm_froms):
-            records = []
+            recs = []
             for i in range(len(fm_names)):
-                records.append({
+                recs.append({
                     "name": fm_names[i],
                     "type": fm_types[i] if i < len(fm_types) else "",
                     "from": normalize_date(fm_froms[i]) if i < len(fm_froms) else "",
                     "to": normalize_date(fm_tos[i]) if i < len(fm_tos) else None,
                     "role_or_portion": None
                 })
-            return records
-        return list(records_dict.values())
+            return recs
+        return [r for r in records_dict.values() if r.get("name")]
 
-    def normalize_date(d_str):
-        if not d_str: return None
-        d_clean = str(d_str).strip()
-        if re.search(r'(?i)^(NA|N\.A\.|N/A|-|TBD)$', d_clean) or not d_clean: return None
-        from datetime import datetime
-        formats = [
-            "%d-%b-%Y", "%d-%b-%y", "%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%d",
-            "%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y",
-            "%d-%m-%y", "%d/%m/%y"
-        ]
-        for fmt in formats:
-            try:
-                parsed = datetime.strptime(d_clean, fmt)
-                return parsed.strftime("%Y-%m-%d")
-            except ValueError:
-                continue
-        return d_clean
-
-    fund_managers = parse_fund_managers(
-        get_val(["fund manager name"]),
-        get_val(["fund manager type"]),
-        get_val(["fund manager from date"]),
-        get_val(["fund manager to date"])
-    )
+    fund_managers = parse_fund_managers()
 
 
 
     # Extract all text blobs
-    sebi_code_val = get_val(["sebi code", "sebi codes"])
-    fund_name_val = get_val(["fund name"]) or api_data.get("Scheme_Name")
-    options_text = get_val(["option names"])
-    amfi_text = get_val(["amfi code", "amfi codes"])
+    sebi_code_val = get_val(["sebi code", "sebi codes", "investment strategy code", "strategy code", "sebi"])
+    fund_name_val = get_val(["name of the investment strategy", "fund name", "scheme name", "name of the strategy", "strategy name"]) or (api_data.get("Scheme_Name") if isinstance(api_data, dict) else None)
+    options_text = get_val(["option names", "options names", "option names (regular & direct)", "options names (regular & direct)"])
+    amfi_text = get_val(["amfi code", "amfi codes", "amfi codes (to be phased out)"])
     isin_text = get_val(["isin", "isins"])
-    rta_text = get_val(["rta code", "rta codes"])
+    rta_text = get_val(["rta code", "rta codes", "rta code (to be phased out)"])
     
     # -------------------------------------------------------------------------
     # STAGE 2 & 3: Normalization Engine and Tokenization
@@ -554,6 +597,11 @@ def build_scheme_json(api_data, rows):
             "growth": [],
             "idcw": { "payout": [], "reinvestment": [], "transfer": [], "time_period": [], "unknown": [] },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [],
+            "idcw": { "payout": [], "reinvestment": [], "transfer": [], "time_period": [], "unknown": [] },
+            "unresolved": []
         }
     }
     
@@ -568,8 +616,12 @@ def build_scheme_json(api_data, rows):
     for sig, recs in grouped.items():
         ptype, otype, stype, tperiod = sig
         
-        if ptype != "regular":
-            continue
+        if ptype not in plans:
+            plans[ptype] = {
+                "growth": [],
+                "idcw": { "payout": [], "reinvestment": [], "transfer": [], "time_period": [], "unknown": [] },
+                "unresolved": []
+            }
         
         # Merge all identifiers for this exact signature into a single output node
         amfi_code = None
@@ -613,7 +665,6 @@ def build_scheme_json(api_data, rows):
     if primary_amfi_code:
         primary_amfi_code = primary_amfi_code.replace(',', ' ').replace(';', ' ').split()[0]
 
-    fund_name_val_old = get_val(["fund name"]) or api_data.get("Scheme_Name")
     if not sebi_code_val:
         import logging
         fund_name_safe = str(fund_name_val).upper() if fund_name_val else "UNKNOWN_FUND"
@@ -622,25 +673,57 @@ def build_scheme_json(api_data, rows):
 
     result = {
         "sebi_code": sebi_code_val,
+        "scheme_name": fund_name_val,
         "fund_name": fund_name_val,
-        "fund_type": get_val(["fund type"]) or api_data.get("SchemeType_Desc"),
-        "category": get_val(["category as per sebi", "category as per"]) or api_data.get("SchemeCat_Desc"),
+        "scheme_type": get_val(["fund type", "type of investment strategy", "type of scheme"]) or (api_data.get("SchemeType_Desc") if isinstance(api_data, dict) else None),
+        "fund_type": get_val(["fund type", "type of investment strategy", "type of scheme"]) or (api_data.get("SchemeType_Desc") if isinstance(api_data, dict) else None),
+        "category": get_val(["category as per sebi", "category of the investment strategy", "category as per sebi categorization circular", "category as per"]) or (api_data.get("SchemeCat_Desc") if isinstance(api_data, dict) else None),
         
-        "riskometer_at_launch": get_val(["riskometer (at the time of launch)", "riskometer at launch"]),
-        "riskometer_as_on_date": get_val(["riskometer (as on date)", "riskometer as on date"]),
-        "potential_risk_class": get_val(["potential risk class"]),
-        "scheme_objective": get_val(["description, objective of the scheme", "objective of the scheme"]),
+        "riskometer_at_launch": get_val(["riskometer (at the time of launch)", "riskometer at launch", "risk band (at the time of launch)", "riskband (at the time of launch)", "risk- band (at the time of launch)"]),
+        "riskometer_as_on_date": get_val(["riskometer (as on date)", "riskometer as on date", "risk band (as on date)", "riskband (as on date)", "risk- band (as on date)", "riskometer (august 31, 2026)", "riskometer (march 31, 2026)"]),
+        "potential_risk_class": get_val(["potential risk class", "potential risk class (as on date)"]),
+        "scheme_objective": get_val([
+            "description, objective of the investment strategy",
+            "description, objective of the strategy",
+            "description, objective of the scheme",
+            "description, objective of scheme",
+            "description / objective of the scheme",
+            "description / objective of the strategy",
+            "objective of the investment strategy",
+            "objective of the strategy",
+            "objective of the scheme",
+            "objective of strategy",
+            "objective of scheme",
+            "investment objective",
+            "description, objective",
+            "objective",
+            "description"
+        ]) or (api_data.get("Scheme_Objective") if isinstance(api_data, dict) else None) or (api_data.get("scheme_objective") if isinstance(api_data, dict) else None),
         
         "face_value": get_val(["face value"]),
         
-        "nfo_open_date": normalize_date(get_val(["nfo open date"])),
-        "nfo_close_date": normalize_date(get_val(["nfo close date"])),
+        "nfo_open_date": normalize_date(get_val(["nfo open date"])) or normalize_date(api_data.get("Launch_Date") if isinstance(api_data, dict) else None),
+        "nfo_close_date": normalize_date(get_val(["nfo close date", "nfo close date"])) or normalize_date(api_data.get("Closure_Date") if isinstance(api_data, dict) else None),
         "allotment_date": normalize_date(get_val(["allotment date"])),
-        "reopen_date": normalize_date(get_val(["reopen date", "re-open date"])),
-        "maturity_date": normalize_date(get_val(["maturity date"])),
+        "reopen_date": normalize_date(get_val(["reopen date", "re-open date"])) or normalize_date(api_data.get("Reopen_Date") if isinstance(api_data, dict) else None),
+        "maturity_date": normalize_date(get_val(["maturity date", "maturity date (for closed-end funds)"])),
         
-        "benchmark_tier_1": get_val(["benchmark (tier 1)", "tier 1 benchmark", "tier 1"]),
-        "benchmark_tier_2": get_val(["benchmark (tier 2)", "tier 2 benchmark", "tier 2"]),
+        "benchmark_tier_1": get_val([
+            "benchmark (tier 1)",
+            "benchmark (tier1)",
+            "tier 1 benchmark",
+            "tier 1",
+            "tier1",
+            "benchmark name",
+            "benchmark"
+        ]) or (api_data.get("Benchmark_Tier_1") if isinstance(api_data, dict) else None) or (api_data.get("benchmark_tier_1") if isinstance(api_data, dict) else None) or (api_data.get("Benchmark") if isinstance(api_data, dict) else None) or (api_data.get("benchmark") if isinstance(api_data, dict) else None),
+        "benchmark_tier_2": get_val([
+            "benchmark (tier 2)",
+            "benchmark (tier2)",
+            "tier 2 benchmark",
+            "tier 2",
+            "tier2"
+        ]) or (api_data.get("Benchmark_Tier_2") if isinstance(api_data, dict) else None) or (api_data.get("benchmark_tier_2") if isinstance(api_data, dict) else None),
         
         "asset_allocation": parse_asset_allocation(get_val(["stated asset allocation", "asset allocation"])),
         "listing_details": get_val(["listing details"]),
@@ -649,15 +732,53 @@ def build_scheme_json(api_data, rows):
         "fund_managers": fund_managers,
         
         "investment_limits": {
-            "minimum_application_amount": get_val(["minimum application amount"]),
-            "application_multiple": get_val(["minimum application amount in multiples", "application multiple"]),
-            "minimum_additional_amount": get_val(["minimum additional amount"]),
-            "additional_multiple": get_val(["minimum additional amount in multiples", "additional multiple"]),
-            "minimum_redemption_amount": get_val(["minimum redemption amount in rs", "minimum redemption amount"]),
-            "minimum_redemption_units": get_val(["minimum redemption amount in units"])
+            "minimum_application_amount": get_val(["minimum application amount", "min. application amount", "minimum amount", "min. amount"]) or (api_data.get("Scheme_min_amt") if isinstance(api_data, dict) else None) or (api_data.get("scheme_min_amt") if isinstance(api_data, dict) else None),
+            "application_multiple": get_val(["minimum application amount in multiples", "min. application amount in multiples of", "minimum application amount in multiples of rs.", "application multiple", "in multiple of", "in multiples of"]),
+            "minimum_additional_amount": get_val(["minimum additional amount", "min. additional amount"]),
+            "additional_multiple": get_val(["minimum additional amount in multiples", "min. additional amount in multiples of", "minimum additional amount in multiples of rs.", "additional multiple"]),
+            "minimum_redemption_amount": get_val(["minimum redemption amount in rs.", "minimum redemption amount in rs", "minimum redemption amount", "min. redemption amount"]),
+            "minimum_redemption_units": get_val(["minimum redemption amount in units", "minimum redemption units", "min. redemption units"]),
+            "minimum_balance_amount": get_val(["minimum balance amount (if applicable)", "min. balance amount (if applicable)", "minimum balance amount"]),
+            "minimum_balance_units": get_val(["minimum balance amount in units (if applicable)", "min. balance amount in units (if applicable)", "minimum balance amount in units"]),
+            "maximum_investment_amount": get_val(["max investment amount", "max. investment amount", "maximum amount (if any)", "max. amounts (if any)"])
         },
-        
-        "exit_load": get_val(["exit load"]),
+
+        "switch_details": {
+            "minimum_switch_amount": get_val(["minimum switch amount (if applicable)", "min. switch amount (if applicable)", "minimum switch amount"]),
+            "minimum_switch_units": get_val(["minimum switch units", "min. switch units"]),
+            "switch_multiple_amount": get_val(["switch multiple amount (if applicable)", "switch multiple amount"]),
+            "switch_multiple_units": get_val(["switch multiple units (if applicable)", "switch multiple units"]),
+            "maximum_switch_amount": get_val(["max switch amount", "max. switch amount"]),
+            "maximum_switch_units": get_val(["max switch units (if applicable)", "max switch unit (if applicable)", "max. switch units (if applicable)"])
+        },
+
+        "systematic_investment_plans": {
+            "frequency": get_val(["sip swp & stp details: frequency", "frequency"]),
+            "minimum_amount": get_val(["sip swp & stp details: minimum amount", "sip details", "stp details", "swp details"]),
+            "in_multiples_of": get_val(["sip swp & stp details: in multiple of"]),
+            "minimum_installments": get_val(["sip swp & stp details: minimum instalments", "minimum instalments", "min. installments"]),
+            "dates": get_val(["sip swp & stp details: dates", "dates"]),
+            "maximum_amount": get_val(["sip swp & stp details: maximum amount (if any)"])
+        },
+
+        "expenses_and_loads": {
+            "exit_load": get_val(["exit load (if applicable)", "exit load"]) or (api_data.get("scheme_load") if isinstance(api_data, dict) else None) or (api_data.get("Scheme_Load") if isinstance(api_data, dict) else None),
+            "actual_expense": get_val(["annual expense (actual expenses)", "actual expense", "annual expense (actual expenses) as on august 31, 2026"]),
+            "stated_maximum_expense": get_val(["annual expense (stated maximum)", "annual expense (stated max)"])
+        },
+
+        "special_facilities": {
+            "swing_pricing": get_val(["swing pricing (if applicable)", "swing pricing"]),
+            "side_pocketing": get_val(["side-pocketing (if applicable)", "side-pocketing", "segragated portfolio (if applicable)", "segregated portfolio"])
+        },
+
+        "amc_details": {
+            "sif_name": (api_data.get("SIF_Name") if isinstance(api_data, dict) else None) or (api_data.get("sif_name") if isinstance(api_data, dict) else None),
+            "amc_website": (api_data.get("AMC_Website") if isinstance(api_data, dict) else None) or (api_data.get("amc_website") if isinstance(api_data, dict) else None),
+            "scheme_bonus": (api_data.get("Scheme_Bonus") if isinstance(api_data, dict) else None) or (api_data.get("scheme_bonus") if isinstance(api_data, dict) else None)
+        },
+
+        "exit_load": get_val(["exit load (if applicable)", "exit load"]) or (api_data.get("scheme_load") if isinstance(api_data, dict) else None) or (api_data.get("Scheme_Load") if isinstance(api_data, dict) else None),
         "registrar": get_val(["registrar"]),
         "custodian": get_val(["custodian"]),
         "auditor": get_val(["auditor"])

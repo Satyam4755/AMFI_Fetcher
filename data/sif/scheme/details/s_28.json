@@ -1,14 +1,16 @@
 {
     "sebi_code": null,
+    "scheme_name": "DynaSIF Equity Ex-Top 100 Long - Short Fund",
     "fund_name": "DynaSIF Equity Ex-Top 100 Long - Short Fund",
+    "scheme_type": "Open Ended",
     "fund_type": "Open Ended",
     "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
     "riskometer_at_launch": null,
     "riskometer_as_on_date": null,
     "potential_risk_class": null,
-    "scheme_objective": null,
+    "scheme_objective": "To generate long term capital appreciation using structural, cyclical, and tactical investing opportunities primarily in mid and small cap equities \nwith optionality of hedging and shorting.\nThere is no assurance that the investment objective of the investment strategy will be realized.\n",
     "face_value": null,
-    "nfo_open_date": null,
+    "nfo_open_date": "2026-06-04",
     "nfo_close_date": null,
     "allotment_date": null,
     "reopen_date": null,
@@ -28,20 +30,73 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [],
     "investment_limits": {
-        "minimum_application_amount": null,
+        "minimum_application_amount": "10,00,000",
         "application_multiple": null,
         "minimum_additional_amount": null,
         "additional_multiple": null,
         "minimum_redemption_amount": null,
-        "minimum_redemption_units": null
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
     },
-    "exit_load": null,
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": null,
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": null,
+        "dates": null,
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "0.5% if redeemed within 3 months from the date of allotment \nof units \n \nNo exit load is payable if redeemed after 3 months from the date of \nallotment of units.",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "DynaSIF SIF",
+        "amc_website": "https://www.360.one/asset-management/mutualfund/",
+        "scheme_bonus": null
+    },
+    "exit_load": "0.5% if redeemed within 3 months from the date of allotment \nof units \n \nNo exit load is payable if redeemed after 3 months from the date of \nallotment of units.",
     "registrar": null,
     "custodian": null,
     "auditor": null,
-    "sif_name": "DynaSIF SIF"
+    "sif_name": "DynaSIF SIF",
+    "scheme_id": "S-28",
+    "sif_id": "62",
+    "documents": {
+        "scheme_id": "S-28",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-28.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-28.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-28.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-28.xml"
+    }
 }

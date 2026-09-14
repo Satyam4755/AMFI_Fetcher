@@ -1,14 +1,16 @@
 {
     "sebi_code": null,
+    "scheme_name": "Titanium Active Asset Allocator Long-Short Fund",
     "fund_name": "Titanium Active Asset Allocator Long-Short Fund",
+    "scheme_type": "Interval Fund",
     "fund_type": "Interval Fund",
     "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
     "riskometer_at_launch": null,
     "riskometer_as_on_date": null,
     "potential_risk_class": null,
-    "scheme_objective": null,
+    "scheme_objective": "To generate medium to long term capital appreciation by investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives. \n\nHowever, there is no assurance that the investment objective of the Investment strategy will be achieved.\n",
     "face_value": null,
-    "nfo_open_date": null,
+    "nfo_open_date": "2026-09-22",
     "nfo_close_date": null,
     "allotment_date": null,
     "reopen_date": null,
@@ -28,20 +30,73 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [],
     "investment_limits": {
-        "minimum_application_amount": null,
+        "minimum_application_amount": "INR 10,00,000/- in Titanium SIF at PAN Level",
         "application_multiple": null,
         "minimum_additional_amount": null,
         "additional_multiple": null,
         "minimum_redemption_amount": null,
-        "minimum_redemption_units": null
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": null,
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": null,
+        "dates": null,
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": null,
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "Titanium SIF",
+        "amc_website": "https://www.tatamutualfund.com",
+        "scheme_bonus": null
     },
     "exit_load": null,
     "registrar": null,
     "custodian": null,
     "auditor": null,
-    "sif_name": "Titanium SIF"
+    "sif_name": "Titanium SIF",
+    "scheme_id": "S-35",
+    "sif_id": "25",
+    "documents": {
+        "scheme_id": "S-35",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-35.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-35.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-35.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-35.xml"
+    }
 }

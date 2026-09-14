@@ -1,21 +1,39 @@
 {
     "sebi_code": "ISIF/I/H/AALS/25/11/0003/ICIC",
+    "scheme_name": "iSIF Active Asset Allocator Long-Short Fund",
     "fund_name": "iSIF Active Asset Allocator Long-Short Fund",
+    "scheme_type": "Interval Investment Strategy",
     "fund_type": "Interval Investment Strategy",
     "category": "Active Asset Allocator Long-Short Fund",
     "riskometer_at_launch": "Risk Level 5",
-    "riskometer_as_on_date": null,
+    "riskometer_as_on_date": "Risk Level 2",
     "potential_risk_class": null,
-    "scheme_objective": null,
+    "scheme_objective": "The Investment Strategy intends to dynamically invest in equity and equity related securities with an aim to achieve long term capital appreciation and also invest in Debt instruments to generate regular income. The Investment Strategy can also invest in units of InVITs. The Investment Strategy can also adopt equity, debt and commodity derivative strategies.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2026-05-19 00:00:00",
-    "nfo_close_date": "2026-06-02 00:00:00",
-    "allotment_date": "2026-06-05 00:00:00",
-    "reopen_date": "2026-06-10 00:00:00",
+    "nfo_open_date": "2026-05-19",
+    "nfo_close_date": "2026-06-02",
+    "allotment_date": "2026-06-05",
+    "reopen_date": "2026-06-10",
     "maturity_date": null,
     "benchmark_tier_1": "50% Nifty 500 TRI + 40% Nifty Composite Debt Index + 7% Domestic Price of Gold + 3% Domestic Price of Silver.",
     "benchmark_tier_2": null,
-    "asset_allocation": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "",
+            "minimum_percentage": 35,
+            "maximum_percentage": 80
+        },
+        {
+            "allocation_type": "Exchange traded Commodity derivatives",
+            "minimum_percentage": 10,
+            "maximum_percentage": 55
+        },
+        {
+            "allocation_type": "",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
     "listing_details": "Listed on BSE and NSE",
     "plans": {
         "regular": {
@@ -39,20 +57,120 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth- SIF-125 | iSIF Active Asset Allocator Long-Short Fund-DIRECT-GROWTH- INF109K30067 | iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth- 6003",
+                    "amfi_code": "SIF-125",
+                    "isin_code": "INF109K30067",
+                    "rta_code": "6003"
+                }
+            ],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
-    "fund_managers": [],
+    "fund_managers": [
+        {
+            "name": "Ms. Sharmila D’silva",
+            "type": "Primary",
+            "from": "2026-06-05",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Ms. Masoomi Jhurmrvala",
+            "type": "Primary",
+            "from": "2026-06-05",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Manish Banthia",
+            "type": "Primary",
+            "from": "2026-06-05",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Akhil Kakkar",
+            "type": "Primary",
+            "from": "2026-06-05",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Gaurav Chikane",
+            "type": "Primary",
+            "from": null,
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
     "investment_limits": {
         "minimum_application_amount": "•\tMinimum Application/Switch In Amount for first time investor in SIF \n-\tRs. 10,00,000/- and in multiples of Re.1/- thereafter \n-\tFor accredited investor Rs. 10,000/- and in multiples of Re. 1/- thereafter",
-        "application_multiple": null,
+        "application_multiple": "1",
         "minimum_additional_amount": "Rs. 10,000/- (plus in multiples of Re. 1)",
         "additional_multiple": null,
         "minimum_redemption_amount": "Any amount subject to provisions of minimum investment threshold as specified below.\n\nMinimum Investment Threshold:\nAggregate investment by an investor across all investment strategies offered by iSIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/-.\nIn case of any request(s) for partial redemption/switch out by the investor/(s), the AMC reserves the right to reject the redemptions entirely if the amount post payout of redemptions falls below Minimum Investment Threshold",
-        "minimum_redemption_units": null
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "Daily, Weekly, Monthly, Quarterly, Fortnightly",
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": "Daily,Weekly, Fortnightly, Monthly-6\nQuarterly-4",
+        "dates": "Daily = Daily (only business days)\nWeekly = Anyday (Monday to Friday)*\nFortnightly = 1st and 16th day of each month as applicable\nMonthly = Any day*\nQuarterly = Any day*\n\n*In case the date chosen for SIP falls on a Non-Business Day or on a date which is not available in a particular month, the SIP will beprocessed on the immediate next Business Day.",
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 1 month from allotment.\n•NIL - If the amount sought to be redeemed after 1 month.",
+        "actual_expense": "Actual expenses for August 31, 2026:\n\nDirect Plan: 1.68%\nRegular Plan: 3.09%",
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "iSIF SIF",
+        "amc_website": "https://www.icicipruamc.com",
+        "scheme_bonus": null
     },
     "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 1 month from allotment.\n•NIL - If the amount sought to be redeemed after 1 month.",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "Citibank N.A,HDFC Bank Limited, HSBC Limited and SBI-SG Global Securities Services Private Limited",
     "auditor": "M/s BSR & Co. LLP",
-    "sif_name": "iSIF SIF"
+    "sif_name": "iSIF SIF",
+    "scheme_id": "S-23",
+    "sif_id": "20",
+    "documents": {
+        "scheme_id": "S-23",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-23.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-23.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-23.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-23.xml"
+    }
 }

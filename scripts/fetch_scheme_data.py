@@ -65,48 +65,55 @@ def main():
                 # --- DOCUMENT ENRICHMENT PIPELINE ---
                 try:
                     docs = get_scheme_documents(scheme_id)
+
+                    def save_fallback_json(reason):
+                        skipped_schemes[scheme_id] = f"Basic JSON Generated ({reason})"
+                        print(f"     {reason}. Generating basic JSON from API data for {scheme_id}...")
+
+                        nested_scheme_data, _ = build_scheme_json(scheme_data, [])
+                        nested_scheme_data["sif_name"] = sif_name
+                        nested_scheme_data["scheme_id"] = scheme_id
+                        nested_scheme_data["sif_id"] = sif_id
+                        nested_scheme_data["documents"] = docs or {}
+
+                        sebi = nested_scheme_data.get("sebi_code")
+                        if not sebi:
+                            sebi = scheme_id
+
+                        import re
+                        safe_name = str(sebi).lower()
+                        safe_name = re.sub(r'[^a-z0-9]', '_', safe_name)
+                        safe_name = re.sub(r'_+', '_', safe_name)
+                        safe_name = safe_name.strip('_')
+
+                        if save_scheme_to_json(safe_name, nested_scheme_data):
+                            nonlocal total_json_files
+                            total_json_files += 1
+                            print("\nValidation (Basic):")
+                            print(f"JSON filename: {safe_name}.json")
+                            print(f"SEBI used: {sebi}\n")
+
                     if docs and docs.get("summary_xls_url"):
                         xls_url = docs.get("summary_xls_url")
                         xls_path = download_xls(xls_url)
-                        
-                        def save_fallback_json(reason):
-                            skipped_schemes[scheme_id] = f"Basic JSON Generated ({reason})"
-                            print(f"     {reason}. Generating basic JSON from API data for {scheme_id}...")
-                            
-                            nested_scheme_data, _ = build_scheme_json(scheme_data, [])
-                            nested_scheme_data["sif_name"] = sif_name
-                            
-                            sebi = nested_scheme_data.get("sebi_code")
-                            if not sebi:
-                                sebi = scheme_id
-                                
-                            import re
-                            safe_name = str(sebi).lower()
-                            safe_name = re.sub(r'[^a-z0-9]', '_', safe_name)
-                            safe_name = re.sub(r'_+', '_', safe_name)
-                            safe_name = safe_name.strip('_')
-                                
-                            if save_scheme_to_json(safe_name, nested_scheme_data):
-                                nonlocal total_json_files
-                                total_json_files += 1
-                                print("\nValidation (Basic):")
-                                print(f"JSON filename: {safe_name}.json")
-                                print(f"SEBI used: {sebi}\n")
-                        
+
                         if xls_path:
                             # parse_summary_xls now returns { sheet_name: rows }
                             sheets_data = parse_summary_xls(xls_path)
-                            
+
                             if not sheets_data:
                                 save_fallback_json("Parsed sheets returned empty")
                             else:
                                 for sheet_name, rows in sheets_data.items():
                                     if not rows: continue
-                                    
+
                                     # Build nested JSON structure for this specific sheet
                                     nested_scheme_data, primary_amfi_code = build_scheme_json(scheme_data, rows)
 
                                     nested_scheme_data["sif_name"] = sif_name
+                                    nested_scheme_data["scheme_id"] = scheme_id
+                                    nested_scheme_data["sif_id"] = sif_id
+                                    nested_scheme_data["documents"] = docs or {}
                                     # Format filename based on SEBI code
                                     # Fallback to scheme_id if sebi_code is somehow completely missing
                                     sebi = nested_scheme_data.get("sebi_code")
@@ -124,6 +131,19 @@ def main():
                                     if save_scheme_to_json(safe_name, nested_scheme_data):
                                         total_json_files += 1
                                         
+                                        # Clean up stale fallback if a canonical SEBI filename exists
+                                        s_id_safe = re.sub(r'[^a-z0-9]', '_', str(scheme_id).lower()).strip('_')
+                                        s_id_safe = re.sub(r'_+', '_', s_id_safe)
+                                        if safe_name != s_id_safe:
+                                            details_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif", "scheme", "details")
+                                            fallback_file = os.path.join(details_dir, f"{s_id_safe}.json")
+                                            if os.path.exists(fallback_file):
+                                                try:
+                                                    os.remove(fallback_file)
+                                                    print(f"     Removed stale fallback file: {fallback_file}")
+                                                except OSError:
+                                                    pass
+
                                         print("\nValidation:")
                                         print(f"JSON filename: {safe_name}.json")
                                         print(f"SEBI used: {sebi}\n")
@@ -146,6 +166,32 @@ def main():
                 skipped_schemes[scheme_id] = "No valid data from API"
                 print(f"     No valid data returned for scheme_id {scheme_id}.")
             
+    # Clean up any leftover duplicate s_<id>.json files across the directory
+    details_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif", "scheme", "details")
+    if os.path.exists(details_dir):
+        all_json_files = [f for f in os.listdir(details_dir) if f.endswith('.json')]
+        # Find all SEBI-based JSONs and their scheme_ids
+        active_scheme_ids_with_sebi = set()
+        for jf in all_json_files:
+            if not jf.startswith('s_'):
+                try:
+                    with open(os.path.join(details_dir, jf), 'r') as fp:
+                        d = json.load(fp)
+                        sch_id = d.get('scheme_id')
+                        if sch_id and d.get('sebi_code'):
+                            active_scheme_ids_with_sebi.add(sch_id.lower().replace('-', '_'))
+                except Exception:
+                    pass
+        for sch_slug in active_scheme_ids_with_sebi:
+            stale_name = f"{sch_slug}.json"
+            stale_path = os.path.join(details_dir, stale_name)
+            if os.path.exists(stale_path):
+                try:
+                    os.remove(stale_path)
+                    print(f"Cleaned up stale fallback duplicate: {stale_path}")
+                except OSError:
+                    pass
+
     print("\nFetch Pipeline Completed")
     print("-" * 20)
     print("--- Validation Report ---")
@@ -157,9 +203,6 @@ def main():
     for sch_id, reason in skipped_schemes.items():
         print(f" - {sch_id}: {reason}")
         
-    # Final Reconciliation
-    # When falling back, we increment total_json_files AND record it in skipped_schemes to show it wasn't fully parsed.
-    # Therefore, we only add the TRUE skipped schemes (the ones that threw errors) to the reconciliation.
     true_skipped = len([r for r in skipped_schemes.values() if "Basic JSON Generated" not in r])
     if total_schemes_discovered == (total_json_files + true_skipped):
         print("\nSUCCESS: Total counts reconcile correctly.")
@@ -167,4 +210,5 @@ def main():
         print("\nWARNING: Counts do not reconcile. Some schemes disappeared silently!")
 
 if __name__ == "__main__":
+    import json
     main()

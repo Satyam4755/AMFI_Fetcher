@@ -1,0 +1,206 @@
+{
+    "sebi_code": "APEX/I/H/HLSF/26/02/0001/ABSL",
+    "scheme_name": "Apex Hybrid Long-Short Fund",
+    "fund_name": "Apex Hybrid Long-Short Fund",
+    "scheme_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
+    "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
+    "category": "Hybrid Long-Short Fund",
+    "riskometer_at_launch": "Risk Level 2",
+    "riskometer_as_on_date": "Risk Level 1",
+    "potential_risk_class": null,
+    "scheme_objective": "An interval investment strategy investing in arbitrage, long equity, debt, equity and debt derivatives, long short and REITs/InVITs including limited short exposure on permitted instruments through derivatives.                                 There is no assurance that the investment objective of the Investment strategy will be achieved.",
+    "face_value": "10",
+    "nfo_open_date": "2026-03-06",
+    "nfo_close_date": "2026-03-18",
+    "allotment_date": "2026-03-25",
+    "reopen_date": "2026-03-30",
+    "maturity_date": null,
+    "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity related instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
+    "listing_details": "National Stock Exchange of India Limited (NSE)",
+    "plans": {
+        "regular": {
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Apex Hybrid Long-Short Fund - Regular - Growth- SIF-80 | Apex Hybrid Long-Short Fund - Regular - Growth- INF209K30040",
+                    "amfi_code": "SIF-80",
+                    "isin_code": "INF209K30040",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- SIF-81 | Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- INF209K30057",
+                        "amfi_code": "SIF-81",
+                        "isin_code": "INF209K30057",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- SIF-81 | Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- INF209K30065",
+                        "amfi_code": "SIF-81",
+                        "isin_code": "INF209K30065",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Apex Hybrid Long-Short Fund - Direct - SIF-83 | Apex Hybrid Long-Short Fund-Direct Growth- SIF-79 | Apex Hybrid Long-Short Fund-Direct Growth- INF209K30016",
+                    "amfi_code": "SIF-83",
+                    "isin_code": "INF209K30016",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Apex Hybrid Long-Short Fund - Direct - Payout of IDCW- INF209K30024",
+                        "amfi_code": null,
+                        "isin_code": "INF209K30024",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Apex Hybrid Long-Short Fund - Direct - Reinvestment of IDCW- SIF-83 | Apex Hybrid Long-Short Fund - Direct - Reinvestment of IDCW- INF209K30032",
+                        "amfi_code": "SIF-83",
+                        "isin_code": "INF209K30032",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Lovelish Solanki",
+            "type": "Primary",
+            "from": "2026-03-25",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Mohit Sharma",
+            "type": "Comanage",
+            "from": "2026-03-25",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Rohit Karan",
+            "type": "Comanage",
+            "from": "2026-04-02",
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "For normal investors - Rs. 10 lakh and in multiples of Re. 1 thereafter subject to the minimum investment threshold guidelines as per the SIF framework. \nFor accredited investors - Rs. 1,00,000",
+        "application_multiple": "Re.1",
+        "minimum_additional_amount": "Rs. 10,000",
+        "additional_multiple": "Re.1",
+        "minimum_redemption_amount": "Rs. 10,000 and in multiples of Re. 1 thereafter.\nThe redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”",
+        "minimum_redemption_units": "No minimum redemption criterion for Unit based redemption",
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "OM",
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": "6",
+        "dates": "Any Day(1 to 31) / Weekly(Monday to Friday)",
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "For redemption/switch-out of units on or before 90 days from the date of allotment: 0.50% of applicable NAV.\nFor redemption/switch-out of units after 90 days from the date of allotment: Nil.",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "Apex SIF",
+        "amc_website": "https://mutualfund.adityabirlacapital.com/",
+        "scheme_bonus": null
+    },
+    "exit_load": "For redemption/switch-out of units on or before 90 days from the date of allotment: 0.50% of applicable NAV.\nFor redemption/switch-out of units after 90 days from the date of allotment: Nil.",
+    "registrar": "Computer Age Management Services Limited",
+    "custodian": "Citibank NA",
+    "auditor": "M/s Deloitte Haskins & Sells LLP",
+    "sif_name": "Apex SIF",
+    "scheme_id": "S-13",
+    "sif_id": "3",
+    "documents": {
+        "scheme_id": "S-13",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-13.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-13.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-13.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-13.xml"
+    }
+}

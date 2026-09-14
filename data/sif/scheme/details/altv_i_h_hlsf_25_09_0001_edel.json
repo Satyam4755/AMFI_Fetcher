@@ -1,6 +1,8 @@
 {
     "sebi_code": "ALTV/I/H/HLSF/25/09/0001/EDEL",
+    "scheme_name": "Altiva Hybrid Long-Short Fund",
     "fund_name": "Altiva Hybrid Long-Short Fund",
+    "scheme_type": "An interval investment strategy investing in equity and debt securities, including limited short \nexposure in equity and debt through derivatives",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short \nexposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Risk Band Level 2",
@@ -8,10 +10,10 @@
     "potential_risk_class": "Not applicable",
     "scheme_objective": "The primary objective of the investment strategy is to generate capital appreciation through equity and equity related instruments and income through arbitrage, derivatives strategies, special situations and fixed income investments.  There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10/-",
-    "nfo_open_date": "2025-10-01 00:00:00",
-    "nfo_close_date": "2025-10-15 00:00:00",
-    "allotment_date": "2025-10-20 00:00:00",
-    "reopen_date": "2025-10-31 00:00:00",
+    "nfo_open_date": "2025-10-01",
+    "nfo_close_date": "2025-10-15",
+    "allotment_date": "2025-10-20",
+    "reopen_date": "2025-10-31",
     "maturity_date": "Not applicable",
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
     "benchmark_tier_2": null,
@@ -93,6 +95,61 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-9 - Altiva Hybrid Long-Short Fund Direct Plan Growth | INF754K30011 - Altiva Hybrid Long-Short Fund Direct Plan Growth | HLD1 - Altiva Hybrid Long-Short Fund Direct Plan Growth",
+                    "amfi_code": "SIF-9",
+                    "isin_code": "INF754K30011",
+                    "rta_code": "HLD1"
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-10 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout | INF754K30029 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout | HLD2 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout",
+                        "amfi_code": "SIF-10",
+                        "isin_code": "INF754K30029",
+                        "rta_code": "HLD2"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-10 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment | INF754K30037 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment | HLD2 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment",
+                        "amfi_code": "SIF-10",
+                        "isin_code": "INF754K30037",
+                        "rta_code": "HLD2"
+                    }
+                ],
+                "transfer": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "transfer",
+                        "time_period": null,
+                        "name": "INF754K30045 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Transfer | HLD2 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Transfer",
+                        "amfi_code": null,
+                        "isin_code": "INF754K30045",
+                        "rta_code": "HLD2"
+                    }
+                ],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -110,11 +167,53 @@
         "minimum_additional_amount": "Rs. 1000/-",
         "additional_multiple": "Re. 1/-",
         "minimum_redemption_amount": "Re. 1/-",
-        "minimum_redemption_units": "0.001"
+        "minimum_redemption_units": "0.001",
+        "minimum_balance_amount": "Rs. 1000000/-",
+        "minimum_balance_units": null,
+        "maximum_investment_amount": "D - 9999999999; W - 9999999999; F - 9999999999; M - 9999999999; Q - 9999999999"
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "Daily (D); Weekly (W); Fortnightly (F) Monthly (M); Quarterly (Q)",
+        "minimum_amount": "D - 1000; W - 1000; F - 1000; M - 1000; Q - 1000",
+        "in_multiples_of": "D - 1; W - 1; F - 1; M - 1; Q - 1",
+        "minimum_installments": "D - 20; W - 6; F - 6; M - 6; Q - 6",
+        "dates": "D - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; W - 7,14,21,28; F - 10,25; M - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; Q - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
+        "maximum_amount": "D - 9999999999; W - 9999999999; F - 9999999999; M - 9999999999; Q - 9999999999"
+    },
+    "expenses_and_loads": {
+        "exit_load": "If the units are redeemed / switched out on or before 30 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 30 days from the date of allotment – Nil.",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "Altiva SIF",
+        "amc_website": "https://www.edelweissmf.com",
+        "scheme_bonus": null
     },
     "exit_load": "If the units are redeemed / switched out on or before 30 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 30 days from the date of allotment – Nil.",
     "registrar": "KFIN Technologies Ltd",
     "custodian": "Standard Chartered",
     "auditor": "M/s. Walker Chandiok & co LLP",
-    "sif_name": "Altiva SIF"
+    "sif_name": "Altiva SIF",
+    "scheme_id": "S-3",
+    "sif_id": "47",
+    "documents": {
+        "scheme_id": "S-3",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-3.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-3.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-3.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-3.xml"
+    }
 }

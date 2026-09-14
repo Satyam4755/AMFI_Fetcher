@@ -1,6 +1,8 @@
 {
     "sebi_code": "ASIF/I/H/HLSF/25/12/0001/BNDN",
+    "scheme_name": "Arudha Hybrid Long-Short Fund",
     "fund_name": "Arudha Hybrid Long-Short Fund",
+    "scheme_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Level  2",
@@ -8,10 +10,10 @@
     "potential_risk_class": null,
     "scheme_objective": "The investment objective of the strategy is to generate optimal returns by investing predominantly in equity and debt securities, including limited short exposure in equity and debt through derivatives. Disclaimer: However, there can be no assurance that the investment objective of the investment strategy will be realized.",
     "face_value": "Rs.10/- per unit for Regular and Direct Plan",
-    "nfo_open_date": "2026-01-09 00:00:00",
-    "nfo_close_date": "2026-01-22 00:00:00",
-    "allotment_date": "2026-01-28 00:00:00",
-    "reopen_date": "2026-02-04 00:00:00",
+    "nfo_open_date": "2026-01-09",
+    "nfo_close_date": "2026-01-22",
+    "allotment_date": "2026-01-28",
+    "reopen_date": "2026-02-04",
     "maturity_date": null,
     "benchmark_tier_1": "CRISIL Hybrid 85+15 Conservative Index",
     "benchmark_tier_2": null,
@@ -212,6 +214,190 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-GROWTH-SIF-54 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-GROWTH INF194K30184",
+                    "amfi_code": "SIF-54",
+                    "isin_code": "INF194K30184",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "daily",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-DAILY-SIF-38 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-DAILY INF194K30192",
+                        "amfi_code": "SIF-38",
+                        "isin_code": "INF194K30192",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "weekly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-WEEKLY-SIF-41 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-WEEKLY INF194K30200",
+                        "amfi_code": "SIF-41",
+                        "isin_code": "INF194K30200",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "fortnightly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-FORTNIGHTLY-SIF-42 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-FORTNIGHTLY INF194K30218",
+                        "amfi_code": "SIF-42",
+                        "isin_code": "INF194K30218",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "monthly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-MONTHLY-SIF-45 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-MONTHLY INF194K30226",
+                        "amfi_code": "SIF-45",
+                        "isin_code": "INF194K30226",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "quarterly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-QUARTERLY-SIF-47 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-QUARTERLY INF194K30234",
+                        "amfi_code": "SIF-47",
+                        "isin_code": "INF194K30234",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "half_yearly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-HALF YEARLY-SIF-48 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-HALF YEARLY INF194K30242",
+                        "amfi_code": "SIF-48",
+                        "isin_code": "INF194K30242",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "annual",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-ANNUAL-SIF-51 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-ANNUAL INF194K30259",
+                        "amfi_code": "SIF-51",
+                        "isin_code": "INF194K30259",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": "periodic",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-PERIODIC-SIF-53 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW PAYOUT-PERIODIC INF194K30267",
+                        "amfi_code": "SIF-53",
+                        "isin_code": "INF194K30267",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "daily",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-DAILY-SIF-38 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-DAILY INF194K30275",
+                        "amfi_code": "SIF-38",
+                        "isin_code": "INF194K30275",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "weekly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-WEEKLY-SIF-41 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-WEEKLY INF194K30283",
+                        "amfi_code": "SIF-41",
+                        "isin_code": "INF194K30283",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "fortnightly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-FORTNIGHTLY-SIF-42 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-FORTNIGHTLY INF194K30291",
+                        "amfi_code": "SIF-42",
+                        "isin_code": "INF194K30291",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "monthly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-MONTHLY-SIF-45 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-MONTHLY INF194K30309 | Arudha Hybrid Long- Short Fund Dir-Growth-DA01 Arudha Hybrid Long- Short Fund Reg-Monthly IDCW-A05 Arudha Hybrid Long- Short Fund Dir-Half yearly IDCW-DA07 Arudha Hybrid Long- Short Fund Reg-Growth-A01",
+                        "amfi_code": "SIF-45",
+                        "isin_code": "INF194K30309",
+                        "rta_code": "A01"
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "quarterly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-QUARTERLY-SIF-47 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-QUARTERLY INF194K30317",
+                        "amfi_code": "SIF-47",
+                        "isin_code": "INF194K30317",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "half_yearly",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT- HALF YEARLY-SIF-48 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT- HALF YEARLY INF194K30325",
+                        "amfi_code": "SIF-48",
+                        "isin_code": "INF194K30325",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "annual",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-ANNUAL-SIF-51 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-ANNUAL INF194K30333",
+                        "amfi_code": "SIF-51",
+                        "isin_code": "INF194K30333",
+                        "rta_code": null
+                    },
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "time_period",
+                        "time_period": "periodic",
+                        "name": "ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-PERIODIC-SIF-53 | ARUDHA HYBRID LONG SHORT FUND-DIRECT-IDCW REINVESTEMENT-PERIODIC INF194K30341",
+                        "amfi_code": "SIF-53",
+                        "isin_code": "INF194K30341",
+                        "rta_code": null
+                    }
+                ],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -229,11 +415,53 @@
         "minimum_additional_amount": "Rs.10,000",
         "additional_multiple": "Any Amount",
         "minimum_redemption_amount": "Rs.10,000",
-        "minimum_redemption_units": "Any Amount"
+        "minimum_redemption_units": "Any Amount",
+        "minimum_balance_amount": "Rs.10,00,000",
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": "Rs.10,000",
+        "minimum_switch_units": null,
+        "switch_multiple_amount": "Rs.1",
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP Details: Weekly, Monthly, Quarterly;  STP Details: Monday and Wednesday; SWP Details:  Monday and Wednesday",
+        "minimum_amount": "SIP  Details: Rs.10,000 , STP Details: Rs.10,000 , SWP Details: Rs.10,000",
+        "in_multiples_of": "SIP  Details: Re.1.00 , STP Details: Re.1.00 , SWP Details: Re.1.00",
+        "minimum_installments": "SIP  Details: 6 , STP Details: 6  , SWP Details 6",
+        "dates": "SIP Details:Weekly- . Any day option from Monday to Friday. Default day: Wednesday, if any day is not selected. OR b. Fixed dates i.e. 7, 14, 21 and 28, Monthly - Investor may choose any day of the month from 1st to 31st as the date of the instalment and Quarterly -Investor may choose any day of the month from 1st to 31st as the date of the instalment; STP Details: Monday and Wednesday; SWP Details:  Monday and Wednesday",
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "Entry Load: Nil; Exit Load: Nil",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular: 1.27, Direct: 0.83"
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": "Yes"
+    },
+    "amc_details": {
+        "sif_name": "Arudha SIF",
+        "amc_website": "https://www.bandhanmutual.com",
+        "scheme_bonus": null
     },
     "exit_load": "Entry Load: Nil; Exit Load: Nil",
     "registrar": "Computer Age Management Services Pvt. Ltd.(CAMS)",
     "custodian": "Axis Bank",
     "auditor": "S.R.Batliboi & Co. LLP",
-    "sif_name": "Arudha SIF"
+    "sif_name": "Arudha SIF",
+    "scheme_id": "S-10",
+    "sif_id": "48",
+    "documents": {
+        "scheme_id": "S-10",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-10.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-10.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-10.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-10.xml"
+    }
 }

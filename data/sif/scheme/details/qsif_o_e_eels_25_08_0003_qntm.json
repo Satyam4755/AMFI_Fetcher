@@ -1,19 +1,21 @@
 {
     "sebi_code": "QSIF/O/E/EELS/25/08/0003/QNTM",
+    "scheme_name": "qsif Equity Ex-Top 100 Long-Short Fund",
     "fund_name": "qsif Equity Ex-Top 100 Long-Short Fund",
+    "scheme_type": "An open-ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks. (Ex-Top 100)",
     "fund_type": "An open-ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks. (Ex-Top 100)",
     "category": "Equity Ex-Top 100 Long-Short Fund",
     "riskometer_at_launch": "Risk band Level 5",
     "riskometer_as_on_date": "Risk band Level 4",
     "potential_risk_class": "N.A.",
-    "scheme_objective": null,
+    "scheme_objective": "To generate long-term capital appreciation by investing primarily in equity and equity-related instruments of stocks outside the top 100 by market capitalization, while utilizing limited short exposure through derivatives to enhance returns and manage risk. There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2025-10-24 00:00:00",
-    "nfo_close_date": "2025-11-07 00:00:00",
-    "allotment_date": "2025-11-12 00:00:00",
-    "reopen_date": "2025-11-13 00:00:00",
-    "maturity_date": "--",
-    "benchmark_tier_1": null,
+    "nfo_open_date": "2025-10-24",
+    "nfo_close_date": "2025-11-07",
+    "allotment_date": "2025-11-12",
+    "reopen_date": "2025-11-13",
+    "maturity_date": null,
+    "benchmark_tier_1": "NIFTY 500 Total Return Index (TRI)",
     "benchmark_tier_2": null,
     "asset_allocation": [
         {
@@ -77,20 +79,142 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Growth Option - Direct Plan - SIF-23 | Growth Option - Direct Plan - INF966L30159",
+                    "amfi_code": "SIF-23",
+                    "isin_code": "INF966L30159",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "IDCW Option - Direct Plan - SIF-24 | IDCW Payout Option - Direct Plan - INF966L30167",
+                        "amfi_code": "SIF-24",
+                        "isin_code": "INF966L30167",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "IDCW Option - Direct Plan - SIF-24 | IDCW Reinvestment - Direct Plan - INF966L30175",
+                        "amfi_code": "SIF-24",
+                        "isin_code": "INF966L30175",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
-    "fund_managers": [],
+    "fund_managers": [
+        {
+            "name": "Sandeep Tandon",
+            "type": "Primary",
+            "from": "2025-11-12",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Ankit Pande",
+            "type": "Co manage",
+            "from": "2025-11-12",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Sameer Kate",
+            "type": "Co manage",
+            "from": "2025-11-12",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Sanjeev Sharma",
+            "type": "Co manage",
+            "from": "2025-11-12",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Jignesh Shah",
+            "type": "Co manage",
+            "from": "2026-02-20",
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
     "investment_limits": {
         "minimum_application_amount": "Rs. 1000000/-",
         "application_multiple": "1",
         "minimum_additional_amount": "Rs. 1000/-",
         "additional_multiple": "1",
         "minimum_redemption_amount": "Rs. 1000/-",
-        "minimum_redemption_units": "--"
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": "An aggregate investment by an investor across all investment strategies offered by the SIF, at the Permanent Account Number (‘PAN’) level, shall not be  less than INR 10 lakh.\n\nProvided that, in the case of an accredited investor, the aggregate investment shall be not less than INR 1 lakh.",
+        "minimum_balance_units": "N.A.",
+        "maximum_investment_amount": "N.A."
+    },
+    "switch_details": {
+        "minimum_switch_amount": "Switch - in:  Rs. 1,000/-and in multiples of Re. 1/-thereafter\nSwitch-out: Rs. 1,000/-and in multiples of Re. 1/-thereafter",
+        "minimum_switch_units": null,
+        "switch_multiple_amount": "Re. 1",
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP - Weekly, Fortnightly, Monthly, Quarterly\nSWP - Monthly & Quaterly\nSTP - Daily, Weekly, Fortnightly, Monthly, Quarterly",
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": "SIP - 6\nSWP - 6\nSTP - 6",
+        "dates": "SIP - \nFor Weekly- Wednesday of a week\nFor Fortnightly-Alternate Wednesday of a week\nFor Monthly - Any Day - Between 1st to 28th of the Month\nFor Quarterly - Any Day - Between 1st to 28th of the quarter\nSWP -\nFor Monthly - 1st / 5th / 10th / 15th / 20th / 25th\nFor Quarterly - 1st / 5th / 10th / 15th / 20th / 25th\nSTP - \nFor Daily- Daily (only Business Days)\nFor Weekly- Wednesday of a week\nFor Fortnightly-Alternate Wednesday of a week\nFor Monthly - 1st / 5th / 10th / 15th / 20th / 25th\nFor Quarterly - 1st / 5th / 10th / 15th / 20th / 25th",
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "Exit Load:  1% if redeemed/switched out on or before completion of 15 days from the date of allotment of units\nNo Exit Load is payable if Units are redeemed / switched-out after 15 days  from the date of allotment",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular: 4.14%\nDirect: 2.81%"
+    },
+    "special_facilities": {
+        "swing_pricing": "N.A.",
+        "side_pocketing": "N.A."
+    },
+    "amc_details": {
+        "sif_name": "qsif SIF",
+        "amc_website": "https://www.quantmutual.com",
+        "scheme_bonus": null
     },
     "exit_load": "Exit Load:  1% if redeemed/switched out on or before completion of 15 days from the date of allotment of units\nNo Exit Load is payable if Units are redeemed / switched-out after 15 days  from the date of allotment",
     "registrar": "KFin Technologies Limited",
     "custodian": "HDFC Bank Limited",
     "auditor": "M M Nissim & Co. LLP",
-    "sif_name": "qsif SIF"
+    "sif_name": "qsif SIF",
+    "scheme_id": "S-6",
+    "sif_id": "13",
+    "documents": {
+        "scheme_id": "S-6",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-6.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-6.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-6.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-6.xml"
+    }
 }

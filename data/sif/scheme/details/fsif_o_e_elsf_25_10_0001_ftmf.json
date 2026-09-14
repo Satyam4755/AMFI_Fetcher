@@ -1,6 +1,8 @@
 {
     "sebi_code": "FSIF/O/E/ELSF/25/10/0001/FTMF",
+    "scheme_name": "Sapphire Equity Long- Short SIF",
     "fund_name": "Sapphire Equity Long- Short SIF",
+    "scheme_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
     "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
     "category": "Equity Long-Short Fund",
     "riskometer_at_launch": "Risk Level 5",
@@ -77,6 +79,50 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct -  Growth - SIF-95 | Direct - Growth - INF090I30048",
+                    "amfi_code": "SIF-95",
+                    "isin_code": "INF090I30048",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct - IDCW -  SIF-94 | Direct - IDCW Payout -INF090I30063",
+                        "amfi_code": "SIF-94",
+                        "isin_code": "INF090I30063",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Direct - IDCW -  SIF-94 | Direct - IDCW Reinvestment - INF090I30055",
+                        "amfi_code": "SIF-94",
+                        "isin_code": "INF090I30055",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -94,11 +140,53 @@
         "minimum_additional_amount": "10000",
         "additional_multiple": "1000",
         "minimum_redemption_amount": "10000",
-        "minimum_redemption_units": "Not applicable"
+        "minimum_redemption_units": "Not applicable",
+        "minimum_balance_amount": "1000000",
+        "minimum_balance_units": "Not applicable",
+        "maximum_investment_amount": "Not applicable"
+    },
+    "switch_details": {
+        "minimum_switch_amount": "1000000",
+        "minimum_switch_units": "Not applicable",
+        "switch_multiple_amount": "1000",
+        "switch_multiple_units": "Not applicable",
+        "maximum_switch_amount": "Not applicable",
+        "maximum_switch_units": "Not applicable"
+    },
+    "systematic_investment_plans": {
+        "frequency": "Monthly",
+        "minimum_amount": "10000",
+        "in_multiples_of": "1000",
+        "minimum_installments": "Rs. 10000 - 12 instalments",
+        "dates": "Monthly = Any date* * In case the  chosen day of the day falls on non- business day, STP will be processed on the next Business Day.",
+        "maximum_amount": "Not applicable"
+    },
+    "expenses_and_loads": {
+        "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular: 3.01, Direct: 1.28"
+    },
+    "special_facilities": {
+        "swing_pricing": "Not applicable",
+        "side_pocketing": "AMC may create segregated portfolio in the Investment strategy"
+    },
+    "amc_details": {
+        "sif_name": "Sapphire SIF",
+        "amc_website": "https://www.franklintempletonindia.com",
+        "scheme_bonus": null
     },
     "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",
     "registrar": "CAMS",
     "custodian": "Hongkong and Shanghai Banking Corporation Limited (HSBC)",
     "auditor": "B S R & Co. LLP",
-    "sif_name": "Sapphire SIF"
+    "sif_name": "Sapphire SIF",
+    "scheme_id": "S-16",
+    "sif_id": "27",
+    "documents": {
+        "scheme_id": "S-16",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-16.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-16.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-16.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-16.xml"
+    }
 }

@@ -1,6 +1,8 @@
 {
     "sebi_code": "ARTH/O/E/ELSF/26/03/0001/UNIN",
+    "scheme_name": "Arthaya Equity Long Short Fund",
     "fund_name": "Arthaya Equity Long Short Fund",
+    "scheme_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "fund_type": "An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "category": "Equity Long-Short Fund",
     "riskometer_at_launch": "Risk band Level 5",
@@ -8,10 +10,10 @@
     "potential_risk_class": "Not applicable",
     "scheme_objective": "The investment objective of the Investment Strategy is to generate long term capital appreciation over the investment cycle by deploying capital in equity and equity related instruments including limited short exposure through derivatives across the market capitalisation. There is no assurance that the investment objective of the Investment Strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2026-05-04 00:00:00",
-    "nfo_close_date": "2026-05-18 00:00:00",
-    "allotment_date": "2026-05-25 00:00:00",
-    "reopen_date": "2026-05-29 00:00:00",
+    "nfo_open_date": "2026-05-04",
+    "nfo_close_date": "2026-05-18",
+    "allotment_date": "2026-05-25",
+    "reopen_date": "2026-05-29",
     "maturity_date": "Not applicable",
     "benchmark_tier_1": "NIFTY 200 Total Return Index (TRI)",
     "benchmark_tier_2": "Not applicable",
@@ -77,6 +79,50 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct Plan - Growth Option-SIF-112 | Direct Plan - Growth Option-INF582M30046",
+                    "amfi_code": "SIF-112",
+                    "isin_code": "INF582M30046",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option-SIF-113 | Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option-INF582M30053",
+                        "amfi_code": "SIF-113",
+                        "isin_code": "INF582M30053",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Direct Plan - Reinvestment of IDCW Option-SIF-113 | Direct Plan - Reinvestment of IDCW Option-INF582M30061",
+                        "amfi_code": "SIF-113",
+                        "isin_code": "INF582M30061",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -94,11 +140,53 @@
         "minimum_additional_amount": "10000",
         "additional_multiple": "1",
         "minimum_redemption_amount": "1000",
-        "minimum_redemption_units": "Units Equivalent to Rs. 1000"
+        "minimum_redemption_units": "Units Equivalent to Rs. 1000",
+        "minimum_balance_amount": "Not applicable",
+        "minimum_balance_units": "Not applicable",
+        "maximum_investment_amount": "No Limit"
+    },
+    "switch_details": {
+        "minimum_switch_amount": "1000",
+        "minimum_switch_units": "Units Equivalent to Rs. 1,000",
+        "switch_multiple_amount": "Switch in: in multiples of Rs. 1\nSwitch out: in multiples of Rs. 1",
+        "switch_multiple_units": "Switch in: Units equivalent to Rs. 1\nSwitch out: Units equivalent to Rs. 1",
+        "maximum_switch_amount": "Not applicable",
+        "maximum_switch_units": "Not applicable"
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP -  Monthly, SWP - Monthly/ Quarterly/ Half Yearly and Yearly, STP -  Monthly",
+        "minimum_amount": "SIP - Rs. 10000 Monthly SIP, STP - Rs.10000 monthly STP, SWP - Rs. 10000-Monthly, Quarterly,half-yearly,Yearly SWP",
+        "in_multiples_of": "SIP - Rs. 1 thereof for all frequencies, STP - Rs. 1 thereof for all frequencies, SWP - Rs. 1 thereof for all frequencies",
+        "minimum_installments": "SIP - 6 instalments for all frequencies, STP -  6 instalments for all frequencies, SWP - 6 instalments for all frequencies",
+        "dates": "SIP and STP - Monthly, any date of the month . For  SWP - any date of the month for monthly, quarterly, half yearly and yearly frequency",
+        "maximum_amount": "SIP - Not applicable, STP - Not applicable, SWP - Not applicable"
+    },
+    "expenses_and_loads": {
+        "exit_load": "1% if redeemed or switched out on or before completion of 1 year from the date of allotment of units. Nil if redeemed or switched out after completion of 1 year from the date of allotment of units.",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular: 5.32, Direct: 3.88"
+    },
+    "special_facilities": {
+        "swing_pricing": "Not applicable",
+        "side_pocketing": "Enabled but no segregated portfolio created"
+    },
+    "amc_details": {
+        "sif_name": "Arthaya SIF",
+        "amc_website": "https://www.unionmf.com",
+        "scheme_bonus": null
     },
     "exit_load": "1% if redeemed or switched out on or before completion of 1 year from the date of allotment of units. Nil if redeemed or switched out after completion of 1 year from the date of allotment of units.",
     "registrar": "Computer Age Management Services Limited (CAMS)",
     "custodian": "ICICI BANK LIMITED",
     "auditor": "M/s S.R Batliboi & Co. LLP",
-    "sif_name": "Arthaya SIF"
+    "sif_name": "Arthaya SIF",
+    "scheme_id": "S-20",
+    "sif_id": "61",
+    "documents": {
+        "scheme_id": "S-20",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-20.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-20.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-20.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-20.xml"
+    }
 }

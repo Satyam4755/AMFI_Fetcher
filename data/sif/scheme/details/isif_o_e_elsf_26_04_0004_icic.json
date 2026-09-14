@@ -1,17 +1,19 @@
 {
     "sebi_code": "ISIF/O/E/ELSF/26/04/0004/ICIC",
+    "scheme_name": "iSIF Equity Long-Short Fund",
     "fund_name": "iSIF Equity Long-Short Fund",
+    "scheme_type": "Open Ended Investment Strategy",
     "fund_type": "Open Ended Investment Strategy",
     "category": "Equity Long-Short Fund",
-    "riskometer_at_launch": null,
+    "riskometer_at_launch": "Risk Level 5",
     "riskometer_as_on_date": null,
     "potential_risk_class": null,
-    "scheme_objective": null,
+    "scheme_objective": "To generate capital appreciation in long term by predominantly investing in listed equity and equity related instruments. The Investment Strategy may also invest in various derivative instruments, including limited short exposure through unhedged derivative positions in equity up to 25%.\n\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2026-05-19 00:00:00",
-    "nfo_close_date": "2026-06-02 00:00:00",
-    "allotment_date": "2026-06-05 00:00:00",
-    "reopen_date": "2026-06-10 00:00:00",
+    "nfo_open_date": "2026-05-19",
+    "nfo_close_date": "2026-06-02",
+    "allotment_date": "2026-06-05",
+    "reopen_date": "2026-06-10",
     "maturity_date": null,
     "benchmark_tier_1": "Nifty 500 TRI",
     "benchmark_tier_2": null,
@@ -55,20 +57,106 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "iSIF Equity Long-Short Fund - Direct Plan - Growth - SIF-127 | iSIF Equity Long-Short Fund-DIRECT-GROWTH- INF109K30083 | iSIF Equity Long-Short Fund - Direct Plan – Growth- 6004",
+                    "amfi_code": "SIF-127",
+                    "isin_code": "INF109K30083",
+                    "rta_code": "6004"
+                }
+            ],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
-    "fund_managers": [],
+    "fund_managers": [
+        {
+            "name": "Mr. Mittul Kalawadia",
+            "type": "Primary",
+            "from": "2026-06-05",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Ms. Nitya Mishra",
+            "type": "Primary",
+            "from": "2026-06-05",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Ms. Sri Sharma",
+            "type": "Primary",
+            "from": "2026-06-05",
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
     "investment_limits": {
         "minimum_application_amount": "•\tMinimum Application/Switch In Amount for first time investor in SIF \n-\tRs. 10,00,000/- and in multiples of Re.1/- thereafter \n-\tFor accredited investor Rs. 10,000/- and in multiples of Re. 1/- thereafter \n\n•\tMinimum Application/Switch In Amount for existing investor who have complied with the Minimum Investment Threshold\n-\t Rs. 10,000 (plus in multiple of Re. 1/-).",
-        "application_multiple": null,
+        "application_multiple": "1",
         "minimum_additional_amount": "Rs. 10,000/- (plus in multiples of Re. 1)",
         "additional_multiple": null,
         "minimum_redemption_amount": "Any amount subject to provisions of minimum investment threshold as specified below.\n\nMinimum Investment Threshold:\n- Aggregate investment by an investor across all investment strategies offered by iSIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/\n-In case of any request(s) for partial redemption/switch out by the investor/(s), the AMC reserves the right to reject the redemptions entirely if the amount post payout of redemptions falls below Minimum Investment Threshold.",
-        "minimum_redemption_units": null
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "Daily, Weekly, Monthly, Quarterly, Fortnightly",
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": "Daily,Weekly, Fortnightly, Monthly-6\nQuarterly-4",
+        "dates": "Daily = Daily (only business days)\nWeekly = Anyday (Monday to Friday)*\nFortnightly = 1st and 16th day of each month as applicable\nMonthly = Any day*\nQuarterly = Any day*\n\n*In case the date chosen for SIP falls on a Non-Business Day or on a date which is not available in a particular month, the SIP will beprocessed on the immediate next Business Day.",
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 1 month from allotment.\n•NIL - If the amount sought to be redeemed or switched out more than 1 month",
+        "actual_expense": "Total Expense Ratio (TER)  - Regular Plan : 4.19% ; Direct plan : 2.72 %",
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "iSIF SIF",
+        "amc_website": "https://www.icicipruamc.com",
+        "scheme_bonus": null
     },
     "exit_load": "•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 1 month from allotment.\n•NIL - If the amount sought to be redeemed or switched out more than 1 month",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "Citibank N.A,HDFC Bank Limited, HSBC Limited and SBI-SG Global Securities Services Private Limited",
     "auditor": "M/s BSR & Co. LLP",
-    "sif_name": "iSIF SIF"
+    "sif_name": "iSIF SIF",
+    "scheme_id": "S-24",
+    "sif_id": "20",
+    "documents": {
+        "scheme_id": "S-24",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-24.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-24.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-24.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-24.xml"
+    }
 }

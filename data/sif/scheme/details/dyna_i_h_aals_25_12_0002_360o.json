@@ -1,6 +1,8 @@
 {
     "sebi_code": "DYNA/I/H/AALS/25/12/0002/360O",
+    "scheme_name": "DynaSIF Active Asset Allocator Long-Short Fund",
     "fund_name": "DynaSIF Active Asset Allocator Long-Short Fund",
+    "scheme_type": "Interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
     "fund_type": "Interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
     "category": "Active Asset Allocator Long-Short Fund",
     "riskometer_at_launch": "Risk Band Level - 2",
@@ -8,13 +10,13 @@
     "potential_risk_class": "N.A",
     "scheme_objective": "To generate capital appreciation and income generation with dynamic allocation to different asset classes like equities, InVITs, commodities and  fixed income layered with derivatives long-short trading strategies.  There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "Rs. 10 Per unit",
-    "nfo_open_date": "2026-03-06 00:00:00",
-    "nfo_close_date": "2026-03-20 00:00:00",
-    "allotment_date": "2026-03-25 00:00:00",
-    "reopen_date": "2026-03-30 00:00:00",
+    "nfo_open_date": "2026-03-06",
+    "nfo_close_date": "2026-03-20",
+    "allotment_date": "2026-03-25",
+    "reopen_date": "2026-03-30",
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "25% BSE SENSEX TRI + 60% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index",
-    "benchmark_tier_2": "-",
+    "benchmark_tier_2": null,
     "asset_allocation": [
         {
             "allocation_type": "",
@@ -87,6 +89,50 @@
                 "unknown": []
             },
             "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF - 88 | INF579M30109 | ALSDG",
+                    "amfi_code": "SIF-88",
+                    "isin_code": "INF579M30109",
+                    "rta_code": "ALSDG"
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF - 89 | INF579M30117 | ALSDP",
+                        "amfi_code": "SIF-89",
+                        "isin_code": "INF579M30117",
+                        "rta_code": "ALSDP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF - 89 | INF579M30125 | ALSDR",
+                        "amfi_code": "SIF-89",
+                        "isin_code": "INF579M30125",
+                        "rta_code": "ALSDR"
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
         }
     },
     "fund_managers": [
@@ -104,11 +150,53 @@
         "minimum_additional_amount": "20000",
         "additional_multiple": "1",
         "minimum_redemption_amount": "Not Applicable",
-        "minimum_redemption_units": "Not Applicable"
+        "minimum_redemption_units": "Not Applicable",
+        "minimum_balance_amount": "Not Applicable",
+        "minimum_balance_units": "Not Applicable",
+        "maximum_investment_amount": "Not Applicable"
+    },
+    "switch_details": {
+        "minimum_switch_amount": "Not Applicable",
+        "minimum_switch_units": "Not Applicable",
+        "switch_multiple_amount": "Not Applicable",
+        "switch_multiple_units": "Not Applicable",
+        "maximum_switch_amount": "Not Applicable",
+        "maximum_switch_units": "Not Applicable"
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP - Monthly,Quarterly ;STP- Monthly ; SWP- N.A",
+        "minimum_amount": "SIP - Monthly Option: 20000  Quarterly Option : 50000 \nSTP - Monthly Option : 20000 \nSWP - Not Applicable",
+        "in_multiples_of": "SIP-1 STP-1 SWP - Not Applicable",
+        "minimum_installments": "SIP - Monthly 6 SIP - Quarterly 6 \nSTP - Monthly 6",
+        "dates": "SIP Monthly - 7th of every month/Quarterly - 7th of every quarter, \nSTP Monthly - STP Date shall be 1st Monday of the month, Default Date - After completion of notice period following 1st Monday of the month,\nSWP - Not Applicable",
+        "maximum_amount": "Not Applicable"
+    },
+    "expenses_and_loads": {
+        "exit_load": "0.5% if redeemed within 3 months from date of allotment of units .\n No exit load is payable for redemption after 3 months from the date of allotment of \nunits",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular 1.63, Direct 0.53"
+    },
+    "special_facilities": {
+        "swing_pricing": "Not Applicable",
+        "side_pocketing": "Provision enabled, no segregated portfolio"
+    },
+    "amc_details": {
+        "sif_name": "DynaSIF SIF",
+        "amc_website": "https://www.360.one/asset-management/mutualfund/",
+        "scheme_bonus": null
     },
     "exit_load": "0.5% if redeemed within 3 months from date of allotment of units .\n No exit load is payable for redemption after 3 months from the date of allotment of \nunits",
     "registrar": "Computer Age Management Services Limited (CAMS)",
     "custodian": "Deutsche Bank AG",
     "auditor": "PricewaterhouseCoo pers Pvt Ltd",
-    "sif_name": "DynaSIF SIF"
+    "sif_name": "DynaSIF SIF",
+    "scheme_id": "S-14",
+    "sif_id": "62",
+    "documents": {
+        "scheme_id": "S-14",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-14.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-14.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-14.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-14.xml"
+    }
 }

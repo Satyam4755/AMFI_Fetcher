@@ -29,10 +29,13 @@ def download_xls(summary_xls_url: str) -> str | None:
     os.makedirs(output_dir, exist_ok=True)
     
     file_path = os.path.join(output_dir, filename)
+    if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
+        logger.info(f"Using locally cached XLS: {file_path}")
+        return file_path
     
     try:
         # Stream the download
-        with requests.get(summary_xls_url, stream=True, timeout=15) as response:
+        with requests.get(summary_xls_url, stream=True, timeout=5) as response:
             response.raise_for_status()
             
             content_type = response.headers.get('Content-Type', '').lower()
