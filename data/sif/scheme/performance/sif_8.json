@@ -1,18 +1,18 @@
 {
     "sif_code": "SIF-8",
     "returns": {
-        "1_day": -1.21,
-        "1_week": 3.21,
-        "1_month": 18.98,
-        "3_month": 24.57,
-        "6_month": 32.98,
+        "1_day": -0.83,
+        "1_week": 0.61,
+        "1_month": 18.07,
+        "3_month": 23.71,
+        "6_month": 31.71,
         "1_year": null,
         "2_year": null,
         "3_year": null,
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 31.56
+        "since_launch": 30.47
     },
-    "last_updated": "2026-09-17T08:24:13Z"
+    "last_updated": "2026-09-17T20:56:07Z"
 }
