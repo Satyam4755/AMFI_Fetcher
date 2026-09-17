@@ -36,6 +36,7 @@ jobs:
           
           git add data/sif/scheme/nav/
           git add data/sif/scheme/performance/
+          git add data/sif/scheme/heatMap/
           
           if git diff --cached --quiet; then
             echo "No new NAV updates."
