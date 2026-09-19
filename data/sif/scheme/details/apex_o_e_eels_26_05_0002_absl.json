@@ -6,7 +6,7 @@
     "fund_type": "An open ended investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments of Ex – top 100 stocks.",
     "category": "Equity Ex -Top 100 Long Short Fund",
     "riskometer_at_launch": "Risk Level 5",
-    "riskometer_as_on_date": "Risk Level 5",
+    "riskometer_as_on_date": "Risk Level 1",
     "potential_risk_class": null,
     "scheme_objective": "To generate capital appreciation in long term by investing in equity and equity related securities of Ex – top 100 companies. The Investment Strategy may also invest in various derivative instruments, including short exposure through unhedged derivative positions in equity and equity related instruments.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
@@ -48,8 +48,8 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-156 | SIF-155 | INF209K30081 | INF209K30073",
-                    "amfi_code": "SIF-156",
+                    "name": "Apex Equity Ex-Top 100 Long-short Fund-Regular Growth- INF209K30081",
+                    "amfi_code": null,
                     "isin_code": "INF209K30081",
                     "rta_code": null
                 }
@@ -64,7 +64,18 @@
             "unresolved": []
         },
         "direct": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "2)Apex Equity Ex-Top 100 Long-short Fund-Direct Growth- INF209K30073",
+                    "amfi_code": null,
+                    "isin_code": "INF209K30073",
+                    "rta_code": null
+                }
+            ],
             "idcw": {
                 "payout": [],
                 "reinvestment": [],

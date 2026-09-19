@@ -191,7 +191,7 @@
     "expenses_and_loads": {
         "exit_load": "If the units are redeemed / switched out on or before 90 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 90 days from the date of allotment – Nil. \n\nAMC reserves the right to revise the load structure from time to time. Such changes will become effective prospectively from the date such changes are incorporated.",
         "actual_expense": null,
-        "stated_maximum_expense": null
+        "stated_maximum_expense": "Direct Plan - 1.99%, Regular Plan - 3.49%"
     },
     "special_facilities": {
         "swing_pricing": null,

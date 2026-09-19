@@ -6,7 +6,7 @@
     "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.",
     "category": "Equity Long Short Fund",
     "riskometer_at_launch": "Risk Level 5",
-    "riskometer_as_on_date": "Risk Level 5",
+    "riskometer_as_on_date": "Risk Level 1",
     "potential_risk_class": null,
     "scheme_objective": "The Investment strategy seeks to generate long-term capital appreciation by investing in a diversified portfolio of equity and equity-related instruments, including limited short exposure through derivatives\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
@@ -43,7 +43,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-154 | SIF-153 | INF209K30107 | INF209K30099",
+                    "name": "Apex Equity Long-short Fund-Regular Growth- SIF- 154 | Apex Equity Long-short Fund-Regular Growth- INF209K30107",
                     "amfi_code": "SIF-154",
                     "isin_code": "INF209K30107",
                     "rta_code": null
@@ -59,7 +59,18 @@
             "unresolved": []
         },
         "direct": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Apex Equity Long-short Fund-Direct Growth-SIF- 153 | Apex Equity Long-short Fund-Direct Growth- INF209K30099",
+                    "amfi_code": "SIF-153",
+                    "isin_code": "INF209K30099",
+                    "rta_code": null
+                }
+            ],
             "idcw": {
                 "payout": [],
                 "reinvestment": [],

@@ -191,7 +191,7 @@
     "expenses_and_loads": {
         "exit_load": "If the units are redeemed / switched out on or before 30 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 30 days from the date of allotment – Nil.",
         "actual_expense": null,
-        "stated_maximum_expense": null
+        "stated_maximum_expense": "Direct Plan - 1.26%, Regular Plan - 2.08%"
     },
     "special_facilities": {
         "swing_pricing": null,

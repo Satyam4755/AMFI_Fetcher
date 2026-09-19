@@ -164,7 +164,7 @@
     "expenses_and_loads": {
         "exit_load": "Nil",
         "actual_expense": null,
-        "stated_maximum_expense": null
+        "stated_maximum_expense": "Regular 3.32, Direct 2.18"
     },
     "special_facilities": {
         "swing_pricing": null,
