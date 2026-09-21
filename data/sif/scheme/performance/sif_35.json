@@ -1,18 +1,18 @@
 {
     "sif_code": "SIF-35",
     "returns": {
-        "1_day": 0.56,
-        "1_week": -0.37,
-        "1_month": -1.93,
-        "3_month": 2.99,
-        "6_month": 8.84,
+        "1_day": 0.4,
+        "1_week": 0.04,
+        "1_month": -1.71,
+        "3_month": 3.63,
+        "6_month": 11.4,
         "1_year": null,
         "2_year": null,
         "3_year": null,
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 4.31
+        "since_launch": 4.73
     },
-    "last_updated": "2026-09-18T20:22:44Z"
+    "last_updated": "2026-09-21T21:41:56Z"
 }
