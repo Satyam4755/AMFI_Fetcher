@@ -1,10 +1,10 @@
 {
     "sif_code": "SIF-105",
     "returns": {
-        "1_day": -0.1,
-        "1_week": 0.67,
-        "1_month": -1.4,
-        "3_month": 2.0,
+        "1_day": -0.08,
+        "1_week": 1.99,
+        "1_month": -1.48,
+        "3_month": 1.25,
         "6_month": null,
         "1_year": null,
         "2_year": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 6.43
+        "since_launch": 6.35
     },
-    "last_updated": "2026-09-21T21:41:56Z"
+    "last_updated": "2026-09-22T20:51:49Z"
 }

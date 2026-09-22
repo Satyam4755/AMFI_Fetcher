@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-129",
     "returns": {
-        "1_day": 0.01,
-        "1_week": 0.24,
+        "1_day": 0.0,
+        "1_week": 0.16,
         "1_month": 0.59,
         "3_month": null,
         "6_month": null,
@@ -12,7 +12,7 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 1.8
+        "since_launch": 1.81
     },
-    "last_updated": "2026-09-21T21:41:57Z"
+    "last_updated": "2026-09-22T20:51:50Z"
 }
