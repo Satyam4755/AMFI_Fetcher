@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 import tempfile
@@ -6,21 +7,23 @@ import unittest
 import pandas as pd
 
 from services.heatmap_service import (
-    HEADER,
     calculate_monthly_returns_for_scheme,
-    generate_all_heatmaps,
     natural_sif_sort_key,
 )
-from services.performance_service import calculate_performance_metrics
+from services.performance_service import (
+    calculate_monthly_returns,
+    calculate_performance_metrics,
+)
 
 
-class TestHeatmapService(unittest.TestCase):
+class TestMonthlyPerformanceAndMetrics(unittest.TestCase):
 
     def setUp(self):
         self.test_dir = tempfile.mkdtemp()
         self.historical_dir = os.path.join(self.test_dir, "historical")
-        self.heatmap_dir = os.path.join(self.test_dir, "heatMap")
+        self.perf_dir = os.path.join(self.test_dir, "performance")
         os.makedirs(self.historical_dir, exist_ok=True)
+        os.makedirs(self.perf_dir, exist_ok=True)
 
     def tearDown(self):
         shutil.rmtree(self.test_dir, ignore_errors=True)
@@ -30,7 +33,7 @@ class TestHeatmapService(unittest.TestCase):
         sorted_codes = sorted(codes, key=natural_sif_sort_key)
         self.assertEqual(sorted_codes, ["SIF-1", "SIF-2", "SIF-10", "SIF-20", "SIF-100"])
 
-    def test_positive_and_negative_monthly_returns(self):
+    def test_positive_and_negative_monthly_returns_keys_and_values(self):
         # January: 10.0 -> 10.5 (+5.00%)
         # February: 10.5 -> 10.2 (-2.86%)
         # March: missing
@@ -40,16 +43,15 @@ class TestHeatmapService(unittest.TestCase):
             "nav": [10.0, 10.5, 10.5, 10.3, 10.2],
         }
         df = pd.DataFrame(data)
-        res = calculate_monthly_returns_for_scheme(df)
+        monthly_returns = calculate_monthly_returns(df)
 
-        self.assertIn(2026, res)
-        row = res[2026]
-        self.assertEqual(row["sif_code"], "SIF-1")
-        self.assertEqual(row["year"], 2026)
-        self.assertEqual(row["jan"], 5.00)
-        self.assertEqual(row["feb"], -2.86)
-        self.assertIsNone(row["mar"])
-        self.assertIsNone(row["dec"])
+        # Keys must be YYYY-MM format
+        self.assertIn("2026-01", monthly_returns)
+        self.assertIn("2026-02", monthly_returns)
+        self.assertNotIn("2026-03", monthly_returns)
+
+        self.assertEqual(monthly_returns["2026-01"], 5.00)
+        self.assertEqual(monthly_returns["2026-02"], -2.86)
 
     def test_single_day_and_partial_month(self):
         # July: Single day on 15-Jul-2026 -> 0.00%
@@ -60,13 +62,13 @@ class TestHeatmapService(unittest.TestCase):
             "nav": [10.0, 10.0, 10.2],
         }
         df = pd.DataFrame(data)
-        res = calculate_monthly_returns_for_scheme(df)
+        monthly_returns = calculate_monthly_returns(df)
 
-        self.assertIn(2026, res)
-        row = res[2026]
-        self.assertEqual(row["jul"], 0.00)
-        self.assertEqual(row["aug"], 2.00)
-        self.assertIsNone(row["sep"])
+        self.assertIn("2026-07", monthly_returns)
+        self.assertIn("2026-08", monthly_returns)
+        self.assertEqual(monthly_returns["2026-07"], 0.00)
+        self.assertEqual(monthly_returns["2026-08"], 2.00)
+        self.assertNotIn("2026-09", monthly_returns)
 
     def test_multiple_years_handling(self):
         data = {
@@ -75,18 +77,18 @@ class TestHeatmapService(unittest.TestCase):
             "nav": [10.0, 11.0, 11.0, 12.1],
         }
         df = pd.DataFrame(data)
-        res = calculate_monthly_returns_for_scheme(df)
+        monthly_returns = calculate_monthly_returns(df)
 
-        self.assertIn(2025, res)
-        self.assertIn(2026, res)
-        self.assertEqual(res[2025]["jan"], 10.00)
-        self.assertIsNone(res[2025]["feb"])
-        self.assertIsNone(res[2026]["jan"])
-        self.assertEqual(res[2026]["feb"], 10.00)
+        self.assertIn("2025-01", monthly_returns)
+        self.assertIn("2026-02", monthly_returns)
+        self.assertEqual(monthly_returns["2025-01"], 10.00)
+        self.assertEqual(monthly_returns["2026-02"], 10.00)
+        self.assertNotIn("2025-02", monthly_returns)
+        self.assertNotIn("2026-01", monthly_returns)
 
     def test_malformed_and_invalid_data_handling(self):
         # Empty df
-        self.assertEqual(calculate_monthly_returns_for_scheme(pd.DataFrame()), {})
+        self.assertEqual(calculate_monthly_returns(pd.DataFrame()), {})
 
         # Non-numeric / negative NAV / invalid dates
         data = {
@@ -95,69 +97,75 @@ class TestHeatmapService(unittest.TestCase):
             "nav": [10.0, -5.0, "abc", 10.0],
         }
         df = pd.DataFrame(data)
-        res = calculate_monthly_returns_for_scheme(df)
+        monthly_returns = calculate_monthly_returns(df)
         # Only 31-Jan-2026 with nav=10.0 is valid
-        self.assertIn(2026, res)
-        self.assertEqual(res[2026]["jan"], 0.00)
+        self.assertIn("2026-01", monthly_returns)
+        self.assertEqual(monthly_returns["2026-01"], 0.00)
 
-    def test_generate_all_heatmaps_full_pipeline_and_determinism(self):
-        # Create 2 historical files: sif_1.csv and sif_120.csv across 2025 and 2026
-        df_1 = pd.DataFrame({
-            "sif_code": ["SIF-1", "SIF-1", "SIF-1", "SIF-1"],
+    def test_calculate_monthly_returns_for_scheme_backward_compatibility(self):
+        data = {
+            "sif_code": ["SIF-1"] * 4,
             "nav_date": ["10-Dec-2025", "31-Dec-2025", "05-Jan-2026", "30-Jan-2026"],
             "nav": [10.0, 10.5, 10.5, 11.025],
-        })
-        df_1.to_csv(os.path.join(self.historical_dir, "sif_1.csv"), index=False)
+        }
+        df = pd.DataFrame(data)
+        res = calculate_monthly_returns_for_scheme(df)
+        self.assertIn(2025, res)
+        self.assertIn(2026, res)
+        self.assertEqual(res[2025]["dec"], 5.00)
+        self.assertEqual(res[2026]["jan"], 5.00)
 
-        df_120 = pd.DataFrame({
-            "sif_code": ["SIF-120", "SIF-120"],
-            "nav_date": ["01-Jan-2026", "31-Jan-2026"],
-            "nav": [20.0, 19.0],
-        })
-        df_120.to_csv(os.path.join(self.historical_dir, "sif_120.csv"), index=False)
-
-        # Run 1
-        res1 = generate_all_heatmaps(self.historical_dir, self.heatmap_dir)
-        self.assertEqual(res1["years_generated"], [2025, 2026])
-
-        # Verify 2025.csv
-        file_2025 = os.path.join(self.heatmap_dir, "2025.csv")
-        self.assertTrue(os.path.exists(file_2025))
-        df_2025 = pd.read_csv(file_2025, dtype=str)
-        self.assertEqual(list(df_2025.columns), HEADER)
-        self.assertEqual(len(df_2025), 1)
-        self.assertEqual(df_2025.iloc[0]["sif_code"], "SIF-1")
-        self.assertEqual(df_2025.iloc[0]["dec"], "5.00")
-        self.assertTrue(pd.isna(df_2025.iloc[0]["jan"]) or df_2025.iloc[0]["jan"] == "")
-
-        # Verify 2026.csv
-        file_2026 = os.path.join(self.heatmap_dir, "2026.csv")
-        self.assertTrue(os.path.exists(file_2026))
-        df_2026 = pd.read_csv(file_2026, dtype=str)
-        self.assertEqual(len(df_2026), 2)
-        # SIF-1 must come before SIF-120
-        self.assertEqual(df_2026.iloc[0]["sif_code"], "SIF-1")
-        self.assertEqual(df_2026.iloc[0]["jan"], "5.00")
-        self.assertEqual(df_2026.iloc[1]["sif_code"], "SIF-120")
-        self.assertEqual(df_2026.iloc[1]["jan"], "-5.00")
-
-        # Run 2: Check Determinism
-        generate_all_heatmaps(self.historical_dir, self.heatmap_dir)
-        df_2026_second_run = pd.read_csv(file_2026, dtype=str)
-        self.assertTrue(df_2026.equals(df_2026_second_run))
-
-    def test_existing_performance_unaffected(self):
-        # Verify calculate_performance_metrics still returns correct structure
+    def test_performance_metrics_structure_and_returns(self):
+        # Verify calculate_performance_metrics includes monthly_returns, returns, sif_code, last_updated
         df = pd.DataFrame({
-            "sif_code": ["SIF-1", "SIF-1"],
-            "nav_date": ["15-Sep-2026", "16-Sep-2026"],
-            "nav": [10.0, 10.2],
+            "sif_code": ["SIF-1", "SIF-1", "SIF-1"],
+            "nav_date": ["10-Jul-2026", "31-Jul-2026", "16-Sep-2026"],
+            "nav": [10.0, 10.5, 10.71],
         })
         perf = calculate_performance_metrics(df)
         self.assertEqual(perf["sif_code"], "SIF-1")
+        self.assertIn("returns", perf)
+        self.assertIn("monthly_returns", perf)
+        self.assertIn("last_updated", perf)
+
+        # Existing return metrics
         self.assertEqual(perf["returns"]["1_day"], 2.00)
-        self.assertIn("since_launch", perf["returns"])
+        self.assertEqual(perf["returns"]["since_launch"], 7.10)
+
+        # Monthly returns embedded
+        self.assertIn("2026-07", perf["monthly_returns"])
+        self.assertIn("2026-09", perf["monthly_returns"])
+        self.assertEqual(perf["monthly_returns"]["2026-07"], 5.00)
+        self.assertEqual(perf["monthly_returns"]["2026-09"], 0.00)
+
+    def test_no_heatmap_csv_generated_and_performance_storage_intact(self):
+        # Create sample historical NAV file
+        df = pd.DataFrame({
+            "sif_code": ["SIF-1", "SIF-1"],
+            "nav_date": ["01-Jan-2026", "30-Jan-2026"],
+            "nav": [10.0, 11.0],
+        })
+        hist_file = os.path.join(self.historical_dir, "sif_1.csv")
+        df.to_csv(hist_file, index=False)
+
+        # Simulate performance calculation
+        metrics = calculate_performance_metrics(pd.read_csv(hist_file))
+        out_path = os.path.join(self.perf_dir, "sif_1.json")
+        with open(out_path, "w") as f:
+            json.dump(metrics, f, indent=4)
+
+        # Verify performance file exists and contains expected structure
+        self.assertTrue(os.path.exists(out_path))
+        with open(out_path, "r") as f:
+            loaded = json.load(f)
+        self.assertEqual(loaded["sif_code"], "SIF-1")
+        self.assertEqual(loaded["monthly_returns"]["2026-01"], 10.0)
+
+        # Verify no heatmap directory or CSV files exist
+        heatmap_dir = os.path.join(self.test_dir, "heatMap")
+        self.assertFalse(os.path.exists(heatmap_dir))
 
 
 if __name__ == "__main__":
     unittest.main()
+

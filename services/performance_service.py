@@ -1,6 +1,63 @@
 import pandas as pd
 import numpy as np
-from datetime import datetime
+from datetime import datetime, timezone
+
+
+def calculate_monthly_returns(df):
+    """
+    Calculates monthly performance percentage for a single SIF scheme.
+    
+    Expected DataFrame columns: 'nav_date', 'nav'
+    
+    Formula:
+        monthly_return = round(((last_nav_of_month / first_nav_of_month) - 1) * 100, 2)
+    
+    Returns:
+        dict: { "YYYY-MM": float } ordered reverse-chronologically (newest to oldest).
+    """
+    if df is None or df.empty:
+        return {}
+
+    df = df.copy()
+
+    # Ensure correct data types (AMFI date format is usually dd-MMM-yyyy or ISO)
+    df["nav_date"] = pd.to_datetime(df["nav_date"], format="mixed", errors="coerce")
+    df["nav"] = pd.to_numeric(df["nav"], errors="coerce")
+
+    # Drop rows with invalid NAV or invalid date
+    df = df.dropna(subset=["nav_date", "nav"])
+    df = df[df["nav"] > 0]
+
+    if df.empty:
+        return {}
+
+    # Sort strictly chronologically
+    df = df.sort_values("nav_date").reset_index(drop=True)
+
+    df["year"] = df["nav_date"].dt.year
+    df["month"] = df["nav_date"].dt.month
+
+    monthly_returns = {}
+
+    # Group by year and month
+    for (year, month), group in df.groupby(["year", "month"], sort=False):
+        if group.empty:
+            continue
+        first_nav = float(group.iloc[0]["nav"])
+        last_nav = float(group.iloc[-1]["nav"])
+        if first_nav <= 0 or last_nav <= 0:
+            continue
+        return_val = round(((last_nav / first_nav) - 1.0) * 100.0, 2)
+        key = f"{int(year):04d}-{int(month):02d}"
+        monthly_returns[key] = return_val
+
+    # Sort reverse-chronologically (latest month to earliest month)
+    sorted_monthly_returns = {
+        k: monthly_returns[k] for k in sorted(monthly_returns.keys(), reverse=True)
+    }
+
+    return sorted_monthly_returns
+
 
 def calculate_performance_metrics(df):
     """
@@ -44,6 +101,8 @@ def calculate_performance_metrics(df):
         return round(((latest_nav / past_nav) - 1) * 100, 2)
         
     first_date = df.iloc[0]['nav_date']
+
+    monthly_returns = calculate_monthly_returns(df)
         
     metrics = {
         "sif_code": sif_code,
@@ -61,7 +120,8 @@ def calculate_performance_metrics(df):
             "10_year": get_return(latest_date - pd.DateOffset(years=10)),
             "since_launch": get_return(first_date)
         },
-        "last_updated": datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+        "monthly_returns": monthly_returns,
+        "last_updated": datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     }
     
     # Handle NaNs from Pandas calculations (convert to None for JSON serialization)
@@ -74,3 +134,4 @@ def calculate_performance_metrics(df):
         return d
         
     return clean_dict(metrics)
+

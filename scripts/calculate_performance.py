@@ -9,7 +9,6 @@ import pandas as pd
 # Add project root to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from services.heatmap_service import generate_all_heatmaps
 from services.performance_service import calculate_performance_metrics
 
 
@@ -21,7 +20,6 @@ def main():
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     historical_dir = os.path.join(project_root, "data", "sif", "scheme", "nav", "historical")
     perf_dir = os.path.join(project_root, "data", "sif", "scheme", "performance")
-    heatmap_dir = os.path.join(project_root, "data", "sif", "scheme", "heatMap")
     
     os.makedirs(perf_dir, exist_ok=True)
     
@@ -36,8 +34,6 @@ def main():
     fail_count = 0
     
     for file_path in csv_files:
-        sif_code_file = os.path.basename(file_path).replace(".csv", "")
-        # Depending on how the file is named, e.g. "sif_1", but the sif_code inside might be "SIF-1"
         try:
             df = pd.read_csv(file_path)
             if df.empty:
@@ -69,12 +65,7 @@ def main():
     logger.info(f"Performance Calculation Complete. Success: {success_count}, Failed: {fail_count}")
     logger.info(f"Output Directory: {perf_dir}")
 
-    # Generate Monthly Heatmap dataset
-    logger.info("Generating Monthly Heatmap dataset...")
-    heatmap_result = generate_all_heatmaps(historical_dir, heatmap_dir)
-    logger.info(
-        f"Heatmap generation complete. Processed {heatmap_result.get('schemes_processed', 0)} schemes across years: {heatmap_result.get('years_generated', [])}"
-    )
 
 if __name__ == "__main__":
     main()
+

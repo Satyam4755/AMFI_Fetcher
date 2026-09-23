@@ -165,8 +165,12 @@ class TestHistoricalNAV(unittest.TestCase):
         self.assertIsNotNone(metrics)
         self.assertEqual(metrics["sif_code"], "SIF-122")
         self.assertIn("returns", metrics)
+        self.assertIn("monthly_returns", metrics)
         self.assertIsNotNone(metrics["returns"]["since_launch"])
         self.assertIsNotNone(metrics["returns"]["1_month"])
+        self.assertIn("2026-06", metrics["monthly_returns"])
+        self.assertIn("2026-08", metrics["monthly_returns"])
+        self.assertEqual(metrics["monthly_returns"]["2026-08"], round(((10.8 / 10.5) - 1) * 100, 2))
 
 
 if __name__ == "__main__":
