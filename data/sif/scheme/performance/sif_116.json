@@ -1,9 +1,9 @@
 {
     "sif_code": "SIF-116",
     "returns": {
-        "1_day": -0.09,
-        "1_week": 0.58,
-        "1_month": 2.7,
+        "1_day": 0.37,
+        "1_week": 1.52,
+        "1_month": 3.08,
         "3_month": null,
         "6_month": null,
         "1_year": null,
@@ -12,12 +12,12 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 0.88
+        "since_launch": 1.25
     },
     "monthly_returns": {
-        "2026-09": 0.9,
+        "2026-09": 1.27,
         "2026-08": 1.03,
         "2026-07": -1.87
     },
-    "last_updated": "2026-09-23T05:39:58Z"
+    "last_updated": "2026-09-23T21:03:38Z"
 }
