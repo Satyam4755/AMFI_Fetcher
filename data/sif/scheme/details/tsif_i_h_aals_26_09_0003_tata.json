@@ -1,0 +1,202 @@
+{
+    "sebi_code": "TSIF/I/H/AALS/26/09/0003/TATA",
+    "scheme_name": "Titanium Active Asset Allocator Long-Short Fund",
+    "fund_name": "Titanium Active Asset Allocator Long-Short Fund",
+    "scheme_type": "An interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives",
+    "fund_type": "An interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives",
+    "category": "Active Asset Allocator Long-Short Fund",
+    "riskometer_at_launch": "Risk Level 2 (Band Range 1-5, 5 been highest risk)",
+    "riskometer_as_on_date": "Risk Level 2 (Band Range 1-5, 5 been highest risk)",
+    "potential_risk_class": "Not Applicable",
+    "scheme_objective": "To generate medium to long term capital appreciation by investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
+    "face_value": "10",
+    "nfo_open_date": "2026-09-23",
+    "nfo_close_date": "2026-10-07",
+    "allotment_date": "within 5 (five) working / business days from the date of closure of the NFO Period",
+    "reopen_date": "2026-10-16",
+    "maturity_date": "Not Applicable",
+    "benchmark_tier_1": "35% BSE 200 TRI + 50% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index",
+    "benchmark_tier_2": "Not Applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity and equity related instruments including derivatives",
+            "minimum_percentage": 35,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Commodity Derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 30
+        }
+    ],
+    "listing_details": "BSE",
+    "plans": {
+        "regular": {
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-169 - Titanium Active Asset Allocator Long-Short Fund Regular Growth | INF277K30138 - Titanium Active Asset Allocator Long-Short Fund Regular Growth | TAG - Titanium Active Asset Allocator Long-Short Fund Regular Plan Growth",
+                    "amfi_code": "SIF-169",
+                    "isin_code": "INF277K30138",
+                    "rta_code": "TAG"
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-165 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout | INF277K30146 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout | TADP - Titanium Active Asset Allocator Long-Short Fund Regular Plan IDCW Payout",
+                        "amfi_code": "SIF-165",
+                        "isin_code": "INF277K30146",
+                        "rta_code": "TADP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-168 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment | INF277K30153 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment | TAD - Titanium Active Asset Allocator Long-Short Fund Regular Plan IDCW",
+                        "amfi_code": "SIF-168",
+                        "isin_code": "INF277K30153",
+                        "rta_code": "TAD"
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-167 - Titanium Active Asset Allocator Long-Short Fund Direct Growth | INF277K30161 - Titanium Active Asset Allocator Long-Short Fund Direct Growth | TAGZ - Titanium Active Asset Allocator Long-Short Fund Direct Plan Growth",
+                    "amfi_code": "SIF-167",
+                    "isin_code": "INF277K30161",
+                    "rta_code": "TAGZ"
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-170 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout | INF277K30179 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout | TADZP - Titanium Active Asset Allocator Long-Short Fund Direct Plan IDCW Payout",
+                        "amfi_code": "SIF-170",
+                        "isin_code": "INF277K30179",
+                        "rta_code": "TADZP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-166 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment | INF277K30187 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment | TADZ - Titanium Active Asset Allocator Long-Short Fund Direct Plan IDCW",
+                        "amfi_code": "SIF-166",
+                        "isin_code": "INF277K30187",
+                        "rta_code": "TADZ"
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "1 Sailesh Jain, FM-2 Akhil Mittal; FM-3 Tapan Patel, FM-4 Hasmukh Devji Vishariya",
+            "type": "1 Primary, FM-2 Primary, FM-3 Primary (Commodity), FM-4 Primary (Overseaes Investment)",
+            "from": "",
+            "to": null,
+            "role_or_portion": "FM"
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh.",
+        "application_multiple": "1",
+        "minimum_additional_amount": "1000",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "500",
+        "minimum_redemption_units": "Not Applicable",
+        "minimum_balance_amount": "No mimimum balance required",
+        "minimum_balance_units": "No mimimum unit balance required",
+        "maximum_investment_amount": "Not Applicable."
+    },
+    "switch_details": {
+        "minimum_switch_amount": "For all units there is no minimum switch amount.",
+        "minimum_switch_units": "For all units there is no minimum switch units.",
+        "switch_multiple_amount": "Not Applicable.",
+        "switch_multiple_units": "Not Applicable.",
+        "maximum_switch_amount": "Not Applicable.",
+        "maximum_switch_units": "Not Applicable."
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)",
+        "minimum_amount": "SIP-- 1000.00/1000.00/1000.00/1000.00/1000.00/1000.00  ;STP --500.00/500.00/500.00/500.00",
+        "in_multiples_of": "SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00/1.00/1.00/1.00 (Post NFO Period)",
+        "minimum_installments": "SIP-- 12 Instalments/6 instalments/6 instalments/4 instalments/12 instalments/12 instalments  ;STP --500.00 to 999.00 - 12 instalments; \n1,000.00 to 1,999.00 -  6 instalments;\n2,000.00 and more - 3 instalments \n(Post NFO Period)",
+        "dates": "SIP-- Any day/Any day/Any day/Any day/Monday-Friday/All Business Days  ;STP --Once a week i.e, on Monday (Post NFO Period)",
+        "maximum_amount": "SIP-- Not Applicable/Not Applicable/Not Applicable/Not Applicable/Not Applicable/Not Applicable  ;STP --Not Applicable/Not Applicable/Not Applicable/Not Applicable (Post NFO Period)"
+    },
+    "expenses_and_loads": {
+        "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": "Not Applicable",
+        "side_pocketing": "Applicable"
+    },
+    "amc_details": {
+        "sif_name": "Titanium SIF",
+        "amc_website": "https://www.tatamutualfund.com",
+        "scheme_bonus": null
+    },
+    "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
+    "registrar": "Computer Age Management Services Limited",
+    "custodian": "ICICI Bank LTD",
+    "auditor": "S.R. Batliboi & CO. LLP",
+    "sif_name": "Titanium SIF",
+    "scheme_id": "S-35",
+    "sif_id": "25",
+    "documents": {
+        "scheme_id": "S-35",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-35.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-35.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-35.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-35.xml"
+    }
+}
