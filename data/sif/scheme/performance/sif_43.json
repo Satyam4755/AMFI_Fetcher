@@ -2,7 +2,7 @@
     "sif_code": "SIF-43",
     "returns": {
         "1_day": -0.02,
-        "1_week": -0.1,
+        "1_week": -0.04,
         "1_month": 0.21,
         "3_month": null,
         "6_month": null,
@@ -12,11 +12,11 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 0.14
+        "since_launch": 0.12
     },
     "monthly_returns": {
-        "2026-09": 0.08,
+        "2026-09": 0.06,
         "2026-08": -0.13
     },
-    "last_updated": "2026-09-25T21:04:41Z"
+    "last_updated": "2026-09-28T22:55:24Z"
 }
