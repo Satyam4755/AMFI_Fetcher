@@ -1,0 +1,102 @@
+{
+    "sebi_code": null,
+    "scheme_name": "Summit Active Asset Allocator Long-Short Fund",
+    "fund_name": "Summit Active Asset Allocator Long-Short Fund",
+    "scheme_type": "Interval Fund",
+    "fund_type": "Interval Fund",
+    "category": "Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund",
+    "riskometer_at_launch": null,
+    "riskometer_as_on_date": null,
+    "potential_risk_class": null,
+    "scheme_objective": "To generate income by actively seeking arbitrage opportunities and investing across multiple\nasset classes, such as equity & equity related instruments, fixed income instruments and\ncommodity derivatives, while taking limited short exposure on permitted instruments through\nderivatives to optimize returns and manage risk.\n\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
+    "face_value": null,
+    "nfo_open_date": "2026-10-11",
+    "nfo_close_date": null,
+    "allotment_date": null,
+    "reopen_date": null,
+    "maturity_date": null,
+    "benchmark_tier_1": null,
+    "benchmark_tier_2": null,
+    "asset_allocation": null,
+    "listing_details": null,
+    "plans": {
+        "regular": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        },
+        "direct": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        }
+    },
+    "fund_managers": [],
+    "investment_limits": {
+        "minimum_application_amount": "10,00,000 and in multiples of Re. 1 thereafter.",
+        "application_multiple": null,
+        "minimum_additional_amount": null,
+        "additional_multiple": null,
+        "minimum_redemption_amount": null,
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": null,
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": null,
+        "dates": null,
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "For each purchase of units through Lumpsum / switch-in / Systematic Investment Plan (SIP),\nSystematic Transfer Plan (STP), exit load will be as follows:\n\nif units are redeemed/switched out on or before 30 days from the date of allotment: 0.50%\n• if units are redeemed/switched-out after 30 days, but on or before 60 days from the date of\nallotment: 0.25%\n• if units are redeemed/switched-out after 60 days: Nil\n• Switch between the Plans under the Investment Strategy: Nil\n",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "SUMMIT SIF",
+        "amc_website": "https://www.invescomutualfund.com",
+        "scheme_bonus": null
+    },
+    "exit_load": "For each purchase of units through Lumpsum / switch-in / Systematic Investment Plan (SIP),\nSystematic Transfer Plan (STP), exit load will be as follows:\n\nif units are redeemed/switched out on or before 30 days from the date of allotment: 0.50%\n• if units are redeemed/switched-out after 30 days, but on or before 60 days from the date of\nallotment: 0.25%\n• if units are redeemed/switched-out after 60 days: Nil\n• Switch between the Plans under the Investment Strategy: Nil\n",
+    "registrar": null,
+    "custodian": null,
+    "auditor": null,
+    "sif_name": "SUMMIT SIF",
+    "scheme_id": "S-37",
+    "sif_id": "42",
+    "documents": {
+        "scheme_id": "S-37",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-37.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-37.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-37.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-37.xml"
+    }
+}

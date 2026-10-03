@@ -1,0 +1,197 @@
+{
+    "sebi_code": "MAGM/O/E/EELS/26/06/0002/SBIM",
+    "scheme_name": "Magnum Equity Ex-Top 100 Long Short Fund",
+    "fund_name": "Magnum Equity Ex-Top 100 Long Short Fund",
+    "scheme_type": "An open ended investment strategy predominantly investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks.",
+    "fund_type": "An open ended investment strategy predominantly investing in equity and equity related instruments including limited short exposure in equity through derivative instruments, of stocks other than large cap stocks.",
+    "category": "EQUITY",
+    "riskometer_at_launch": "Risk Level - 3",
+    "riskometer_as_on_date": "Risk Level - 5",
+    "potential_risk_class": null,
+    "scheme_objective": "The investment objective of the strategy is to generate long-term capital appreciation by investing primarily in equity and equity-related instruments of stocks outside the top 100 by market capitalization, while utilizing limited short exposure through derivatives to enhance returns and/or manage risk.",
+    "face_value": "10.0000",
+    "nfo_open_date": "2026-08-07",
+    "nfo_close_date": "2026-08-20",
+    "allotment_date": "2026-08-27",
+    "reopen_date": "2026-09-02",
+    "maturity_date": null,
+    "benchmark_tier_1": "BSE 500 TRI",
+    "benchmark_tier_2": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "companies by market capitalization including REITs",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "companies by market capitalization including REITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        }
+    ],
+    "listing_details": "NO",
+    "plans": {
+        "regular": {
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular Plan - Growth:INF200K30072",
+                    "amfi_code": null,
+                    "isin_code": "INF200K30072",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Payout:INF200K30080",
+                        "amfi_code": null,
+                        "isin_code": "INF200K30080",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Reinvest:INF200K30098",
+                        "amfi_code": null,
+                        "isin_code": "INF200K30098",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct Plan - Growth:INF200K30106",
+                    "amfi_code": null,
+                    "isin_code": "INF200K30106",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct Plan - IDCW Payout:INF200K30114",
+                        "amfi_code": null,
+                        "isin_code": "INF200K30114",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Direct Plan - IDCW Reinvest:INF200K30122",
+                        "amfi_code": null,
+                        "isin_code": "INF200K30122",
+                        "rta_code": null
+                    }
+                ],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Gaurav Mehta",
+            "type": "",
+            "from": "",
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "Rs.100000.00",
+        "application_multiple": "Multiples of Re.1",
+        "minimum_additional_amount": "Rs.10000.00",
+        "additional_multiple": "Multiples of Re.1",
+        "minimum_redemption_amount": "Rs.100000.00",
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIPSTPSWPWeekly DayDailyWeeklyMonthlyQuarterlyHalf YearlyYearlyWeeklyMonthlyQuarterlyHalf YearlyYearly",
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": "SIPSTPSWPWeekly Day: 12 installments for Minimum SIP ofÂ Rs 10000.00Daily: 12 installments for Minimum SIP ofÂ Rs 10000.00Weekly: 12 installments for Minimum SIP ofÂ Rs 10000.00Monthly: 12 installments for Minimum SIP ofÂ Rs 10000.00Quarterly: 4 installments for Minimum SIP ofÂ Rs 10000.00Half Yearly: 2 installments for Minimum SIP ofÂ Rs 60000.00Yearly: 2 installments for Minimum SIP ofÂ Rs 60000.00Weekly: 1 installments for Minimum SWP ofÂ Rs 100000.00Monthly: 1 installments for Minimum SWP ofÂ Rs 100000.00Quarterly: 1 installments for Minimum SWP ofÂ Rs 100000.00Half Yearly: 1 installments for Minimum SWP ofÂ Rs 100000.00Yearly: 1 installments for Minimum SWP ofÂ Rs 100000.00",
+        "dates": "SIPSTPSWPWeekly Day: Any DayDaily: Any DayWeekly: 1, 8, 15, 22Monthly: Any DayQuarterly: Any DayHalf Yearly: Any DayYearly: Any DayWeekly: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30Monthly: Any DayQuarterly: Any DayHalf Yearly: Any DayYearly: Any Day",
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "Exit Load - For Ongoing Basis 1% of the applicable NAV - If units purchased or switched in from another Investment Strategy of the Fund are redeemed or switched out on or before 3 months from the date of allotment NIL - If units purchased or switched in from another Investment Strategy of the Fund are redeemed or switched out after 3 months from the date of allotment.",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular Plan : 1.88 Direct Plan : 0.78"
+    },
+    "special_facilities": {
+        "swing_pricing": "NO",
+        "side_pocketing": "NO"
+    },
+    "amc_details": {
+        "sif_name": "Magnum SIF",
+        "amc_website": "https://www.sbimf.com",
+        "scheme_bonus": null
+    },
+    "exit_load": "Exit Load - For Ongoing Basis 1% of the applicable NAV - If units purchased or switched in from another Investment Strategy of the Fund are redeemed or switched out on or before 3 months from the date of allotment NIL - If units purchased or switched in from another Investment Strategy of the Fund are redeemed or switched out after 3 months from the date of allotment.",
+    "registrar": "CAMS",
+    "custodian": "SBI-SG Global Securities Services Pvt. Ltd",
+    "auditor": "Chokshi & Chokshi LLP",
+    "sif_name": "Magnum SIF",
+    "scheme_id": "S-33",
+    "sif_id": "22",
+    "documents": {
+        "scheme_id": "S-33",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-33.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-33.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-33.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-33.xml"
+    }
+}

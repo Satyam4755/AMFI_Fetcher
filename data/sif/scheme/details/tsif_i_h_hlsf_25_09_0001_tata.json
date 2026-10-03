@@ -19,12 +19,12 @@
     "benchmark_tier_2": "Not Applicable",
     "asset_allocation": [
         {
-            "allocation_type": "Equity and Equity related instruments and Equity Derivatives",
+            "allocation_type": "Equity and Equity related instruments including REITs and Equity Derivatives",
             "minimum_percentage": 65,
             "maximum_percentage": 100
         },
         {
-            "allocation_type": "Cash",
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
             "minimum_percentage": 25,
             "maximum_percentage": 35
         },
@@ -43,15 +43,37 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-32 | SIF-31 | SIF-28 | SIF-29 | SIF-30 | SIF-27 | INF277K30021 | INF277K30054 | INF277K30013 | INF277K30047 | INF277K30039 | INF277K30062 | THD | THDZ | THG | THGZ | THDP | THDZP",
+                    "name": "SIF-32 | INF277K30021 | THD",
                     "amfi_code": "SIF-32",
                     "isin_code": "INF277K30021",
                     "rta_code": "THD"
                 }
             ],
             "idcw": {
-                "payout": [],
-                "reinvestment": [],
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-30 | INF277K30039 | THDP",
+                        "amfi_code": "SIF-30",
+                        "isin_code": "INF277K30039",
+                        "rta_code": "THDP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-27 | INF277K30062 | THDZP",
+                        "amfi_code": "SIF-27",
+                        "isin_code": "INF277K30062",
+                        "rta_code": "THDZP"
+                    }
+                ],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []
@@ -59,10 +81,43 @@
             "unresolved": []
         },
         "direct": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "SIF-31 | INF277K30054 | THDZ",
+                    "amfi_code": "SIF-31",
+                    "isin_code": "INF277K30054",
+                    "rta_code": "THDZ"
+                }
+            ],
             "idcw": {
-                "payout": [],
-                "reinvestment": [],
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "SIF-28 | INF277K30013 | THG",
+                        "amfi_code": "SIF-28",
+                        "isin_code": "INF277K30013",
+                        "rta_code": "THG"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "SIF-29 | INF277K30047 | THGZ",
+                        "amfi_code": "SIF-29",
+                        "isin_code": "INF277K30047",
+                        "rta_code": "THGZ"
+                    }
+                ],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []
@@ -72,9 +127,9 @@
     },
     "fund_managers": [
         {
-            "name": "1 Suraj Nanda, FM-2 Amit Somani; FM-3 Hasmukh Devji Vishariya",
+            "name": "1 Suraj Nanda, FM-2 Akhil Mittal; FM-3 Hasmukh Devji Vishariya",
             "type": "1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)",
-            "from": "1 17/11/2025, FM-2 17/11/2025, FM-3 17/11/2025,",
+            "from": "1 17/11/2025, FM-2 01/06/2026, FM-3 17/11/2025,",
             "to": null,
             "role_or_portion": "FM"
         }
@@ -99,17 +154,17 @@
         "maximum_switch_units": "Not Applicable."
     },
     "systematic_investment_plans": {
-        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)",
+        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Once a week (Every Wednesday)",
         "minimum_amount": "SIP-- 1000.00/1000.00/1000.00/1000.00/1000.00/1000.00  ;STP --500.00/500.00/500.00/500.00",
         "in_multiples_of": "SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00/1.00/1.00/1.00 (Post NFO Period)",
         "minimum_installments": "SIP-- 12 Instalments/6 instalments/6 instalments/4 instalments/12 instalments/12 instalments  ;STP --500.00 to 999.00 - 12 instalments; \n1,000.00 to 1,999.00 -  6 instalments;\n2,000.00 and more - 3 instalments \n(Post NFO Period)",
-        "dates": "SIP-- Any day/Any day/Any day/Any day/Monday-Friday/All Business Days  ;STP --Once a month (Post NFO Period)",
+        "dates": "SIP-- Any day/Any day/Any day/Any day/Monday-Friday/All Business Days  ;STP --Once a week (Every Wednesday)",
         "maximum_amount": "SIP-- 999.00/Not Applicable/Not Applicable/Not Applicable/Not Applicable/Not Applicable  ;STP --Not Applicable/Not Applicable/Not Applicable/Not Applicable (Post NFO Period)"
     },
     "expenses_and_loads": {
-        "exit_load": "1. Redemption/Switch-out on or before expiry of 1 year from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 year from the date of allotment-Nil",
+        "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
         "actual_expense": null,
-        "stated_maximum_expense": "Regular upto 2.25%, Direct upto 2.25%"
+        "stated_maximum_expense": "Regular upto 2.10%, Direct upto 2.10%"
     },
     "special_facilities": {
         "swing_pricing": "Not Applicable",
@@ -120,7 +175,7 @@
         "amc_website": "https://www.tatamutualfund.com",
         "scheme_bonus": null
     },
-    "exit_load": "1. Redemption/Switch-out on or before expiry of 1 year from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 year from the date of allotment-Nil",
+    "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
     "registrar": "Computer Age Management Services Limited",
     "custodian": "ICICI Bank LTD",
     "auditor": "S.R. Batliboi & CO. LLP",

@@ -164,7 +164,7 @@
     "expenses_and_loads": {
         "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",
         "actual_expense": null,
-        "stated_maximum_expense": "Regular: 3.01, Direct: 1.28"
+        "stated_maximum_expense": "Regular: 3.01, Direct: 1.34"
     },
     "special_facilities": {
         "swing_pricing": "Not applicable",

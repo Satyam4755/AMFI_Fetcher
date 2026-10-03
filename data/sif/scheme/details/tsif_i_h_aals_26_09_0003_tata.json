@@ -164,7 +164,7 @@
         "maximum_switch_units": "Not Applicable."
     },
     "systematic_investment_plans": {
-        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)",
+        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Once a week i.e, on Monday (Post NFO Period)",
         "minimum_amount": "SIP-- 1000.00/1000.00/1000.00/1000.00/1000.00/1000.00  ;STP --500.00/500.00/500.00/500.00",
         "in_multiples_of": "SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00/1.00/1.00/1.00 (Post NFO Period)",
         "minimum_installments": "SIP-- 12 Instalments/6 instalments/6 instalments/4 instalments/12 instalments/12 instalments  ;STP --500.00 to 999.00 - 12 instalments; \n1,000.00 to 1,999.00 -  6 instalments;\n2,000.00 and more - 3 instalments \n(Post NFO Period)",
@@ -187,7 +187,7 @@
     },
     "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
     "registrar": "Computer Age Management Services Limited",
-    "custodian": "ICICI Bank LTD",
+    "custodian": "ICICI Bank LTD, Orbis Financial Corporation Ltd.",
     "auditor": "S.R. Batliboi & CO. LLP",
     "sif_name": "Titanium SIF",
     "scheme_id": "S-35",
