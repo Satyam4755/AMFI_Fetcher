@@ -32,51 +32,6 @@
             "allocation_type": "Units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity and equity-related instruments (including unhedged short exposure)",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments including units of debt oriented mutual fund schemes",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity and equity-related instruments (including unhedged short exposure)",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments including units of debt oriented mutual fund schemes",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity and equity-related instruments (including unhedged short exposure)",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments including units of debt oriented mutual fund schemes",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
         }
     ],
     "listing_details": "As the Investment Strategy is an open ended strategy, and the units of the Investment Strategy will be offered for subscription and redemption at NAV based prices on all Business Days on an on-going basis providing the required liquidity to investors, units of the Investment Strategy are not proposed to be listed on any stock exchange.  \nHowever, the Trustee reserves the right to list the units of the Investment Strategy on any stock exchange(s) at its sole discretion at a later date.",
@@ -172,11 +127,18 @@
     },
     "fund_managers": [
         {
-            "name": "Mr.Rajesh Aynor, FM 2 - Mr.Hiten Bhadra(for Arbitrage portion)",
-            "type": "Co-manage, FM 2 - Co-manage",
-            "from": "25-05-2026, FM 2 - 25-05-2026",
+            "name": "Mr.Rajesh Aynor",
+            "type": "Co-manage",
+            "from": "2026-05-25",
             "to": null,
-            "role_or_portion": "FM 1"
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr.Hiten Bhadra(for Arbitrage portion)",
+            "type": "Co-manage",
+            "from": "2026-05-25",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

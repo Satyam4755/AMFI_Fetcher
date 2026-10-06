@@ -10,59 +10,14 @@
     "potential_risk_class": "N.A.",
     "scheme_objective": "To achieve long-term capital appreciation by concentrating investments in\nequity and equity-related instruments of up to four high-potential sectors,\nwhile employing limited short exposure through derivatives to capitalize on\nsector-specific downturns and enhance risk-adjusted returns.",
     "face_value": "10",
-    "nfo_open_date": "4/27/2026 12:00:00 AM",
-    "nfo_close_date": "5/11/2026 12:00:00 AM",
-    "allotment_date": "5/15/2026 12:00:00 AM",
-    "reopen_date": "5/18/2026 12:00:00 AM",
+    "nfo_open_date": "2026-04-27",
+    "nfo_close_date": "2026-11-05",
+    "allotment_date": "2026-05-15",
+    "reopen_date": "2026-05-18",
     "maturity_date": null,
     "benchmark_tier_1": "NIFTY 500 Total Return Index (TRI)",
     "benchmark_tier_2": null,
     "asset_allocation": [
-        {
-            "allocation_type": "Investment in equity and equity-related instruments of maximum 4 sectors",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity-related instruments of maximum 4 sectors",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity-related instruments of maximum 4 sectors",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
         {
             "allocation_type": "Investment in equity and equity-related instruments of maximum 4 sectors",
             "minimum_percentage": 80,
@@ -174,35 +129,35 @@
         {
             "name": "Sandeep Tandon",
             "type": "Primary",
-            "from": "5/15/2026 12:00:00 AM",
+            "from": "2026-05-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Jignesh Shah",
             "type": "Co manage",
-            "from": "5/15/2026 12:00:00 AM",
+            "from": "2026-05-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Ankit Pande",
             "type": "Co manage",
-            "from": "5/15/2026 12:00:00 AM",
+            "from": "2026-05-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sameer Kate",
             "type": "Co manage",
-            "from": "5/15/2026 12:00:00 AM",
+            "from": "2026-05-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sanjeev Sharma",
             "type": "",
-            "from": "5/15/2026 12:00:00 AM",
+            "from": "2026-05-15",
             "to": null,
             "role_or_portion": null
         }

@@ -10,74 +10,14 @@
     "potential_risk_class": "N.A.",
     "scheme_objective": "To achieve long-term capital appreciation and income generation by dynamically allocating investments across multiple asset classes—equity, debt, equity and debt derivatives, REITs/InVITs, and commodity derivatives—while utilizing up to 25% short exposure on permitted instruments through derivatives to optimize returns and manage risk efficiently.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "4/2/2026 12:00:00 AM",
-    "nfo_close_date": "4/16/2026 12:00:00 AM",
-    "allotment_date": "4/21/2026 12:00:00 AM",
-    "reopen_date": "4/24/2026 12:00:00 AM",
+    "nfo_open_date": "2026-02-04",
+    "nfo_close_date": "2026-04-16",
+    "allotment_date": "2026-04-21",
+    "reopen_date": "2026-04-24",
     "maturity_date": null,
     "benchmark_tier_1": "40% NSE 500 TRI + 30% CRISIL Short Term Bond Fund Index + 30% iCOMDEX Composite Index",
     "benchmark_tier_2": null,
     "asset_allocation": [
-        {
-            "allocation_type": "Investment in equity and equity-related instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Exchange Traded Commodity Derivatives (ETCDs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 30
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity-related instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Exchange Traded Commodity Derivatives (ETCDs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 30
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity-related instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Exchange Traded Commodity Derivatives (ETCDs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 30
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
         {
             "allocation_type": "Investment in equity and equity-related instruments",
             "minimum_percentage": 0,
@@ -194,35 +134,35 @@
         {
             "name": "Sandeep Tandon",
             "type": "Primary",
-            "from": "4/21/2026 12:00:00 AM",
+            "from": "2026-04-21",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Jignesh Shah",
             "type": "Co manage",
-            "from": "4/21/2026 12:00:00 AM",
+            "from": "2026-04-21",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Ankit Pande",
             "type": "Co manage",
-            "from": "4/21/2026 12:00:00 AM",
+            "from": "2026-04-21",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sameer Kate",
             "type": "Co manage",
-            "from": "4/21/2026 12:00:00 AM",
+            "from": "2026-04-21",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sanjeev Sharma",
             "type": "",
-            "from": "4/21/2026 12:00:00 AM",
+            "from": "2026-04-21",
             "to": null,
             "role_or_portion": null
         }

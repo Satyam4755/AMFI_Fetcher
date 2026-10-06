@@ -73,37 +73,44 @@
     },
     "fund_managers": [
         {
-            "name": "Fund Manager 1 - Name",
+            "name": "Ms. Sharmila D’silva",
             "type": "Primary",
             "from": "2026-06-05",
             "to": null,
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager 2 - Name",
-            "type": "Fund Manager 2 - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager 2 - From Date",
+            "name": "Ms. Masoomi Jhurmrvala",
+            "type": "Primary",
+            "from": "2026-06-05",
             "to": null,
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager 3 - Name",
-            "type": "Fund Manager 3 - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager 3 - From Date",
+            "name": "Mr. Manish Banthia",
+            "type": "Primary",
+            "from": "2026-06-05",
             "to": null,
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager 4 - Name",
-            "type": "Fund Manager 4 - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager 4 - From Date",
+            "name": "Mr. Akhil Kakkar",
+            "type": "Primary",
+            "from": "2026-06-05",
             "to": null,
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager 5 - Name",
-            "type": "Fund Manager 5 - Type (Primary/Comanage/Description)",
+            "name": "Mr. Gaurav Chikane",
+            "type": "Primary",
             "from": null,
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "05T00:00:00.000",
+            "type": "",
+            "from": "2026-06-05",
             "to": null,
             "role_or_portion": null
         }

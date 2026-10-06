@@ -32,51 +32,6 @@
             "allocation_type": "Units Issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Debt & Money Market Instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Equity & Equity Related Instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Units Issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Debt & Money Market Instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Equity & Equity Related Instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Units Issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Debt & Money Market Instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Equity & Equity Related Instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Units Issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
         }
     ],
     "listing_details": "Yes; NSE and BSE",
@@ -452,11 +407,32 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Brijesh Shah, FM 2  - Mr. Debraj Lahiri                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Equity Portion: FM 1 - Mr. Kapil Kankonkar, FM 2 - Mr. Nilesh Saha",
-            "type": "Comanage, FM 2 - Comanage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Equity Portion: FM 1 - Comanage, FM 2 - Comanage",
-            "from": "28-Jan-2026, FM 2 - 28-Jan-2026                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      Equity Portion: FM 1 - 28-Jan-2026, FM 2 - 28-Jan-2026",
+            "name": "Mr. Brijesh Shah",
+            "type": "Debt Portion: FM 1 - Comanage",
+            "from": "2026-01-28",
             "to": null,
-            "role_or_portion": "Debt Portion: FM 1"
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Debraj Lahiri",
+            "type": "Comanage",
+            "from": "2026-01-28",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Kapil Kankonkar",
+            "type": "Equity Portion: FM 1 - Comanage",
+            "from": "2026-01-28",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Nilesh Saha",
+            "type": "Comanage",
+            "from": "2026-01-28",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

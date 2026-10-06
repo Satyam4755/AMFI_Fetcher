@@ -32,51 +32,6 @@
             "allocation_type": "Investments in InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments * (including unhedged short exposure mentioned below)",
-            "minimum_percentage": 35,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investments in Debt & Money Market Instruments (including unhedged short exposure mentioned below)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Investments in InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments * (including unhedged short exposure mentioned below)",
-            "minimum_percentage": 35,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investments in Debt & Money Market Instruments (including unhedged short exposure mentioned below)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Investments in InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments * (including unhedged short exposure mentioned below)",
-            "minimum_percentage": 35,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investments in Debt & Money Market Instruments (including unhedged short exposure mentioned below)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Investments in InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
         }
     ],
     "listing_details": "Listed on BSE & NSE",
@@ -172,8 +127,22 @@
     },
     "fund_managers": [
         {
-            "name": "FM 3 : Mr. Abhishek Bisen",
+            "name": "Mr.Hiten Shah",
+            "type": "Mr. Hiten Shah & Mr. Kalpesh Jain will be the fund managers for Equity and Overseas investment of theInvestment Strategy.",
+            "from": "2026-07-06",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Kalpesh Jain",
             "type": "Mr. Abhishek Bisen will be the Fund Manager for debt and money market investment of the Investment Strategy.",
+            "from": "2026-07-06",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Abhishek Bisen",
+            "type": "",
             "from": "2026-07-06",
             "to": null,
             "role_or_portion": null

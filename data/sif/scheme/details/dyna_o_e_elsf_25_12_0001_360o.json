@@ -17,7 +17,13 @@
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "BSE 500 TRI",
     "benchmark_tier_2": null,
-    "asset_allocation": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "Stated Asset Allocation",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        }
+    ],
     "listing_details": "Not Listed",
     "plans": {
         "regular": {
@@ -111,10 +117,17 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Harsh Aggarwal , Mr. Pranav Mise",
-            "type": "",
-            "from": "",
-            "to": null,
+            "name": "Mr. Harsh Aggarwal",
+            "type": "Mr. Harsh Aggarwal - Primary",
+            "from": "2026-02-25",
+            "to": "Regular 2.1, Direct 0.83",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Pranav Mise",
+            "type": "Mr.Pranav Mise - Comanage",
+            "from": "2026-04-24",
+            "to": "Regular 2.1, Direct 0.83",
             "role_or_portion": null
         }
     ],

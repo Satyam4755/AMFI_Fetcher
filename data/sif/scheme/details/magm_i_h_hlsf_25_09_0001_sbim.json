@@ -42,156 +42,6 @@
             "allocation_type": "Units issued by REITs and InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 10
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 65,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
-            "minimum_percentage": 25,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 10
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 65,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
-            "minimum_percentage": 25,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 10
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 65,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
-            "minimum_percentage": 25,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 10
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 65,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
-            "minimum_percentage": 25,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 10
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 65,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
-            "minimum_percentage": 25,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 10
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 65,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
-            "minimum_percentage": 25,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 10
         }
     ],
     "listing_details": "NO",
@@ -221,9 +71,9 @@
     },
     "fund_managers": [
         {
-            "name": "[{'Name': 'Mr. Gaurav Mehta', 'FundManagerType': 'Fund Manager', 'FundManagerFromDate': '29-Oct-2025'}]",
-            "type": "",
-            "from": "",
+            "name": "Mr. Gaurav Mehta",
+            "type": "Fund Manager",
+            "from": "2025-10-29",
             "to": null,
             "role_or_portion": null
         }

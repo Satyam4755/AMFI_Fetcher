@@ -32,66 +32,6 @@
             "allocation_type": "Units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity and Equity related instruments# (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Debt & Money Market Instruments (including Units of Debt oriented mutual fund schemes and Debt ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity and Equity related instruments# (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Debt & Money Market Instruments (including Units of Debt oriented mutual fund schemes and Debt ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity and Equity related instruments# (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Debt & Money Market Instruments (including Units of Debt oriented mutual fund schemes and Debt ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity and Equity related instruments# (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 80,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Debt & Money Market Instruments (including Units of Debt oriented mutual fund schemes and Debt ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
         }
     ],
     "listing_details": "NA",
@@ -150,9 +90,9 @@
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager II - Name",
-            "type": "Fund Manager II - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager II - From Date",
+            "name": "Mr. Harshil Suvarnkar",
+            "type": "Comanage",
+            "from": "2026-08-31",
             "to": null,
             "role_or_portion": null
         }
@@ -186,7 +126,7 @@
     },
     "expenses_and_loads": {
         "exit_load": "For redemption/switch-out of units on or before 365 days from the date of allotment: 1% of applicable NAV.\nFor redemption/switch-out of units after 365 days from the date of allotment: Nil.",
-        "actual_expense": null,
+        "actual_expense": "Actual Expense",
         "stated_maximum_expense": null
     },
     "special_facilities": {

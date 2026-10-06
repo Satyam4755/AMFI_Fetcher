@@ -22,26 +22,6 @@
             "allocation_type": "Equity and Equity related securities (including up to 25% in Unhedged short exposure through derivative instruments)",
             "minimum_percentage": null,
             "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity and Equity related securities (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": null,
-            "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity and Equity related securities (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": null,
-            "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity and Equity related securities (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": null,
-            "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity and Equity related securities (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": null,
-            "maximum_percentage": null
         }
     ],
     "listing_details": "Listed on BSE and NSE",
@@ -100,23 +80,23 @@
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager 2 - Name",
-            "type": "Fund Manager 2 - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager 2 - From Date",
+            "name": "Mr.Ayush Shah",
+            "type": "Primary",
+            "from": "2026-02-04",
             "to": null,
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager 3 - Name",
-            "type": "Fund Manager 3 - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager 3 - From Date",
+            "name": "Mr. Manish Banthia",
+            "type": "Primary",
+            "from": "2026-02-04",
             "to": null,
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager 4 - Name",
-            "type": "Fund Manager 4 - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager 4 - From Date",
+            "name": "Mr. Akhil Kakkar",
+            "type": "Primary",
+            "from": "2026-02-04",
             "to": null,
             "role_or_portion": null
         }

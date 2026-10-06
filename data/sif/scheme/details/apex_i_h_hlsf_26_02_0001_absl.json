@@ -27,46 +27,6 @@
             "allocation_type": "Derivatives exposure will be upto 100% & Unhedged short position will be upto 25% of net assets for both equity and debt instruments",
             "minimum_percentage": null,
             "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments - 35% - 65% # Debt and Money Market Instruments- 35%- 65% ## Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Derivatives exposure will be upto 100% & Unhedged short position will be upto 25% of net assets for both equity and debt instruments",
-            "minimum_percentage": null,
-            "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments - 35% - 65% # Debt and Money Market Instruments- 35%- 65% ## Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Derivatives exposure will be upto 100% & Unhedged short position will be upto 25% of net assets for both equity and debt instruments",
-            "minimum_percentage": null,
-            "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments - 35% - 65% # Debt and Money Market Instruments- 35%- 65% ## Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Derivatives exposure will be upto 100% & Unhedged short position will be upto 25% of net assets for both equity and debt instruments",
-            "minimum_percentage": null,
-            "maximum_percentage": null
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments - 35% - 65% # Debt and Money Market Instruments- 35%- 65% ## Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Derivatives exposure will be upto 100% & Unhedged short position will be upto 25% of net assets for both equity and debt instruments",
-            "minimum_percentage": null,
-            "maximum_percentage": null
         }
     ],
     "listing_details": "National Stock Exchange of India Limited (NSE)",
@@ -169,16 +129,16 @@
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager II - Name",
-            "type": "Fund Manager II - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager II - From Date",
+            "name": "Mr. Mohit Sharma",
+            "type": "Comanage",
+            "from": "2026-03-25",
             "to": null,
             "role_or_portion": null
         },
         {
-            "name": "Fund Manager III - Name",
-            "type": "Fund Manager III - Type (Primary/Comanage/Description)",
-            "from": "Fund Manager III - From Date",
+            "name": "Mr. Rohit Karan",
+            "type": "Comanage",
+            "from": "2026-04-02",
             "to": null,
             "role_or_portion": null
         }
@@ -212,7 +172,7 @@
     },
     "expenses_and_loads": {
         "exit_load": "For redemption/switch-out of units on or before 90 days from the date of allotment: 0.50% of applicable NAV.\nFor redemption/switch-out of units after 90 days from the date of allotment: Nil.",
-        "actual_expense": null,
+        "actual_expense": "Actual Expense",
         "stated_maximum_expense": null
     },
     "special_facilities": {

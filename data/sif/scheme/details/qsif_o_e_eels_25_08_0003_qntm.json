@@ -10,74 +10,14 @@
     "potential_risk_class": "N.A.",
     "scheme_objective": "To generate long-term capital appreciation by investing primarily in equity and equity-related instruments of stocks outside the top 100 by market capitalization, while utilizing limited short exposure through derivatives to enhance returns and manage risk. There is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "10/24/2025 12:00:00 AM",
-    "nfo_close_date": "11/7/2025 12:00:00 AM",
-    "allotment_date": "11/12/2025 12:00:00 AM",
-    "reopen_date": "11/13/2025 12:00:00 AM",
+    "nfo_open_date": "2025-10-24",
+    "nfo_close_date": "2025-07-11",
+    "allotment_date": "2025-12-11",
+    "reopen_date": "2025-11-13",
     "maturity_date": null,
     "benchmark_tier_1": "NIFTY 500 Total Return Index (TRI)",
     "benchmark_tier_2": null,
     "asset_allocation": [
-        {
-            "allocation_type": "Investment in equity and equity related instruments of companies excluding the top 100 companies by market capitalization",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments of companies - top 100 companies by market capitalization",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Investments in Debt & Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments of companies excluding the top 100 companies by market capitalization",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments of companies - top 100 companies by market capitalization",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Investments in Debt & Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments of companies excluding the top 100 companies by market capitalization",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Investment in equity and equity related instruments of companies - top 100 companies by market capitalization",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Investments in Debt & Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Investments in InVITS",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
         {
             "allocation_type": "Investment in equity and equity related instruments of companies excluding the top 100 companies by market capitalization",
             "minimum_percentage": 65,
@@ -194,35 +134,35 @@
         {
             "name": "Sandeep Tandon",
             "type": "Primary",
-            "from": "11/12/2025 12:00:00 AM",
+            "from": "2025-12-11",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Ankit Pande",
             "type": "Co manage",
-            "from": "11/12/2025 12:00:00 AM",
+            "from": "2025-12-11",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sameer Kate",
             "type": "Co manage",
-            "from": "11/12/2025 12:00:00 AM",
+            "from": "2025-12-11",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sanjeev Sharma",
             "type": "Co manage",
-            "from": "11/12/2025 12:00:00 AM",
+            "from": "2025-12-11",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Jignesh Shah",
             "type": "",
-            "from": "2/20/2026 12:00:00 AM",
+            "from": "2026-02-20",
             "to": null,
             "role_or_portion": null
         }

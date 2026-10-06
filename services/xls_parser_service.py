@@ -44,16 +44,23 @@ def parse_summary_xls(xls_path: str) -> dict:
                         d = c.find("./ss:Data", ns)
                         text = d.text.strip() if (d is not None and d.text) else ""
                         cells.append(text)
+                    while cells and not cells[-1]:
+                        cells.pop()
                     if any(cells):
-                        if len(cells) >= 3 and (re.match(r"^\d+$", cells[0]) or cells[0] == "Fields"):
-                            row_dict = {cells[0]: cells[1], cells[1]: cells[2], "val": cells[2]}
+                        if len(cells) >= 3:
+                            label = cells[1] if cells[1] else cells[0]
+                            val = cells[2] if cells[1] else (cells[1] if len(cells) > 1 else "")
+                            row_dict = {label: val, "val": val}
                             if re.match(r"^\d+$", cells[0]):
-                                row_dict[f"field_{cells[0]}"] = cells[2]
+                                row_dict[cells[0]] = label
+                                row_dict[f"field_{cells[0]}"] = val
                             rows.append(row_dict)
-                        elif len(cells) >= 2:
-                            row_dict = {cells[0]: cells[1], "val": cells[1]}
+                        elif len(cells) == 2:
+                            label = cells[0]
+                            val = cells[1]
+                            row_dict = {label: val, "val": val}
                             if re.match(r"^\d+$", cells[0]):
-                                row_dict[f"field_{cells[0]}"] = cells[1]
+                                row_dict[f"field_{cells[0]}"] = val
                             rows.append(row_dict)
                         elif len(cells) == 1:
                             rows.append({"col0": cells[0]})

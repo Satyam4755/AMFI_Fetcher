@@ -37,66 +37,6 @@
             "allocation_type": "Units of InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units of InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units of InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments",
-            "minimum_percentage": 35,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units of InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
         }
     ],
     "listing_details": "NSE",
@@ -148,9 +88,37 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Arun Ramachandran, Ms. Tanvi Kacheria, Mr. Siddharth Deb, Mr. Virendra Kumar, Mr. Manish Kalani",
+            "name": "Mr. Arun Ramachandran",
             "type": "Comanage",
-            "from": "",
+            "from": "2026-07-28",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Ms. Tanvi Kacheria",
+            "type": "Comanage",
+            "from": "2026-07-28",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Siddharth Deb",
+            "type": "Comanage",
+            "from": "2026-07-28",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Virendra Kumar",
+            "type": "Comanage",
+            "from": "2026-07-28",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Manish Kalani",
+            "type": "Comanage",
+            "from": "2026-07-28",
             "to": null,
             "role_or_portion": null
         }

@@ -16,88 +16,8 @@
     "reopen_date": "2026-06-10",
     "maturity_date": "Not applicable",
     "benchmark_tier_1": "Nifty 500 TRI",
-    "benchmark_tier_2": null,
+    "benchmark_tier_2": "Benchmark (Tier 2)",
     "asset_allocation": [
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs) of Ex- Top 100* companies (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Other Equity and Equity related securities",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and money market instruments and Units of Debt Oriented Mutual Funds",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs) of Ex- Top 100* companies (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Other Equity and Equity related securities",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and money market instruments and Units of Debt Oriented Mutual Funds",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs) of Ex- Top 100* companies (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Other Equity and Equity related securities",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and money market instruments and Units of Debt Oriented Mutual Funds",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs) of Ex- Top 100* companies (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Other Equity and Equity related securities",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and money market instruments and Units of Debt Oriented Mutual Funds",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
         {
             "allocation_type": "Equity & Equity related instruments (inlcuding REITs) of Ex- Top 100* companies (including up to 25% in Unhedged short exposure through derivative instruments)",
             "minimum_percentage": 65,
@@ -234,9 +154,30 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Nikhil Gada, Mr. Trideep Bhattacharya, Mr. Ashish Sood, Mr. Amit Vora (Overseas portion)",
-            "type": "Mr. Nikhil Gada (Comanage), Mr. Trideep Bhattacharya (Comanage), Mr. Ashish Sood (Assistant Fund Manager), Mr. Amit Vora (Overseas portion)",
-            "from": "",
+            "name": "Mr. Nikhil Gada",
+            "type": "Mr. Nikhil Gada (Comanage)",
+            "from": "2026-06-08",
+            "to": "Direct Plan - 1.99%",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Trideep Bhattacharya",
+            "type": "Mr. Trideep Bhattacharya (Comanage)",
+            "from": "2026-06-08",
+            "to": "Regular Plan - 3.49%",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Ashish Sood",
+            "type": "Mr. Ashish Sood (Assistant Fund Manager)",
+            "from": "2026-08-03",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Amit Vora (Overseas portion)",
+            "type": "Mr. Amit Vora (Overseas portion)",
+            "from": "2026-06-08",
             "to": null,
             "role_or_portion": null
         }

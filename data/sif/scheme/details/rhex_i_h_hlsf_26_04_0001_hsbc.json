@@ -47,96 +47,6 @@
             "allocation_type": "Units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equities & Equity related securities",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "out of which: Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units of REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments (including cash and cash equivalents)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equities & Equity related securities",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "out of which: Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units of REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments (including cash and cash equivalents)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equities & Equity related securities",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "out of which: Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Unhedged (Short derivatives)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units of REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments (including cash and cash equivalents)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
         }
     ],
     "listing_details": "Yes; NSE",
@@ -272,11 +182,32 @@
     },
     "fund_managers": [
         {
-            "name": "Shriram Ramanathan, FM2 - Praveen Ayathan, FM3 - Venugopal Manghat, FM4 - Mayank Chaturvedi",
-            "type": "Fixed Income, REITs &amp; InvITs, FM2 - Arbitrage, FM3 - Equity, FM4 - Foreign Securities",
-            "from": "June 19, 2026, FM2 - June 19, 2026, FM3 - June 19, 2026, FM4 - June 19, 2026",
+            "name": "Shriram Ramanathan",
+            "type": "Fixed Income, REITs & InvITs",
+            "from": "2026-06-19",
             "to": null,
-            "role_or_portion": "FM1"
+            "role_or_portion": null
+        },
+        {
+            "name": "Praveen Ayathan",
+            "type": "Arbitrage",
+            "from": "2026-06-19",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Venugopal Manghat",
+            "type": "Equity",
+            "from": "2026-06-19",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mayank Chaturvedi",
+            "type": "Foreign Securities",
+            "from": "2026-06-19",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

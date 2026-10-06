@@ -15,12 +15,20 @@ def build_scheme_json(api_data, rows):
         if not isinstance(row, dict):
             continue
 
-        # Check for explicit field_N keys
+        # 1. Direct dictionary entries (keys that are already semantic field names)
         for k, v in row.items():
-            if str(k).startswith("field_") and v:
-                xls_data[str(k)] = v
+            if v is not None and not (isinstance(v, str) and v.strip().lower() in ("nan", "none", "null", "")):
+                k_str = str(k).strip()
+                k_lower = k_str.lower()
+                if k_lower.startswith("field_"):
+                    xls_data[k_lower] = v
+                if k_lower not in ("fields", "field", "0", "1", "2", "3", "col0", "col1", "col2", "col3", "val", "unnamed: 0", "unnamed: 1", "unnamed: 2") and not k_str.isdigit():
+                    if k_str in xls_data and xls_data[k_str] != v:
+                        xls_data[f"{k_str}_2"] = v
+                    else:
+                        xls_data[k_str] = v
 
-        # Check if any column contains numeric field index (e.g. Fields: 8 or 0: '8')
+        # 2. Check if any column contains numeric field index (e.g. Fields: 8 or 0: '8')
         field_num = None
         for k, v in row.items():
             if str(k).lower() in ("fields", "field", "0", "col0", "sr no", "sr. no.", "s.no.", "sno"):
@@ -29,7 +37,7 @@ def build_scheme_json(api_data, rows):
             elif str(k).isdigit() and str(v).strip():
                 field_num = str(k).strip()
 
-        # If it's a key-value row (e.g. 2-4 columns with metadata keys like AttributeName/Value or SUMMARY/Unnamed: 2 or Fields/col0)
+        # 3. Check for label-value pairs where label is inside a cell (e.g. SUMMARY/Unnamed: 2 or Fields/col0 or 0/1)
         vals = [(str(k).strip(), v) for k, v in row.items() if v is not None and not (isinstance(v, str) and (v.strip().lower() in ("nan", "none", "null", "") or v.strip() == ""))]
         
         is_kv_row = len(vals) <= 4 and any(
@@ -41,13 +49,17 @@ def build_scheme_json(api_data, rows):
         if is_kv_row:
             key_val = None
             val_val = None
-            for col_name, v in vals:
-                if key_val is None:
-                    if isinstance(v, str) and not re.match(r'^\d+(\.\d+)?$', str(v).strip()):
-                        key_val = str(v).strip()
-                elif val_val is None:
-                    val_val = v
-                    break
+            if len(vals) >= 2 and all(k.isdigit() for k, _ in vals):
+                key_val = str(vals[0][1]).strip()
+                val_val = vals[1][1] if len(vals) == 2 else vals[-1][1]
+            else:
+                for col_name, v in vals:
+                    if key_val is None:
+                        if isinstance(v, str) and not re.match(r'^\d+(\.\d+)?$', str(v).strip()):
+                            key_val = str(v).strip()
+                    elif val_val is None:
+                        val_val = v
+                        break
             if key_val and val_val is not None:
                 if key_val in xls_data and xls_data[key_val] != val_val:
                     xls_data[f"{key_val}_2"] = val_val
@@ -55,17 +67,6 @@ def build_scheme_json(api_data, rows):
                     xls_data[key_val] = val_val
             if field_num and val_val is not None:
                 xls_data[f"field_{field_num}"] = val_val
-            continue
-
-        # If it's a direct dictionary of scheme fields (e.g. from XML or single-row dict where keys are field names)
-        for k, v in row.items():
-            if v is not None and not (isinstance(v, str) and v.strip().lower() in ("nan", "none", "null", "")):
-                k_str = str(k).strip()
-                if k_str not in ("Fields", "col0", "val"):
-                    if k_str in xls_data and xls_data[k_str] != v:
-                        xls_data[f"{k_str}_2"] = v
-                    else:
-                        xls_data[k_str] = v
 
     def get_val(possible_keys, exclude_keys=None):
         for pk in possible_keys:
@@ -82,28 +83,46 @@ def build_scheme_json(api_data, rows):
                     return val
         return None
 
+    DATE_REGEXES = [
+        r'(\d{4}-\d{2}-\d{2})',
+        r'\b(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})\b',
+        r'\b(\d{1,2}-[A-Za-z]{3,9}-\d{2,4})\b',
+        r'\b(\d{1,2}(?:st|nd|rd|th)?\s+[A-Za-z]{3,9},?\s+\d{2,4})\b',
+        r'\b([A-Za-z]{3,9}\s+\d{1,2}(?:st|nd|rd|th)?,?\s+\d{2,4})\b'
+    ]
+
     def normalize_date(d_str):
         if not d_str: return None
         if hasattr(d_str, 'strftime'):
             return d_str.strftime("%Y-%m-%d")
         d_clean = str(d_str).strip()
-        if re.search(r'(?i)^(NA|N\.A\.|N/A|-|TBD)$', d_clean) or not d_clean: return None
-        m = re.match(r'^(\d{4}-\d{2}-\d{2})', d_clean)
-        if m:
-            return m.group(1)
+        if re.search(r'(?i)^(NA|N\.A\.|N/A|-|--|TBD|null|none|managing since inception)$', d_clean) or not d_clean:
+            return None
+        
         from datetime import datetime
-        formats = [
-            "%d-%b-%Y", "%d-%b-%y", "%d-%m-%Y", "%d/%m/%Y", "%Y-%m-%d",
-            "%d %b %Y", "%d %B %Y", "%b %d, %Y", "%B %d, %Y",
-            "%d-%m-%y", "%d/%m/%y"
-        ]
-        for fmt in formats:
-            try:
-                parsed = datetime.strptime(d_clean, fmt)
-                return parsed.strftime("%Y-%m-%d")
-            except ValueError:
-                continue
-        return d_clean
+        for r in DATE_REGEXES:
+            m = re.search(r, d_clean, re.IGNORECASE)
+            if m:
+                raw_d = m.group(1).strip()
+                cleaned_d = re.sub(r'(\d+)(?:st|nd|rd|th)', r'\1', raw_d)
+                formats = [
+                    '%Y-%m-%d', '%d-%b-%Y', '%d-%b-%y', '%d-%B-%Y',
+                    '%d %b %Y', '%d %B %Y', '%d %b, %Y', '%d %B, %Y',
+                    '%b %d, %Y', '%B %d, %Y', '%b %d %Y', '%B %d %Y',
+                    '%d/%m/%Y', '%m/%d/%Y', '%d/%m/%y', '%m/%d/%y',
+                    '%d-%m-%Y', '%d-%m-%y', '%Y/%m/%d', '%d.%m.%Y', '%d.%m.%y'
+                ]
+                for target in [cleaned_d, raw_d]:
+                    for fmt in formats:
+                        try:
+                            parsed = datetime.strptime(target.strip('.,; '), fmt)
+                            if parsed.year < 1970:
+                                parsed = parsed.replace(year=parsed.year + 100)
+                            return parsed.strftime('%Y-%m-%d')
+                        except ValueError:
+                            continue
+
+        return d_clean if len(d_clean) < 30 else None
 
     def parse_asset_allocation(data):
         if not data:
@@ -274,20 +293,82 @@ def build_scheme_json(api_data, rows):
 
 
 
+    def clean_mgr_name(n):
+        if not n: return ''
+        n = str(n).strip().rstrip('.,;')
+        for _ in range(2):
+            n = re.sub(r'^(?:Debt Portion|Equity Portion|Arbitrage portion|Commodity portion)[:\s\-]*', '', n, flags=re.I).strip()
+            n = re.sub(r'^(?:FM\s*[-–]?\s*\d+[:\-\s]*|FM\d+[:\-\s]*|\b\d+[\s\-\.:]+)', '', n, flags=re.I).strip()
+        return n.strip()
+
+    def split_manager_items(text):
+        if not text:
+            return []
+        text = str(text).strip().replace('&amp;', '&')
+        
+        if '\n' in text:
+            lines = [l.strip() for l in text.split('\n') if l.strip()]
+            if len(lines) > 1:
+                return lines
+
+        # If the entire string is a short single date, do not split!
+        if len(text) < 30 and normalize_date(text) is not None:
+            return [text]
+                
+        # Replace multi-space delimiters before portion/FM boundaries
+        norm = re.sub(r'(?:;\s*|,\s*|\s{3,})(?=(?:FM\s*[-–]?\s*\d+|FM\d+|\b\d+\s+[A-Za-z]|Debt Portion|Equity Portion|Arbitrage Portion))', ' || ', text, flags=re.I)
+        norm = re.sub(r'\s*;\s*', ' || ', norm)
+        norm = re.sub(r'\s+and\s+(?=(?:Mr\.|Ms\.|Mrs\.|Dr\.))', ' || ', norm, flags=re.I)
+        norm = re.sub(r',\s*(?=(?:Mr\.|Ms\.|Mrs\.|Dr\.))', ' || ', norm)
+        norm = re.sub(r'(?<=\d{4})\s*,\s*(?=[A-Za-z])', ' || ', norm)
+        
+        if ' || ' in norm:
+            return [l.strip() for l in norm.split(' || ') if l.strip()]
+
+        # Don't split a date with a comma like "April 29, 2026" or "July 06, 2026"
+        if re.search(r'^[A-Za-z]+\s+\d{1,2}(?:st|nd|rd|th)?,\s+\d{2,4}$', text.strip()):
+            return [text]
+                
+        return [l.strip() for l in text.split(',') if l.strip()]
+
     def parse_fund_managers():
+        # Strategy 1: Dictionary list (e.g. structured XML <Fund_Manager> item list)
+        for k, v in xls_data.items():
+            if isinstance(v, list) and v and isinstance(v[0], dict) and any(w in str(v[0]).lower() for w in ['name', 'fundmanager']):
+                recs = []
+                for item in v:
+                    name = item.get('Name') or item.get('name') or item.get('FundManagerName')
+                    fm_type = item.get('FundManagerType') or item.get('Type') or item.get('type')
+                    from_d = item.get('FundManagerFromDate') or item.get('FromDate') or item.get('from') or item.get('From_Date')
+                    to_d = item.get('FundManagerToDate') or item.get('ToDate') or item.get('to') or item.get('To_Date')
+                    if name:
+                        recs.append({
+                            'name': clean_mgr_name(name),
+                            'type': str(fm_type).strip() if fm_type else '',
+                            'from': normalize_date(from_d),
+                            'to': normalize_date(to_d),
+                            'role_or_portion': None
+                        })
+                if recs:
+                    return recs
+
+        # Strategy 2: Numbered field keys (e.g. Fund Manager 1 - Name, Fund_Manager_1-From_Date)
         records = []
         indices = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
                    "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"]
         for idx in indices:
-            name = get_val([f"fund manager {idx} - name", f"fund manager {idx} name", f"fund manager {idx}- name"])
-            if not name:
+            name = get_val([f"fund manager {idx} - name", f"fund manager {idx} name", f"fund manager {idx}- name", f"fund_manager_{idx}_name", f"fund_manager_{idx}-name", f"fund manager {idx}"])
+            if not name or str(name).strip().isdigit() or str(name).strip().lower() in ("fields", "col0", "val", "primary", "comanage", "co manage"):
                 continue
-            fm_type = get_val([f"fund manager {idx} - type", f"fund manager {idx} type", f"fund manager {idx}- type", f"fund manager {idx} - type (primary/comanage/description)", f"fund manager {idx}- type (primary/comanage/description)"])
-            from_date = get_val([f"fund manager {idx} - from date", f"fund manager {idx} from date", f"fund manager {idx}- from date"])
-            to_date = get_val([f"fund manager {idx} - to date", f"fund manager {idx} to date", f"fund manager {idx}- to date"])
+            fm_type = get_val([f"fund manager {idx} - type", f"fund manager {idx} type", f"fund manager {idx}- type", f"fund manager {idx} - type (primary/comanage/description)", f"fund manager {idx}- type (primary/comanage/description)", f"fund_manager_{idx}_type_primary_comanage_description", f"fund_manager_{idx}-type_primary_comanage_description", f"fund_manager_{idx}_type"])
+            from_date = get_val([f"fund manager {idx} - from date", f"fund manager {idx} from date", f"fund manager {idx}- from date", f"fund_manager_{idx}_from_date", f"fund_manager_{idx}-from_date"])
+            to_date = get_val([f"fund manager {idx} - to date", f"fund manager {idx} to date", f"fund manager {idx}- to date", f"fund_manager_{idx}_to_date"])
+            
+            fm_type_clean = re.sub(r'^(?:FM\s*[-–]?\s*\d+[:\-\s]*|FM\d+[:\-\s]*|\b\d+[\s\-\.:]+)', '', str(fm_type) if fm_type else '', flags=re.I).strip()
+            
             records.append({
-                "name": str(name).strip(),
-                "type": str(fm_type).strip() if fm_type else "",
+                "name": clean_mgr_name(name),
+                "type": fm_type_clean,
                 "from": normalize_date(from_date),
                 "to": normalize_date(to_date),
                 "role_or_portion": None
@@ -296,58 +377,44 @@ def build_scheme_json(api_data, rows):
         if records:
             return records
 
-        fm_names_raw = get_val(["fund manager name", "fund manager"])
-        fm_types_raw = get_val(["fund manager type (primary/comanage/description)", "fund manager type"])
-        fm_dates_raw = get_val(["fund manager from date"])
-        fm_todates_raw = get_val(["fund manager to date"])
+        # Strategy 3: Multi-manager composite text blobs
+        raw_names = get_val(["fund_manager_name", "fund manager name", "fund manager", "field_18"])
+        raw_types = get_val(["fund_manager_type_primary_comanage_description", "fund_manager_type_primarycomanagedescription", "fund manager type (primary/comanage/description)", "fund manager type", "field_19"])
+        raw_dates = get_val(["fund_manager_from_date", "fund manager from date", "field_20"])
+        raw_todates = get_val(["fund_manager_to_date", "fund manager to date", "field_21"])
 
-        fm_names = [l.strip() for l in str(fm_names_raw).split('\n') if l.strip()] if fm_names_raw else []
-        fm_types = [l.strip() for l in str(fm_types_raw).split('\n') if l.strip()] if fm_types_raw else []
-        fm_froms = [l.strip() for l in str(fm_dates_raw).split('\n') if l.strip()] if fm_dates_raw else []
-        fm_tos   = [l.strip() for l in str(fm_todates_raw).split('\n') if l.strip()] if fm_todates_raw else []
-        
-        def extract_prefix(text):
-            m = re.match(r'^(.*?)\s*-\s*(.*)$', text)
-            if m:
-                prefix = m.group(1).strip()
-                if len(prefix) < 50:
-                    return prefix, m.group(2).strip()
-            return None, text
-            
-        records_dict = {}
-        for l in fm_names:
-            pref, val = extract_prefix(l)
-            key = pref if pref else "default"
-            if key not in records_dict: records_dict[key] = {"name": "", "type": "", "from": "", "to": None, "role_or_portion": pref}
-            records_dict[key]["name"] = val
-            
-        for l in fm_types:
-            pref, val = extract_prefix(l)
-            key = pref if pref else "default"
-            if key in records_dict: records_dict[key]["type"] = val
-            
-        for l in fm_froms:
-            pref, val = extract_prefix(l)
-            key = pref if pref else "default"
-            if key in records_dict: records_dict[key]["from"] = normalize_date(val)
-            
-        for l in fm_tos:
-            pref, val = extract_prefix(l)
-            key = pref if pref else "default"
-            if key in records_dict: records_dict[key]["to"] = normalize_date(val)
-            
-        if (not any(records_dict[k]["name"] for k in records_dict if k != "default")) and len(fm_names) > 1 and len(fm_names) == len(fm_types) == len(fm_froms):
+        if raw_names:
+            names = [clean_mgr_name(x) for x in split_manager_items(raw_names) if clean_mgr_name(x)]
+            types = split_manager_items(raw_types) if raw_types else []
+            dates = split_manager_items(raw_dates) if raw_dates else []
+            todates = split_manager_items(raw_todates) if raw_todates else []
+
+            date_by_name = {}
+            for d in dates:
+                for n in names:
+                    clean_n = re.sub(r'^(?:Mr\.|Ms\.|Mrs\.|Dr\.)\s*', '', n).strip()
+                    if clean_n.lower() in d.lower() or n.lower() in d.lower():
+                        date_by_name[n] = normalize_date(d)
+                        break
+
             recs = []
-            for i in range(len(fm_names)):
+            for i, name in enumerate(names):
+                t_val = types[i] if i < len(types) else (types[0] if len(types) == 1 else '')
+                d_val = date_by_name.get(name) or (dates[i] if i < len(dates) else (dates[0] if len(dates) == 1 else None))
+                to_val = todates[i] if i < len(todates) else (todates[0] if len(todates) == 1 else None)
+                
+                t_clean = re.sub(r'^(?:FM\s*[-–]?\s*\d+[:\-\s]*|FM\d+[:\-\s]*|\b\d+[\s\-\.:]+)', '', str(t_val), flags=re.I).strip()
+
                 recs.append({
-                    "name": fm_names[i],
-                    "type": fm_types[i] if i < len(fm_types) else "",
-                    "from": normalize_date(fm_froms[i]) if i < len(fm_froms) else "",
-                    "to": normalize_date(fm_tos[i]) if i < len(fm_tos) else None,
+                    "name": name,
+                    "type": t_clean,
+                    "from": normalize_date(d_val) if not isinstance(d_val, str) or not re.match(r'^\d{4}-\d{2}-\d{2}$', d_val) else d_val,
+                    "to": normalize_date(to_val),
                     "role_or_portion": None
                 })
             return recs
-        return [r for r in records_dict.values() if r.get("name")]
+
+        return []
 
     fund_managers = parse_fund_managers()
 

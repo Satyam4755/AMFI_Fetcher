@@ -10,89 +10,14 @@
     "potential_risk_class": "Not Applicable",
     "scheme_objective": "To generate medium to long term capital appreciation by investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
     "face_value": "10",
-    "nfo_open_date": "23/09/2026 00:00:00",
-    "nfo_close_date": "07/10/2026 00:00:00",
-    "allotment_date": "within 5 (five) working / business days from the date of closure of the NFO Period",
-    "reopen_date": "16/10/2026 00:00:00",
+    "nfo_open_date": "2026-09-23",
+    "nfo_close_date": "2026-10-07",
+    "allotment_date": null,
+    "reopen_date": "2026-10-16",
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "35% BSE 200 TRI + 50% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index",
     "benchmark_tier_2": "Not Applicable",
     "asset_allocation": [
-        {
-            "allocation_type": "Equity and equity related instruments including derivatives",
-            "minimum_percentage": 35,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative position in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and money market instruments including fixed income derivatives",
-            "minimum_percentage": 0,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Commodity Derivatives",
-            "minimum_percentage": 0,
-            "maximum_percentage": 30
-        },
-        {
-            "allocation_type": "Equity and equity related instruments including derivatives",
-            "minimum_percentage": 35,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative position in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and money market instruments including fixed income derivatives",
-            "minimum_percentage": 0,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Commodity Derivatives",
-            "minimum_percentage": 0,
-            "maximum_percentage": 30
-        },
-        {
-            "allocation_type": "Equity and equity related instruments including derivatives",
-            "minimum_percentage": 35,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative position in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Debt and money market instruments including fixed income derivatives",
-            "minimum_percentage": 0,
-            "maximum_percentage": 65
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Commodity Derivatives",
-            "minimum_percentage": 0,
-            "maximum_percentage": 30
-        },
         {
             "allocation_type": "Equity and equity related instruments including derivatives",
             "minimum_percentage": 35,
@@ -212,11 +137,32 @@
     },
     "fund_managers": [
         {
-            "name": "1 Sailesh Jain, FM-2 Akhil Mittal; FM-3 Tapan Patel, FM-4 Hasmukh Devji Vishariya",
-            "type": "1 Primary, FM-2 Primary, FM-3 Primary (Commodity), FM-4 Primary (Overseaes Investment)",
-            "from": "",
+            "name": "Sailesh Jain",
+            "type": "Primary",
+            "from": "2026-09-23",
             "to": null,
-            "role_or_portion": "FM"
+            "role_or_portion": null
+        },
+        {
+            "name": "Akhil Mittal",
+            "type": "Primary",
+            "from": "2026-09-23",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Tapan Patel",
+            "type": "Primary (Commodity)",
+            "from": "2026-09-23",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Hasmukh Devji Vishariya",
+            "type": "Primary (Overseaes Investment)",
+            "from": "2026-09-23",
+            "to": null,
+            "role_or_portion": null
         }
     ],
     "investment_limits": {

@@ -16,88 +16,8 @@
     "reopen_date": "2025-10-31",
     "maturity_date": "Not applicable",
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
-    "benchmark_tier_2": null,
+    "benchmark_tier_2": "Benchmark (Tier 2)",
     "asset_allocation": [
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments (inlcuding REITs)",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 25
-        },
-        {
-            "allocation_type": "Units issued by REITs and InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
         {
             "allocation_type": "Equity & Equity related instruments (inlcuding REITs)",
             "minimum_percentage": 25,
@@ -234,9 +154,37 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Bhavesh Jain; Mr. Bharat Lahoti; Mr. Dhawal Dalal; Mr. Kedar Karnik and Mr. Amit Vora",
+            "name": "Mr. Bhavesh Jain",
             "type": "Comanage",
-            "from": "",
+            "from": "2025-10-20",
+            "to": "Direct Plan - 1.26%",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Bharat Lahoti",
+            "type": "Comanage",
+            "from": "2025-10-20",
+            "to": "Regular Plan - 2.08%",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Dhawal Dalal",
+            "type": "Comanage",
+            "from": "2025-10-20",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Kedar Karnik",
+            "type": "Comanage",
+            "from": "2026-01-15",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Amit Vora",
+            "type": "Comanage",
+            "from": "2025-10-20",
             "to": null,
             "role_or_portion": null
         }

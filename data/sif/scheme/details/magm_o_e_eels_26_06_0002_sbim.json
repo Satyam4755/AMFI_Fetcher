@@ -42,156 +42,6 @@
             "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
             "minimum_percentage": 0,
             "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 65,
-            "maximum_percentage": 100
-        },
-        {
-            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Debt and Money Market Instruments",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
-        },
-        {
-            "allocation_type": "Units issued by InvITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
-            "minimum_percentage": 0,
-            "maximum_percentage": 35
         }
     ],
     "listing_details": "NO",
@@ -221,9 +71,9 @@
     },
     "fund_managers": [
         {
-            "name": "[{'Name': 'Mr. Gaurav Mehta', 'FundManagerType': 'Fund Manager - SIF', 'FundManagerFromDate': '27-Aug-2026'}]",
-            "type": "",
-            "from": "",
+            "name": "Mr. Gaurav Mehta",
+            "type": "Fund Manager - SIF",
+            "from": "2026-08-27",
             "to": null,
             "role_or_portion": null
         }

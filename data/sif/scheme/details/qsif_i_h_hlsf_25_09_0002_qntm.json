@@ -10,59 +10,14 @@
     "potential_risk_class": "N.A.",
     "scheme_objective": "This investment strategy aims to achieve a blend of capital appreciation and income generation by maintaining a balanced exposure to equity and debt instruments, with a minimum of 25% in each, while utilizing up to 25% in short derivative positions to enhance returns and manage risk.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "9/25/2025 12:00:00 AM",
-    "nfo_close_date": "10/9/2025 12:00:00 AM",
-    "allotment_date": "10/15/2025 12:00:00 AM",
-    "reopen_date": "10/20/2025 12:00:00 AM",
+    "nfo_open_date": "2025-09-25",
+    "nfo_close_date": "2025-09-10",
+    "allotment_date": "2025-10-15",
+    "reopen_date": "2025-10-20",
     "maturity_date": null,
     "benchmark_tier_1": "NIFTY 50 HYBRID COMPOSITE DEBT 50:50 INDEX",
     "benchmark_tier_2": null,
     "asset_allocation": [
-        {
-            "allocation_type": "Investment in equity and equity-related instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investment in InVITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity-related instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investment in InVITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
-        {
-            "allocation_type": "Investment in equity and equity-related instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investment in debt and money market instruments",
-            "minimum_percentage": 25,
-            "maximum_percentage": 75
-        },
-        {
-            "allocation_type": "Investment in InVITs",
-            "minimum_percentage": 0,
-            "maximum_percentage": 20
-        },
         {
             "allocation_type": "Investment in equity and equity-related instruments",
             "minimum_percentage": 25,
@@ -174,35 +129,35 @@
         {
             "name": "Sandeep Tandon",
             "type": "Primary",
-            "from": "10/15/2025 12:00:00 AM",
+            "from": "2025-10-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Ankit Pande",
             "type": "Co manage",
-            "from": "10/15/2025 12:00:00 AM",
+            "from": "2025-10-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sameer Kate",
             "type": "Co manage",
-            "from": "10/15/2025 12:00:00 AM",
+            "from": "2025-10-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sanjeev Sharma",
             "type": "Co manage",
-            "from": "10/15/2025 12:00:00 AM",
+            "from": "2025-10-15",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Jignesh Shah",
             "type": "",
-            "from": "2/20/2026 12:00:00 AM",
+            "from": "2026-02-20",
             "to": null,
             "role_or_portion": null
         }

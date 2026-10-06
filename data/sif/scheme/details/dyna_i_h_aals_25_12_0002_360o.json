@@ -17,7 +17,13 @@
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "25% BSE SENSEX TRI + 60% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index",
     "benchmark_tier_2": null,
-    "asset_allocation": null,
+    "asset_allocation": [
+        {
+            "allocation_type": "Stated Asset Allocation",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        }
+    ],
     "listing_details": "Not Listed",
     "plans": {
         "regular": {
@@ -111,10 +117,31 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Harsh Agarwal, Mr. Milan Mody, Mr. Rahul Khetawat, Mr.Pranav Mise",
-            "type": "",
-            "from": "",
-            "to": null,
+            "name": "Mr. Harsh Agarwal",
+            "type": "Mr. Harsh Agarwal - Primary",
+            "from": "2026-03-25",
+            "to": "Regular 1.63, Direct 0.53",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Milan Mody",
+            "type": "Mr. Milan Mody - comanage",
+            "from": "2026-03-25",
+            "to": "Regular 1.63, Direct 0.53",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Rahul Khetawat",
+            "type": "Mr. Rahul Khetwat - Comanage",
+            "from": "2026-03-25",
+            "to": "Regular 1.63, Direct 0.53",
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr.Pranav Mise",
+            "type": "Mr.Pranav Mise - Comanage",
+            "from": "2026-04-24",
+            "to": "Regular 1.63, Direct 0.53",
             "role_or_portion": null
         }
     ],
