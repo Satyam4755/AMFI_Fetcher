@@ -20,27 +20,22 @@ DEFAULT_HEADERS = {
 }
 
 
-def _http_get_json(url: str, timeout: int = 15) -> Any:
+def _http_get_json(url: str, timeout: int = 10) -> Any:
     """Helper to fetch JSON from URL with timeout and standard headers."""
-    try:
-        import requests
-        resp = requests.get(url, headers=DEFAULT_HEADERS, timeout=timeout)
-        if resp.status_code == 200:
-            return resp.json()
-        logger.warning(f"HTTP GET failed ({resp.status_code}) for {url}")
-        return None
-    except ImportError:
-        pass
-    except Exception as e:
-        logger.warning(f"requests failed for {url}: {e}, falling back to urllib...")
-
     try:
         req = urllib.request.Request(url, headers=DEFAULT_HEADERS)
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             if resp.status == 200:
                 return json.loads(resp.read().decode("utf-8"))
     except Exception as e:
-        logger.warning(f"urllib failed for {url}: {e}")
+        try:
+            import requests
+            resp = requests.get(url, headers=DEFAULT_HEADERS, timeout=timeout)
+            if resp.status_code == 200:
+                return resp.json()
+        except Exception:
+            pass
+        logger.warning(f"Error fetching JSON from {url}: {e}")
     return None
 
 
@@ -241,7 +236,7 @@ def merge_historical_records(existing_rows: list[dict], new_rows: list[dict]) ->
     """
     Merges existing and newly fetched records:
     - Deduplicates by date.
-    - Preserves existing valid NAV records without unnecessary overwriting.
+    - Preserves existing valid NAV records while allowing updated values for the same date.
     - Seamlessly inserts missing historical dates (earlier, internal, or later).
     - Filters invalid NAV values.
     - Sorts chronologically in ascending order.
@@ -256,8 +251,8 @@ def merge_historical_records(existing_rows: list[dict], new_rows: list[dict]) ->
     for r in new_rows:
         dt = r.get("dt")
         if dt and clean_nav_value(r.get("nav")) is not None:
-            if dt not in date_map:
-                date_map[dt] = r
+            # Add or update record for this date
+            date_map[dt] = r
 
     # Sort chronologically
     sorted_dts = sorted(date_map.keys())
@@ -288,15 +283,18 @@ def write_historical_nav_csv(sif_code: str, rows: list[dict], base_dir: str = "d
     return filepath
 
 
-def update_historical_nav(schemes: list[dict], base_dir: str = "data/sif/scheme/nav/historical"):
+def update_historical_nav(schemes: list[dict], base_dir: str = "data/sif/scheme/nav/historical", recalculate_perf: bool = True):
     """
     Appends or updates historical NAV CSV files from a list of scheme dicts.
-    Preserves backward compatibility with daily NAV pipeline.
+    Preserves backward compatibility with daily NAV pipeline and keeps performance metrics synchronized.
     """
     if not schemes:
         return
 
     os.makedirs(base_dir, exist_ok=True)
+    perf_dir = os.path.normpath(os.path.join(base_dir, "..", "..", "performance"))
+
+    updated_sifs = set()
 
     for scheme in schemes:
         sif_code = scheme.get("sif_code")
@@ -317,7 +315,30 @@ def update_historical_nav(schemes: list[dict], base_dir: str = "data/sif/scheme/
         existing_rows = read_existing_historical_csv(filepath)
         new_row = {"sif_code": sif_code, "nav_date": date_str, "nav": str(nav_raw).strip(), "dt": dt}
         merged = merge_historical_records(existing_rows, [new_row])
-        write_historical_nav_csv(sif_code, merged, base_dir=base_dir)
+        
+        # Only write and recalculate if changes occurred
+        if not os.path.exists(filepath) or len(merged) != len(existing_rows) or (merged and existing_rows and merged[-1] != existing_rows[-1]):
+            write_historical_nav_csv(sif_code, merged, base_dir=base_dir)
+            updated_sifs.add((sif_code, safe_name, filepath))
+
+    if recalculate_perf and updated_sifs:
+        try:
+            import pandas as pd
+            from services.performance_service import calculate_performance_metrics
+            os.makedirs(perf_dir, exist_ok=True)
+            for sif_code, safe_name, filepath in updated_sifs:
+                try:
+                    df = pd.read_csv(filepath)
+                    if not df.empty:
+                        metrics = calculate_performance_metrics(df)
+                        if metrics:
+                            out_path = os.path.join(perf_dir, f"{safe_name}.json")
+                            with open(out_path, "w", encoding="utf-8") as f:
+                                json.dump(metrics, f, indent=4)
+                except Exception as e:
+                    logger.debug(f"Could not recalculate performance for {sif_code}: {e}")
+        except ImportError:
+            pass
 
 
 def discover_eligible_non_direct_sifs(

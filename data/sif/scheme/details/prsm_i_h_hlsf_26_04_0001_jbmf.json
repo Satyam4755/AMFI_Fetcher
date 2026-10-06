@@ -1,7 +1,7 @@
 {
     "sebi_code": "PRSM/I/H/HLSF/26/04/0001/JBMF",
-    "scheme_name": "Prism Hybrid Long-Short Fund",
-    "fund_name": "Prism Hybrid Long-Short Fund",
+    "scheme_name": "Prism Hybrid Long - Short Fund",
+    "fund_name": "Prism Hybrid Long - Short Fund",
     "scheme_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "fund_type": "An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives",
     "category": "Hybrid Long-Short Fund",
@@ -16,10 +16,10 @@
     "reopen_date": "2026-07-23",
     "maturity_date": "Not applicable",
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index (TRI)",
-    "benchmark_tier_2": null,
+    "benchmark_tier_2": "NA",
     "asset_allocation": [
         {
-            "allocation_type": "Equity related instruments",
+            "allocation_type": "Equity & Equity related instruments",
             "minimum_percentage": 35,
             "maximum_percentage": 75
         },
@@ -48,7 +48,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-138 : Prism Hybrid Long – Short Fund – Regular Plan – Growth | INF22M030019 - Prism Hybrid Long – Short Fund – Regular Plan – Growth | 701RG- Prism Hybrid Long – Short Fund – Regular Plan – Growth",
+                    "name": "SIF-138 : Prism Hybrid Long \u2013 Short Fund \u2013 Regular Plan \u2013 Growth | INF22M030019 - Prism Hybrid Long \u2013 Short Fund \u2013 Regular Plan \u2013 Growth | 701RG- Prism Hybrid Long \u2013 Short Fund \u2013 Regular Plan \u2013 Growth",
                     "amfi_code": "SIF-138",
                     "isin_code": "INF22M030019",
                     "rta_code": "701RG"
@@ -70,7 +70,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-139 : Prism Hybrid Long – Short Fund – Direct Plan – Growth | INF22M030027- Prism Hybrid Long – Short Fund – Direct Plan – Growth | 701DG- Prism Hybrid Long – Short Fund – Direct Plan – Growth",
+                    "name": "SIF-139 : Prism Hybrid Long \u2013 Short Fund \u2013 Direct Plan \u2013 Growth | INF22M030027- Prism Hybrid Long \u2013 Short Fund \u2013 Direct Plan \u2013 Growth | 701DG- Prism Hybrid Long \u2013 Short Fund \u2013 Direct Plan \u2013 Growth",
                     "amfi_code": "SIF-139",
                     "isin_code": "INF22M030027",
                     "rta_code": "701DG"
@@ -102,25 +102,25 @@
         "additional_multiple": "Any Amount",
         "minimum_redemption_amount": "Any Amount",
         "minimum_redemption_units": "Any Units",
-        "minimum_balance_amount": null,
+        "minimum_balance_amount": "NA",
         "minimum_balance_units": null,
-        "maximum_investment_amount": null
+        "maximum_investment_amount": "NA"
     },
     "switch_details": {
         "minimum_switch_amount": "10000",
         "minimum_switch_units": null,
         "switch_multiple_amount": "Any amount",
         "switch_multiple_units": "Any Units",
-        "maximum_switch_amount": null,
-        "maximum_switch_units": null
+        "maximum_switch_amount": "NA",
+        "maximum_switch_units": "NA"
     },
     "systematic_investment_plans": {
         "frequency": "SIP - Weekly, Monthly, Quarterly\nSWP - Weekly, Monthly, Quarterly\nSTP -  Daily, Weekly, Monthly, Quarterly",
-        "minimum_amount": "SIP - Rs, 10,000\nSWP - Rs. 10,000\nSTP - Rs. 10,000",
+        "minimum_amount": "SIP - Weekly, Monthly, Quarterly\nSWP - Weekly, Monthly, Quarterly\nSTP -  Daily, Weekly, Monthly, Quarterly",
         "in_multiples_of": "1",
         "minimum_installments": "6",
         "dates": "SIP - Weekly- Any day between Monday to Friday\n        Monthly & Quarterly: 1st - 31st\nSTP -Daily- Any day\n        Weekly- Any day between Monday to Friday \n         Monthly & Quarterly: 1st - 31st\nSWP - Weekly- Any day between Monday to Friday \n           Monthly & Quarterly: 1st - 31st",
-        "maximum_amount": null
+        "maximum_amount": "NA"
     },
     "expenses_and_loads": {
         "exit_load": "Nil",
@@ -128,12 +128,12 @@
         "stated_maximum_expense": "Regular 3.56, Direct 2.41"
     },
     "special_facilities": {
-        "swing_pricing": null,
+        "swing_pricing": "NA",
         "side_pocketing": "Enabled"
     },
     "amc_details": {
         "sif_name": "Prism SIF",
-        "amc_website": "https://www.jioblackrockamc.com/",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "Nil",

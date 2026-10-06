@@ -19,17 +19,17 @@
     "benchmark_tier_2": "Not applicable",
     "asset_allocation": [
         {
-            "allocation_type": "",
+            "allocation_type": "Equity and Equity related instruments",
             "minimum_percentage": 80,
             "maximum_percentage": 100
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and equity related instruments",
             "minimum_percentage": 0,
             "maximum_percentage": 25
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Debt, money market instruments (excluding instrument, securities kept for Margin purpose), Invits, Exchange Trade Funds and units of debt mutual fund schemes",
             "minimum_percentage": 0,
             "maximum_percentage": 20
         }
@@ -142,12 +142,12 @@
         "minimum_redemption_amount": "10000",
         "minimum_redemption_units": "Not applicable",
         "minimum_balance_amount": "1000000",
-        "minimum_balance_units": "Not applicable",
+        "minimum_balance_units": null,
         "maximum_investment_amount": "Not applicable"
     },
     "switch_details": {
         "minimum_switch_amount": "1000000",
-        "minimum_switch_units": "Not applicable",
+        "minimum_switch_units": null,
         "switch_multiple_amount": "1000",
         "switch_multiple_units": "Not applicable",
         "maximum_switch_amount": "Not applicable",
@@ -155,7 +155,7 @@
     },
     "systematic_investment_plans": {
         "frequency": "Monthly",
-        "minimum_amount": "10000",
+        "minimum_amount": "Monthly",
         "in_multiples_of": "1000",
         "minimum_installments": "Rs. 10000 - 12 instalments",
         "dates": "Monthly = Any date* * In case the  chosen day of the day falls on non- business day, STP will be processed on the next Business Day.",
@@ -164,7 +164,7 @@
     "expenses_and_loads": {
         "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",
         "actual_expense": null,
-        "stated_maximum_expense": "Regular: 3.01, Direct: 1.34"
+        "stated_maximum_expense": "Regular: 3.02, Direct: 1.34"
     },
     "special_facilities": {
         "swing_pricing": "Not applicable",
@@ -172,13 +172,13 @@
     },
     "amc_details": {
         "sif_name": "Sapphire SIF",
-        "amc_website": "https://www.franklintempletonindia.com",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",
     "registrar": "CAMS",
     "custodian": "Hongkong and Shanghai Banking Corporation Limited (HSBC)",
-    "auditor": "B S R & Co. LLP",
+    "auditor": "B S R &amp; Co. LLP",
     "sif_name": "Sapphire SIF",
     "scheme_id": "S-16",
     "sif_id": "27",

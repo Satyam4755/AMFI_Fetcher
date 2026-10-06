@@ -19,24 +19,29 @@
     "benchmark_tier_2": "Not applicable",
     "asset_allocation": [
         {
-            "allocation_type": "",
+            "allocation_type": "equity and equity related instruments of companies excluding the top 100 companies by market capitalization ( including unhedged short exposure)",
             "minimum_percentage": 65,
             "maximum_percentage": 100
         },
         {
-            "allocation_type": "companies by market capitalization",
+            "allocation_type": "equity and equity related instruments of companies - top 100 companies by market capitalization",
             "minimum_percentage": 0,
             "maximum_percentage": 35
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Debt and money market instruments",
             "minimum_percentage": 0,
             "maximum_percentage": 35
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Unhedged short exposure through unhedged derivative posiitons in equity and euqity realted securities",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
         }
     ],
     "listing_details": "Not applicable",
@@ -147,12 +152,12 @@
         "minimum_redemption_amount": "Rs 1000/-",
         "minimum_redemption_units": "100",
         "minimum_balance_amount": "1000000",
-        "minimum_balance_units": "100000",
+        "minimum_balance_units": null,
         "maximum_investment_amount": "Not Applicable"
     },
     "switch_details": {
         "minimum_switch_amount": "Switch - in: Rs.1000000 and in multiples of Rs. 100 thereafter. \nSwitch-out :Rs.1000 and in multiples of Rs 1 thereafter",
-        "minimum_switch_units": "Not applicable",
+        "minimum_switch_units": null,
         "switch_multiple_amount": "Rs.1",
         "switch_multiple_units": "Not applicable",
         "maximum_switch_amount": "Not applicable",
@@ -160,7 +165,7 @@
     },
     "systematic_investment_plans": {
         "frequency": "SIP\nFor SIP -Daily, Weekly,Fortnightly,Monthly,Quarterly\nSWP\nmonthly, Quarterly\nSTP\nDaily, Weekly, Fortnightly,Monthly, Quarterly",
-        "minimum_amount": "SIP                                                                                                                                                                                                                                                                                                                                                                                                                                                           \nDaily  SIP : Rs 1000/- ( and in multiples of Rs  100)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         Weekly SIP: Rs. 1000/- (and in multiples of Rs. 100/-) \nFortnightly SIP: Rs. 1000/- (and in multiples of Rs. 100/-) \nMonthly SIP: Rs. 1000/- (and in multiples of Rs. 100/-) \nQuarterly SIP: Rs. 1000/- (and in multiples of Rs. 100/-)\nSTP\nDaily - Rs. 1000 and in multiples of Re. 100/- thereafter\nWeekly- Rs. 1000 and in multiples of Re. 100/- thereafter\nFortnightly  - Rs 1000 and in multiples of Re 100/- thereafter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Monthly- Rs. 1000 and in multiples of Re. 100/- thereafter\nQuarterly- Rs. 1000 and in multiples of Re. 100/- thereafter\nSWP            \nmonthly- Rs. 1000 and in multiples of Re. 100/- thereafter\nQuarterly- Rs. 1000 and in multiples of Re. 100/- thereafter.",
+        "minimum_amount": "SIP\nFor SIP -Daily, Weekly,Fortnightly,Monthly,Quarterly\nSWP\nmonthly, Quarterly\nSTP\nDaily, Weekly, Fortnightly,Monthly, Quarterly",
         "in_multiples_of": "SIP                                                                                                                                                                                                                                                                                                                                                                                                                                                            \nDaily SIP:in multiples of Rs 100/-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                Weekly SIP: in multiples of Rs. 100/- \nFortnightly SIP:  in multiples of Rs. 100/- \nMonthly SIP:  in multiples of Rs. 100/- \nQuarterly SIP:  in multiples of Rs. 100/- \nSTP\nDaily -  in multiples of Re. 100/- thereafter\nWeekly-  in multiples of Re. 100/- thereafter\nFortnightly- in multiples of Re100/-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Monthly-  in multiples of Re. 100/- thereafter\nQuarterly-  in multiples of Re. 100/- thereafter\nSWP            \nmonthly- in multiples of Re. 100/- thereafter\nQuarterly-   in multiples of Re. 100/- thereafter.",
         "minimum_installments": "SIP                                                                                                                                                                                                                                                                                                                                                                                                                                                           \n Daily  SIP : Minimum installments : 6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Weekly SIP: Minimum installments: 6\nFortnightly SIP: Minimum installments: 6\nMonthly SIP: Minimum installments: 6\nQuarterly SIP: Minimum installments: 6\nSTP\nDaily -  Minimum installments: 6\nWeekly-  Minimum installments: 6\nFortnightly   - Minimum installments:6                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        Monthly-  Minimum installments: 6\nQuarterly-  Minimum installments: 6\nSWP            \nMonthly-  Minimum installments: 6\nQuarterly-   Minimum installments: 6",
         "dates": "Any Business day",
@@ -177,13 +182,13 @@
     },
     "amc_details": {
         "sif_name": "WSIF",
-        "amc_website": "https://www.wealthcompanyamc.in",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "NIL",
     "registrar": "KFin Technologies Ltd (Kfin)",
     "custodian": "HDFC Bank Limited",
-    "auditor": "S.R. Batliboi & Co. LLP – Chartered Accountants",
+    "auditor": "S.R. Batliboi &amp; Co. LLP \u2013 Chartered Accountants",
     "sif_name": "WSIF",
     "scheme_id": "S-18",
     "sif_id": "83",

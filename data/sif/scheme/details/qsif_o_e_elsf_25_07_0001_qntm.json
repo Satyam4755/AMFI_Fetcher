@@ -8,28 +8,28 @@
     "riskometer_at_launch": "Risk band Level 5",
     "riskometer_as_on_date": "Risk band Level 3",
     "potential_risk_class": "N.A.",
-    "scheme_objective": "To generate long-term capital appreciation by investing in a diversified portfolio of equity and equity-related instruments while employing limited short exposure through derivatives to enhance returns and manage risk efficiently. There is no assurance that the investment objective of the Investment strategy will be achieved.",
+    "scheme_objective": "Primary",
     "face_value": "10",
-    "nfo_open_date": "2025-09-17",
-    "nfo_close_date": "2025-10-01",
-    "allotment_date": "2025-10-07",
-    "reopen_date": "2025-10-08",
+    "nfo_open_date": "9/17/2025 12:00:00 AM",
+    "nfo_close_date": "10/1/2025 12:00:00 AM",
+    "allotment_date": "10/7/2025 12:00:00 AM",
+    "reopen_date": "10/8/2025 12:00:00 AM",
     "maturity_date": null,
     "benchmark_tier_1": "NIFTY 500 Total Return Index (TRI)",
     "benchmark_tier_2": null,
     "asset_allocation": [
         {
-            "allocation_type": "",
+            "allocation_type": "Investment in equity and equity related instruments (including unhedged short exposure mentioned below)",
             "minimum_percentage": 80,
             "maximum_percentage": 100
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Investments in Debt & Money Market Instruments",
             "minimum_percentage": 0,
             "maximum_percentage": 20
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Investments in InVITS",
             "minimum_percentage": 0,
             "maximum_percentage": 20
         }
@@ -129,35 +129,35 @@
         {
             "name": "Sandeep Tandon",
             "type": "Primary",
-            "from": "2025-10-07",
+            "from": "10/7/2025 12:00:00 AM",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Ankit Pande",
             "type": "Co manage",
-            "from": "2025-10-07",
+            "from": "10/7/2025 12:00:00 AM",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sameer Kate",
             "type": "Co manage",
-            "from": "2025-10-07",
+            "from": "10/7/2025 12:00:00 AM",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Sanjeev Sharma",
             "type": "Co manage",
-            "from": "2025-10-07",
+            "from": "10/7/2025 12:00:00 AM",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Jignesh Shah",
-            "type": "Co manage",
-            "from": "2026-02-20",
+            "type": "",
+            "from": "2/20/2026 12:00:00 AM",
             "to": null,
             "role_or_portion": null
         }
@@ -169,7 +169,7 @@
         "additional_multiple": "1",
         "minimum_redemption_amount": "Rs. 1000/-",
         "minimum_redemption_units": null,
-        "minimum_balance_amount": "An aggregate investment by an investor across all investment strategies offered by the SIF, at the Permanent Account Number (‘PAN’) level, shall not be  less than INR 10 lakh.\n\nProvided that, in the case of an accredited investor, the aggregate investment shall be not less than INR 1 lakh.",
+        "minimum_balance_amount": "An aggregate investment by an investor across all investment strategies offered by the SIF, at the Permanent Account Number (\u2018PAN\u2019) level, shall not be  less than INR 10 lakh.\n\nProvided that, in the case of an accredited investor, the aggregate investment shall be not less than INR 1 lakh.",
         "minimum_balance_units": "N.A.",
         "maximum_investment_amount": "N.A."
     },
@@ -200,7 +200,7 @@
     },
     "amc_details": {
         "sif_name": "qsif SIF",
-        "amc_website": "https://www.quantmutual.com",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "Exit Load:  1% if redeemed/switched out on or before completion of 15 days from the date of allotment of units\nNo Exit Load is payable if Units are redeemed / switched-out after 15 days  from the date of allotment",

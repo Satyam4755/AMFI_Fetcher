@@ -7,7 +7,7 @@
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Level  2",
     "riskometer_as_on_date": "Level  2",
-    "potential_risk_class": null,
+    "potential_risk_class": "NA",
     "scheme_objective": "The investment objective of the Investment Strategy is to generate regular returns and capital appreciation by investing in fixed income securities and equity and equity related securities including limited short exposure in equity and debt through derivatives. There is no assurance that the investment objective of the Investment Strategy will be achieved.",
     "face_value": "10",
     "nfo_open_date": "2026-06-02",
@@ -16,35 +16,35 @@
     "reopen_date": "2026-06-25",
     "maturity_date": null,
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
-    "benchmark_tier_2": null,
+    "benchmark_tier_2": "NA",
     "asset_allocation": [
         {
-            "allocation_type": "",
+            "allocation_type": "Equities & Equity related securities",
             "minimum_percentage": 25,
             "maximum_percentage": 75
         },
         {
-            "allocation_type": "",
+            "allocation_type": "out of which: Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
             "minimum_percentage": 0,
             "maximum_percentage": 75
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Unhedged (Short derivatives)",
             "minimum_percentage": 0,
             "maximum_percentage": 25
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Units of REITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Debt and Money Market Instruments (including cash and cash equivalents)",
             "minimum_percentage": 25,
             "maximum_percentage": 75
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
         }
@@ -183,7 +183,7 @@
     "fund_managers": [
         {
             "name": "Shriram Ramanathan, FM2 - Praveen Ayathan, FM3 - Venugopal Manghat, FM4 - Mayank Chaturvedi",
-            "type": "Fixed Income, REITs & InvITs, FM2 - Arbitrage, FM3 - Equity, FM4 - Foreign Securities",
+            "type": "Fixed Income, REITs &amp; InvITs, FM2 - Arbitrage, FM3 - Equity, FM4 - Foreign Securities",
             "from": "June 19, 2026, FM2 - June 19, 2026, FM3 - June 19, 2026, FM4 - June 19, 2026",
             "to": null,
             "role_or_portion": "FM1"
@@ -198,23 +198,23 @@
         "minimum_redemption_units": "100",
         "minimum_balance_amount": "10,00,000; For Accredited Investors: 1,00,000",
         "minimum_balance_units": null,
-        "maximum_investment_amount": null
+        "maximum_investment_amount": "NA"
     },
     "switch_details": {
         "minimum_switch_amount": "1000",
-        "minimum_switch_units": "100",
+        "minimum_switch_units": null,
         "switch_multiple_amount": "1",
         "switch_multiple_units": "0.01",
-        "maximum_switch_amount": null,
-        "maximum_switch_units": null
+        "maximum_switch_amount": "NA",
+        "maximum_switch_units": "NA"
     },
     "systematic_investment_plans": {
         "frequency": "SIP - Daily (All Business Days from Monday to Friday), Weekly (Any Day from Monday to Friday), Monthly(Any Dates), Quarterly (Any Dates), SWP - Monthly, Quarterly",
-        "minimum_amount": "SIP - 1000 Daily 12; 1000 Weekly 12; 1000 Monthly 12; 3000 Quarterly 4, STP - 1000, SWP - 1000",
+        "minimum_amount": "SIP - Daily (All Business Days from Monday to Friday), Weekly (Any Day from Monday to Friday), Monthly(Any Dates), Quarterly (Any Dates), SWP - Monthly, Quarterly",
         "in_multiples_of": "1",
         "minimum_installments": "SIP - Daily 12; Weekly 12; Monthly 12; Quarterly 4, SWP - Monthly - 12, Quarterly - 12",
         "dates": "SIP - Daily (Daily SIP will be processed from Monday to Friday. In case of a non-business day falling between Monday to Friday (both days inclusive) then the daily SIP installment for that day will not be processed on the next business day.); Weekly - Any day from Monday to Friday;  Other than daily and weekly - Any Date, SWP - First Monday* of the month or quarter, as applicable, subject to the notice period requirements and as per the payout schedule of the Investment strategy. *Next business day in case Monday is a non-business day.",
-        "maximum_amount": null
+        "maximum_amount": "NA"
     },
     "expenses_and_loads": {
         "exit_load": "i. If the Units are redeemed / switched-out on or before 1 year from the date of allotment: 2.00%\nii. If the Units are redeemed / switched-out after 1 year from the date of allotment: Nil",
@@ -222,12 +222,12 @@
         "stated_maximum_expense": "Regular 1.09, Direct 0.45"
     },
     "special_facilities": {
-        "swing_pricing": null,
+        "swing_pricing": "NA",
         "side_pocketing": "Yes"
     },
     "amc_details": {
         "sif_name": "RedHex SIF",
-        "amc_website": "https://www.assetmanagement.hsbc.co.in",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "i. If the Units are redeemed / switched-out on or before 1 year from the date of allotment: 2.00%\nii. If the Units are redeemed / switched-out after 1 year from the date of allotment: Nil",

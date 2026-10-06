@@ -1,5 +1,7 @@
 import re
 import json
+import html
+
 
 def build_scheme_json(api_data, rows):
     """
@@ -33,6 +35,10 @@ def build_scheme_json(api_data, rows):
                     xls_data[f"{key_val}_2"] = val_val
             else:
                 xls_data[key_val] = val_val
+        elif len(row) == 1:
+            for k, v in row.items():
+                if v is not None and str(v).strip().lower() not in ("nan", "none", "null", ""):
+                    xls_data[str(k).strip()] = str(v).strip()
 
     def get_val(possible_keys):
         for pk in possible_keys:
@@ -70,32 +76,137 @@ def build_scheme_json(api_data, rows):
                 continue
         return d_clean
 
-    def parse_asset_allocation(text):
-        if not text: return None
+    def parse_asset_allocation(data):
+        if not data:
+            return None
+        if isinstance(data, list):
+            if all(isinstance(item, dict) and "allocation_type" in item for item in data):
+                return data
+            data = "\n".join(str(x) for x in data)
+            
+        text = html.unescape(str(data)).strip()
+        if not text or text.lower() in ("nan", "none", "null", "--", "-", "n.a.", "na"):
+            return None
+            
+        # Remove HTML table header tokens if present
+        text = re.sub(r"(?i)\b(?:Instruments\s+)?Indicative\s*Allocation\s*(?:Risk\s*Profile)?\b", " ", text)
+        # Replace Risk band markers with newlines
+        text = re.sub(r"(?i)\bRisk\s*Band\s*Level\s*\d+\b", "\n", text)
+        text = re.sub(r"(?i)\bRisk\s*Profile\s*:\s*[\w\s]+\b", "\n", text)
+        text = re.sub(r"(?i)\bRisk\s*Band\s*:\s*[\w\s]+\b", "\n", text)
+        text = re.sub(r"[\u2022\u25E6\u2023\u25B8\u25B9\u2043\u2219\uf0b7\uf0a7\t]+", "\n", text)
+        
+        # 1. Clean footnote narrative lines
+        raw_lines = text.split("\n")
+        cleaned_lines = []
+        for l in raw_lines:
+            l_str = l.strip()
+            if not l_str:
+                continue
+            if re.match(r"^(?:\*|#|note:|please refer|there is no assurance)", l_str, re.IGNORECASE):
+                if not re.search(r"[-–:=]\s*\d+\s*%?\s*(?:to|-|–)\s*\d+\s*%", l_str) and not re.search(r"[-–:=]\s*\d+\s*%", l_str):
+                    continue
+                if re.search(r"(?i)\b(?:include both|may also include|will be upto|are invested in|having an unexpired|specified under|please refer)\b", l_str):
+                    continue
+            cleaned_lines.append(l_str)
+            
+        full_text = "\n".join(cleaned_lines)
+        
+        # 2. Split inline allocations (comma/period/semicolon/multispace following a percentage range or percentage)
+        full_text = re.sub(r"(?i)\.?\s*Please refer.*$", "", full_text, flags=re.MULTILINE)
+        full_text = re.sub(r"(\d+(?:\.\d+)?\s*%?(?:\s*of\s+(?:net|total)\s+assets)?)\s*[,;.]\s*(?=[A-Za-z*#])", r"\1\n", full_text)
+        full_text = re.sub(r"(\d+(?:\.\d+)?\s*%?(?:\s*of\s+(?:net|total)\s+assets)?)\s{3,}(?=[A-Za-z*#])", r"\1\n", full_text)
+        full_text = re.sub(r"(\d+(?:\.\d+)?\s*%(?:\s*of\s+(?:net|total)\s+assets)?)\s+(?=[A-Z][a-z])", r"\1\n", full_text)
+        
+        # 3. Join wrapped lines (lines where previous line had no percentage)
+        pct_range_regex = re.compile(r"(?:\d+(?:\.\d+)?\s*%?\s*(?:to|-|–|\s+)\s*\d+(?:\.\d+)?\s*%?|\d+(?:\.\d+)?\s*%)", re.IGNORECASE)
+        
+        split_lines = [l.strip() for l in full_text.split("\n") if l.strip()]
+        joined_lines = []
+        for l in split_lines:
+            if joined_lines and not pct_range_regex.search(joined_lines[-1]):
+                joined_lines[-1] = joined_lines[-1] + " " + l
+            else:
+                joined_lines.append(l)
+                
         allocations = []
-        pattern = r'([A-Za-z\s]+?)\s*(?:-)?\s*(\d+(?:\.\d+)?)%?\s*(?:to|-)\s*(\d+(?:\.\d+)?)%?'
-        matches = list(re.finditer(pattern, str(text), re.IGNORECASE))
-        if not matches:
-            text_clean = re.sub(r'[\u2022\u25E6\u2023\u25B8\u25B9\u2043\u2219\uf0b7\t]+', '\n', str(text))
-            for line in text_clean.split('\n'):
-                line = line.strip()
-                if line:
+        
+        def parse_num(s):
+            if s is None:
+                return None
+            s = str(s).strip()
+            return float(s) if "." in s else int(s)
+
+        def clean_name(n):
+            if not n:
+                return ""
+            n = n.strip()
+            n = re.sub(r"^[\d\w]\)[\s\-]+", "", n)
+            n = re.sub(r"^\d+\.[\s\-]+", "", n)
+            n = re.sub(r"^[\s*#•\-\–:,.]+", "", n)
+            n = re.sub(r"[\s*#\-\–:,.]+$", "", n)
+            n = re.sub(r"(?i)\s*(?:out of which|of which)\s*:?$", "", n)
+            n = re.sub(r"\s+", " ", n).strip()
+            return n
+
+        range_pattern = re.compile(
+            r"^(.*?)(?::\s*-|:\s*|-{1,2}|–|=|:|\s)\s*(\d+(?:\.\d+)?)\s*%?\s*(?:to|-|–|\s+)\s*(\d+(?:\.\d+)?)\s*%?(?:\s*(?:of\s+(?:net|total)\s+assets))?\s*$",
+            re.IGNORECASE
+        )
+        single_pattern = re.compile(
+            r"^(.*?)(?::\s*-|:\s*|-{1,2}|–|=|:|\s)\s*(?:upto|up\s+to|not\s+exceeding|maximum|max\.?)?\s*(\d+(?:\.\d+)?)\s*%(?:\s*(?:of\s+(?:net|total)\s+assets))?\s*$",
+            re.IGNORECASE
+        )
+        
+        for line in joined_lines:
+            line_clean = line.strip().rstrip(".,;")
+            if not line_clean:
+                continue
+            if re.match(r"^(?:\*|#|note:|please refer|there is no assurance)", line_clean, re.IGNORECASE) and not re.search(r"\d+\s*%", line_clean):
+                continue
+                
+            m = range_pattern.match(line_clean)
+            if m:
+                raw_name, min_val, max_val = m.group(1), m.group(2), m.group(3)
+                name = clean_name(raw_name)
+                if name:
                     allocations.append({
-                        "allocation_type": line,
+                        "allocation_type": name,
+                        "minimum_percentage": parse_num(min_val),
+                        "maximum_percentage": parse_num(max_val)
+                    })
+                    continue
+                    
+            m = single_pattern.match(line_clean)
+            if m:
+                raw_name, pct_val = m.group(1), m.group(2)
+                name = clean_name(raw_name)
+                if name:
+                    val = parse_num(pct_val)
+                    if re.search(r"(?i)\b(?:upto|up to|max|maximum|short exposure|derivative)\b", line_clean):
+                        min_p = 0
+                        max_p = val
+                    else:
+                        min_p = val
+                        max_p = val
+                    allocations.append({
+                        "allocation_type": name,
+                        "minimum_percentage": min_p,
+                        "maximum_percentage": max_p
+                    })
+                    continue
+                    
+            if not re.match(r"^(?:\*|#|note:|please refer|there is no assurance)", line_clean, re.IGNORECASE):
+                name = clean_name(line_clean)
+                if name:
+                    allocations.append({
+                        "allocation_type": name,
                         "minimum_percentage": None,
                         "maximum_percentage": None
                     })
-            return allocations
-            
-        for m in matches:
-            name = m.group(1).strip()
-            name = re.sub(r'^[\s,;]+', '', name)
-            allocations.append({
-                "allocation_type": name,
-                "minimum_percentage": float(m.group(2)) if '.' in m.group(2) else int(m.group(2)),
-                "maximum_percentage": float(m.group(3)) if '.' in m.group(3) else int(m.group(3))
-            })
-        return allocations
+                
+        return allocations if allocations else None
+
 
     def parse_fund_managers():
         records = []
@@ -177,8 +288,8 @@ def build_scheme_json(api_data, rows):
 
 
     # Extract all text blobs
-    sebi_code_val = get_val(["sebi code", "sebi codes", "investment strategy code", "strategy code", "sebi"])
-    fund_name_val = get_val(["name of the investment strategy", "fund name", "scheme name", "name of the strategy", "strategy name"]) or (api_data.get("Scheme_Name") if isinstance(api_data, dict) else None)
+    sebi_code_val = get_val(["sebi code", "sebi codes", "investment strategy code", "strategy code", "sebi"]) or (api_data.get("SEBI_Codes") if isinstance(api_data, dict) else None) or (api_data.get("sebi_code") if isinstance(api_data, dict) else None) or (api_data.get("SEBI_Code") if isinstance(api_data, dict) else None)
+    fund_name_val = get_val(["name of the investment strategy", "fund name", "scheme name", "name of the strategy", "strategy name"]) or (api_data.get("Scheme_Name") if isinstance(api_data, dict) else None) or (api_data.get("scheme_name") if isinstance(api_data, dict) else None) or (api_data.get("fund_name") if isinstance(api_data, dict) else None)
     options_text = get_val(["option names", "options names", "option names (regular & direct)", "options names (regular & direct)"])
     amfi_text = get_val(["amfi code", "amfi codes", "amfi codes (to be phased out)"])
     isin_text = get_val(["isin", "isins"])
@@ -725,7 +836,17 @@ def build_scheme_json(api_data, rows):
             "tier2"
         ]) or (api_data.get("Benchmark_Tier_2") if isinstance(api_data, dict) else None) or (api_data.get("benchmark_tier_2") if isinstance(api_data, dict) else None),
         
-        "asset_allocation": parse_asset_allocation(get_val(["stated asset allocation", "asset allocation"])),
+        "asset_allocation": parse_asset_allocation(
+            get_val([
+                "stated asset allocation",
+                "asset allocation",
+                "asset allocation pattern",
+                "stated asset allocation1",
+                "asset allocation (%)",
+                "indicative asset allocation",
+                "portfolio asset allocation"
+            ]) or (api_data.get("Asset_Allocation") if isinstance(api_data, dict) else None) or (api_data.get("asset_allocation") if isinstance(api_data, dict) else None)
+        ),
         "listing_details": get_val(["listing details"]),
         
         "plans": plans,

@@ -20,21 +20,22 @@ DEFAULT_HEADERS = {
 }
 
 
-def _http_get_json(url: str, timeout: int = 15) -> Any:
-    """Helper to fetch JSON from URL using requests if available, or urllib.request."""
+def _http_get_json(url: str, timeout: int = 10) -> Any:
+    """Helper to fetch JSON from URL using urllib.request or requests."""
     try:
-        import requests
-        resp = requests.get(url, headers=DEFAULT_HEADERS, timeout=timeout)
-        resp.raise_for_status()
-        return resp.json()
-    except ImportError:
-        pass
+        req = urllib.request.Request(url, headers=DEFAULT_HEADERS)
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            return json.loads(resp.read().decode("utf-8"))
     except Exception as e:
-        logger.warning(f"requests failed for {url}: {e}, trying urllib...")
-
-    req = urllib.request.Request(url, headers=DEFAULT_HEADERS)
-    with urllib.request.urlopen(req, timeout=timeout) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+        try:
+            import requests
+            resp = requests.get(url, headers=DEFAULT_HEADERS, timeout=timeout)
+            if resp.status_code == 200:
+                return resp.json()
+        except Exception:
+            pass
+        logger.warning(f"Error fetching JSON from {url}: {e}")
+    return None
 
 
 def clean_numeric_aum(val: Any) -> float | None:

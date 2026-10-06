@@ -2,21 +2,21 @@
     "sebi_code": "MAGM/I/H/HLSF/25/09/0001/SBIM",
     "scheme_name": "Magnum Hybrid Long Short Fund",
     "fund_name": "Magnum Hybrid Long Short Fund",
-    "scheme_type": "An Interval investment strategy investing predominantly in equity and debt securities, including limited short exposures in equity and debt through derivatives.",
-    "fund_type": "An Interval investment strategy investing predominantly in equity and debt securities, including limited short exposures in equity and debt through derivatives.",
+    "scheme_type": null,
+    "fund_type": null,
     "category": "HYBRID",
     "riskometer_at_launch": "Risk Band Level 2",
     "riskometer_as_on_date": "Risk Level - 1",
     "potential_risk_class": "NO",
-    "scheme_objective": "The investment objective of the Investment Strategy is to generate regular income by predominantly investing in Derivatives strategies like covered calls, arbitrage opportunities in the cash and derivatives segments of the equity markets and debt and money market instruments and to generate long-term capital appreciation through unhedged exposure to equity and equity related instruments. There is no assurance that the investment objective of the Investment strategy will be achieved.",
-    "face_value": "10.0000",
+    "scheme_objective": "The investment objective of the Investment Strategy is to generate regular income by predominantly investing in Derivatives strategies like covered calls, arbitrage opportunities in the cash and derivatives segments of the equity markets and debt and money market instruments and to generate long-term capital appreciation through unhedged exposure to equity and equity related instruments.\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
+    "face_value": null,
     "nfo_open_date": "2025-10-01",
     "nfo_close_date": "2025-10-15",
     "allotment_date": "2025-10-20",
-    "reopen_date": "2025-10-29",
+    "reopen_date": null,
     "maturity_date": null,
     "benchmark_tier_1": "Nifty 50 Hybrid composite debt 50:50 Index",
-    "benchmark_tier_2": null,
+    "benchmark_tier_2": "NA",
     "asset_allocation": [
         {
             "allocation_type": "Equity related instruments",
@@ -37,38 +37,16 @@
     "listing_details": "NO",
     "plans": {
         "regular": {
-            "growth": [
-                {
-                    "plan_type": "regular",
-                    "option": "growth",
-                    "sub_option": null,
-                    "time_period": null,
-                    "name": "Regular Plan - Growth:INF200K30015",
-                    "amfi_code": null,
-                    "isin_code": "INF200K30015",
-                    "rta_code": null
-                }
-            ],
+            "growth": [],
             "idcw": {
-                "payout": [
-                    {
-                        "plan_type": "regular",
-                        "option": "idcw",
-                        "sub_option": "payout",
-                        "time_period": null,
-                        "name": "Regular Plan - IDCW Payout:INF200K30023",
-                        "amfi_code": null,
-                        "isin_code": "INF200K30023",
-                        "rta_code": null
-                    }
-                ],
+                "payout": [],
                 "reinvestment": [
                     {
                         "plan_type": "regular",
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "Regular Plan - IDCW Reinvest:INF200K30031",
+                        "name": "INF200K30031",
                         "amfi_code": null,
                         "isin_code": "INF200K30031",
                         "rta_code": null
@@ -81,43 +59,10 @@
             "unresolved": []
         },
         "direct": {
-            "growth": [
-                {
-                    "plan_type": "direct",
-                    "option": "growth",
-                    "sub_option": null,
-                    "time_period": null,
-                    "name": "Direct Plan - Growth:INF200K30049",
-                    "amfi_code": null,
-                    "isin_code": "INF200K30049",
-                    "rta_code": null
-                }
-            ],
+            "growth": [],
             "idcw": {
-                "payout": [
-                    {
-                        "plan_type": "direct",
-                        "option": "idcw",
-                        "sub_option": "payout",
-                        "time_period": null,
-                        "name": "Direct Plan - IDCW Payout:INF200K30056",
-                        "amfi_code": null,
-                        "isin_code": "INF200K30056",
-                        "rta_code": null
-                    }
-                ],
-                "reinvestment": [
-                    {
-                        "plan_type": "direct",
-                        "option": "idcw",
-                        "sub_option": "reinvestment",
-                        "time_period": null,
-                        "name": "Direct Plan - IDCW Reinvest:INF200K30064",
-                        "amfi_code": null,
-                        "isin_code": "INF200K30064",
-                        "rta_code": null
-                    }
-                ],
+                "payout": [],
+                "reinvestment": [],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []
@@ -127,8 +72,8 @@
     },
     "fund_managers": [
         {
-            "name": "Mr. Gaurav Mehta",
-            "type": "Mr. Gaurav Mehta:Fund Manager",
+            "name": "Fund Manager",
+            "type": "Fund Manager",
             "from": "",
             "to": null,
             "role_or_portion": null
@@ -136,33 +81,33 @@
     ],
     "investment_limits": {
         "minimum_application_amount": "Rs.1000000.00",
-        "application_multiple": "Multiples of Re.1",
+        "application_multiple": "Rs.1",
         "minimum_additional_amount": "Rs.10000.00",
-        "additional_multiple": "Multiples of Re.1",
+        "additional_multiple": "Rs.1",
         "minimum_redemption_amount": "Rs.10000.00",
-        "minimum_redemption_units": null,
-        "minimum_balance_amount": null,
-        "minimum_balance_units": null,
-        "maximum_investment_amount": null
+        "minimum_redemption_units": "NA",
+        "minimum_balance_amount": "NA",
+        "minimum_balance_units": "NA",
+        "maximum_investment_amount": "NA"
     },
     "switch_details": {
-        "minimum_switch_amount": null,
-        "minimum_switch_units": null,
-        "switch_multiple_amount": null,
-        "switch_multiple_units": null,
-        "maximum_switch_amount": null,
-        "maximum_switch_units": null
+        "minimum_switch_amount": "NA",
+        "minimum_switch_units": "NA",
+        "switch_multiple_amount": "NA",
+        "switch_multiple_units": "NA",
+        "maximum_switch_amount": "NA",
+        "maximum_switch_units": "NA"
     },
     "systematic_investment_plans": {
-        "frequency": "SIPSTPSWPWeekly DayDailyWeeklyMonthlyQuarterly",
+        "frequency": "Quarterly",
         "minimum_amount": null,
         "in_multiples_of": null,
-        "minimum_installments": "SIPSTPSWPWeekly Day: 12 installments for Minimum SIP ofÂ Rs 10000.00Daily: 12 installments for Minimum SIP ofÂ Rs 10000.00Weekly: 12 installments for Minimum SIP ofÂ Rs 10000.00Monthly: 12 installments for Minimum SIP ofÂ Rs 10000.00Quarterly: 4 installments for Minimum SIP ofÂ Rs 10000.00",
-        "dates": "SIPSTPSWPWeekly Day: Any DayDaily: Any DayWeekly: 1, 8, 15, 22Monthly: Any DayQuarterly: Any Day",
+        "minimum_installments": "Quarterly: 4 installments for Minimum SIP of?Rs 10000.00",
+        "dates": "Quarterly: Any Day",
         "maximum_amount": null
     },
     "expenses_and_loads": {
-        "exit_load": "Exit Load- For Ongoing Basis: Any redemption or switch-out in excess of the limit shall be subject to the following exit load: 0.50 % if the investment is redeemed on or before 15 days from the date of allotment of units. 0.25 % if the investment is redeemed after 15 days but on or before 1 month from the date of allotment of units. No Exit Load will be charged if investment is redeemed after 1 month from the date of allotment of units.The AMC reserves the right to modify / change the load structure on a prospective basis.",
+        "exit_load": null,
         "actual_expense": null,
         "stated_maximum_expense": "Regular Plan : 0.92 Direct Plan : 0.4"
     },
@@ -172,10 +117,10 @@
     },
     "amc_details": {
         "sif_name": "Magnum SIF",
-        "amc_website": "https://www.sbimf.com",
+        "amc_website": null,
         "scheme_bonus": null
     },
-    "exit_load": "Exit Load- For Ongoing Basis: Any redemption or switch-out in excess of the limit shall be subject to the following exit load: 0.50 % if the investment is redeemed on or before 15 days from the date of allotment of units. 0.25 % if the investment is redeemed after 15 days but on or before 1 month from the date of allotment of units. No Exit Load will be charged if investment is redeemed after 1 month from the date of allotment of units.The AMC reserves the right to modify / change the load structure on a prospective basis.",
+    "exit_load": null,
     "registrar": "CAMS",
     "custodian": "SBI-SG Global Securities Services Pvt. Ltd",
     "auditor": "Chokshi & Chokshi LLP",

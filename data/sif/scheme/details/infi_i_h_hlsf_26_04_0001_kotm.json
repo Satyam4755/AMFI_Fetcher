@@ -7,7 +7,7 @@
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Risk Band Level 2",
     "riskometer_as_on_date": "Risk Band Level 1",
-    "potential_risk_class": null,
+    "potential_risk_class": "NA",
     "scheme_objective": "The investment objective of the strategy is to achieve a blend of capital appreciation and income generation by investing in equity and equity related instruments as well as debt and money market instruments, including limited short exposure in equity and debt through derivatives.\n\nThere is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
     "nfo_open_date": "2026-06-15",
@@ -16,15 +16,15 @@
     "reopen_date": "2026-07-09",
     "maturity_date": null,
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite debt 50:50 Index",
-    "benchmark_tier_2": null,
+    "benchmark_tier_2": "NA",
     "asset_allocation": [
         {
-            "allocation_type": "",
+            "allocation_type": "Investment in equity and equity related instruments * (including unhedged short exposure mentioned below)",
             "minimum_percentage": 35,
             "maximum_percentage": 75
         },
         {
-            "allocation_type": "",
+            "allocation_type": "Investments in Debt & Money Market Instruments (including unhedged short exposure mentioned below)",
             "minimum_percentage": 25,
             "maximum_percentage": 65
         },
@@ -135,27 +135,27 @@
         }
     ],
     "investment_limits": {
-        "minimum_application_amount": "•\tMinimum amount for other than accredited investorINR10,00,000/- and in multiples of Re. 1/- thereafter (across all investment strategies offered by the Infinity SIF at the PAN level)\n•\tMinimum amount for accredited investor during NFO and Continuous basis: INR 1,00,000/- and in multiples of Re. 1/- thereafter.",
+        "minimum_application_amount": "\u2022\tMinimum amount for other than accredited investorINR10,00,000/- and in multiples of Re. 1/- thereafter (across all investment strategies offered by the Infinity SIF at the PAN level)\n\u2022\tMinimum amount for accredited investor during NFO and Continuous basis: INR 1,00,000/- and in multiples of Re. 1/- thereafter.",
         "application_multiple": "In Multiples of Re. 1/- thereafter.",
         "minimum_additional_amount": "INR 10,000/- and in multiples of Re. 1 thereafter.",
         "additional_multiple": "In multiples of Re. 1 thereafter.",
-        "minimum_redemption_amount": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.\n\nMinimum Investment Threshold:\n• Aggregate investment by an investor across all investment strategies offered by Infinity SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/-.",
+        "minimum_redemption_amount": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.\n\nMinimum Investment Threshold:\n\u2022 Aggregate investment by an investor across all investment strategies offered by Infinity SIF, at the Permanent Account Number (\u2018PAN\u2019) level, shall not be less than Rs.10,00,000/-.",
         "minimum_redemption_units": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.",
-        "minimum_balance_amount": null,
+        "minimum_balance_amount": "NA",
         "minimum_balance_units": null,
-        "maximum_investment_amount": "Not Applicable"
+        "maximum_investment_amount": "NA"
     },
     "switch_details": {
         "minimum_switch_amount": "INR 10,000/- and in multiples of Re. 1 thereafter /- or all units, whichever is lower.",
         "minimum_switch_units": null,
-        "switch_multiple_amount": null,
-        "switch_multiple_units": null,
-        "maximum_switch_amount": null,
-        "maximum_switch_units": null
+        "switch_multiple_amount": "NA",
+        "switch_multiple_units": "NA",
+        "maximum_switch_amount": "NA",
+        "maximum_switch_units": "NA"
     },
     "systematic_investment_plans": {
         "frequency": "SIP - Daily, Weekly, Monthly, Quarterly, Half-yearly and Anually\nSWP -Weekly, Fortnightly, Monthly, quarterly\nSTP - Daily, weekly, Fortnightly, Monthly, quarterly",
-        "minimum_amount": "SIP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSWP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSTP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]",
+        "minimum_amount": "SIP - Daily, Weekly, Monthly, Quarterly, Half-yearly and Anually\nSWP -Weekly, Fortnightly, Monthly, quarterly\nSTP - Daily, weekly, Fortnightly, Monthly, quarterly",
         "in_multiples_of": "In multiples of Re. 1 thereafter.",
         "minimum_installments": "SIP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSWP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]\nSTP - INR 10,000/- and in multiples of Re. 1 thereafter [Minimum 6 installments]",
         "dates": "SIP - Any date from 1st to 31st\nSWP - Monday , Wednesday as per redemption dates\nSTP - Monday , Wednesday as per redemption dates",
@@ -167,16 +167,16 @@
         "stated_maximum_expense": "Regular 3.31, Direct 2.17"
     },
     "special_facilities": {
-        "swing_pricing": null,
+        "swing_pricing": "NA",
         "side_pocketing": "Segregation of portfolio has been enabled in the strategy."
     },
     "amc_details": {
         "sif_name": "Infinity SIF",
-        "amc_website": "https://www.kotakmf.com",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "Nil",
-    "registrar": "Computer Age Management Services  Limited (‘CAMS’)",
+    "registrar": "Computer Age Management Services  Limited (\u2018CAMS\u2019)",
     "custodian": "Deutsche Bank A G, Mumbai & Standard Chartered Bank",
     "auditor": "S. R. Batliboi & Co. LLP",
     "sif_name": "Infinity SIF",

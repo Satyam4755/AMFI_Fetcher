@@ -7,7 +7,7 @@
     "category": "Hybrid Long-Short Fund",
     "riskometer_at_launch": "Level  2",
     "riskometer_as_on_date": "Level 1",
-    "potential_risk_class": null,
+    "potential_risk_class": "NA",
     "scheme_objective": "The investment objective of the strategy is to generate optimal returns by investing predominantly in equity and debt securities, including limited short exposure in equity and debt through derivatives. Disclaimer: However, there can be no assurance that the investment objective of the investment strategy will be realized.",
     "face_value": "Rs.10/- per unit for Regular and Direct Plan",
     "nfo_open_date": "2026-01-09",
@@ -16,10 +16,15 @@
     "reopen_date": "2026-02-04",
     "maturity_date": null,
     "benchmark_tier_1": "CRISIL Hybrid 85+15 Conservative Index",
-    "benchmark_tier_2": null,
+    "benchmark_tier_2": "NA",
     "asset_allocation": [
         {
-            "allocation_type": "Equity Related Instruments",
+            "allocation_type": "Debt & Money Market Instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Equity & Equity Related Instruments",
             "minimum_percentage": 35,
             "maximum_percentage": 65
         },
@@ -418,23 +423,23 @@
         "minimum_redemption_units": "Any Amount",
         "minimum_balance_amount": "Rs.10,00,000",
         "minimum_balance_units": null,
-        "maximum_investment_amount": null
+        "maximum_investment_amount": "NA"
     },
     "switch_details": {
         "minimum_switch_amount": "Rs.10,000",
         "minimum_switch_units": null,
         "switch_multiple_amount": "Rs.1",
-        "switch_multiple_units": null,
-        "maximum_switch_amount": null,
-        "maximum_switch_units": null
+        "switch_multiple_units": "NA",
+        "maximum_switch_amount": "NA",
+        "maximum_switch_units": "NA"
     },
     "systematic_investment_plans": {
         "frequency": "SIP Details: Weekly, Monthly, Quarterly;  STP Details: Monday and Wednesday; SWP Details:  Monday and Wednesday",
-        "minimum_amount": "SIP  Details: Rs.10,000 , STP Details: Rs.10,000 , SWP Details: Rs.10,000",
+        "minimum_amount": "SIP Details: Weekly, Monthly, Quarterly;  STP Details: Monday and Wednesday; SWP Details:  Monday and Wednesday",
         "in_multiples_of": "SIP  Details: Re.1.00 , STP Details: Re.1.00 , SWP Details: Re.1.00",
         "minimum_installments": "SIP  Details: 6 , STP Details: 6  , SWP Details 6",
         "dates": "SIP Details:Weekly- . Any day option from Monday to Friday. Default day: Wednesday, if any day is not selected. OR b. Fixed dates i.e. 7, 14, 21 and 28, Monthly - Investor may choose any day of the month from 1st to 31st as the date of the instalment and Quarterly -Investor may choose any day of the month from 1st to 31st as the date of the instalment; STP Details: Monday and Wednesday; SWP Details:  Monday and Wednesday",
-        "maximum_amount": null
+        "maximum_amount": "NA"
     },
     "expenses_and_loads": {
         "exit_load": "Entry Load: Nil; Exit Load: Nil",
@@ -442,18 +447,18 @@
         "stated_maximum_expense": "Regular: 1.27, Direct: 0.83"
     },
     "special_facilities": {
-        "swing_pricing": null,
+        "swing_pricing": "NA",
         "side_pocketing": "Yes"
     },
     "amc_details": {
         "sif_name": "Arudha SIF",
-        "amc_website": "https://www.bandhanmutual.com",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "Entry Load: Nil; Exit Load: Nil",
     "registrar": "Computer Age Management Services Pvt. Ltd.(CAMS)",
     "custodian": "Axis Bank",
-    "auditor": "S.R.Batliboi & Co. LLP",
+    "auditor": "S.R.Batliboi &amp; Co. LLP",
     "sif_name": "Arudha SIF",
     "scheme_id": "S-10",
     "sif_id": "48",

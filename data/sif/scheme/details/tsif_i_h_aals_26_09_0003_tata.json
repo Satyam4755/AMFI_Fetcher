@@ -10,10 +10,10 @@
     "potential_risk_class": "Not Applicable",
     "scheme_objective": "To generate medium to long term capital appreciation by investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.",
     "face_value": "10",
-    "nfo_open_date": "2026-09-23",
-    "nfo_close_date": "2026-10-07",
+    "nfo_open_date": "23/09/2026 00:00:00",
+    "nfo_close_date": "07/10/2026 00:00:00",
     "allotment_date": "within 5 (five) working / business days from the date of closure of the NFO Period",
-    "reopen_date": "2026-10-16",
+    "reopen_date": "16/10/2026 00:00:00",
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "35% BSE 200 TRI + 50% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index",
     "benchmark_tier_2": "Not Applicable",
@@ -145,7 +145,7 @@
         }
     ],
     "investment_limits": {
-        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh.",
+        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (\u2018PAN\u2019) level, shall not be less than INR 10 lakh.",
         "application_multiple": "1",
         "minimum_additional_amount": "1000",
         "additional_multiple": "1",
@@ -164,12 +164,12 @@
         "maximum_switch_units": "Not Applicable."
     },
     "systematic_investment_plans": {
-        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Once a week i.e, on Monday (Post NFO Period)",
+        "frequency": "SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)",
         "minimum_amount": "SIP-- 1000.00/1000.00/1000.00/1000.00/1000.00/1000.00  ;STP --500.00/500.00/500.00/500.00",
         "in_multiples_of": "SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00/1.00/1.00/1.00 (Post NFO Period)",
         "minimum_installments": "SIP-- 12 Instalments/6 instalments/6 instalments/4 instalments/12 instalments/12 instalments  ;STP --500.00 to 999.00 - 12 instalments; \n1,000.00 to 1,999.00 -  6 instalments;\n2,000.00 and more - 3 instalments \n(Post NFO Period)",
         "dates": "SIP-- Any day/Any day/Any day/Any day/Monday-Friday/All Business Days  ;STP --Once a week i.e, on Monday (Post NFO Period)",
-        "maximum_amount": "SIP-- Not Applicable/Not Applicable/Not Applicable/Not Applicable/Not Applicable/Not Applicable  ;STP --Not Applicable/Not Applicable/Not Applicable/Not Applicable (Post NFO Period)"
+        "maximum_amount": null
     },
     "expenses_and_loads": {
         "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
@@ -182,7 +182,7 @@
     },
     "amc_details": {
         "sif_name": "Titanium SIF",
-        "amc_website": "https://www.tatamutualfund.com",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",

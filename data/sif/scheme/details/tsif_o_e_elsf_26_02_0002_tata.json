@@ -10,10 +10,10 @@
     "potential_risk_class": "Not Applicable",
     "scheme_objective": "To generate medium to long term capital appreciation by investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments. However, there is no assurance that the investment objective of the Investment strategy will be achieved.",
     "face_value": "10",
-    "nfo_open_date": "2026-04-27",
-    "nfo_close_date": "2026-05-11",
-    "allotment_date": "2026-05-14",
-    "reopen_date": "2026-05-20",
+    "nfo_open_date": "4/27/2026 12:00:00 AM",
+    "nfo_close_date": "5/11/2026 12:00:00 AM",
+    "allotment_date": "5/14/2026 12:00:00 AM",
+    "reopen_date": "5/20/2026 12:00:00 AM",
     "maturity_date": "Not Applicable",
     "benchmark_tier_1": "Nifty 500 Total Return Index (TRI)",
     "benchmark_tier_2": "Not Applicable",
@@ -34,12 +34,12 @@
             "maximum_percentage": 20
         },
         {
-            "allocation_type": "InvITs",
+            "allocation_type": "REITs & InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
         }
     ],
-    "listing_details": null,
+    "listing_details": "NA",
     "plans": {
         "regular": {
             "growth": [
@@ -140,11 +140,11 @@
         }
     ],
     "investment_limits": {
-        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh. Provided that the requirement of minimum investment amount shall not apply to an accredited investor.",
+        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (\u2018PAN\u2019) level, shall not be less than INR 10 lakh. Provided that the requirement of minimum investment amount shall not apply to an accredited investor.",
         "application_multiple": "1",
         "minimum_additional_amount": "1000",
         "additional_multiple": "1",
-        "minimum_redemption_amount": "500\nThe redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”",
+        "minimum_redemption_amount": "500\nThe redemption will be subject to compliance with provisions mentioned under \u201cMinimum investment threshold\u201d",
         "minimum_redemption_units": "Not Applicable",
         "minimum_balance_amount": "No mimimum balance required",
         "minimum_balance_units": "No mimimum unit balance required",
@@ -164,7 +164,7 @@
         "in_multiples_of": "SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00(Post NFO Period)",
         "minimum_installments": "SIP--1000.00 (with minimum 6 installments) ;STP --1000.00 (with minimum 6 installments) ;(Post NFO Period)",
         "dates": "SIP-- Any day/Any day/Any day/Any day(All Business Days)  ;STP --Daily (Post NFO Period)",
-        "maximum_amount": "SIP-- Not Applicable/Not Applicable/Not Applicable/Not Applicablee  ;STP --Not Applicable/Not Applicable/Not Applicable/Not Applicable (Post NFO Period)"
+        "maximum_amount": null
     },
     "expenses_and_loads": {
         "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
@@ -177,7 +177,7 @@
     },
     "amc_details": {
         "sif_name": "Titanium SIF",
-        "amc_website": "https://www.tatamutualfund.com",
+        "amc_website": null,
         "scheme_bonus": null
     },
     "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",
