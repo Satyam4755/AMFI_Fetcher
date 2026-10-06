@@ -1,0 +1,749 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Preksha Mehta</Author>
+  <LastAuthor>Irfan Rupani</LastAuthor>
+  <LastPrinted>2026-04-01T11:37:42Z</LastPrinted>
+  <Created>2023-03-13T07:32:06Z</Created>
+  <LastSaved>2026-04-01T11:37:18Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8100</WindowHeight>
+  <WindowWidth>23040</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="Percent 2">
+   <NumberFormat ss:Format="0%"/>
+  </Style>
+  <Style ss:ID="m2006901682464">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m2006901682484">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m2006901682504">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="m2006901682524">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m2006901682544">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m2006901682564">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s85">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s86">
+   <Alignment ss:Horizontal="Justify" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s87">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <NumberFormat ss:Format="Medium Date"/>
+  </Style>
+  <Style ss:ID="s90" ss:Parent="s62">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat ss:Format="Percent"/>
+  </Style>
+  <Style ss:ID="s91">
+   <Alignment ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#FF0000"/>
+  </Style>
+  <Style ss:ID="s92">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s94">
+   <Alignment ss:Vertical="Top"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s95">
+   <Alignment ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s102">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <NumberFormat ss:Format="#,##0"/>
+  </Style>
+  <Style ss:ID="s103">
+   <Alignment ss:Horizontal="Right" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s104">
+   <Alignment ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Apex Hybrid Long Short Fund">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="86" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s63" ss:DefaultColumnWidth="49.2"
+   ss:DefaultRowHeight="13.2">
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0"/>
+   <Column ss:StyleID="s63" ss:Width="285.60000000000002"/>
+   <Column ss:StyleID="s65" ss:AutoFitWidth="0" ss:Width="496.2"/>
+   <Column ss:StyleID="s66" ss:AutoFitWidth="0" ss:Width="147.6"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">INVESTMENT STRATEGY SUMMARY DOCUMENT</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.55">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Name of the Investment Strategy&#10;</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Apex Hybrid Long-Short Fund</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeDown="1" ss:StyleID="m2006901682464"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="m2006901682484"><Data ss:Type="String">Option Names (Regular &amp; Direct)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">Growth Option</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.2">
+    <Cell ss:Index="3" ss:StyleID="s84"><Data ss:Type="String">Payout of IDCW</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="38.25">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Type of Investment Strategy&#10;</Data></Cell>
+    <Cell ss:StyleID="s85"><Data ss:Type="String">An interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Risk- band (At the time of Launch)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Risk Level 2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Risk- band  (as on Date)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Risk Level 1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.2">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Category of the Investment Strategy&#10;</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Hybrid Long-Short Fund</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Potential Risk Class (as on date)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="43.5">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Objective of the Investment Strategy</Data></Cell>
+    <Cell ss:StyleID="s86"><Data ss:Type="String">An interval investment strategy investing in arbitrage, long equity, debt, equity and debt derivatives, long short and REITs/InVITs including limited short exposure on permitted instruments through derivatives.                                 There is no assurance that the investment objective of the Investment strategy will be achieved. &#10;&#10;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="94.5">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Stated Asset Allocation</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Equity &amp; Equity related instruments  - 35% - 65% #                                                                                                                                                                                                                                                                                                                                                                                                                                             Debt and Money Market Instruments- 35%- 65%  ##                                                                                                                                                                                                                                                                                                                                                                                                                                     Units issued by InvITs- 0%- 20%&#10;# including equity ETFs and units of equity oriented mutual fund schemes&#10;##including Units of Debt oriented mutual fund schemes and Debt ETFs&#10;Derivatives exposure will be upto 100% &amp; Unhedged short position will be upto 25% of net assets for both equity and debt instruments</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Face Value</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NFO Open Date</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="DateTime">2026-03-06T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NFO Close date</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="DateTime">2026-03-18T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Allotment Date</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="DateTime">2026-03-25T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Reopen Date</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="DateTime">2026-03-30T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Maturity Date (For closed-end funds)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.55">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Benchmark Name</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">NIFTY 50 Hybrid Composite Debt 50:50 Index&#10;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Benchmark Name</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager I - Name</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Mr. Lovelish Solanki</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager II - Name</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Mr. Mohit Sharma</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager III - Name</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Mr. Rohit Karan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager I - Type (Primary/Comanage/Description)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Primary</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager II - Type (Primary/Comanage/Description)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Comanage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager III - Type (Primary/Comanage/Description)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Comanage</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager I - From Date</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="DateTime">2026-03-25T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager II - From Date</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="DateTime">2026-03-25T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fund Manager III - From Date</Data></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="DateTime">2026-04-02T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:MergeDown="2" ss:StyleID="m2006901682504"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Actual Expense</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s71"><Data ss:Type="String">Regular</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="Number">1.4500000000000001E-2</Data></Cell>
+    <Cell ss:StyleID="s91"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s71"><Data ss:Type="String">Direct</Data></Cell>
+    <Cell ss:StyleID="s90"><Data ss:Type="Number">4.3E-3</Data></Cell>
+    <Cell ss:StyleID="s91"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.55">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Exit Load (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">For redemption/switch-out of units on or before 90 days from the date of allotment: 0.50% of applicable NAV.&#10;For redemption/switch-out of units after 90 days from the date of allotment: Nil.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Custodian</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Citibank NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Auditor</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">M/s Deloitte Haskins &amp; Sells LLP</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Registrar</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Computer Age Management Services Limited</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">RTA Code (To be phased out)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Listing Details</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">National Stock Exchange of India Limited (NSE) </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="83.55" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">ISINs</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Apex Hybrid Long-Short Fund - Direct - Payout of IDCW- INF209K30024                                                                                                                                                                                                                                                                                                                                                                                                             Apex Hybrid Long-Short Fund - Direct - Reinvestment of IDCW- INF209K30032                                                                                                                                                                                                                                                                                                                                                                  Apex Hybrid Long-Short Fund - Regular - Growth- INF209K30040                                                                                                                                                                                                                                                                                                                                                                                                   Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- INF209K30057                                                                                                                                                                                                                                                                                                                                                                                      Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- INF209K30065                                                                                                                                                                                                                                                                                                                                                                     Apex Hybrid Long-Short Fund-Direct Growth- INF209K30016</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="96" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">AMFI Codes (To be phased out)</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Apex Hybrid Long-Short Fund - Direct - SIF-83                                                                                                                                                                                                                                                                                                                                                                                                                                          Apex Hybrid Long-Short Fund - Direct - Reinvestment of IDCW- SIF-83                                                                                                                                                                                                                                                                                                                                                                                 Apex Hybrid Long-Short Fund - Regular - Growth- SIF-80                                                                                                                                                                                                                                                                                                                                                                                                                        Apex Hybrid Long-Short Fund - Regular - Payout of IDCW- SIF-81                                                                                                                                                                                                                                                                                                                                                                                                           Apex Hybrid Long-Short Fund - Regular - Reinvestment of IDCW- SIF-81                                                                                                                                                                                                                                                                                                                                                                                        Apex Hybrid Long-Short Fund-Direct Growth- SIF-79                                                                                                                                 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.55" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Investment strategy code&#10;</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">APEX/I/H/HLSF/26/02/0001/ABSL</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">Investment Amount Details:</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s92"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="42.45" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Application Amount</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">For normal investors - Rs. 10 lakh and in multiples of Re. 1 thereafter subject to the minimum investment threshold guidelines as per the SIF framework. &#10;For accredited investors - Rs. 1,00,000                                                                                                                                                                                                                                           &#10; &#10;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Application Amount in multiples of Rs.</Data></Cell>
+    <Cell ss:StyleID="s93"><Data ss:Type="String">Re.1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="18.45" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Additional Amount</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">Rs. 10,000 </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Additional Amount in multiples of Rs.</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">Re.1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="48" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Redemption Amount in Rs.</Data></Cell>
+    <Cell ss:StyleID="s95"><Data ss:Type="String">Rs. 10,000 and in multiples of Re. 1 thereafter.&#10;The redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="26.55" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Redemption Amount in Units</Data></Cell>
+    <Cell ss:StyleID="s94"><Data ss:Type="String">No minimum redemption criterion for Unit based redemption</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Balance Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Balance Amount in units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Max Investment Amount</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Switch Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Switch units</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Switch Multiple Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Switch Multiple Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Max Switch Amount</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Max Switch Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">46</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Swing Pricing (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Segragated Portfolio (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:MergeAcross="2" ss:StyleID="m2006901682524"><Data ss:Type="String">SIP Details*</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Frequency</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">OM</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum amount</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">10000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">In multiple of</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Instalments</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Dates</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Any Day(1 to 31) / Weekly(Monday to Friday)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Maximum Amount (if any)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:MergeAcross="2" ss:StyleID="m2006901682544"><Data ss:Type="String">STP Details*</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">54</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Frequency</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum amount</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">56</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">In multiple of</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">57</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Instalments</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Dates</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Maximum Amount (if any)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:MergeAcross="2" ss:StyleID="m2006901682564"><Data ss:Type="String">SWP Details*</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Frequency</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">61</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum amount</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">62</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">In multiple of</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Minimum Instalments</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">64</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Dates</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Maximum Amount (if any)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:Index="83" ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">*Not Applicable</Data></Cell>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s65"/>
+   </Row>
+   <Row ss:Index="85" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s103"><Data ss:Type="String">*</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">OM</Data></Cell>
+    <Cell ss:StyleID="s104"><Data ss:Type="String">Once a Month</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s104"/>
+    <Cell ss:StyleID="s104"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <FitToPage/>
+   <Print>
+    <ValidPrinterInfo/>
+    <Scale>44</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>103</Zoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>9</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

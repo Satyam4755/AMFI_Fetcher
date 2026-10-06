@@ -32,6 +32,51 @@
             "allocation_type": "Investments in units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity Related Instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Investments in Debt and Money Market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investments in units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity Related Instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Investments in Debt and Money Market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investments in units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity Related Instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Investments in Debt and Money Market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investments in units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "NA",
@@ -459,7 +504,7 @@
     },
     "amc_details": {
         "sif_name": "Arudha SIF",
-        "amc_website": null,
+        "amc_website": "https://www.bandhanmutual.com",
         "scheme_bonus": null
     },
     "exit_load": "Entry Load: Nil; Exit Load: If redeemed/switched out on or within 30 days from the date of allotment: 0.50% of the applicable NAV; If redeemed/switched out after 30 days from date of allotment - Nil.",

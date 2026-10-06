@@ -1,0 +1,241 @@
+<root type="object">
+  <FundID type="null"></FundID>
+  <Fund_Name type="string">Magnum Hybrid Long Short Fund</Fund_Name>
+  <Riskometer_At_the_time_of_Launch type="string">Risk Band Level 2</Riskometer_At_the_time_of_Launch>
+  <Riskometer_as_on_Date type="string">Risk Level - 1</Riskometer_as_on_Date>
+  <Category_as_Per_SEBI_Categorization_Circular type="string">HYBRID</Category_as_Per_SEBI_Categorization_Circular>
+  <Potential_Risk_Class_as_on_Date type="string">NO</Potential_Risk_Class_as_on_Date>
+  <Description_Objective_of_the_scheme type="string">The investment objective of the Investment Strategy is to generate regular income by predominantly investing in Derivatives strategies like covered calls, arbitrage opportunities in the cash and derivatives segments of the equity markets and debt and money market instruments and to generate long-term capital appreciation through unhedged exposure to equity and equity related instruments.
+There is no assurance that the investment objective of the Investment strategy will be achieved.</Description_Objective_of_the_scheme>
+  <NFO_Open_Date type="string">01-Oct-2025</NFO_Open_Date>
+  <NFO_Close_date type="string">15-Oct-2025</NFO_Close_date>
+  <Allotment_Date type="string">20-Oct-2025</Allotment_Date>
+  <ReopenDate type="null"></ReopenDate>
+  <Maturity_Date_For_closed_end_funds type="null"></Maturity_Date_For_closed_end_funds>
+  <Benchmark_Tier_1 type="string">Nifty 50 Hybrid composite debt 50:50 Index</Benchmark_Tier_1>
+  <Benchmark_Tier_2 type="string">NA</Benchmark_Tier_2>
+  <Annual_Expense_Stated_maximum type="string">Regular Plan : 0.92 Direct Plan : 0.4</Annual_Expense_Stated_maximum>
+  <Custodian type="string">SBI-SG Global Securities Services Pvt. Ltd</Custodian>
+  <Auditor type="string">Chokshi &amp; Chokshi LLP</Auditor>
+  <Registrar type="string">CAMS</Registrar>
+  <RTA_Code_To_be_phased_out type="string">901G; 901D; 901DR; D901G; D901D; D901R</RTA_Code_To_be_phased_out>
+  <Listing_Details type="string">NO</Listing_Details>
+  <SEBI_Codes type="string">MAGM/I/H/HLSF/25/09/0001/SBIM</SEBI_Codes>
+  <AssetDisc type="null"></AssetDisc>
+  <ISINs type="null"></ISINs>
+  <AMFI_Codes_To_be_phased_out type="null"></AMFI_Codes_To_be_phased_out>
+  <Minimum_Application_Amount type="string">Rs.1000000.00</Minimum_Application_Amount>
+  <Minimum_Application_Amount_in_multiples_of_Rs type="string">Rs.1</Minimum_Application_Amount_in_multiples_of_Rs>
+  <Minimum_Additional_Amount type="string">Rs.10000.00</Minimum_Additional_Amount>
+  <Minimum_Additional_Amount_in_multiples_of_Rs type="string">Rs.1</Minimum_Additional_Amount_in_multiples_of_Rs>
+  <Minimum_Redemption__Amount_in_Rs type="string">Rs.10000.00</Minimum_Redemption__Amount_in_Rs>
+  <Minimum_Redemption_Amount_in_Units type="string">NA</Minimum_Redemption_Amount_in_Units>
+  <Minimum_Balance_Amount_if_applicable type="string">NA</Minimum_Balance_Amount_if_applicable>
+  <Minimum_Balance_Amount_in_Units_if_applicable type="string">NA</Minimum_Balance_Amount_in_Units_if_applicable>
+  <Max_Investment_Amount type="string">NA</Max_Investment_Amount>
+  <Minimum_Switch_Amount_if_applicable type="string">NA</Minimum_Switch_Amount_if_applicable>
+  <Minimum_Switch_Units type="string">NA</Minimum_Switch_Units>
+  <Switch_Multiple_Amount_if_applicable type="string">NA</Switch_Multiple_Amount_if_applicable>
+  <Switch_Multiple_Units_if_applicable type="string">NA</Switch_Multiple_Units_if_applicable>
+  <Max_Switch_Amount type="string">NA</Max_Switch_Amount>
+  <Max_Switch_Units_if_applicable type="string">NA</Max_Switch_Units_if_applicable>
+  <Swing_Pricing_if_applicable type="string">NO</Swing_Pricing_if_applicable>
+  <Side_pocketing_if_applicable type="string">NO</Side_pocketing_if_applicable>
+  <Frequency type="array">
+    <item type="object">
+      <Frequency type="string">Weekly Day</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+    </item>
+    <item type="object">
+      <Frequency type="string">Daily</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+    </item>
+    <item type="object">
+      <Frequency type="string">Weekly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+    </item>
+    <item type="object">
+      <Frequency type="string">Monthly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+    </item>
+    <item type="object">
+      <Frequency type="string">Quarterly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+    </item>
+  </Frequency>
+  <Minimum_amount type="array">
+    <item type="object">
+      <Frequency type="string">Weekly Day</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MinimumAmount type="string">Rs.10000.00</MinimumAmount>
+    </item>
+    <item type="object">
+      <Frequency type="string">Daily</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MinimumAmount type="string">Rs.10000.00</MinimumAmount>
+    </item>
+    <item type="object">
+      <Frequency type="string">Weekly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MinimumAmount type="string">Rs.10000.00</MinimumAmount>
+    </item>
+    <item type="object">
+      <Frequency type="string">Monthly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MinimumAmount type="string">Rs.10000.00</MinimumAmount>
+    </item>
+    <item type="object">
+      <Frequency type="string">Quarterly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MinimumAmount type="string">Rs.10000.00</MinimumAmount>
+    </item>
+  </Minimum_amount>
+  <In_multiple_of type="array">
+    <item type="object">
+      <Frequency type="string">Weekly Day</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MultipleOf type="string">Rs.1</MultipleOf>
+    </item>
+    <item type="object">
+      <Frequency type="string">Daily</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MultipleOf type="string">Rs.1</MultipleOf>
+    </item>
+    <item type="object">
+      <Frequency type="string">Weekly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MultipleOf type="string">Rs.1</MultipleOf>
+    </item>
+    <item type="object">
+      <Frequency type="string">Monthly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MultipleOf type="string">Rs.1</MultipleOf>
+    </item>
+    <item type="object">
+      <Frequency type="string">Quarterly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <MultipleOf type="string">Rs.1</MultipleOf>
+    </item>
+  </In_multiple_of>
+  <Minimum_Instalments type="array">
+    <item type="object">
+      <MinimumInstalments type="string">Weekly Day: 12 installments for Minimum SIP of?Rs 10000.00</MinimumInstalments>
+    </item>
+    <item type="object">
+      <MinimumInstalments type="string">Daily: 12 installments for Minimum SIP of?Rs 10000.00</MinimumInstalments>
+    </item>
+    <item type="object">
+      <MinimumInstalments type="string">Weekly: 12 installments for Minimum SIP of?Rs 10000.00</MinimumInstalments>
+    </item>
+    <item type="object">
+      <MinimumInstalments type="string">Monthly: 12 installments for Minimum SIP of?Rs 10000.00</MinimumInstalments>
+    </item>
+    <item type="object">
+      <MinimumInstalments type="string">Quarterly: 4 installments for Minimum SIP of?Rs 10000.00</MinimumInstalments>
+    </item>
+  </Minimum_Instalments>
+  <Dates type="array">
+    <item type="object">
+      <Frequency type="string">Weekly Day</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <AllowedDates type="string">Weekly Day: Any Day</AllowedDates>
+    </item>
+    <item type="object">
+      <Frequency type="string">Daily</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <AllowedDates type="string">Daily: Any Day</AllowedDates>
+    </item>
+    <item type="object">
+      <Frequency type="string">Weekly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <AllowedDates type="string">Weekly:  1, 8, 15, 22</AllowedDates>
+    </item>
+    <item type="object">
+      <Frequency type="string">Monthly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <AllowedDates type="string">Monthly: Any Day</AllowedDates>
+    </item>
+    <item type="object">
+      <Frequency type="string">Quarterly</Frequency>
+      <TransactionType type="string">SIP</TransactionType>
+      <AllowedDates type="string">Quarterly: Any Day</AllowedDates>
+    </item>
+  </Dates>
+  <Maximum_Amount_if_any type="null"></Maximum_Amount_if_any>
+  <Options_Names type="array">
+    <item type="object">
+      <ISIN type="string">INF200K30049</ISIN>
+      <AMFICode type="string">111114</AMFICode>
+      <SchemeCode type="string">D901G</SchemeCode>
+      <OptionsNames type="string">Direct Plan - Growth</OptionsNames>
+    </item>
+    <item type="object">
+      <ISIN type="string">INF200K30015</ISIN>
+      <AMFICode type="string">111113</AMFICode>
+      <SchemeCode type="string">901G</SchemeCode>
+      <OptionsNames type="string">Regular Plan - Growth</OptionsNames>
+    </item>
+    <item type="object">
+      <ISIN type="string">INF200K30056</ISIN>
+      <AMFICode type="string">111115</AMFICode>
+      <SchemeCode type="string">D901P</SchemeCode>
+      <OptionsNames type="string">Direct Plan - IDCW Payout</OptionsNames>
+    </item>
+    <item type="object">
+      <ISIN type="string">INF200K30064</ISIN>
+      <AMFICode type="string">111115</AMFICode>
+      <SchemeCode type="string">D901D</SchemeCode>
+      <OptionsNames type="string">Direct Plan - IDCW Reinvest</OptionsNames>
+    </item>
+    <item type="object">
+      <ISIN type="string">INF200K30023</ISIN>
+      <AMFICode type="string">111116</AMFICode>
+      <SchemeCode type="string">901DP</SchemeCode>
+      <OptionsNames type="string">Regular Plan - IDCW Payout</OptionsNames>
+    </item>
+    <item type="object">
+      <ISIN type="string">INF200K30031</ISIN>
+      <AMFICode type="string">111116</AMFICode>
+      <SchemeCode type="string">901D</SchemeCode>
+      <OptionsNames type="string">Regular Plan - IDCW Reinvest</OptionsNames>
+    </item>
+  </Options_Names>
+  <Stated_Asset_Allocation1 type="array">
+    <item type="object">
+      <Instruments type="string">Equity &amp; Equity related instruments</Instruments>
+      <IndicativeAllocation type="string">65% - 75%</IndicativeAllocation>
+      <RiskProfile type="string">Risk Band Level 1</RiskProfile>
+    </item>
+    <item type="object">
+      <Instruments type="string">Hedged (including index futures, stock futures, index options, &amp; stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)</Instruments>
+      <IndicativeAllocation type="string">0% - 75%</IndicativeAllocation>
+      <RiskProfile type="string">Risk Band Level 1</RiskProfile>
+    </item>
+    <item type="object">
+      <Instruments type="string">Unhedged (Short derivatives)</Instruments>
+      <IndicativeAllocation type="string">0% - 25%</IndicativeAllocation>
+      <RiskProfile type="string">Risk Band Level 1</RiskProfile>
+    </item>
+    <item type="object">
+      <Instruments type="string">Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes</Instruments>
+      <IndicativeAllocation type="string">25% -35%</IndicativeAllocation>
+      <RiskProfile type="string">Risk Band Level 1</RiskProfile>
+    </item>
+    <item type="object">
+      <Instruments type="string">Units issued by REITs and InvITs</Instruments>
+      <IndicativeAllocation type="string">0% -10%</IndicativeAllocation>
+      <RiskProfile type="string">Risk Band Level 1</RiskProfile>
+    </item>
+  </Stated_Asset_Allocation1>
+  <Stated_Asset_Allocation2 type="array"></Stated_Asset_Allocation2>
+  <Stated_Asset_Allocation3 type="array"></Stated_Asset_Allocation3>
+  <Fund_Manager_1 type="array">
+    <item type="object">
+      <Name type="string">Mr. Gaurav Mehta</Name>
+      <FundManagerType type="string">Fund Manager</FundManagerType>
+      <FundManagerFromDate type="string">29-Oct-2025</FundManagerFromDate>
+    </item>
+  </Fund_Manager_1>
+  <schemeSettings type="array"></schemeSettings>
+  <systematicSchemeSettings type="array"></systematicSchemeSettings>
+</root>

@@ -2,8 +2,8 @@
     "sebi_code": "MAGM/I/H/HLSF/25/09/0001/SBIM",
     "scheme_name": "Magnum Hybrid Long Short Fund",
     "fund_name": "Magnum Hybrid Long Short Fund",
-    "scheme_type": null,
-    "fund_type": null,
+    "scheme_type": "Interval Fund",
+    "fund_type": "Interval Fund",
     "category": "HYBRID",
     "riskometer_at_launch": "Risk Band Level 2",
     "riskometer_as_on_date": "Risk Level - 1",
@@ -19,12 +19,172 @@
     "benchmark_tier_2": "NA",
     "asset_allocation": [
         {
-            "allocation_type": "Equity related instruments",
+            "allocation_type": "Equity & Equity related instruments",
             "minimum_percentage": 65,
             "maximum_percentage": 75
         },
         {
-            "allocation_type": "including Units of Debt oriented mutual fund schemes",
+            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Unhedged (Short derivatives)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 65,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Unhedged (Short derivatives)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 65,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Unhedged (Short derivatives)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 65,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Unhedged (Short derivatives)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 65,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Unhedged (Short derivatives)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 65,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Unhedged (Short derivatives)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by REITs and InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 65,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Hedged (including index futures, stock futures, index options, & stock options, etc. as part of hedged / arbitrage exposure, derivative strategies like Covered calls, protective Puts etc.)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Unhedged (Short derivatives)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments, including Units of Debt oriented mutual fund schemes",
             "minimum_percentage": 25,
             "maximum_percentage": 35
         },
@@ -40,18 +200,7 @@
             "growth": [],
             "idcw": {
                 "payout": [],
-                "reinvestment": [
-                    {
-                        "plan_type": "regular",
-                        "option": "idcw",
-                        "sub_option": "reinvestment",
-                        "time_period": null,
-                        "name": "INF200K30031",
-                        "amfi_code": null,
-                        "isin_code": "INF200K30031",
-                        "rta_code": null
-                    }
-                ],
+                "reinvestment": [],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []
@@ -72,8 +221,8 @@
     },
     "fund_managers": [
         {
-            "name": "Fund Manager",
-            "type": "Fund Manager",
+            "name": "[{'Name': 'Mr. Gaurav Mehta', 'FundManagerType': 'Fund Manager', 'FundManagerFromDate': '29-Oct-2025'}]",
+            "type": "",
             "from": "",
             "to": null,
             "role_or_portion": null
@@ -99,11 +248,74 @@
         "maximum_switch_units": "NA"
     },
     "systematic_investment_plans": {
-        "frequency": "Quarterly",
+        "frequency": [
+            {
+                "Frequency": "Weekly Day",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Daily",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Weekly",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Monthly",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Quarterly",
+                "TransactionType": "SIP"
+            }
+        ],
         "minimum_amount": null,
         "in_multiples_of": null,
-        "minimum_installments": "Quarterly: 4 installments for Minimum SIP of?Rs 10000.00",
-        "dates": "Quarterly: Any Day",
+        "minimum_installments": [
+            {
+                "MinimumInstalments": "Weekly Day: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Daily: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Weekly: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Monthly: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Quarterly: 4 installments for Minimum SIP of?Rs 10000.00"
+            }
+        ],
+        "dates": [
+            {
+                "Frequency": "Weekly Day",
+                "TransactionType": "SIP",
+                "AllowedDates": "Weekly Day: Any Day"
+            },
+            {
+                "Frequency": "Daily",
+                "TransactionType": "SIP",
+                "AllowedDates": "Daily: Any Day"
+            },
+            {
+                "Frequency": "Weekly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Weekly:  1, 8, 15, 22"
+            },
+            {
+                "Frequency": "Monthly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Monthly: Any Day"
+            },
+            {
+                "Frequency": "Quarterly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Quarterly: Any Day"
+            }
+        ],
         "maximum_amount": null
     },
     "expenses_and_loads": {
@@ -117,7 +329,7 @@
     },
     "amc_details": {
         "sif_name": "Magnum SIF",
-        "amc_website": null,
+        "amc_website": "https://www.sbimf.com",
         "scheme_bonus": null
     },
     "exit_load": null,

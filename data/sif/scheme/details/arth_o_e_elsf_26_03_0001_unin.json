@@ -32,6 +32,51 @@
             "allocation_type": "Units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and equity-related instruments (including unhedged short exposure)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments including units of debt oriented mutual fund schemes",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and equity-related instruments (including unhedged short exposure)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments including units of debt oriented mutual fund schemes",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and equity-related instruments (including unhedged short exposure)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments including units of debt oriented mutual fund schemes",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "As the Investment Strategy is an open ended strategy, and the units of the Investment Strategy will be offered for subscription and redemption at NAV based prices on all Business Days on an on-going basis providing the required liquidity to investors, units of the Investment Strategy are not proposed to be listed on any stock exchange.  \nHowever, the Trustee reserves the right to list the units of the Investment Strategy on any stock exchange(s) at its sole discretion at a later date.",
@@ -172,7 +217,7 @@
     },
     "amc_details": {
         "sif_name": "Arthaya SIF",
-        "amc_website": null,
+        "amc_website": "https://www.unionmf.com",
         "scheme_bonus": null
     },
     "exit_load": "1% if redeemed or switched out on or before completion of 1 year from the date of allotment of units. Nil if redeemed or switched out after completion of 1 year from the date of allotment of units.",

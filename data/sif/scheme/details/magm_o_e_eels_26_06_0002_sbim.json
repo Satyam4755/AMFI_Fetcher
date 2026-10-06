@@ -2,8 +2,8 @@
     "sebi_code": "MAGM/O/E/EELS/26/06/0002/SBIM",
     "scheme_name": "Magnum Equity Ex-Top 100 Long Short Fund",
     "fund_name": "Magnum Equity Ex-Top 100 Long Short Fund",
-    "scheme_type": null,
-    "fund_type": null,
+    "scheme_type": "Open Ended",
+    "fund_type": "Open Ended",
     "category": "EQUITY",
     "riskometer_at_launch": "Risk Level - 3",
     "riskometer_as_on_date": "Risk Level - 5",
@@ -19,12 +19,12 @@
     "benchmark_tier_2": "NA",
     "asset_allocation": [
         {
-            "allocation_type": "companies by market capitalization including REITs",
+            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
             "minimum_percentage": 65,
             "maximum_percentage": 100
         },
         {
-            "allocation_type": "companies by market capitalization including REITs",
+            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
             "minimum_percentage": 0,
             "maximum_percentage": 35
         },
@@ -37,6 +37,161 @@
             "allocation_type": "Units issued by InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies excluding the top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments of companies - top 100 companies by market capitalization including REITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Debt and Money Market Instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of mutual funds (including Gold & Silver ETFs)",
+            "minimum_percentage": 0,
+            "maximum_percentage": 35
         }
     ],
     "listing_details": "NO",
@@ -55,18 +210,7 @@
         "direct": {
             "growth": [],
             "idcw": {
-                "payout": [
-                    {
-                        "plan_type": "direct",
-                        "option": "idcw",
-                        "sub_option": "payout",
-                        "time_period": null,
-                        "name": "INF200K30114",
-                        "amfi_code": null,
-                        "isin_code": "INF200K30114",
-                        "rta_code": null
-                    }
-                ],
+                "payout": [],
                 "reinvestment": [],
                 "transfer": [],
                 "time_period": [],
@@ -77,11 +221,11 @@
     },
     "fund_managers": [
         {
-            "name": "SIF",
-            "type": "SIF",
+            "name": "[{'Name': 'Mr. Gaurav Mehta', 'FundManagerType': 'Fund Manager - SIF', 'FundManagerFromDate': '27-Aug-2026'}]",
+            "type": "",
             "from": "",
             "to": null,
-            "role_or_portion": "Fund Manager"
+            "role_or_portion": null
         }
     ],
     "investment_limits": {
@@ -104,11 +248,158 @@
         "maximum_switch_units": "NA"
     },
     "systematic_investment_plans": {
-        "frequency": "Yearly",
+        "frequency": [
+            {
+                "Frequency": "Weekly Day",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Daily",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Weekly",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Monthly",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Quarterly",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Half Yearly",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Yearly",
+                "TransactionType": "SIP"
+            },
+            {
+                "Frequency": "Weekly",
+                "TransactionType": "SWP"
+            },
+            {
+                "Frequency": "Monthly",
+                "TransactionType": "SWP"
+            },
+            {
+                "Frequency": "Quarterly",
+                "TransactionType": "SWP"
+            },
+            {
+                "Frequency": "Half Yearly",
+                "TransactionType": "SWP"
+            },
+            {
+                "Frequency": "Yearly",
+                "TransactionType": "SWP"
+            }
+        ],
         "minimum_amount": null,
         "in_multiples_of": null,
-        "minimum_installments": "Yearly: 1 installments for Minimum SWP of?Rs 100000.00",
-        "dates": "Yearly: Any Day",
+        "minimum_installments": [
+            {
+                "MinimumInstalments": "Weekly Day: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Daily: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Weekly: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Monthly: 12 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Quarterly: 4 installments for Minimum SIP of?Rs 10000.00"
+            },
+            {
+                "MinimumInstalments": "Half Yearly: 2 installments for Minimum SIP of?Rs 60000.00"
+            },
+            {
+                "MinimumInstalments": "Yearly: 2 installments for Minimum SIP of?Rs 60000.00"
+            },
+            {
+                "MinimumInstalments": "Weekly: 1 installments for Minimum SWP of?Rs 100000.00"
+            },
+            {
+                "MinimumInstalments": "Monthly: 1 installments for Minimum SWP of?Rs 100000.00"
+            },
+            {
+                "MinimumInstalments": "Quarterly: 1 installments for Minimum SWP of?Rs 100000.00"
+            },
+            {
+                "MinimumInstalments": "Half Yearly: 1 installments for Minimum SWP of?Rs 100000.00"
+            },
+            {
+                "MinimumInstalments": "Yearly: 1 installments for Minimum SWP of?Rs 100000.00"
+            }
+        ],
+        "dates": [
+            {
+                "Frequency": "Weekly Day",
+                "TransactionType": "SIP",
+                "AllowedDates": "Weekly Day: Any Day"
+            },
+            {
+                "Frequency": "Daily",
+                "TransactionType": "SIP",
+                "AllowedDates": "Daily: Any Day"
+            },
+            {
+                "Frequency": "Weekly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Weekly:  1, 8, 15, 22"
+            },
+            {
+                "Frequency": "Monthly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Monthly: Any Day"
+            },
+            {
+                "Frequency": "Quarterly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Quarterly: Any Day"
+            },
+            {
+                "Frequency": "Half Yearly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Half Yearly: Any Day"
+            },
+            {
+                "Frequency": "Yearly",
+                "TransactionType": "SIP",
+                "AllowedDates": "Yearly: Any Day"
+            },
+            {
+                "Frequency": "Weekly",
+                "TransactionType": "SWP",
+                "AllowedDates": "Weekly:  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30"
+            },
+            {
+                "Frequency": "Monthly",
+                "TransactionType": "SWP",
+                "AllowedDates": "Monthly: Any Day"
+            },
+            {
+                "Frequency": "Quarterly",
+                "TransactionType": "SWP",
+                "AllowedDates": "Quarterly: Any Day"
+            },
+            {
+                "Frequency": "Half Yearly",
+                "TransactionType": "SWP",
+                "AllowedDates": "Half Yearly: Any Day"
+            },
+            {
+                "Frequency": "Yearly",
+                "TransactionType": "SWP",
+                "AllowedDates": "Yearly: Any Day"
+            }
+        ],
         "maximum_amount": null
     },
     "expenses_and_loads": {
@@ -122,7 +413,7 @@
     },
     "amc_details": {
         "sif_name": "Magnum SIF",
-        "amc_website": null,
+        "amc_website": "https://www.sbimf.com",
         "scheme_bonus": null
     },
     "exit_load": null,

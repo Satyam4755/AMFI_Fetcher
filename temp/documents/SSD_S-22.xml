@@ -1,0 +1,558 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Sudesh Ummadi - AMC</Author>
+  <LastAuthor>Vansh Prajapati - AMC</LastAuthor>
+  <LastPrinted>2026-09-15T04:56:01Z</LastPrinted>
+  <Created>2026-02-27T09:52:25Z</Created>
+  <LastSaved>2026-09-11T09:30:37Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>11040</WindowHeight>
+  <WindowWidth>20730</WindowWidth>
+  <WindowTopX>32760</WindowTopX>
+  <WindowTopY>32760</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <NumberFormat ss:Format="###0;###0"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11" ss:Italic="1"/>
+   <NumberFormat ss:Format="###0;###0"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <NumberFormat ss:Format="Medium Date"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="0%"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <NumberFormat ss:Format="Short Date"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <NumberFormat ss:Format="Short Date"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:Family="Roman" ss:Size="11"/>
+   <NumberFormat ss:Format="Standard"/>
+   <Protection ss:Protected="0"/>
+  </Style>
+  <Style ss:ID="s84">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="54" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s72" ss:DefaultColumnWidth="48.5"
+   ss:DefaultRowHeight="14">
+   <Column ss:StyleID="s74" ss:Width="57.5"/>
+   <Column ss:StyleID="s74" ss:Width="245"/>
+   <Column ss:StyleID="s74" ss:AutoFitWidth="0" ss:Width="557"/>
+   <Column ss:StyleID="s72" ss:Width="58"/>
+   <Column ss:StyleID="s72" ss:Width="54"/>
+   <Row ss:Height="14.5">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Fields</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s84"><Data ss:Type="String">SCHEME SUMMARY DOCUMENT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fund Name</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Altiva Equity Ex-Top 100 Long-Short Fund</Data></Cell>
+   </Row>
+   <Row ss:Height="84">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Option Names (Regular &amp; Direct)</Data></Cell>
+    <Cell ss:StyleID="s67"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">Regular Plan &amp; Direct Plan&#10;· Growth&#10;· Income Distribution cum Capital Withdrawal (IDCW)- <Font
+       html:Color="#000000">Monthly and Quarterly</Font><Font>&#10;- Payout of Income Distribution cum Capital Withdrawal (IDCW)&#10;- Reinvestment of Income Distribution cum Capital Withdrawal (IDCW)&#10;- Transfer of Income Distribution cum Capital Withdrawal (IDCW)</Font></ss:Data></Cell>
+   </Row>
+   <Row ss:Height="28">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fund Type</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">An open-ended equity investment strategy investing in equity and equity related instruments including limited short exposure in equity through derivative instruments of Ex – top 100 stocks.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Riskometer (At the time of Launch)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Risk Band Level 5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Riskometer (as on Date)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Risk Band Level 5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Category as Per SEBI Categorization Circular</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Equity Ex-Top 100 Long-Short Fund</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Potential Risk Class (as on date)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Not applicable</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="80.25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Description, Objective of the scheme</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">To generate capital appreciation in the long term by predominantly investing in equity and equity related securities of Ex – top 100 companies. The Investment Strategy may also invest in various derivative instruments, including short exposure through unhedged derivative positions in equity and equity related instruments of Ex – top 100 stocks upto 25%.&#10;There is no assurance that the investment objective of the Investment strategy will be achieved.</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="73.5">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Stated Asset Allocation</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Equity &amp; Equity related instruments (inlcuding REITs) of Ex- Top 100* companies (including up to 25% in Unhedged short exposure through derivative instruments)#- 65 to 100%&#10;Other Equity and Equity related securities#- 0 to 35%&#10;Debt and money market instruments and Units of Debt Oriented Mutual Funds# - 0 to 35%&#10;Units issued by InvITs - 0 to 20%</Data></Cell>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Face Value</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Rs. 10/-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">NFO Open Date</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="DateTime">2026-05-18T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">NFO Close date</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="DateTime">2026-06-01T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Allotment Date</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="DateTime">2026-06-08T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Reopen Date</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="DateTime">2026-06-10T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Maturity Date (For closed-end funds)</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">Not applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Benchmark (Tier 1)</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Nifty 500 TRI</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Benchmark (Tier 2)</Data></Cell>
+    <Cell ss:StyleID="s66"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fund Manager Name</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Mr. Nikhil Gada, Mr. Trideep Bhattacharya, Mr. Ashish Sood, Mr. Amit Vora (Overseas portion)</Data></Cell>
+   </Row>
+   <Row ss:Height="28">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fund Manager Type (Primary/Comanage/Description)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Mr. Nikhil Gada (Comanage), Mr. Trideep Bhattacharya (Comanage), Mr. Ashish Sood (Assistant Fund Manager), Mr. Amit Vora (Overseas portion)</Data></Cell>
+   </Row>
+   <Row ss:Height="28">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Fund Manager From Date</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Mr. Nikhil Gada (08-06-2026), Mr. Trideep Bhattacharya(08-06-2026), Mr. Ashish Sood (03-08-2026),Mr. Amit Vora (Overseas portion)(08-06-2026)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Annual Expense (Stated maximum)</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Direct Plan - 1.99%, Regular Plan - 3.49%</Data></Cell>
+   </Row>
+   <Row ss:Height="70">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Exit Load (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">If the units are redeemed / switched out on or before 90 days from the date of allotment - 0.50% of applicable NAV. &#10;If the units are redeemed / switched out after 90 days from the date of allotment – Nil. &#10;&#10;AMC reserves the right to revise the load structure from time to time. Such changes will become effective prospectively from the date such changes are incorporated.</Data></Cell>
+    <Cell ss:StyleID="Default"/>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Custodian</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Standard Chartered</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="14.5">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Auditor</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">M/s. Walker Chandiok &amp; co LLP</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Registrar</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">KFIN Technologies Ltd</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+   </Row>
+   <Row ss:Height="112">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">RTA Code (To be phased out)</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">ETD1 -Altiva Equity ExTop 100 LongShort Fund Direct Plan Growth Growth&#10;ETD2 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Payout&#10;ETD2 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Reinvestment&#10;ETD2 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Transfer&#10;ETRG - Altiva Equity ExTop 100 LongShort Fund Regular Plan Growth Growth&#10;ETRD - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Payout&#10;ETRD - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Reinvestment&#10;ETRD - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Transfer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Listing Details</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:Height="112">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">ISINs</Data></Cell>
+    <Cell ss:StyleID="s80"><Data ss:Type="String">INF754K30094 - Altiva Equity ExTop 100 LongShort Fund Direct Plan Growth Growth&#10;INF754K30102 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Payout&#10;INF754K30110 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Reinvestment&#10;INF754K30128 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Transfer&#10;INF754K30136 - Altiva Equity ExTop 100 LongShort Fund Regular Plan Growth Growth&#10;INF754K30144 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Payout&#10;INF754K30151 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Reinvestment&#10;INF754K30169 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Transfer</Data></Cell>
+   </Row>
+   <Row ss:Height="112">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">AMFI Codes (To be phased out)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">SIF-120 - Altiva Equity ExTop 100 LongShort Fund Direct Plan Growth Growth&#10;SIF-121 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Payout&#10;SIF-121 - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Reinvestment&#10;NA - Altiva Equity ExTop 100 LongShort Fund Direct Plan  IDCW Transfer&#10;SIF-122 - Altiva Equity ExTop 100 LongShort Fund Regular Plan Growth Growth&#10;SIF-123 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Payout&#10;SIF-123 - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Reinvestment&#10;NA - Altiva Equity ExTop 100 LongShort Fund Regular Plan IDCW Transfer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SEBI Codes</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">ALTV/O/E/EELS/26/03/0002/EDEL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Application Amount</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">Rs. 1000000/-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Application Amount in multiples of Rs.</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Re. 1/-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Additional Amount</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Rs. 1000/-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Additional Amount in multiples of Rs.</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Re. 1/-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Redemption Amount in Rs.</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Re. 1/-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Redemption Amount in Units</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">1E-3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Balance Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Rs. 1000000/-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Balance Amount in Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Max Investment Amount</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Switch Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Minimum Switch Units</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Switch Multiple Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Switch Multiple Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Max Switch Amount</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Max Switch Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">46</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Swing Pricing (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Side-pocketing (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="45.625">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SIP SWP &amp; STP Details: Frequency</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">Daily (D); Weekly (W); Fortnightly (F) Monthly (M); Quarterly (Q) </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="52.375">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SIP SWP &amp; STP Details: Minimum amount</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">D - 1000; W - 1000; F - 1000; M - 1000; Q - 1000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="48.625">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SIP SWP &amp; STP Details: In multiple of</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">D - 1; W - 1; F - 1; M - 1; Q - 1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="48.625">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SIP SWP &amp; STP Details: Minimum Instalments</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">D - 20; W - 6; F - 6; M - 6; Q - 6</Data></Cell>
+   </Row>
+   <Row ss:Height="42">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SIP SWP &amp; STP Details: Dates</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">D - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; W - 7,14,21,28; F - 10,25; M - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; Q - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="74.25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">SIP SWP &amp; STP Details: Maximum Amount (if any)</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">D - 9999999999; W - 9999999999; F - 9999999999; M - 9999999999; Q - 9999999999</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.25" x:Right="0.25" x:Top="0.75"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <FitHeight>0</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <Scale>63</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <ShowPageBreakZoom/>
+   <Selected/>
+   <TopRowVisible>20</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>41</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

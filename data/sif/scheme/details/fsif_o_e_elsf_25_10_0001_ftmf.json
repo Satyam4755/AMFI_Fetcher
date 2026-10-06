@@ -32,6 +32,51 @@
             "allocation_type": "Debt, money market instruments (excluding instrument, securities kept for Margin purpose), Invits, Exchange Trade Funds and units of debt mutual fund schemes",
             "minimum_percentage": 0,
             "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity related instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and equity related instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt, money market instruments (excluding instrument, securities kept for Margin purpose), Invits, Exchange Trade Funds and units of debt mutual fund schemes",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity related instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and equity related instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt, money market instruments (excluding instrument, securities kept for Margin purpose), Invits, Exchange Trade Funds and units of debt mutual fund schemes",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity related instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and equity related instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt, money market instruments (excluding instrument, securities kept for Margin purpose), Invits, Exchange Trade Funds and units of debt mutual fund schemes",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "Not listed",
@@ -172,7 +217,7 @@
     },
     "amc_details": {
         "sif_name": "Sapphire SIF",
-        "amc_website": null,
+        "amc_website": "https://www.franklintempletonindia.com",
         "scheme_bonus": null
     },
     "exit_load": "1% if units are redeemed within one year of allotment, NIL thereafter.",

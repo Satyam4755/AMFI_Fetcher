@@ -1,0 +1,1055 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>mhashim</Author>
+  <Keywords>INTERNAL</Keywords>
+  <LastAuthor>Jay Patil/Compliance/CSO</LastAuthor>
+  <LastPrinted>2026-09-10T07:06:42Z</LastPrinted>
+  <Created>2012-04-03T12:25:35Z</Created>
+  <LastSaved>2026-09-10T07:07:08Z</LastSaved>
+  <Company>Franklin Templeton Investments</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KlassifyGUID dt:dt="string">f282765f-fef9-4cab-abe8-abfbd2596f38</KlassifyGUID>
+  <Classification dt:dt="string">INTERNAL</Classification>
+  <KID dt:dt="string">088E90BD0B0F638979423579593564</KID>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <Colors>
+   <Color>
+    <Index>30</Index>
+    <RGB>#E3DFD9</RGB>
+   </Color>
+   <Color>
+    <Index>31</Index>
+    <RGB>#004FA6</RGB>
+   </Color>
+   <Color>
+    <Index>33</Index>
+    <RGB>#E5E8DC</RGB>
+   </Color>
+   <Color>
+    <Index>38</Index>
+    <RGB>#004FA6</RGB>
+   </Color>
+  </Colors>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10300</WindowHeight>
+  <WindowWidth>19420</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <TabRatio>781</TabRatio>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Arial"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m2625980788424">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="m2625980787780">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="m2625980792712">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="m2625980792772">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="m2625980787532">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="m2625980787572">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m2625980792148">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m2625980792168">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m2625980792188">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="m2625980793336">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s93">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s94">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s95">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s96">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s97">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s98">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s99">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s100">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s101">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s102">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s103">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s104">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s105">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s106">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish ExtraBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s107">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Mulish ExtraBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s108">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="Mulish ExtraBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s109">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Font ss:FontName="Mulish ExtraBold" ss:Size="11"/>
+  </Style>
+  <Style ss:ID="s134">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+   <NumberFormat ss:Format="Medium Date"/>
+  </Style>
+  <Style ss:ID="s139">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish ExtraBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s140">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s147">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s148">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Mulish SemiBold" ss:Size="11"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="iSIF Equity Long-Short ">
+  <Names>
+   <NamedRange ss:Name="_FilterDatabase"
+    ss:RefersTo="='iSIF Equity Long-Short '!R1C1:R2C12" ss:Hidden="1"/>
+   <NamedRange ss:Name="Print_Area"
+    ss:RefersTo="='iSIF Equity Long-Short '!R1C1:R76C4"/>
+   <NamedRange ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"
+    ss:RefersTo="='iSIF Equity Long-Short '!R1C1:R2C12" ss:Hidden="1"/>
+   <NamedRange ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"
+    ss:RefersTo="='iSIF Equity Long-Short '!R1C1:R2C5" ss:Hidden="1"/>
+   <NamedRange ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.Rows"
+    ss:RefersTo="='iSIF Equity Long-Short '!#REF!" ss:Hidden="1"/>
+   <NamedRange ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"
+    ss:RefersTo="='iSIF Equity Long-Short '!R1C1:R2C12" ss:Hidden="1"/>
+   <NamedRange ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"
+    ss:RefersTo="='iSIF Equity Long-Short '!R1C1:R2C5" ss:Hidden="1"/>
+   <NamedRange ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.Rows"
+    ss:RefersTo="='iSIF Equity Long-Short '!#REF!" ss:Hidden="1"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="76" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s97" ss:DefaultColumnWidth="1403.5"
+   ss:DefaultRowHeight="14.5">
+   <Column ss:StyleID="s97" ss:AutoFitWidth="0" ss:Width="46.5"/>
+   <Column ss:StyleID="s97" ss:Width="304"/>
+   <Column ss:StyleID="s97" ss:AutoFitWidth="0" ss:Width="232"/>
+   <Column ss:StyleID="s97" ss:AutoFitWidth="0" ss:Width="242"/>
+   <Column ss:StyleID="s97" ss:AutoFitWidth="0" ss:Width="121"/>
+   <Column ss:StyleID="s97" ss:AutoFitWidth="0" ss:Width="186"/>
+   <Row ss:AutoFitHeight="0" ss:Height="20" ss:StyleID="s109">
+    <Cell ss:StyleID="s106"><Data ss:Type="String">Fields</Data><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="2" ss:StyleID="s139"><Data ss:Type="String">INVESTMENT STRATEGY SUMMARY DOCUMENT</Data><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s107"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:Height="16" ss:StyleID="s96">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fund Name</Data><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">iSIF Equity Long-Short Fund</Data><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s94"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.PrintArea"/><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s94"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s95"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s95"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s95"><NamedCell
+      ss:Name="Z_947AF617_532A_4654_A5EB_6EF1F34B5B32_.wvu.FilterData"/><NamedCell
+      ss:Name="Z_7411D528_C1EE_4666_921D_B1376BF6421F_.wvu.FilterData"/><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="41.5" ss:StyleID="s96">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">2</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Options Names (Regular &amp; Direct)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">iSIF Equity Long-Short Fund - Regular Plan - Growth&#10;iSIF Equity Long-Short Fund - Direct Plan - Growth</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s94"/>
+    <Cell ss:StyleID="s95"/>
+    <Cell ss:StyleID="s95"/>
+    <Cell ss:StyleID="s95"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">3</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fund Type</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Open Ended Investment Strategy</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">4</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Risk Band (At the time of Launch)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Risk Level 5</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">5</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Risk Bandr (As on August 31, 2026)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Risk Level 5</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">6</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Category as Per SEBI Categorization Circular</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Equity Long-Short Fund</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">7</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Potential Risk Class (as on date)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="118.5">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">8</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Description, Objective of the Investment Strategy</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">To generate capital appreciation in long term by predominantly investing in listed equity and equity related instruments. The Investment Strategy may also invest in various derivative instruments, including limited short exposure through unhedged derivative positions in equity up to 25%.&#10;&#10;There is no assurance that the investment objective of the Investment strategy will be achieved.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="256.5">
+    <Cell ss:StyleID="s100"><Data ss:Type="Number">9</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s101"><Data ss:Type="String">Stated Asset Allocation</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2625980792712"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40">Equity and Equity related instruments* (including up to 25% in Unhedged short exposure through derivative instruments) #   80<B>%-100%</B><Font>&#10;&#10;Debt &amp; Money Market instruments and Units of Debt Oriented Mutual Funds   </Font><B>0%-20%&#10;&#10;</B><Font>Units of Infrastructure Investments Trusts  </Font><B>0%- 20%&#10;</B><Font>&#10;# Derivatives exposure will be up to 100% of net assets and unhedged short position can be up to 25% of net assets. Exposure through such derivative Instruments (including unhedged short exposure) shall include Stock / Index Futures, Stock / Index Options and other derivative instruments permitted by SEBI.&#10;&#10;*Includes investments of up to 35% in overseas markets in equity &amp; equity related instruments including Global Depository Receipts (GDRs), ADRs, foreign securities, bonds, mutual funds, ETFs and such other instruments as may be allowed under the Regulations from time to time.</Font></ss:Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">10</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Face Value</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="Number">10</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">11</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">NFO Open Date</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s134"><Data ss:Type="DateTime">2026-05-19T00:00:00.000</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">12</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">NFO Close Date</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s134"><Data ss:Type="DateTime">2026-06-02T00:00:00.000</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">13</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Allotment Date</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s134"><Data ss:Type="DateTime">2026-06-05T00:00:00.000</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">14</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Re-open Date</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s134"><Data ss:Type="DateTime">2026-06-10T00:00:00.000</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">15</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Maturity Date (For Closed-end funds)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">16</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Benchmark (Tier 1)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Nifty 500 TRI</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">17</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Benchmark (Tier 2)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:MergeDown="1" ss:StyleID="s101"><Data ss:Type="Number">18</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fund Manager 1 - Name</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2625980792772"><Data ss:Type="String">Mr. Mittul Kalawadia</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:Index="2" ss:StyleID="s98"><Data ss:Type="String">Fund Manager 2 - Name</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Ms. Nitya Mishra </Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fund Manager 3 - Name</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">Ms. Sri Sharma</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s103"><NamedCell ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:MergeDown="2" ss:StyleID="s148"><Data ss:Type="Number">19</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fund Manager 1 - Type (Primary/Comanage/Description)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Primary</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:Index="2" ss:StyleID="s98"><Data ss:Type="String">Fund Manager 2 - Type (Primary/Comanage/Description)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Primary</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:Index="2" ss:StyleID="s98"><Data ss:Type="String">Fund Manager 3 - Type (Primary/Comanage/Description)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Primary</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:MergeDown="1" ss:StyleID="s101"><Data ss:Type="Number">20</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fund Manager 1 - From Date</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s134"><Data ss:Type="DateTime">2026-06-05T00:00:00.000</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:Index="2" ss:StyleID="s98"><Data ss:Type="String">Fund Manager 2 - From Date</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s134"><Data ss:Type="DateTime">2026-06-05T00:00:00.000</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125" ss:StyleID="s93">
+    <Cell ss:StyleID="s104"><NamedCell ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Fund Manager 3 - From Date</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s134"><Data ss:Type="DateTime">2026-06-05T00:00:00.000</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="19">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">21</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Annual Expense (Actual Expenses)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">Total Expense Ratio (TER)  - Regular Plan : 4.19% ; Direct plan : 2.72 %&#10;</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="56.5">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">22</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Exit Load (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">•1% of applicable Net Asset Value - If the amount sought to be redeemed or switched out within 1 month from allotment.&#10;•NIL - If the amount sought to be redeemed or switched out more than 1 month</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="50">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">23</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Custodian</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Citibank N.A,HDFC Bank Limited, HSBC Limited and SBI-SG Global Securities Services Private Limited</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">24</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Auditor</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">M/s BSR &amp; Co. LLP</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">25</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Registrar</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Computer Age Management Services Limited</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="56.5">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">26</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">RTA code (To be phased out)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">iSIF Equity Long-Short Fund – Growth - 1004&#10;iSIF Equity Long-Short Fund - Direct Plan – Growth- 6004</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:MergeDown="1" ss:StyleID="m2625980788424"><Data ss:Type="Number">27</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Listing Details</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="18.5">
+    <Cell ss:Index="2" ss:StyleID="s105"><Data ss:Type="String">Scrip Code </Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2625980787780"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="49">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">28</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s99"><Data ss:Type="String">ISINs</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="m2625980787532"><Data ss:Type="String">iSIF Equity Long-Short Fund- GROWTH-INF109K30075                                                                                                                                                                                                                                                                iSIF Equity Long-Short Fund-DIRECT-GROWTH- INF109K30083</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="53">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">29</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">AMFI Code (To be phased out)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s147"><Data ss:Type="String">iSIF Equity Long-Short Fund - Growth - SIF-126&#10;iSIF Equity Long-Short Fund - Direct Plan - Growth - SIF-127</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">30</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">SEBI Codes</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">ISIF/O/E/ELSF/26/04/0004/ICIC</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:MergeAcross="3" ss:StyleID="m2625980787572"><Data ss:Type="String">Investment Amount Details:</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="130">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">31</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Application Amount</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">•	Minimum Application/Switch In Amount for first time investor in SIF &#10;-	Rs. 10,00,000/- and in multiples of Re.1/- thereafter &#10;-	For accredited investor Rs. 10,000/- and in multiples of Re. 1/- thereafter &#10;&#10;•	Minimum Application/Switch In Amount for existing investor who have complied with the Minimum Investment Threshold&#10;-	 Rs. 10,000 (plus in multiple of Re. 1/-).</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="31.5">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">33</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Additional Amount</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">Rs. 10,000/- (plus in multiples of Re. 1)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="134">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">35</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Redemption Amount in Rs.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s140"><Data ss:Type="String">Any amount subject to provisions of minimum investment threshold as specified below.&#10;&#10;Minimum Investment Threshold:&#10;- Aggregate investment by an investor across all investment strategies offered by iSIF, at the Permanent Account Number (‘PAN’) level, shall not be less than Rs.10,00,000/&#10;-In case of any request(s) for partial redemption/switch out by the investor/(s), the AMC reserves the right to reject the redemptions entirely if the amount post payout of redemptions falls below Minimum Investment Threshold.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">36</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Redemption Amount in Units</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">37</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Balance Amount (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">38</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Balance Amount in Units (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">39</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Max Investment Amount</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">40</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Switch Amount (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">41</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum Switch Units</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">42</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Switch Multiple Amount (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">43</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Switch Multiple Units (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">44</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Max Switch Amount</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">45</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Max Switch Unit (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">46</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Swing Pricing (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">47</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Side-pocketing (if applicable)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s98"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="3" ss:StyleID="m2625980792168"><Data ss:Type="String">SIP SWP &amp; STP Details:</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell ss:MergeAcross="3" ss:StyleID="m2625980792188"><Data ss:Type="String">SIP</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="31">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">48</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Frequency</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">Daily, Weekly, Monthly, Quarterly, Fortnightly</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="97">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">49</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum amount</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">investor may submit the Systematic Investment Plan (SIP) as follows, subject to Investor fulfilling minimum subscription amount of Rs.10 Lakhs&#10;Daily SIP: Rs. 5,000 and in multiples of Re. 1 thereof; Minimum Installments - 6&#10;Weekly, Fortnightly, Monthly SIP: Rs. 10,000/- and in multiples of Re. 1 thereof; Minimum Installments - 6&#10;Quarterly SIP: Rs. 20,000/- and in multiples of Re. 1 thereof; Minimum Installments - 4</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">50</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">In multiple of</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="Number">1</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="37">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">51</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum instalments</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">Daily,Weekly, Fortnightly, Monthly-6&#10;Quarterly-4</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="150.5">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">52</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Dates</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">Daily = Daily (only business days)&#10;Weekly = Anyday (Monday to Friday)*&#10;Fortnightly = 1st and 16th day of each month as applicable&#10;Monthly = Any day*&#10;Quarterly = Any day*&#10;&#10;*In case the date chosen for SIP falls on a Non-Business Day or on a date which is not available in a particular month, the SIP will beprocessed on the immediate next Business Day.</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.125">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">53</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Maximum Amount (If any)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:MergeAcross="3" ss:StyleID="m2625980792148"><Data ss:Type="String">STP</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">48</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Frequency</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">49</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum amount</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">50</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">In multiple of</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">51</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum instalments</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">52</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Dates</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">53</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Maximum Amount (If any)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:MergeAcross="3" ss:StyleID="m2625980793336"><Data ss:Type="String">SWP</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">48</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Frequency</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">49</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum amount</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">50</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">In multiple of</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">51</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Minimum instalments</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">52</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Dates</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+   <Row ss:Height="16">
+    <Cell ss:StyleID="s98"><Data ss:Type="Number">53</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">Maximum Amount (If any)</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s99"><Data ss:Type="String">NA</Data><NamedCell
+      ss:Name="Print_Area"/></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Layout x:CenterHorizontal="1"/>
+    <Header x:Margin="0.3" x:Data="&amp;L "/>
+    <Footer x:Margin="0.3" x:Data="&amp;L "/>
+    <PageMargins x:Bottom="0.5" x:Left="0.25" x:Right="0.25" x:Top="0.5"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <FitHeight>0</FitHeight>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>7</PaperSizeIndex>
+    <Scale>58</Scale>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <ShowPageBreakZoom/>
+   <Zoom>118</Zoom>
+   <PageBreakZoom>85</PageBreakZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>33</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+     <RangeSelection>R34C3:R34C4</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <PageBreaks xmlns="urn:schemas-microsoft-com:office:excel">
+   <RowBreaks>
+    <RowBreak>
+     <Row>32</Row>
+     <ColEnd>3</ColEnd>
+    </RowBreak>
+    <RowBreak>
+     <Row>62</Row>
+     <ColEnd>3</ColEnd>
+    </RowBreak>
+   </RowBreaks>
+  </PageBreaks>
+ </Worksheet>
+</Workbook>

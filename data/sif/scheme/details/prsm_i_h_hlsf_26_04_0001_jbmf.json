@@ -37,6 +37,66 @@
             "allocation_type": "Units of InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Debt and money market instruments",
+            "minimum_percentage": 25,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Units of InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Debt and money market instruments",
+            "minimum_percentage": 25,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Units of InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity & Equity related instruments",
+            "minimum_percentage": 35,
+            "maximum_percentage": 75
+        },
+        {
+            "allocation_type": "Debt and money market instruments",
+            "minimum_percentage": 25,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Units of InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "NSE",
@@ -48,7 +108,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-138 : Prism Hybrid Long \u2013 Short Fund \u2013 Regular Plan \u2013 Growth | INF22M030019 - Prism Hybrid Long \u2013 Short Fund \u2013 Regular Plan \u2013 Growth | 701RG- Prism Hybrid Long \u2013 Short Fund \u2013 Regular Plan \u2013 Growth",
+                    "name": "SIF-138 : Prism Hybrid Long – Short Fund – Regular Plan – Growth | INF22M030019 - Prism Hybrid Long – Short Fund – Regular Plan – Growth | 701RG- Prism Hybrid Long – Short Fund – Regular Plan – Growth",
                     "amfi_code": "SIF-138",
                     "isin_code": "INF22M030019",
                     "rta_code": "701RG"
@@ -70,7 +130,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-139 : Prism Hybrid Long \u2013 Short Fund \u2013 Direct Plan \u2013 Growth | INF22M030027- Prism Hybrid Long \u2013 Short Fund \u2013 Direct Plan \u2013 Growth | 701DG- Prism Hybrid Long \u2013 Short Fund \u2013 Direct Plan \u2013 Growth",
+                    "name": "SIF-139 : Prism Hybrid Long – Short Fund – Direct Plan – Growth | INF22M030027- Prism Hybrid Long – Short Fund – Direct Plan – Growth | 701DG- Prism Hybrid Long – Short Fund – Direct Plan – Growth",
                     "amfi_code": "SIF-139",
                     "isin_code": "INF22M030027",
                     "rta_code": "701DG"
@@ -133,7 +193,7 @@
     },
     "amc_details": {
         "sif_name": "Prism SIF",
-        "amc_website": null,
+        "amc_website": "https://www.jioblackrockamc.com/",
         "scheme_bonus": null
     },
     "exit_load": "Nil",

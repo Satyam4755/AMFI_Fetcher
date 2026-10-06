@@ -17,6 +17,7 @@ SIF_NAV_HISTORY_API = f"{AMFI_BASE_URL}/api/sif-nav-history"
 DEFAULT_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept": "application/json, text/plain, */*",
+    "Connection": "close",
 }
 
 

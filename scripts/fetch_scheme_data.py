@@ -1,6 +1,5 @@
 import sys
 import os
-import pandas as pd
 import logging
 
 # Allow direct execution
@@ -93,69 +92,63 @@ def main():
                             print(f"JSON filename: {safe_name}.json")
                             print(f"SEBI used: {sebi}\n")
 
-                    if docs and docs.get("summary_xls_url"):
-                        xls_url = docs.get("summary_xls_url")
-                        xls_path = download_xls(xls_url)
+                    doc_path = None
+                    if docs:
+                        primary_url = docs.get("summary_xls_url") or docs.get("summary_xml_url") or f"https://portal.amfiindia.com/spages/SSD_{scheme_id}.xls"
+                        doc_path = download_xls(primary_url)
 
-                        if xls_path:
-                            # parse_summary_xls now returns { sheet_name: rows }
-                            sheets_data = parse_summary_xls(xls_path)
+                    if doc_path:
+                        # parse_summary_xls handles binary Excel, XML spreadsheets, AMFI XML, and HTML tables
+                        sheets_data = parse_summary_xls(doc_path)
 
-                            if not sheets_data:
-                                save_fallback_json("Parsed sheets returned empty")
-                            else:
-                                for sheet_name, rows in sheets_data.items():
-                                    if not rows: continue
-
-                                    # Build nested JSON structure for this specific sheet
-                                    nested_scheme_data, primary_amfi_code = build_scheme_json(scheme_data, rows)
-
-                                    nested_scheme_data["sif_name"] = sif_name
-                                    nested_scheme_data["scheme_id"] = scheme_id
-                                    nested_scheme_data["sif_id"] = sif_id
-                                    nested_scheme_data["documents"] = docs or {}
-                                    # Format filename based on SEBI code
-                                    # Fallback to scheme_id if sebi_code is somehow completely missing
-                                    sebi = nested_scheme_data.get("sebi_code")
-                                    if not sebi:
-                                        sebi = scheme_id
-                                        
-                                    import re
-                                    # Normalization algorithm:
-                                    # lowercase -> replace non-alphanumeric with _ -> collapse _ -> strip _
-                                    safe_name = str(sebi).lower()
-                                    safe_name = re.sub(r'[^a-z0-9]', '_', safe_name)
-                                    safe_name = re.sub(r'_+', '_', safe_name)
-                                    safe_name = safe_name.strip('_')
-                                        
-                                    if save_scheme_to_json(safe_name, nested_scheme_data):
-                                        total_json_files += 1
-                                        
-                                        # Clean up stale fallback if a canonical SEBI filename exists
-                                        s_id_safe = re.sub(r'[^a-z0-9]', '_', str(scheme_id).lower()).strip('_')
-                                        s_id_safe = re.sub(r'_+', '_', s_id_safe)
-                                        if safe_name != s_id_safe:
-                                            details_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif", "scheme", "details")
-                                            fallback_file = os.path.join(details_dir, f"{s_id_safe}.json")
-                                            if os.path.exists(fallback_file):
-                                                try:
-                                                    os.remove(fallback_file)
-                                                    print(f"     Removed stale fallback file: {fallback_file}")
-                                                except OSError:
-                                                    pass
-
-                                        print("\nValidation:")
-                                        print(f"JSON filename: {safe_name}.json")
-                                        print(f"SEBI used: {sebi}\n")
-                            
-                            # Clean up temporary file
-                            if os.path.exists(xls_path):
-                                # os.remove(xls_path)
-                                print(f"     Deleted temporary XLS: {xls_path}")
+                        if not sheets_data:
+                            save_fallback_json("Parsed sheets returned empty")
                         else:
-                            save_fallback_json("Summary XLS not found or invalid format")
+                            for sheet_name, rows in sheets_data.items():
+                                if not rows: continue
+
+                                # Build nested JSON structure for this specific sheet
+                                nested_scheme_data, primary_amfi_code = build_scheme_json(scheme_data, rows)
+
+                                nested_scheme_data["sif_name"] = sif_name
+                                nested_scheme_data["scheme_id"] = scheme_id
+                                nested_scheme_data["sif_id"] = sif_id
+                                nested_scheme_data["documents"] = docs or {}
+                                # Format filename based on SEBI code
+                                # Fallback to scheme_id if sebi_code is somehow completely missing
+                                sebi = nested_scheme_data.get("sebi_code")
+                                if not sebi:
+                                    sebi = scheme_id
+                                    
+                                import re
+                                # Normalization algorithm:
+                                # lowercase -> replace non-alphanumeric with _ -> collapse _ -> strip _
+                                safe_name = str(sebi).lower()
+                                safe_name = re.sub(r'[^a-z0-9]', '_', safe_name)
+                                safe_name = re.sub(r'_+', '_', safe_name)
+                                safe_name = safe_name.strip('_')
+                                    
+                                if save_scheme_to_json(safe_name, nested_scheme_data):
+                                    total_json_files += 1
+                                    
+                                    # Clean up stale fallback if a canonical SEBI filename exists
+                                    s_id_safe = re.sub(r'[^a-z0-9]', '_', str(scheme_id).lower()).strip('_')
+                                    s_id_safe = re.sub(r'_+', '_', s_id_safe)
+                                    if safe_name != s_id_safe:
+                                        details_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "sif", "scheme", "details")
+                                        fallback_file = os.path.join(details_dir, f"{s_id_safe}.json")
+                                        if os.path.exists(fallback_file):
+                                            try:
+                                                os.remove(fallback_file)
+                                                print(f"     Removed stale fallback file: {fallback_file}")
+                                            except OSError:
+                                                pass
+
+                                    print("\nValidation:")
+                                    print(f"JSON filename: {safe_name}.json")
+                                    print(f"SEBI used: {sebi}\n")
                     else:
-                        save_fallback_json("No document URLs available")
+                        save_fallback_json("No scheme summary document available on AMFI")
                 except Exception as e:
                     skipped_schemes[scheme_id] = f"Error parsing data: {e}"
                     import traceback

@@ -42,6 +42,81 @@
             "allocation_type": "Commodity Derivatives",
             "minimum_percentage": 0,
             "maximum_percentage": 30
+        },
+        {
+            "allocation_type": "Equity and equity related instruments including derivatives",
+            "minimum_percentage": 35,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Commodity Derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 30
+        },
+        {
+            "allocation_type": "Equity and equity related instruments including derivatives",
+            "minimum_percentage": 35,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Commodity Derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 30
+        },
+        {
+            "allocation_type": "Equity and equity related instruments including derivatives",
+            "minimum_percentage": 35,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and debt instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 65
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Commodity Derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 30
         }
     ],
     "listing_details": "BSE",
@@ -145,7 +220,7 @@
         }
     ],
     "investment_limits": {
-        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (\u2018PAN\u2019) level, shall not be less than INR 10 lakh.",
+        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh.",
         "application_multiple": "1",
         "minimum_additional_amount": "1000",
         "additional_multiple": "1",
@@ -182,7 +257,7 @@
     },
     "amc_details": {
         "sif_name": "Titanium SIF",
-        "amc_website": null,
+        "amc_website": "https://www.tatamutualfund.com",
         "scheme_bonus": null
     },
     "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",

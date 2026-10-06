@@ -1,0 +1,433 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>NPOI</Author>
+  <LastAuthor>Vrati Pandya, 360 ONE Asset</LastAuthor>
+  <LastPrinted>2026-05-15T05:05:51Z</LastPrinted>
+  <Created>2026-03-10T06:57:01Z</Created>
+  <LastSaved>2026-05-15T05:00:32Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Generator dt:dt="string">NPOI</Generator>
+  <Generator_x0020_Version dt:dt="string">2.5.2</Generator_x0020_Version>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>6510</WindowHeight>
+  <WindowWidth>19200</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Medium Date"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Aptos Narrow" x:Family="Swiss"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="54" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="14.5">
+   <Column ss:Width="33"/>
+   <Column ss:Width="158.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="1074"/>
+   <Row ss:AutoFitHeight="0" ss:Height="30">
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Fields</Data></Cell>
+    <Cell ss:MergeAcross="1" ss:StyleID="s22"><Data ss:Type="String">SCHEME SUMMARY DOCUMENT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Fund Name</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">DynaSIF Equity Long - Short Fund</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Option Names (Regular &amp; Direct)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Regular Plan-Growth Regular Plan - IDCW Payout Regular Plan - IDCW Reinvestment Direct Plan-Growth Direct Plan - IDCW Payout Direct Plan - IDCW Reinvestment</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Fund Type</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Riskometer (At the time of Launch)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Risk Band Level 5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Riskometer (as on Date)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Risk Band Level 5</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Category as Per SEBI Categorization Circular</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Equity Long-Short Fund </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Potential Risk Class (as on date)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">N.A</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Description, Objective of the scheme</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">To generate long term capital appreciation using structural, cyclical, and tactical investing opportunities in equities with optionality of hedging and shorting. &#10;There is no assurance that the investment objective of the Investment strategy will be achieved. </Data></Cell>
+   </Row>
+   <Row ss:Height="159.5">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Stated Asset Allocation</Data></Cell>
+    <Cell ss:StyleID="s18"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Investment in Equity and equity related instruments *-</Font><B><Font
+        html:Color="#000000"> 80 - 100 %&#10;</Font></B><Font html:Color="#000000">(*Equity Related Instruments include convertible debentures, convertible preference shares, warrants carrying the right to obtain equity shares, units of Real Estate Investment Trust and such other instrument as may be specified by the Board from time to time. Total exposure to Equity and equity related instruments includes Cash equity, unhedged long and short derivatives, but excludes the offsetting derivatives exposure)</Font><B><Font
+        html:Color="#000000">;&#10;</Font></B><Font html:Color="#000000">Short exposure through unhedged derivative positions in equity instruments - </Font><B><Font
+        html:Color="#000000">0 - 25%&#10;</Font></B><Font html:Color="#000000">Investment in Debt and money market instruments # - </Font><B><Font
+        html:Color="#000000">0 - 20 %&#10;</Font></B><Font html:Color="#000000">(# Money Market instruments includes commercial papers, commercial bills, treasury bills, Government securities  having  an  unexpired  maturity  up  to  one  year,  call  or  notice  money,   certificate  of  deposit,  usance  bills,  and  any  other  like  instruments  as  specified  by  the  Reserve  Bank  of  India  from  time  to  time. This includes Liquid and Overnight mutual fund schemes, but  does not include cash and cash equivalents equivalent instruments.)</Font><B><Font
+        html:Color="#000000">&#10;</Font></B><Font html:Color="#000000">Units issued by InVITs - </Font><B><Font
+        html:Color="#000000">0 - 20 %&#10;&#10;</Font></B><Font html:Color="#000000">&#10;</Font></ss:Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Face Value</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Rs. 10 Per unit</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">NFO Open Date</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="DateTime">2026-02-06T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">NFO Close date</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="DateTime">2026-02-20T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Allotment Date</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="DateTime">2026-02-25T00:00:00.000</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Reopen Date</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="DateTime">2026-02-27T00:00:00.000</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Maturity Date (For closed-end funds)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Benchmark (Tier 1)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">BSE 500 TRI</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Benchmark (Tier 2)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">-</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Fund Manager Name</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Mr. Harsh Aggarwal , Mr. Pranav Mise</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Fund Manager Type (Primary/Comanage/Description)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Mr. Harsh Aggarwal - Primary, Mr.Pranav Mise - Comanage</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Fund Manager From Date</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Mr. Harsh Aggarwal - 25 Feb 2026, Mr.Pranav Mise - 24th April, 2026</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Annual Expense (Stated maximum)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Regular 2.1, Direct 0.83</Data></Cell>
+   </Row>
+   <Row ss:Height="43.5">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Exit Load (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">0.5% if redeemed within 3 months from date of allotment of units .&#10; No exit load is payable for redemption after 3 months from the date of allotment of &#10;units</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Custodian</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Deutsche Bank AG </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Auditor</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">PricewaterhouseCoo pers Pvt Ltd</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Registrar</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Computer Age Management Services Limited (CAMS)</Data></Cell>
+   </Row>
+   <Row ss:Height="101.5">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">26</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">RTA Code (To be phased out)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">ELSDG&#10;ELSDP&#10;ELSDR&#10;ELSRG&#10;ELSRP&#10;ELSRR&#10;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Listing Details</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Listed</Data></Cell>
+   </Row>
+   <Row ss:Height="101.5">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">ISINs</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">INF579M30042&#10;INF579M30059&#10;INF579M30067&#10;INF579M30018&#10;INF579M30026&#10;INF579M30034&#10;</Data></Cell>
+   </Row>
+   <Row ss:Height="87">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">29</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">AMFI Codes (To be phased out)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">SIF - 55 &#10;SIF - 57&#10;SIF - 59&#10;SIF - 60&#10;&#10;</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SEBI Codes</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">DYNA/O/E/ELSF/25/12/0001/360O </Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Application Amount</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">1000000</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">32</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Application Amount in multiples of Rs.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Additional Amount</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">20000</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Additional Amount in multiples of Rs.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">1</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Redemption Amount in Rs.</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Redemption Amount in Units</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="39.5">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Balance Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">An aggregate investment by an investor across all investment strategies offered by the SIF, at the Permanent Account Number (‘PAN’) level, shall not be  less than INR 10 lakh.&#10;&#10;</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">38</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Balance Amount in Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Max Investment Amount</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Switch Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">41</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Minimum Switch Units</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">42</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Switch Multiple Amount (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Switch Multiple Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Max Switch Amount</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Max Switch Units (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">46</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Swing Pricing (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Side-pocketing (if applicable)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Provision enabled, no segregated portfolio</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">48</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SIP SWP &amp; STP Details: Frequency</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">SIP - Monthly,Quarterly ;STP- Monthly ; SWP- N.A</Data></Cell>
+   </Row>
+   <Row ss:Height="43.5">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">49</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SIP SWP &amp; STP Details: Minimum amount</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">SIP - Monthly Option: 20000  Quarterly Option : 50000 &#10;STP - Monthly Option : 20000 &#10;SWP - Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SIP SWP &amp; STP Details: In multiple of</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">SIP-1 STP-1 SWP - Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SIP SWP &amp; STP Details: Minimum Instalments</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String"> SIP - Monthly 6 SIP - Quarterly 6 &#10;STP - Monthly 6</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SIP SWP &amp; STP Details: Dates</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">SIP Monthly - 7th of every month/Quarterly - 7th of every quarter, &#10;STP Monthly - 7th of every month, SWP - Not Applicable</Data></Cell>
+   </Row>
+   <Row ss:Height="29">
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SIP SWP &amp; STP Details: Maximum Amount (if any)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Not Applicable</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <FitToPage/>
+   <Print>
+    <FitHeight>0</FitHeight>
+    <ValidPrinterInfo/>
+    <Scale>39</Scale>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Zoom>83</Zoom>
+   <Selected/>
+   <DoNotDisplayGridlines/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>1</SplitHorizontal>
+   <TopRowBottomPane>1</TopRowBottomPane>
+   <SplitVertical>1</SplitVertical>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>0</ActiveRow>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>43</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

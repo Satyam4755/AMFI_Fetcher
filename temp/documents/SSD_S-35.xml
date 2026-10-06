@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemeSummaryDocument>
+  <SchemeSummary id="Titanium Active Asset Allocator Long-Short Fund">
+    <Fund_Name>Titanium Active Asset Allocator Long-Short Fund</Fund_Name>
+    <Option_Names_Regular_Direct>Titanium Active Asset Allocator Long-Short Fund Regular Growth
+Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout
+Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment
+Titanium Active Asset Allocator Long-Short Fund Direct Growth
+Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout
+Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment'</Option_Names_Regular_Direct>
+    <Fund_Type>An interval investment strategy dynamically investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives</Fund_Type>
+    <Riskband_At_the_time_of_Launch>Risk Level 2 (Band Range 1-5, 5 been highest risk)</Riskband_At_the_time_of_Launch>
+    <Riskband_as_on_Date>Risk Level 2 (Band Range 1-5, 5 been highest risk)</Riskband_as_on_Date>
+    <Category_as_Per_SEBI_Categorization_Circular>Active Asset Allocator Long-Short Fund</Category_as_Per_SEBI_Categorization_Circular>
+    <Potential_Risk_Class_as_on_date>Not Applicable</Potential_Risk_Class_as_on_date>
+    <Description_Objective_of_the_scheme>To generate medium to long term capital appreciation by investing across equity, debt, equity and debt derivatives, InVITs and commodity derivatives, including limited short exposure on permitted instruments through derivatives.</Description_Objective_of_the_scheme>
+    <Stated_Asset_Allocation>Equity and equity related instruments including derivatives 35 -100, 
+Short exposure through unhedged derivative position in equity and debt instruments 0-25
+Debt and money market instruments including fixed income derivatives 0-65
+Units issued by InvITs 0-20
+Commodity Derivatives 0-30</Stated_Asset_Allocation>
+    <Face_Value>10</Face_Value>
+    <NFO_Open_Date>23/09/2026 00:00:00</NFO_Open_Date>
+    <NFO_Close_date>07/10/2026 00:00:00</NFO_Close_date>
+    <Allotment_Date>within 5 (five) working / business days from the date of closure of the NFO Period</Allotment_Date>
+    <Reopen_Date>16/10/2026 00:00:00</Reopen_Date>
+    <Maturity_Date_For_closed-end_funds>Not Applicable</Maturity_Date_For_closed-end_funds>
+    <Benchmark_Tier_1>35% BSE 200 TRI + 50% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index</Benchmark_Tier_1>
+    <Benchmark_Tier_2>Not Applicable</Benchmark_Tier_2>
+    <Fund_Manager_Name>FM-1 Sailesh Jain, FM-2 Akhil Mittal; FM-3 Tapan Patel, FM-4 Hasmukh Devji Vishariya</Fund_Manager_Name>
+    <Fund_Manager_Type_Primary_Comanage_Description>FM-1 Primary, FM-2 Primary, FM-3 Primary (Commodity), FM-4 Primary (Overseaes Investment)</Fund_Manager_Type_Primary_Comanage_Description>
+    <Fund_Manager_From_Date>23/09/2026 00:00:00</Fund_Manager_From_Date>
+    <Annual_Base_Expense_Ratio_Stated_maximum>upto 1.85%</Annual_Base_Expense_Ratio_Stated_maximum>
+    <Exit_Load_if_applicable>1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%
+2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil</Exit_Load_if_applicable>
+    <Custodian>ICICI Bank LTD, Orbis Financial Corporation Ltd.</Custodian>
+    <Auditor>S.R. Batliboi &amp; CO. LLP</Auditor>
+    <Registrar>Computer Age Management Services Limited</Registrar>
+    <RTA_Code_To_be_phased_out>TAD - Titanium Active Asset Allocator Long-Short Fund Regular Plan IDCW
+TADZ - Titanium Active Asset Allocator Long-Short Fund Direct Plan IDCW
+TAG - Titanium Active Asset Allocator Long-Short Fund Regular Plan Growth
+TAGZ - Titanium Active Asset Allocator Long-Short Fund Direct Plan Growth
+TADP - Titanium Active Asset Allocator Long-Short Fund Regular Plan IDCW Payout
+TADZP - Titanium Active Asset Allocator Long-Short Fund Direct Plan IDCW Payout</RTA_Code_To_be_phased_out>
+    <Listing_Details>BSE</Listing_Details>
+    <ISINs>INF277K30138 - Titanium Active Asset Allocator Long-Short Fund Regular Growth
+INF277K30146 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout
+INF277K30153 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment
+INF277K30161 - Titanium Active Asset Allocator Long-Short Fund Direct Growth
+INF277K30179 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout
+INF277K30187 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment</ISINs>
+    <AMFI_Codes_To_be_phased_out>SIF-169 - Titanium Active Asset Allocator Long-Short Fund Regular Growth
+SIF-165 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout
+SIF-168 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment
+SIF-167 - Titanium Active Asset Allocator Long-Short Fund Direct Growth
+SIF-170 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout
+SIF-166 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment</AMFI_Codes_To_be_phased_out>
+    <SEBI_Codes>TSIF/I/H/AALS/26/09/0003/TATA</SEBI_Codes>
+    <Minimum_Application_Amount>The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh.</Minimum_Application_Amount>
+    <Minimum_Application_Amount_in_multiples_of_Rs.>1</Minimum_Application_Amount_in_multiples_of_Rs.>
+    <Minimum_Additional_Amount>1000</Minimum_Additional_Amount>
+    <Minimum_Additional_Amount_in_multiples_of_Rs.>1</Minimum_Additional_Amount_in_multiples_of_Rs.>
+    <Minimum_Redemption_Amount_in_Rs.>500</Minimum_Redemption_Amount_in_Rs.>
+    <Minimum_Redemption_Amount_in_Units>Not Applicable</Minimum_Redemption_Amount_in_Units>
+    <Minimum_Balance_Amount_if_applicable>No mimimum balance required</Minimum_Balance_Amount_if_applicable>
+    <Minimum_Balance_Amount_in_Units_if_applicable>No mimimum unit balance required</Minimum_Balance_Amount_in_Units_if_applicable>
+    <Max_Investment_Amount>Not Applicable.</Max_Investment_Amount>
+    <Minimum_Switch_Amount_if_applicable>For all units there is no minimum switch amount.</Minimum_Switch_Amount_if_applicable>
+    <Minimum_Switch_Units>For all units there is no minimum switch units.</Minimum_Switch_Units>
+    <Switch_Multiple_Amount_if_applicable>Not Applicable.</Switch_Multiple_Amount_if_applicable>
+    <Switch_Multiple_Units_if_applicable>Not Applicable.</Switch_Multiple_Units_if_applicable>
+    <Max_Switch_Amount>Not Applicable.</Max_Switch_Amount>
+    <Max_Switch_Units_if_applicable>Not Applicable.</Max_Switch_Units_if_applicable>
+    <Swing_Pricing_if_applicable>Not Applicable</Swing_Pricing_if_applicable>
+    <Side-pocketing_if_applicable>Applicable</Side-pocketing_if_applicable>
+    <SIP_SWP_STP_Details_Frequency>SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)</SIP_SWP_STP_Details_Frequency>
+    <SIP_SWP_STP_Details_Minimum_amount>SIP-- 1000.00/1000.00/1000.00/1000.00/1000.00/1000.00  ;STP --500.00/500.00/500.00/500.00</SIP_SWP_STP_Details_Minimum_amount>
+    <SIP_SWP_STP_Details_In_multiple_of>SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00/1.00/1.00/1.00 (Post NFO Period)</SIP_SWP_STP_Details_In_multiple_of>
+    <SIP_SWP_STP_Details_Minimum_Instalments>SIP-- 12 Instalments/6 instalments/6 instalments/4 instalments/12 instalments/12 instalments  ;STP --500.00 to 999.00 - 12 instalments; 
+1,000.00 to 1,999.00 -  6 instalments;
+2,000.00 and more - 3 instalments 
+(Post NFO Period)</SIP_SWP_STP_Details_Minimum_Instalments>
+    <SIP_SWP_STP_Details_Dates>SIP-- Any day/Any day/Any day/Any day/Monday-Friday/All Business Days  ;STP --Once a week i.e, on Monday (Post NFO Period)</SIP_SWP_STP_Details_Dates>
+  </SchemeSummary>
+</SchemeSummaryDocument>

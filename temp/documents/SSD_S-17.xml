@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemeSummaryDocument>
+  <SchemeSummary id="Titanium Equity Long-Short Fund">
+    <Fund_Name>Titanium Equity Long-Short Fund</Fund_Name>
+    <Option_Names_Regular_Direct>Titanium Equity Long-Short Fund Regular Growth
+Titanium Equity Long-Short Fund Regular IDCW Reinvestment
+Titanium Equity Long-Short Fund Regular IDCW Payout
+Titanium Equity Long-Short Fund Direct Growth
+Titanium Equity Long-Short Fund Direct IDCW Reinvestment
+Titanium Equity Long-Short Fund Direct IDCW Payout</Option_Names_Regular_Direct>
+    <Fund_Type>An open-ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments.</Fund_Type>
+    <Riskband_At_the_time_of_Launch>Risk Level 5 (Band Range 1-5, 5 been highest risk)</Riskband_At_the_time_of_Launch>
+    <Riskband_as_on_Date>Risk Level 5 (Band Range 1-5, 5 been highest risk)</Riskband_as_on_Date>
+    <Category_as_Per_SEBI_Categorization_Circular>Equity Long-Short Fund</Category_as_Per_SEBI_Categorization_Circular>
+    <Potential_Risk_Class_as_on_date>Not Applicable</Potential_Risk_Class_as_on_date>
+    <Description_Objective_of_the_scheme>To generate medium to long term capital appreciation by investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments. However, there is no assurance that the investment objective of the Investment strategy will be achieved.</Description_Objective_of_the_scheme>
+    <Stated_Asset_Allocation>Equity and Equity related instruments and Equity Derivatives 80 -100, Short exposure through unhedged derivative position in equity and equity related instruments 0 - 25, Debt and money market instruments including fixed income derivatives 0 - 20, REITs &amp; InvITs 0 -20.</Stated_Asset_Allocation>
+    <Face_Value>10</Face_Value>
+    <NFO_Open_Date>4/27/2026 12:00:00 AM</NFO_Open_Date>
+    <NFO_Close_date>5/11/2026 12:00:00 AM</NFO_Close_date>
+    <Allotment_Date>5/14/2026 12:00:00 AM</Allotment_Date>
+    <Reopen_Date>5/20/2026 12:00:00 AM</Reopen_Date>
+    <Maturity_Date_For_closed-end_funds>Not Applicable</Maturity_Date_For_closed-end_funds>
+    <Benchmark_Tier_1>Nifty 500 Total Return Index (TRI)</Benchmark_Tier_1>
+    <Benchmark_Tier_2>Not Applicable</Benchmark_Tier_2>
+    <Fund_Manager_Name>FM-1 Suraj Nanda, FM-2 Amit Somani; FM-3 Hasmukh Devji Vishariya</Fund_Manager_Name>
+    <Fund_Manager_Type_Primary_Comanage_Description>FM-1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)</Fund_Manager_Type_Primary_Comanage_Description>
+    <Fund_Manager_From_Date>FM-1 27/04/2026, FM-2 27/04/2026, FM-3 27/04/2026,</Fund_Manager_From_Date>
+    <Annual_Expense_Stated_maximum>Regular upto 2.25%, Direct upto 2.25%</Annual_Expense_Stated_maximum>
+    <Exit_Load_if_applicable>1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%
+2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil</Exit_Load_if_applicable>
+    <Custodian>ICICI Bank LTD</Custodian>
+    <Auditor>S.R. Batliboi &amp; CO. LLP</Auditor>
+    <Registrar>Computer Age Management Services Limited</Registrar>
+    <RTA_Code_To_be_phased_out>Titanium Equity Long-Short Fund Regular Plan IDCW - TED
+Titanium Equity Long-Short Fund Direct Plan IDCW - TEDZ
+Titanium Equity Long-Short Fund Regular Plan Growth - TEG
+Titanium Equity Long-Short Fund Direct Plan Growth - TEGZ
+Titanium Equity Long-Short Fund Regular Plan IDCW Payout - TEDP
+Titanium Equity Long-Short Fund Direct Plan IDCW Payout - TEDZP</RTA_Code_To_be_phased_out>
+    <Listing_Details>NA</Listing_Details>
+    <ISINs>Titanium Equity Long-Short Fund Regular Plan IDCW - INF277K30088
+Titanium Equity Long-Short Fund Direct Plan IDCW - INF277K30112
+Titanium Equity Long-Short Fund Regular Plan Growth - INF277K30070
+Titanium Equity Long-Short Fund Direct Plan Growth - INF277K30104
+Titanium Equity Long-Short Fund Regular Plan IDCW Payout - INF277K30096
+Titanium Equity Long-Short Fund Direct Plan IDCW Payout - INF277K30120</ISINs>
+    <AMFI_Codes_To_be_phased_out>SIF-102
+SIF-101
+SIF-98
+SIF-99
+SIF-103
+SIF-100</AMFI_Codes_To_be_phased_out>
+    <SEBI_Codes>TSIF/O/E/ELSF/26/02/0002/TATA</SEBI_Codes>
+    <Minimum_Application_Amount>The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh. Provided that the requirement of minimum investment amount shall not apply to an accredited investor.</Minimum_Application_Amount>
+    <Minimum_Application_Amount_in_multiples_of_Rs.>1</Minimum_Application_Amount_in_multiples_of_Rs.>
+    <Minimum_Additional_Amount>1000</Minimum_Additional_Amount>
+    <Minimum_Additional_Amount_in_multiples_of_Rs.>1</Minimum_Additional_Amount_in_multiples_of_Rs.>
+    <Minimum_Redemption_Amount_in_Rs.>500
+The redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”</Minimum_Redemption_Amount_in_Rs.>
+    <Minimum_Redemption_Amount_in_Units>Not Applicable</Minimum_Redemption_Amount_in_Units>
+    <Minimum_Balance_Amount_if_applicable>No mimimum balance required</Minimum_Balance_Amount_if_applicable>
+    <Minimum_Balance_Amount_in_Units_if_applicable>No mimimum unit balance required</Minimum_Balance_Amount_in_Units_if_applicable>
+    <Max_Investment_Amount>Not Applicable.</Max_Investment_Amount>
+    <Minimum_Switch_Amount_if_applicable>For all units there is no minimum switch amount.</Minimum_Switch_Amount_if_applicable>
+    <Minimum_Switch_Units>For all units there is no minimum switch units.</Minimum_Switch_Units>
+    <Switch_Multiple_Amount_if_applicable>Not Applicable.</Switch_Multiple_Amount_if_applicable>
+    <Switch_Multiple_Units_if_applicable>Not Applicable.</Switch_Multiple_Units_if_applicable>
+    <Max_Switch_Amount>Not Applicable.</Max_Switch_Amount>
+    <Max_Switch_Units_if_applicable>Not Applicable.</Max_Switch_Units_if_applicable>
+    <Swing_Pricing_if_applicable>Not Applicable</Swing_Pricing_if_applicable>
+    <Side-pocketing_if_applicable>Applicable</Side-pocketing_if_applicable>
+    <SIP_SWP_STP_Details_Frequency>SIP-- Monthly/Quarterly/Weekly/Daily (Business Days)  ;STP --Monthly (Business Days)  (Post NFO Period)</SIP_SWP_STP_Details_Frequency>
+    <SIP_SWP_STP_Details_Minimum_amount>SIP-- 1000.00/1000.00/1000.00/1000.00  ;STP --1000.00</SIP_SWP_STP_Details_Minimum_amount>
+    <SIP_SWP_STP_Details_In_multiple_of>SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00(Post NFO Period)</SIP_SWP_STP_Details_In_multiple_of>
+    <SIP_SWP_STP_Details_Minimum_Instalments>SIP--1000.00 (with minimum 6 installments) ;STP --1000.00 (with minimum 6 installments) ;(Post NFO Period)</SIP_SWP_STP_Details_Minimum_Instalments>
+    <SIP_SWP_STP_Details_Dates>SIP-- Any day/Any day/Any day/Any day(All Business Days)  ;STP --Daily (Post NFO Period)</SIP_SWP_STP_Details_Dates>
+	<SIP_SWP_STP_Details_Maximum_Amount>SIP-- Not Applicable/Not Applicable/Not Applicable/Not Applicablee  ;STP --Not Applicable/Not Applicable/Not Applicable/Not Applicable (Post NFO Period)</SIP_SWP_STP_Details_Maximum_Amount>
+  </SchemeSummary>
+</SchemeSummaryDocument>

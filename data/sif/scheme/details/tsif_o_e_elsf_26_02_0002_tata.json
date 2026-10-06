@@ -37,6 +37,66 @@
             "allocation_type": "REITs & InvITs",
             "minimum_percentage": 0,
             "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity related instruments and Equity Derivatives",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and equity related instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "REITs & InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity related instruments and Equity Derivatives",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and equity related instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "REITs & InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Equity and Equity related instruments and Equity Derivatives",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative position in equity and equity related instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Debt and money market instruments including fixed income derivatives",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "REITs & InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "NA",
@@ -140,11 +200,11 @@
         }
     ],
     "investment_limits": {
-        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (\u2018PAN\u2019) level, shall not be less than INR 10 lakh. Provided that the requirement of minimum investment amount shall not apply to an accredited investor.",
+        "minimum_application_amount": "The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh. Provided that the requirement of minimum investment amount shall not apply to an accredited investor.",
         "application_multiple": "1",
         "minimum_additional_amount": "1000",
         "additional_multiple": "1",
-        "minimum_redemption_amount": "500\nThe redemption will be subject to compliance with provisions mentioned under \u201cMinimum investment threshold\u201d",
+        "minimum_redemption_amount": "500\nThe redemption will be subject to compliance with provisions mentioned under “Minimum investment threshold”",
         "minimum_redemption_units": "Not Applicable",
         "minimum_balance_amount": "No mimimum balance required",
         "minimum_balance_units": "No mimimum unit balance required",
@@ -177,7 +237,7 @@
     },
     "amc_details": {
         "sif_name": "Titanium SIF",
-        "amc_website": null,
+        "amc_website": "https://www.tatamutualfund.com",
         "scheme_bonus": null
     },
     "exit_load": "1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%\n2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil",

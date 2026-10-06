@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemeSummaryDocument>
+  <SchemeSummary id="Titanium Hybrid Long-Short Fund">
+    <Fund_Name>Titanium Hybrid Long-Short Fund</Fund_Name>
+    <Option_Names_Regular_Direct>Titanium Hybrid Long-Short Fund - Regular Plan - IDCW,Titanium Hybrid Long-Short Fund - Direct Plan - IDCW,Titanium Hybrid Long-Short Fund - Regular Plan - Growth,Titanium Hybrid Long-Short Fund -Direct Plan - Growth</Option_Names_Regular_Direct>
+    <Fund_Type>Interval investment strategy investing in equity and debt securities, including limited short exposure in equity and debt through derivatives</Fund_Type>
+    <Riskband_At_the_time_of_Launch>Risk Level 5 (Band Range 1-5, 5 been highest risk)</Riskband_At_the_time_of_Launch>
+    <Riskband_as_on_Date>Risk Level 5 (Band Range 1-5, 5 been highest risk)</Riskband_as_on_Date>
+    <Category_as_Per_SEBI_Categorization_Circular>Hybrid Long-Short Fund</Category_as_Per_SEBI_Categorization_Circular>
+    <Potential_Risk_Class_as_on_date>Not Applicable</Potential_Risk_Class_as_on_date>
+    <Description_Objective_of_the_scheme>To generate medium to long term capital appreciation by investing in equity and equity related instruments as well as debt and money market instruments, including limited short exposure in equity and debt through derivatives. However, there is no assurance that the investment objective of the Investment strategy will be achieved.</Description_Objective_of_the_scheme>
+    <Stated_Asset_Allocation>Equity and Equity related instruments including REITs and Equity Derivatives 65 -100, Debt and money market instruments including fixed income derivatives 25 -35,  InvITs 0 -10.</Stated_Asset_Allocation>
+    <Face_Value>10</Face_Value>
+    <NFO_Open_Date>24/11/2025 00:00:00</NFO_Open_Date>
+    <NFO_Close_date>08/12/2025 00:00:00</NFO_Close_date>
+    <Allotment_Date>11/12/2025 00:00:00</Allotment_Date>
+    <Reopen_Date>17/12/2025 00:00:00</Reopen_Date>
+    <Maturity_Date_For_closed-end_funds>Not Applicable</Maturity_Date_For_closed-end_funds>
+    <Benchmark_Tier_1>CRISIL Hybrid 50+50 - Moderate Index</Benchmark_Tier_1>
+    <Benchmark_Tier_2>Not Applicable</Benchmark_Tier_2>
+    <Fund_Manager_Name>FM-1 Suraj Nanda, FM-2 Akhil Mittal; FM-3 Hasmukh Devji Vishariya</Fund_Manager_Name>
+    <Fund_Manager_Type_Primary_Comanage_Description>FM-1 Primary, FM-2 Primary, FM-3 Primary (Overseaes Investment)</Fund_Manager_Type_Primary_Comanage_Description>
+    <Fund_Manager_From_Date>FM-1 17/11/2025, FM-2 01/06/2026, FM-3 17/11/2025,</Fund_Manager_From_Date>
+    <Annual_Expense_Stated_maximum>Regular upto 2.10%, Direct upto 2.10%</Annual_Expense_Stated_maximum>
+    <Exit_Load_if_applicable>1. Redemption/Switch-out on or before expiry of 1 month from the date of allotment: 1%
+2. Redemption/Switch-out after expiry of 1 month from the date of allotment-Nil</Exit_Load_if_applicable>
+    <Custodian>ICICI Bank LTD</Custodian>
+    <Auditor>S.R. Batliboi &amp; CO. LLP</Auditor>
+    <Registrar>Computer Age Management Services Limited</Registrar>
+    <RTA_Code_To_be_phased_out>THD
+THDZ
+THG
+THGZ
+THDP
+THDZP</RTA_Code_To_be_phased_out>
+    <Listing_Details>BSE</Listing_Details>
+    <ISINs>INF277K30021
+INF277K30054
+INF277K30013
+INF277K30047
+INF277K30039
+INF277K30062</ISINs>
+    <AMFI_Codes_To_be_phased_out>SIF-32
+SIF-31
+SIF-28
+SIF-29
+SIF-30
+SIF-27</AMFI_Codes_To_be_phased_out>
+    <SEBI_Codes>TSIF/I/H/HLSF/25/09/0001/TATA</SEBI_Codes>
+    <Minimum_Application_Amount>The minimum aggregate investment by an investor across all investment strategies offered by Titanium SIF, at the Permanent Account Number (‘PAN’) level, shall not be less than INR 10 lakh.</Minimum_Application_Amount>
+    <Minimum_Application_Amount_in_multiples_of_Rs.>1</Minimum_Application_Amount_in_multiples_of_Rs.>
+    <Minimum_Additional_Amount>1000</Minimum_Additional_Amount>
+    <Minimum_Additional_Amount_in_multiples_of_Rs.>1</Minimum_Additional_Amount_in_multiples_of_Rs.>
+    <Minimum_Redemption_Amount_in_Rs.>500</Minimum_Redemption_Amount_in_Rs.>
+    <Minimum_Redemption_Amount_in_Units>Not Applicable</Minimum_Redemption_Amount_in_Units>
+    <Minimum_Balance_Amount_if_applicable>No mimimum balance required</Minimum_Balance_Amount_if_applicable>
+    <Minimum_Balance_Amount_in_Units_if_applicable>No mimimum unit balance required</Minimum_Balance_Amount_in_Units_if_applicable>
+    <Max_Investment_Amount>Not Applicable.</Max_Investment_Amount>
+    <Minimum_Switch_Amount_if_applicable>For all units there is no minimum switch amount.</Minimum_Switch_Amount_if_applicable>
+    <Minimum_Switch_Units>For all units there is no minimum switch units.</Minimum_Switch_Units>
+    <Switch_Multiple_Amount_if_applicable>Not Applicable.</Switch_Multiple_Amount_if_applicable>
+    <Switch_Multiple_Units_if_applicable>Not Applicable.</Switch_Multiple_Units_if_applicable>
+    <Max_Switch_Amount>Not Applicable.</Max_Switch_Amount>
+    <Max_Switch_Units_if_applicable>Not Applicable.</Max_Switch_Units_if_applicable>
+    <Swing_Pricing_if_applicable>Not Applicable</Swing_Pricing_if_applicable>
+    <Side-pocketing_if_applicable>Applicable</Side-pocketing_if_applicable>
+    <SIP_SWP_STP_Details_Frequency>SIP-- Monthly/Monthly/Quarterly/Quarterly/Weekly/Daily (Business Days)  ;STP --Once a week (Every Wednesday)</SIP_SWP_STP_Details_Frequency>
+    <SIP_SWP_STP_Details_Minimum_amount>SIP-- 1000.00/1000.00/1000.00/1000.00/1000.00/1000.00  ;STP --500.00/500.00/500.00/500.00</SIP_SWP_STP_Details_Minimum_amount>
+    <SIP_SWP_STP_Details_In_multiple_of>SIP-- 1.00/1.00/1.00/1.00/1.00/1.00  ;STP --1.00/1.00/1.00/1.00 (Post NFO Period)</SIP_SWP_STP_Details_In_multiple_of>
+    <SIP_SWP_STP_Details_Minimum_Instalments>SIP-- 12 Instalments/6 instalments/6 instalments/4 instalments/12 instalments/12 instalments  ;STP --500.00 to 999.00 - 12 instalments; 
+1,000.00 to 1,999.00 -  6 instalments;
+2,000.00 and more - 3 instalments 
+(Post NFO Period)</SIP_SWP_STP_Details_Minimum_Instalments>
+    <SIP_SWP_STP_Details_Dates>SIP-- Any day/Any day/Any day/Any day/Monday-Friday/All Business Days  ;STP --Once a week (Every Wednesday)</SIP_SWP_STP_Details_Dates>
+  </SchemeSummary>
+</SchemeSummaryDocument>

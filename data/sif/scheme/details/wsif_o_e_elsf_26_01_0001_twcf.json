@@ -37,6 +37,66 @@
             "allocation_type": "Unhedged short exposure through unhedged derivative posiitons in equity and euqity realted securities",
             "minimum_percentage": 0,
             "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Equity and Equity Related Instruments (* including unhedged short exposure as mentioned below)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt and money market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investment in INVITS",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Unhedged short exposure through unhedged derivative posiitons in equity and euqity realted securities",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Equity and Equity Related Instruments (* including unhedged short exposure as mentioned below)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt and money market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investment in INVITS",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Unhedged short exposure through unhedged derivative posiitons in equity and euqity realted securities",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Equity and Equity Related Instruments (* including unhedged short exposure as mentioned below)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt and money market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Investment in INVITS",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Unhedged short exposure through unhedged derivative posiitons in equity and euqity realted securities",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
         }
     ],
     "listing_details": "Not applicable",
@@ -166,13 +226,13 @@
     },
     "amc_details": {
         "sif_name": "WSIF",
-        "amc_website": null,
+        "amc_website": "https://www.wealthcompanyamc.in",
         "scheme_bonus": null
     },
     "exit_load": "NIL",
     "registrar": "KFin Technologies Ltd (Kfin)",
     "custodian": "HDFC Bank Limited",
-    "auditor": "S.R. Batliboi &amp; Co. LLP \u2013 Chartered Accountants",
+    "auditor": "S.R. Batliboi &amp; Co. LLP – Chartered Accountants",
     "sif_name": "WSIF",
     "scheme_id": "S-19",
     "sif_id": "83",
