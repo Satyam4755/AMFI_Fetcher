@@ -294,6 +294,69 @@ class TestFundManagerAndPipelineRegression(unittest.TestCase):
         self.assertEqual(alloc[2]["minimum_percentage"], 0)
         self.assertEqual(alloc[2]["maximum_percentage"], 20)
 
+    def test_16_dynasif_sif_mapping_and_no_cross_contamination(self):
+        """TEST 16: DynaSIF multiline SIF codes map authoritatively to correct plans/ISINs."""
+        rows = [
+            {
+                "fund_name": "DynaSIF Active Asset Allocator Long-Short Fund",
+                "options_names": "Regular Plan-Growth Regular Plan - IDCW Payout Regular Plan - IDCW Reinvestment Direct Plan-Growth Direct Plan - IDCW Payout Direct Plan - IDCW Reinvestment",
+                "rta_codes": "ALSRG\nALSRP\nALSRR\nALSDG\nALSDP\nALSDR",
+                "isins": "INF579M30075\nINF579M30083\nINF579M30091\nINF579M30109\nINF579M30117\nINF579M30125",
+                "amfi_codes": "SIF - 86\nSIF - 87\nSIF - 88\nSIF - 89"
+            }
+        ]
+        result, primary_amfi = build_scheme_json({}, rows)
+        self.assertEqual(primary_amfi, "SIF-87")
+
+        plans = result.get("plans", {})
+        reg_growth = plans.get("regular", {}).get("growth", [])
+        self.assertEqual(len(reg_growth), 1)
+        self.assertEqual(reg_growth[0]["isin_code"], "INF579M30075")
+        self.assertEqual(reg_growth[0]["amfi_code"], "SIF-87")
+
+        dir_growth = plans.get("direct", {}).get("growth", [])
+        self.assertEqual(len(dir_growth), 1)
+        self.assertEqual(dir_growth[0]["isin_code"], "INF579M30109")
+        self.assertEqual(dir_growth[0]["amfi_code"], "SIF-88")
+
+        reg_idcw = plans.get("regular", {}).get("idcw", {})
+        reg_idcw_payout = reg_idcw.get("payout", [])
+        self.assertEqual(reg_idcw_payout[0]["amfi_code"], "SIF-89")
+
+        dir_idcw = plans.get("direct", {}).get("idcw", {})
+        dir_idcw_payout = dir_idcw.get("payout", [])
+        self.assertEqual(dir_idcw_payout[0]["amfi_code"], "SIF-86")
+
+    def test_17_dynasif_multi_manager_composite_from_dates(self):
+        """TEST 17: Multi-manager comma-separated date strings with ordinal formats correlate accurately."""
+        rows = [
+            {
+                "fund_manager_name": "Mr. Harsh Agarwal, Mr. Milan Mody, Mr. Rahul Khetawat, Mr.Pranav Mise",
+                "fund_manager_type": "Mr. Harsh Agarwal - Primary, Mr. Milan Mody - comanage , Mr. Rahul Khetwat - Comanage, Mr.Pranav Mise - Comanage",
+                "fund_manager_from_date": "Mr. Harsh Agarwal - 25 Mar 2026, Mr. Milan Mody - 25 Mar 2026, Mr. Rahul Khetawat -  25 Mar 2026, Mr.Pranav Mise - 24th April, 2026"
+            }
+        ]
+        result, _ = build_scheme_json({}, rows)
+        fms = result.get("fund_managers", [])
+        self.assertEqual(len(fms), 4)
+
+        mgr_map = {f["name"]: f for f in fms}
+        self.assertIn("Mr. Harsh Agarwal", mgr_map)
+        self.assertEqual(mgr_map["Mr. Harsh Agarwal"]["from"], "2026-03-25")
+        self.assertEqual(mgr_map["Mr. Harsh Agarwal"]["type"], "Primary")
+
+        self.assertIn("Mr. Milan Mody", mgr_map)
+        self.assertEqual(mgr_map["Mr. Milan Mody"]["from"], "2026-03-25")
+        self.assertEqual(mgr_map["Mr. Milan Mody"]["type"], "Comanage")
+
+        self.assertIn("Mr. Rahul Khetawat", mgr_map)
+        self.assertEqual(mgr_map["Mr. Rahul Khetawat"]["from"], "2026-03-25")
+        self.assertEqual(mgr_map["Mr. Rahul Khetawat"]["type"], "Comanage")
+
+        self.assertIn("Mr.Pranav Mise", mgr_map)
+        self.assertEqual(mgr_map["Mr.Pranav Mise"]["from"], "2026-04-24")
+        self.assertEqual(mgr_map["Mr.Pranav Mise"]["type"], "Comanage")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -14,7 +14,7 @@
     "nfo_close_date": "2026-11-05",
     "allotment_date": "2026-05-14",
     "reopen_date": "2026-05-20",
-    "maturity_date": "Not Applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "Nifty 500 Total Return Index (TRI)",
     "benchmark_tier_2": "Not Applicable",
     "asset_allocation": [

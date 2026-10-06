@@ -14,7 +14,7 @@
     "nfo_close_date": "2025-10-15",
     "allotment_date": "2025-10-20",
     "reopen_date": "2025-10-31",
-    "maturity_date": "Not applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index",
     "benchmark_tier_2": "Benchmark (Tier 2)",
     "asset_allocation": [
@@ -157,14 +157,14 @@
             "name": "Mr. Bhavesh Jain",
             "type": "Comanage",
             "from": "2025-10-20",
-            "to": "Direct Plan - 1.26%",
+            "to": null,
             "role_or_portion": null
         },
         {
             "name": "Mr. Bharat Lahoti",
             "type": "Comanage",
             "from": "2025-10-20",
-            "to": "Regular Plan - 2.08%",
+            "to": null,
             "role_or_portion": null
         },
         {

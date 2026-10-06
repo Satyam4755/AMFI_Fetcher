@@ -14,14 +14,29 @@
     "nfo_close_date": "2026-02-20",
     "allotment_date": "2026-02-25",
     "reopen_date": "2026-02-27",
-    "maturity_date": "Not Applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "BSE 500 TRI",
     "benchmark_tier_2": null,
     "asset_allocation": [
         {
-            "allocation_type": "Stated Asset Allocation",
-            "minimum_percentage": null,
-            "maximum_percentage": null
+            "allocation_type": "Investment in Equity and equity related instruments",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Short exposure through unhedged derivative positions in equity instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 25
+        },
+        {
+            "allocation_type": "Investment in Debt and money market instruments",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InVITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "Not Listed",
@@ -33,9 +48,9 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF - 55 | INF579M30042 | ELSDG",
+                    "name": "SIF - 55 | ELSDG",
                     "amfi_code": "SIF-55",
-                    "isin_code": "INF579M30042",
+                    "isin_code": null,
                     "rta_code": "ELSDG"
                 }
             ],
@@ -46,9 +61,9 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF - 57 | INF579M30059 | ELSDP",
+                        "name": "SIF - 57 | ELSDP",
                         "amfi_code": "SIF-57",
-                        "isin_code": "INF579M30059",
+                        "isin_code": null,
                         "rta_code": "ELSDP"
                     }
                 ],
@@ -58,9 +73,9 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF - 57 | INF579M30067 | ELSDR",
+                        "name": "SIF - 57 | ELSDR",
                         "amfi_code": "SIF-57",
-                        "isin_code": "INF579M30067",
+                        "isin_code": null,
                         "rta_code": "ELSDR"
                     }
                 ],
@@ -77,9 +92,9 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF - 59 | INF579M30018 | ELSRG",
+                    "name": "SIF - 59 | ELSRG",
                     "amfi_code": "SIF-59",
-                    "isin_code": "INF579M30018",
+                    "isin_code": null,
                     "rta_code": "ELSRG"
                 }
             ],
@@ -90,9 +105,9 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF - 60 | INF579M30026 | ELSRP",
+                        "name": "SIF - 60 | ELSRP",
                         "amfi_code": "SIF-60",
-                        "isin_code": "INF579M30026",
+                        "isin_code": null,
                         "rta_code": "ELSRP"
                     }
                 ],
@@ -102,9 +117,9 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF - 60 | INF579M30034 | ELSRR",
+                        "name": "SIF - 60 | ELSRR",
                         "amfi_code": "SIF-60",
-                        "isin_code": "INF579M30034",
+                        "isin_code": null,
                         "rta_code": "ELSRR"
                     }
                 ],
@@ -118,16 +133,16 @@
     "fund_managers": [
         {
             "name": "Mr. Harsh Aggarwal",
-            "type": "Mr. Harsh Aggarwal - Primary",
+            "type": "Primary",
             "from": "2026-02-25",
-            "to": "Regular 2.1, Direct 0.83",
+            "to": null,
             "role_or_portion": null
         },
         {
             "name": "Mr. Pranav Mise",
-            "type": "Mr.Pranav Mise - Comanage",
+            "type": "Comanage",
             "from": "2026-04-24",
-            "to": "Regular 2.1, Direct 0.83",
+            "to": null,
             "role_or_portion": null
         }
     ],

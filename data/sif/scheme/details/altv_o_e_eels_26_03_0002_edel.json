@@ -14,7 +14,7 @@
     "nfo_close_date": "2026-06-01",
     "allotment_date": "2026-06-08",
     "reopen_date": "2026-06-10",
-    "maturity_date": "Not applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "Nifty 500 TRI",
     "benchmark_tier_2": "Benchmark (Tier 2)",
     "asset_allocation": [
@@ -157,14 +157,14 @@
             "name": "Mr. Nikhil Gada",
             "type": "Mr. Nikhil Gada (Comanage)",
             "from": "2026-06-08",
-            "to": "Direct Plan - 1.99%",
+            "to": null,
             "role_or_portion": null
         },
         {
             "name": "Mr. Trideep Bhattacharya",
             "type": "Mr. Trideep Bhattacharya (Comanage)",
             "from": "2026-06-08",
-            "to": "Regular Plan - 3.49%",
+            "to": null,
             "role_or_portion": null
         },
         {

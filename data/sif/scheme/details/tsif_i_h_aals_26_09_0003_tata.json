@@ -14,7 +14,7 @@
     "nfo_close_date": "2026-10-07",
     "allotment_date": null,
     "reopen_date": "2026-10-16",
-    "maturity_date": "Not Applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "35% BSE 200 TRI + 50% CRISIL Short Term Bond Fund Index + 15% iCOMDEX Composite Index",
     "benchmark_tier_2": "Not Applicable",
     "asset_allocation": [

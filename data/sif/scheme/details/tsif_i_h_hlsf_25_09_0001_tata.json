@@ -14,7 +14,7 @@
     "nfo_close_date": "2025-12-08",
     "allotment_date": "2025-12-11",
     "reopen_date": "2025-12-17",
-    "maturity_date": "Not Applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "CRISIL Hybrid 50+50 - Moderate Index",
     "benchmark_tier_2": "Not Applicable",
     "asset_allocation": [

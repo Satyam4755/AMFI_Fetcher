@@ -408,7 +408,7 @@
     "fund_managers": [
         {
             "name": "Mr. Brijesh Shah",
-            "type": "Debt Portion: FM 1 - Comanage",
+            "type": "Comanage",
             "from": "2026-01-28",
             "to": null,
             "role_or_portion": null
@@ -422,7 +422,7 @@
         },
         {
             "name": "Mr. Kapil Kankonkar",
-            "type": "Equity Portion: FM 1 - Comanage",
+            "type": "Comanage",
             "from": "2026-01-28",
             "to": null,
             "role_or_portion": null

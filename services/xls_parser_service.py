@@ -42,7 +42,7 @@ def parse_summary_xls(xls_path: str) -> dict:
                             while len(cells) < target_idx:
                                 cells.append("")
                         d = c.find("./ss:Data", ns)
-                        text = d.text.strip() if (d is not None and d.text) else ""
+                        text = "".join(d.itertext()).strip() if d is not None else ""
                         cells.append(text)
                     while cells and not cells[-1]:
                         cells.pop()

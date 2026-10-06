@@ -14,7 +14,7 @@
     "nfo_close_date": "2026-05-18",
     "allotment_date": "2026-05-25",
     "reopen_date": "2026-05-29",
-    "maturity_date": "Not applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "NIFTY 200 Total Return Index (TRI)",
     "benchmark_tier_2": "Not applicable",
     "asset_allocation": [
@@ -128,14 +128,14 @@
     "fund_managers": [
         {
             "name": "Mr.Rajesh Aynor",
-            "type": "Co-manage",
+            "type": "Comanage",
             "from": "2026-05-25",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Mr.Hiten Bhadra(for Arbitrage portion)",
-            "type": "Co-manage",
+            "type": "Comanage",
             "from": "2026-05-25",
             "to": null,
             "role_or_portion": null

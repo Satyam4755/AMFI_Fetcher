@@ -20,8 +20,18 @@
     "asset_allocation": [
         {
             "allocation_type": "Equity and Equity related securities (including up to 25% in Unhedged short exposure through derivative instruments)",
+            "minimum_percentage": 35,
+            "maximum_percentage": 80
+        },
+        {
+            "allocation_type": "Debt & Money Market instruments (including up to 25% in Unhedged short exposure through derivative instruments)# and Units of Debt Oriented Mutual Funds, Exchange traded Commodity derivatives",
+            "minimum_percentage": 10,
+            "maximum_percentage": 55
+        },
+        {
+            "allocation_type": "Units issued by Infrastructure Investment Trusts (InvITs)",
             "minimum_percentage": 0,
-            "maximum_percentage": 35
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "Listed on BSE and NSE",
@@ -104,13 +114,6 @@
             "name": "Mr. Gaurav Chikane",
             "type": "Primary",
             "from": null,
-            "to": null,
-            "role_or_portion": null
-        },
-        {
-            "name": "05T00:00:00.000",
-            "type": "",
-            "from": "2026-06-05",
             "to": null,
             "role_or_portion": null
         }

@@ -20,8 +20,18 @@
     "asset_allocation": [
         {
             "allocation_type": "Equity and Equity related securities (including up to 25% in Unhedged short exposure through derivative instruments)",
-            "minimum_percentage": null,
-            "maximum_percentage": null
+            "minimum_percentage": 65,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt & Money Market instruments (including up to 25% in Unhedged short exposure through derivative instruments)# and Units of Debt Oriented Mutual Funds",
+            "minimum_percentage": 25,
+            "maximum_percentage": 35
+        },
+        {
+            "allocation_type": "Units issued Infrastructure Investments Trusts",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "Listed on BSE and NSE",

@@ -1,0 +1,240 @@
+Scheme Code;ISIN Div Payout/ ISIN Growth;ISIN Div Reinvestment;Scheme Name;Plan;Option;Net Asset Value;Date
+ 
+Open Ended Schemes(Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund)
+ 
+Altiva SIF
+ 
+SIF-120;INF754K30094;-;Altiva Equity Ex- Top 100 Long - Short Fund;Direct Plan;Growth;10.5892;05-Oct-2026
+SIF-121;INF754K30102;INF754K30110;Altiva Equity Ex- Top 100 Long - Short Fund;Direct Plan;IDCW;10.5893;05-Oct-2026
+SIF-122;INF754K30136;-;Altiva Equity Ex- Top 100 Long - Short Fund;Regular Plan;Growth;10.5347;05-Oct-2026
+SIF-123;INF754K30144;-;Altiva Equity Ex- Top 100 Long - Short Fund;Regular Plan;IDCW;10.5343;05-Oct-2026
+ 
+Apex SIF
+ 
+SIF-155;INF209K30073;-;Apex Equity Ex-Top 100 Long-short Fund;Direct Plan;GROWTH;10.01;05-Oct-2026
+SIF-156;INF209K30081;-;Apex Equity Ex-Top 100 Long-short Fund;Regular Plan;GROWTH;9.99;05-Oct-2026
+ 
+DynaSIF SIF
+ 
+SIF-140;INF579M30166;-;DynaSIF Equity Ex-Top 100 Long - Short Fund;Direct Plan;GROWTH OPTION;11.2092;05-Oct-2026
+SIF-141;INF579M30174;INF579M30182;DynaSIF Equity Ex-Top 100 Long - Short Fund;Direct Plan;IDCW Option;11.2092;05-Oct-2026
+SIF-143;INF579M30133;-;DynaSIF Equity Ex-Top 100 Long - Short Fund;Regular Plan;GROWTH OPTION;11.1464;05-Oct-2026
+SIF-144;INF579M30141;INF579M30158;DynaSIF Equity Ex-Top 100 Long - Short Fund;Regular Plan;IDCW Option;11.1464;05-Oct-2026
+ 
+iSIF SIF
+ 
+SIF-33;INF109K30042;-;iSIF Equity Ex-Top 100 Long-Short Fund;;;10.14;05-Oct-2026
+SIF-34;INF109K30034;-;iSIF Equity Ex-Top 100 Long-Short Fund;;;10.05;05-Oct-2026
+ 
+Magnum SIF
+ 
+SIF-159;INF200K30106;-;Magnum Equity Ex-Top 100 Long Short Fund;Direct Plan;Growth;9.7505;05-Oct-2026
+SIF-160;INF200K30114;INF200K30122;Magnum Equity Ex-Top 100 Long Short Fund;Direct Plan;IDCW;9.7506;05-Oct-2026
+SIF-157;INF200K30072;-;Magnum Equity Ex-Top 100 Long Short Fund;Regular Plan;Growth;9.7371;05-Oct-2026
+SIF-158;INF200K30080;INF200K30098;Magnum Equity Ex-Top 100 Long Short Fund;Regular Plan;IDCW;9.7370;05-Oct-2026
+ 
+qsif SIF
+ 
+SIF-23;INF966L30159;-;qsif Equity Ex-Top 100 Long-Short Fund;Direct Plan;Growth Option;11.3621;05-Oct-2026
+SIF-25;INF966L30183;-;qsif Equity Ex-Top 100 Long-Short Fund;Regular Plan;Growth Option;11.2204;05-Oct-2026
+SIF-24;INF966L30167;INF966L30175;qsif Equity Ex-Top 100 Long-Short Fund;Direct Plan;IDCW Option;11.3621;05-Oct-2026
+SIF-26;INF966L30191;INF966L30209;qsif Equity Ex-Top 100 Long-Short Fund;Regular Plan;IDCW Option;11.2204;05-Oct-2026
+ 
+WSIF
+ 
+SIF-107;INF2F0030049;-;WSIF Equity Ex-Top 100 Long-Short Fund;Direct Plan;Growth;10.2914;05-Oct-2026
+SIF-104;INF2F0030056;INF2F0030064;WSIF Equity Ex-Top 100 Long-Short Fund;Direct Plan;IDCW;10.2688;05-Oct-2026
+SIF-105;INF2F0030015;-;WSIF Equity Ex-Top 100 Long-Short Fund;Regular Plan;Growth;10.182;05-Oct-2026
+SIF-106;INF2F0030023;INF2F0030031;WSIF Equity Ex-Top 100 Long-Short Fund;Regular Plan;IDCW;10.1827;05-Oct-2026
+ 
+Open Ended Schemes(Equity Oriented Investment Strategies - Equity Long-Short Fund)
+ 
+Altiva SIF
+ 
+SIF-163;INF754K30177;-;Altiva Equity Long-Short Fund;Direct Plan;Growth;10.0196;05-Oct-2026
+SIF-162;INF754K30185;INF754K30193;Altiva Equity Long-Short Fund;Direct Plan;IDCW;10.0196;05-Oct-2026
+SIF-161;INF754K30219;-;Altiva Equity Long-Short Fund;Regular Plan;Growth;10.0170;05-Oct-2026
+SIF-164;INF754K30227;INF754K30235;Altiva Equity Long-Short Fund;Regular Plan;IDCW;10.0170;05-Oct-2026
+ 
+Apex SIF
+ 
+SIF-153;INF209K30099;-;Apex Equity Long-Short Fund;Direct Plan;GROWTH;9.87;05-Oct-2026
+SIF-154;INF209K30107;-;Apex Equity Long-Short Fund;Regular Plan;GROWTH;9.86;05-Oct-2026
+ 
+Arthaya SIF
+ 
+SIF-112;INF582M30046;-;Arthaya Equity Long Short Fund;Direct Plan;Growth Option;9.7713;05-Oct-2026
+SIF-114;INF582M30012;-;Arthaya Equity Long Short Fund;Regular Plan;Growth Option;9.7229;05-Oct-2026
+SIF-115;INF582M30020;INF582M30038;Arthaya Equity Long Short Fund;Regular Plan;IDCW Option;9.7229;05-Oct-2026
+ 
+Arudha SIF
+ 
+SIF-61;INF194K30523;-;Arudha Equity Long-Short Fund;Direct Plan;Growth;10.127;05-Oct-2026
+SIF-75;INF194K30424;INF194K30507;Arudha Equity Long-Short Fund;Regular Plan;Annual IDCW;9.765;05-Oct-2026
+SIF-62;INF194K30358;-;Arudha Equity Long-Short Fund;Regular Plan;Growth;10.045;05-Oct-2026
+SIF-69;INF194K30390;INF194K30473;Arudha Equity Long-Short Fund;Regular Plan;Monthly IDCW;9.919;05-Oct-2026
+SIF-71;INF194K30408;INF194K30481;Arudha Equity Long-Short Fund;Regular Plan;Quarterly IDCW;10.045;05-Oct-2026
+ 
+Diviniti SIF
+ 
+SIF-19;INF00XX30043;-;Diviniti Equity Long Short Fund;Direct Plan;Growth Option;878.7542;05-Oct-2026
+SIF-20;INF00XX30050;INF00XX30068;Diviniti Equity Long Short Fund;Direct Plan;IDCW Option;878.7542;05-Oct-2026
+SIF-21;INF00XX30019;-;Diviniti Equity Long Short Fund;Regular Plan;Growth Option;867.7262;05-Oct-2026
+SIF-22;INF00XX30027;INF00XX30035;Diviniti Equity Long Short Fund;Regular Plan;IDCW Option;867.7262;05-Oct-2026
+ 
+DynaSIF SIF
+ 
+SIF-57;INF579M30042;-;DynaSIF Equity Long - Short Fund;Direct Plan;GROWTH OPTION;10.1929;05-Oct-2026
+SIF-60;INF579M30059;INF579M30067;DynaSIF Equity Long - Short Fund;Direct Plan;IDCW Option;10.1929;05-Oct-2026
+SIF-55;INF579M30018;-;DynaSIF Equity Long - Short Fund;Regular Plan;GROWTH OPTION;10.0999;05-Oct-2026
+SIF-59;INF579M30026;INF579M30034;DynaSIF Equity Long - Short Fund;Regular Plan;IDCW Option;10.0999;05-Oct-2026
+ 
+iSIF SIF
+ 
+SIF-127;INF109K30083;-;iSIF Equity Long-Short Fund;;;10.62;05-Oct-2026
+SIF-126;INF109K30075;-;iSIF Equity Long-Short Fund;;;10.57;05-Oct-2026
+ 
+qsif SIF
+ 
+SIF-1;INF966L30019;-;qsif Equity Long-Short Fund;Direct Plan;Growth Option;10.9942;05-Oct-2026
+SIF-3;INF966L30027;-;qsif Equity Long-Short Fund;Regular Plan;Growth Option;10.8362;05-Oct-2026
+SIF-2;INF966L30035;INF966L30043;qsif Equity Long-Short Fund;Direct Plan;IDCW Option;10.9942;05-Oct-2026
+SIF-4;INF966L30050;INF966L30068;qsif Equity Long-Short Fund;Regular Plan;IDCW Option;10.8362;05-Oct-2026
+ 
+Sapphire SIF
+ 
+SIF-95;INF090I30048;-;Sapphire Equity Long-Short SIF;Direct Plan;Growth;958.4643;05-Oct-2026
+SIF-94;INF090I30063;INF090I30055;Sapphire Equity Long-Short SIF;Direct Plan;IDCW;958.4643;05-Oct-2026
+SIF-96;INF090I30014;-;Sapphire Equity Long-Short SIF;Regular Plan;Growth;951.2606;05-Oct-2026
+SIF-97;INF090I30030;INF090I30022;Sapphire Equity Long-Short SIF;Regular Plan;IDCW;951.2606;05-Oct-2026
+ 
+SUMMIT SIF
+ 
+SIF-149;INF205K30048;-;Summit Equity Long-Short Fund;Direct Plan;Growth;10.20;05-Oct-2026
+SIF-151;INF205K30055;INF205K30063;Summit Equity Long-Short Fund;Direct Plan;IDCW;10.20;05-Oct-2026
+SIF-150;INF205K30014;-;Summit Equity Long-Short Fund;Regular Plan;Growth;10.16;05-Oct-2026
+SIF-152;INF205K30022;INF205K30030;Summit Equity Long-Short Fund;Regular Plan;IDCW;10.16;05-Oct-2026
+ 
+Titanium SIF
+ 
+SIF-99;INF277K30104;-;Titanium Equity Long-Short Fund;Direct Plan;Growth Option;10.2029;05-Oct-2026
+SIF-100;INF277K30120;-;Titanium Equity Long-Short Fund;Direct Plan;IDCW Payout Option;9.6302;05-Oct-2026
+SIF-103;-;INF277K30112;Titanium Equity Long-Short Fund;Direct Plan;IDCW Reinvestment Option;9.6302;05-Oct-2026
+SIF-102;INF277K30070;-;Titanium Equity Long-Short Fund;Regular Plan;Growth Option;10.1269;05-Oct-2026
+SIF-98;INF277K30096;-;Titanium Equity Long-Short Fund;Regular Plan;IDCW Payout Option;10.1269;05-Oct-2026
+SIF-101;-;INF277K30088;Titanium Equity Long-Short Fund;Regular Plan;IDCW Reinvestment Option;10.1269;05-Oct-2026
+ 
+WSIF
+ 
+SIF-108;INF2F0030106;-;WSIF Equity Long-Short Fund;Direct Plan;Growth;10.0848;05-Oct-2026
+SIF-111;INF2F0030072;-;WSIF Equity Long-Short Fund;Regular Plan;Growth;9.9989;05-Oct-2026
+SIF-110;INF2F0030080;INF2F0030098;WSIF Equity Long-Short Fund;Regular Plan;IDCW;9.9995;05-Oct-2026
+ 
+Open Ended Schemes(Equity Oriented Investment Strategies - Sector Rotation Long-Short Fund)
+ 
+qsif SIF
+ 
+SIF-116;INF966L30274;-;qsif Sector Rotation Long-Short Fund;Direct Plan;Growth Option;10.3163;05-Oct-2026
+SIF-117;INF966L30308;-;qsif Sector Rotation Long-Short Fund;Regular Plan;Growth Option;10.2521;05-Oct-2026
+SIF-118;INF966L30290;INF966L30282;qsif Sector Rotation Long-Short Fund;Direct Plan;IDCW Option;10.3163;05-Oct-2026
+SIF-119;INF966L30324;INF966L30316;qsif Sector Rotation Long-Short Fund;Regular Plan;IDCW Option;10.2521;05-Oct-2026
+ 
+Interval Fund Schemes(Hybrid Investment Strategies - Active Asset Allocator Long-Short Fund)
+ 
+DynaSIF SIF
+ 
+SIF-88;INF579M30109;-;DynaSIF Active Asset Allocator Long-Short Fund;Direct Plan;GROWTH OPTION;10.4551;05-Oct-2026
+SIF-86;INF579M30117;INF579M30125;DynaSIF Active Asset Allocator Long-Short Fund;Direct Plan;IDCW Option;10.4551;05-Oct-2026
+SIF-87;INF579M30075;-;DynaSIF Active Asset Allocator Long-Short Fund;Regular Plan;GROWTH OPTION;10.3825;05-Oct-2026
+SIF-89;INF579M30083;INF579M30091;DynaSIF Active Asset Allocator Long-Short Fund;Regular Plan;IDCW Option;10.3825;05-Oct-2026
+ 
+iSIF SIF
+ 
+SIF-125;INF109K30067;-;iSIF Active Asset Allocator Long-Short Fund;;;10.2571;05-Oct-2026
+SIF-124;INF109K30059;-;iSIF Active Asset Allocator Long-Short Fund;;;10.2088;05-Oct-2026
+ 
+qsif SIF
+ 
+SIF-92;INF966L30258;INF966L30266;qsif Active Asset Allocator Long-Short Fund;Direct Plan;IDCW Option;12.9939;05-Oct-2026
+SIF-91;INF966L30225;INF966L30233;qsif Active Asset Allocator Long-Short Fund;Regular Plan;IDCW Option;12.901;05-Oct-2026
+SIF-90;INF966L30241;-;qsif Active Asset Allocator Long-Short Fund;Direct Plan;Growth Option;12.9939;05-Oct-2026
+SIF-93;INF966L30217;-;qsif Active Asset Allocator Long-Short Fund;Regular Plan;Growth Option;12.901;05-Oct-2026
+ 
+Interval Fund Schemes(Hybrid Investment Strategies - Hybrid Long-Short Fund)
+ 
+Altiva SIF
+ 
+SIF-9;INF754K30011;-;Altiva Hybrid Long-Short Fund;Direct Plan;Growth;11.0361;05-Oct-2026
+SIF-10;INF754K30029;INF754K30037;Altiva Hybrid Long-Short Fund;Direct Plan;IDCW;10.6138;05-Oct-2026
+SIF-11;INF754K30052;-;Altiva Hybrid Long-Short Fund;Regular Plan;Growth;10.9354;05-Oct-2026
+SIF-12;INF754K30060;INF754K30078;Altiva Hybrid Long-Short Fund;Regular Plan;IDCW;10.5137;05-Oct-2026
+ 
+Apex SIF
+ 
+SIF-83;INF209K30024;INF209K30032;Apex Hybrid Long-Short Fund;Direct Plan;IDCW;10.7895;05-Oct-2026
+SIF-80;INF209K30040;-;Apex Hybrid Long-Short Fund;Regular Plan;GROWTH;10.7242;05-Oct-2026
+SIF-81;INF209K30057;INF209K30065;Apex Hybrid Long-Short Fund;Regular Plan;IDCW;10.7242;05-Oct-2026
+SIF-79;INF209K30016;-;Apex Hybrid Long-Short Fund;Direct Plan;GROWTH;10.7897;05-Oct-2026
+ 
+Arudha SIF
+ 
+SIF-51;INF194K30259;INF194K30333;Arudha Hybrid Long-Short Fund;Direct Plan;Annual IDCW;10.33;05-Oct-2026
+SIF-54;INF194K30184;-;Arudha Hybrid Long-Short Fund;Direct Plan;Growth;10.427;05-Oct-2026
+SIF-48;INF194K30242;INF194K30325;Arudha Hybrid Long-Short Fund;Direct Plan;Half Yearly IDCW;10.424;05-Oct-2026
+SIF-43;INF194K30044;INF194K30127;Arudha Hybrid Long-Short Fund;Regular Plan;Fortnightly IDCW;10.033;05-Oct-2026
+SIF-40;INF194K30010;-;Arudha Hybrid Long-Short Fund;Regular Plan;Growth;10.394;05-Oct-2026
+SIF-44;INF194K30051;INF194K30135;Arudha Hybrid Long-Short Fund;Regular Plan;Monthly IDCW;10.394;05-Oct-2026
+ 
+Infinity SIF
+ 
+SIF-145;INF174K30012;-;INFINITY HYBRID LONG-SHORT FUND;Direct Plan;GROWTH;10.372;05-Oct-2026
+SIF-148;INF174K30020;INF174K30038;INFINITY HYBRID LONG-SHORT FUND;Direct Plan;IDCW;10.372;05-Oct-2026
+SIF-146;INF174K30046;-;INFINITY HYBRID LONG-SHORT FUND;Regular Plan;GROWTH;10.342;05-Oct-2026
+SIF-147;INF174K30053;INF174K30061;INFINITY HYBRID LONG-SHORT FUND;Regular Plan;IDCW;10.342;05-Oct-2026
+ 
+iSIF SIF
+ 
+SIF-36;INF109K30026;-;iSIF Hybrid Long-Short Fund;;;10.4137;05-Oct-2026
+SIF-35;INF109K30018;-;iSIF Hybrid Long-Short Fund;;;10.3167;05-Oct-2026
+ 
+Magnum SIF
+ 
+SIF-14;INF200K30049;-;Magnum Hybrid Long Short Fund;Direct Plan;Growth;10.3594;05-Oct-2026
+SIF-15;INF200K30056;INF200K30064;Magnum Hybrid Long Short Fund;Direct Plan;IDCW;10.3654;05-Oct-2026
+SIF-13;INF200K30015;-;Magnum Hybrid Long Short Fund;Regular Plan;Growth;10.2899;05-Oct-2026
+SIF-16;INF200K30023;INF200K30031;Magnum Hybrid Long Short Fund;Regular Plan;IDCW;10.2890;05-Oct-2026
+ 
+Platinum SIF
+ 
+SIF-134;INF769K30043;-;Platinum Hybrid Long-Short Fund;Direct Plan;Growth;10.083;05-Oct-2026
+SIF-135;INF769K30068;INF769K30050;Platinum Hybrid Long-Short Fund;Direct Plan;IDCW;10.083;05-Oct-2026
+SIF-136;INF769K30019;-;Platinum Hybrid Long-Short Fund;Regular Plan;Growth;10.039;05-Oct-2026
+SIF-137;INF769K30035;INF769K30027;Platinum Hybrid Long-Short Fund;Regular Plan;IDCW;10.039;05-Oct-2026
+ 
+Prism SIF
+ 
+SIF-139;INF22M030027;-;Prism Hybrid Long - Short Fund;Direct Plan;Growth Option;10.2319;05-Oct-2026
+SIF-138;INF22M030019;-;Prism Hybrid Long - Short Fund;Regular Plan;Growth Option;10.2057;05-Oct-2026
+ 
+qsif SIF
+ 
+SIF-5;INF966L30076;-;qsif Hybrid Long-Short Fund;Direct Plan;Growth Option;12.956;05-Oct-2026
+SIF-7;INF966L30084;-;qsif Hybrid Long-Short Fund;Regular Plan;Growth Option;12.7666;05-Oct-2026
+SIF-6;INF966L30092;INF966L30100;qsif Hybrid Long-Short Fund;Direct Plan;IDCW Option;12.956;05-Oct-2026
+SIF-8;INF966L30118;INF966L30126;qsif Hybrid Long-Short Fund;Regular Plan;IDCW Option;12.9781;05-Oct-2026
+ 
+RedHex SIF
+ 
+SIF-129;INF336L30049;-;RedHex Hybrid Long-Short Fund;Direct Plan;Growth;10.241;05-Oct-2026
+SIF-130;INF336L30064;INF336L30056;RedHex Hybrid Long-Short Fund;Direct Plan;IDCW;10.2417;05-Oct-2026
+SIF-128;INF336L30015;-;RedHex Hybrid Long-Short Fund;Regular Plan;Growth;10.2216;05-Oct-2026
+ 
+Titanium SIF
+ 
+SIF-32;INF277K30047;-;Titanium Hybrid Long-Short Fund;Direct Plan;Growth Option;9.9861;05-Oct-2026
+SIF-31;INF277K30062;-;Titanium Hybrid Long-Short Fund;Direct Plan;IDCW Payout Option;9.9861;05-Oct-2026
+SIF-28;-;INF277K30054;Titanium Hybrid Long-Short Fund;Direct Plan;IDCW Reinvestment Option;9.9861;05-Oct-2026
+SIF-29;INF277K30013;-;Titanium Hybrid Long-Short Fund;Regular Plan;Growth Option;9.8405;05-Oct-2026
+SIF-30;INF277K30039;-;Titanium Hybrid Long-Short Fund;Regular Plan;IDCW Payout Option;9.8405;05-Oct-2026
+SIF-27;-;INF277K30021;Titanium Hybrid Long-Short Fund;Regular Plan;IDCW Reinvestment Option;9.8405;05-Oct-2026
+

@@ -47,10 +47,43 @@
     "listing_details": "NO",
     "plans": {
         "regular": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular Plan - Growth",
+                    "amfi_code": "SIF-13",
+                    "isin_code": "INF200K30015",
+                    "rta_code": "901G"
+                }
+            ],
             "idcw": {
-                "payout": [],
-                "reinvestment": [],
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Payout",
+                        "amfi_code": "SIF-16",
+                        "isin_code": "INF200K30023",
+                        "rta_code": "901DP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Reinvest",
+                        "amfi_code": "SIF-16",
+                        "isin_code": "INF200K30031",
+                        "rta_code": "901D"
+                    }
+                ],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []
@@ -58,10 +91,43 @@
             "unresolved": []
         },
         "direct": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct Plan - Growth",
+                    "amfi_code": "SIF-14",
+                    "isin_code": "INF200K30049",
+                    "rta_code": "D901G"
+                }
+            ],
             "idcw": {
-                "payout": [],
-                "reinvestment": [],
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct Plan - IDCW Payout",
+                        "amfi_code": "SIF-15",
+                        "isin_code": "INF200K30056",
+                        "rta_code": "D901P"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Direct Plan - IDCW Reinvest",
+                        "amfi_code": "SIF-15",
+                        "isin_code": "INF200K30064",
+                        "rta_code": "D901D"
+                    }
+                ],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []

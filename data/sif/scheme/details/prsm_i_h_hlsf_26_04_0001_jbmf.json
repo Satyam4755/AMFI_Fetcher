@@ -14,7 +14,7 @@
     "nfo_close_date": "2026-07-13",
     "allotment_date": "2026-07-17",
     "reopen_date": "2026-07-23",
-    "maturity_date": "Not applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "NIFTY 50 Hybrid Composite Debt 50:50 Index (TRI)",
     "benchmark_tier_2": "NA",
     "asset_allocation": [

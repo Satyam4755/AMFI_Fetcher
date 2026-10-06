@@ -12,14 +12,14 @@
     "face_value": "Rs. 10.",
     "nfo_open_date": "2026-04-15",
     "nfo_close_date": "2026-04-29",
-    "allotment_date": "May 6 ,2026",
+    "allotment_date": null,
     "reopen_date": "2026-05-11",
-    "maturity_date": "Not applicable",
+    "maturity_date": null,
     "benchmark_tier_1": "NIFTY 500 Total Return Index (TRI)",
     "benchmark_tier_2": "Not applicable",
     "asset_allocation": [
         {
-            "allocation_type": "Equity and Equity Related Instruments (* including unhedged short exposure as mentioned below)",
+            "allocation_type": "Equity and Equity Related Instruments",
             "minimum_percentage": 80,
             "maximum_percentage": 100
         },

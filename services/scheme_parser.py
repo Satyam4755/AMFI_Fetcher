@@ -1,6 +1,99 @@
+import os
 import re
 import json
 import html
+
+_ISIN_SIF_MAP_CACHE = None
+_AUTHORITATIVE_ISIN_MAP_CACHE = None
+_AUTHORITATIVE_SIF_MAP_CACHE = None
+
+def get_authoritative_maps():
+    global _AUTHORITATIVE_ISIN_MAP_CACHE, _AUTHORITATIVE_SIF_MAP_CACHE
+    if _AUTHORITATIVE_ISIN_MAP_CACHE is not None and _AUTHORITATIVE_SIF_MAP_CACHE is not None:
+        return _AUTHORITATIVE_ISIN_MAP_CACHE, _AUTHORITATIVE_SIF_MAP_CACHE
+
+    isin_map = {}
+    sif_map = {}
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    candidates = [
+        os.path.join(base_dir, "SIF_NAVAll.txt"),
+        os.path.join(base_dir, "temp", "SIF_NAVAll.txt"),
+        os.path.join(base_dir, "data", "sif", "scheme", "nav", "SIF_NAVAll.txt"),
+        os.path.join(base_dir, "..", "SIF_NAVAll.txt"),
+        "SIF_NAVAll.txt",
+    ]
+    raw_content = None
+    for c in candidates:
+        if os.path.exists(c):
+            try:
+                with open(c, "r", encoding="utf-8", errors="ignore") as f:
+                    raw_content = f.read()
+                    if raw_content:
+                        break
+            except Exception:
+                pass
+
+    if not raw_content:
+        try:
+            import urllib.request
+            url = "https://portal.amfiindia.com/spages/SIF_NAVAll.txt"
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=5) as resp:
+                raw_content = resp.read().decode("utf-8", errors="ignore")
+                cache_path = os.path.join(base_dir, "temp", "SIF_NAVAll.txt")
+                os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+                with open(cache_path, "w", encoding="utf-8") as out_f:
+                    out_f.write(raw_content)
+        except Exception:
+            pass
+
+    if raw_content:
+        for line in raw_content.splitlines():
+            line = line.strip()
+            if not line or ";" not in line:
+                continue
+            parts = [x.strip() for x in line.split(";")]
+            if len(parts) >= 6 and (parts[0].startswith("SIF-") or parts[0].isdigit()):
+                code = parts[0] if parts[0].startswith("SIF-") else f"SIF-{parts[0]}"
+                full_text = " ".join(parts[3:]).lower()
+                plan_str = "direct" if "direct" in full_text else "regular"
+                opt_str = "growth" if "growth" in full_text else "idcw"
+                
+                row_isins = []
+                for isin_idx in (1, 2):
+                    if len(parts) > isin_idx and parts[isin_idx] and parts[isin_idx] != "-" and parts[isin_idx].startswith("INF"):
+                        isin_code = parts[isin_idx]
+                        row_isins.append(isin_code)
+                        isin_map[isin_code] = {
+                            "sif_code": code,
+                            "plan": plan_str,
+                            "option": opt_str
+                        }
+                if code not in sif_map:
+                    sif_map[code] = {
+                        "plan": plan_str,
+                        "option": opt_str,
+                        "isins": row_isins
+                    }
+                else:
+                    sif_map[code]["isins"].extend([x for x in row_isins if x not in sif_map[code]["isins"]])
+
+    _AUTHORITATIVE_ISIN_MAP_CACHE = isin_map
+    _AUTHORITATIVE_SIF_MAP_CACHE = sif_map
+    return isin_map, sif_map
+
+def get_authoritative_isin_map():
+    isin_map, _ = get_authoritative_maps()
+    return isin_map
+
+def get_isin_to_sif_map():
+    global _ISIN_SIF_MAP_CACHE
+    if _ISIN_SIF_MAP_CACHE is not None:
+        return _ISIN_SIF_MAP_CACHE
+
+    auth_map = get_authoritative_isin_map()
+    _ISIN_SIF_MAP_CACHE = {isin: v["sif_code"] for isin, v in auth_map.items()}
+    return _ISIN_SIF_MAP_CACHE
 
 
 def build_scheme_json(api_data, rows):
@@ -122,7 +215,7 @@ def build_scheme_json(api_data, rows):
                         except ValueError:
                             continue
 
-        return d_clean if len(d_clean) < 30 else None
+        return None
 
     def parse_asset_allocation(data):
         if not data:
@@ -141,7 +234,7 @@ def build_scheme_json(api_data, rows):
             n = re.sub(r"^[\d\w]\)[\s\-]+", "", n)
             n = re.sub(r"^\d+\.[\s\-]+", "", n)
             n = re.sub(r"^[\s*#•\-\–:,.]+", "", n)
-            n = re.sub(r"[\s*#\-\–:,.]+$", "", n)
+            n = re.sub(r"[\s*#@\-\–:,.]+$", "", n)
             n = re.sub(r"(?i)\s*(?:out of which|of which)\s*:?$", "", n)
             n = re.sub(r"\s+", " ", n).strip()
             return n
@@ -187,7 +280,7 @@ def build_scheme_json(api_data, rows):
             data = "\n".join(str(x) for x in data if x)
 
         text = html.unescape(str(data)).strip()
-        if not text or text.lower() in ("nan", "none", "null", "--", "-", "n.a.", "na"):
+        if not text or text.lower() in ("nan", "none", "null", "--", "-", "n.a.", "na", "stated asset allocation", "asset allocation"):
             return None
 
         # Remove HTML table header tokens if present
@@ -198,6 +291,12 @@ def build_scheme_json(api_data, rows):
         text = re.sub(r"(?i)\bRisk\s*Band\s*:\s*[\w\s]+\b", "\n", text)
         text = re.sub(r"[\u2022\u25E6\u2023\u25B8\u25B9\u2043\u2219\uf0b7\uf0a7\t]+", "\n", text)
 
+        # Strip parenthetical explanatory footnote blocks
+        text = re.sub(r"\(\*+[^\)]*\)\s*;?", "\n", text)
+        text = re.sub(r"\(@[^\)]*\)\s*;?", "\n", text)
+        text = re.sub(r"\(\*\*[^\)]*\)\s*;?", "\n", text)
+        text = re.sub(r"\([^\)]*(?:include|commercial papers|specified by the board|such other instrument|derivative position)[^\)]*\)\s*;?", "\n", text, flags=re.I)
+
         # 1. Clean footnote narrative lines
         raw_lines = text.split("\n")
         cleaned_lines = []
@@ -205,7 +304,7 @@ def build_scheme_json(api_data, rows):
             l_str = l.strip()
             if not l_str:
                 continue
-            if re.match(r"^(?:\*|#|note:|please refer|there is no assurance)", l_str, re.IGNORECASE):
+            if re.match(r"^(?:\*|#|note:|please refer|there is no assurance|such as|@includes|\()", l_str, re.IGNORECASE):
                 if not re.search(r"[-–:=]\s*\d+\s*%?\s*(?:to|-|–)\s*\d+\s*%", l_str) and not re.search(r"[-–:=]\s*\d+\s*%", l_str):
                     continue
                 if re.search(r"(?i)\b(?:include both|may also include|will be upto|are invested in|having an unexpired|specified under|please refer)\b", l_str):
@@ -244,16 +343,16 @@ def build_scheme_json(api_data, rows):
 
         for line in joined_lines:
             line_clean = line.strip().rstrip(".,;")
-            if not line_clean:
+            if not line_clean or line_clean.lower() in ("stated asset allocation", "asset allocation", "indicative asset allocation"):
                 continue
-            if re.match(r"^(?:\*|#|note:|please refer|there is no assurance)", line_clean, re.IGNORECASE) and not re.search(r"\d+\s*%", line_clean):
+            if re.match(r"^(?:\*|#|note:|please refer|there is no assurance|such as|@includes|\()", line_clean, re.IGNORECASE) and not re.search(r"\d+\s*%", line_clean):
                 continue
 
             m = range_pattern.match(line_clean)
             if m:
                 raw_name, min_val, max_val = m.group(1), m.group(2), m.group(3)
                 name = clean_name(raw_name)
-                if name:
+                if name and name.lower() not in ("stated asset allocation", "asset allocation"):
                     allocations.append({
                         "allocation_type": name,
                         "minimum_percentage": parse_num(min_val),
@@ -265,7 +364,7 @@ def build_scheme_json(api_data, rows):
             if m:
                 raw_name, pct_val = m.group(1), m.group(2)
                 name = clean_name(raw_name)
-                if name:
+                if name and name.lower() not in ("stated asset allocation", "asset allocation"):
                     val = parse_num(pct_val)
                     if re.search(r"(?i)\b(?:upto|up to|max|maximum|short exposure|derivative)\b", line_clean):
                         min_p = 0
@@ -280,9 +379,9 @@ def build_scheme_json(api_data, rows):
                     })
                     continue
 
-            if not re.match(r"^(?:\*|#|note:|please refer|there is no assurance)", line_clean, re.IGNORECASE):
+            if not re.match(r"^(?:\*|#|note:|please refer|there is no assurance|such as|@includes|\()", line_clean, re.IGNORECASE):
                 name = clean_name(line_clean)
-                if name:
+                if name and name.lower() not in ("stated asset allocation", "asset allocation") and len(name) > 2:
                     allocations.append({
                         "allocation_type": name,
                         "minimum_percentage": None,
@@ -293,6 +392,29 @@ def build_scheme_json(api_data, rows):
 
 
 
+    def is_valid_mgr_name(n):
+        if not n or not isinstance(n, str):
+            return False
+        s = n.strip().rstrip(".,;")
+        if len(s) < 2:
+            return False
+        letters = re.findall(r"[a-zA-Z]", s)
+        if len(letters) < 2:
+            return False
+        if re.search(r"^\d{4}-\d{2}-\d{2}", s) or re.search(r"\d{1,2}T\d{2}:\d{2}", s) or re.search(r"^\d{1,2}T\d{2}", s):
+            return False
+        if re.search(r"^(?:00|05T00|00\.000|\d{1,2}:\d{2}(?::\d{2})?(?:\.\d+)?)$", s, re.IGNORECASE):
+            return False
+        if normalize_date(s) is not None:
+            return False
+        if s.lower() in (
+            "primary", "comanage", "co manage", "co-manage", "description",
+            "fields", "field", "col0", "val", "none", "null", "nan", "n.a.", "na",
+            "-", "--", "managing since inception", "fund manager", "manager"
+        ):
+            return False
+        return True
+
     def clean_mgr_name(n):
         if not n: return ''
         n = str(n).strip().rstrip('.,;')
@@ -300,6 +422,25 @@ def build_scheme_json(api_data, rows):
             n = re.sub(r'^(?:Debt Portion|Equity Portion|Arbitrage portion|Commodity portion)[:\s\-]*', '', n, flags=re.I).strip()
             n = re.sub(r'^(?:FM\s*[-–]?\s*\d+[:\-\s]*|FM\d+[:\-\s]*|\b\d+[\s\-\.:]+)', '', n, flags=re.I).strip()
         return n.strip()
+
+    def clean_mgr_type(t_val):
+        if not t_val:
+            return ""
+        t_str = str(t_val).strip()
+        if "-" in t_str:
+            parts = [p.strip() for p in t_str.split("-") if p.strip()]
+            if len(parts) >= 2:
+                last_part = parts[-1].strip()
+                if any(k in last_part.lower() for k in ["primary", "comanage", "co manage", "co-manage", "description", "fund manager", "sif"]):
+                    t_str = last_part
+        t_clean = re.sub(r'^(?:FM\s*[-–]?\s*\d+[:\-\s]*|FM\d+[:\-\s]*|\b\d+[\s\-\.:]+)', '', t_str, flags=re.I).strip()
+        if t_clean.lower() in ("primary", "primary manager"):
+            return "Primary"
+        if t_clean.lower() in ("comanage", "co-manage", "co manage"):
+            return "Comanage"
+        if t_clean.lower() in ("comanager", "co-manager"):
+            return "Comanager"
+        return t_clean
 
     def split_manager_items(text):
         if not text:
@@ -326,10 +467,8 @@ def build_scheme_json(api_data, rows):
             return [l.strip() for l in norm.split(' || ') if l.strip()]
 
         # Don't split a date with a comma like "April 29, 2026" or "July 06, 2026"
-        if re.search(r'^[A-Za-z]+\s+\d{1,2}(?:st|nd|rd|th)?,\s+\d{2,4}$', text.strip()):
-            return [text]
-                
-        return [l.strip() for l in text.split(',') if l.strip()]
+        chunks = re.split(r';|\n|,(?!\s*\d{4}\b)', str(text))
+        return [l.strip() for l in chunks if l.strip()]
 
     def parse_fund_managers():
         # Strategy 1: Dictionary list (e.g. structured XML <Fund_Manager> item list)
@@ -341,10 +480,11 @@ def build_scheme_json(api_data, rows):
                     fm_type = item.get('FundManagerType') or item.get('Type') or item.get('type')
                     from_d = item.get('FundManagerFromDate') or item.get('FromDate') or item.get('from') or item.get('From_Date')
                     to_d = item.get('FundManagerToDate') or item.get('ToDate') or item.get('to') or item.get('To_Date')
-                    if name:
+                    c_name = clean_mgr_name(name)
+                    if c_name and is_valid_mgr_name(c_name):
                         recs.append({
-                            'name': clean_mgr_name(name),
-                            'type': str(fm_type).strip() if fm_type else '',
+                            'name': c_name,
+                            'type': clean_mgr_type(fm_type),
                             'from': normalize_date(from_d),
                             'to': normalize_date(to_d),
                             'role_or_portion': None
@@ -358,17 +498,16 @@ def build_scheme_json(api_data, rows):
                    "i", "ii", "iii", "iv", "v", "vi", "vii", "viii", "ix", "x"]
         for idx in indices:
             name = get_val([f"fund manager {idx} - name", f"fund manager {idx} name", f"fund manager {idx}- name", f"fund_manager_{idx}_name", f"fund_manager_{idx}-name", f"fund manager {idx}"])
-            if not name or str(name).strip().isdigit() or str(name).strip().lower() in ("fields", "col0", "val", "primary", "comanage", "co manage"):
+            c_name = clean_mgr_name(name)
+            if not c_name or not is_valid_mgr_name(c_name):
                 continue
             fm_type = get_val([f"fund manager {idx} - type", f"fund manager {idx} type", f"fund manager {idx}- type", f"fund manager {idx} - type (primary/comanage/description)", f"fund manager {idx}- type (primary/comanage/description)", f"fund_manager_{idx}_type_primary_comanage_description", f"fund_manager_{idx}-type_primary_comanage_description", f"fund_manager_{idx}_type"])
             from_date = get_val([f"fund manager {idx} - from date", f"fund manager {idx} from date", f"fund manager {idx}- from date", f"fund_manager_{idx}_from_date", f"fund_manager_{idx}-from_date"])
             to_date = get_val([f"fund manager {idx} - to date", f"fund manager {idx} to date", f"fund manager {idx}- to date", f"fund_manager_{idx}_to_date"])
             
-            fm_type_clean = re.sub(r'^(?:FM\s*[-–]?\s*\d+[:\-\s]*|FM\d+[:\-\s]*|\b\d+[\s\-\.:]+)', '', str(fm_type) if fm_type else '', flags=re.I).strip()
-            
             records.append({
-                "name": clean_mgr_name(name),
-                "type": fm_type_clean,
+                "name": c_name,
+                "type": clean_mgr_type(fm_type),
                 "from": normalize_date(from_date),
                 "to": normalize_date(to_date),
                 "role_or_portion": None
@@ -384,31 +523,45 @@ def build_scheme_json(api_data, rows):
         raw_todates = get_val(["fund_manager_to_date", "fund manager to date", "field_21"])
 
         if raw_names:
-            names = [clean_mgr_name(x) for x in split_manager_items(raw_names) if clean_mgr_name(x)]
+            names = [clean_mgr_name(x) for x in split_manager_items(raw_names) if clean_mgr_name(x) and is_valid_mgr_name(clean_mgr_name(x))]
             types = split_manager_items(raw_types) if raw_types else []
             dates = split_manager_items(raw_dates) if raw_dates else []
             todates = split_manager_items(raw_todates) if raw_todates else []
 
             date_by_name = {}
             for d in dates:
+                norm_d = normalize_date(d)
+                if not norm_d:
+                    continue
                 for n in names:
-                    clean_n = re.sub(r'^(?:Mr\.|Ms\.|Mrs\.|Dr\.)\s*', '', n).strip()
-                    if clean_n.lower() in d.lower() or n.lower() in d.lower():
-                        date_by_name[n] = normalize_date(d)
+                    clean_n = re.sub(r'^(?:Mr\.|Ms\.|Mrs\.|Dr\.)\s*', '', n, flags=re.I).strip()
+                    n_parts = clean_n.split()
+                    last_name = n_parts[-1] if n_parts else clean_n
+                    if clean_n.lower() in d.lower() or (len(last_name) >= 3 and last_name.lower() in d.lower()):
+                        date_by_name[n] = norm_d
+                        break
+
+            type_by_name = {}
+            for t in types:
+                clean_t = clean_mgr_type(t)
+                for n in names:
+                    clean_n = re.sub(r'^(?:Mr\.|Ms\.|Mrs\.|Dr\.)\s*', '', n, flags=re.I).strip()
+                    n_parts = clean_n.split()
+                    last_name = n_parts[-1] if n_parts else clean_n
+                    if clean_n.lower() in t.lower() or (len(last_name) >= 3 and last_name.lower() in t.lower()):
+                        type_by_name[n] = clean_t
                         break
 
             recs = []
             for i, name in enumerate(names):
-                t_val = types[i] if i < len(types) else (types[0] if len(types) == 1 else '')
-                d_val = date_by_name.get(name) or (dates[i] if i < len(dates) else (dates[0] if len(dates) == 1 else None))
+                t_val = type_by_name.get(name) or (clean_mgr_type(types[i]) if i < len(types) else (clean_mgr_type(types[0]) if len(types) == 1 else 'Primary'))
+                d_val = date_by_name.get(name) or (normalize_date(dates[i]) if i < len(dates) else (normalize_date(dates[0]) if len(dates) == 1 else None))
                 to_val = todates[i] if i < len(todates) else (todates[0] if len(todates) == 1 else None)
                 
-                t_clean = re.sub(r'^(?:FM\s*[-–]?\s*\d+[:\-\s]*|FM\d+[:\-\s]*|\b\d+[\s\-\.:]+)', '', str(t_val), flags=re.I).strip()
-
                 recs.append({
                     "name": name,
-                    "type": t_clean,
-                    "from": normalize_date(d_val) if not isinstance(d_val, str) or not re.match(r'^\d{4}-\d{2}-\d{2}$', d_val) else d_val,
+                    "type": clean_mgr_type(t_val),
+                    "from": normalize_date(d_val),
                     "to": normalize_date(to_val),
                     "role_or_portion": None
                 })
@@ -470,6 +623,31 @@ def build_scheme_json(api_data, rows):
                     
             if subtype == "unknown" and time_period:
                 subtype = "time_period"
+
+        if re.search(r'(?:[-_]?(?:dg|dirg|directg)|[a-z0-9]dg)$', text_lower):
+            plan = "direct"
+            option = "growth"
+            subtype = None
+        elif re.search(r'(?:[-_]?(?:rg|regg|regularg)|[a-z0-9]rg)$', text_lower):
+            plan = "regular"
+            option = "growth"
+            subtype = None
+        elif re.search(r'(?:[-_]?(?:dp|dirp)|[a-z0-9]dp)$', text_lower):
+            plan = "direct"
+            option = "idcw"
+            subtype = "payout"
+        elif re.search(r'(?:[-_]?(?:dr|dirr)|[a-z0-9]dr)$', text_lower):
+            plan = "direct"
+            option = "idcw"
+            subtype = "reinvestment"
+        elif re.search(r'(?:[-_]?(?:rp|regp)|[a-z0-9]rp)$', text_lower):
+            plan = "regular"
+            option = "idcw"
+            subtype = "payout"
+        elif re.search(r'(?:[-_]?(?:rr|regr)|[a-z0-9]rr)$', text_lower):
+            plan = "regular"
+            option = "idcw"
+            subtype = "reinvestment"
                 
         return {"plan": plan, "option": option, "subtype": subtype if option == "idcw" else None, "time_period": time_period}
 
@@ -651,19 +829,37 @@ def build_scheme_json(api_data, rows):
             name_clean = name.strip() if name.strip() else None
             traits = get_canonical_traits(name_clean if name_clean else line)
             
+            p_val = traits["plan"]
+            o_val = traits["option"]
+            st_val = traits["subtype"]
+            tp_val = traits["time_period"]
+
+            is_bare = name_clean is None
+            if is_bare or not name_clean:
+                auth_isin_map, auth_sif_map = get_authoritative_maps()
+                if identifier_type == "ISIN" and code in auth_isin_map:
+                    p_val = auth_isin_map[code]["plan"]
+                    o_val = auth_isin_map[code]["option"]
+                    is_bare = False
+                elif identifier_type == "AMFI" and code in auth_sif_map:
+                    p_val = auth_sif_map[code]["plan"]
+                    o_val = auth_sif_map[code]["option"]
+                    is_bare = False
+
             extracted.append({
                 "identifier_type": identifier_type,
                 "identifier": code,
-                "plan_type": traits["plan"],
-                "option": traits["option"],
-                "sub_option": traits["subtype"],
-                "time_period": traits["time_period"],
+                "plan_type": p_val,
+                "option": o_val,
+                "sub_option": st_val,
+                "time_period": tp_val,
                 "raw_name": line,
-                "is_bare": name_clean is None  # True if the line was just the identifier without any text
+                "is_bare": is_bare
             })
             
         return extracted
 
+    auth_isin_map, auth_sif_map = get_authoritative_maps()
     amfi_recs = extract_records(amfi_text, "AMFI")
     isin_recs = extract_records(isin_text, "ISIN")
     rta_recs = extract_records(rta_text, "RTA")
@@ -702,77 +898,36 @@ def build_scheme_json(api_data, rows):
         
     def map_bare_records(recs, sigs):
         if not recs or not sigs: return
-        bare_recs = [r for r in recs if r["is_bare"]]
+        bare_recs = [r for r in recs if r.get("is_bare")]
         if not bare_recs: return
 
-        # If ALL records are bare, do a 1-to-1 sequential mapping if counts match
-        if len(bare_recs) == len(recs):
-            if len(recs) == len(sigs):
-                for idx, r in enumerate(recs):
-                    sig = sigs[idx]
-                    r["plan_type"], r["option"], r["sub_option"], r["time_period"] = sig
-                return
-            elif len(recs) < len(sigs):
-                # Duplicate to cover all sub_options in that group
-                groups = []
-                for sig in sigs:
-                    g = (sig[0], sig[1])
-                    if g not in groups: groups.append(g)
-                if len(recs) == len(groups):
-                    new_recs = []
-                    for idx, r in enumerate(recs):
-                        g = groups[idx]
-                        matching_sigs = [s for s in sigs if (s[0], s[1]) == g]
-                        for sig in matching_sigs:
-                            cloned_r = dict(r)
-                            cloned_r["plan_type"], cloned_r["option"], cloned_r["sub_option"], cloned_r["time_period"] = sig
-                            new_recs.append(cloned_r)
-                    recs.clear()
-                    recs.extend(new_recs)
-                return
-
-        # If partially bare, try to map using process of elimination per plan_type
-        # First group by plan_type (for records that HAVE a plan_type)
-        plan_groups = {}
-        for r in recs:
-            plan = r["plan_type"]
-            if plan not in plan_groups: plan_groups[plan] = []
-            plan_groups[plan].append(r)
-
         resolved_recs = []
-        for plan, group_recs in plan_groups.items():
-            if not plan:
-                resolved_recs.extend(group_recs)
+        for r in recs:
+            if not r.get("is_bare"):
+                resolved_recs.append(r)
                 continue
             
-            group_sigs = [s for s in sigs if s[0] == plan]
-            explicit_recs = [r for r in group_recs if not r["is_bare"]]
-            local_bare_recs = [r for r in group_recs if r["is_bare"]]
-
-            if not local_bare_recs:
-                resolved_recs.extend(group_recs)
-                continue
-
-            # Find which signatures are explicitly taken
-            taken_sigs = []
-            for r in explicit_recs:
-                sig = (r["plan_type"], r["option"], r["sub_option"], r["time_period"])
-                if sig not in taken_sigs: taken_sigs.append(sig)
-
-            # Available signatures
-            available_sigs = [s for s in group_sigs if s not in taken_sigs]
-
-            resolved_recs.extend(explicit_recs)
-            
-            if len(local_bare_recs) == len(available_sigs):
-                # 1-to-1 assignment
-                for i, br in enumerate(local_bare_recs):
-                    sig = available_sigs[i]
-                    br["plan_type"], br["option"], br["sub_option"], br["time_period"] = sig
-                    resolved_recs.append(br)
+            ident = r.get("identifier")
+            itype = r.get("identifier_type")
+            if itype == "ISIN" and ident in auth_isin_map:
+                r["plan_type"] = auth_isin_map[ident]["plan"]
+                r["option"] = auth_isin_map[ident]["option"]
+                r["is_bare"] = False
+                resolved_recs.append(r)
+            elif itype == "AMFI" and ident in auth_sif_map:
+                r["plan_type"] = auth_sif_map[ident]["plan"]
+                r["option"] = auth_sif_map[ident]["option"]
+                r["is_bare"] = False
+                resolved_recs.append(r)
             else:
-                # Can't confidently resolve, leave as is
-                resolved_recs.extend(local_bare_recs)
+                matching_sigs = [s for s in sigs if not r.get("plan_type") or s[0] == r.get("plan_type")]
+                if len(matching_sigs) == 1:
+                    sig = matching_sigs[0]
+                    r["plan_type"], r["option"], r["sub_option"], r["time_period"] = sig
+                    r["is_bare"] = False
+                    resolved_recs.append(r)
+                else:
+                    resolved_recs.append(r)
         
         recs.clear()
         recs.extend(resolved_recs)
@@ -829,8 +984,6 @@ def build_scheme_json(api_data, rows):
     resolve_unknown_sub_options(rta_recs, signatures)
 
     records = amfi_recs + isin_recs + rta_recs
-    
-
 
     # -------------------------------------------------------------------------
     # STAGE 2: JSON Builder
@@ -848,66 +1001,167 @@ def build_scheme_json(api_data, rows):
             "unresolved": []
         }
     }
-    
-    # We group by semantic signature (plan_type, option, sub_option, time_period)
-    grouped = {}
-    for r in records:
-        sig = (r["plan_type"], r["option"], r["sub_option"], r["time_period"])
-        if sig not in grouped:
-            grouped[sig] = []
-        grouped[sig].append(r)
-        
-    for sig, recs in grouped.items():
-        ptype, otype, stype, tperiod = sig
-        
-        if ptype not in plans:
-            plans[ptype] = {
-                "growth": [],
-                "idcw": { "payout": [], "reinvestment": [], "transfer": [], "time_period": [], "unknown": [] },
-                "unresolved": []
-            }
-        
-        # Merge all identifiers for this exact signature into a single output node
-        amfi_code = None
-        isin_code = None
-        rta_code = None
-        names = []
-        
-        for r in recs:
-            if r["identifier_type"] == "AMFI" and not amfi_code: amfi_code = r["identifier"]
-            if r["identifier_type"] == "ISIN" and not isin_code: isin_code = r["identifier"]
-            if r["identifier_type"] == "RTA" and not rta_code: rta_code = r["identifier"]
-            if r["raw_name"] and r["raw_name"] not in names: names.append(r["raw_name"])
-            
-        combined_name = " | ".join(names) if names else f"{ptype.title()} Plan {otype.title()}"
-        
-        output_node = {
-            "plan_type": ptype,
-            "option": otype,
-            "sub_option": stype,
-            "time_period": tperiod,
-            "name": combined_name,
-            "amfi_code": amfi_code,
-            "isin_code": isin_code,
-            "rta_code": rta_code
-        }
-        
-        if otype == "growth":
-            plans[ptype]["growth"].append(output_node)
-        else:
-            if stype and stype in plans[ptype]["idcw"]:
-                plans[ptype]["idcw"][stype].append(output_node)
-            else:
-                plans[ptype]["idcw"]["unknown"].append(output_node)
-                
     primary_amfi_code = None
-    for r in records:
-        if r["identifier_type"] == "AMFI":
-            primary_amfi_code = r["identifier"]
-            break
 
-    if primary_amfi_code:
-        primary_amfi_code = primary_amfi_code.replace(',', ' ').replace(';', ' ').split()[0]
+    # Check for structured XML Options_Names (list of dicts)
+    structured_options = None
+    raw_opt_val = (
+        xls_data.get("Options_Names")
+        or xls_data.get("options_names")
+        or xls_data.get("Option_Names")
+        or xls_data.get("option_names")
+    )
+    if isinstance(raw_opt_val, list) and raw_opt_val and isinstance(raw_opt_val[0], dict):
+        structured_options = raw_opt_val
+    else:
+        for k, v in xls_data.items():
+            if isinstance(v, list) and v and isinstance(v[0], dict) and any(w in str(v[0]).lower() for w in ['isin', 'optionsnames', 'schemecode', 'amficode']):
+                structured_options = v
+                break
+
+    if structured_options:
+        for item in structured_options:
+            if not isinstance(item, dict):
+                continue
+            isin_val = item.get("ISIN") or item.get("isin") or item.get("ISINs")
+            amfi_val = item.get("AMFICode") or item.get("amfi_code") or item.get("AMFI_Code")
+            rta_val = item.get("SchemeCode") or item.get("scheme_code") or item.get("RTA_Code")
+            opt_name_val = item.get("OptionsNames") or item.get("options_names") or item.get("Option_Names") or item.get("name") or item.get("Option_Name")
+
+            isin_code = str(isin_val).strip() if isin_val and str(isin_val).strip().upper() not in ("NA", "NAN", "NONE", "NULL", "-") else None
+            rta_code = str(rta_val).strip() if rta_val and str(rta_val).strip().upper() not in ("NA", "NAN", "NONE", "NULL", "-") else None
+
+            raw_name = str(opt_name_val).strip() if opt_name_val else ""
+            traits = get_canonical_traits(raw_name)
+            ptype = traits["plan"]
+            otype = traits["option"]
+            stype = traits["subtype"]
+            tperiod = traits["time_period"]
+
+            amfi_code = None
+            if isin_code and isin_code in auth_isin_map:
+                amfi_code = auth_isin_map[isin_code]["sif_code"]
+                if auth_isin_map[isin_code].get("plan"):
+                    ptype = auth_isin_map[isin_code]["plan"]
+                if auth_isin_map[isin_code].get("option"):
+                    otype = auth_isin_map[isin_code]["option"]
+            elif amfi_val:
+                norm_a = normalize_amfi_code(str(amfi_val).strip())
+                if norm_a and re.match(r"^SIF-\d+$", norm_a, re.I):
+                    amfi_code = norm_a
+                elif str(amfi_val).strip().isdigit() and len(str(amfi_val).strip()) <= 4:
+                    amfi_code = f"SIF-{str(amfi_val).strip()}"
+                if amfi_code and amfi_code in auth_sif_map:
+                    if auth_sif_map[amfi_code].get("plan"):
+                        ptype = auth_sif_map[amfi_code]["plan"]
+                    if auth_sif_map[amfi_code].get("option"):
+                        otype = auth_sif_map[amfi_code]["option"]
+
+            output_node = {
+                "plan_type": ptype,
+                "option": otype,
+                "sub_option": stype,
+                "time_period": tperiod,
+                "name": raw_name or f"{ptype.title()} Plan {otype.title()}",
+                "amfi_code": amfi_code,
+                "isin_code": isin_code,
+                "rta_code": rta_code
+            }
+
+            if ptype not in plans:
+                plans[ptype] = {
+                    "growth": [],
+                    "idcw": { "payout": [], "reinvestment": [], "transfer": [], "time_period": [], "unknown": [] },
+                    "unresolved": []
+                }
+
+            if otype == "growth":
+                plans[ptype]["growth"].append(output_node)
+            else:
+                if stype and stype in plans[ptype]["idcw"]:
+                    plans[ptype]["idcw"][stype].append(output_node)
+                else:
+                    plans[ptype]["idcw"]["unknown"].append(output_node)
+
+        for p in plans.get("regular", {}).get("growth", []):
+            if p.get("amfi_code"):
+                primary_amfi_code = p.get("amfi_code")
+                break
+    else:
+        # We group by semantic signature (plan_type, option, sub_option, time_period)
+        grouped = {}
+        for r in records:
+            sig = (r["plan_type"], r["option"], r["sub_option"], r["time_period"])
+            if sig not in grouped:
+                grouped[sig] = []
+            grouped[sig].append(r)
+            
+        for sig, recs in grouped.items():
+            ptype, otype, stype, tperiod = sig
+            
+            # Merge all identifiers for this exact signature into a single output node
+            amfi_code = None
+            isin_code = None
+            rta_code = None
+            names = []
+            
+            for r in recs:
+                if r["identifier_type"] == "AMFI" and not amfi_code: amfi_code = r["identifier"]
+                if r["identifier_type"] == "ISIN" and not isin_code: isin_code = r["identifier"]
+                if r["identifier_type"] == "RTA" and not rta_code: rta_code = r["identifier"]
+                if r["raw_name"] and r["raw_name"] not in names: names.append(r["raw_name"])
+            
+            # Authoritative ISIN / SIF code resolution
+            if isin_code and isin_code in auth_isin_map:
+                amfi_code = auth_isin_map[isin_code]["sif_code"]
+                if auth_isin_map[isin_code].get("plan"):
+                    ptype = auth_isin_map[isin_code]["plan"]
+                if auth_isin_map[isin_code].get("option"):
+                    otype = auth_isin_map[isin_code]["option"]
+            elif amfi_code and amfi_code in auth_sif_map:
+                auth_info = auth_sif_map[amfi_code]
+                if auth_info.get("plan") and auth_info["plan"] != ptype:
+                    ptype = auth_info["plan"]
+                if auth_info.get("option") and auth_info["option"] != otype:
+                    otype = auth_info["option"]
+
+            if ptype not in plans:
+                plans[ptype] = {
+                    "growth": [],
+                    "idcw": { "payout": [], "reinvestment": [], "transfer": [], "time_period": [], "unknown": [] },
+                    "unresolved": []
+                }
+
+            combined_name = f"{ptype.title()} Plan {otype.title()}" + (f" - {stype.title()}" if stype and stype != "unknown" else "")
+            
+            output_node = {
+                "plan_type": ptype,
+                "option": otype,
+                "sub_option": stype,
+                "time_period": tperiod,
+                "name": combined_name,
+                "amfi_code": amfi_code,
+                "isin_code": isin_code,
+                "rta_code": rta_code
+            }
+            
+            if otype == "growth":
+                plans[ptype]["growth"].append(output_node)
+            else:
+                if stype and stype in plans[ptype]["idcw"]:
+                    plans[ptype]["idcw"][stype].append(output_node)
+                else:
+                    plans[ptype]["idcw"]["unknown"].append(output_node)
+                    
+        for p in plans.get("regular", {}).get("growth", []):
+            if p.get("amfi_code"):
+                primary_amfi_code = p.get("amfi_code")
+                break
+        if not primary_amfi_code:
+            for p in plans.get("direct", {}).get("growth", []):
+                if p.get("amfi_code"):
+                    primary_amfi_code = p.get("amfi_code")
+                    break
 
     if not sebi_code_val:
         import logging

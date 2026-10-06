@@ -20,8 +20,18 @@
     "asset_allocation": [
         {
             "allocation_type": "Equity and Equity related instruments* (including up to 25% in Unhedged short exposure through derivative instruments)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt & Money Market instruments and Units of Debt Oriented Mutual Funds",
             "minimum_percentage": 0,
-            "maximum_percentage": 80
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units of Infrastructure Investments Trusts",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
         }
     ],
     "listing_details": "NA",

@@ -47,10 +47,43 @@
     "listing_details": "NO",
     "plans": {
         "regular": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular Plan - Growth",
+                    "amfi_code": "SIF-157",
+                    "isin_code": "INF200K30072",
+                    "rta_code": "902G"
+                }
+            ],
             "idcw": {
-                "payout": [],
-                "reinvestment": [],
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Payout",
+                        "amfi_code": "SIF-158",
+                        "isin_code": "INF200K30080",
+                        "rta_code": "902DP"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Regular Plan - IDCW Reinvest",
+                        "amfi_code": "SIF-158",
+                        "isin_code": "INF200K30098",
+                        "rta_code": "902D"
+                    }
+                ],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []
@@ -58,10 +91,43 @@
             "unresolved": []
         },
         "direct": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct Plan - Growth",
+                    "amfi_code": "SIF-159",
+                    "isin_code": "INF200K30106",
+                    "rta_code": "D902G"
+                }
+            ],
             "idcw": {
-                "payout": [],
-                "reinvestment": [],
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct Plan - IDCW Payout",
+                        "amfi_code": "SIF-160",
+                        "isin_code": "INF200K30114",
+                        "rta_code": "D902P"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Direct Plan - IDCW Reinvest",
+                        "amfi_code": "SIF-160",
+                        "isin_code": "INF200K30122",
+                        "rta_code": "D902D"
+                    }
+                ],
                 "transfer": [],
                 "time_period": [],
                 "unknown": []
@@ -72,7 +138,7 @@
     "fund_managers": [
         {
             "name": "Mr. Gaurav Mehta",
-            "type": "Fund Manager - SIF",
+            "type": "SIF",
             "from": "2026-08-27",
             "to": null,
             "role_or_portion": null

@@ -408,14 +408,14 @@
     "fund_managers": [
         {
             "name": "Mr. Nilesh Saha",
-            "type": "Equity Portion: FM 1 - Comanage",
+            "type": "Comanage",
             "from": "2026-03-30",
             "to": null,
             "role_or_portion": null
         },
         {
             "name": "Mr. Brijesh Shah",
-            "type": "Debt Portion: FM 1 - Comanage",
+            "type": "Comanage",
             "from": "2026-03-30",
             "to": null,
             "role_or_portion": null
