@@ -4,6 +4,7 @@ import json
 import html
 
 _ISIN_SIF_MAP_CACHE = None
+<<<<<<< ours
 _AUTHORITATIVE_ISIN_MAP_CACHE = None
 _AUTHORITATIVE_SIF_MAP_CACHE = None
 
@@ -18,15 +19,31 @@ def get_authoritative_maps():
     candidates = [
         os.path.join(base_dir, "SIF_NAVAll.txt"),
         os.path.join(base_dir, "temp", "SIF_NAVAll.txt"),
+=======
+
+def get_isin_to_sif_map():
+    global _ISIN_SIF_MAP_CACHE
+    if _ISIN_SIF_MAP_CACHE is not None:
+        return _ISIN_SIF_MAP_CACHE
+
+    m = {}
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    candidates = [
+        os.path.join(base_dir, "SIF_NAVAll.txt"),
+>>>>>>> theirs
         os.path.join(base_dir, "data", "sif", "scheme", "nav", "SIF_NAVAll.txt"),
         os.path.join(base_dir, "..", "SIF_NAVAll.txt"),
         "SIF_NAVAll.txt",
     ]
+<<<<<<< ours
     raw_content = None
+=======
+>>>>>>> theirs
     for c in candidates:
         if os.path.exists(c):
             try:
                 with open(c, "r", encoding="utf-8", errors="ignore") as f:
+<<<<<<< ours
                     raw_content = f.read()
                     if raw_content:
                         break
@@ -34,11 +51,27 @@ def get_authoritative_maps():
                 pass
 
     if not raw_content:
+=======
+                    for line in f:
+                        if ";" in line:
+                            parts = [x.strip() for x in line.split(";")]
+                            if len(parts) >= 3 and parts[0].startswith("SIF-"):
+                                code = parts[0]
+                                if parts[1] and parts[1] != "-" and parts[1].startswith("INF"):
+                                    m[parts[1]] = code
+                                if parts[2] and parts[2] != "-" and parts[2].startswith("INF"):
+                                    m[parts[2]] = code
+            except Exception:
+                pass
+
+    if not m:
+>>>>>>> theirs
         try:
             import urllib.request
             url = "https://portal.amfiindia.com/spages/SIF_NAVAll.txt"
             req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
             with urllib.request.urlopen(req, timeout=5) as resp:
+<<<<<<< ours
                 raw_content = resp.read().decode("utf-8", errors="ignore")
                 cache_path = os.path.join(base_dir, "temp", "SIF_NAVAll.txt")
                 os.makedirs(os.path.dirname(cache_path), exist_ok=True)
@@ -94,6 +127,23 @@ def get_isin_to_sif_map():
     auth_map = get_authoritative_isin_map()
     _ISIN_SIF_MAP_CACHE = {isin: v["sif_code"] for isin, v in auth_map.items()}
     return _ISIN_SIF_MAP_CACHE
+=======
+                content = resp.read().decode("utf-8", errors="ignore")
+                for line in content.splitlines():
+                    if ";" in line:
+                        parts = [x.strip() for x in line.split(";")]
+                        if len(parts) >= 3 and parts[0].startswith("SIF-"):
+                            code = parts[0]
+                            if parts[1] and parts[1] != "-" and parts[1].startswith("INF"):
+                                m[parts[1]] = code
+                            if parts[2] and parts[2] != "-" and parts[2].startswith("INF"):
+                                m[parts[2]] = code
+        except Exception:
+            pass
+
+    _ISIN_SIF_MAP_CACHE = m
+    return m
+>>>>>>> theirs
 
 
 def build_scheme_json(api_data, rows):
@@ -1020,6 +1070,10 @@ def build_scheme_json(api_data, rows):
                 break
 
     if structured_options:
+<<<<<<< ours
+=======
+        sif_map = get_isin_to_sif_map()
+>>>>>>> theirs
         for item in structured_options:
             if not isinstance(item, dict):
                 continue
@@ -1031,6 +1085,7 @@ def build_scheme_json(api_data, rows):
             isin_code = str(isin_val).strip() if isin_val and str(isin_val).strip().upper() not in ("NA", "NAN", "NONE", "NULL", "-") else None
             rta_code = str(rta_val).strip() if rta_val and str(rta_val).strip().upper() not in ("NA", "NAN", "NONE", "NULL", "-") else None
 
+<<<<<<< ours
             raw_name = str(opt_name_val).strip() if opt_name_val else ""
             traits = get_canonical_traits(raw_name)
             ptype = traits["plan"]
@@ -1045,17 +1100,32 @@ def build_scheme_json(api_data, rows):
                     ptype = auth_isin_map[isin_code]["plan"]
                 if auth_isin_map[isin_code].get("option"):
                     otype = auth_isin_map[isin_code]["option"]
+=======
+            amfi_code = None
+            if isin_code and isin_code in sif_map:
+                amfi_code = sif_map[isin_code]
+>>>>>>> theirs
             elif amfi_val:
                 norm_a = normalize_amfi_code(str(amfi_val).strip())
                 if norm_a and re.match(r"^SIF-\d+$", norm_a, re.I):
                     amfi_code = norm_a
                 elif str(amfi_val).strip().isdigit() and len(str(amfi_val).strip()) <= 4:
                     amfi_code = f"SIF-{str(amfi_val).strip()}"
+<<<<<<< ours
                 if amfi_code and amfi_code in auth_sif_map:
                     if auth_sif_map[amfi_code].get("plan"):
                         ptype = auth_sif_map[amfi_code]["plan"]
                     if auth_sif_map[amfi_code].get("option"):
                         otype = auth_sif_map[amfi_code]["option"]
+=======
+
+            raw_name = str(opt_name_val).strip() if opt_name_val else ""
+            traits = get_canonical_traits(raw_name)
+            ptype = traits["plan"]
+            otype = traits["option"]
+            stype = traits["subtype"]
+            tperiod = traits["time_period"]
+>>>>>>> theirs
 
             output_node = {
                 "plan_type": ptype,
@@ -1082,6 +1152,7 @@ def build_scheme_json(api_data, rows):
                     plans[ptype]["idcw"][stype].append(output_node)
                 else:
                     plans[ptype]["idcw"]["unknown"].append(output_node)
+<<<<<<< ours
 
         for p in plans.get("regular", {}).get("growth", []):
             if p.get("amfi_code"):
@@ -1162,6 +1233,72 @@ def build_scheme_json(api_data, rows):
                 if p.get("amfi_code"):
                     primary_amfi_code = p.get("amfi_code")
                     break
+=======
+
+        for p in plans.get("regular", {}).get("growth", []):
+            if p.get("amfi_code"):
+                primary_amfi_code = p.get("amfi_code")
+                break
+    else:
+        # We group by semantic signature (plan_type, option, sub_option, time_period)
+        grouped = {}
+        for r in records:
+            sig = (r["plan_type"], r["option"], r["sub_option"], r["time_period"])
+            if sig not in grouped:
+                grouped[sig] = []
+            grouped[sig].append(r)
+            
+        for sig, recs in grouped.items():
+            ptype, otype, stype, tperiod = sig
+            
+            if ptype not in plans:
+                plans[ptype] = {
+                    "growth": [],
+                    "idcw": { "payout": [], "reinvestment": [], "transfer": [], "time_period": [], "unknown": [] },
+                    "unresolved": []
+                }
+            
+            # Merge all identifiers for this exact signature into a single output node
+            amfi_code = None
+            isin_code = None
+            rta_code = None
+            names = []
+            
+            for r in recs:
+                if r["identifier_type"] == "AMFI" and not amfi_code: amfi_code = r["identifier"]
+                if r["identifier_type"] == "ISIN" and not isin_code: isin_code = r["identifier"]
+                if r["identifier_type"] == "RTA" and not rta_code: rta_code = r["identifier"]
+                if r["raw_name"] and r["raw_name"] not in names: names.append(r["raw_name"])
+                
+            combined_name = " | ".join(names) if names else f"{ptype.title()} Plan {otype.title()}"
+            
+            output_node = {
+                "plan_type": ptype,
+                "option": otype,
+                "sub_option": stype,
+                "time_period": tperiod,
+                "name": combined_name,
+                "amfi_code": amfi_code,
+                "isin_code": isin_code,
+                "rta_code": rta_code
+            }
+            
+            if otype == "growth":
+                plans[ptype]["growth"].append(output_node)
+            else:
+                if stype and stype in plans[ptype]["idcw"]:
+                    plans[ptype]["idcw"][stype].append(output_node)
+                else:
+                    plans[ptype]["idcw"]["unknown"].append(output_node)
+                    
+        for r in records:
+            if r["identifier_type"] == "AMFI":
+                primary_amfi_code = r["identifier"]
+                break
+
+        if primary_amfi_code:
+            primary_amfi_code = primary_amfi_code.replace(',', ' ').replace(';', ' ').split()[0]
+>>>>>>> theirs
 
     if not sebi_code_val:
         import logging
