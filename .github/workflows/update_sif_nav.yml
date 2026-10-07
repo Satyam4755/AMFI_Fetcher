@@ -26,7 +26,7 @@ jobs:
           
       - name: Run SIF NAV Pipeline
         run: |
-          python scripts/fetch_sif_nav.py
+          python scripts/fetch_sif_nav.py --reconcile-yesterday
           PYTHONPATH=. python scripts/calculate_performance.py
           
       - name: Commit and Push Changes

@@ -48,10 +48,10 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF - 55 | ELSDG",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-55",
-                    "isin_code": null,
-                    "rta_code": "ELSDG"
+                    "isin_code": "INF579M30018",
+                    "rta_code": "ELSRG"
                 }
             ],
             "idcw": {
@@ -61,10 +61,10 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF - 57 | ELSDP",
-                        "amfi_code": "SIF-57",
-                        "isin_code": null,
-                        "rta_code": "ELSDP"
+                        "name": "Regular Plan Idcw - Payout",
+                        "amfi_code": "SIF-59",
+                        "isin_code": "INF579M30026",
+                        "rta_code": "ELSRP"
                     }
                 ],
                 "reinvestment": [
@@ -73,10 +73,10 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF - 57 | ELSDR",
-                        "amfi_code": "SIF-57",
-                        "isin_code": null,
-                        "rta_code": "ELSDR"
+                        "name": "Regular Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-59",
+                        "isin_code": "INF579M30034",
+                        "rta_code": "ELSRR"
                     }
                 ],
                 "transfer": [],
@@ -92,10 +92,10 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF - 59 | ELSRG",
-                    "amfi_code": "SIF-59",
-                    "isin_code": null,
-                    "rta_code": "ELSRG"
+                    "name": "Direct Plan Growth",
+                    "amfi_code": "SIF-57",
+                    "isin_code": "INF579M30042",
+                    "rta_code": "ELSDG"
                 }
             ],
             "idcw": {
@@ -105,10 +105,10 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF - 60 | ELSRP",
+                        "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-60",
-                        "isin_code": null,
-                        "rta_code": "ELSRP"
+                        "isin_code": "INF579M30059",
+                        "rta_code": "ELSDP"
                     }
                 ],
                 "reinvestment": [
@@ -117,10 +117,10 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF - 60 | ELSRR",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-60",
-                        "isin_code": null,
-                        "rta_code": "ELSRR"
+                        "isin_code": "INF579M30067",
+                        "rta_code": "ELSDR"
                     }
                 ],
                 "transfer": [],

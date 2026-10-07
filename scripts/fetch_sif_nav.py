@@ -127,13 +127,115 @@ def evaluate_nav_updates(
     return len(updates) > 0, updates
 
 
+def reconcile_previous_day_nav(
+    base_dir: str = "data/sif/scheme/nav/daily",
+    target_date_str: str | None = None,
+    schemes: list[dict] | None = None,
+) -> tuple[bool, list[dict]]:
+    """
+    Reconciles yesterday's daily CSV with the latest AMFI feed.
+    Only updates yesterday's CSV if newer NAV dates or corrected NAV values exist.
+    Operation is idempotent.
+    """
+    if target_date_str:
+        today_dt, _ = parse_nav_date(target_date_str)
+        if not today_dt:
+            today_str = target_date_str.replace("-", "").strip()
+            try:
+                today_dt = datetime.datetime.strptime(today_str, "%Y%m%d")
+            except ValueError:
+                today_dt = datetime.datetime.now()
+    else:
+        today_dt = datetime.datetime.now()
+
+    yesterday_dt = today_dt - datetime.timedelta(days=1)
+    yesterday_str = yesterday_dt.strftime("%Y%m%d")
+    yesterday_csv = os.path.join(base_dir, f"{yesterday_str}.csv")
+
+    if not os.path.exists(yesterday_csv):
+        logger.info(f"Previous day snapshot ({yesterday_csv}) not found. Skipping reconciliation.")
+        return False, []
+
+    if schemes is None:
+        text_data = fetch_text(AMFI_SIF_URL)
+        if not text_data:
+            logger.error("Failed to fetch AMFI data for reconciliation.")
+            return False, []
+        schemes = extract_schemes(text_data)
+        if not schemes:
+            logger.error("No schemes extracted from AMFI for reconciliation.")
+            return False, []
+
+    stored_map = load_stored_schemes_map(base_dir, target_file=yesterday_csv)
+    has_updates, updates = evaluate_nav_updates(schemes, stored_map, yesterday_csv)
+
+    if not has_updates:
+        logger.info(f"Previous day snapshot ({yesterday_csv}) is already up to date. No reconciliation needed.")
+        return False, []
+
+    logger.info(f"Reconciling {len(updates)} scheme NAV updates into previous day snapshot ({yesterday_csv}):")
+    for u in updates[:10]:
+        logger.info(
+            f"  {u['sif_code']} ({u['reason']}): {u['old_date']} ({u['old_nav']}) -> {u['new_date']} ({u['new_nav']})"
+        )
+    if len(updates) > 10:
+        logger.info(f"  ... and {len(updates) - 10} more scheme updates.")
+
+    # Read existing rows from yesterday's CSV to preserve order and metadata
+    existing_rows = []
+    seen_codes = set()
+    with open(yesterday_csv, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for r in reader:
+            existing_rows.append(r)
+            if r.get("sif_code"):
+                seen_codes.add(r["sif_code"].strip())
+
+    incoming_by_code = {s.get("sif_code", "").strip(): s for s in schemes if s.get("sif_code")}
+    updated_codes = {u["sif_code"] for u in updates}
+
+    reconciled_schemes = []
+    reconciled_for_history = []
+    for row in existing_rows:
+        code = row.get("sif_code", "").strip()
+        if code in updated_codes and code in incoming_by_code:
+            in_s = incoming_by_code[code]
+            row["nav_date"] = in_s.get("nav_date") or row.get("nav_date")
+            row["nav"] = in_s.get("nav") or row.get("nav")
+            reconciled_for_history.append({
+                "sif_code": code,
+                "nav_date": row["nav_date"],
+                "nav": row["nav"],
+            })
+        reconciled_schemes.append(row)
+
+    # Append any brand new schemes from incoming AMFI
+    for u in updates:
+        code = u["sif_code"]
+        if u["reason"] == "new_scheme" and code not in seen_codes and code in incoming_by_code:
+            in_s = incoming_by_code[code]
+            reconciled_schemes.append(in_s)
+            reconciled_for_history.append(in_s)
+            seen_codes.add(code)
+
+    save_to_csv(reconciled_schemes, yesterday_csv)
+
+    # Update historical NAVs
+    hist_dir = os.path.normpath(os.path.join(base_dir, "..", "historical"))
+    update_historical_nav(reconciled_for_history, base_dir=hist_dir, recalculate_perf=True)
+
+    return True, updates
+
+
 def sync_sif_nav(
     base_dir: str = "data/sif/scheme/nav/daily",
     force: bool = False,
-    target_date_str: str | None = None
+    target_date_str: str | None = None,
+    reconcile_yesterday: bool = False,
 ) -> bool:
     """
     Executes the SIF NAV pipeline with per-scheme freshness check.
+    Optionally reconciles yesterday's snapshot before generating/updating today's snapshot.
     """
     logger.info("Starting SIF NAV pipeline...")
     os.makedirs(base_dir, exist_ok=True)
@@ -149,6 +251,11 @@ def sync_sif_nav(
     if not schemes:
         logger.error("No schemes extracted from AMFI feed. Pipeline aborted.")
         return False
+
+    # Optional Step 2b: Reconcile yesterday's snapshot
+    if reconcile_yesterday:
+        logger.info("Running previous-day reconciliation...")
+        reconcile_previous_day_nav(base_dir=base_dir, target_date_str=target_date_str, schemes=schemes)
 
     # Determine target daily snapshot filename
     if target_date_str:
@@ -225,9 +332,18 @@ def main():
     parser = argparse.ArgumentParser(description="Fetch and sync latest AMFI SIF NAV data.")
     parser.add_argument("--force", action="store_true", help="Force update even if no newer dates detected.")
     parser.add_argument("--date", type=str, default=None, help="Specific snapshot date (YYYYMMDD or YYYY-MM-DD).")
+    parser.add_argument(
+        "--reconcile-yesterday",
+        action="store_true",
+        help="Reconcile yesterday's daily CSV with latest AMFI NAVs before today's run.",
+    )
     args = parser.parse_args()
 
-    sync_sif_nav(force=args.force, target_date_str=args.date)
+    sync_sif_nav(
+        force=args.force,
+        target_date_str=args.date,
+        reconcile_yesterday=args.reconcile_yesterday,
+    )
 
 
 if __name__ == "__main__":

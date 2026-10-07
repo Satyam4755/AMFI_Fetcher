@@ -222,7 +222,9 @@ def build_scheme_json(api_data, rows):
                 norm_k = clean_key(k)
                 if exclude_keys and any(ex.lower() in cleaned_k for ex in exclude_keys):
                     continue
-                if pk_clean == cleaned_k or pk_norm == norm_k or pk_clean in cleaned_k or pk_norm in norm_k:
+                if pk_clean == cleaned_k or pk_norm == norm_k:
+                    return val
+                if len(cleaned_k) <= 80 and (re.search(r'\b' + re.escape(pk_clean) + r'\b', cleaned_k) or (len(pk_clean) >= 6 and pk_clean in cleaned_k)):
                     return val
         return None
 
@@ -939,7 +941,7 @@ def build_scheme_json(api_data, rows):
         return count
 
     # Use ISIN as source of truth if it has equal or more specific variants than Option
-    if len(isin_sigs) > 0 and count_specific(isin_sigs) >= count_specific(opt_sigs):
+    if len(isin_sigs) > 0 and (len(isin_sigs) >= len(opt_sigs) or count_specific(isin_sigs) >= count_specific(opt_sigs)):
         signatures = isin_sigs
     elif len(opt_sigs) > 0:
         signatures = opt_sigs
@@ -1008,6 +1010,18 @@ def build_scheme_json(api_data, rows):
             generic_recs = [r for r in group_recs if r["sub_option"] in [None, "unknown"]]
             explicit_recs = [r for r in group_recs if r["sub_option"] not in [None, "unknown"]]
             
+            # If an explicit record has both payout and reinvestment in its name, clone it for the other slot
+            for r in list(explicit_recs):
+                raw_n = r.get("raw_name", "").lower()
+                if "payout" in raw_n and ("reinvest" in raw_n or "re-invest" in raw_n):
+                    other_sub = "payout" if r["sub_option"] == "reinvestment" else "reinvestment"
+                    if other_sub in available_slots:
+                        cloned = dict(r)
+                        cloned["sub_option"] = other_sub
+                        explicit_recs.append(cloned)
+                        available_slots.discard(other_sub)
+                        taken_slots.add(other_sub)
+
             resolved_recs.extend(explicit_recs)
             
             if len(generic_recs) == 1 and not explicit_recs and group_sigs:

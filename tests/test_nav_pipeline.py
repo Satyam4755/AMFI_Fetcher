@@ -16,6 +16,7 @@ from services.historical_nav_service import (
 from scripts.fetch_sif_nav import (
     load_stored_schemes_map,
     evaluate_nav_updates,
+    reconcile_previous_day_nav,
     sync_sif_nav,
 )
 
@@ -177,6 +178,57 @@ class TestNavPipelineAndFreshness(unittest.TestCase):
         self.assertEqual(sif87_row["nav_date"], "05-Oct-2026")
         self.assertEqual(sif87_row["nav"], "10.3825")
         self.assertEqual(sif87_row["AUM"], "17725.39")
+
+    def test_reconcile_previous_day_nav_updates_yesterdays_csv(self):
+        # Setup yesterday's CSV (20261006.csv) with older 05-Oct dates
+        yesterday_csv = os.path.join(self.daily_dir, "20261006.csv")
+        with open(yesterday_csv, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=["sif_code", "nav_date", "nav", "AUM"])
+            writer.writeheader()
+            writer.writerows([
+                {"sif_code": "SIF-86", "nav_date": "05-Oct-2026", "nav": "10.4551", "AUM": "10.50"},
+                {"sif_code": "SIF-87", "nav_date": "05-Oct-2026", "nav": "10.3825", "AUM": "17725.39"},
+                {"sif_code": "SIF-88", "nav_date": "05-Oct-2026", "nav": "10.4551", "AUM": "8714.99"},
+                {"sif_code": "SIF-89", "nav_date": "05-Oct-2026", "nav": "10.3825", "AUM": "18.34"},
+            ])
+
+        # Incoming AMFI data has 06-Oct NAVs
+        incoming_schemes = [
+            {"sif_code": "SIF-86", "nav_date": "06-Oct-2026", "nav": "10.4704"},
+            {"sif_code": "SIF-87", "nav_date": "06-Oct-2026", "nav": "10.3973"},
+            {"sif_code": "SIF-88", "nav_date": "06-Oct-2026", "nav": "10.4704"},
+            {"sif_code": "SIF-89", "nav_date": "06-Oct-2026", "nav": "10.3973"},
+        ]
+
+        # Reconcile for target date 20261007 (yesterday is 20261006)
+        has_updates, updates = reconcile_previous_day_nav(
+            base_dir=self.daily_dir,
+            target_date_str="20261007",
+            schemes=incoming_schemes,
+        )
+        self.assertTrue(has_updates)
+        self.assertEqual(len(updates), 4)
+
+        # Verify updated contents of 20261006.csv
+        with open(yesterday_csv, "r", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        self.assertEqual(len(rows), 4)
+
+        for row in rows:
+            self.assertEqual(row["nav_date"], "06-Oct-2026")
+            if row["sif_code"] in ("SIF-86", "SIF-88"):
+                self.assertEqual(row["nav"], "10.4704")
+            elif row["sif_code"] in ("SIF-87", "SIF-89"):
+                self.assertEqual(row["nav"], "10.3973")
+
+        # Second run should be idempotent with 0 updates
+        has_updates2, updates2 = reconcile_previous_day_nav(
+            base_dir=self.daily_dir,
+            target_date_str="20261007",
+            schemes=incoming_schemes,
+        )
+        self.assertFalse(has_updates2)
+        self.assertEqual(len(updates2), 0)
 
 
 if __name__ == "__main__":
