@@ -2,7 +2,7 @@ name: Auto Update SIF NAV Data
 
 on:
   schedule:
-    - cron: '0 18 * * 1-5'
+    - cron: '30 22 * * *' # Run daily at 04:00 AM IST (22:30 UTC)
   workflow_dispatch:
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
           
       - name: Run SIF NAV Pipeline
         run: |
-          python scripts/fetch_sif_nav.py --reconcile-yesterday
+          python scripts/fetch_sif_nav.py
           PYTHONPATH=. python scripts/calculate_performance.py
           
       - name: Commit and Push Changes
