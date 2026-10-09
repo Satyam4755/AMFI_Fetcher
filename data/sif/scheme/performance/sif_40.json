@@ -1,21 +1,21 @@
 {
     "sif_code": "SIF-40",
     "returns": {
-        "1_day": -0.02,
+        "1_day": -0.03,
         "1_week": 0.11,
-        "1_month": 0.12,
-        "3_month": 0.74,
-        "6_month": 3.11,
+        "1_month": 0.08,
+        "3_month": 0.88,
+        "6_month": 2.92,
         "1_year": null,
         "2_year": null,
         "3_year": null,
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 3.62
+        "since_launch": 3.59
     },
     "monthly_returns": {
-        "2026-10": 0.13,
+        "2026-10": 0.11,
         "2026-09": 0.12,
         "2026-08": -0.13,
         "2026-07": 0.34,
@@ -25,5 +25,5 @@
         "2026-03": 0.04,
         "2026-02": 0.42
     },
-    "last_updated": "2026-10-07T22:40:15Z"
+    "last_updated": "2026-10-09T02:25:54Z"
 }
