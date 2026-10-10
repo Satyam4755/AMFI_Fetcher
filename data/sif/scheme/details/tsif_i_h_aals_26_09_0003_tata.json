@@ -53,7 +53,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-169 - Titanium Active Asset Allocator Long-Short Fund Regular Growth | INF277K30138 - Titanium Active Asset Allocator Long-Short Fund Regular Growth | TAG - Titanium Active Asset Allocator Long-Short Fund Regular Plan Growth",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-169",
                     "isin_code": "INF277K30138",
                     "rta_code": "TAG"
@@ -66,7 +66,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF-165 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout | INF277K30146 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Payout | TADP - Titanium Active Asset Allocator Long-Short Fund Regular Plan IDCW Payout",
+                        "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-165",
                         "isin_code": "INF277K30146",
                         "rta_code": "TADP"
@@ -78,7 +78,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF-168 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment | INF277K30153 - Titanium Active Asset Allocator Long-Short Fund Regular IDCW Reinvestment | TAD - Titanium Active Asset Allocator Long-Short Fund Regular Plan IDCW",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-168",
                         "isin_code": "INF277K30153",
                         "rta_code": "TAD"
@@ -97,7 +97,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-167 - Titanium Active Asset Allocator Long-Short Fund Direct Growth | INF277K30161 - Titanium Active Asset Allocator Long-Short Fund Direct Growth | TAGZ - Titanium Active Asset Allocator Long-Short Fund Direct Plan Growth",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-167",
                     "isin_code": "INF277K30161",
                     "rta_code": "TAGZ"
@@ -110,7 +110,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF-170 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout | INF277K30179 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Payout | TADZP - Titanium Active Asset Allocator Long-Short Fund Direct Plan IDCW Payout",
+                        "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-170",
                         "isin_code": "INF277K30179",
                         "rta_code": "TADZP"
@@ -122,7 +122,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF-166 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment | INF277K30187 - Titanium Active Asset Allocator Long-Short Fund Direct IDCW Reinvestment | TADZ - Titanium Active Asset Allocator Long-Short Fund Direct Plan IDCW",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-166",
                         "isin_code": "INF277K30187",
                         "rta_code": "TADZ"

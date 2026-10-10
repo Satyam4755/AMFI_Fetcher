@@ -48,7 +48,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-11 - Altiva Hybrid Long-Short Fund Regular Plan Growth | INF754K30052 - Altiva Hybrid Long-Short Fund Regular Plan Growth | HLRG - Altiva Hybrid Long-Short Fund Regular Plan Growth",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-11",
                     "isin_code": "INF754K30052",
                     "rta_code": "HLRG"
@@ -61,7 +61,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF-12 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout | INF754K30060 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout | HLRD - Altiva Hybrid Long-Short Fund Regular Plan IDCW Payout",
+                        "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-12",
                         "isin_code": "INF754K30060",
                         "rta_code": "HLRD"
@@ -73,7 +73,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF-12 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment | INF754K30078 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment | HLRD - Altiva Hybrid Long-Short Fund Regular Plan IDCW Reinvestment",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-12",
                         "isin_code": "INF754K30078",
                         "rta_code": "HLRD"
@@ -85,7 +85,7 @@
                         "option": "idcw",
                         "sub_option": "transfer",
                         "time_period": null,
-                        "name": "INF754K30086 - Altiva Hybrid Long-Short Fund Regular Plan IDCW Transfer | HLRD - Altiva Hybrid Long-Short Fund Regular Plan IDCW Transfer",
+                        "name": "Regular Plan Idcw - Transfer",
                         "amfi_code": null,
                         "isin_code": "INF754K30086",
                         "rta_code": "HLRD"
@@ -103,7 +103,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-9 - Altiva Hybrid Long-Short Fund Direct Plan Growth | INF754K30011 - Altiva Hybrid Long-Short Fund Direct Plan Growth | HLD1 - Altiva Hybrid Long-Short Fund Direct Plan Growth",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-9",
                     "isin_code": "INF754K30011",
                     "rta_code": "HLD1"
@@ -116,7 +116,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF-10 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout | INF754K30029 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout | HLD2 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Payout",
+                        "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-10",
                         "isin_code": "INF754K30029",
                         "rta_code": "HLD2"
@@ -128,7 +128,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF-10 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment | INF754K30037 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment | HLD2 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Reinvestment",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-10",
                         "isin_code": "INF754K30037",
                         "rta_code": "HLD2"
@@ -140,7 +140,7 @@
                         "option": "idcw",
                         "sub_option": "transfer",
                         "time_period": null,
-                        "name": "INF754K30045 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Transfer | HLD2 - Altiva Hybrid Long-Short Fund Direct Plan - IDCW Transfer",
+                        "name": "Direct Plan Idcw - Transfer",
                         "amfi_code": null,
                         "isin_code": "INF754K30045",
                         "rta_code": "HLD2"

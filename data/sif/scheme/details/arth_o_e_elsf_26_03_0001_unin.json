@@ -43,7 +43,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Regular Plan - Growth Option-SIF-114 | Regular Plan - Growth Option-INF582M30012",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-114",
                     "isin_code": "INF582M30012",
                     "rta_code": null
@@ -56,7 +56,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "Regular Plan- - Payout of Income Distribution cum Capital Withdrawal Option-SIF-115 | Regular Plan - Payout of Income Distribution cum Capital Withdrawal Option-INF582M30020",
+                        "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-115",
                         "isin_code": "INF582M30020",
                         "rta_code": null
@@ -68,7 +68,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-SIF-115 | Regular Plan - Reinvestment of Income Distribution cum Capital Withdrawal Option-INF582M30038",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-115",
                         "isin_code": "INF582M30038",
                         "rta_code": null
@@ -87,7 +87,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Direct Plan - Growth Option-SIF-112 | Direct Plan - Growth Option-INF582M30046",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-112",
                     "isin_code": "INF582M30046",
                     "rta_code": null
@@ -100,7 +100,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option-SIF-113 | Direct Plan - Payout of Income Distribution cum Capital Withdrawal (IDCW) Option-INF582M30053",
+                        "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-113",
                         "isin_code": "INF582M30053",
                         "rta_code": null
@@ -112,7 +112,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "Direct Plan - Reinvestment of IDCW Option-SIF-113 | Direct Plan - Reinvestment of IDCW Option-INF582M30061",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-113",
                         "isin_code": "INF582M30061",
                         "rta_code": null

@@ -43,7 +43,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Arudha Equity Long Short Fund-Regular Plan-Growth SIF-62 | Arudha Equity Long Short Fund Reg-Growth- INF194K30358",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-62",
                     "isin_code": "INF194K30358",
                     "rta_code": null
@@ -57,7 +57,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "daily",
-                        "name": "Arudha Equity Long Short Fund Reg-Daily IDCW (Re-inv)- INF194K30440",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30440",
                         "rta_code": null
@@ -67,7 +67,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "weekly",
-                        "name": "Arudha Equity Long Short Fund Reg-Weekly IDCW (Re-inv)- INF194K30457",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30457",
                         "rta_code": null
@@ -77,7 +77,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "fortnightly",
-                        "name": "Arudha Equity Long Short Fund Reg-fortnightly IDCW (Re-inv)- INF194K30465",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30465",
                         "rta_code": null
@@ -87,8 +87,8 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "monthly",
-                        "name": "Arudha Equity Long Short Fund Reg-Monthly IDCW (Re-inv)- INF194K30473",
-                        "amfi_code": null,
+                        "name": "Regular Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-69",
                         "isin_code": "INF194K30473",
                         "rta_code": null
                     },
@@ -97,8 +97,8 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "quarterly",
-                        "name": "Arudha Equity Long Short Fund Reg-Quarterly IDCW (Re-inv)- INF194K30481",
-                        "amfi_code": null,
+                        "name": "Regular Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-71",
                         "isin_code": "INF194K30481",
                         "rta_code": null
                     },
@@ -107,7 +107,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "half_yearly",
-                        "name": "Arudha Equity Long Short Fund Reg-Half yearly IDCW (Re-inv)- INF194K30499",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30499",
                         "rta_code": null
@@ -117,8 +117,8 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "annual",
-                        "name": "Arudha Equity Long Short Fund Reg-Annual IDCW (Re-inv)- INF194K30507",
-                        "amfi_code": null,
+                        "name": "Regular Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-75",
                         "isin_code": "INF194K30507",
                         "rta_code": null
                     },
@@ -127,7 +127,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "periodic",
-                        "name": "Arudha Equity Long Short Fund Reg-Periodic IDCW (Re-inv)- INF194K30515",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30515",
                         "rta_code": null
@@ -140,7 +140,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "daily",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan -Daily IDCW SIF-63 | Arudha Equity Long Short Fund Reg-Daily IDCW- INF194K30366",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-63",
                         "isin_code": "INF194K30366",
                         "rta_code": null
@@ -150,7 +150,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "weekly",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan -Weekly IDCW SIF-66 | Arudha Equity Long Short Fund Reg-Weekly IDCW- INF194K30374",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-66",
                         "isin_code": "INF194K30374",
                         "rta_code": null
@@ -160,7 +160,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "fortnightly",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan-Fortnightly IDCW SIF-67 | Arudha Equity Long Short Fund Reg-fortnightly IDCW- INF194K30382",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-67",
                         "isin_code": "INF194K30382",
                         "rta_code": null
@@ -170,7 +170,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "monthly",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan-Monthly IDCW SIF-69 | Arudha Equity Long Short Fund Reg-Monthly IDCW- INF194K30390",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-69",
                         "isin_code": "INF194K30390",
                         "rta_code": null
@@ -180,7 +180,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "quarterly",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan-Quarterly IDCW SIF-71 | Arudha Equity Long Short Fund Reg-Quarterly IDCW- INF194K30408",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-71",
                         "isin_code": "INF194K30408",
                         "rta_code": null
@@ -190,7 +190,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "half_yearly",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan-Half Yearly IDCW SIF-73 | Arudha Equity Long Short Fund Reg-Half yearly IDCW- INF194K30416",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-73",
                         "isin_code": "INF194K30416",
                         "rta_code": null
@@ -200,7 +200,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "annual",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan-Annual IDCW SIF-75 | Arudha Equity Long Short Fund Reg-Annual IDCW- INF194K30424",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-75",
                         "isin_code": "INF194K30424",
                         "rta_code": null
@@ -210,7 +210,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "periodic",
-                        "name": "Arudha Equity Long Short Fund-Regular Plan-Periodic IDCW SIF-77 | Arudha Equity Long Short Fund Reg-Periodic IDCW- INF194K30432",
+                        "name": "Regular Plan Idcw - Time_Period",
                         "amfi_code": "SIF-77",
                         "isin_code": "INF194K30432",
                         "rta_code": null
@@ -227,7 +227,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Arudha Equity Long Short Fund-Direct Plan-Growth SIF-61 | Arudha Equity Long Short Fund Dir-Growth- INF194K30523",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-61",
                     "isin_code": "INF194K30523",
                     "rta_code": null
@@ -241,7 +241,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "daily",
-                        "name": "Arudha Equity Long Short Fund Dir-Daily IDCW (Re-inv)- INF194K30614",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30614",
                         "rta_code": null
@@ -251,7 +251,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "weekly",
-                        "name": "Arudha Equity Long Short Fund Dir-Weekly IDCW (Re-inv)- INF194K30622",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30622",
                         "rta_code": null
@@ -261,7 +261,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "fortnightly",
-                        "name": "Arudha Equity Long Short Fund Dir-fortnightly IDCW (Re-inv)- INF194K30630",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30630",
                         "rta_code": null
@@ -271,7 +271,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "monthly",
-                        "name": "Arudha Equity Long Short Fund Dir-Monthly IDCW (Re-inv)- INF194K30648",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30648",
                         "rta_code": null
@@ -281,7 +281,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "quarterly",
-                        "name": "Arudha Equity Long Short Fund Dir-Quarterly IDCW (Re-inv)- INF194K30655",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30655",
                         "rta_code": null
@@ -291,7 +291,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "half_yearly",
-                        "name": "Arudha Equity Long Short Fund Dir-Half yearly IDCW (Re-inv)- INF194K30663",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30663",
                         "rta_code": null
@@ -301,7 +301,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "annual",
-                        "name": "Arudha Equity Long Short Fund Dir-Annual IDCW (Re-inv)- INF194K30671",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30671",
                         "rta_code": null
@@ -311,7 +311,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "periodic",
-                        "name": "Arudha Equity Long Short Fund Dir-Periodic IDCW (Re-inv)- INF194K30689",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": null,
                         "isin_code": "INF194K30689",
                         "rta_code": null
@@ -324,7 +324,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "daily",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Daily IDCW SIF-64 | Arudha Equity Long Short Fund Dir-Daily IDCW- INF194K30531",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-64",
                         "isin_code": "INF194K30531",
                         "rta_code": null
@@ -334,7 +334,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "weekly",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Weekly IDCW SIF-65 | Arudha Equity Long Short Fund Dir-Weekly IDCW- INF194K30549",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-65",
                         "isin_code": "INF194K30549",
                         "rta_code": null
@@ -344,7 +344,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "fortnightly",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Fortnightly IDCW SIF-68 | Arudha Equity Long Short Fund Dir-fortnightly IDCW- INF194K30556",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-68",
                         "isin_code": "INF194K30556",
                         "rta_code": null
@@ -354,7 +354,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "monthly",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Monthly IDCW SIF-70 | Arudha Equity Long Short Fund Dir-Monthly IDCW- INF194K30564",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-70",
                         "isin_code": "INF194K30564",
                         "rta_code": null
@@ -364,7 +364,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "quarterly",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Quarterly IDCW SIF-72 | Arudha Equity Long Short Fund Dir-Quarterly IDCW- INF194K30572",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-72",
                         "isin_code": "INF194K30572",
                         "rta_code": null
@@ -374,7 +374,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "half_yearly",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Half Yearly IDCW SIF-74 | Arudha Equity Long Short Fund Dir-Half yearly IDCW- INF194K30580",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-74",
                         "isin_code": "INF194K30580",
                         "rta_code": null
@@ -384,7 +384,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "annual",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Annual IDCW SIF-76 | Arudha Equity Long Short Fund Dir-Annual IDCW- INF194K30598",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-76",
                         "isin_code": "INF194K30598",
                         "rta_code": null
@@ -394,7 +394,7 @@
                         "option": "idcw",
                         "sub_option": "time_period",
                         "time_period": "periodic",
-                        "name": "Arudha Equity Long Short Fund-Direct Plan-Periodic IDCW SIF-78 | Arudha Equity Long Short Fund Dir-Periodic IDCW- INF194K30606",
+                        "name": "Direct Plan Idcw - Time_Period",
                         "amfi_code": "SIF-78",
                         "isin_code": "INF194K30606",
                         "rta_code": null

@@ -43,9 +43,9 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-32 | SIF-31 | SIF-28 | SIF-29 | SIF-30 | SIF-27 | INF277K30021 | INF277K30054 | INF277K30013 | INF277K30047 | INF277K30039 | INF277K30062 | THD | THDZ | THG | THGZ | THDP | THDZP",
-                    "amfi_code": "SIF-32",
-                    "isin_code": "INF277K30021",
+                    "name": "Regular Plan Growth",
+                    "amfi_code": "SIF-29",
+                    "isin_code": "INF277K30013",
                     "rta_code": "THD"
                 }
             ],
@@ -54,18 +54,62 @@
                 "reinvestment": [],
                 "transfer": [],
                 "time_period": [],
-                "unknown": []
+                "unknown": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": null,
+                        "time_period": null,
+                        "name": "Regular Plan Idcw",
+                        "amfi_code": "SIF-27",
+                        "isin_code": "INF277K30021",
+                        "rta_code": null
+                    }
+                ]
             },
             "unresolved": []
         },
         "direct": {
-            "growth": [],
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct Plan Growth",
+                    "amfi_code": "SIF-32",
+                    "isin_code": "INF277K30047",
+                    "rta_code": null
+                }
+            ],
             "idcw": {
-                "payout": [],
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct Plan Idcw - Payout",
+                        "amfi_code": null,
+                        "isin_code": null,
+                        "rta_code": "THDP"
+                    }
+                ],
                 "reinvestment": [],
                 "transfer": [],
                 "time_period": [],
-                "unknown": []
+                "unknown": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": null,
+                        "time_period": null,
+                        "name": "Direct Plan Idcw",
+                        "amfi_code": "SIF-28",
+                        "isin_code": "INF277K30054",
+                        "rta_code": null
+                    }
+                ]
             },
             "unresolved": []
         }

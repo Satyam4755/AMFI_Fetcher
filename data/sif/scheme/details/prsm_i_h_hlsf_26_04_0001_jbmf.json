@@ -48,7 +48,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-138 : Prism Hybrid Long – Short Fund – Regular Plan – Growth | INF22M030019 - Prism Hybrid Long – Short Fund – Regular Plan – Growth | 701RG- Prism Hybrid Long – Short Fund – Regular Plan – Growth",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-138",
                     "isin_code": "INF22M030019",
                     "rta_code": "701RG"
@@ -70,7 +70,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-139 : Prism Hybrid Long – Short Fund – Direct Plan – Growth | INF22M030027- Prism Hybrid Long – Short Fund – Direct Plan – Growth | 701DG- Prism Hybrid Long – Short Fund – Direct Plan – Growth",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-139",
                     "isin_code": "INF22M030027",
                     "rta_code": "701DG"

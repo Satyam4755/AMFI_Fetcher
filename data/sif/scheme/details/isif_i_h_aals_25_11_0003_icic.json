@@ -37,40 +37,39 @@
     "listing_details": "Listed on BSE and NSE",
     "plans": {
         "regular": {
-            "growth": [
-                {
-                    "plan_type": "regular",
-                    "option": "growth",
-                    "sub_option": null,
-                    "time_period": null,
-                    "name": "iSIF Active Asset Allocator Long-Short Fund - Growth- SIF-124 | iSIF Active Asset Allocator Long-Short Fund-GROWTH- INF109K30059 | iSIF Active Asset Allocator Long-Short Fund - Growth- 1003",
-                    "amfi_code": "SIF-124",
-                    "isin_code": "INF109K30059",
-                    "rta_code": "1003"
-                }
-            ],
+            "growth": [],
             "idcw": {
                 "payout": [],
                 "reinvestment": [],
                 "transfer": [],
                 "time_period": [],
-                "unknown": []
+                "unknown": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": null,
+                        "time_period": null,
+                        "name": "Regular Plan Idcw",
+                        "amfi_code": "SIF-124",
+                        "isin_code": "INF109K30059",
+                        "rta_code": "1003"
+                    },
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": null,
+                        "time_period": null,
+                        "name": "Regular Plan Idcw",
+                        "amfi_code": "SIF-125",
+                        "isin_code": "INF109K30067",
+                        "rta_code": "6003"
+                    }
+                ]
             },
             "unresolved": []
         },
         "direct": {
-            "growth": [
-                {
-                    "plan_type": "direct",
-                    "option": "growth",
-                    "sub_option": null,
-                    "time_period": null,
-                    "name": "iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth- SIF-125 | iSIF Active Asset Allocator Long-Short Fund-DIRECT-GROWTH- INF109K30067 | iSIF Active Asset Allocator Long-Short Fund - Direct Plan - Growth- 6003",
-                    "amfi_code": "SIF-125",
-                    "isin_code": "INF109K30067",
-                    "rta_code": "6003"
-                }
-            ],
+            "growth": [],
             "idcw": {
                 "payout": [],
                 "reinvestment": [],

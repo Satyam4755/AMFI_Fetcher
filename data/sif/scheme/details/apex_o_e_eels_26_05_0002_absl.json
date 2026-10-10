@@ -53,8 +53,8 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Apex Equity Ex-Top 100 Long-short Fund-Regular Growth- INF209K30081",
-                    "amfi_code": null,
+                    "name": "Regular Plan Growth",
+                    "amfi_code": "SIF-156",
                     "isin_code": "INF209K30081",
                     "rta_code": null
                 }
@@ -75,8 +75,8 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "2)Apex Equity Ex-Top 100 Long-short Fund-Direct Growth- INF209K30073",
-                    "amfi_code": null,
+                    "name": "Direct Plan Growth",
+                    "amfi_code": "SIF-155",
                     "isin_code": "INF209K30073",
                     "rta_code": null
                 }

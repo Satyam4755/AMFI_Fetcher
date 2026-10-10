@@ -68,7 +68,7 @@
                         "time_period": null,
                         "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-89",
-                        "isin_code": "INF579M30091",
+                        "isin_code": "INF579M30083",
                         "rta_code": "ALSRP"
                     }
                 ],
@@ -80,7 +80,7 @@
                         "time_period": null,
                         "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-89",
-                        "isin_code": "INF579M30083",
+                        "isin_code": "INF579M30091",
                         "rta_code": "ALSRR"
                     }
                 ],
@@ -112,7 +112,7 @@
                         "time_period": null,
                         "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-86",
-                        "isin_code": "INF579M30125",
+                        "isin_code": "INF579M30117",
                         "rta_code": "ALSDP"
                     }
                 ],
@@ -124,7 +124,7 @@
                         "time_period": null,
                         "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-86",
-                        "isin_code": "INF579M30117",
+                        "isin_code": "INF579M30125",
                         "rta_code": "ALSDR"
                     }
                 ],
@@ -202,13 +202,22 @@
         "side_pocketing": "Provision enabled, no segregated portfolio"
     },
     "amc_details": {
-        "sif_name": null,
-        "amc_website": null,
+        "sif_name": "DynaSIF SIF",
+        "amc_website": "https://www.360.one/asset/mutual-funds/home/",
         "scheme_bonus": null
     },
     "exit_load": "0.5% if redeemed within 3 months from date of allotment of units .\n No exit load is payable for redemption after 3 months from the date of allotment of \nunits",
     "registrar": "Computer Age Management Services Limited (CAMS)",
     "custodian": "Deutsche Bank AG",
     "auditor": "PricewaterhouseCoo pers Pvt Ltd",
-    "primary_amfi_code": "SIF-87"
+    "sif_name": "DynaSIF SIF",
+    "scheme_id": "S-14",
+    "sif_id": "62",
+    "documents": {
+        "scheme_id": "S-14",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-14.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-14.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-14.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-14.xml"
+    }
 }

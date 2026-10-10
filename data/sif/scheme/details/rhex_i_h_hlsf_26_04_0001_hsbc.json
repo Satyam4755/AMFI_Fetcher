@@ -58,7 +58,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "RedHex Hybrid Long-Short Fund - Regular Growth - SIF-128 | RedHex Hybrid Long-Short Fund - Regular Growth-INF336L30015",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-128",
                     "isin_code": "INF336L30015",
                     "rta_code": null
@@ -71,7 +71,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "RedHex Hybrid Long-Short Fund - Regular IDCW Payout - SIF-132 | RedHex Hybrid Long-Short Fund - Regular IDCW Payout-INF336L30031",
+                        "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-132",
                         "isin_code": "INF336L30031",
                         "rta_code": null
@@ -81,7 +81,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": "annual",
-                        "name": "RedHex Hybrid Long-Short Fund - Regular Annual IDCW Payout - SIF-133 | RedHex Hybrid Long-Short Fund - Regular Annual IDCW Payout-INF336L30106",
+                        "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-133",
                         "isin_code": "INF336L30106",
                         "rta_code": null
@@ -93,7 +93,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "RedHex Hybrid Long-Short Fund - Regular IDCW Reinvestment - SIF-132 | RedHex Hybrid Long-Short Fund - Regular IDCW Reinvestment-INF336L30023",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-132",
                         "isin_code": "INF336L30023",
                         "rta_code": null
@@ -103,7 +103,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "annual",
-                        "name": "RedHex Hybrid Long-Short Fund - Regular Annual IDCW Reinvestment - SIF-133 | RedHex Hybrid Long-Short Fund - Regular Annual IDCW Reinvestment-INF336L30098",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-133",
                         "isin_code": "INF336L30098",
                         "rta_code": null
@@ -122,7 +122,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "RedHex Hybrid Long-Short Fund - Direct Growth  - SIF-129 | RedHex Hybrid Long-Short Fund - Direct Growth -INF336L30049",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-129",
                     "isin_code": "INF336L30049",
                     "rta_code": null
@@ -135,7 +135,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "RedHex Hybrid Long-Short Fund - Direct IDCW Payout - SIF-130 | RedHex Hybrid Long-Short Fund - Direct IDCW Payout-INF336L30064",
+                        "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-130",
                         "isin_code": "INF336L30064",
                         "rta_code": null
@@ -145,7 +145,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": "annual",
-                        "name": "RedHex Hybrid Long-Short Fund - Direct Annual IDCW Payout - SIF-131 | RedHex Hybrid Long-Short Fund - Direct Annual IDCW Payout-INF336L30080",
+                        "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-131",
                         "isin_code": "INF336L30080",
                         "rta_code": null
@@ -157,7 +157,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "RedHex Hybrid Long-Short Fund - Direct IDCW Reinvestment - SIF-130 | RedHex Hybrid Long-Short Fund - Direct IDCW Reinvestment-INF336L30056",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-130",
                         "isin_code": "INF336L30056",
                         "rta_code": null
@@ -167,7 +167,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": "annual",
-                        "name": "RedHex Hybrid Long-Short Fund - Direct Annual IDCW Reinvestment - SIF-131 | RedHex Hybrid Long-Short Fund - Direct Annual IDCW Reinvestment-INF336L30072",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-131",
                         "isin_code": "INF336L30072",
                         "rta_code": null

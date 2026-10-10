@@ -43,7 +43,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Infinity Hybrid Long-Short Fund - Regular Plan - Growth - SIF-146 | Infinity Hybrid Long-Short Fund - Regular Plan - Growth - INF174K30046 | ILSF",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-146",
                     "isin_code": "INF174K30046",
                     "rta_code": "ILSF"
@@ -56,8 +56,8 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout - INF174K30053",
-                        "amfi_code": null,
+                        "name": "Regular Plan Idcw - Payout",
+                        "amfi_code": "SIF-147",
                         "isin_code": "INF174K30053",
                         "rta_code": null
                     }
@@ -68,7 +68,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Payout & Reinvestment - SIF-147 | Infinity Hybrid Long-Short Fund - Regular Plan - IDCW - Reinvestment - INF174K30061",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-147",
                         "isin_code": "INF174K30061",
                         "rta_code": null
@@ -87,7 +87,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Infinity Hybrid Long-Short Fund - Direct Plan - Growth - SIF-145 | Infinity Hybrid Long-Short Fund - Direct Plan - Growth - INF174K30012",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-145",
                     "isin_code": "INF174K30012",
                     "rta_code": null
@@ -100,8 +100,8 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout - INF174K30020",
-                        "amfi_code": null,
+                        "name": "Direct Plan Idcw - Payout",
+                        "amfi_code": "SIF-148",
                         "isin_code": "INF174K30020",
                         "rta_code": null
                     }
@@ -112,7 +112,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Payout & Reinvestment - SIF-148 | Infinity Hybrid Long-Short Fund - Direct Plan - IDCW - Reinvestment - INF174K30038",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-148",
                         "isin_code": "INF174K30038",
                         "rta_code": null
@@ -142,7 +142,7 @@
         },
         {
             "name": "Mr. Abhishek Bisen",
-            "type": "",
+            "type": "Mr. Abhishek Bisen will be the Fund Manager for debt and money market investment of the Investment Strategy.",
             "from": "2026-07-06",
             "to": null,
             "role_or_portion": null

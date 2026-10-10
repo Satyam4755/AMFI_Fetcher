@@ -43,7 +43,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Growth Option - Regular Plan - SIF-117 | Growth Option - Regular Plan - INF966L30308 | 905",
+                    "name": "Regular Plan Growth",
                     "amfi_code": "SIF-117",
                     "isin_code": "INF966L30308",
                     "rta_code": "905"
@@ -56,7 +56,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "IDCW Option - Regular Plan - SIF-119 | IDCW Payout Option - Regular Plan - INF966L30324",
+                        "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-119",
                         "isin_code": "INF966L30324",
                         "rta_code": null
@@ -68,7 +68,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "IDCW Option - Regular Plan - SIF-119 | IDCW Reinvestment - Regular Plan - INF966L30316",
+                        "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-119",
                         "isin_code": "INF966L30316",
                         "rta_code": null
@@ -87,7 +87,7 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "Growth Option - Direct Plan - SIF-116 | Growth Option - Direct Plan -INF966L30274",
+                    "name": "Direct Plan Growth",
                     "amfi_code": "SIF-116",
                     "isin_code": "INF966L30274",
                     "rta_code": null
@@ -100,7 +100,7 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "IDCW Option - Direct Plan - SIF-118 | IDCW Payout Option - Direct Plan - INF966L30290",
+                        "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-118",
                         "isin_code": "INF966L30290",
                         "rta_code": null
@@ -112,7 +112,7 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "IDCW Option - Direct Plan - SIF-118 | IDCW Reinvestment - Direct Plan - INF966L30282",
+                        "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-118",
                         "isin_code": "INF966L30282",
                         "rta_code": null

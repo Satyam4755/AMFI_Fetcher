@@ -53,8 +53,8 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-107 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-GROWTH-INF2F0030015",
-                    "amfi_code": "SIF-107",
+                    "name": "Regular Plan Growth",
+                    "amfi_code": "SIF-105",
                     "isin_code": "INF2F0030015",
                     "rta_code": null
                 }
@@ -66,8 +66,8 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF-104 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-IDCW-PAYOUT-INF2F0030023",
-                        "amfi_code": "SIF-104",
+                        "name": "Regular Plan Idcw - Payout",
+                        "amfi_code": "SIF-106",
                         "isin_code": "INF2F0030023",
                         "rta_code": null
                     }
@@ -78,8 +78,8 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF-104 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-REGULAR-IDCW-REINVESTMENT-INF2F0030031",
-                        "amfi_code": "SIF-104",
+                        "name": "Regular Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-106",
                         "isin_code": "INF2F0030031",
                         "rta_code": null
                     }
@@ -97,8 +97,8 @@
                     "option": "growth",
                     "sub_option": null,
                     "time_period": null,
-                    "name": "SIF-105 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-GROWTH-INF2F0030049",
-                    "amfi_code": "SIF-105",
+                    "name": "Direct Plan Growth",
+                    "amfi_code": "SIF-107",
                     "isin_code": "INF2F0030049",
                     "rta_code": null
                 }
@@ -110,8 +110,8 @@
                         "option": "idcw",
                         "sub_option": "payout",
                         "time_period": null,
-                        "name": "SIF-106 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-IDCW-PAYOUT-INF2F0030056",
-                        "amfi_code": "SIF-106",
+                        "name": "Direct Plan Idcw - Payout",
+                        "amfi_code": "SIF-104",
                         "isin_code": "INF2F0030056",
                         "rta_code": null
                     }
@@ -122,8 +122,8 @@
                         "option": "idcw",
                         "sub_option": "reinvestment",
                         "time_period": null,
-                        "name": "SIF-106 | WSIF EQUITY EX-TOP 100 LONG-SHORT FUND-DIRECT-IDCW-REINVESTMENT-INF2F0030064",
-                        "amfi_code": "SIF-106",
+                        "name": "Direct Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-104",
                         "isin_code": "INF2F0030064",
                         "rta_code": null
                     }
