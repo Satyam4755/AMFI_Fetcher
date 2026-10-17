@@ -1,0 +1,233 @@
+{
+    "sebi_code": "ALTV/O/E/ELSF/26/08/0003/EDEL",
+    "scheme_name": "Altiva Equity Long-Short Fund",
+    "fund_name": "Altiva Equity Long-Short Fund",
+    "scheme_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
+    "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
+    "category": "Equity Long-Short Fund",
+    "riskometer_at_launch": "Risk band level 3",
+    "riskometer_as_on_date": "Risk band level 3",
+    "potential_risk_class": "NA",
+    "scheme_objective": "To generate long-term capital appreciation by predominantly investing in listed equity and equity-related instruments. The Investment Strategy may also invest in various derivative instruments, including limited short exposure through unhedged derivative positions in equity up to 25%.  There is no assurance that the investment objective of the Investment strategy will be achieved.",
+    "face_value": "Rs. 10/-",
+    "nfo_open_date": "2026-09-10",
+    "nfo_close_date": "2026-09-24",
+    "allotment_date": "2026-09-30",
+    "reopen_date": "2026-10-05",
+    "maturity_date": null,
+    "benchmark_tier_1": "Nifty 100 TRI",
+    "benchmark_tier_2": "Benchmark (Tier 2)",
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity and Equity related instruments(including up to 25% in Unhedged short exposure through derivative instruments)",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt & Money Market instruments and Units of Debt Oriented Mutual Funds",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "for details",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        }
+    ],
+    "listing_details": "NA",
+    "plans": {
+        "regular": {
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular Plan Growth",
+                    "amfi_code": "SIF-161",
+                    "isin_code": "INF754K30219",
+                    "rta_code": "ELRG"
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular Plan Idcw - Payout",
+                        "amfi_code": "SIF-164",
+                        "isin_code": "INF754K30227",
+                        "rta_code": "ELRD"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Regular Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-164",
+                        "isin_code": "INF754K30235",
+                        "rta_code": "ELRD"
+                    }
+                ],
+                "transfer": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "transfer",
+                        "time_period": null,
+                        "name": "Regular Plan Idcw - Transfer",
+                        "amfi_code": null,
+                        "isin_code": "INF754K30243",
+                        "rta_code": "ELRD"
+                    }
+                ],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct Plan Growth",
+                    "amfi_code": "SIF-163",
+                    "isin_code": "INF754K30177",
+                    "rta_code": "ELD1"
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct Plan Idcw - Payout",
+                        "amfi_code": "SIF-162",
+                        "isin_code": "INF754K30185",
+                        "rta_code": "ELD2"
+                    }
+                ],
+                "reinvestment": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "reinvestment",
+                        "time_period": null,
+                        "name": "Direct Plan Idcw - Reinvestment",
+                        "amfi_code": "SIF-162",
+                        "isin_code": "INF754K30193",
+                        "rta_code": "ELD2"
+                    }
+                ],
+                "transfer": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "transfer",
+                        "time_period": null,
+                        "name": "Direct Plan Idcw - Transfer",
+                        "amfi_code": null,
+                        "isin_code": "INF754K30201",
+                        "rta_code": "ELD2"
+                    }
+                ],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Mr. Bharat Lahoti",
+            "type": "Primary",
+            "from": "2026-09-30",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Bhavesh Jain",
+            "type": "Primary",
+            "from": "2026-09-30",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Mr. Amit Vora",
+            "type": "Primary",
+            "from": "2026-09-30",
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "Rs. 1000000/-",
+        "application_multiple": "Re. 1/-",
+        "minimum_additional_amount": "Rs. 1000/-",
+        "additional_multiple": "Re. 1/-",
+        "minimum_redemption_amount": "Re. 1/-",
+        "minimum_redemption_units": "1E-3",
+        "minimum_balance_amount": "Rs. 1000000/-",
+        "minimum_balance_units": "NA",
+        "maximum_investment_amount": "NA"
+    },
+    "switch_details": {
+        "minimum_switch_amount": "NA",
+        "minimum_switch_units": "NA",
+        "switch_multiple_amount": "NA",
+        "switch_multiple_units": "NA",
+        "maximum_switch_amount": "NA",
+        "maximum_switch_units": "NA"
+    },
+    "systematic_investment_plans": {
+        "frequency": "Daily (D); Weekly (W); Fortnightly (F) Monthly (M); Quarterly (Q)",
+        "minimum_amount": "D - 1000; W - 1000; F - 1000; M - 1000; Q - 1000",
+        "in_multiples_of": "D - 1; W - 1; F - 1; M - 1; Q - 1",
+        "minimum_installments": "D - 20; W - 6; F - 6; M - 6; Q - 6",
+        "dates": "D - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; W - 7,14,21,28; F - 10,25; M - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27; Q - 01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27",
+        "maximum_amount": "D - 9999999999; W - 9999999999; F - 9999999999; M - 9999999999; Q - 9999999999"
+    },
+    "expenses_and_loads": {
+        "exit_load": "If the units are redeemed / switched out on or before 90 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 90 days from the date of allotment – Nil. \nAMC reserves the right to revise the load structure from time to time. Such changes will become effective prospectively from the date such changes are incorporated.",
+        "actual_expense": null,
+        "stated_maximum_expense": "Direct Plan - 31.91%, Regular Plan - 33.57%"
+    },
+    "special_facilities": {
+        "swing_pricing": "NA",
+        "side_pocketing": "NA"
+    },
+    "amc_details": {
+        "sif_name": "Altiva SIF",
+        "amc_website": "https://www.edelweissmf.com",
+        "scheme_bonus": null
+    },
+    "exit_load": "If the units are redeemed / switched out on or before 90 days from the date of allotment - 0.50% of applicable NAV. \nIf the units are redeemed / switched out after 90 days from the date of allotment – Nil. \nAMC reserves the right to revise the load structure from time to time. Such changes will become effective prospectively from the date such changes are incorporated.",
+    "registrar": "KFIN Technologies Ltd",
+    "custodian": "Standard Chartered",
+    "auditor": "M/s. Walker Chandiok & co LLP",
+    "sif_name": "Altiva SIF",
+    "scheme_id": "S-34",
+    "sif_id": "47",
+    "documents": {
+        "scheme_id": "S-34",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-34.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-34.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-34.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-34.xml"
+    }
+}

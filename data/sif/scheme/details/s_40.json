@@ -1,16 +1,16 @@
 {
     "sebi_code": null,
-    "scheme_name": "Altiva Equity Long-Short Fund",
-    "fund_name": "Altiva Equity Long-Short Fund",
+    "scheme_name": "Select Equity Ex-Top 100 Long-Short Fund",
+    "fund_name": "Select Equity Ex-Top 100 Long-Short Fund",
     "scheme_type": "Open Ended",
     "fund_type": "Open Ended",
-    "category": "Equity Oriented Investment Strategies - Equity Long-Short Fund",
+    "category": "Equity Oriented Investment Strategies - Equity Ex-Top 100 Long-Short Fund",
     "riskometer_at_launch": null,
     "riskometer_as_on_date": null,
     "potential_risk_class": null,
-    "scheme_objective": "To generate long-term capital appreciation by predominantly investing in \nlisted equity and equity-related instruments. The Investment Strategy may \nalso invest in various derivative instruments, including limited short exposure \nthrough unhedged derivative positions in equity up to 25%.  \nThere is no assurance that the investment objective of the Investment \nstrategy will be achieved.",
+    "scheme_objective": "An open-ended equity investment strategy investing in equity and equity related instruments, with the flexibility to include limited short exposure in equity through derivative instruments of Ex - top 100 stocks",
     "face_value": null,
-    "nfo_open_date": "2026-09-09",
+    "nfo_open_date": "2026-10-20",
     "nfo_close_date": null,
     "allotment_date": null,
     "reopen_date": null,
@@ -45,7 +45,7 @@
     },
     "fund_managers": [],
     "investment_limits": {
-        "minimum_application_amount": "Rs. 10 lacs",
+        "minimum_application_amount": "1000000",
         "application_multiple": null,
         "minimum_additional_amount": null,
         "additional_multiple": null,
@@ -72,7 +72,7 @@
         "maximum_amount": null
     },
     "expenses_and_loads": {
-        "exit_load": null,
+        "exit_load": "Exit Load:\n- If the units are redeemed/ switched out on or before 1 year from the date of allotment – 1% of the applicable NAV.\n- If the units are redeemed/switched out after 1 year from the date of allotment – Nil",
         "actual_expense": null,
         "stated_maximum_expense": null
     },
@@ -81,22 +81,22 @@
         "side_pocketing": null
     },
     "amc_details": {
-        "sif_name": "Altiva SIF",
-        "amc_website": "https://www.edelweissmf.com",
+        "sif_name": "Sundaram Mutual Fund",
+        "amc_website": "https://www.sundarammutual.com",
         "scheme_bonus": null
     },
-    "exit_load": null,
+    "exit_load": "Exit Load:\n- If the units are redeemed/ switched out on or before 1 year from the date of allotment – 1% of the applicable NAV.\n- If the units are redeemed/switched out after 1 year from the date of allotment – Nil",
     "registrar": null,
     "custodian": null,
     "auditor": null,
-    "sif_name": "Altiva SIF",
-    "scheme_id": "S-34",
-    "sif_id": "47",
+    "sif_name": "Sundaram Mutual Fund",
+    "scheme_id": "S-40",
+    "sif_id": "33",
     "documents": {
-        "scheme_id": "S-34",
-        "info_pdf_url": "https://portal.amfiindia.com/spages/S-34.pdf",
-        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-34.pdf",
-        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-34.xls",
-        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-34.xml"
+        "scheme_id": "S-40",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-40.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-40.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-40.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-40.xml"
     }
 }
