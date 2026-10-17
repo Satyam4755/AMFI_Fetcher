@@ -1,11 +1,11 @@
 {
     "sif_code": "SIF-33",
     "returns": {
-        "1_day": -0.29,
-        "1_week": 1.48,
-        "1_month": 0.79,
-        "3_month": -0.58,
-        "6_month": 5.23,
+        "1_day": 0.0,
+        "1_week": 0.59,
+        "1_month": 0.59,
+        "3_month": -0.48,
+        "6_month": 4.69,
         "1_year": null,
         "2_year": null,
         "3_year": null,
@@ -25,5 +25,5 @@
         "2026-03": -7.3,
         "2026-02": -1.2
     },
-    "last_updated": "2026-10-16T00:36:19Z"
+    "last_updated": "2026-10-17T00:41:56Z"
 }
