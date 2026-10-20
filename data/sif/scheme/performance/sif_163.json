@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-163",
     "returns": {
-        "1_day": 0.57,
-        "1_week": 2.04,
+        "1_day": -0.9,
+        "1_week": 1.39,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -12,10 +12,10 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 2.01
+        "since_launch": 1.09
     },
     "monthly_returns": {
-        "2026-10": 2.01
+        "2026-10": 1.09
     },
-    "last_updated": "2026-10-19T00:22:22Z"
+    "last_updated": "2026-10-20T01:09:52Z"
 }
