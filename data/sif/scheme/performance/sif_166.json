@@ -1,7 +1,7 @@
 {
     "sif_code": "SIF-166",
     "returns": {
-        "1_day": null,
+        "1_day": 0.01,
         "1_week": null,
         "1_month": null,
         "3_month": null,
@@ -12,10 +12,10 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": 0.0
+        "since_launch": 0.01
     },
     "monthly_returns": {
-        "2026-10": 0.0
+        "2026-10": 0.01
     },
-    "last_updated": "2026-10-20T01:09:52Z"
+    "last_updated": "2026-10-21T00:47:28Z"
 }
