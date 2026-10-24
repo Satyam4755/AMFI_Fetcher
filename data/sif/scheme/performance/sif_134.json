@@ -1,10 +1,10 @@
 {
     "sif_code": "SIF-134",
     "returns": {
-        "1_day": -0.26,
-        "1_week": -0.64,
-        "1_month": -1.41,
-        "3_month": -0.83,
+        "1_day": 0.07,
+        "1_week": -0.6,
+        "1_month": -1.62,
+        "3_month": -0.59,
         "6_month": null,
         "1_year": null,
         "2_year": null,
@@ -12,13 +12,13 @@
         "5_year": null,
         "7_year": null,
         "10_year": null,
-        "since_launch": -0.75
+        "since_launch": -0.68
     },
     "monthly_returns": {
-        "2026-10": -0.47,
+        "2026-10": -0.4,
         "2026-09": -1.22,
         "2026-08": -0.32,
         "2026-07": 0.9
     },
-    "last_updated": "2026-10-23T00:50:16Z"
+    "last_updated": "2026-10-24T00:57:32Z"
 }
