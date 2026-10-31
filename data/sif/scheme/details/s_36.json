@@ -81,7 +81,7 @@
         "side_pocketing": null
     },
     "amc_details": {
-        "sif_name": "Mahindra Manulife Mutual Fund",
+        "sif_name": "MSIF",
         "amc_website": "https://www.mahindramanulife.com",
         "scheme_bonus": null
     },
@@ -89,7 +89,7 @@
     "registrar": null,
     "custodian": null,
     "auditor": null,
-    "sif_name": "Mahindra Manulife Mutual Fund",
+    "sif_name": "MSIF",
     "scheme_id": "S-36",
     "sif_id": "69",
     "documents": {

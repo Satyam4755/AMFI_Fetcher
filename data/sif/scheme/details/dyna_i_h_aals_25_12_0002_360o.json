@@ -68,7 +68,7 @@
                         "time_period": null,
                         "name": "Regular Plan Idcw - Payout",
                         "amfi_code": "SIF-89",
-                        "isin_code": "INF579M30083",
+                        "isin_code": "INF579M30091",
                         "rta_code": "ALSRP"
                     }
                 ],
@@ -80,7 +80,7 @@
                         "time_period": null,
                         "name": "Regular Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-89",
-                        "isin_code": "INF579M30091",
+                        "isin_code": "INF579M30083",
                         "rta_code": "ALSRR"
                     }
                 ],
@@ -112,7 +112,7 @@
                         "time_period": null,
                         "name": "Direct Plan Idcw - Payout",
                         "amfi_code": "SIF-86",
-                        "isin_code": "INF579M30117",
+                        "isin_code": "INF579M30125",
                         "rta_code": "ALSDP"
                     }
                 ],
@@ -124,7 +124,7 @@
                         "time_period": null,
                         "name": "Direct Plan Idcw - Reinvestment",
                         "amfi_code": "SIF-86",
-                        "isin_code": "INF579M30125",
+                        "isin_code": "INF579M30117",
                         "rta_code": "ALSDR"
                     }
                 ],
