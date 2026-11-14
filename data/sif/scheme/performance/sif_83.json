@@ -1,10 +1,10 @@
 {
     "sif_code": "SIF-83",
     "returns": {
-        "1_day": -0.07,
-        "1_week": 0.44,
-        "1_month": 1.86,
-        "3_month": 3.14,
+        "1_day": 0.0,
+        "1_week": 0.36,
+        "1_month": 1.76,
+        "3_month": 3.07,
         "6_month": null,
         "1_year": null,
         "2_year": null,
@@ -21,5 +21,5 @@
         "2026-08": 1.68,
         "2026-07": 2.12
     },
-    "last_updated": "2026-11-13T02:49:13Z"
+    "last_updated": "2026-11-14T02:37:04Z"
 }
