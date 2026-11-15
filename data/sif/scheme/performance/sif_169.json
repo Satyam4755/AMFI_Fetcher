@@ -1,8 +1,8 @@
 {
     "sif_code": "SIF-169",
     "returns": {
-        "1_day": 0.09,
-        "1_week": 0.3,
+        "1_day": 0.0,
+        "1_week": 0.24,
         "1_month": null,
         "3_month": null,
         "6_month": null,
@@ -18,5 +18,5 @@
         "2026-11": 0.38,
         "2026-10": 0.33
     },
-    "last_updated": "2026-11-14T02:37:04Z"
+    "last_updated": "2026-11-15T02:03:46Z"
 }
