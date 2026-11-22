@@ -1,0 +1,229 @@
+{
+    "sebi_code": "MSIF/O/E/ELSF/26/09/0001/MAHM",
+    "scheme_name": "MSIF Equity Long-Short Fund",
+    "fund_name": "MSIF Equity Long-Short Fund",
+    "scheme_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
+    "fund_type": "An open ended equity investment strategy investing in listed equity and equity related instruments including limited short exposure in equity through derivative instruments",
+    "category": "Equity Oriented Investment Strategy: Equity Long-Short Fund",
+    "riskometer_at_launch": "Risk Band level 5",
+    "riskometer_as_on_date": "Risk Band level 2",
+    "potential_risk_class": "Not Applicable",
+    "scheme_objective": "The investment objective of the Investment Strategy is to generate long term capital appreciation by investing predominantly in listed equity and equity related instruments while selectively employing tactical short positions through derivatives to provide risk-adjusted returns across market cycles. However, there is no assurance that the investment objective of the Investment Strategy will be achieved.",
+    "face_value": "10",
+    "nfo_open_date": "2026-09-30",
+    "nfo_close_date": "2026-10-14",
+    "allotment_date": "2026-10-22",
+    "reopen_date": "2026-10-26",
+    "maturity_date": null,
+    "benchmark_tier_1": "Nifty 500 TRI",
+    "benchmark_tier_2": "Not Applicable",
+    "asset_allocation": [
+        {
+            "allocation_type": "Equity and Equity Related Instruments $",
+            "minimum_percentage": 80,
+            "maximum_percentage": 100
+        },
+        {
+            "allocation_type": "Debt & Money Market Instruments $$",
+            "minimum_percentage": 0,
+            "maximum_percentage": 20
+        },
+        {
+            "allocation_type": "Units issued by InvITs",
+            "minimum_percentage": 0,
+            "maximum_percentage": 10
+        },
+        {
+            "allocation_type": "$Including Equity Exchange Traded Funds (ETFs) and units of Equity oriented Mutual Fund Schemes $$Including Debt Exchange Traded Funds (ETFs) and units of Debt oriented Mutual Fund Schemes @Including investment in Overseas Securities (including units/securities issued by overseas mutual funds and overseas ETF). The investment in Overseas Securities (including units/securities issued by overseas mutual funds and overseas ETF) shall be up to 20% of the net assets of the Investment Strategy",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        },
+        {
+            "allocation_type": "The Investment Strategy may invest US$ 5 million in Overseas Securities (including units/securities issued by overseas mutual funds and overseas ETF) within six months from the date of the closure of the New Fund Offer (NFO) of the Investment Strategy, provided that the maximum exposure to such securities does not exceed 20% of the net assets of the Investment Strategy. Thereafter, on an ongoing basis, the Investment Strategy may invest in Overseas Securities (including units/securities issued by overseas mutual funds and overseas ETF) up to 20% of the net assets of the Investment Strategy",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        },
+        {
+            "allocation_type": "Such investments in Overseas Securities by the Investment Strategy shall be subject to and in compliance with various limits / other requirement(s) as specified under the Clause 13.11 of the SEBI Master Circular pertaining to Overseas investments, as amended from time to time. Further, pursuant to SEBI’s letter reference no. SEBI/HO/OW/IMD- II/DOF3/P/25095 /2022 dated June 17, 2022 on an ongoing basis, the Investment Strategy may make investments in Overseas Securities upto the headroom available without breaching the overseas investment limits as of end of the day (EOD) of February 1, 2022 The Margin, wherever applicable, may be placed in the form of such securities / instruments / deposits as may be permitted/eligible to be placed as margin from the assets of the Investment Strategy. The securities / instruments / deposits so placed as margin shall be classified under the applicable category of assets for the purposes of asset allocation. Subject to the Regulations and applicable regulatory guidelines as may be issued from time to time, the Investment Strategy may also engage in Securities Lending and Borrowing Obligations upto 20% of the total Net Assets of the Investment Strategy. Further, the Investment Strategy shall not deploy more than 5% of the Investment Strategy’s net assets in Securities Lending through a single intermediary. These limits shall be applicable at the time of participating in the Securities Lending by the Investment Strategy",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        },
+        {
+            "allocation_type": "Illustration –Total Net Assets of the Investment Strategy A on June 1 – Rs. 30,00,000 On June 2 the Investment Strategy A wishes to lend securities worth Rs. 3,00,000 The Investment Strategy A may participate in the securities lending by placing orders through any 2 or more intermediaries / brokers where the maximum order value with a single intermediary/broker shall not exceed Rs. 1,50,000 (i.e. 5% of the net assets of the Investment Strategy A as on June 1)",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        },
+        {
+            "allocation_type": "As per clause 21.6.1 e of the SEBI Master Circular, the cumulative gross exposure through equity, debt, derivative positions (including commodity and fixed income derivatives, if any), Infrastructure Investment Trusts (InvITs), other permitted securities/assets and such other securities/assets as may be permitted by SEBI from time to time, should not exceed 100% of the net assets of the investment strategy",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        },
+        {
+            "allocation_type": "However, pursuant to Paragraph 13.18.6 of SEBI Master Circular of Mutual Funds and SEBI letter no. SEBI/ HO/ IMD – II/ DOF3 / OW/ P/ 2021/ 31487/ 1 dated November 3, 2021 addressed to AMFI, it has been mentioned that cash or cash equivalents like Government securities, T-Bills and repo on Government Securities with residual maturity of less than 91 days may be treated as not creating any exposure. Pending deployment of funds of an Investment Strategy in securities in terms of investment objectives of the Investment Strategy, a Specialized Investment Fund can invest the funds of the Investment Strategy in short term deposits of scheduled commercial banks in terms of clause 13.7 of SEBI Master Circular. Pursuant to Clause 1.7.3 of the SEBI Master Circular, the Investment Strategy may deploy NFO proceeds in Triparty Repo on Government securities or treasury bills (TREPS) before the closure of NFO period. However, the AMC shall not charge any investment management and advisory fees on funds deployed in TREPS during the NFO period. All the investments by SIF under the Investment Strategy shall be guided by investment restrictions as specified in SEBI (Mutual Funds) Regulations, 2026 from time to time",
+            "minimum_percentage": null,
+            "maximum_percentage": null
+        }
+    ],
+    "listing_details": "Not Applicable",
+    "plans": {
+        "regular": {
+            "growth": [
+                {
+                    "plan_type": "regular",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Regular Plan Growth",
+                    "amfi_code": "SIF-174",
+                    "isin_code": "INF174V30019",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Regular Plan Idcw - Payout",
+                        "amfi_code": "SIF-171",
+                        "isin_code": "INF174V30027",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": [
+                    {
+                        "plan_type": "regular",
+                        "option": "idcw",
+                        "sub_option": "unknown",
+                        "time_period": null,
+                        "name": "Regular Plan Idcw",
+                        "amfi_code": "SIF-171",
+                        "isin_code": "INF174V30035",
+                        "rta_code": null
+                    }
+                ]
+            },
+            "unresolved": []
+        },
+        "direct": {
+            "growth": [
+                {
+                    "plan_type": "direct",
+                    "option": "growth",
+                    "sub_option": null,
+                    "time_period": null,
+                    "name": "Direct Plan Growth",
+                    "amfi_code": "SIF-172",
+                    "isin_code": "INF174V30043",
+                    "rta_code": null
+                }
+            ],
+            "idcw": {
+                "payout": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "payout",
+                        "time_period": null,
+                        "name": "Direct Plan Idcw - Payout",
+                        "amfi_code": "SIF-173",
+                        "isin_code": "INF174V30050",
+                        "rta_code": null
+                    }
+                ],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": [
+                    {
+                        "plan_type": "direct",
+                        "option": "idcw",
+                        "sub_option": "unknown",
+                        "time_period": null,
+                        "name": "Direct Plan Idcw",
+                        "amfi_code": "SIF-173",
+                        "isin_code": "INF174V30068",
+                        "rta_code": null
+                    }
+                ]
+            },
+            "unresolved": []
+        }
+    },
+    "fund_managers": [
+        {
+            "name": "Fund Manager 1 - Mr. Aalap Shah",
+            "type": "Fund Manager 1 - Co-manage",
+            "from": "2026-10-22",
+            "to": null,
+            "role_or_portion": null
+        },
+        {
+            "name": "Fund Manager 2 - Mr. Abhishek Jaiswal",
+            "type": "Fund Manager 2 - Co-manage",
+            "from": "2026-10-22",
+            "to": null,
+            "role_or_portion": null
+        }
+    ],
+    "investment_limits": {
+        "minimum_application_amount": "10,00,000",
+        "application_multiple": "1",
+        "minimum_additional_amount": "1000",
+        "additional_multiple": "1",
+        "minimum_redemption_amount": "1000",
+        "minimum_redemption_units": "100",
+        "minimum_balance_amount": "Not Applicable",
+        "minimum_balance_units": null,
+        "maximum_investment_amount": "Not Applicable"
+    },
+    "switch_details": {
+        "minimum_switch_amount": "1000",
+        "minimum_switch_units": null,
+        "switch_multiple_amount": "0.01",
+        "switch_multiple_units": "0.01",
+        "maximum_switch_amount": "Not Applicable",
+        "maximum_switch_units": "Not Applicable"
+    },
+    "systematic_investment_plans": {
+        "frequency": "SIP - Weekly / Monthly / Quarterly, SWP - Monthly / Quarterly / Half-Yearly / Annual, STP -  Daily / Weekly / Monthly / Quarterly",
+        "minimum_amount": "SIP - Weekly / Monthly / Quarterly, SWP - Monthly / Quarterly / Half-Yearly / Annual, STP -  Daily / Weekly / Monthly / Quarterly",
+        "in_multiples_of": "SIP - 1, SWP - 1, STP - 1",
+        "minimum_installments": "SIP- Weekly / Monthly - 6, Quarterly - 4 \nSWP - Monthly / Quarterly / Half-Yearly / Annual - 2, STP - Daily / Weekly / Monthly - 6, Quarterly - 4",
+        "dates": "SIP - Weekly- Any day of the week(except Saturday & Sunday), Monthly- Any Date, Quarterly- Any Date                                                                                                SWP - Any Date of the month available under Monthly, Quarterly, Half-Yearly & Annual frequencies\nSTP - Daily- Every Business Day, Weekly- Any day of the week(except Saturday & Sunday), Monthly- Any Date, Quarterly- Any Date",
+        "maximum_amount": "Not Applicable"
+    },
+    "expenses_and_loads": {
+        "exit_load": "Exit Load of 0.5% payable if units are redeemed/switched out up to 3 months from the date \nof allotment. Nil if units are redeemed/switched out after 3 months from the date of allotment.\nRedemption /Switch-Out of Units would be done on First in First Out Basis (FIFO).",
+        "actual_expense": null,
+        "stated_maximum_expense": "Regular: 4.99, Direct: 2.87"
+    },
+    "special_facilities": {
+        "swing_pricing": "Not Applicable",
+        "side_pocketing": "Not Applicable"
+    },
+    "amc_details": {
+        "sif_name": "MSIF",
+        "amc_website": "https://www.mahindramanulife.com",
+        "scheme_bonus": null
+    },
+    "exit_load": "Exit Load of 0.5% payable if units are redeemed/switched out up to 3 months from the date \nof allotment. Nil if units are redeemed/switched out after 3 months from the date of allotment.\nRedemption /Switch-Out of Units would be done on First in First Out Basis (FIFO).",
+    "registrar": "Computer Age Management Services Limited (CAMS)",
+    "custodian": "Deutsche Bank AG",
+    "auditor": "S.R. Batliboi & Co. LLP",
+    "sif_name": "MSIF",
+    "scheme_id": "S-36",
+    "sif_id": "69",
+    "documents": {
+        "scheme_id": "S-36",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-36.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-36.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-36.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-36.xml"
+    }
+}

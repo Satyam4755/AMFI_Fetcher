@@ -1,0 +1,102 @@
+{
+    "sebi_code": null,
+    "scheme_name": "MSIF Hybrid Long-Short Fund",
+    "fund_name": "MSIF Hybrid Long-Short Fund",
+    "scheme_type": "Interval Fund",
+    "fund_type": "Interval Fund",
+    "category": "Hybrid Investment Strategies - Hybrid Long-Short Fund",
+    "riskometer_at_launch": null,
+    "riskometer_as_on_date": null,
+    "potential_risk_class": null,
+    "scheme_objective": "The investment objective of the Investment Strategy is to generate long term capital appreciation and income through investments in equity and equity \nrelated instruments, debt and money market instruments including limited short exposure in equity and debt through derivatives. However, there is no \nassurance that the investment objective of the Investment Strategy will be achieved.",
+    "face_value": null,
+    "nfo_open_date": "2026-11-26",
+    "nfo_close_date": null,
+    "allotment_date": null,
+    "reopen_date": null,
+    "maturity_date": null,
+    "benchmark_tier_1": null,
+    "benchmark_tier_2": null,
+    "asset_allocation": null,
+    "listing_details": null,
+    "plans": {
+        "regular": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        },
+        "direct": {
+            "growth": [],
+            "idcw": {
+                "payout": [],
+                "reinvestment": [],
+                "transfer": [],
+                "time_period": [],
+                "unknown": []
+            },
+            "unresolved": []
+        }
+    },
+    "fund_managers": [],
+    "investment_limits": {
+        "minimum_application_amount": "Rs.1000000 and in multiples of Re. 1/- thereafter.",
+        "application_multiple": null,
+        "minimum_additional_amount": null,
+        "additional_multiple": null,
+        "minimum_redemption_amount": null,
+        "minimum_redemption_units": null,
+        "minimum_balance_amount": null,
+        "minimum_balance_units": null,
+        "maximum_investment_amount": null
+    },
+    "switch_details": {
+        "minimum_switch_amount": null,
+        "minimum_switch_units": null,
+        "switch_multiple_amount": null,
+        "switch_multiple_units": null,
+        "maximum_switch_amount": null,
+        "maximum_switch_units": null
+    },
+    "systematic_investment_plans": {
+        "frequency": null,
+        "minimum_amount": null,
+        "in_multiples_of": null,
+        "minimum_installments": null,
+        "dates": null,
+        "maximum_amount": null
+    },
+    "expenses_and_loads": {
+        "exit_load": "Exit Load: 0.5% is payable if units are redeemed / switched out up to 3 months from date of allotment.  \n \nNil if units are redeemed / switched out after 3 months from the date of allotment.  \n \nRedemption / Switch-out of units would be done on First in First out basis \n(FIFO)",
+        "actual_expense": null,
+        "stated_maximum_expense": null
+    },
+    "special_facilities": {
+        "swing_pricing": null,
+        "side_pocketing": null
+    },
+    "amc_details": {
+        "sif_name": "MSIF",
+        "amc_website": "https://www.mahindramanulife.com",
+        "scheme_bonus": null
+    },
+    "exit_load": "Exit Load: 0.5% is payable if units are redeemed / switched out up to 3 months from date of allotment.  \n \nNil if units are redeemed / switched out after 3 months from the date of allotment.  \n \nRedemption / Switch-out of units would be done on First in First out basis \n(FIFO)",
+    "registrar": null,
+    "custodian": null,
+    "auditor": null,
+    "sif_name": "MSIF",
+    "scheme_id": "S-44",
+    "sif_id": "69",
+    "documents": {
+        "scheme_id": "S-44",
+        "info_pdf_url": "https://portal.amfiindia.com/spages/S-44.pdf",
+        "summary_pdf_url": "https://portal.amfiindia.com/spages/SSD_S-44.pdf",
+        "summary_xls_url": "https://portal.amfiindia.com/spages/SSD_S-44.xls",
+        "summary_xml_url": "https://portal.amfiindia.com/spages/SSD_S-44.xml"
+    }
+}

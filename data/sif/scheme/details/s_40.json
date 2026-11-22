@@ -81,7 +81,7 @@
         "side_pocketing": null
     },
     "amc_details": {
-        "sif_name": "Sundaram Mutual Fund",
+        "sif_name": "Select SIF",
         "amc_website": "https://www.sundarammutual.com",
         "scheme_bonus": null
     },
@@ -89,7 +89,7 @@
     "registrar": null,
     "custodian": null,
     "auditor": null,
-    "sif_name": "Sundaram Mutual Fund",
+    "sif_name": "Select SIF",
     "scheme_id": "S-40",
     "sif_id": "33",
     "documents": {
